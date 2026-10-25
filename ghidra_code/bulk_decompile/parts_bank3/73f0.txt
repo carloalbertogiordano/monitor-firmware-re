@@ -1,0 +1,15 @@
+=== 0x73f0 ===
+
+char thunk_FUN_CODE_73f2(char param_1)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return param_1 + '\x01';
+}
+

@@ -1,0 +1,37 @@
+=== 0xd3d8 ===
+
+void FUN_CODE_d3d8(void)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e33b = 0;
+  DAT_EXTMEM_e33e = 0;
+  DAT_EXTMEM_e33c = DAT_EXTMEM_e197 & 7;
+  DAT_EXTMEM_e33d = DAT_EXTMEM_e19e;
+  cVar2 = FUN_CODE_a78d(DAT_EXTMEM_e19f,0xe33e);
+  if (cVar2 == '\x05') {
+LAB_CODE_d40f:
+    FUN_CODE_082f(0x20);
+    uVar1 = 0;
+  }
+  else {
+    if (5 < cVar2 - 1U) {
+      if ((cVar2 != '\a') && (cVar2 != '\0')) goto LAB_CODE_d42e;
+      goto LAB_CODE_d40f;
+    }
+    FUN_CODE_082f(0x20);
+    FUN_CODE_0bf5(0);
+    uVar1 = FUN_CODE_a78e();
+    FUN_CODE_f522(uVar1);
+    uVar1 = 1;
+  }
+  FUN_CODE_0bf5(uVar1);
+LAB_CODE_d42e:
+  DAT_EXTMEM_e197 = DAT_EXTMEM_e197 & 0xf8 | DAT_EXTMEM_e33c & 7;
+  DAT_EXTMEM_e19e = DAT_EXTMEM_e33d;
+  DAT_EXTMEM_e19f = DAT_EXTMEM_e33e;
+  return;
+}
+

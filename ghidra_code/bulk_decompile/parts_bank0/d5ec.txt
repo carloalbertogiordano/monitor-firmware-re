@@ -1,0 +1,12 @@
+=== 0xd5ec ===
+
+void FUN_CODE_d5ec(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e36f = *param_1;
+  DAT_EXTMEM_e370 = param_1[1];
+  DAT_EXTMEM_e371 = param_1[2];
+  DAT_EXTMEM_e372 = 0;
+  return;
+}
+

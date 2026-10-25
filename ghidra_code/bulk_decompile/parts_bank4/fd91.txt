@@ -1,0 +1,11 @@
+=== 0xfd91 ===
+
+void FUN_CODE_fd91(char param_1)
+
+{
+  if (param_1 == '\'') {
+    FUN_CODE_f235();
+  }
+  return;
+}
+

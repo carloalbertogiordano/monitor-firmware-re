@@ -1,0 +1,10 @@
+=== 0xd6e8 ===
+
+void FUN_CODE_d6e8(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e4ef = param_1;
+  DAT_EXTMEM_e4f0 = param_2;
+  return;
+}
+

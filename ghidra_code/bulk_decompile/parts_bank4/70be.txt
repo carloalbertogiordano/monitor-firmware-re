@@ -1,0 +1,8 @@
+=== 0x70be ===
+
+undefined1 FUN_CODE_70be(void)
+
+{
+  return DAT_EXTMEM_e3ad;
+}
+

@@ -1,0 +1,12 @@
+=== 0x8c60 ===
+
+void FUN_CODE_8c60(void)
+
+{
+  DAT_EXTMEM_ff61 = DAT_EXTMEM_e3f9;
+  DAT_EXTMEM_ff64 = 0;
+  DAT_EXTMEM_ff65 = 0;
+  DAT_EXTMEM_ff66 = 0;
+  return;
+}
+

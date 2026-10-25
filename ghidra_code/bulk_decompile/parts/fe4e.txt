@@ -1,0 +1,8 @@
+=== 0xfe4e ===
+
+undefined1 FUN_CODE_fe4e(void)
+
+{
+  return DAT_EXTMEM_0004;
+}
+

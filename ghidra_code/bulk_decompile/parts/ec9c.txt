@@ -1,0 +1,28 @@
+=== 0xec9c ===
+
+void FUN_CODE_ec9c(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_063d();
+  FUN_CODE_fea7();
+  if (-1 < in_PSW) {
+    FUN_CODE_b619(1);
+  }
+  FUN_CODE_e50b();
+  FUN_CODE_c240(0x6a,0xe6,1);
+  FUN_CODE_f7de();
+  if (in_PSW < '\0') {
+    _0_1 = 0;
+    FUN_CODE_0643();
+  }
+  FUN_CODE_0649();
+  if (-1 < in_PSW) {
+    _0_1 = 0;
+    FUN_CODE_064f(0x11);
+    FUN_CODE_0655(1);
+  }
+  return;
+}
+

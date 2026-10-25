@@ -1,0 +1,9 @@
+=== 0xfe8a ===
+
+void FUN_CODE_fe8a(void)
+
+{
+  FUN_CODE_fe21(3);
+  return;
+}
+

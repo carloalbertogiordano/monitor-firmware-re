@@ -1,0 +1,8 @@
+=== 0xde3f ===
+
+undefined1 FUN_CODE_de3f(void)
+
+{
+  return DAT_EXTMEM_e526;
+}
+

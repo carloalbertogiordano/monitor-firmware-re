@@ -1,0 +1,8 @@
+=== 0x4574 ===
+
+undefined1 FUN_CODE_4574(void)
+
+{
+  return 1;
+}
+

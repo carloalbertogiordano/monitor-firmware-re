@@ -1,0 +1,12 @@
+=== 0x7b05 ===
+
+void FUN_CODE_7b05(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_d05c();
+  FUN_CODE_7b82(0,(&LAB_CODE_3865)[bVar1],0xb);
+  return;
+}
+

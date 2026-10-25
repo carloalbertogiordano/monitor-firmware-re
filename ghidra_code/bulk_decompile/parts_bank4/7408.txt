@@ -1,0 +1,17 @@
+=== 0x7408 ===
+
+void FUN_CODE_7408(undefined1 param_1,undefined1 param_2,undefined1 param_3,char param_4)
+
+{
+  char in_PSW;
+  
+  DAT_EXTMEM_e342 = param_4 - (in_PSW >> 7);
+  DAT_EXTMEM_e343 = param_1;
+  DAT_EXTMEM_e340 = param_2;
+  DAT_EXTMEM_e341 = param_3;
+  DAT_EXTMEM_e344 = 0;
+  DAT_EXTMEM_e345 = 7;
+  DAT_EXTMEM_e346 = 0;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x76e9 ===
+
+undefined1 FUN_CODE_76e9(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 1);
+}
+

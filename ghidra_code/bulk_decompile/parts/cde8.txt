@@ -1,0 +1,12 @@
+=== 0xcde8 ===
+
+char FUN_CODE_cde8(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e332;
+  DAT_EXTMEM_e332 = DAT_EXTMEM_e332 + '\x01';
+  return cVar1 + -4;
+}
+

@@ -1,0 +1,13 @@
+=== 0xdbd9 ===
+
+byte FUN_CODE_dbd9(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = 0xff;
+  bVar2 = FUN_CODE_13df(0xff);
+  return bVar2 | bVar1;
+}
+

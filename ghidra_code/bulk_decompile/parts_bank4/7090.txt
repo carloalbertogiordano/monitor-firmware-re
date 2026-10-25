@@ -1,0 +1,8 @@
+=== 0x7090 ===
+
+undefined1 FUN_CODE_7090(void)
+
+{
+  return DAT_EXTMEM_e341;
+}
+

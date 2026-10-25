@@ -1,0 +1,16 @@
+=== 0xa3a8 ===
+
+void FUN_CODE_a3a8(void)
+
+{
+  _0_0 = 0;
+  FUN_CODE_e876(0,0,0,0xff,DAT_EXTMEM_e18e);
+  DAT_EXTMEM_e18e = 0;
+  DAT_EXTMEM_e4ef = 0;
+  DAT_EXTMEM_e4f0 = DAT_EXTMEM_e18f;
+  FUN_CODE_0ee3();
+  FUN_CODE_1718((undefined1 *)0xe331,0,0,DAT_EXTMEM_e18e,DAT_EXTMEM_e18f);
+  DAT_EXTMEM_e335 = 0x21;
+  return;
+}
+

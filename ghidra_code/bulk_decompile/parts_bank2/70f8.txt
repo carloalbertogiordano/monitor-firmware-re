@@ -1,0 +1,8 @@
+=== 0x70f8 ===
+
+undefined1 FUN_CODE_70f8(void)
+
+{
+  return 0;
+}
+

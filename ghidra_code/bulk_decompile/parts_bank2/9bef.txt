@@ -1,0 +1,9 @@
+=== 0x9bef ===
+
+void FUN_CODE_9bef(undefined1 param_1)
+
+{
+  FUN_CODE_0865(param_1,0x24);
+  return;
+}
+

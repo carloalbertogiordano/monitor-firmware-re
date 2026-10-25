@@ -1,0 +1,10 @@
+=== 0x877e ===
+
+undefined1 FUN_CODE_877e(void)
+
+{
+  DAT_EXTMEM_0bb2 = 0xff;
+  DAT_EXTMEM_02c9 = 0x28;
+  return DAT_EXTMEM_02ca;
+}
+

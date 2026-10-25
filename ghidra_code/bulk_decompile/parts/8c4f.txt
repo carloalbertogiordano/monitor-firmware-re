@@ -1,0 +1,12 @@
+=== 0x8c4f ===
+
+byte FUN_CODE_8c4f(byte param_1,byte param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+  bVar1 = (byte)((ushort)param_1 * (ushort)param_2);
+  return *(byte *)CONCAT11((char)((ushort)param_1 * (ushort)param_2 >> 8) +
+                           ('1' - (((0xd < bVar1) << 7) >> 7)),bVar1 - 0xe) & param_3;
+}
+

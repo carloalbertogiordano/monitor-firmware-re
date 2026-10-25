@@ -1,0 +1,17 @@
+=== 0x8dae ===
+
+void FUN_CODE_8dae(void)
+
+{
+  DAT_EXTMEM_e38e = 4;
+  DAT_EXTMEM_e38f = 0;
+  DAT_EXTMEM_e390 = DAT_EXTMEM_e341;
+  DAT_EXTMEM_e391 = 0;
+  FUN_CODE_8e02(9);
+  DAT_EXTMEM_e38e = 4;
+  DAT_EXTMEM_e38f = 1;
+  DAT_EXTMEM_e390 = DAT_EXTMEM_e341;
+  DAT_EXTMEM_e391 = 0;
+  return;
+}
+

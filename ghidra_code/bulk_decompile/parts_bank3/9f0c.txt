@@ -1,0 +1,78 @@
+=== 0x9f0c ===
+
+void FUN_CODE_9f0c(undefined1 param_1,undefined1 *param_2,char param_3)
+
+{
+  *param_2 = param_1;
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  FUN_CODE_88e3(param_3 + '\x01');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  FUN_CODE_87bf();
+  FUN_CODE_89f5(0xe33c);
+  DAT_INTMEM_53 = '%';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+  FUN_CODE_88ff(0xbae);
+  FUN_CODE_8a9e();
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xb54d ===
+
+undefined1 FUN_CODE_b54d(void)
+
+{
+  return DAT_EXTMEM_b610;
+}
+

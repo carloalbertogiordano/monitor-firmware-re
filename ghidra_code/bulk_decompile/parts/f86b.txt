@@ -1,0 +1,21 @@
+=== 0xf86b ===
+
+void FUN_CODE_f86b(void)
+
+{
+  byte bVar1;
+  char cVar2;
+  
+  bVar1 = FUN_CODE_c681();
+  cVar2 = (bVar1 >> 2) << 7;
+  FUN_CODE_8dde(bVar1 >> 3);
+  if (-1 < cVar2) {
+    return;
+  }
+  FUN_CODE_e886();
+  if (-1 < cVar2) {
+    return;
+  }
+  return;
+}
+

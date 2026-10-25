@@ -1,0 +1,14 @@
+=== 0xfafd ===
+
+char FUN_CODE_fafd(void)
+
+{
+  char cVar1;
+  
+  cVar1 = '\0';
+  if ((DAT_EXTMEM_e5a0 != 0xff) && (cVar1 = DAT_EXTMEM_e5a0 - 2, 1 < DAT_EXTMEM_e5a0)) {
+    return cVar1;
+  }
+  return cVar1;
+}
+

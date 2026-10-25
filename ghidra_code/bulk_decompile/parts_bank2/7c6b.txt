@@ -1,0 +1,9 @@
+=== 0x7c6b ===
+
+undefined1 FUN_CODE_7c6b(void)
+
+{
+  FUN_CODE_0f8b(0x23,0x18);
+  return DAT_EXTMEM_e189;
+}
+

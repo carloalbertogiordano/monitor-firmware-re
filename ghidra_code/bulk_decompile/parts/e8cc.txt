@@ -1,0 +1,30 @@
+=== 0xe8cc ===
+
+char FUN_CODE_e8cc(undefined1 param_1,char param_2)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e332 = param_1;
+  DAT_EXTMEM_e333 = param_2;
+  FUN_CODE_0b47();
+  if (param_2 == '\b') {
+    FUN_CODE_a4db();
+    cVar2 = '\0';
+    FUN_CODE_15d7(0,0,0xf,0xff);
+    uVar1 = 0;
+    cVar2 = cVar2 < '\0';
+    if ((bool)cVar2) {
+      DAT_EXTMEM_e332 = 0xf;
+      DAT_EXTMEM_e333 = -1;
+    }
+    else {
+      FUN_CODE_a4db();
+      DAT_EXTMEM_e332 = uVar1;
+      DAT_EXTMEM_e333 = cVar2;
+    }
+  }
+  return DAT_EXTMEM_e333;
+}
+

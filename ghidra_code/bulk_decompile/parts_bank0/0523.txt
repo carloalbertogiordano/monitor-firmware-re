@@ -1,0 +1,9 @@
+=== 0x0523 ===
+
+void FUN_CODE_0523(void)
+
+{
+  state_dispatch_arg22_case1();
+  return;
+}
+

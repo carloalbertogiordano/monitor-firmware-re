@@ -1,0 +1,10 @@
+=== 0x06fd ===
+
+void FUN_CODE_06fd(char param_1,char param_2)
+
+{
+  FUN_CODE_02db(param_1 + -1);
+  thunk_FUN_CODE_0152(param_2 + -1);
+  return;
+}
+

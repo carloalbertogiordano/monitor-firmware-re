@@ -1,0 +1,24 @@
+=== 0xf38a ===
+
+void FUN_CODE_f38a(byte param_1)
+
+{
+  if (param_1 != 3) {
+    if (param_1 == 4) {
+      return;
+    }
+    if (param_1 < 6) {
+      _0_0 = 1;
+      goto LAB_CODE_f3ab;
+    }
+    if (((param_1 != 6) && (param_1 != 7)) && (param_1 != 8)) {
+      return;
+    }
+  }
+  FUN_CODE_f4ec();
+  _0_0 = 0;
+LAB_CODE_f3ab:
+  FUN_CODE_f1b3();
+  return;
+}
+

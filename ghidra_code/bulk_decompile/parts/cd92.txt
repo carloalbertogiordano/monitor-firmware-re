@@ -1,0 +1,12 @@
+=== 0xcd92 ===
+
+char FUN_CODE_cd92(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e33a;
+  DAT_EXTMEM_e33a = DAT_EXTMEM_e33a + -1;
+  return cVar1 + -1;
+}
+

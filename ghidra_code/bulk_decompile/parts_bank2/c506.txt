@@ -1,0 +1,8 @@
+=== 0xc506 ===
+
+undefined1 FUN_CODE_c506(void)
+
+{
+  return DAT_EXTMEM_e542;
+}
+

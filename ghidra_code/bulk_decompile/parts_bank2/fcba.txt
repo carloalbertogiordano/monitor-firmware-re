@@ -1,0 +1,13 @@
+=== 0xfcba ===
+
+void FUN_CODE_fcba(void)
+
+{
+  if (_0_2 != '\0') {
+    FUN_CODE_082f(1);
+    FUN_CODE_082f(1);
+  }
+  FUN_CODE_c525(&LAB_CODE_303f_1);
+  return;
+}
+

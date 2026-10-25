@@ -1,0 +1,10 @@
+=== 0xd2a5 ===
+
+void FUN_CODE_d2a5(void)
+
+{
+  DAT_EXTMEM_e349 = 2;
+  DAT_EXTMEM_e34a = 0x58;
+  return;
+}
+

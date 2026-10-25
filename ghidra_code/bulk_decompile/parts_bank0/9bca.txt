@@ -1,0 +1,11 @@
+=== 0x9bca ===
+
+void FUN_CODE_9bca(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  DAT_EXTMEM_e6fe = DAT_EXTMEM_e6fe + '\x01';
+  DAT_INTMEM_4b = DAT_INTMEM_4b + -1;
+  return;
+}
+

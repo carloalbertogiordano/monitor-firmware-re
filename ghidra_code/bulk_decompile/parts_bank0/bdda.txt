@@ -1,0 +1,9 @@
+=== 0xbdda ===
+
+void FUN_CODE_bdda(short param_1)
+
+{
+  DAT_EXTMEM_e345 = *(undefined1 *)(param_1 + 1);
+  return;
+}
+

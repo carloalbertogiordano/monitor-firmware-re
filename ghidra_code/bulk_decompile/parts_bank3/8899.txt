@@ -1,0 +1,11 @@
+=== 0x8899 ===
+
+void FUN_CODE_8899(void)
+
+{
+  DAT_EXTMEM_0bcc = DAT_EXTMEM_0bcc & 0x1f | 0x20;
+  DAT_EXTMEM_0bcd = DAT_EXTMEM_0bcd & 0x1f | 0x40;
+  DAT_EXTMEM_0bce = DAT_EXTMEM_0bce & 0x1f | 0x20;
+  return;
+}
+

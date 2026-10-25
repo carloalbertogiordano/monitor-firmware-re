@@ -1,0 +1,10 @@
+=== 0x442a ===
+
+char FUN_CODE_442a(char param_1)
+
+{
+  char in_PSW;
+  
+  return (param_1 - (in_PSW >> 7)) + -0x1f;
+}
+

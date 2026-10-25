@@ -1,0 +1,13 @@
+=== 0xf7ee ===
+
+char FUN_CODE_f7ee(short param_1)
+
+{
+  FUN_CODE_775f();
+  *(undefined1 *)(param_1 + 1) = 0x2a;
+  _0_3 = 0;
+  FUN_CODE_076f(0,4,0x10,0,0x2a);
+  return (DAT_INTMEM_2c & 0x1f) -
+         ((DAT_INTMEM_2a & 0x1f) - (((DAT_INTMEM_2d < DAT_INTMEM_2b) << 7) >> 7));
+}
+

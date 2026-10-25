@@ -1,0 +1,8 @@
+=== 0x892f ===
+
+byte FUN_CODE_892f(void)
+
+{
+  return DAT_EXTMEM_e662 & 0xf8;
+}
+

@@ -1,0 +1,9 @@
+=== 0xe439 ===
+
+void FUN_CODE_e439(void)
+
+{
+  FUN_CODE_132c(3,0xe8,0,DAT_EXTMEM_e4c7);
+  return;
+}
+

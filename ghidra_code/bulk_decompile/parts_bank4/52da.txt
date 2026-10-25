@@ -1,0 +1,153 @@
+=== 0x52da ===
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Removing unreachable block (CODE,0x5356) */
+
+void FUN_CODE_52da(byte param_1,byte param_2,char param_3,char param_4,byte param_5,byte param_6,
+                  char param_7,byte param_8,char param_9)
+
+{
+  byte *pbVar1;
+  byte *pbVar2;
+  byte bVar3;
+  byte bVar4;
+  char cVar5;
+  undefined1 uVar6;
+  byte bVar7;
+  byte bVar8;
+  char cVar9;
+  char in_PSW;
+  
+  bVar3 = param_4 + 1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar6 = FIFLG;
+  nop();
+  nop();
+  if (_1_3 == '\0') {
+    BANK1_R3 = BANK1_R3 + '\x01';
+    if (-1 < in_PSW) {
+      BANK1_R2 = BANK1_R2 + '\x01';
+      BANK0_R0 = BANK0_R0 + '\x01';
+    }
+    nop();
+    nop();
+    nop();
+    uVar6 = FIFLG;
+    nop();
+    FUN_CODE_d102(param_7,param_2 - ((param_9 + '\x02') - (in_PSW >> 7)) | param_8);
+    return;
+  }
+  _1_3 = 0;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  pbVar2 = (byte *)(param_3 + '\x02');
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar6 = FIFLG;
+  nop();
+  nop();
+  BANK1_R3 = BANK1_R3 + '\x01';
+  if (-1 < in_PSW) {
+    BANK1_R2 = BANK1_R2 + '\x01';
+    BANK0_R0 = BANK0_R0 + '\x01';
+  }
+  nop();
+  bVar4 = param_7 + 3;
+  uVar6 = decimal_adjust(param_1 | param_8);
+  bVar7 = FUN_CODE_529b(uVar6);
+  pbVar1 = (byte *)(param_2 + 1);
+  cVar5 = CCAP3L;
+  CCAP3L = cVar5 + '\x01';
+  DAT_INTMEM_6b = DAT_INTMEM_6b & 0x4e;
+  if (CARRY1(bVar7,bVar3)) {
+    DAT_INTMEM_53 = DAT_INTMEM_53 & param_2;
+    bVar8 = param_2 & 0x55 & *pbVar1 & *pbVar2 & (byte)pbVar1 & bVar3 & param_5 & param_6 & bVar4 &
+            param_8 & param_2;
+    if (bVar8 != 0) {
+      DAT_INTMEM_64 = DAT_INTMEM_64 ^ 0x65;
+      bVar3 = bVar8 ^ *pbVar1 ^ *pbVar2 ^ (byte)pbVar1 ^ (byte)pbVar2 ^ bVar3 ^ param_6 ^ bVar4 ^
+              param_8 ^ param_2;
+      if (bVar3 == 0) {
+        *pbVar2 = 0x78;
+        FUN_CODE_5483(0x76,0x7b,0x7f);
+        return;
+      }
+      if (bVar3 == BANK3_R5) {
+        bVar4 = bVar3 << 1 | bVar3 >> 7;
+        DAT_INTMEM_64 = DAT_INTMEM_64 & bVar4;
+        bVar3 = T2MOD;
+        T2MOD = bVar3 & (byte)(pbVar2 + bVar4);
+        bVar3 = *(char *)(param_2 + 2) - ((CARRY1((byte)(pbVar2 + bVar4),param_2) << 7) >> 7);
+        bVar4 = *(byte *)ZEXT12(pbVar2) + bVar3;
+        bVar3 = *pbVar2 - ((CARRY1(*(byte *)ZEXT12(pbVar2),bVar3) << 7) >> 7);
+        cVar5 = DAT_INTMEM_3e;
+        func_0x560c(bVar4 + bVar3 >> 1 | CARRY1(bVar4,bVar3) << 7,DAT_INTMEM_3e);
+        cVar9 = FUN_CODE_50d1();
+        thunk_FUN_CODE_d102(cVar9 + cVar5 + -1);
+        return;
+      }
+      uVar6 = DAT_SFR_ff;
+      bVar3 = (bVar3 | param_5) - 1 ^ 0xd2;
+      DAT_SFR_ff = bVar3;
+      nop();
+      nop();
+      thunk_FUN_CODE_8709(bVar3 - 1,uVar6);
+      return;
+    }
+    DAT_INTMEM_50 = DAT_INTMEM_50 + '\x01';
+    if ((char)((CARRY1(bVar7,bVar3) | _1_1) << 7) < '\0') {
+      bVar7 = func_0x574a(param_8 + 1);
+      DAT_INTMEM_31 = DAT_INTMEM_31 + -1;
+      *pbVar1 = *pbVar1 - 1;
+      FUN_CODE_536f(bVar7 & bVar4);
+      *pbVar2 = *pbVar2 - 1;
+      FUN_CODE_537f();
+      FUN_CODE_538e(pbVar1 + -1);
+      func_0x529c(pbVar2 + -1);
+      FUN_CODE_51a9(bVar3 - 1);
+      FUN_CODE_50b6(param_5 - 1);
+      return;
+    }
+  }
+  else {
+    bVar4 = decimal_adjust(param_2);
+    *pbVar2 = *pbVar2 & 0xf0 | bVar4 & 0xf;
+    if (bVar3 == 1) {
+      *(byte *)ZEXT12(pbVar1) = param_2;
+      DAT_SFR_f8 = param_2;
+      nop();
+      return;
+    }
+  }
+  uVar6 = P2_2;
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+

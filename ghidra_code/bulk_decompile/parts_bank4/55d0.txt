@@ -1,0 +1,106 @@
+=== 0x55d0 ===
+
+/* WARNING: Instruction at (CODE,0x5621) overlaps instruction at (CODE,0x5620)
+    */
+
+void FUN_CODE_55d0(byte param_1,short param_2,byte *param_3,byte *param_4,byte param_5,char param_6,
+                  byte param_7,char param_8,byte param_9,byte param_10)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  undefined1 *puVar6;
+  byte bVar7;
+  
+  puVar6 = (undefined1 *)0x0;
+  if (param_9 != 0x3c) {
+    bVar7 = *param_4;
+    *param_4 = param_1;
+    param_1 = bVar7 + (param_7 - (((param_9 < 0x3c) << 7) >> 7));
+  }
+  bVar7 = EPCONFIG;
+  EPCONFIG = bVar7 & 0x3c;
+  param_2 = param_2 + 1;
+  bVar3 = (param_1 + param_7) - ((CARRY1(param_1,param_7) << 7) >> 7);
+  bVar7 = CARRY1(param_7,bVar3) << 7;
+  *(byte *)ZEXT12(param_4) = param_7 + bVar3;
+  bVar4 = FUN_CODE_563d(param_2);
+  bVar3 = HPSTAT;
+  HPSTAT = bVar3 | 0x3d;
+  bVar3 = param_8 - 1;
+  if (bVar3 == 0) {
+    *(byte *)ZEXT12(param_4) = bVar4;
+    bVar4 = HIFLG;
+    HIFLG = bVar4 & 0x3e;
+    bVar7 = param_10 - ((!CARRY1(*(byte *)ZEXT12(param_3),param_9 - ((char)bVar7 >> 7)) << 7) >> 7);
+    bVar4 = param_10 + bVar7;
+    bVar4 = bVar4 * '\x02' | bVar4 >> 7;
+    *param_3 = bVar4;
+    bVar7 = param_10 - ((CARRY1(param_10,bVar7) << 7) >> 7);
+    bVar5 = bVar4 + bVar7;
+    param_10 = param_10 - ((CARRY1(bVar4,bVar7) << 7) >> 7);
+    bVar7 = CARRY1(bVar5,param_10) << 7;
+    bVar4 = bVar5 + param_10;
+    nop();
+    if (!CARRY1(bVar5,param_10)) {
+      FUN_CODE_5060();
+      return;
+    }
+    nop();
+    if (bVar4 == 0) {
+      TCON = BANK0_R0;
+      param_4 = param_4 + '\x01';
+      uVar1 = RB8;
+      nop();
+    }
+    puVar6 = (undefined1 *)(bVar4 != 0);
+    nop();
+    param_5 = param_5 + 1;
+    cVar2 = PT2;
+    if (cVar2 == '\x01') goto LAB_CODE_5621;
+    if ((bVar4 >> 4 & 1) == 0) goto LAB_CODE_5626;
+    puVar6['\x01'] = 0x19;
+    puVar6['\x02'] = 0x56;
+    bVar4 = FUN_CODE_5101(param_2 + 2,bVar5);
+    if ((bVar4 & 2) != 0) {
+      FUN_CODE_56c2(bVar4 & 0xfd,param_6 + -1);
+      return;
+    }
+  }
+  else {
+LAB_CODE_5621:
+    bVar4 = bVar4 | param_5;
+  }
+  puVar6['\x01'] = 0x1f;
+  puVar6['\x02'] = 0x56;
+  bVar4 = FUN_CODE_9134(bVar4);
+  puVar6['\x01'] = 0x22;
+  puVar6['\x02'] = 0x56;
+  bVar4 = func_0x574a(bVar4 >> 1 | bVar7 & 0x80);
+  DAT_INTMEM_31 = DAT_INTMEM_31 + -1;
+  bVar4 = bVar4 & bVar3;
+  *param_3 = *param_3 - 1;
+LAB_CODE_5626:
+  puVar6['\x01'] = 0x28;
+  puVar6['\x02'] = 0x56;
+  FUN_CODE_536f(bVar4);
+  *param_4 = *param_4 - 1;
+  puVar6['\x01'] = 0x2b;
+  puVar6['\x02'] = 0x56;
+  FUN_CODE_537f();
+  puVar6['\x01'] = 0x2e;
+  puVar6['\x02'] = 0x56;
+  FUN_CODE_538e(param_3 + -1);
+  puVar6['\x01'] = 0x31;
+  puVar6['\x02'] = 0x56;
+  func_0x529c(param_4 + -1);
+  puVar6['\x01'] = 0x34;
+  puVar6['\x02'] = 0x56;
+  FUN_CODE_51a9(param_5 - 1);
+  FUN_CODE_50b6(param_6 + -1);
+  return;
+}
+

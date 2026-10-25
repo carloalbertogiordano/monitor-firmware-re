@@ -1,0 +1,96 @@
+=== 0x3260 ===
+
+/* WARNING: Instruction at (CODE,0x3278) overlaps instruction at (CODE,0x3276)
+    */
+
+byte * FUN_CODE_3260(byte param_1,byte param_2,byte *param_3,char *param_4,byte param_5,char param_6
+                    ,undefined1 param_7,char param_8)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  byte *pbVar3;
+  char *pcVar4;
+  char cVar5;
+  byte bVar6;
+  byte bVar7;
+  byte in_PSW;
+  
+  bVar7 = param_1 >> 1 | in_PSW & 0x80;
+  nop();
+  nop();
+  BANK2_R6 = BANK2_R6 + -1;
+  *param_4 = *param_4 + -1;
+  pbVar3 = param_3 + -1;
+  nop();
+  nop();
+  pcVar4 = param_4 + -1;
+  nop();
+  nop();
+  cVar5 = bVar7 - 2;
+  if (_0_0 == '\x01') {
+    cVar5 = bVar7 - 1;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar6 = bVar7 + 0x51 & *pbVar3;
+  *pcVar4 = *pcVar4 + -1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (-1 < (char)((pbVar3 < &DAT_INTMEM_32 | _8_3) << 7)) {
+    pbVar3 = param_3;
+    pcVar4 = param_4;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar2 = P2_0;
+  nop();
+  nop();
+  nop();
+  cVar1 = P1_2;
+  if (cVar1 != '\0') {
+    P1_2 = 0;
+    nop();
+    nop();
+    pbVar3 = (byte *)thunk_FUN_CODE_3186(pcVar4,param_6 + -1,param_7,bVar6,bVar7 - 2,cVar5);
+    return pbVar3;
+  }
+  bVar7 = (param_8 - 1U >> 1 | (param_8 - 1U) * -0x80 | param_5) + 0x90;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (param_2 != 0) {
+    bVar7 = bVar7 / param_2;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_SFR_ff = bVar6;
+  DAT_EXTMEM_e6c6 = DAT_EXTMEM_fff4;
+  return pbVar3 + bVar7;
+}
+

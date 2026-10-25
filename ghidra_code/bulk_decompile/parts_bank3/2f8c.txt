@@ -1,0 +1,37 @@
+=== 0x2f8c ===
+
+void FUN_CODE_2f8c(char *param_1,char param_2)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte in_PSW;
+  
+  bVar1 = FUN_CODE_29ec();
+  nop();
+  bVar2 = bVar1 >> 1 | in_PSW & 0x80;
+  nop();
+  BANK0_R0 = BANK0_R0 ^ 0xec;
+  FUN_CODE_2988(param_2 + (*param_1 - ((char)(bVar1 << 7) >> 7)),bVar2);
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1259(bVar2,0x23,0x29,0xff,1,0,2);
+  DAT_EXTMEM_e33a = 0x11;
+  if (DAT_EXTMEM_e1dc == '\x01') {
+    FUN_CODE_08f5();
+    DAT_EXTMEM_e33b = 0;
+  }
+  else {
+    DAT_EXTMEM_e33b = 0xee;
+  }
+  FUN_CODE_2785(0x3a,0xe3,1,2);
+  return;
+}
+

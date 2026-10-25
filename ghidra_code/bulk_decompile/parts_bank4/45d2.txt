@@ -1,0 +1,30 @@
+=== 0x45d2 ===
+
+void FUN_CODE_45d2(byte param_1,char param_2,byte param_3,byte param_4,char param_5,char param_6)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte *pbVar3;
+  byte in_PSW;
+  
+  _4_4 = in_PSW >> 7;
+  bVar1 = param_1 | param_3 | param_3 | param_3 | param_3 | param_3;
+  REN = in_PSW >> 7;
+  bVar2 = DAT_SFR_92;
+  bVar2 = bVar1 + 0x49 & bVar2;
+  if (param_2 == '\x01') {
+    pbVar3 = (byte *)(bVar2 + (BANK0_R0 - (((0xb6 < bVar1) << 7) >> 7)));
+    nop();
+    nop();
+    bVar2 = (((byte)(pbVar3 + param_3) ^ *pbVar3) - 0x25 | (byte)pbVar3 | (byte)pbVar3) -
+            (param_5 - (((0xb6 < ((byte)(pbVar3 + param_3) ^ *pbVar3) + 0x92) << 7) >> 7));
+    _4_4 = 0xb6 < bVar2;
+    param_4 = bVar2 + 0x49 | (byte)pbVar3;
+    bVar2 = param_4 + 1;
+    param_6 = param_6 + '\x01';
+  }
+  FUN_CODE_4790(bVar2,param_4,param_6);
+  return;
+}
+

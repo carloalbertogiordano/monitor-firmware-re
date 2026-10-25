@@ -1,0 +1,13 @@
+=== 0xd256 ===
+
+void FUN_CODE_d256(short param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e35e = *(undefined1 *)(param_1 + 1);
+  DAT_EXTMEM_e35d = param_2;
+  FUN_CODE_082f(0x20);
+  FUN_CODE_cea4(0x59,0xe3,1,2);
+  FUN_CODE_0bd7(1);
+  return;
+}
+

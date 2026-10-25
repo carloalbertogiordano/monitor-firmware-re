@@ -1,0 +1,10 @@
+=== 0xfaeb ===
+
+void FUN_CODE_faeb(undefined1 param_1)
+
+{
+  DAT_EXTMEM_ff61 = param_1;
+  DAT_EXTMEM_ff60 = 0x21;
+  return;
+}
+

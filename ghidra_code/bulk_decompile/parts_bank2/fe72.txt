@@ -1,0 +1,8 @@
+=== 0xfe72 ===
+
+undefined1 FUN_CODE_fe72(void)
+
+{
+  return (&LAB_CODE_369d)[DAT_EXTMEM_e33f];
+}
+

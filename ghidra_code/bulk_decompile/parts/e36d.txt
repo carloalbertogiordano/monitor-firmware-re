@@ -1,0 +1,35 @@
+=== 0xe36d ===
+
+void FUN_CODE_e36d(byte *param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  undefined1 uVar4;
+  byte *pbVar5;
+  
+  bVar2 = FUN_CODE_877e(0,0);
+  *param_1 = bVar2 & 199;
+  bVar2 = FUN_CODE_88a7();
+  *param_1 = bVar2;
+  bVar2 = DAT_EXTMEM_02c8 & 1;
+  DAT_EXTMEM_02c8 = DAT_EXTMEM_02c8 & 0xfe;
+  DAT_EXTMEM_02c9 = 0x28;
+  DAT_EXTMEM_02ca = DAT_EXTMEM_02ca & 199 | 8;
+  cVar1 = '\0';
+  do {
+    DAT_INTMEM_55 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_55 = DAT_INTMEM_55 + -1;
+    } while (DAT_INTMEM_55 != '\0');
+    pbVar5 = (byte *)0x2ca;
+    cVar1 = cVar1 + '\x01';
+  } while (cVar1 != '\t');
+  bVar3 = FUN_CODE_8784();
+  uVar4 = FUN_CODE_88b7(bVar3 & 7);
+  bVar3 = FUN_CODE_8823(uVar4);
+  *pbVar5 = bVar3 | bVar2;
+  return;
+}
+

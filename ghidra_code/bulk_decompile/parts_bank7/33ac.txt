@@ -1,0 +1,9 @@
+=== 0x33ac ===
+
+void FUN_CODE_33ac(byte param_1)
+
+{
+  DAT_INTMEM_29 = DAT_INTMEM_29 & param_1;
+  return;
+}
+

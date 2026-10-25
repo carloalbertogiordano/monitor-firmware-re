@@ -1,0 +1,8 @@
+=== 0x4868 ===
+
+undefined1 FUN_CODE_4868(void)
+
+{
+  return 0x50;
+}
+

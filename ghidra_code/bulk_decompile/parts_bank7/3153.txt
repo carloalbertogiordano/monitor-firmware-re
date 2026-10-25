@@ -1,0 +1,12 @@
+=== 0x3153 ===
+
+void FUN_CODE_3153(char param_1,byte param_2)
+
+{
+  char in_PSW;
+  
+  *(byte *)(ushort)param_2 = param_1 + (param_2 - (in_PSW >> 7));
+  FUN_CODE_353a();
+  return;
+}
+

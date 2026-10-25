@@ -1,0 +1,9 @@
+=== 0x48c3 ===
+
+void FUN_CODE_48c3(void)
+
+{
+  FUN_CODE_1298(1);
+  return;
+}
+

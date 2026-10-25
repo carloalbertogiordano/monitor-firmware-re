@@ -1,0 +1,8 @@
+=== 0xc519 ===
+
+undefined1 FUN_CODE_c519(void)
+
+{
+  return DAT_EXTMEM_e332;
+}
+

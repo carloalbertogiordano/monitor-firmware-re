@@ -1,0 +1,8 @@
+=== 0x6800 ===
+
+undefined1 FUN_CODE_6800(undefined1 param_1)
+
+{
+  return param_1;
+}
+

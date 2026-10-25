@@ -1,0 +1,10 @@
+=== 0xd860 ===
+
+undefined1 FUN_CODE_d860(byte param_1,byte param_2,undefined1 param_3,byte param_4,byte param_5)
+
+{
+  DAT_EXTMEM_e651 = param_2 | param_4;
+  DAT_EXTMEM_e652 = param_1 | param_5;
+  return param_3;
+}
+

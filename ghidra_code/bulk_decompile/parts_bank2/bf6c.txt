@@ -1,0 +1,9 @@
+=== 0xbf6c ===
+
+undefined1 FUN_CODE_bf6c(void)
+
+{
+  FUN_CODE_13f5();
+  return 0;
+}
+

@@ -1,0 +1,11 @@
+=== 0xb1f8 ===
+
+void FUN_CODE_b1f8(undefined1 *param_1)
+
+{
+  DAT_INTMEM_31 = *param_1;
+  DAT_INTMEM_30 = DAT_INTMEM_2f;
+  DAT_INTMEM_29 = 0;
+  return;
+}
+

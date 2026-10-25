@@ -1,0 +1,8 @@
+=== 0xd386 ===
+
+undefined1 FUN_CODE_d386(void)
+
+{
+  return DAT_EXTMEM_e528;
+}
+

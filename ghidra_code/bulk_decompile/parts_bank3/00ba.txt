@@ -1,0 +1,34 @@
+=== 0x00ba ===
+
+undefined1 FUN_CODE_00ba(byte *param_1)
+
+{
+  undefined1 uStackX_0;
+  undefined1 in_stack_000000f4;
+  undefined1 in_stack_000000f9;
+  undefined1 in_stack_000000fa;
+  undefined1 in_stack_000000fb;
+  undefined1 in_stack_000000fc;
+  undefined1 in_stack_000000fd;
+  undefined1 in_stack_000000fe;
+  undefined1 in_stack_000000ff;
+  
+  *param_1 = *param_1 | 0x40;
+  _7_2 = 1;
+  DAT_INTMEM_58 = DAT_INTMEM_58 + '\x01';
+  if (DAT_INTMEM_58 == '\0') {
+    DAT_INTMEM_57 = DAT_INTMEM_57 + '\x01';
+  }
+  FUN_CODE_03ca();
+  DAT_EXTMEM_fff4 = DAT_EXTMEM_e6c7;
+  BANK0_R7 = uStackX_0;
+  BANK0_R6 = in_stack_000000ff;
+  BANK0_R5 = in_stack_000000fe;
+  BANK0_R4 = in_stack_000000fd;
+  BANK0_R3 = in_stack_000000fc;
+  BANK0_R2 = in_stack_000000fb;
+  BANK0_R1 = in_stack_000000fa;
+  BANK0_R0 = in_stack_000000f9;
+  return in_stack_000000f4;
+}
+

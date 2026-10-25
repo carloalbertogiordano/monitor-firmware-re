@@ -1,0 +1,9 @@
+=== 0xb432 ===
+
+void FUN_CODE_b432(byte param_1,char param_2)
+
+{
+  FUN_CODE_127f(param_1 + 2,param_2 - (((0xfd < param_1) << 7) >> 7));
+  return;
+}
+

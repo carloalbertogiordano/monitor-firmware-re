@@ -1,0 +1,23 @@
+=== 0xe7fa ===
+
+void FUN_CODE_e7fa(undefined1 param_1,undefined1 param_2)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_e330 = param_2;
+  DAT_EXTMEM_e331 = param_1;
+  FUN_CODE_ef63();
+  bVar1 = 0x60;
+  FUN_CODE_085f(0xc,0xe,0,0x60);
+  FUN_CODE_08d7(bVar1 >> 2);
+  FUN_CODE_fad8(DAT_EXTMEM_e330);
+  if ((DAT_EXTMEM_e514 >> 2 & 1) != 0) {
+    FUN_CODE_08c5(DAT_EXTMEM_e331);
+    FUN_CODE_08cb(DAT_EXTMEM_e331);
+    return;
+  }
+  FUN_CODE_08d1(DAT_EXTMEM_e331);
+  return;
+}
+

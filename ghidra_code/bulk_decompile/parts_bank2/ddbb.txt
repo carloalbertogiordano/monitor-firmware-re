@@ -1,0 +1,10 @@
+=== 0xddbb ===
+
+void FUN_CODE_ddbb(void)
+
+{
+  FUN_CODE_0f97();
+  DAT_EXTMEM_e33f = 1;
+  return;
+}
+

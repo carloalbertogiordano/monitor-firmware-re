@@ -1,0 +1,10 @@
+=== 0x600b ===
+
+void FUN_CODE_600b(void)
+
+{
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

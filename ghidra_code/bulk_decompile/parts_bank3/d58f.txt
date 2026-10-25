@@ -1,0 +1,8 @@
+=== 0xd58f ===
+
+undefined1 FUN_CODE_d58f(undefined1 param_1)
+
+{
+  return param_1;
+}
+

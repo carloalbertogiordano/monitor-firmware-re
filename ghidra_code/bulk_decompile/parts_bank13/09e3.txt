@@ -1,0 +1,13 @@
+=== 0x09e3 ===
+
+char FUN_CODE_09e3(byte param_1,char *param_2,byte *param_3,byte param_4)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  
+  uVar1 = IPL1;
+  cVar2 = IPL1;
+  return ((param_1 & *param_3) + cVar2 & param_4) + *param_2;
+}
+

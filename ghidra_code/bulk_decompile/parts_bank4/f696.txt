@@ -1,0 +1,15 @@
+=== 0xf696 ===
+
+void FUN_CODE_f696(void)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_8d30();
+  if ((cVar1 != '\0') && (DAT_EXTMEM_b6b0 = DAT_EXTMEM_b6b0 & 0xbf, _1_0 != '\0')) {
+    DAT_EXTMEM_b6b0 = DAT_EXTMEM_b6b0 | 0x40;
+    return;
+  }
+  return;
+}
+

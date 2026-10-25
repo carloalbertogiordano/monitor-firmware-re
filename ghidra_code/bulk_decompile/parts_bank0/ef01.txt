@@ -1,0 +1,29 @@
+=== 0xef01 ===
+
+void FUN_CODE_ef01(char param_1)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  undefined1 uVar4;
+  
+  uVar4 = 0xe4;
+  if (param_1 == '\0') {
+    cVar2 = FUN_CODE_d4e0(0xe418);
+    cVar2 = FUN_CODE_d4bb(CONCAT11(uVar4,cVar2 + '+'));
+    bVar3 = FUN_CODE_d55b(cVar2 + '%');
+    bVar1 = 0xdb < bVar3;
+    cVar2 = bVar3 + 0x24;
+  }
+  else {
+    cVar2 = FUN_CODE_d4e0(0xe418);
+    cVar2 = FUN_CODE_d4bb(CONCAT11(uVar4,cVar2 + ','));
+    bVar3 = FUN_CODE_d55b(cVar2 + '\'');
+    bVar1 = 0xd9 < bVar3;
+    cVar2 = bVar3 + 0x26;
+  }
+  DAT_EXTMEM_ff5c = *(undefined1 *)CONCAT11('x' - ((bVar1 << 7) >> 7),cVar2);
+  return;
+}
+

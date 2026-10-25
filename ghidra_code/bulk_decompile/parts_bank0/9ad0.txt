@@ -1,0 +1,8 @@
+=== 0x9ad0 ===
+
+byte FUN_CODE_9ad0(byte param_1,byte param_2)
+
+{
+  return param_1 + param_2 >> 1 | CARRY1(param_1,param_2) << 7;
+}
+

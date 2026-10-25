@@ -1,0 +1,13 @@
+=== 0xfc07 ===
+
+void FUN_CODE_fc07(short param_1)
+
+{
+  DAT_EXTMEM_e3e1 = *(undefined1 *)(param_1 + 1);
+  DAT_EXTMEM_e3e2 = 0;
+  DAT_EXTMEM_e3e3 = 0x66;
+  DAT_EXTMEM_e3e4 = 1;
+  _0_6 = 0;
+  return;
+}
+

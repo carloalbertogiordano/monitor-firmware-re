@@ -1,0 +1,34 @@
+=== 0xd538 ===
+
+void FUN_CODE_d538(undefined1 param_1)
+
+{
+  byte bVar1;
+  
+  if (_0_3 != '\0') {
+                    /* WARNING: Subroutine does not return */
+    FUN_CODE_1724(0x8834);
+  }
+  bVar1 = FUN_CODE_fd13();
+  FUN_CODE_1718(param_1,0x8834,bVar1 & 0xf3);
+  DAT_INTMEM_53 = '\x15';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+  bVar1 = FUN_CODE_fd13();
+  FUN_CODE_1718(param_1,0x8834,bVar1 & 0xfe);
+  DAT_INTMEM_53 = '%';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+  return;
+}
+

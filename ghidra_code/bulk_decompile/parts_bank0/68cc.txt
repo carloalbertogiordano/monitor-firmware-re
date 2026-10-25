@@ -1,0 +1,87 @@
+=== 0x68cc ===
+
+byte * FUN_CODE_68cc(byte param_1,char *param_2,char param_3,char param_4,byte param_5,byte param_6,
+                    byte param_7,char param_8)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  byte *pbVar3;
+  char cVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  char cVar8;
+  byte *pbVar9;
+  
+  pbVar3 = (byte *)(param_3 + -1);
+  nop();
+  bVar5 = FUN_CODE_2d2b();
+  bVar7 = CARRY1(bVar5,param_6) << 7;
+  bVar6 = FUN_CODE_0e17(bVar5 + param_6);
+  bVar5 = bVar6 << 7;
+  nop();
+  bVar7 = FUN_CODE_3338(bVar6 >> 1 | bVar7 & 0x80);
+  nop();
+  param_4 = param_4 + -1;
+  if (_7_1 == '\0') {
+    return pbVar3 + bVar7 + param_7 + (param_8 - ((CARRY1(bVar7,param_7) << 7) >> 7));
+  }
+  cVar8 = FUN_CODE_3338(param_4,bVar7);
+  nop();
+  if (_7_1 != '\0') {
+    param_8 = param_8 + -1;
+    bVar7 = FUN_CODE_6929(cVar8 + param_7,param_4 + -1,param_8);
+    cVar8 = param_7 + 1;
+    nop();
+    cVar4 = FUN_CODE_6825(param_5 + 1,cVar8,param_8 + '\x01',
+                          pbVar3 + (char)(param_2 +
+                                         ((bVar7 & BANK0_R2) -
+                                         ((CARRY1(bVar7 & BANK0_R2,(byte)pbVar3) << 7) >> 7))));
+    return (byte *)(cVar4 + cVar8);
+  }
+  cVar8 = CARRY1((cVar8 << 1 | bVar5 >> 7) + (*param_2 - (cVar8 >> 7)),param_7) << 7;
+  bVar5 = FUN_CODE_6929(param_4 + -1);
+  bVar7 = (char)param_2 - (cVar8 >> 7);
+  bVar6 = bVar5 + bVar7;
+  bVar7 = *param_2 - ((CARRY1(bVar5,bVar7) << 7) >> 7);
+  nop();
+  pbVar9 = pbVar3 + bVar6 + bVar7 + (param_7 - ((CARRY1(bVar6,bVar7) << 7) >> 7));
+  if (_5_1 != '\0') {
+    nop();
+    return pbVar9 + DAT_INTMEM_31 + (*pbVar3 - ((CARRY1((byte)pbVar9,DAT_INTMEM_31) << 7) >> 7));
+  }
+  bVar6 = (byte)(pbVar9 + DAT_INTMEM_31) ^ (byte)param_2;
+  bVar7 = 0;
+  bVar5 = bVar6;
+  if (param_1 != 0) {
+    bVar5 = bVar6 / param_1;
+    bVar7 = bVar6 % param_1;
+  }
+  bVar6 = (bVar5 ^ (byte)param_2) - param_5;
+  uVar1 = DAT_SFR_ff;
+  uVar2 = DAT_SFR_ff;
+  cVar8 = DAT_SFR_ff;
+  DAT_SFR_ff = cVar8 + -1;
+  cVar8 = DAT_SFR_ff;
+  if (cVar8 == '\0') {
+    *pbVar3 = *(byte *)ZEXT12(pbVar3) ^ (byte)param_2;
+    pbVar9 = (byte *)(param_2 + '\x01');
+    bVar6 = *pbVar9;
+    *pbVar3 = *pbVar3 - 1;
+    bVar5 = FUN_CODE_68ff(param_6 - 1,param_7,uVar1,
+                          (byte)(pbVar9 + (((*(byte *)ZEXT12(pbVar3) ^ (byte)param_2) >> 1 |
+                                           ((bVar5 ^ (byte)param_2) < param_5) << 7) ^ (byte)pbVar3)
+                                ) ^ (byte)pbVar3 | bVar6);
+    pbVar3 = (byte *)(bVar5 ^ (byte)pbVar3);
+    if (bVar7 != 0) {
+      pbVar3 = (byte *)((byte)pbVar3 / bVar7);
+    }
+    DAT_SFR_ff = *pbVar9;
+    BANK3_R1 = pbVar9;
+    return pbVar3;
+  }
+  pbVar3 = (byte *)FUN_CODE_68ff(param_2,bVar6 ^ (byte)param_2,param_7 - 1,uVar1,bVar6);
+  return pbVar3;
+}
+

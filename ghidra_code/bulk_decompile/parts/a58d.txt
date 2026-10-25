@@ -1,0 +1,8 @@
+=== 0xa58d ===
+
+undefined1 FUN_CODE_a58d(void)
+
+{
+  return 0;
+}
+

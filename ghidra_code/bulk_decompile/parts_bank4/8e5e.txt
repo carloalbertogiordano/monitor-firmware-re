@@ -1,0 +1,8 @@
+=== 0x8e5e ===
+
+byte FUN_CODE_8e5e(byte *param_1)
+
+{
+  return *param_1 >> 6 | (*param_1 >> 4) << 7;
+}
+

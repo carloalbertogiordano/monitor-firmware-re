@@ -1,0 +1,23 @@
+=== 0xeab1 ===
+
+char FUN_CODE_eab1(void)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e33e = 0;
+  while( true ) {
+    if (DAT_EXTMEM_e33e != 0) break;
+    FUN_CODE_702f(0);
+    FUN_CODE_6f29(4);
+    cVar1 = (0xf8 < DAT_EXTMEM_e33e) << 7;
+    FUN_CODE_6e8a(DAT_EXTMEM_e33e + 7);
+    FUN_CODE_0f13();
+    if (cVar1 < '\0') {
+      FUN_CODE_fbeb(DAT_EXTMEM_e33e);
+    }
+    DAT_EXTMEM_e33e = DAT_EXTMEM_e33e + 1;
+  }
+  return DAT_EXTMEM_e33e - 1;
+}
+

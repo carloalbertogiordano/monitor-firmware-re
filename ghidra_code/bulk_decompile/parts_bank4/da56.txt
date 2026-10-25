@@ -1,0 +1,41 @@
+=== 0xda56 ===
+
+void FUN_CODE_da56(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  
+  switch(param_1) {
+  case 0x19:
+    FUN_CODE_0757();
+    return;
+  case 0x1a:
+    DAT_EXTMEM_e6e2 = DAT_EXTMEM_e6e2 | 2;
+    return;
+  case 0x1b:
+    DAT_EXTMEM_e6e1 = DAT_EXTMEM_e6e1 & 0xf | 0x40;
+    return;
+  case 0x1c:
+    DAT_EXTMEM_e6e1 = DAT_EXTMEM_e6e1 & 0xf | 0x50;
+    return;
+  case 0x1d:
+    DAT_EXTMEM_e6f2 = DAT_EXTMEM_e6f2 & 0xf0 | 1;
+    return;
+  case 0x1e:
+    uVar1 = 2;
+    break;
+  case 0x1f:
+    uVar1 = 3;
+    break;
+  case 0x20:
+    FUN_CODE_f20c();
+    return;
+  case 0x21:
+    _6_7 = 0;
+  default:
+    return;
+  }
+  FUN_CODE_fb55(uVar1);
+  return;
+}
+

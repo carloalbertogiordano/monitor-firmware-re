@@ -1,0 +1,17 @@
+=== 0x81f7 ===
+
+void FUN_CODE_81f7(undefined1 param_1,undefined1 param_2,byte param_3)
+
+{
+  DAT_EXTMEM_e338 = param_2;
+  DAT_EXTMEM_e339 = param_1;
+  DAT_EXTMEM_e33a = 0;
+  if (7 < param_3) {
+    return;
+  }
+                    /* WARNING: Could not recover jumptable at 0x8211. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)(param_3 * '\x03') + 0x8212))();
+  return;
+}
+

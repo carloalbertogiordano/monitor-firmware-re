@@ -1,0 +1,9 @@
+=== 0xde24 ===
+
+void FUN_CODE_de24(void)
+
+{
+  DAT_EXTMEM_0b01 = DAT_EXTMEM_0b01 & 0xfe;
+  return;
+}
+

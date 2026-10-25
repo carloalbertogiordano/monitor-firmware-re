@@ -1,0 +1,10 @@
+=== 0x8d4d ===
+
+void FUN_CODE_8d4d(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  bEXTMEMb6a0 = bEXTMEMb6a0 & 0x7f | 0x80;
+  return;
+}
+

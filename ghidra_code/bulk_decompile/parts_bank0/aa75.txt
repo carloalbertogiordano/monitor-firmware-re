@@ -1,0 +1,14 @@
+=== 0xaa75 ===
+
+void FUN_CODE_aa75(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 0;
+  FUN_CODE_078d(0);
+  DAT_EXTMEM_b7d9 = uVar1;
+  DAT_INTMEM_4c = DAT_INTMEM_4c + '\x01';
+  return;
+}
+

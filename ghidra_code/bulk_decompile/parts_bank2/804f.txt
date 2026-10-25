@@ -1,0 +1,8 @@
+=== 0x804f ===
+
+byte FUN_CODE_804f(void)
+
+{
+  return DAT_EXTMEM_e52c >> 1 | DAT_EXTMEM_e52b << 7;
+}
+

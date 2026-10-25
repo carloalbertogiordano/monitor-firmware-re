@@ -1,0 +1,9 @@
+=== 0x8961 ===
+
+undefined1 FUN_CODE_8961(void)
+
+{
+  DAT_EXTMEM_e38a = 7;
+  return 0;
+}
+

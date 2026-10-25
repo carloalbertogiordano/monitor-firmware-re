@@ -1,0 +1,8 @@
+=== 0x750c ===
+
+undefined1 FUN_CODE_750c(void)
+
+{
+  return 0;
+}
+

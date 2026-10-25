@@ -1,0 +1,10 @@
+=== 0x74c1 ===
+
+void FUN_CODE_74c1(void)
+
+{
+  DAT_EXTMEM_e18e = 0;
+  DAT_EXTMEM_e18f = DAT_EXTMEM_e4cb & 0xf;
+  return;
+}
+

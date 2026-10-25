@@ -1,0 +1,8 @@
+=== 0xb17c ===
+
+char FUN_CODE_b17c(short param_1)
+
+{
+  return *(char *)(param_1 + 1) - DAT_INTMEM_2d;
+}
+

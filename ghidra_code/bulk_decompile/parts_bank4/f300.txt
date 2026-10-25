@@ -1,0 +1,17 @@
+=== 0xf300 ===
+
+void FUN_CODE_f300(void)
+
+{
+  DAT_EXTMEM_e627 = 0;
+  DAT_EXTMEM_e624 = 0;
+  DAT_EXTMEM_e62a = 0;
+  DAT_EXTMEM_e628 = 0;
+  DAT_EXTMEM_e61e = 0;
+  DAT_EXTMEM_e626 = 0;
+  DAT_EXTMEM_e625 = 0;
+  DAT_EXTMEM_e622 = 3;
+  DAT_EXTMEM_e620 = 3;
+  return;
+}
+

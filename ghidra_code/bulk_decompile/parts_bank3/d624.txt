@@ -1,0 +1,8 @@
+=== 0xd624 ===
+
+byte FUN_CODE_d624(void)
+
+{
+  return DAT_INTMEM_4b & 4 ^ 4;
+}
+

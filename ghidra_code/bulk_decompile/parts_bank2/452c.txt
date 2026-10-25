@@ -1,0 +1,8 @@
+=== 0x452c ===
+
+byte FUN_CODE_452c(void)
+
+{
+  return DAT_EXTMEM_e4cc >> 6;
+}
+

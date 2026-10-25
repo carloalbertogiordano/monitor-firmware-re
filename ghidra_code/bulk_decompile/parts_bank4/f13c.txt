@@ -1,0 +1,8 @@
+=== 0xf13c ===
+
+undefined1 FUN_CODE_f13c(void)
+
+{
+  return DAT_EXTMEM_e339;
+}
+

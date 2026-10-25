@@ -1,0 +1,9 @@
+=== 0x7546 ===
+
+void FUN_CODE_7546(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(DAT_EXTMEM_e539,DAT_EXTMEM_e53a,DAT_EXTMEM_e515,DAT_EXTMEM_e516);
+}
+

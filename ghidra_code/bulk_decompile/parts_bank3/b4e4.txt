@@ -1,0 +1,9 @@
+=== 0xb4e4 ===
+
+void FUN_CODE_b4e4(byte *param_1)
+
+{
+  FUN_CODE_152f(0,0,0,*param_1 & 0xf,0,2,0xe2,0x48);
+  return;
+}
+

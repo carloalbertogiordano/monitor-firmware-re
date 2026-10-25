@@ -1,0 +1,10 @@
+=== 0x3000 ===
+
+void FUN_CODE_3000(void)
+
+{
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

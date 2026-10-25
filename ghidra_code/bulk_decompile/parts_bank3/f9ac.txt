@@ -1,0 +1,27 @@
+=== 0xf9ac ===
+
+void FUN_CODE_f9ac(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  if ((((DAT_EXTMEM_e5b7 != '\x03') || (DAT_EXTMEM_fe23 != '\0')) && (DAT_EXTMEM_e5b7 == '\x04')) &&
+     (cVar1 = P1_7, cVar1 != '\0')) {
+    _3_7 = 1;
+    bVar3 = 0x5f - DAT_EXTMEM_e582;
+    bVar2 = ((0x5f < DAT_EXTMEM_e582) << 7) >> 7;
+    FUN_CODE_132c(0,10);
+    cVar1 = '\x02';
+    do {
+      bVar3 = bVar3 >> 1 | bVar2 << 7;
+      cVar1 = cVar1 + -1;
+      bVar2 = bVar2 >> 1;
+    } while (cVar1 != '\0');
+    DAT_INTMEM_50 = bVar3;
+    FUN_CODE_074b(0,3);
+  }
+  return;
+}
+

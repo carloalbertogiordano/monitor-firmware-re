@@ -1,0 +1,13 @@
+=== 0xc4ba ===
+
+void FUN_CODE_c4ba(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xf8 | 4;
+  param_1[1] = param_1[1] & 0xf8 | 4;
+  param_1[2] = param_1[2] & 0xf8 | 4;
+  param_1[3] = param_1[3] & 0xf8 | 4;
+  param_1[4] = param_1[4] & 0xf8 | 4;
+  return;
+}
+

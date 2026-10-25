@@ -1,0 +1,9 @@
+=== 0xa7a8 ===
+
+char FUN_CODE_a7a8(void)
+
+{
+  DAT_EXTMEM_e32e = DAT_EXTMEM_e32e + 1;
+  return -0x80 - (-0x80 - (((DAT_EXTMEM_e32e < 2) << 7) >> 7));
+}
+

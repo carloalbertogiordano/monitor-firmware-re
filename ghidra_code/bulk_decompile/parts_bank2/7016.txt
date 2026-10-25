@@ -1,0 +1,8 @@
+=== 0x7016 ===
+
+undefined1 FUN_CODE_7016(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,14 @@
+=== 0x0e01 ===
+
+void FUN_CODE_0e01(byte param_1,short param_2,byte param_3,char param_4,char param_5)
+
+{
+  char in_PSW;
+  
+  nop();
+  nop();
+  FUN_CODE_0800(*(char *)((ushort)param_1 + 0xe02) + (param_5 - (in_PSW >> 7)),param_2,param_3,
+                param_4);
+  return;
+}
+

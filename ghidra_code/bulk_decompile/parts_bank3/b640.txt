@@ -1,0 +1,8 @@
+=== 0xb640 ===
+
+undefined1 FUN_CODE_b640(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 1);
+}
+

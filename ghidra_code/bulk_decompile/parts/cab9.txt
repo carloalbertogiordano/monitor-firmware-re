@@ -1,0 +1,12 @@
+=== 0xcab9 ===
+
+byte FUN_CODE_cab9(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = 0xcd;
+  FUN_CODE_085f(2,0xcd);
+  return bVar1 >> 4 | bVar1 << 4;
+}
+

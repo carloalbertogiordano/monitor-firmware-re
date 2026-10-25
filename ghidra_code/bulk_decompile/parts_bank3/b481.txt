@@ -1,0 +1,8 @@
+=== 0xb481 ===
+
+undefined1 FUN_CODE_b481(void)
+
+{
+  return 0;
+}
+

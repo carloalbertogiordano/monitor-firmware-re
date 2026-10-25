@@ -1,0 +1,33 @@
+=== 0x3955 ===
+
+char FUN_CODE_3955(byte param_1,char param_2,undefined1 param_3,char param_4)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  undefined1 uVar4;
+  byte bVar5;
+  
+  DAT_EXTMEM_e334 = param_4 << 4;
+  DAT_EXTMEM_e335 = 0;
+  DAT_EXTMEM_e331 = param_3;
+  DAT_EXTMEM_e332 = param_2;
+  DAT_EXTMEM_e333 = param_1;
+  while( true ) {
+    if (0xf < DAT_EXTMEM_e335) break;
+    bVar1 = DAT_EXTMEM_e333;
+    cVar2 = DAT_EXTMEM_e332;
+    bVar3 = DAT_EXTMEM_e335;
+    uVar4 = FUN_CODE_1298((ushort)DAT_EXTMEM_e335 * 3,DAT_EXTMEM_e331);
+    bVar5 = (byte)((ushort)bVar3 * 3);
+    uVar4 = FUN_CODE_1298(1,bVar1 + bVar5,
+                          cVar2 + ((char)((ushort)bVar3 * 3 >> 8) -
+                                  ((CARRY1(bVar1,bVar5) << 7) >> 7)),uVar4);
+    DAT_EXTMEM_e339 = FUN_CODE_1298(2,uVar4);
+    FUN_CODE_433b(BANK0_R6,BANK0_R4,DAT_EXTMEM_e334 + DAT_EXTMEM_e335);
+    DAT_EXTMEM_e335 = DAT_EXTMEM_e335 + 1;
+  }
+  return DAT_EXTMEM_e335 - 0x10;
+}
+

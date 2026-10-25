@@ -1,0 +1,9 @@
+=== 0xd073 ===
+
+void FUN_CODE_d073(void)
+
+{
+  FUN_CODE_17ba(0,100,DAT_EXTMEM_e544,DAT_EXTMEM_e545);
+  return;
+}
+

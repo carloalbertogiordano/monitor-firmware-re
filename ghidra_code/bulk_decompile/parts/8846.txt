@@ -1,0 +1,9 @@
+=== 0x8846 ===
+
+void FUN_CODE_8846(void)
+
+{
+  DAT_EXTMEM_ffe4 = DAT_EXTMEM_ffe4 | 0xc;
+  return;
+}
+

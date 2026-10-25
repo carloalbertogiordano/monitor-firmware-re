@@ -1,0 +1,76 @@
+=== 0x133e ===
+
+byte FUN_CODE_133e(char param_1,byte param_2,byte param_3,byte param_4)
+
+{
+  bool bVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  
+  if (param_1 != '\0') {
+    bVar2 = 0;
+    cVar3 = '\b';
+    do {
+      bVar1 = CARRY1(param_4,param_4);
+      param_4 = param_4 * '\x02';
+      bVar4 = param_3 << 1 | bVar1;
+      bVar6 = bVar2 << 1 | param_3 >> 7;
+      bVar5 = param_1 - (((bVar4 < param_2 - ((char)bVar2 >> 7)) << 7) >> 7);
+      bVar2 = bVar6;
+      if (bVar6 >= bVar5) {
+        bVar4 = bVar4 - (param_2 - (((bVar6 < bVar5) << 7) >> 7));
+        param_4 = param_4 + 1;
+        bVar2 = bVar6 - bVar5;
+      }
+      cVar3 = cVar3 + -1;
+      param_3 = bVar4;
+    } while (cVar3 != '\0');
+    return bVar4;
+  }
+  if (param_3 == 0) {
+    if (param_2 != 0) {
+      param_4 = param_4 / param_2;
+    }
+    return param_4;
+  }
+  bVar2 = 0;
+  bVar5 = param_3;
+  if (param_2 != 0) {
+    bVar5 = param_3 / param_2;
+    bVar2 = param_3 % param_2;
+  }
+  cVar3 = OV;
+  if (cVar3 != '\x01') {
+    cVar3 = '\b';
+    bVar5 = bVar2;
+LAB_CODE_137c:
+    do {
+      bVar1 = CARRY1(param_4,param_4);
+      param_4 = param_4 * '\x02';
+      bVar2 = bVar5 << 1 | bVar1;
+      if ((char)bVar5 < '\0') {
+        bVar5 = bVar2 - param_2;
+      }
+      else {
+        bVar4 = param_2 - ((char)bVar5 >> 7);
+        bVar6 = bVar2 - bVar4;
+        bVar5 = bVar6;
+        if (bVar2 < bVar4) {
+          cVar3 = cVar3 + -1;
+          bVar5 = bVar2;
+          if (cVar3 == '\0') {
+            return bVar6;
+          }
+          goto LAB_CODE_137c;
+        }
+      }
+      param_4 = param_4 + 1;
+      cVar3 = cVar3 + -1;
+    } while (cVar3 != '\0');
+  }
+  return bVar5;
+}
+

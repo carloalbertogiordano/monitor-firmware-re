@@ -1,0 +1,42 @@
+=== 0xd841 ===
+
+char FUN_CODE_d841(void)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  char cVar4;
+  
+  DAT_EXTMEM_e332 = 0x25;
+  DAT_EXTMEM_e331 = 0;
+  while( true ) {
+    cVar4 = -3;
+    if ((DAT_EXTMEM_e331 >= 3) ||
+       (bVar1 = 3 - (((DAT_EXTMEM_e331 < 3) << 7) >> 7), cVar4 = -bVar1, bVar1 <= DAT_EXTMEM_e331))
+    {
+      return DAT_EXTMEM_e331 + cVar4;
+    }
+    cVar4 = (0xfb < DAT_EXTMEM_e331) << 7;
+    FUN_CODE_6e8c(0xe,DAT_EXTMEM_e331 + 4);
+    FUN_CODE_0f13();
+    uVar3 = BANK0_R7;
+    uVar2 = BANK0_R6;
+    if (-1 < cVar4) break;
+    if ((DAT_EXTMEM_e332 < 0xf) << 7 < '\0') {
+      FUN_CODE_6ed7(0,DAT_EXTMEM_e332);
+      BANK0_R6 = uVar2;
+      BANK0_R7 = uVar3;
+      goto LAB_CODE_d8a1;
+    }
+    FUN_CODE_6ed7(DAT_EXTMEM_e332 - 0xf);
+    FUN_CODE_1259(0,0xe);
+    DAT_EXTMEM_e332 = DAT_EXTMEM_e332 - 0xe;
+    DAT_EXTMEM_e331 = DAT_EXTMEM_e331 + 1;
+  }
+  FUN_CODE_706a(0);
+LAB_CODE_d8a1:
+  cVar4 = FUN_CODE_1259();
+  return cVar4;
+}
+

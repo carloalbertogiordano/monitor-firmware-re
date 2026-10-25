@@ -1,0 +1,10 @@
+=== 0xfe3e ===
+
+void FUN_CODE_fe3e(void)
+
+{
+  FUN_CODE_0529();
+  FUN_CODE_fe4a();
+  return;
+}
+

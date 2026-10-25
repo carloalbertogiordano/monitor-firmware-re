@@ -1,0 +1,8 @@
+=== 0xd57d ===
+
+undefined1 FUN_CODE_d57d(undefined1 param_1)
+
+{
+  return param_1;
+}
+

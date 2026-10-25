@@ -1,0 +1,14 @@
+=== 0xf794 ===
+
+void FUN_CODE_f794(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = BANK0_R2;
+  FUN_CODE_d874(DAT_EXTMEM_e3c0,0xe3c8,DAT_EXTMEM_e3c2,DAT_EXTMEM_e3c1);
+  BANK0_R2 = uVar1;
+  FUN_CODE_f52e();
+  return;
+}
+

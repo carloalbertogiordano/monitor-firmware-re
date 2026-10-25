@@ -1,0 +1,9 @@
+=== 0xa495 ===
+
+char FUN_CODE_a495(void)
+
+{
+  return DAT_EXTMEM_e54a + (DAT_EXTMEM_e33c - ((CARRY1(DAT_EXTMEM_e54b,DAT_EXTMEM_e33d) << 7) >> 7))
+  ;
+}
+

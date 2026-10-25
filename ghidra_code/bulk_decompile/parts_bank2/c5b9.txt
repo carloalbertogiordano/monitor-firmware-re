@@ -1,0 +1,10 @@
+=== 0xc5b9 ===
+
+void FUN_CODE_c5b9(byte *param_1,byte param_2)
+
+{
+  *param_1 = *param_1 & 6 | param_2 & 0x18;
+  *param_1 = *param_1 & 0xfe | 1;
+  return;
+}
+

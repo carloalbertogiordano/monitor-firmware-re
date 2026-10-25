@@ -1,0 +1,8 @@
+=== 0xfd7e ===
+
+void FUN_CODE_fd7e(void)
+
+{
+  return;
+}
+

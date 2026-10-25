@@ -1,0 +1,8 @@
+=== 0xd045 ===
+
+byte FUN_CODE_d045(void)
+
+{
+  return DAT_EXTMEM_e4cb & 0xf;
+}
+

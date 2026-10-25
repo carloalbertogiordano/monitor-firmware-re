@@ -1,0 +1,9 @@
+=== 0xc4f1 ===
+
+void FUN_CODE_c4f1(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,0,DAT_EXTMEM_4007 & 0xf,0,2,0xe2,0x48);
+}
+

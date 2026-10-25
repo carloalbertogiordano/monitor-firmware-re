@@ -1,0 +1,49 @@
+=== 0x5069 ===
+
+char FUN_CODE_5069(char param_1,char param_2,undefined1 param_3,byte param_4,char param_5)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  char in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  nop();
+  nop();
+  if (_1_3 != '\0') {
+    _1_3 = 0;
+    return param_1;
+  }
+  BANK1_R3 = BANK1_R3 + '\x01';
+  if (-1 < in_PSW) {
+    BANK1_R2 = BANK1_R2 + '\x01';
+    BANK0_R0 = BANK0_R0 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  bVar3 = param_1 - (param_5 - (in_PSW >> 7)) | param_4;
+  if (param_4 == 0) {
+    bVar3 = FUN_CODE_5602(param_2 + '\x01',param_3);
+  }
+  cVar2 = FUN_CODE_22e0(bVar3 >> 1 | bVar3 << 7);
+  return cVar2;
+}
+

@@ -1,0 +1,9 @@
+=== 0x03f7 ===
+
+void FUN_CODE_03f7(void)
+
+{
+  FUN_CODE_2200();
+  return;
+}
+

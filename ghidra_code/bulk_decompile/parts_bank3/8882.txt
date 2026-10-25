@@ -1,0 +1,9 @@
+=== 0x8882 ===
+
+void FUN_CODE_8882(void)
+
+{
+  FUN_CODE_1420(3);
+  return;
+}
+

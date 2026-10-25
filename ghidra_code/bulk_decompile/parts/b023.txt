@@ -1,0 +1,8 @@
+=== 0xb023 ===
+
+byte FUN_CODE_b023(void)
+
+{
+  return DAT_EXTMEM_e58f & 0x20;
+}
+

@@ -1,0 +1,14 @@
+=== 0xca0e ===
+
+void FUN_CODE_ca0e(byte param_1)
+
+{
+  if (((DAT_EXTMEM_e661 >> 2 & 1) == 1) && ((param_1 < 10) << 7 < '\0')) {
+                    /* WARNING: Could not recover jumptable at 0xca27. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)((ushort)(param_1 * '\x03') + 0xca28))();
+    return;
+  }
+  return;
+}
+

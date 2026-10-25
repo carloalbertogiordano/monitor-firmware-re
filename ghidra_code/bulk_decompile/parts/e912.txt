@@ -1,0 +1,31 @@
+=== 0xe912 ===
+
+void FUN_CODE_e912(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_0c85();
+  if (in_PSW < '\0') {
+    FUN_CODE_f65b();
+    return;
+  }
+  FUN_CODE_082f(0x20);
+  if (in_PSW < '\0') {
+    FUN_CODE_fb33();
+    FUN_CODE_0c8b();
+    FUN_CODE_0c91();
+    _0_0 = in_PSW < '\0';
+    FUN_CODE_0c97();
+    FUN_CODE_0c9d(1);
+    FUN_CODE_0ca3();
+    FUN_CODE_0ca9();
+    FUN_CODE_0caf();
+    FUN_CODE_0b77(1);
+    FUN_CODE_ec30();
+    FUN_CODE_0c6d(1);
+    FUN_CODE_fa8c(1);
+  }
+  return;
+}
+

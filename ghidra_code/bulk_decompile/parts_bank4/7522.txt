@@ -1,0 +1,9 @@
+=== 0x7522 ===
+
+void FUN_CODE_7522(byte param_1)
+
+{
+  DAT_EXTMEM_e4d3 = DAT_EXTMEM_e4d3 & 0xdf | (param_1 & 1) << 5;
+  return;
+}
+

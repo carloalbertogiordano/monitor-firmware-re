@@ -1,0 +1,28 @@
+=== 0x3886 ===
+
+void FUN_CODE_3886(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  short sVar3;
+  
+  FUN_CODE_8d27(0xe3e2);
+  FUN_CODE_8d48();
+  FUN_CODE_8d48();
+  cVar1 = FUN_CODE_8dad();
+  if (cVar1 == -2) {
+    FUN_CODE_923f();
+  }
+  if (DAT_EXTMEM_e700 < 0x66) {
+    sVar3 = 0x38af;
+    bVar2 = FUN_CODE_8cd5(DAT_EXTMEM_e700);
+                    /* WARNING: Could not recover jumptable at 0x38ae. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)(sVar3 + (ushort)bVar2))();
+    return;
+  }
+  FUN_CODE_65b0();
+  return;
+}
+

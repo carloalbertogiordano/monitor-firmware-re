@@ -1,0 +1,13 @@
+=== 0x8c79 ===
+
+byte FUN_CODE_8c79(void)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_e3fb = DAT_EXTMEM_ff67;
+  DAT_EXTMEM_e3fc = DAT_EXTMEM_ff68;
+  bVar1 = FUN_CODE_127f(DAT_EXTMEM_ff69);
+  return DAT_EXTMEM_e3fb ^ bVar1;
+}
+

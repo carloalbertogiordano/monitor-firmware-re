@@ -1,0 +1,22 @@
+=== 0xf501 ===
+
+void FUN_CODE_f501(void)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_bf60();
+  if (cVar1 == '0') {
+    return;
+  }
+  cVar1 = FUN_CODE_bf60();
+  if (cVar1 == ' ') {
+    return;
+  }
+  cVar1 = FUN_CODE_bf60();
+  if (cVar1 == '\x10') {
+    return;
+  }
+  return;
+}
+

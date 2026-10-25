@@ -1,0 +1,12 @@
+=== 0x1307 ===
+
+void FUN_CODE_1307(void)
+
+{
+  nop();
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

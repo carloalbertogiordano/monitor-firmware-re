@@ -1,0 +1,19 @@
+=== 0xf560 ===
+
+void FUN_CODE_f560(char *param_1)
+
+{
+  char cVar1;
+  char cVar2;
+  
+  cVar1 = BANK0_R6;
+  cVar2 = BANK0_R7;
+  if (BANK0_R7 == '\0' && BANK0_R6 == '\0') {
+    cVar2 = '\x01';
+    cVar1 = '\0';
+  }
+  FUN_CODE_980e(cVar1);
+  *param_1 = cVar2;
+  return;
+}
+

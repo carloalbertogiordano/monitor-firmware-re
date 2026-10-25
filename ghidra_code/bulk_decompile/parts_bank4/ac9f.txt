@@ -1,0 +1,12 @@
+=== 0xac9f ===
+
+void FUN_CODE_ac9f(void)
+
+{
+  DAT_EXTMEM_e32e = DAT_EXTMEM_e52f;
+  DAT_EXTMEM_e32f = DAT_EXTMEM_e530;
+  DAT_EXTMEM_e330 = DAT_EXTMEM_e539;
+  DAT_EXTMEM_e331 = DAT_EXTMEM_e53a;
+  return;
+}
+

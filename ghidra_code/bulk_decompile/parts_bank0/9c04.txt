@@ -1,0 +1,9 @@
+=== 0x9c04 ===
+
+void FUN_CODE_9c04(void)
+
+{
+  DAT_EXTMEM_0b50 = DAT_EXTMEM_0b50 & 0x7f;
+  return;
+}
+

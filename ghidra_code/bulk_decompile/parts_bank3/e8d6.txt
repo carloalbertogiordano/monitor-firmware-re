@@ -1,0 +1,12 @@
+=== 0xe8d6 ===
+
+void FUN_CODE_e8d6(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  DAT_EXTMEM_b7c0 = DAT_EXTMEM_b7c0 & 0x7f;
+  DAT_EXTMEM_b7c1 = param_3;
+  DAT_EXTMEM_b7c2 = param_2;
+  DAT_EXTMEM_b7c3 = param_1;
+  return;
+}
+

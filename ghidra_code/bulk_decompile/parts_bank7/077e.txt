@@ -1,0 +1,31 @@
+=== 0x077e ===
+
+char FUN_CODE_077e(char param_1,short param_2,char *param_3,char param_4,char param_5,char param_6,
+                  char param_7)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  char cVar3;
+  
+  uVar2 = HIFLG_2;
+  HIFLG_7 = 0;
+  cVar3 = FUN_CODE_f42f(param_1 + param_6 * '\x02' + param_7);
+  uVar2 = F8_1;
+  F8_6 = 0;
+  if ((_2_3 == '\0') || (_c_3 != '\0')) {
+    cVar1 = INT1;
+    if (cVar1 == '\0') {
+      DAT_INTMEM_26 = DAT_INTMEM_26 | 0x32;
+      return *(char *)(param_2 + (ushort)(byte)(cVar3 + param_7)) + param_4;
+    }
+    FUN_CODE_0103();
+    FUN_CODE_3153();
+  }
+  *param_3 = *param_3 + -1;
+  FUN_CODE_01a3();
+  FUN_CODE_01f3(param_5 + -1);
+  cVar3 = FUN_CODE_0132();
+  return cVar3;
+}
+

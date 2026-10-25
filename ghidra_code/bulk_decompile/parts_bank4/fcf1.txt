@@ -1,0 +1,11 @@
+=== 0xfcf1 ===
+
+void FUN_CODE_fcf1(void)
+
+{
+  if (DAT_EXTMEM_e4d6 == '\0') {
+    return;
+  }
+  return;
+}
+

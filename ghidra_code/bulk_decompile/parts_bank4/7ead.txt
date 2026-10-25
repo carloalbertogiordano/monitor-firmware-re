@@ -1,0 +1,8 @@
+=== 0x7ead ===
+
+char FUN_CODE_7ead(char *param_1)
+
+{
+  return *param_1 - (DAT_EXTMEM_e306 - ((((byte)param_1[1] < DAT_EXTMEM_e307 + 1U) << 7) >> 7));
+}
+

@@ -1,0 +1,9 @@
+=== 0xfc15 ===
+
+void FUN_CODE_fc15(void)
+
+{
+  FUN_CODE_13f5(DAT_EXTMEM_e37f,DAT_EXTMEM_e37e,DAT_EXTMEM_e37d);
+  return;
+}
+

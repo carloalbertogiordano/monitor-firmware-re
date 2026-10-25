@@ -1,0 +1,10 @@
+=== 0xc114 ===
+
+undefined1 FUN_CODE_c114(undefined1 *param_1,undefined1 param_2,byte param_3,byte param_4)
+
+{
+  *param_1 = param_2;
+  param_1[1] = param_4 | param_3;
+  return DAT_EXTMEM_0080;
+}
+

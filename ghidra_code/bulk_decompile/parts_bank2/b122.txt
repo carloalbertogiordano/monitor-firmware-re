@@ -1,0 +1,12 @@
+=== 0xb122 ===
+
+char FUN_CODE_b122(void)
+
+{
+  char cVar1;
+  
+  cVar1 = (char)((ushort)DAT_EXTMEM_e3a7 * 2 >> 8);
+  FUN_CODE_1420((ushort)DAT_EXTMEM_e3a7 * 2);
+  return cVar1 >> 7;
+}
+

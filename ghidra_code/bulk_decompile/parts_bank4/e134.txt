@@ -1,0 +1,26 @@
+=== 0xe134 ===
+
+void FUN_CODE_e134(char param_1)
+
+{
+  if ((DAT_EXTMEM_e196 >> 3 & 1) == 0) {
+    if (param_1 == '\b') {
+      if (DAT_EXTMEM_e622 < 2) {
+        DAT_EXTMEM_e622 = 1;
+      }
+    }
+    else if (DAT_EXTMEM_e622 != 0) {
+      DAT_EXTMEM_e622 = 2;
+    }
+    if (param_1 == '\x04') {
+      if (DAT_EXTMEM_e620 < 2) {
+        DAT_EXTMEM_e620 = 1;
+      }
+    }
+    else if (DAT_EXTMEM_e620 != 0) {
+      DAT_EXTMEM_e620 = 2;
+    }
+  }
+  return;
+}
+

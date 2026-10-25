@@ -1,0 +1,10 @@
+=== 0x7694 ===
+
+void FUN_CODE_7694(void)
+
+{
+  DAT_EXTMEM_e33a = DAT_INTMEM_2e + 0x40;
+  DAT_EXTMEM_e339 = DAT_INTMEM_2d - (((0xbf < DAT_INTMEM_2e) << 7) >> 7);
+  return;
+}
+

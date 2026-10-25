@@ -1,0 +1,81 @@
+=== 0xb236 ===
+
+void FUN_CODE_b236(void)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  byte bVar3;
+  char cVar4;
+  char cVar5;
+  undefined1 *puVar6;
+  char *pcVar7;
+  
+  puVar6 = (undefined1 *)0xe330;
+  DAT_EXTMEM_e330 = 0;
+  FUN_CODE_f768();
+  FUN_CODE_4536();
+  FUN_CODE_472c();
+  *puVar6 = 0x59;
+  FUN_CODE_0fcd(0,7,0xd);
+  uVar2 = FUN_CODE_43ee();
+  FUN_CODE_0fd3(7,uVar2);
+  FUN_CODE_0fd9(8);
+  FUN_CODE_0fdf(DAT_EXTMEM_e4c9);
+  FUN_CODE_0e6b(1);
+  FUN_CODE_0feb(0);
+  FUN_CODE_0f67();
+  FUN_CODE_4722(DAT_EXTMEM_e4d6);
+  puVar6 = (undefined1 *)0xe34d;
+  DAT_EXTMEM_e34d = 0;
+  FUN_CODE_44d4(0x9c);
+  FUN_CODE_4633(0x74);
+  FUN_CODE_b368();
+  FUN_CODE_4517();
+  *puVar6 = 0x6c;
+  puVar6 = puVar6 + 1;
+  *puVar6 = 7;
+  FUN_CODE_4662(0xe);
+  FUN_CODE_b368();
+  FUN_CODE_4588();
+  *puVar6 = 0x68;
+  puVar6[1] = 0;
+  FUN_CODE_0ff1(0,0x12,0,0,2);
+  uVar2 = FUN_CODE_4640(0x29,0x32,0xff);
+  FUN_CODE_cf41(uVar2);
+  FUN_CODE_4640(0x2f,0x32,0xff);
+  FUN_CODE_cf41(6);
+  DAT_EXTMEM_e330 = 0;
+  do {
+    DAT_EXTMEM_e38e = 0x4b;
+    DAT_EXTMEM_e38f = DAT_EXTMEM_e330;
+    DAT_EXTMEM_e391 = FUN_CODE_4857(0x70,DAT_EXTMEM_e330 * '\x02' + '\x02');
+    FUN_CODE_0ff7(1,5);
+    DAT_EXTMEM_e330 = DAT_EXTMEM_e330 + 1;
+  } while ((DAT_EXTMEM_e330 < 2) << 7 < '\0');
+  bVar3 = (byte)((ushort)DAT_EXTMEM_e4d6 * 2);
+  bVar1 = DAT_EXTMEM_e4d6;
+  FUN_CODE_132c(0,0x12,(char)((ushort)DAT_EXTMEM_e4d6 * 2 >> 8) - (((0xfd < bVar3) << 7) >> 7),
+                bVar3 + 2);
+  bVar3 = (byte)((ushort)bVar1 * 2);
+  cVar4 = bVar3 + 3;
+  cVar5 = (char)((ushort)bVar1 * 2 >> 8) - (((0xfc < bVar3) << 7) >> 7);
+  FUN_CODE_132c(BANK0_R6,BANK0_R7);
+  DAT_EXTMEM_e340 = 0;
+  DAT_EXTMEM_e341 = 0x9c;
+  pcVar7 = &DAT_EXTMEM_e344;
+  DAT_EXTMEM_e344 = 0;
+  DAT_EXTMEM_e342 = cVar5;
+  DAT_EXTMEM_e343 = cVar4;
+  cVar5 = FUN_CODE_45c3(7);
+  *pcVar7 = cVar5 + '\x01';
+  FUN_CODE_0fa9(0,10);
+  DAT_EXTMEM_e335 = 0;
+  DAT_EXTMEM_e336 = 2;
+  FUN_CODE_4612(0x62);
+  FUN_CODE_c3eb();
+  FUN_CODE_082f(0x20);
+  FUN_CODE_0ef5();
+  return;
+}
+

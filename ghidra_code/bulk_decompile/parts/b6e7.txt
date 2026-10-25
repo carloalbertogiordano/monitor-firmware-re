@@ -1,0 +1,13 @@
+=== 0xb6e7 ===
+
+void FUN_CODE_b6e7(void)
+
+{
+  _0_2 = 1;
+  FUN_CODE_0ac9();
+  FUN_CODE_0c5b();
+  FUN_CODE_054d(0xc,0xea,0x60);
+  FUN_CODE_0c55(0x93,0xe0,2);
+  return;
+}
+

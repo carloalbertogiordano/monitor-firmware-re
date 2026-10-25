@@ -1,0 +1,9 @@
+=== 0x3e83 ===
+
+undefined1 FUN_CODE_3e83(undefined1 param_1)
+
+{
+  DAT_EXTMEM_07d8 = param_1;
+  return 0;
+}
+

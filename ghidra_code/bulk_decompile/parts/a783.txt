@@ -1,0 +1,8 @@
+=== 0xa783 ===
+
+byte FUN_CODE_a783(void)
+
+{
+  return DAT_EXTMEM_e5c4 >> 6;
+}
+

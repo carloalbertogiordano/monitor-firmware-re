@@ -1,0 +1,13 @@
+=== 0xf9d4 ===
+
+void FUN_CODE_f9d4(void)
+
+{
+  if ((char)((DAT_EXTMEM_e19d >> 4) << 7) < '\0') {
+    DAT_EXTMEM_e19d = DAT_EXTMEM_e19d & 0xef;
+    FUN_CODE_f454(0xb);
+    FUN_CODE_f454(0xd);
+  }
+  return;
+}
+

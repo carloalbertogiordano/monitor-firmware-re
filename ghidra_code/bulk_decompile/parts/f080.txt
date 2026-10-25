@@ -1,0 +1,19 @@
+=== 0xf080 ===
+
+void FUN_CODE_f080(void)
+
+{
+  undefined1 *puVar1;
+  
+  puVar1 = &DAT_EXTMEM_02a6;
+  FUN_CODE_8755();
+  puVar1[1] = puVar1[1] & 0xef | 0x10;
+  DAT_EXTMEM_02ec = 5;
+  DAT_EXTMEM_02e7 = DAT_EXTMEM_02e7 & 0xf8;
+  DAT_EXTMEM_02e8 = 0x36;
+  DAT_EXTMEM_02e9 = 0xcf;
+  DAT_EXTMEM_02ea = 3;
+  DAT_EXTMEM_02eb = 0xb;
+  return;
+}
+

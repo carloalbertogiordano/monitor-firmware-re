@@ -1,0 +1,8 @@
+=== 0xb47a ===
+
+undefined1 FUN_CODE_b47a(void)
+
+{
+  return DAT_EXTMEM_8006;
+}
+

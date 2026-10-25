@@ -1,0 +1,10 @@
+=== 0xb5ab ===
+
+void FUN_CODE_b5ab(undefined1 param_1)
+
+{
+  FUN_CODE_1642(0x17,param_1);
+  FUN_CODE_152f(0,0,3,0xe8);
+  return;
+}
+

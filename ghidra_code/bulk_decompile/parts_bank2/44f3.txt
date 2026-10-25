@@ -1,0 +1,8 @@
+=== 0x44f3 ===
+
+undefined1 FUN_CODE_44f3(void)
+
+{
+  return 1;
+}
+

@@ -1,0 +1,11 @@
+=== 0x450f ===
+
+void FUN_CODE_450f(void)
+
+{
+  DAT_EXTMEM_e34d = 1;
+  DAT_EXTMEM_e34e = 0x38;
+  DAT_EXTMEM_e34f = 0;
+  return;
+}
+

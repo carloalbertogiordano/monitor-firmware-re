@@ -1,0 +1,22 @@
+=== 0xe41b ===
+
+void FUN_CODE_e41b(byte param_1)
+
+{
+  bool bVar1;
+  
+  DAT_EXTMEM_e340 = FUN_CODE_7428(0xe33e);
+  DAT_EXTMEM_e341 = param_1;
+  for (DAT_EXTMEM_e342 = 0; DAT_EXTMEM_e342 < DAT_EXTMEM_e33f; DAT_EXTMEM_e342 = DAT_EXTMEM_e342 + 1
+      ) {
+    FUN_CODE_73f2(DAT_EXTMEM_e342 - DAT_EXTMEM_e33f);
+    FUN_CODE_109f(0x4c,0x20);
+    FUN_CODE_73f2();
+    FUN_CODE_109f(0,0x40);
+    bVar1 = CARRY1(DAT_EXTMEM_e341,DAT_EXTMEM_e65c);
+    DAT_EXTMEM_e341 = DAT_EXTMEM_e341 + DAT_EXTMEM_e65c;
+    DAT_EXTMEM_e340 = DAT_EXTMEM_e340 - ((bVar1 << 7) >> 7);
+  }
+  return;
+}
+

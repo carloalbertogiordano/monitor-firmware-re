@@ -1,0 +1,14 @@
+=== 0x8012 ===
+
+char FUN_CODE_8012(char param_1)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return param_1 + '\x01';
+}
+

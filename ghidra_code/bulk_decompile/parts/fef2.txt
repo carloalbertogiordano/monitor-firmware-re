@@ -1,0 +1,8 @@
+=== 0xfef2 ===
+
+void FUN_CODE_fef2(void)
+
+{
+  return;
+}
+

@@ -1,0 +1,36 @@
+=== 0x52a7 ===
+
+char FUN_CODE_52a7(char param_1,char *param_2,char param_3,char param_4,char param_5,char param_6)
+
+{
+  byte bVar1;
+  
+  if (_5_3 == '\x01') {
+    bVar1 = ((param_1 + param_6) * '\x02' + param_3 * '\x02' + *param_2 + param_5) - 1;
+    bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+    bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+    bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+    param_4 = param_4 + '\x04';
+  }
+  else {
+    param_4 = param_4 + -1;
+    bVar1 = param_1 + param_6 + 0x20;
+  }
+  bVar1 = (bVar1 << 1 | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  bVar1 = (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3;
+  return (bVar1 * '\x02' | bVar1 >> 7) + *param_2 + param_3 + *param_2 + param_4 + '\x04';
+}
+

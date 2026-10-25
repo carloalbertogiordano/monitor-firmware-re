@@ -1,0 +1,72 @@
+=== 0x053a ===
+
+/* WARNING: Instruction at (CODE,0x053b) overlaps instruction at (CODE,0x053a)
+    */
+/* WARNING: Removing unreachable block (CODE,0x053b) */
+
+void FUN_CODE_053a(byte param_1,char *param_2,char *param_3,char *param_4,char param_5,
+                  undefined1 param_6,undefined1 param_7,char param_8,char param_9)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  byte in_PSW;
+  
+  if (param_8 != '\x01') {
+    FUN_CODE_0138(param_1 >> 1 | in_PSW & 0x80);
+    return;
+  }
+  if (param_1 != 0) {
+    BANK0_R1 = 0x30;
+    BANK0_R2 = 5;
+    cVar1 = FUN_CODE_0409(param_5,param_7,0);
+    BANK0_R1 = WDTRST;
+    param_5 = param_5 + '\x01';
+    *param_2 = cVar1;
+    bVar3 = (param_4 < &BANK1_R4) << 7;
+    if (param_4 == &BANK1_R4) {
+      if (_a_1 == '\0') {
+        BANK0_R2 = 0x2f;
+        BANK0_R3 = 0x30;
+        bVar2 = func_0x30a1(param_6,param_9 + -1);
+        BANK0_R2 = 0x33;
+        BANK0_R3 = 0x30;
+        bVar2 = FUN_CODE_c135(bVar2 << 1 | bVar2 >> 7);
+        BANK0_R2 = 0x36;
+        BANK0_R3 = 0x30;
+        cVar1 = FUN_CODE_3645(bVar2 >> 1 | bVar3 & 0x80);
+        BANK0_R2 = 0x39;
+        BANK0_R3 = 0x30;
+        bVar3 = FUN_CODE_3654(cVar1 + -1);
+        cVar1 = IEN1;
+        IEN1 = cVar1 + -1;
+        BANK2_R6 = BANK2_R6 ^ bVar3;
+      }
+      else {
+        _a_1 = '\0';
+      }
+      BANK0_R2 = 0x3f;
+      BANK0_R3 = 0x30;
+      FUN_CODE_3470();
+      *param_4 = *param_4 + -1;
+      BANK0_R2 = 0x42;
+      BANK0_R3 = 0x30;
+      FUN_CODE_337e();
+      FUN_CODE_328a(param_3 + -1);
+      return;
+    }
+    BANK0_R2 = 0x6b;
+    BANK0_R3 = 5;
+    FUN_CODE_059f(cVar1 - (*param_3 - ((char)bVar3 >> 7)),param_4 + -1);
+    param_5 = param_5 + -1;
+    BANK0_R2 = 0x6e;
+    BANK0_R3 = 5;
+    func_0x01a8(param_5);
+    FUN_CODE_06b0(param_5 + -1);
+    return;
+  }
+  FUN_CODE_0400(param_9 + '\x01');
+  return;
+}
+

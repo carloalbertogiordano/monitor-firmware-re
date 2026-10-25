@@ -1,0 +1,10 @@
+=== 0x897f ===
+
+byte FUN_CODE_897f(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e332 = param_1;
+  DAT_EXTMEM_e333 = param_2;
+  return DAT_EXTMEM_e6c9 >> 2 & 3;
+}
+

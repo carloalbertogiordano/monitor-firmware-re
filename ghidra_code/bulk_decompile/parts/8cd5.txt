@@ -1,0 +1,8 @@
+=== 0x8cd5 ===
+
+char FUN_CODE_8cd5(char param_1)
+
+{
+  return param_1 * '\x03';
+}
+

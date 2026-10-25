@@ -1,0 +1,13 @@
+=== 0xfd7a ===
+
+void FUN_CODE_fd7a(void)
+
+{
+  if (_0_0 != '\0') {
+    DAT_EXTMEM_0011 = DAT_EXTMEM_0011 & 0xbf | 0x40;
+    return;
+  }
+  DAT_EXTMEM_0011 = DAT_EXTMEM_0011 & 0xbf;
+  return;
+}
+

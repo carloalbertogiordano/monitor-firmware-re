@@ -1,0 +1,30 @@
+=== 0xdfc9 ===
+
+undefined1 FUN_CODE_dfc9(void)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_e33d = 1;
+  if ((DAT_EXTMEM_e07c & 1) != 0) {
+    bVar1 = 0;
+    FUN_CODE_779c();
+    DAT_INTMEM_2a = bVar1;
+    if ((DAT_EXTMEM_e430 ^ bVar1) == 0) {
+      DAT_EXTMEM_e3c1 = 0;
+      DAT_EXTMEM_e3c2 = 0x2a;
+      DAT_EXTMEM_e3c0 = DAT_EXTMEM_e430 ^ bVar1;
+      FUN_CODE_e019(0xff);
+      DAT_INTMEM_2d = 1;
+      DAT_EXTMEM_e3c0 = 0;
+      DAT_EXTMEM_e3c1 = 0;
+      DAT_EXTMEM_e3c2 = 0x2d;
+      FUN_CODE_e019(0xfe);
+    }
+    else {
+      DAT_EXTMEM_e33d = 2;
+    }
+  }
+  return DAT_EXTMEM_e33d;
+}
+

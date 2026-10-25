@@ -1,0 +1,10 @@
+=== 0xf0a0 ===
+
+void FUN_CODE_f0a0(undefined1 param_1,char param_2,char param_3,char param_4)
+
+{
+  FUN_CODE_1259(param_1,param_2,param_3,param_4,'\x01');
+  DAT_EXTMEM_e32e = 0;
+  return;
+}
+

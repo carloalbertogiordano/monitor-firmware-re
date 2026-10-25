@@ -1,0 +1,10 @@
+=== 0x6e9e ===
+
+char FUN_CODE_6e9e(void)
+
+{
+  char in_PSW;
+  
+  return -0x1c - (in_PSW >> 7);
+}
+

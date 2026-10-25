@@ -1,0 +1,10 @@
+=== 0xfddd ===
+
+void FUN_CODE_fddd(short param_1)
+
+{
+  DAT_EXTMEM_e3e1 = *(undefined1 *)(param_1 + 1);
+  DAT_EXTMEM_e3e2 = 9;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x7d90 ===
+
+char FUN_CODE_7d90(void)
+
+{
+  return -0x20 - (((199U < (byte)(DAT_EXTMEM_e301 * '\x03')) << 7) >> 7);
+}
+

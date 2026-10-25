@@ -1,0 +1,17 @@
+=== 0xfe2e ===
+
+void FUN_CODE_fe2e(void)
+
+{
+  byte bVar1;
+  
+  if (_0_0 == '\0') {
+    bVar1 = 0;
+  }
+  else {
+    bVar1 = 3;
+  }
+  DAT_EXTMEM_b63a = DAT_EXTMEM_b63a & 0xfc | bVar1;
+  return;
+}
+

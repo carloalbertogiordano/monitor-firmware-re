@@ -1,0 +1,8 @@
+=== 0xf6d4 ===
+
+byte FUN_CODE_f6d4(char param_1,byte *param_2,char param_3)
+
+{
+  return param_1 * param_3 | *param_2;
+}
+

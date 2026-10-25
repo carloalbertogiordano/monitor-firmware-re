@@ -1,0 +1,20 @@
+=== 0xfb06 ===
+
+byte FUN_CODE_fb06(byte *param_1)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_e644 = 0;
+  bVar1 = FUN_CODE_1724(0xe632);
+  nop();
+  nop();
+  *param_1 = *param_1 + 1;
+  FUN_CODE_faab(bVar1 | *param_1);
+  bVar1 = FUN_CODE_1724(0xe640);
+  nop();
+  nop();
+  *param_1 = *param_1 + 1;
+  return bVar1 | *param_1;
+}
+

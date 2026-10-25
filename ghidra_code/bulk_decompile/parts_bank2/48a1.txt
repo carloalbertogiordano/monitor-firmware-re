@@ -1,0 +1,8 @@
+=== 0x48a1 ===
+
+byte FUN_CODE_48a1(byte param_1)
+
+{
+  return param_1 % 6;
+}
+

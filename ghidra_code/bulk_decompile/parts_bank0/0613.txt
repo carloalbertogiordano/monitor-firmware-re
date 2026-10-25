@@ -1,0 +1,9 @@
+=== 0x0613 ===
+
+void FUN_CODE_0613(void)
+
+{
+  state_dispatch_arg22_case1();
+  return;
+}
+

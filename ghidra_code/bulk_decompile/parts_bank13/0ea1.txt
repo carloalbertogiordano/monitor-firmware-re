@@ -1,0 +1,10 @@
+=== 0x0ea1 ===
+
+void FUN_CODE_0ea1(short param_1,undefined1 *param_2)
+
+{
+  BANK3_R0 = *param_2;
+  FUN_CODE_0d8e(param_1,param_2);
+  return;
+}
+

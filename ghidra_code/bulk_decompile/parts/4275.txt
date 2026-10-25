@@ -1,0 +1,48 @@
+=== 0x4275 ===
+
+void FUN_CODE_4275(void)
+
+{
+  char cVar1;
+  char in_PSW;
+  
+  cVar1 = FUN_CODE_8cee();
+  if (in_PSW < '\0') {
+    if ((cVar1 == '\0') || (cVar1 == '\x01')) {
+      FUN_CODE_8d35();
+    }
+    else if (cVar1 == '\x02') {
+      FUN_CODE_8d7e();
+    }
+    else if (cVar1 == '\x03') {
+      if (DAT_EXTMEM_e3e3 < 8) {
+        DAT_EXTMEM_e3e4 = 0x10;
+      }
+      else if (((DAT_EXTMEM_e3e3 < 8) << 7 < '\0') || (0xb < DAT_EXTMEM_e3e3)) {
+        if (((DAT_EXTMEM_e3e3 < 0xc) << 7 < '\0') || (0xd < DAT_EXTMEM_e3e3)) {
+          if ((0xd < DAT_EXTMEM_e3e3) && (DAT_EXTMEM_e3e3 < 0x10)) {
+            FUN_CODE_8d93(DAT_EXTMEM_e3e3 - 0x10);
+          }
+        }
+        else {
+          FUN_CODE_8d8c(DAT_EXTMEM_e3e3 - 0xe);
+        }
+      }
+      else {
+        FUN_CODE_8d85(DAT_EXTMEM_e3e3 - 0xc);
+      }
+    }
+    else {
+      set_e3e4_to_const2();
+    }
+  }
+  else {
+    DAT_EXTMEM_e3e4 = 0;
+  }
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

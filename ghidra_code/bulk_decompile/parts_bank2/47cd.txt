@@ -1,0 +1,10 @@
+=== 0x47cd ===
+
+char FUN_CODE_47cd(char param_1,byte param_2)
+
+{
+  char in_PSW;
+  
+  return param_1 + (((param_2 < 0x5bU - (in_PSW >> 7)) << 7) >> 7);
+}
+

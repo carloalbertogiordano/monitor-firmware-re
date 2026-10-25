@@ -1,0 +1,31 @@
+=== 0xdefd ===
+
+void FUN_CODE_defd(void)
+
+{
+  DAT_EXTMEM_e32e = 0;
+  FUN_CODE_ee48(0,0,0x40);
+  FUN_CODE_1991();
+  _0_0 = 1;
+  FUN_CODE_da92();
+  FUN_CODE_0733();
+  FUN_CODE_fc92();
+  DAT_EXTMEM_e32e = 0;
+  while( true ) {
+    if (0x13 < DAT_EXTMEM_e32e) break;
+    FUN_CODE_ee48((char)((ushort)DAT_EXTMEM_e32e * 0x10 >> 8),(char)((ushort)DAT_EXTMEM_e32e * 0x10)
+                 );
+    FUN_CODE_ed6f(0,0x10);
+    FUN_CODE_ee48();
+    FUN_CODE_fc85(0,0x10);
+    DAT_EXTMEM_e32e = DAT_EXTMEM_e32e + 1;
+  }
+  FUN_CODE_ee48(DAT_EXTMEM_e32e - 0x14);
+  FUN_CODE_f0ab(5,0);
+  FUN_CODE_ee48();
+  FUN_CODE_e468(5,0);
+  _0_0 = 0;
+  FUN_CODE_da92();
+  return;
+}
+

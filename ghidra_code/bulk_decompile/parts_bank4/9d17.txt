@@ -1,0 +1,8 @@
+=== 0x9d17 ===
+
+byte FUN_CODE_9d17(void)
+
+{
+  return DAT_EXTMEM_e42b & 0x7f;
+}
+

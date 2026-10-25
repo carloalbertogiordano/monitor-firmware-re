@@ -1,0 +1,9 @@
+=== 0x9b4d ===
+
+undefined1 FUN_CODE_9b4d(void)
+
+{
+  DAT_EXTMEM_e412 = 0x80;
+  return 0;
+}
+

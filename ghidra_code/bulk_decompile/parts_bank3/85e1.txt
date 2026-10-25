@@ -1,0 +1,9 @@
+=== 0x85e1 ===
+
+undefined1 FUN_CODE_85e1(byte param_1)
+
+{
+  DAT_EXTMEM_0b08 = DAT_EXTMEM_0b08 & 0xe7 | (param_1 >> 2 & 3) << 3;
+  return DAT_EXTMEM_0b0c;
+}
+

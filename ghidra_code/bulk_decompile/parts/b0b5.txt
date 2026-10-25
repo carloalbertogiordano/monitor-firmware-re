@@ -1,0 +1,11 @@
+=== 0xb0b5 ===
+
+void FUN_CODE_b0b5(byte *param_1)
+
+{
+  byte in_PSW;
+  
+  *param_1 = *param_1 & 0xfe | in_PSW >> 7;
+  return;
+}
+

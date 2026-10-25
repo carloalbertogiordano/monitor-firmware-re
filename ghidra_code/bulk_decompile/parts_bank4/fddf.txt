@@ -1,0 +1,13 @@
+=== 0xfddf ===
+
+void FUN_CODE_fddf(void)
+
+{
+  byte in_PSW;
+  
+  FUN_CODE_fd74();
+  _0_1 = in_PSW >> 7;
+  FUN_CODE_e863();
+  return;
+}
+

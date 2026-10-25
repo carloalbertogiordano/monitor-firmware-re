@@ -1,0 +1,45 @@
+=== 0xee62 ===
+
+void FUN_CODE_ee62(byte param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  undefined1 uVar6;
+  undefined1 uVar7;
+  short sVar8;
+  
+  FUN_CODE_de03();
+  FUN_CODE_1672();
+  FUN_CODE_de03();
+  uVar3 = BANK0_R3;
+  uVar2 = BANK0_R2;
+  uVar1 = BANK0_R1;
+  FUN_CODE_1622();
+  uVar7 = BANK0_R7;
+  uVar6 = BANK0_R6;
+  uVar5 = BANK0_R5;
+  uVar4 = BANK0_R4;
+  FUN_CODE_1622(DAT_EXTMEM_e358);
+  BANK0_R4 = uVar4;
+  BANK0_R5 = uVar5;
+  BANK0_R6 = uVar6;
+  BANK0_R7 = uVar7;
+  FUN_CODE_de2b(param_1 + (param_1 & 1),0,0,0);
+  BANK0_R1 = uVar1;
+  BANK0_R2 = uVar2;
+  BANK0_R3 = uVar3;
+  FUN_CODE_1672();
+  sVar8 = -0x1cac;
+  FUN_CODE_ddd0(0xe354);
+  FUN_CODE_de06(sVar8 + 1);
+  FUN_CODE_16bc();
+  FUN_CODE_14a4();
+  FUN_CODE_de03();
+  FUN_CODE_168c(4);
+  return;
+}
+

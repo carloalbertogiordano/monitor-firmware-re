@@ -1,0 +1,9 @@
+=== 0x8c11 ===
+
+char FUN_CODE_8c11(void)
+
+{
+  return *(char *)CONCAT11(-0x1d - (((0xe < DAT_EXTMEM_e3ec) << 7) >> 7),DAT_EXTMEM_e3ec - 0xf) *
+         '\x0e';
+}
+

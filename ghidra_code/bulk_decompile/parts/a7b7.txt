@@ -1,0 +1,8 @@
+=== 0xa7b7 ===
+
+byte FUN_CODE_a7b7(byte *param_1)
+
+{
+  return *param_1 & 0x80;
+}
+

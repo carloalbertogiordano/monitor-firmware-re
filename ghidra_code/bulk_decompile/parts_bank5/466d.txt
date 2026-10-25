@@ -1,0 +1,8 @@
+=== 0x466d ===
+
+byte FUN_CODE_466d(void)
+
+{
+  return DAT_EXTMEM_3a0b & 0x3f;
+}
+

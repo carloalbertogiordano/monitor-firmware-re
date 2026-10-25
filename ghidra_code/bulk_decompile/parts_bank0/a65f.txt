@@ -1,0 +1,10 @@
+=== 0xa65f ===
+
+void FUN_CODE_a65f(void)
+
+{
+  _0_0 = 1;
+  FUN_CODE_e876(0,0,0,1,DAT_EXTMEM_e18e,DAT_EXTMEM_e18f);
+  return;
+}
+

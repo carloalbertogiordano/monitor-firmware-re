@@ -1,0 +1,16 @@
+=== 0xeef8 ===
+
+void FUN_CODE_eef8(void)
+
+{
+  if (((char)((DAT_EXTMEM_e19d >> 1) << 7) < '\0') && ((char)(DAT_EXTMEM_e19d << 7) < '\0')) {
+    FUN_CODE_ef1d(DAT_EXTMEM_e19d & 0xfe);
+    return;
+  }
+  if (-1 < (char)((DAT_EXTMEM_e19d >> 1) << 7)) {
+    FUN_CODE_ef1d(DAT_EXTMEM_e19d | 1);
+    return;
+  }
+  return;
+}
+

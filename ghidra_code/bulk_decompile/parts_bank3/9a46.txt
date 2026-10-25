@@ -1,0 +1,10 @@
+=== 0x9a46 ===
+
+void FUN_CODE_9a46(undefined1 param_1)
+
+{
+  FUN_CODE_febf(2,param_1);
+  DAT_EXTMEM_e38a = 0;
+  return;
+}
+

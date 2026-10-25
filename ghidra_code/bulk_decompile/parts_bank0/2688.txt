@@ -1,0 +1,12 @@
+=== 0x2688 ===
+
+char FUN_CODE_2688(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e336;
+  DAT_EXTMEM_e336 = DAT_EXTMEM_e336 + '\x01';
+  return cVar1 + -5;
+}
+

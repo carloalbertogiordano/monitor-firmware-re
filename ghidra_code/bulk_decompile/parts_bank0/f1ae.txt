@@ -1,0 +1,18 @@
+=== 0xf1ae ===
+
+void FUN_CODE_f1ae(byte param_1,byte param_2)
+
+{
+  _0_1 = param_2 & 1;
+  DAT_EXTMEM_e32e = param_1;
+  DAT_EXTMEM_e32f = param_2;
+  FUN_CODE_ec5b(0);
+  _0_1 = DAT_EXTMEM_e32f >> 1 & 1;
+  FUN_CODE_ec5b(1);
+  _0_1 = DAT_EXTMEM_e32f >> 2 & 1;
+  FUN_CODE_ec5b(2);
+  _0_1 = DAT_EXTMEM_e32e >> 1 & 1;
+  FUN_CODE_ec5b(0xe32f,9);
+  return;
+}
+

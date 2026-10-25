@@ -1,0 +1,9 @@
+=== 0x996b ===
+
+void FUN_CODE_996b(void)
+
+{
+  DAT_EXTMEM_e60a = DAT_EXTMEM_e409 | DAT_EXTMEM_e60a & 0xcf;
+  return;
+}
+

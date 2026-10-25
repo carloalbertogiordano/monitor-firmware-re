@@ -1,0 +1,80 @@
+=== 0x81a2 ===
+
+undefined1
+FUN_CODE_81a2(byte param_1,short param_2,char *param_3,byte param_4,char param_5,byte param_6)
+
+{
+  byte bVar1;
+  char *pcVar2;
+  undefined1 uVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  char cVar7;
+  byte in_PSW;
+  
+  DAT_INTMEM_50 = DAT_INTMEM_50 + '\x01';
+  cVar7 = (in_PSW >> 7 | _1_1) << 7;
+  if (cVar7 < '\0') {
+    return *(undefined1 *)(param_2 + 1);
+  }
+  DAT_INTMEM_5f = DAT_SFR_ff;
+  bVar4 = DAT_SFR_ff;
+  bVar4 = (param_1 | param_6) ^ param_4 ^ bVar4;
+  bVar1 = 0x93 - (cVar7 >> 7);
+  bVar5 = bVar4 + bVar1;
+  bVar6 = bVar5 & 0x80;
+  bVar4 = FUN_CODE_87ff(bVar5 * '\x02' | CARRY1(bVar4,bVar1),bVar5);
+  cVar7 = DAT_SFR_bc;
+  bVar1 = cVar7 - ((char)bVar6 >> 7);
+  bVar6 = bVar4 + bVar1;
+  bVar1 = *param_3 - ((CARRY1(bVar4,bVar1) << 7) >> 7);
+  bVar5 = bVar6 + bVar1;
+  pcVar2 = (char *)0xff;
+  bVar1 = DAT_INTMEM_6b - ((CARRY1(bVar6,bVar1) << 7) >> 7);
+  cVar7 = CARRY1(bVar5,bVar1) << 7;
+  bVar4 = bVar5 + bVar1;
+  bVar6 = bVar4;
+  if (!CARRY1(bVar5,bVar1)) {
+    FUN_CODE_8200(bVar4 + (cINTMEMff - (cVar7 >> 7)),bVar4);
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    cVar7 = CARRY1(*(byte *)ZEXT12(param_3),param_5 + 1U) << 7;
+    bVar6 = *(byte *)ZEXT12(param_3) + param_5 + 1U;
+    nop();
+    param_3 = param_3 + '\x01';
+    nop();
+  }
+  *param_3 = *param_3 + '\x01';
+  nop();
+  *pcVar2 = *pcVar2 + '\x01';
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = 0;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar3 = FUN_CODE_0007(((bVar6 >> 1 | bVar6 << 7) - (bVar4 - (cVar7 >> 7))) + -1,param_3 + '\x01');
+  return uVar3;
+}
+

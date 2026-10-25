@@ -1,0 +1,8 @@
+=== 0x4662 ===
+
+undefined1 FUN_CODE_4662(void)
+
+{
+  return 0;
+}
+

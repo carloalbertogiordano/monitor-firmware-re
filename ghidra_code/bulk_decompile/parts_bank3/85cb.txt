@@ -1,0 +1,8 @@
+=== 0x85cb ===
+
+char FUN_CODE_85cb(void)
+
+{
+  return (((DAT_EXTMEM_b7c7 & 7) < 3) << 7) >> 7;
+}
+

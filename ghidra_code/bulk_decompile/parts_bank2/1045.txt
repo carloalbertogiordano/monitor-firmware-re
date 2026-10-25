@@ -1,0 +1,9 @@
+=== 0x1045 ===
+
+void FUN_CODE_1045(void)
+
+{
+  FUN_CODE_0409(0xef63);
+  return;
+}
+

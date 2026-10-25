@@ -1,0 +1,15 @@
+=== 0x04c4 ===
+
+void FUN_CODE_04c4(byte param_1,short param_2)
+
+{
+  byte bVar1;
+  
+  bVar1 = DAT_SFR_a5;
+  DAT_SFR_a5 = bVar1 | 0x3a;
+                    /* WARNING: Could not recover jumptable at 0x04ca. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)(param_1 >> 1 | param_1 << 7)))();
+  return;
+}
+

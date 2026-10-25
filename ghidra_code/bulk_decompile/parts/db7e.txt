@@ -1,0 +1,39 @@
+=== 0xdb7e ===
+
+char FUN_CODE_db7e(byte param_1,char param_2,byte param_3)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  undefined1 *puVar4;
+  
+  DAT_EXTMEM_e3bc = param_2;
+  DAT_EXTMEM_e3bb = param_3;
+  if (param_3 < bEXTMEMfffd) {
+    return param_3 - bEXTMEMfffd;
+  }
+  if (DAT_EXTMEM_e700 == 0xfe) {
+    FUN_CODE_923f();
+  }
+  if (0x65 < DAT_EXTMEM_e700) {
+    return DAT_EXTMEM_e700 + 0x9a;
+  }
+  FUN_CODE_3886(DAT_EXTMEM_e3bc,DAT_EXTMEM_e3bb);
+  DAT_EXTMEM_ff60 = 0xb8;
+  bVar1 = FUN_CODE_8c32();
+  bVar2 = (byte)((ushort)bVar1 * (ushort)param_1);
+  DAT_EXTMEM_ff61 =
+       *(undefined1 *)
+        CONCAT11((char)((ushort)bVar1 * (ushort)param_1 >> 8) + ('1' - (((0x10 < bVar2) << 7) >> 7))
+                 ,bVar2 - 0x11);
+  DAT_EXTMEM_ff64 = DAT_EXTMEM_e3bb;
+  DAT_EXTMEM_ff65 = DAT_EXTMEM_e3bc << 4;
+  puVar4 = &DAT_EXTMEM_ff65;
+  FUN_CODE_8c71(0,DAT_EXTMEM_e3bc);
+  *puVar4 = 0xb9;
+  DAT_EXTMEM_ff61 = 0xff;
+  cVar3 = FUN_CODE_9445();
+  return cVar3;
+}
+

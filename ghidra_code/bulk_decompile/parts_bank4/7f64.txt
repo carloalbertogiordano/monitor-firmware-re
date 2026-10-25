@@ -1,0 +1,8 @@
+=== 0x7f64 ===
+
+byte FUN_CODE_7f64(byte *param_1)
+
+{
+  return param_1[1] | *param_1;
+}
+

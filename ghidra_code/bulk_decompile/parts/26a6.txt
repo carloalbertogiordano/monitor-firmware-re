@@ -1,0 +1,8 @@
+=== 0x26a6 ===
+
+char FUN_CODE_26a6(byte *param_1)
+
+{
+  return -0x1d - (((0xbe < *param_1) << 7) >> 7);
+}
+

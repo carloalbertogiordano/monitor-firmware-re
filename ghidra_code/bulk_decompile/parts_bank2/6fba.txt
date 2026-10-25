@@ -1,0 +1,8 @@
+=== 0x6fba ===
+
+byte FUN_CODE_6fba(void)
+
+{
+  return DAT_EXTMEM_e511 & 7;
+}
+

@@ -1,0 +1,8 @@
+=== 0x888a ===
+
+byte FUN_CODE_888a(byte param_1)
+
+{
+  return param_1 & 7;
+}
+

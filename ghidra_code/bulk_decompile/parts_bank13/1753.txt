@@ -1,0 +1,23 @@
+=== 0x1753 ===
+
+void FUN_CODE_1753(byte param_1,byte *param_2,byte param_3,char *param_4,byte *param_5,char param_6,
+                  char param_7,char param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = FUN_CODE_17d3(param_1,param_2,param_3,param_4,(char *)param_5,param_6,param_7,param_8,
+                        param_9,param_10,param_11);
+  cVar1 = param_9 - 1;
+  bVar2 = FUN_CODE_13db(bVar2,(short)param_2,param_4,param_5,param_10,param_11);
+  FUN_CODE_17e4(bVar2,(short)param_2,param_3,param_4,(char *)param_5,param_6,param_7,param_8,
+                cVar1 + -1,param_10,param_11);
+  nop();
+  nop();
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

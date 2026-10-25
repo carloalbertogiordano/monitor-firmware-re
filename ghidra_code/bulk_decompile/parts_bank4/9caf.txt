@@ -1,0 +1,14 @@
+=== 0x9caf ===
+
+void FUN_CODE_9caf(void)
+
+{
+  DAT_INTMEM_2e = DAT_INTMEM_2b;
+  DAT_INTMEM_2c = DAT_INTMEM_2a;
+  DAT_INTMEM_2a = DAT_INTMEM_29;
+  DAT_INTMEM_29 = 0;
+  DAT_INTMEM_2b = 0;
+  DAT_INTMEM_2d = 0;
+  return;
+}
+

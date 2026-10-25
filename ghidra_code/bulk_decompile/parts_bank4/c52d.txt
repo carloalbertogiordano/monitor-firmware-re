@@ -1,0 +1,8 @@
+=== 0xc52d ===
+
+byte FUN_CODE_c52d(void)
+
+{
+  return DAT_EXTMEM_5501 & 0x80;
+}
+

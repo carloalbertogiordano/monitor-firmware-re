@@ -1,0 +1,19 @@
+=== 0xe5c5 ===
+
+void FUN_CODE_e5c5(char param_1)
+
+{
+  byte bVar1;
+  undefined1 *puVar2;
+  
+  if (0x24 < param_1 - 0x31U) {
+    return;
+  }
+  puVar2 = &LAB_CODE_e5d7;
+  bVar1 = FUN_CODE_b1c6();
+                    /* WARNING: Could not recover jumptable at 0xe5d6. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(puVar2 + bVar1))();
+  return;
+}
+

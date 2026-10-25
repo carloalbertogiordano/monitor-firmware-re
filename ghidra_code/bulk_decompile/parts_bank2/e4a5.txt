@@ -1,0 +1,9 @@
+=== 0xe4a5 ===
+
+undefined1 FUN_CODE_e4a5(void)
+
+{
+  DAT_EXTMEM_e331 = DAT_EXTMEM_e331 + '\x01';
+  return DAT_EXTMEM_e332;
+}
+

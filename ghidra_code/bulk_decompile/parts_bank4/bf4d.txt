@@ -1,0 +1,8 @@
+=== 0xbf4d ===
+
+undefined1 FUN_CODE_bf4d(void)
+
+{
+  return 0;
+}
+

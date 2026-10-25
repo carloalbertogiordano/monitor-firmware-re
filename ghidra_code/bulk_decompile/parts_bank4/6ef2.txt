@@ -1,0 +1,8 @@
+=== 0x6ef2 ===
+
+undefined1 FUN_CODE_6ef2(void)
+
+{
+  return DAT_EXTMEM_e3b5;
+}
+

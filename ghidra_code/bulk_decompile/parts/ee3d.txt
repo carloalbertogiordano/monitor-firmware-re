@@ -1,0 +1,8 @@
+=== 0xee3d ===
+
+byte FUN_CODE_ee3d(void)
+
+{
+  return DAT_EXTMEM_e6f3 >> 7 | (DAT_EXTMEM_e6f3 >> 5) << 7;
+}
+

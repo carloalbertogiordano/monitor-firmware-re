@@ -1,0 +1,15 @@
+=== 0x05d0 ===
+
+void FUN_CODE_05d0(byte param_1,byte param_2)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  
+  uVar1 = TXSTAT;
+  cVar2 = TXSTAT;
+  BANK3_R5 = BANK3_R5 + -1;
+  FUN_CODE_06fd((param_1 & param_2) + cVar2);
+  return;
+}
+

@@ -1,0 +1,38 @@
+=== 0x01e8 ===
+
+void FUN_CODE_01e8(undefined1 *param_1,byte param_2,char *param_3,byte param_4,char param_5,
+                  char param_6,char param_7,char param_8)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  
+  if ((param_2 >> 3 & 1) == 0) {
+    return;
+  }
+  DAT_INTMEM_38 = DAT_INTMEM_38 ^ 3;
+  if (param_8 == '\x01') {
+    DAT_INTMEM_23 = DAT_INTMEM_23 + -1;
+    nop();
+    nop();
+    *param_3 = *param_3 + '\x01';
+    nop();
+    *param_1 = *(undefined1 *)(ushort)param_4;
+    FUN_CODE_4032(param_3 + -1);
+    return;
+  }
+  FUN_CODE_0687();
+  param_5 = param_5 + -1;
+  bVar1 = thunk_FUN_CODE_007c();
+  bVar3 = 0;
+  DAT_INTMEM_38 = param_5;
+  DAT_INTMEM_39 = param_7;
+  cVar2 = FUN_CODE_0439(*(byte *)((ushort)bVar1 + 0x7e6) >> 1 |
+                        *(byte *)((ushort)bVar1 + 0x7e6) << 7,param_6 + -1);
+                    /* WARNING: Could not recover jumptable at 0x07f1. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_1 + ((cVar2 << 1 | bVar3 >> 7) - (DAT_INTMEM_39 - (cVar2 >> 7)))))();
+  return;
+}
+

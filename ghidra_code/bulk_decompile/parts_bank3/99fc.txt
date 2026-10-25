@@ -1,0 +1,11 @@
+=== 0x99fc ===
+
+void FUN_CODE_99fc(void)
+
+{
+  FUN_CODE_febf(2,0);
+  DAT_EXTMEM_e38a = 0x80;
+  DAT_EXTMEM_e38b = DAT_EXTMEM_e331;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x3eed ===
+
+void FUN_CODE_3eed(undefined1 param_1,char param_2)
+
+{
+  DAT_EXTMEM_0066 = param_1;
+  DAT_EXTMEM_0067 = (DAT_EXTMEM_0067 & 0x4b | param_2 << 4 | ((_0_0 << 7) >> 7) * -4) & 0x77 | 0x80;
+  return;
+}
+

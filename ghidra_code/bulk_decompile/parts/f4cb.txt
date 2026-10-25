@@ -1,0 +1,21 @@
+=== 0xf4cb ===
+
+void FUN_CODE_f4cb(char param_1)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char in_PSW;
+  byte *pbVar3;
+  
+  pbVar3 = &DAT_EXTMEM_e6f3;
+  bVar1 = BANK0_R7;
+  bVar2 = DAT_EXTMEM_e6f3;
+  FUN_CODE_ee41();
+  if ((in_PSW < '\0') && (param_1 == '\x02')) {
+    *pbVar3 = bVar2 & 0xbf;
+  }
+  DAT_EXTMEM_e6f2 = DAT_EXTMEM_e6f2 & 0xf0 | bVar1 & 0xf;
+  return;
+}
+

@@ -1,0 +1,36 @@
+=== 0x304e ===
+
+void FUN_CODE_304e(void)
+
+{
+  _0_0 = 0;
+  FUN_CODE_3eed(0,0,0);
+  DAT_EXTMEM_e3e1 = DAT_EXTMEM_e348;
+  DAT_EXTMEM_e3e2 = 0;
+  DAT_EXTMEM_e3e3 = 0x66;
+  DAT_EXTMEM_e3e4 = 1;
+  _0_6 = 0;
+  FUN_CODE_2e4e(DAT_EXTMEM_e347,DAT_EXTMEM_e346,DAT_EXTMEM_e345,1,0x83);
+  _0_0 = 0;
+  FUN_CODE_3eed(0,0,1);
+  DAT_EXTMEM_e3e1 = DAT_EXTMEM_e348;
+  DAT_EXTMEM_e3e2 = 0;
+  DAT_EXTMEM_e3e3 = 0x66;
+  DAT_EXTMEM_e3e4 = 1;
+  _0_6 = 0;
+  FUN_CODE_2e4e(DAT_EXTMEM_e347 + 0x83,
+                DAT_EXTMEM_e346 + ('\x01' - (((0x7c < DAT_EXTMEM_e347) << 7) >> 7)),DAT_EXTMEM_e345,
+                1,0x83);
+  _0_0 = 0;
+  FUN_CODE_3eed(0,0,2);
+  DAT_EXTMEM_e3e1 = DAT_EXTMEM_e348;
+  DAT_EXTMEM_e3e2 = 0;
+  DAT_EXTMEM_e3e3 = 0x66;
+  DAT_EXTMEM_e3e4 = 1;
+  _0_6 = 0;
+  FUN_CODE_2e4e(DAT_EXTMEM_e347 + 6,
+                DAT_EXTMEM_e346 + ('\x03' - (((0xf9 < DAT_EXTMEM_e347) << 7) >> 7)),DAT_EXTMEM_e345,
+                1,0x83);
+  return;
+}
+

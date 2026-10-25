@@ -1,0 +1,10 @@
+=== 0xfc85 ===
+
+void FUN_CODE_fc85(void)
+
+{
+  _0_1 = 1;
+  FUN_CODE_08e3(BANK0_R6,BANK0_R7,2,0xc1);
+  return;
+}
+

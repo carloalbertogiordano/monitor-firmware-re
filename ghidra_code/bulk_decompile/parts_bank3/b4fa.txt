@@ -1,0 +1,9 @@
+=== 0xb4fa ===
+
+void FUN_CODE_b4fa(void)
+
+{
+  FUN_CODE_160f(0,0,0);
+  return;
+}
+

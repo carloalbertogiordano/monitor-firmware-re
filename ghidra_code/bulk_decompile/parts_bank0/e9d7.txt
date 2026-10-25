@@ -1,0 +1,50 @@
+=== 0xe9d7 ===
+
+void FUN_CODE_e9d7(void)
+
+{
+  undefined1 uVar1;
+  undefined1 *puVar2;
+  
+  _0_0 = 1;
+  FUN_CODE_088f();
+  DAT_EXTMEM_1000 = 0;
+  DAT_EXTMEM_1001 = 1;
+  DAT_EXTMEM_1002 = 1;
+  puVar2 = &DAT_EXTMEM_1003;
+  FUN_CODE_f090(3);
+  FUN_CODE_f08e(6);
+  *puVar2 = 3;
+  puVar2[1] = 3;
+  puVar2 = puVar2 + 2;
+  FUN_CODE_f083(0);
+  uVar1 = FUN_CODE_f08c();
+  *puVar2 = uVar1;
+  puVar2[1] = 0;
+  puVar2 = puVar2 + 2;
+  uVar1 = FUN_CODE_f090(5);
+  *puVar2 = uVar1;
+  puVar2 = puVar2 + 1;
+  FUN_CODE_f07f(3);
+  FUN_CODE_f081(1);
+  uVar1 = FUN_CODE_f075();
+  *puVar2 = uVar1;
+  puVar2[1] = uVar1;
+  puVar2 = puVar2 + 2;
+  FUN_CODE_f07b(1);
+  uVar1 = FUN_CODE_f08a(0);
+  *puVar2 = uVar1;
+  puVar2[1] = 4;
+  puVar2[2] = 4;
+  puVar2 = puVar2 + 3;
+  FUN_CODE_f08e(3);
+  uVar1 = FUN_CODE_f08a();
+  *puVar2 = uVar1;
+  puVar2[1] = uVar1;
+  FUN_CODE_f46e(0);
+  FUN_CODE_7839(0,0);
+  FUN_CODE_ee17(0xff);
+  FUN_CODE_f68f();
+  return;
+}
+

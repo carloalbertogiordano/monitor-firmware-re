@@ -1,0 +1,9 @@
+=== 0xbe58 ===
+
+void FUN_CODE_be58(short param_1)
+
+{
+  *(undefined1 *)(param_1 + 1) = 0;
+  return;
+}
+

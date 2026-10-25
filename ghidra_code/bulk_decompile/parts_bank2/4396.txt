@@ -1,0 +1,11 @@
+=== 0x4396 ===
+
+void FUN_CODE_4396(undefined1 param_1,short param_2)
+
+{
+  *(undefined1 *)(param_2 + 1) = param_1;
+  *(undefined1 *)(param_2 + 2) = 0;
+  DAT_EXTMEM_e370 = DAT_EXTMEM_e4ca & 0xf;
+  return;
+}
+

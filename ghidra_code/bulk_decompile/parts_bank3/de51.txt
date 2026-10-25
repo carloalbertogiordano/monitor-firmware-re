@@ -1,0 +1,8 @@
+=== 0xde51 ===
+
+byte FUN_CODE_de51(byte param_1)
+
+{
+  return param_1 >> 2 & 3 ^ 3;
+}
+

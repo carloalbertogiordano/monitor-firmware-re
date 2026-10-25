@@ -1,0 +1,10 @@
+=== 0xb161 ===
+
+void FUN_CODE_b161(void)
+
+{
+  DAT_INTMEM_35 = 0;
+  DAT_INTMEM_36 = 0xfb;
+  return;
+}
+

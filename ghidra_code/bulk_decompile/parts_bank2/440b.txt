@@ -1,0 +1,8 @@
+=== 0x440b ===
+
+undefined1 FUN_CODE_440b(void)
+
+{
+  return DAT_EXTMEM_e19a;
+}
+

@@ -1,0 +1,8 @@
+=== 0xb031 ===
+
+char FUN_CODE_b031(void)
+
+{
+  return 'Z' - (((0x5eU < (byte)(DAT_EXTMEM_e342 * '\x03')) << 7) >> 7);
+}
+

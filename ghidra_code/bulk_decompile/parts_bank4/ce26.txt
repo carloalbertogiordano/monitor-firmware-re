@@ -1,0 +1,34 @@
+=== 0xce26 ===
+
+void FUN_CODE_ce26(undefined1 param_1,undefined1 param_2,undefined1 param_3,char param_4)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  DAT_EXTMEM_e37d = param_3;
+  DAT_EXTMEM_e37e = param_2;
+  DAT_EXTMEM_e37f = param_1;
+  if (param_4 == '\x01') {
+    FUN_CODE_fc15();
+    FUN_CODE_ce7f(6);
+    uVar2 = FUN_CODE_1420(2);
+    FUN_CODE_ce93(uVar2,7,0);
+    uVar2 = FUN_CODE_1420(4);
+    uVar1 = 8;
+  }
+  else {
+    if (param_4 != '\0') {
+      return;
+    }
+    uVar2 = FUN_CODE_fc15();
+    FUN_CODE_ce93(uVar2,0,0);
+    FUN_CODE_1420(2);
+    FUN_CODE_ce7f(1);
+    uVar2 = FUN_CODE_1420(4);
+    uVar1 = 2;
+  }
+  FUN_CODE_0865(uVar2,uVar1,0,100);
+  return;
+}
+

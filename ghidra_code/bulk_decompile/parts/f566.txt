@@ -1,0 +1,8 @@
+=== 0xf566 ===
+
+undefined1 FUN_CODE_f566(undefined1 *param_1)
+
+{
+  return *param_1;
+}
+

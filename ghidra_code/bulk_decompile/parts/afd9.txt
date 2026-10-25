@@ -1,0 +1,9 @@
+=== 0xafd9 ===
+
+char FUN_CODE_afd9(void)
+
+{
+  return *(char *)CONCAT11(-0x1d - (((0xcfU < (byte)(DAT_EXTMEM_e32e * '\x03')) << 7) >> 7),
+                           DAT_EXTMEM_e32e * '\x03' + 0x30) + -3;
+}
+

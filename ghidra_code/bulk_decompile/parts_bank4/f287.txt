@@ -1,0 +1,18 @@
+=== 0xf287 ===
+
+void FUN_CODE_f287(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  undefined1 *puVar1;
+  
+  DAT_EXTMEM_e3fe = param_2;
+  DAT_EXTMEM_e3ff = param_3;
+  FUN_CODE_fd7e();
+  puVar1 = &DAT_EXTMEM_e3fe;
+  FUN_CODE_f5c3();
+  FUN_CODE_f5d8();
+  *puVar1 = param_1;
+  FUN_CODE_feef(DAT_EXTMEM_e3fe,DAT_EXTMEM_e3ff);
+  return;
+}
+

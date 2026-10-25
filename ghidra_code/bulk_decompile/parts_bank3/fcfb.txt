@@ -1,0 +1,10 @@
+=== 0xfcfb ===
+
+void FUN_CODE_fcfb(void)
+
+{
+  DAT_EXTMEM_b500 = DAT_EXTMEM_b500 & 0xef;
+  DAT_EXTMEM_b658 = DAT_EXTMEM_b658 & 0x7f;
+  return;
+}
+

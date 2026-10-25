@@ -1,0 +1,8 @@
+=== 0xcaed ===
+
+undefined1 FUN_CODE_caed(void)
+
+{
+  return DAT_EXTMEM_e3ab;
+}
+

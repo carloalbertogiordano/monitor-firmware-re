@@ -1,0 +1,13 @@
+=== 0x51a3 ===
+
+void FUN_CODE_51a3(byte param_1,undefined1 param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_5602(param_1 | param_3);
+  nop();
+  FUN_CODE_22e0(param_2,bVar1 >> 1 | bVar1 << 7);
+  return;
+}
+

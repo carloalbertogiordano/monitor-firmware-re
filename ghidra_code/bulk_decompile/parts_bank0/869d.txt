@@ -1,0 +1,15 @@
+=== 0x869d ===
+
+void FUN_CODE_869d(void)
+
+{
+  DAT_EXTMEM_e412 = 0;
+  FUN_CODE_0793(3,1,0);
+  DAT_EXTMEM_e412 = 0;
+  FUN_CODE_0793(4,1,0);
+  DAT_EXTMEM_e412 = 0;
+  FUN_CODE_0793(5,1,0);
+  DAT_EXTMEM_e412 = 0;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x9ce0 ===
+
+undefined1 FUN_CODE_9ce0(void)
+
+{
+  return (&LAB_CODE_5e66)[DAT_EXTMEM_e32f];
+}
+

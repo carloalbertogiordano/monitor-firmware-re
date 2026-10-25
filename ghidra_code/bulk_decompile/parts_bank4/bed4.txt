@@ -1,0 +1,9 @@
+=== 0xbed4 ===
+
+byte FUN_CODE_bed4(void)
+
+{
+  DAT_EXTMEM_06ee = DAT_EXTMEM_06ee & 0xfc;
+  return DAT_EXTMEM_06c0 & 0xcf;
+}
+

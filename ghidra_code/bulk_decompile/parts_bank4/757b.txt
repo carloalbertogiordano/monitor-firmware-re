@@ -1,0 +1,8 @@
+=== 0x757b ===
+
+char FUN_CODE_757b(void)
+
+{
+  return '\x01' - (DAT_EXTMEM_e4e3 + '\x01');
+}
+

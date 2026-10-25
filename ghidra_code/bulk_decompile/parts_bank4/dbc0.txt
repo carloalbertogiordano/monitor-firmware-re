@@ -1,0 +1,9 @@
+=== 0xdbc0 ===
+
+void FUN_CODE_dbc0(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_ff61 = *param_1;
+  return;
+}
+

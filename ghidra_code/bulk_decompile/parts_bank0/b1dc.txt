@@ -1,0 +1,10 @@
+=== 0xb1dc ===
+
+void FUN_CODE_b1dc(void)
+
+{
+  DAT_EXTMEM_e1a2 = DAT_EXTMEM_e1a2 & 0xfc;
+  DAT_EXTMEM_e1a3 = 0;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xb402 ===
+
+char FUN_CODE_b402(void)
+
+{
+  DAT_EXTMEM_e333 = 0;
+  EX0 = 0;
+  return (((DAT_EXTMEM_b7c7 & 7) < 3) << 7) >> 7;
+}
+

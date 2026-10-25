@@ -1,0 +1,10 @@
+=== 0xb22c ===
+
+void FUN_CODE_b22c(void)
+
+{
+  DAT_EXTMEM_e385 = 0x10;
+  DAT_EXTMEM_e386 = 0;
+  return;
+}
+

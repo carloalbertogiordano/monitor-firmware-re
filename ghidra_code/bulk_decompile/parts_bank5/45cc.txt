@@ -1,0 +1,10 @@
+=== 0x45cc ===
+
+void FUN_CODE_45cc(void)
+
+{
+  DAT_EXTMEM_e3d9 = 0;
+  FUN_CODE_439f(BANK0_R6,BANK0_R7,8);
+  return;
+}
+

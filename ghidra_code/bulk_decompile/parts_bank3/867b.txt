@@ -1,0 +1,15 @@
+=== 0x867b ===
+
+void FUN_CODE_867b(undefined1 param_1,undefined1 *param_2)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = RXCON;
+  *param_2 = param_1;
+  DAT_EXTMEM_1dba = param_1;
+  DAT_EXTMEM_1dca = param_1;
+  DAT_EXTMEM_1dda = param_1;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x04fc ===
+
+void FUN_CODE_04fc(byte param_1,short param_2,undefined1 *param_3,byte param_4)
+
+{
+  PT2 = CARRY1(param_1,param_4);
+  FUN_CODE_c42c(param_2,param_3);
+  return;
+}
+

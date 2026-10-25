@@ -1,0 +1,13 @@
+=== 0xb1a7 ===
+
+char FUN_CODE_b1a7(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_INTMEM_29;
+  *(undefined1 *)CONCAT11(param_1,param_2) = param_3;
+  DAT_INTMEM_29 = DAT_INTMEM_29 + '\x01';
+  return cVar1 + -8;
+}
+

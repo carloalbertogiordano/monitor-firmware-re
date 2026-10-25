@@ -1,0 +1,20 @@
+=== 0xf235 ===
+
+void FUN_CODE_f235(void)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_8d30();
+  if (cVar1 == '\0') {
+    FUN_CODE_8db7();
+    FUN_CODE_0865();
+    FUN_CODE_8e45();
+    FUN_CODE_0865();
+    FUN_CODE_0865(0x38,0xd8,2,0xc9);
+    return;
+  }
+  FUN_CODE_8dc9();
+  return;
+}
+

@@ -1,0 +1,30 @@
+=== 0x689e ===
+
+void FUN_CODE_689e(undefined1 param_1)
+
+{
+  nop();
+  BANK0_R0 = 8;
+  nop();
+  BANK1_R0 = 8;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_EXTMEM_0008 = param_1;
+  return;
+}
+

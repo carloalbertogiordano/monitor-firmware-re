@@ -1,0 +1,9 @@
+=== 0xfe80 ===
+
+void FUN_CODE_fe80(void)
+
+{
+  FUN_CODE_f1dc(BANK0_R5);
+  return;
+}
+

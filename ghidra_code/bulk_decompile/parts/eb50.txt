@@ -1,0 +1,21 @@
+=== 0xeb50 ===
+
+void FUN_CODE_eb50(void)
+
+{
+  undefined1 uVar1;
+  
+  DAT_EXTMEM_e6c4 = 0x50;
+  DAT_EXTMEM_e6c1 = 0x50;
+  DAT_EXTMEM_e6c3 = 0x50;
+  FUN_CODE_0f07();
+  uVar1 = FUN_CODE_d05c();
+  FUN_CODE_0eb3(uVar1);
+  FUN_CODE_0ecb();
+  FUN_CODE_0ed1();
+  FUN_CODE_0ed7(DAT_EXTMEM_e4c4);
+  FUN_CODE_0ee3(DAT_EXTMEM_e504);
+  FUN_CODE_0edd(DAT_EXTMEM_e501,DAT_EXTMEM_e502);
+  return;
+}
+

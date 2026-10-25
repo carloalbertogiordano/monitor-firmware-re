@@ -1,0 +1,11 @@
+=== 0x7108 ===
+
+void FUN_CODE_7108(void)
+
+{
+  nop();
+  nop();
+  FUN_CODE_76cc(0x8c);
+  return;
+}
+

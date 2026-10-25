@@ -1,0 +1,21 @@
+=== 0x5f44 ===
+
+void FUN_CODE_5f44(byte param_1,byte param_2)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_2;
+  FUN_CODE_5ec8(param_1 >> 1 | param_1 << 7 | param_2);
+  return;
+}
+

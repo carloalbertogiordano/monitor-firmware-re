@@ -1,0 +1,8 @@
+=== 0xa728 ===
+
+char FUN_CODE_a728(void)
+
+{
+  return -0x1b - (((0x51U < (byte)(DAT_EXTMEM_e5d9 * '\x02')) << 7) >> 7);
+}
+

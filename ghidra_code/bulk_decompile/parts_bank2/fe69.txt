@@ -1,0 +1,9 @@
+=== 0xfe69 ===
+
+void FUN_CODE_fe69(void)
+
+{
+  FUN_CODE_fcf4(DAT_EXTMEM_e644);
+  return;
+}
+

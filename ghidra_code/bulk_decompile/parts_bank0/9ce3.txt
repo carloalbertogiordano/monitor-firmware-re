@@ -1,0 +1,8 @@
+=== 0x9ce3 ===
+
+byte FUN_CODE_9ce3(void)
+
+{
+  return DAT_EXTMEM_0bd1 & 0xcf;
+}
+

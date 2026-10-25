@@ -1,0 +1,10 @@
+=== 0x4456 ===
+
+undefined1 FUN_CODE_4456(void)
+
+{
+  DAT_EXTMEM_e375 = 0;
+  DAT_EXTMEM_e376 = 0x80;
+  return 0;
+}
+

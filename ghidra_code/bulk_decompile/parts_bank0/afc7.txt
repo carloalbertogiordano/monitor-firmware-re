@@ -1,0 +1,8 @@
+=== 0xafc7 ===
+
+char FUN_CODE_afc7(void)
+
+{
+  return DAT_EXTMEM_e391 + '\x01';
+}
+

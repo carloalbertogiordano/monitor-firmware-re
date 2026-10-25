@@ -1,0 +1,10 @@
+=== 0xb0ab ===
+
+char FUN_CODE_b0ab(void)
+
+{
+  char in_PSW;
+  
+  return DAT_EXTMEM_e554 - ('\x03' - (((DAT_EXTMEM_e555 < 0xe8U - (in_PSW >> 7)) << 7) >> 7));
+}
+

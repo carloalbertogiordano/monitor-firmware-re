@@ -1,0 +1,8 @@
+=== 0xfbc2 ===
+
+byte FUN_CODE_fbc2(void)
+
+{
+  return DAT_EXTMEM_e69b >> 3;
+}
+

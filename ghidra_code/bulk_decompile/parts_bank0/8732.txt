@@ -1,0 +1,10 @@
+=== 0x8732 ===
+
+void FUN_CODE_8732(void)
+
+{
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e60a;
+  FUN_CODE_0793(6,2,0);
+  return;
+}
+

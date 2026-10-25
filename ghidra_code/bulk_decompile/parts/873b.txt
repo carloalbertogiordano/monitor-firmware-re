@@ -1,0 +1,8 @@
+=== 0x873b ===
+
+undefined1 FUN_CODE_873b(void)
+
+{
+  return DAT_EXTMEM_8006;
+}
+

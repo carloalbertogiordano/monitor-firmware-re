@@ -1,0 +1,47 @@
+=== 0x007a ===
+
+undefined1 FUN_CODE_007a(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  undefined1 uVar6;
+  undefined1 uVar7;
+  undefined1 uVar8;
+  
+  uVar8 = BANK0_R7;
+  uVar7 = BANK0_R6;
+  uVar6 = BANK0_R5;
+  uVar5 = BANK0_R4;
+  uVar4 = BANK0_R3;
+  uVar3 = BANK0_R2;
+  uVar2 = BANK0_R1;
+  uVar1 = BANK0_R0;
+  DAT_EXTMEM_e6c7 = DAT_EXTMEM_fff4;
+  TF2 = 0;
+  DAT_EXTMEM_ffeb = DAT_EXTMEM_ffeb & 0x7f | 8;
+  _7_3 = 1;
+  if (4 < (DAT_EXTMEM_ffad & 7)) {
+    DAT_EXTMEM_ffea = DAT_EXTMEM_ffea | 0x40;
+  }
+  _7_2 = 1;
+  DAT_INTMEM_58 = DAT_INTMEM_58 + '\x01';
+  if (DAT_INTMEM_58 == '\0') {
+    DAT_INTMEM_57 = DAT_INTMEM_57 + '\x01';
+  }
+  FUN_CODE_03ca();
+  DAT_EXTMEM_fff4 = DAT_EXTMEM_e6c7;
+  BANK0_R7 = uVar8;
+  BANK0_R6 = uVar7;
+  BANK0_R5 = uVar6;
+  BANK0_R4 = uVar5;
+  BANK0_R3 = uVar4;
+  BANK0_R2 = uVar3;
+  BANK0_R1 = uVar2;
+  BANK0_R0 = uVar1;
+  return param_1;
+}
+

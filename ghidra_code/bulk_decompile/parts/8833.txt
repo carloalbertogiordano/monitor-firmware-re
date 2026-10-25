@@ -1,0 +1,10 @@
+=== 0x8833 ===
+
+void FUN_CODE_8833(void)
+
+{
+  DAT_EXTMEM_02a9 = DAT_EXTMEM_02a9 & 0x1b | 0xc0;
+  DAT_EXTMEM_02ae = DAT_EXTMEM_02ae & 0xfd | 2;
+  return;
+}
+

@@ -1,0 +1,23 @@
+=== 0xefb3 ===
+
+void FUN_CODE_efb3(void)
+
+{
+  byte bVar1;
+  byte *pbVar2;
+  
+  _0_0 = 0;
+  FUN_CODE_ed70();
+  if ((DAT_EXTMEM_06c0 & 0x20) == 0x20) {
+    DAT_EXTMEM_06c5 = DAT_EXTMEM_06c5 & 0xc0 | 0x36;
+  }
+  pbVar2 = &DAT_EXTMEM_06c0;
+  if ((DAT_EXTMEM_06c0 & 0x10) == 0x10) {
+    bVar1 = FUN_CODE_bf0c();
+    *pbVar2 = bVar1 | 0x6c;
+  }
+  _0_0 = 1;
+  FUN_CODE_ed70();
+  return;
+}
+

@@ -1,0 +1,29 @@
+=== 0x1e3d ===
+
+/* WARNING: Instruction at (CODE,0x1ae8) overlaps instruction at (CODE,0x1ae7)
+    */
+
+void thunk_FUN_CODE_1e3f(byte param_1,undefined1 *param_2,char param_3,byte param_4,byte param_5,
+                        byte param_6,byte param_7)
+
+{
+  bool bVar1;
+  
+  do {
+    *param_2 = 0xec;
+    bVar1 = CARRY1(param_1,param_4);
+    param_4 = param_1 + param_4;
+    param_5 = param_5 << 1 | param_6 >> 7;
+    if ((char)param_5 < '\0') {
+      FUN_CODE_1d51();
+      return;
+    }
+    param_3 = param_3 + -1;
+    param_6 = param_6 << 1 | param_7 >> 7;
+    param_7 = param_7 << 1 | bVar1;
+    param_1 = param_4;
+  } while (param_3 != '\0');
+  FUN_CODE_1d76();
+  return;
+}
+

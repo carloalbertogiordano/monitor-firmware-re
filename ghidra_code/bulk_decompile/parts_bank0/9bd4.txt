@@ -1,0 +1,10 @@
+=== 0x9bd4 ===
+
+void FUN_CODE_9bd4(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xe0 | 0x10;
+  param_1[1] = param_1[1] & 0xe0 | 0x10;
+  return;
+}
+

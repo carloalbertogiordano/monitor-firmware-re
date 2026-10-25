@@ -1,0 +1,10 @@
+=== 0x4722 ===
+
+void FUN_CODE_4722(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e188 = 0;
+  DAT_EXTMEM_e189 = param_1;
+  return;
+}
+

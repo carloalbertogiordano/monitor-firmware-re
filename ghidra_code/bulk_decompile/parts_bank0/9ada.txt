@@ -1,0 +1,9 @@
+=== 0x9ada ===
+
+char FUN_CODE_9ada(void)
+
+{
+  DAT_EXTMEM_e618 = DAT_EXTMEM_e618 + '\x01';
+  return DAT_EXTMEM_e618;
+}
+

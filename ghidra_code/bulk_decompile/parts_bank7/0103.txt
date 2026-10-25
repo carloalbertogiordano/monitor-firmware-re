@@ -1,0 +1,15 @@
+=== 0x0103 ===
+
+void FUN_CODE_0103(byte param_1,short param_2)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_SFR_91;
+  DAT_SFR_91 = cVar1 + -1;
+                    /* WARNING: Could not recover jumptable at 0x0105. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)param_1))();
+  return;
+}
+

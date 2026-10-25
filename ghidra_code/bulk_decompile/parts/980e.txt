@@ -1,0 +1,228 @@
+=== 0x980e ===
+
+void FUN_CODE_980e(undefined1 param_1)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  short sVar9;
+  
+  sVar9 = -0x1c45;
+  FUN_CODE_d873();
+  *(undefined1 *)(sVar9 + 1) = param_1;
+  *(undefined1 *)(sVar9 + 2) = 0;
+  _0_3 = 0;
+  _0_4 = 0;
+  _0_5 = 0;
+  _0_6 = 0;
+  _0_7 = 0;
+  _1_0 = 0;
+  _1_1 = 0;
+  _1_2 = '\0';
+  _2_3 = 0;
+  _2_4 = 0;
+  _2_5 = 0;
+  _2_6 = 0;
+  _2_7 = 0;
+  _3_0 = 0;
+  _3_1 = 0;
+  _3_2 = 0;
+  for (bVar7 = 0; (bVar7 < DAT_EXTMEM_e3be) << 7 < '\0'; bVar7 = bVar7 + 1) {
+    _1_3 = _2_3;
+    _1_4 = _2_4;
+    _1_5 = _2_5;
+    _1_6 = _2_6;
+    _1_7 = _2_7;
+    _2_0 = _3_0;
+    _2_1 = _3_1;
+    _2_2 = _3_2;
+    bVar8 = FUN_CODE_1298(bVar7,DAT_EXTMEM_e3bd,DAT_EXTMEM_e3bc,DAT_EXTMEM_e3bb);
+    _0_3 = bVar8 & 1;
+    bVar1 = bVar8 >> 1;
+    _0_4 = bVar1 & 1;
+    bVar2 = bVar8 >> 2;
+    _0_5 = bVar2 & 1;
+    bVar3 = bVar8 >> 3;
+    _0_6 = bVar3 & 1;
+    bVar4 = bVar8 >> 4;
+    _0_7 = bVar4 & 1;
+    bVar5 = bVar8 >> 5;
+    _1_0 = bVar5 & 1;
+    bVar6 = bVar8 >> 6;
+    _1_1 = bVar6 & 1;
+    _1_2 = -((char)bVar8 >> 7);
+    bVar8 = bVar6;
+    if (_1_2 != '\0') {
+      bVar8 = bVar6 & 1 ^ 1;
+    }
+    if (_0_3 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_3_2 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_3_1 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_2_3 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    _1_3 = bVar8 & 1;
+    if (_1_1 != 0) {
+      bVar1 = bVar1 & 1 ^ 1;
+    }
+    if (_0_3 != 0) {
+      bVar1 = bVar1 & 1 ^ 1;
+    }
+    if (_3_1 != 0) {
+      bVar1 = bVar1 & 1 ^ 1;
+    }
+    if (_2_4 != 0) {
+      bVar1 = bVar1 & 1 ^ 1;
+    }
+    if (_2_3 != 0) {
+      bVar1 = bVar1 & 1 ^ 1;
+    }
+    _1_4 = bVar1 & 1;
+    if (_1_1 != 0) {
+      bVar2 = bVar2 & 1 ^ 1;
+    }
+    if (_0_4 != 0) {
+      bVar2 = bVar2 & 1 ^ 1;
+    }
+    if (_0_3 != 0) {
+      bVar2 = bVar2 & 1 ^ 1;
+    }
+    if (_3_1 != 0) {
+      bVar2 = bVar2 & 1 ^ 1;
+    }
+    if (_2_5 != 0) {
+      bVar2 = bVar2 & 1 ^ 1;
+    }
+    if (_2_4 != 0) {
+      bVar2 = bVar2 & 1 ^ 1;
+    }
+    if (_2_3 != 0) {
+      bVar2 = bVar2 & 1 ^ 1;
+    }
+    _1_5 = bVar2 & 1;
+    bVar8 = bVar3;
+    if (_1_2 != '\0') {
+      bVar8 = bVar3 & 1 ^ 1;
+    }
+    if (_0_5 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_0_4 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_3_2 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_2_6 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_2_5 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    if (_2_4 != 0) {
+      bVar8 = bVar8 & 1 ^ 1;
+    }
+    _1_6 = bVar8 & 1;
+    if (_0_7 != 0) {
+      bVar3 = bVar3 & 1 ^ 1;
+    }
+    if (_0_5 != 0) {
+      bVar3 = bVar3 & 1 ^ 1;
+    }
+    if (_2_7 != 0) {
+      bVar3 = bVar3 & 1 ^ 1;
+    }
+    if (_2_6 != 0) {
+      bVar3 = bVar3 & 1 ^ 1;
+    }
+    if (_2_5 != 0) {
+      bVar3 = bVar3 & 1 ^ 1;
+    }
+    _1_7 = bVar3 & 1;
+    if (_1_0 != 0) {
+      bVar4 = bVar4 & 1 ^ 1;
+    }
+    if (_0_6 != 0) {
+      bVar4 = bVar4 & 1 ^ 1;
+    }
+    if (_3_0 != 0) {
+      bVar4 = bVar4 & 1 ^ 1;
+    }
+    if (_2_7 != 0) {
+      bVar4 = bVar4 & 1 ^ 1;
+    }
+    if (_2_6 != 0) {
+      bVar4 = bVar4 & 1 ^ 1;
+    }
+    _2_0 = bVar4 & 1;
+    if (_1_1 != 0) {
+      bVar5 = bVar5 & 1 ^ 1;
+    }
+    if (_0_7 != 0) {
+      bVar5 = bVar5 & 1 ^ 1;
+    }
+    if (_3_1 != 0) {
+      bVar5 = bVar5 & 1 ^ 1;
+    }
+    if (_3_0 != 0) {
+      bVar5 = bVar5 & 1 ^ 1;
+    }
+    if (_2_7 != 0) {
+      bVar5 = bVar5 & 1 ^ 1;
+    }
+    _2_1 = bVar5 & 1;
+    if (_1_2 != '\0') {
+      bVar6 = bVar6 & 1 ^ 1;
+    }
+    if (_1_0 != 0) {
+      bVar6 = bVar6 & 1 ^ 1;
+    }
+    if (_3_2 != 0) {
+      bVar6 = bVar6 & 1 ^ 1;
+    }
+    if (_3_1 != 0) {
+      bVar6 = bVar6 & 1 ^ 1;
+    }
+    if (_3_0 != 0) {
+      bVar6 = bVar6 & 1 ^ 1;
+    }
+    _2_2 = bVar6 & 1;
+    _2_3 = _1_3;
+    _2_4 = _1_4;
+    _2_5 = _1_5;
+    _2_6 = _1_6;
+    _2_7 = _1_7;
+    _3_0 = _2_0;
+    _3_1 = _2_1;
+    _3_2 = _2_2;
+  }
+  DAT_EXTMEM_e3bf =
+       ((char)(_3_2 << 7) >> 7) * -0x80 +
+       ((char)(_3_1 << 7) >> 7) * -0x40 +
+       ((char)(_3_0 << 7) >> 7) * -0x20 +
+       ((char)(_2_7 << 7) >> 7) * -0x10 +
+       ((char)(_2_6 << 7) >> 7) * -8 +
+       ((char)(_2_5 << 7) >> 7) * -4 + (((char)(_2_4 << 7) >> 7) * -2 - ((char)(_2_3 << 7) >> 7));
+  _1_3 = _2_3;
+  _1_4 = _2_4;
+  _1_5 = _2_5;
+  _1_6 = _2_6;
+  _1_7 = _2_7;
+  _2_0 = _3_0;
+  _2_1 = _3_1;
+  _2_2 = _3_2;
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xa564 ===
+
+void FUN_CODE_a564(void)
+
+{
+  FUN_CODE_133e(0,100,BANK0_R2,BANK0_R3);
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0x56b8 ===
+
+void FUN_CODE_56b8(void)
+
+{
+  _0_2 = 0;
+  FUN_CODE_e8e7(0,0,0,100,DAT_EXTMEM_e18e);
+  DAT_EXTMEM_e18e = 0;
+  return;
+}
+

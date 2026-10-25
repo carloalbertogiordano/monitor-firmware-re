@@ -1,0 +1,10 @@
+=== 0x7370 ===
+
+void FUN_CODE_7370(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e18e = param_1;
+  DAT_EXTMEM_e18f = param_2;
+  return;
+}
+

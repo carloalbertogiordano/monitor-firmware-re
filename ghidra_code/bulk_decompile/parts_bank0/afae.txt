@@ -1,0 +1,8 @@
+=== 0xafae ===
+
+char FUN_CODE_afae(void)
+
+{
+  return DAT_EXTMEM_e3c4 * '\x03';
+}
+

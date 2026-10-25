@@ -1,0 +1,8 @@
+=== 0xd622 ===
+
+undefined1 FUN_CODE_d622(void)
+
+{
+  return DAT_EXTMEM_e4f2;
+}
+

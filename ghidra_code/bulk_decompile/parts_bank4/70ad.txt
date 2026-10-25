@@ -1,0 +1,9 @@
+=== 0x70ad ===
+
+undefined1 FUN_CODE_70ad(undefined1 *param_1,undefined1 param_2)
+
+{
+  *param_1 = param_2;
+  return DAT_EXTMEM_e4ee;
+}
+

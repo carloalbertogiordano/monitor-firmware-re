@@ -1,0 +1,9 @@
+=== 0xdbbd ===
+
+void FUN_CODE_dbbd(void)
+
+{
+  DAT_EXTMEM_ff61 = uEXTMEMe6af;
+  return;
+}
+

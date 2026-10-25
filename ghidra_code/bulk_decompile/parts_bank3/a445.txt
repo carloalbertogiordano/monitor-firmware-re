@@ -1,0 +1,11 @@
+=== 0xa445 ===
+
+undefined1 FUN_CODE_a445(void)
+
+{
+  DAT_EXTMEM_0b08 = DAT_EXTMEM_0b08 & 0xf8 | 2;
+  FUN_CODE_074b(0,5);
+  DAT_EXTMEM_0b08 = DAT_EXTMEM_0b08 & 0xe7 | (DAT_EXTMEM_e6c9 & 3) << 3;
+  return DAT_EXTMEM_0b0c;
+}
+

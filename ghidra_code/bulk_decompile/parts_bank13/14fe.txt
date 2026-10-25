@@ -1,0 +1,13 @@
+=== 0x14fe ===
+
+void FUN_CODE_14fe(void)
+
+{
+  nop();
+  nop();
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

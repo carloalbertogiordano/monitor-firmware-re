@@ -1,0 +1,8 @@
+=== 0xe492 ===
+
+undefined1 FUN_CODE_e492(void)
+
+{
+  return DAT_EXTMEM_e33c;
+}
+

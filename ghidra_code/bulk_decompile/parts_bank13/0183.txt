@@ -1,0 +1,12 @@
+=== 0x0183 ===
+
+void FUN_CODE_0183(undefined1 param_1,short param_2,undefined1 param_3)
+
+{
+  nop();
+  nop();
+  BANK3_R1 = param_3;
+  FUN_CODE_0070(param_1,param_2 + 1);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x1125 ===
+
+char FUN_CODE_1125(char param_1,char param_2)
+
+{
+  HIFLG_5 = 0;
+  return param_1 + param_2;
+}
+

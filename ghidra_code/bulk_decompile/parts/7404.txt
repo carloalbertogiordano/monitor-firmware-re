@@ -1,0 +1,9 @@
+=== 0x7404 ===
+
+void FUN_CODE_7404(void)
+
+{
+  FUN_CODE_076f(0,2,0,0x2a);
+  return;
+}
+

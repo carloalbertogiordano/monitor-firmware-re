@@ -1,0 +1,12 @@
+=== 0xe1d4 ===
+
+void FUN_CODE_e1d4(void)
+
+{
+  _0_0 = 0;
+  FUN_CODE_fc31();
+  FUN_CODE_f9ff();
+  FUN_CODE_f4be();
+  return;
+}
+

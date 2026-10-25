@@ -1,0 +1,8 @@
+=== 0x876e ===
+
+undefined1 FUN_CODE_876e(void)
+
+{
+  return 0;
+}
+

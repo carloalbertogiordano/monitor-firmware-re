@@ -1,0 +1,8 @@
+=== 0xb183 ===
+
+char FUN_CODE_b183(void)
+
+{
+  return DAT_INTMEM_2a % 0xc - 1;
+}
+

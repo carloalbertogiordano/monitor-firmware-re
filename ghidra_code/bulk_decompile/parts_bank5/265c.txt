@@ -1,0 +1,11 @@
+=== 0x265c ===
+
+void FUN_CODE_265c(void)
+
+{
+  DAT_EXTMEM_ff2a = DAT_EXTMEM_ff2a | 0x20;
+  DAT_EXTMEM_e347 = 1;
+  DAT_EXTMEM_e348 = 1;
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x42af ===
+
+void FUN_CODE_42af(void)
+
+{
+  DAT_EXTMEM_3a0b = DAT_EXTMEM_e33c | DAT_EXTMEM_3a0b & 0x3a;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xe344 ===
+
+byte FUN_CODE_e344(void)
+
+{
+  return DAT_EXTMEM_e4cc >> 6;
+}
+

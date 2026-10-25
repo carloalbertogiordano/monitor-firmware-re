@@ -1,0 +1,69 @@
+=== 0xe56c ===
+
+void FUN_CODE_e56c(byte param_1,byte param_2,byte param_3,char param_4)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  undefined1 uVar6;
+  undefined1 uVar7;
+  undefined1 uVar8;
+  byte bVar9;
+  byte bVar10;
+  byte bVar11;
+  byte bVar12;
+  byte bVar13;
+  byte *pbVar14;
+  
+  if (param_4 == '\x01') {
+    pbVar14 = &DAT_EXTMEM_0504;
+  }
+  else if (param_4 == '\x02') {
+    pbVar14 = &DAT_EXTMEM_0508;
+  }
+  else if (param_4 == '\x03') {
+    pbVar14 = &DAT_EXTMEM_0546;
+  }
+  else {
+    pbVar14 = &DAT_EXTMEM_0500;
+  }
+  bVar13 = *pbVar14 & 0xf;
+  bVar10 = 0;
+  bVar11 = 0;
+  bVar12 = 0;
+  FUN_CODE_160f(0x18);
+  uVar7 = BANK0_R7;
+  uVar5 = BANK0_R6;
+  uVar3 = BANK0_R5;
+  uVar1 = BANK0_R4;
+  bVar9 = 0x10;
+  FUN_CODE_70ad();
+  uVar8 = BANK0_R7;
+  uVar6 = BANK0_R6;
+  uVar4 = BANK0_R5;
+  uVar2 = BANK0_R4;
+  BANK0_R3 = uVar7;
+  BANK0_R2 = uVar5;
+  BANK0_R1 = uVar3;
+  BANK0_R0 = uVar1;
+  bVar13 = param_3 | bVar13;
+  bVar12 = param_2 | bVar12;
+  bVar11 = param_1 | bVar11;
+  bVar9 = bVar9 | bVar10;
+  bVar10 = 8;
+  FUN_CODE_70ad();
+  BANK0_R3 = uVar8;
+  BANK0_R2 = uVar6;
+  BANK0_R1 = uVar4;
+  BANK0_R0 = uVar2;
+  DAT_INTMEM_2b = bVar12 | param_2;
+  DAT_INTMEM_2a = bVar11 | param_1;
+  DAT_INTMEM_29 = bVar9 | bVar10;
+  DAT_INTMEM_2c = bVar13 | param_3 | pbVar14[1];
+  FUN_CODE_700f();
+  return;
+}
+

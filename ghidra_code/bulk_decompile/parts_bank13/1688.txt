@@ -1,0 +1,18 @@
+=== 0x1688 ===
+
+void FUN_CODE_1688(char param_1,byte *param_2,byte param_3,char *param_4,char *param_5,char param_6,
+                  char param_7,char param_8,byte param_9,byte param_10)
+
+{
+  nop();
+  if (param_1 != -1) {
+    nop();
+    do {
+      nop();
+      nop();
+    } while( true );
+  }
+  FUN_CODE_1090(param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,param_10);
+  return;
+}
+

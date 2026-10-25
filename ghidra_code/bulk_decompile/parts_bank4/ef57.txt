@@ -1,0 +1,19 @@
+=== 0xef57 ===
+
+byte FUN_CODE_ef57(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  FUN_CODE_7f59();
+  bVar1 = DAT_INTMEM_58 - DAT_EXTMEM_e378;
+  bVar2 = DAT_INTMEM_57 - (DAT_EXTMEM_e377 - (((DAT_INTMEM_58 < DAT_EXTMEM_e378) << 7) >> 7));
+  FUN_CODE_002e();
+  bVar1 = 0x80 - (((bVar1 < 0x80) << 7) >> 7);
+  if (bVar1 <= (bVar2 ^ 0x80)) {
+    FUN_CODE_7f59((bVar2 ^ 0x80) - bVar1);
+  }
+  return DAT_EXTMEM_e378;
+}
+

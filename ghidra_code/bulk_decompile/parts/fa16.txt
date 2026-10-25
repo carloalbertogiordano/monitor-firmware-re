@@ -1,0 +1,16 @@
+=== 0xfa16 ===
+
+void FUN_CODE_fa16(void)
+
+{
+  _0_0 = 0;
+  FUN_CODE_0979();
+  _0_0 = 0;
+  FUN_CODE_097f();
+  _0_0 = 0;
+  FUN_CODE_0985();
+  _0_0 = 0;
+  FUN_CODE_09af();
+  return;
+}
+

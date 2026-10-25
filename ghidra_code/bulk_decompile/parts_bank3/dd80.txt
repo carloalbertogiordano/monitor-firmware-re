@@ -1,0 +1,8 @@
+=== 0xdd80 ===
+
+char FUN_CODE_dd80(void)
+
+{
+  return (((DAT_EXTMEM_b7c7 & 7) < 3) << 7) >> 7;
+}
+

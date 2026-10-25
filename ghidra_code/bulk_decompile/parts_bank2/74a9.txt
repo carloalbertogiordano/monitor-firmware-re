@@ -1,0 +1,8 @@
+=== 0x74a9 ===
+
+undefined1 FUN_CODE_74a9(void)
+
+{
+  return DAT_EXTMEM_e389;
+}
+

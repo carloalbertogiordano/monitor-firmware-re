@@ -1,0 +1,179 @@
+=== 0xc611 ===
+
+char FUN_CODE_c611(undefined1 param_1,byte param_2,byte param_3)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  char cVar4;
+  byte bVar5;
+  char cVar6;
+  byte bVar7;
+  byte *pbVar8;
+  
+  DAT_EXTMEM_e33a = param_3;
+  FUN_CODE_b43b(param_1,0xe33b);
+  FUN_CODE_b441();
+  DAT_EXTMEM_e38a = 0x20;
+  bVar2 = 0;
+  cVar4 = FUN_CODE_fe61(2,1);
+  if (bVar2 == 0x20) {
+    return cVar4;
+  }
+  _6_4 = '\0';
+  bVar3 = (1 < DAT_EXTMEM_e33b) << 7;
+  if (DAT_EXTMEM_e33b == 2) {
+    FUN_CODE_c7e3();
+    pbVar8 = &DAT_EXTMEM_e33e;
+  }
+  else if (DAT_EXTMEM_e33b == 1) {
+    FUN_CODE_b564();
+    FUN_CODE_f17a();
+    pbVar8 = &DAT_EXTMEM_e33c;
+  }
+  else {
+    FUN_CODE_c7e3();
+    FUN_CODE_b667(0xe33e);
+    FUN_CODE_b568();
+    FUN_CODE_f17a();
+    bVar5 = FUN_CODE_b667(0xe340);
+    FUN_CODE_b568((bVar5 >> 1 | bVar3 & 0x80) >> 1 | bVar5 << 7);
+    FUN_CODE_f17a();
+    pbVar8 = &DAT_EXTMEM_e342;
+  }
+  *pbVar8 = param_2;
+  pbVar8[1] = bVar2;
+  cVar4 = (5 < DAT_EXTMEM_e33a) << 7;
+  if (DAT_EXTMEM_e33a == 6) {
+    FUN_CODE_b47a();
+    if (cVar4 < '\0') {
+      FUN_CODE_b416();
+    }
+    else {
+      FUN_CODE_b4dd();
+      bVar2 = cVar4 < '\0';
+      if ((bool)bVar2) {
+        FUN_CODE_b481();
+      }
+      else {
+        FUN_CODE_b489();
+      }
+      FUN_CODE_b491();
+    }
+    FUN_CODE_b5bc();
+    FUN_CODE_b454();
+    FUN_CODE_b475(0xe344);
+    if (cVar4 < '\0') {
+      FUN_CODE_b416();
+    }
+    else {
+      FUN_CODE_b4dd();
+      bVar2 = cVar4 < '\0';
+      if ((bool)bVar2) {
+        FUN_CODE_b481();
+      }
+      else {
+        FUN_CODE_b489();
+      }
+      FUN_CODE_b491();
+    }
+    FUN_CODE_b5bc();
+LAB_CODE_c730:
+    FUN_CODE_152f();
+    FUN_CODE_b45b(0,0x37);
+    DAT_EXTMEM_e346 = param_2;
+    DAT_EXTMEM_e347 = bVar2;
+  }
+  else {
+    cVar4 = (3 < DAT_EXTMEM_e33a - 6) << 7;
+    if (DAT_EXTMEM_e33a == 10) {
+      FUN_CODE_b47a();
+      if (cVar4 < '\0') {
+        FUN_CODE_b416();
+      }
+      else {
+        FUN_CODE_b4dd();
+        if (cVar4 < '\0') {
+          FUN_CODE_b481();
+        }
+        else {
+          FUN_CODE_b489();
+        }
+        FUN_CODE_b491();
+      }
+      FUN_CODE_b44c();
+      FUN_CODE_b475(0xe344);
+      if (cVar4 < '\0') {
+        FUN_CODE_b416();
+      }
+      else {
+        FUN_CODE_b4dd();
+        if (cVar4 < '\0') {
+          FUN_CODE_b481();
+        }
+        else {
+          FUN_CODE_b489();
+        }
+        FUN_CODE_b491();
+      }
+      bVar2 = 0x80;
+      param_2 = 0xdf;
+      goto LAB_CODE_c730;
+    }
+  }
+  if (DAT_EXTMEM_e345 != 0 || DAT_EXTMEM_e344 != 0) {
+    bVar2 = DAT_EXTMEM_e346;
+    if (DAT_EXTMEM_e346 == 0) {
+      bVar2 = DAT_EXTMEM_e347;
+    }
+    if (bVar2 != 0) goto LAB_CODE_c75a;
+  }
+  if (_6_4 != '\x01') {
+    return '\0';
+  }
+LAB_CODE_c75a:
+  cVar4 = (1 < DAT_EXTMEM_e33b) << 7;
+  if (DAT_EXTMEM_e33b == 2) {
+    cVar6 = FUN_CODE_b4a1();
+    if (((((-1 < cVar4) || (cVar6 = FUN_CODE_b600(), cVar4 < '\0')) ||
+         (cVar6 = FUN_CODE_b4ac(0xe33e), -1 < cVar4)) || (cVar6 = FUN_CODE_b525(), cVar4 < '\0')) &&
+       (_6_4 != '\x01')) {
+      return cVar6;
+    }
+  }
+  else if (DAT_EXTMEM_e33b == 1) {
+    cVar6 = FUN_CODE_b4a9();
+    if (((-1 < cVar4) || (cVar6 = FUN_CODE_b525(), cVar4 < '\0')) && (_6_4 != '\x01')) {
+      return cVar6;
+    }
+  }
+  else {
+    bVar2 = DAT_EXTMEM_e344;
+    bVar3 = DAT_EXTMEM_e345;
+    cVar6 = FUN_CODE_b4a1();
+    if ((((cVar4 < '\0') && (cVar6 = FUN_CODE_b600(), -1 < cVar4)) &&
+        ((cVar6 = FUN_CODE_b4ac(0xe33e), cVar4 < '\0' &&
+         ((cVar6 = FUN_CODE_b525(), -1 < cVar4 &&
+          (bVar5 = DAT_EXTMEM_e344 - (((DAT_EXTMEM_e341 < DAT_EXTMEM_e345 + 1) << 7) >> 7),
+          cVar6 = DAT_EXTMEM_e340 - bVar5, DAT_EXTMEM_e340 < bVar5)))))) &&
+       (bVar5 = bVar2 - (((DAT_EXTMEM_e341 < bVar3) << 7) >> 7), cVar6 = DAT_EXTMEM_e340 - bVar5,
+       bVar5 <= DAT_EXTMEM_e340)) {
+      bVar5 = DAT_EXTMEM_e344;
+      bVar1 = DAT_EXTMEM_e345;
+      bVar7 = FUN_CODE_b5eb(cVar6);
+      bVar5 = bVar5 - (((bVar7 < bVar1 + 1) << 7) >> 7);
+      cVar6 = bVar2 - bVar5;
+      if ((bVar2 < bVar5) &&
+         (bVar3 = DAT_EXTMEM_e346 - (((bVar3 < DAT_EXTMEM_e347) << 7) >> 7), cVar6 = bVar2 - bVar3,
+         bVar3 <= bVar2)) {
+        return cVar6;
+      }
+    }
+    if (_6_4 != '\x01') {
+      return cVar6;
+    }
+  }
+  return cVar6;
+}
+

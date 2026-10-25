@@ -1,0 +1,12 @@
+=== 0xb0f2 ===
+
+void FUN_CODE_b0f2(undefined1 *param_1,undefined1 param_2)
+
+{
+  *param_1 = param_2;
+  FUN_CODE_1755(DAT_INTMEM_2a,
+                CONCAT11(-0x1d - (((0x8cU < (byte)(DAT_INTMEM_29 * '\x06')) << 7) >> 7),
+                         DAT_INTMEM_29 * '\x06' + 0x73),2);
+  return;
+}
+

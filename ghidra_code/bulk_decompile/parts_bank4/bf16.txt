@@ -1,0 +1,9 @@
+=== 0xbf16 ===
+
+void FUN_CODE_bf16(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xbf | 0x40;
+  return;
+}
+

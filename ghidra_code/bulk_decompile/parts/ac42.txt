@@ -1,0 +1,9 @@
+=== 0xac42 ===
+
+undefined1 FUN_CODE_ac42(void)
+
+{
+  FUN_CODE_0775(0x51,2,0xc9);
+  return 0;
+}
+

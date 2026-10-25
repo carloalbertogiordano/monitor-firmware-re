@@ -1,0 +1,9 @@
+=== 0xfe48 ===
+
+void FUN_CODE_fe48(undefined1 param_1)
+
+{
+  DAT_EXTMEM_0004 = param_1;
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xfe81 ===
+
+undefined1 FUN_CODE_fe81(short param_1)
+
+{
+  FUN_CODE_d567();
+  return *(undefined1 *)(param_1 + 1);
+}
+

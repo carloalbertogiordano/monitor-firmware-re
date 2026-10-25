@@ -1,0 +1,44 @@
+=== 0x8c20 ===
+
+void FUN_CODE_8c20(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  char in_PSW;
+  short sVar2;
+  
+  DAT_EXTMEM_e356 = 0;
+  uVar1 = DAT_EXTMEM_e52f;
+  FUN_CODE_715b(DAT_EXTMEM_e530,0xe519);
+  DAT_EXTMEM_e357 = uVar1;
+  if (in_PSW < '\0') {
+    DAT_EXTMEM_e357 = BANK0_R4;
+    param_1 = BANK0_R5;
+  }
+  uVar1 = DAT_EXTMEM_e539;
+  DAT_EXTMEM_e358 = param_1;
+  FUN_CODE_715b(DAT_EXTMEM_e53a,0xe525);
+  DAT_EXTMEM_e359 = uVar1;
+  if (in_PSW < '\0') {
+    DAT_EXTMEM_e359 = BANK0_R4;
+    param_1 = BANK0_R5;
+  }
+  sVar2 = -0x1ca7;
+  FUN_CODE_6ee2(param_1);
+  FUN_CODE_1724(sVar2 + 1);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe365);
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_EXTMEM_e356 = 0;
+  FUN_CODE_70b7();
+  FUN_CODE_6e53(0xe365);
+                    /* WARNING: Subroutine does not return */
+  thunk_FUN_CODE_152f();
+}
+

@@ -1,0 +1,8 @@
+=== 0x1d76 ===
+
+undefined1 FUN_CODE_1d76(void)
+
+{
+  return 0;
+}
+

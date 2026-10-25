@@ -1,0 +1,10 @@
+=== 0xc4fa ===
+
+void FUN_CODE_c4fa(void)
+
+{
+  FUN_CODE_17ba();
+  FUN_CODE_152f(0,0,0,0x23);
+  return;
+}
+

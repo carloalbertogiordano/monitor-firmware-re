@@ -1,0 +1,8 @@
+=== 0xfed7 ===
+
+undefined1 FUN_CODE_fed7(void)
+
+{
+  return DAT_EXTMEM_e18d;
+}
+

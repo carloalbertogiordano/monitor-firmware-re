@@ -1,0 +1,21 @@
+=== 0x1622 ===
+
+void FUN_CODE_1622(undefined1 param_1,char param_2)
+
+{
+  if (param_2 == '\x01') {
+    FUN_CODE_19bd(param_1);
+    return;
+  }
+  if (param_2 == '\0') {
+    FUN_CODE_16b0(param_1);
+    return;
+  }
+  if (param_2 == -2) {
+    FUN_CODE_19c9(param_1);
+    return;
+  }
+  FUN_CODE_19d5(param_1);
+  return;
+}
+

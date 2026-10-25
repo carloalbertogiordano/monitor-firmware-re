@@ -1,0 +1,18 @@
+=== 0xf021 ===
+
+void FUN_CODE_f021(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e332 = param_1;
+  FUN_CODE_fa16();
+  _0_1 = 0;
+  FUN_CODE_c89e(3);
+  FUN_CODE_fd51();
+  if (_4_4 != '\x01') {
+    FUN_CODE_f931(DAT_EXTMEM_e332);
+    FUN_CODE_f946(DAT_EXTMEM_e332);
+    FUN_CODE_f95b(DAT_EXTMEM_e332);
+  }
+  return;
+}
+

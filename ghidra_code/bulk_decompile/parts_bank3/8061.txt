@@ -1,0 +1,45 @@
+=== 0x8061 ===
+
+undefined1 FUN_CODE_8061(byte param_1,undefined1 *param_2,char param_3)
+
+{
+  char in_PSW;
+  
+  if ((byte)(param_3 - (in_PSW >> 7)) <= param_1) {
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return *param_2;
+}
+

@@ -1,0 +1,10 @@
+=== 0xa764 ===
+
+undefined1 FUN_CODE_a764(undefined1 param_1)
+
+{
+  char in_PSW;
+  
+  return *(undefined1 *)CONCAT11(-0x1b - (in_PSW >> 7),param_1);
+}
+

@@ -1,0 +1,10 @@
+=== 0xc534 ===
+
+void FUN_CODE_c534(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xf0;
+  param_1[1] = 0;
+  return;
+}
+

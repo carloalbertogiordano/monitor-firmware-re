@@ -1,0 +1,8 @@
+=== 0xda80 ===
+
+undefined1 FUN_CODE_da80(void)
+
+{
+  return 0;
+}
+

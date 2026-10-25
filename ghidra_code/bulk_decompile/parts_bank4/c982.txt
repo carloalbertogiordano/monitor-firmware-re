@@ -1,0 +1,10 @@
+=== 0xc982 ===
+
+undefined1 FUN_CODE_c982(undefined1 param_1)
+
+{
+  FUN_CODE_779c();
+  DAT_EXTMEM_e33f = param_1;
+  return DAT_EXTMEM_e430;
+}
+

@@ -1,0 +1,14 @@
+=== 0xf3e6 ===
+
+char FUN_CODE_f3e6(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar2 = (DAT_EXTMEM_e4ab & 0x7f) + 2;
+  for (bVar1 = 0; bVar1 < bVar2; bVar1 = bVar1 + 1) {
+  }
+  return bVar1 - bVar2;
+}
+

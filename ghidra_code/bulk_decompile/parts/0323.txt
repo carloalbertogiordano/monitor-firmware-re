@@ -1,0 +1,11 @@
+=== 0x0323 ===
+
+void FUN_CODE_0323(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xbf;
+  DAT_EXTMEM_ff5d = DAT_EXTMEM_ff5d | 0x18;
+  FUN_CODE_0379();
+  return;
+}
+

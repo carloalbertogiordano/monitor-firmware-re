@@ -1,0 +1,8 @@
+=== 0x6f18 ===
+
+undefined1 FUN_CODE_6f18(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 3);
+}
+

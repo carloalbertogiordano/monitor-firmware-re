@@ -1,0 +1,11 @@
+=== 0xfcdb ===
+
+void FUN_CODE_fcdb(void)
+
+{
+  if ((DAT_EXTMEM_0023 & 1) == 0) {
+    return;
+  }
+  return;
+}
+

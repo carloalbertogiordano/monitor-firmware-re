@@ -1,0 +1,12 @@
+=== 0x81e2 ===
+
+void FUN_CODE_81e2(void)
+
+{
+  byte in_PSW;
+  
+  _0_1 = in_PSW >> 7;
+  FUN_CODE_81a2();
+  return;
+}
+

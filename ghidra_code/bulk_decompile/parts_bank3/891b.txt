@@ -1,0 +1,8 @@
+=== 0x891b ===
+
+byte FUN_CODE_891b(byte *param_1)
+
+{
+  return DAT_EXTMEM_e352 + *param_1 >> 1 | CARRY1(DAT_EXTMEM_e352,*param_1) << 7;
+}
+

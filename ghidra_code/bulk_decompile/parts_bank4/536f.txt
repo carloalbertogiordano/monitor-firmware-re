@@ -1,0 +1,83 @@
+=== 0x536f ===
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void FUN_CODE_536f(byte param_1,byte *param_2,byte *param_3,byte param_4,byte param_5,byte param_6,
+                  byte param_7,byte param_8)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  char cVar5;
+  byte in_PSW;
+  
+  cVar2 = CCAP3L;
+  CCAP3L = cVar2 + '\x01';
+  DAT_INTMEM_6b = DAT_INTMEM_6b & 0x4e;
+  if ((char)in_PSW < '\0') {
+    DAT_INTMEM_53 = DAT_INTMEM_53 & param_1;
+    bVar3 = param_1 & 0x55 & *param_2 & *param_3 & (byte)param_2 & param_4 & param_5 & param_6 &
+            param_7 & param_8 & param_1;
+    if (bVar3 != 0) {
+      DAT_INTMEM_64 = DAT_INTMEM_64 ^ 0x65;
+      bVar3 = bVar3 ^ *param_2 ^ *param_3 ^ (byte)param_2 ^ (byte)param_3 ^ param_4 ^ param_6 ^
+              param_7 ^ param_8 ^ param_1;
+      if (bVar3 == 0) {
+        *param_3 = 0x78;
+        FUN_CODE_5483(0x76,0x7b,0x7f);
+        return;
+      }
+      if (bVar3 != BANK3_R5) {
+        uVar1 = DAT_SFR_ff;
+        bVar3 = (bVar3 | param_5) - 1 ^ 0xd2;
+        DAT_SFR_ff = bVar3;
+        nop();
+        nop();
+        thunk_FUN_CODE_8709(bVar3 - 1,uVar1);
+        return;
+      }
+      bVar4 = bVar3 << 1 | bVar3 >> 7;
+      DAT_INTMEM_64 = DAT_INTMEM_64 & bVar4;
+      bVar3 = T2MOD;
+      T2MOD = bVar3 & (byte)(param_3 + bVar4);
+      bVar3 = param_2['\x01'] - ((CARRY1((byte)(param_3 + bVar4),param_1) << 7) >> 7);
+      bVar4 = *(byte *)ZEXT12(param_3) + bVar3;
+      bVar3 = *param_3 - ((CARRY1(*(byte *)ZEXT12(param_3),bVar3) << 7) >> 7);
+      cVar2 = DAT_INTMEM_3e;
+      func_0x560c(bVar4 + bVar3 >> 1 | CARRY1(bVar4,bVar3) << 7,DAT_INTMEM_3e);
+      cVar5 = FUN_CODE_50d1();
+      thunk_FUN_CODE_d102(cVar5 + cVar2 + -1);
+      return;
+    }
+    DAT_INTMEM_50 = DAT_INTMEM_50 + '\x01';
+    if ((char)((in_PSW >> 7 | _1_1) << 7) < '\0') {
+      bVar3 = func_0x574a(param_8 + 1);
+      DAT_INTMEM_31 = DAT_INTMEM_31 + -1;
+      *param_2 = *param_2 - 1;
+      FUN_CODE_536f(bVar3 & param_7);
+      *param_3 = *param_3 - 1;
+      FUN_CODE_537f();
+      FUN_CODE_538e(param_2 + -1);
+      func_0x529c(param_3 + -1);
+      FUN_CODE_51a9(param_4 - 1);
+      FUN_CODE_50b6(param_5 - 1);
+      return;
+    }
+  }
+  else {
+    bVar3 = decimal_adjust(param_1);
+    *param_3 = *param_3 & 0xf0 | bVar3 & 0xf;
+    if (param_4 == 1) {
+      *(byte *)ZEXT12(param_2) = param_1;
+      DAT_SFR_f8 = param_1;
+      nop();
+      return;
+    }
+  }
+  uVar1 = P2_2;
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+

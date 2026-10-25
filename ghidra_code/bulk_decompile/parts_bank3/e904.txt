@@ -1,0 +1,10 @@
+=== 0xe904 ===
+
+void FUN_CODE_e904(void)
+
+{
+  DAT_EXTMEM_b7d0 = DAT_EXTMEM_b7d0 & 0xfd | 2;
+  EX0 = 1;
+  return;
+}
+

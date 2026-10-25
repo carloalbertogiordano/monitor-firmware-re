@@ -1,0 +1,9 @@
+=== 0xddeb ===
+
+void FUN_CODE_ddeb(void)
+
+{
+  DAT_EXTMEM_e38a = 0;
+  return;
+}
+

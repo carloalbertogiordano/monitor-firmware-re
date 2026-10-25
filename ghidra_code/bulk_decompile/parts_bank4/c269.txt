@@ -1,0 +1,57 @@
+=== 0xc269 ===
+
+void FUN_CODE_c269(byte param_1,byte param_2)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  char cVar3;
+  byte bVar4;
+  byte bVar5;
+  undefined1 uVar6;
+  
+  _0_6 = 1;
+  DAT_EXTMEM_e371 = param_1;
+  DAT_EXTMEM_e372 = param_2;
+  FUN_CODE_f3c1(0,0);
+  FUN_CODE_f9ff();
+  FUN_CODE_f9ea();
+  bVar4 = DAT_EXTMEM_08a5 & 0x3f;
+  if (DAT_EXTMEM_e371 < bVar4 - (((DAT_EXTMEM_e372 < DAT_EXTMEM_08a6) << 7) >> 7)) {
+    bVar5 = DAT_EXTMEM_08a6 - DAT_EXTMEM_e372;
+    bVar4 = bVar4 - (DAT_EXTMEM_e371 - (((DAT_EXTMEM_08a6 < DAT_EXTMEM_e372) << 7) >> 7));
+  }
+  else {
+    bVar5 = DAT_EXTMEM_e372 - DAT_EXTMEM_08a6;
+    bVar4 = DAT_EXTMEM_e371 - (bVar4 - (((DAT_EXTMEM_e372 < DAT_EXTMEM_08a6) << 7) >> 7));
+  }
+  cVar3 = '\x06';
+  do {
+    bVar1 = bVar4 >> 1;
+    bVar5 = bVar5 >> 1 | bVar4 << 7;
+    cVar3 = cVar3 + -1;
+    bVar4 = bVar1;
+  } while (cVar3 != '\0');
+  DAT_INTMEM_2a = bVar5 + 1;
+  DAT_INTMEM_29 = bVar1 - (((0xfe < bVar5) << 7) >> 7);
+  cVar3 = '\0';
+  uVar6 = FUN_CODE_bf41(BANK0_R6,BANK0_R7);
+  FUN_CODE_14a4(uVar6,uVar6,uVar6,0x14);
+  uVar2 = BANK0_R7;
+  uVar6 = BANK0_R6;
+  FUN_CODE_bf4d();
+  BANK0_R6 = uVar6;
+  BANK0_R7 = uVar2;
+  FUN_CODE_bee2();
+  if (cVar3 < '\0') {
+    DAT_INTMEM_29 = DAT_INTMEM_2f;
+    DAT_INTMEM_2a = DAT_INTMEM_30;
+  }
+  else {
+    DAT_INTMEM_29 = 0xf;
+    DAT_INTMEM_2a = 0xff;
+  }
+  FUN_CODE_bf1d();
+  return;
+}
+

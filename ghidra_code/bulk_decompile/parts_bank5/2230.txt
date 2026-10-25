@@ -1,0 +1,10 @@
+=== 0x2230 ===
+
+undefined1 FUN_CODE_2230(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 3;
+  uEXTMEMffff = 3;
+  return param_1;
+}
+

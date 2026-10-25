@@ -1,0 +1,20 @@
+=== 0xd41f ===
+
+void FUN_CODE_d41f(void)
+
+{
+  FUN_CODE_bf51(0xe339);
+  FUN_CODE_bed0(0xe339);
+  FUN_CODE_afad();
+  FUN_CODE_bed0(0xe339);
+  FUN_CODE_13f5();
+  FUN_CODE_bfba(0xe50d);
+  DAT_EXTMEM_e646 = 0;
+  DAT_EXTMEM_e647 = 0;
+  if (DAT_EXTMEM_e511 >> 6 != 1) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(DAT_EXTMEM_e517,DAT_EXTMEM_e518,DAT_EXTMEM_e515,DAT_EXTMEM_e516);
+}
+

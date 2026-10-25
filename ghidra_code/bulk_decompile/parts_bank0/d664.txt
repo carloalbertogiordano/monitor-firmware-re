@@ -1,0 +1,8 @@
+=== 0xd664 ===
+
+undefined1 FUN_CODE_d664(void)
+
+{
+  return DAT_EXTMEM_e4f4;
+}
+

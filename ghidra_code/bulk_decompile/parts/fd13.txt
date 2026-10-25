@@ -1,0 +1,16 @@
+=== 0xfd13 ===
+
+void FUN_CODE_fd13(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_0937();
+  if (in_PSW < '\0') {
+    _3_6 = 1;
+    return;
+  }
+  _3_6 = 0;
+  return;
+}
+

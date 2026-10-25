@@ -1,0 +1,8 @@
+=== 0xcaee ===
+
+byte FUN_CODE_caee(void)
+
+{
+  return DAT_EXTMEM_e4ca >> 4;
+}
+

@@ -1,0 +1,8 @@
+=== 0xe447 ===
+
+byte FUN_CODE_e447(void)
+
+{
+  return DAT_EXTMEM_e4e0 >> 4 & 3;
+}
+

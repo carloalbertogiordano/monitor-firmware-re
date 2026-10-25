@@ -1,0 +1,19 @@
+=== 0x01d7 ===
+
+void FUN_CODE_01d7(byte param_1,short param_2,undefined1 param_3,char param_4)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = 0;
+  DAT_INTMEM_38 = param_3;
+  DAT_INTMEM_39 = param_4;
+  cVar1 = FUN_CODE_0439(*(byte *)((ushort)param_1 + 0x7e6) >> 1 |
+                        *(byte *)((ushort)param_1 + 0x7e6) << 7);
+                    /* WARNING: Could not recover jumptable at 0x07f1. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)((cVar1 << 1 | bVar2 >> 7) - (DAT_INTMEM_39 - (cVar1 >> 7)))))();
+  return;
+}
+

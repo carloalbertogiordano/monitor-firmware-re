@@ -1,0 +1,10 @@
+=== 0x4353 ===
+
+char FUN_CODE_4353(void)
+
+{
+  char in_PSW;
+  
+  return -0x1f - (in_PSW >> 7);
+}
+

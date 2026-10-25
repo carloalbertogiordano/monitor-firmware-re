@@ -1,0 +1,9 @@
+=== 0x8c9a ===
+
+undefined1 FUN_CODE_8c9a(short param_1)
+
+{
+  _0_4 = _0_0 & 1;
+  return *(undefined1 *)(param_1 + 2);
+}
+

@@ -1,0 +1,10 @@
+=== 0x73dc ===
+
+void FUN_CODE_73dc(byte param_1)
+
+{
+  DAT_EXTMEM_e1a5 = (char)((ushort)param_1 * 10 >> 8);
+  DAT_EXTMEM_e1a6 = (char)((ushort)param_1 * 10);
+  return;
+}
+

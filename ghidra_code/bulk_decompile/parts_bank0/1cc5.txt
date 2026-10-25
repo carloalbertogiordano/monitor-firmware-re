@@ -1,0 +1,31 @@
+=== 0x1cc5 ===
+
+byte FUN_CODE_1cc5(byte param_1,byte param_2,byte param_3,byte param_4,byte param_5)
+
+{
+  byte bVar1;
+  char cVar2;
+  undefined1 uVar3;
+  char cVar4;
+  
+  cVar4 = ' ';
+  F0 = param_1 >> 7;
+  cVar2 = F0;
+  if (cVar2 != '\0') {
+    FUN_CODE_1d84(param_2,param_3,param_4,param_5);
+  }
+  do {
+    if ((char)param_2 < '\0') {
+      uVar3 = F0;
+      return param_4;
+    }
+    bVar1 = param_2 >> 7;
+    param_2 = param_2 << 1 | param_3 >> 7;
+    cVar4 = cVar4 + -1;
+    param_3 = param_3 << 1 | param_4 >> 7;
+    param_4 = param_4 << 1 | param_5 >> 7;
+    param_5 = param_5 << 1 | bVar1;
+  } while (cVar4 != '\0');
+  return param_2;
+}
+

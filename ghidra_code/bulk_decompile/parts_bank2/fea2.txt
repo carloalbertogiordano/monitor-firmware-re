@@ -1,0 +1,9 @@
+=== 0xfea2 ===
+
+void FUN_CODE_fea2(void)
+
+{
+  FUN_CODE_74b3(0xe632);
+  return;
+}
+

@@ -1,0 +1,13 @@
+=== 0xebf5 ===
+
+void FUN_CODE_ebf5(void)
+
+{
+  DAT_EXTMEM_ff27 = 0;
+  DAT_INTMEM_29 = DAT_EXTMEM_ff25;
+  DAT_EXTMEM_ff26 = 0;
+  DAT_EXTMEM_ff29 = DAT_EXTMEM_ff29 & 0xcf;
+  DAT_EXTMEM_ff2a = DAT_EXTMEM_ff2a | 0x40;
+  return;
+}
+

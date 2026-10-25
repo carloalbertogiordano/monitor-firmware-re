@@ -1,0 +1,9 @@
+=== 0xe947 ===
+
+void FUN_CODE_e947(void)
+
+{
+  DAT_EXTMEM_b7da = DAT_EXTMEM_b7da & 0xfe | 1;
+  return;
+}
+

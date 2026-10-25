@@ -1,0 +1,60 @@
+=== 0xda84 ===
+
+void FUN_CODE_da84(void)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_ffea = DAT_EXTMEM_ffea | 0x47;
+  DAT_EXTMEM_ffe9 = DAT_EXTMEM_ffe9 & 0xef;
+  FUN_CODE_f21b(0);
+  bEXTMEMfffc = bEXTMEMfffc | 0x1f;
+  uEXTMEMfffd = 0;
+  uEXTMEMfffe = 0;
+  FUN_CODE_f1ae(3,0x7f);
+  FUN_CODE_fa27(1);
+  FUN_CODE_f9ea();
+  FUN_CODE_f317(0);
+  bVar1 = DAT_SFR_8e;
+  DAT_SFR_8e = bVar1 & 0xc0;
+  IE = 0;
+  TR0 = 0;
+  TF0 = 0;
+  TR1 = 0;
+  TF1 = 0;
+  TR2 = 0;
+  TF2 = 0;
+  TCLK = 0;
+  RCLK = 0;
+  TMOD = 0x11;
+  bVar1 = T2CON;
+  T2CON = bVar1 & 0xfe;
+  PT0 = 0;
+  PT1 = 0;
+  PT2 = 1;
+  EA = 1;
+  FUN_CODE_06e5(0);
+  DAT_EXTMEM_ffea = DAT_EXTMEM_ffea | 0x80;
+  FUN_CODE_eab7();
+  FUN_CODE_fc07();
+  DAT_EXTMEM_ff6c = DAT_EXTMEM_ff6c | 0x60;
+  DAT_EXTMEM_ff53 = DAT_EXTMEM_ff53 | 0x3f;
+  DAT_EXTMEM_ff47 = 0;
+  FUN_CODE_e375();
+  FUN_CODE_f3cc();
+  FUN_CODE_f64d(0);
+  DAT_EXTMEM_ff0f = 0;
+  DAT_EXTMEM_ff10 = 0xff;
+  DAT_EXTMEM_ff11 = 0;
+  DAT_EXTMEM_ff12 = 0xff;
+  DAT_EXTMEM_ff13 = 0;
+  DAT_EXTMEM_ff14 = 0xff;
+  DAT_EXTMEM_ff15 = 0;
+  DAT_EXTMEM_ff16 = 0xff;
+  DAT_EXTMEM_ff17 = 0;
+  DAT_EXTMEM_ff02 = DAT_EXTMEM_ff02 & 0x9c | 4;
+  DAT_EXTMEM_ff08 = DAT_EXTMEM_ff08 | 0xa0;
+  FUN_CODE_0a8d();
+  return;
+}
+

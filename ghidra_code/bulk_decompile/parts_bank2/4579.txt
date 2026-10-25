@@ -1,0 +1,8 @@
+=== 0x4579 ===
+
+undefined1 FUN_CODE_4579(void)
+
+{
+  return 1;
+}
+

@@ -1,0 +1,23 @@
+=== 0x7144 ===
+
+void FUN_CODE_7144(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  thunk_FUN_CODE_218f();
+  return;
+}
+

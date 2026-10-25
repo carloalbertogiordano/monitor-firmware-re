@@ -1,0 +1,9 @@
+=== 0x70f1 ===
+
+void FUN_CODE_70f1(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xfe | 1;
+  return;
+}
+

@@ -1,0 +1,16 @@
+=== 0xbd11 ===
+
+undefined1 FUN_CODE_bd11(void)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  
+  uVar1 = 0;
+  bVar2 = DAT_EXTMEM_e32f;
+  FUN_CODE_132c('\0',DAT_EXTMEM_e330,'\0',DAT_EXTMEM_e32f);
+  DAT_EXTMEM_e347 = uVar1;
+  DAT_EXTMEM_e348 = bVar2;
+  return DAT_EXTMEM_e659;
+}
+

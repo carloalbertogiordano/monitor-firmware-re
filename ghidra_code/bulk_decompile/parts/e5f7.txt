@@ -1,0 +1,16 @@
+=== 0xe5f7 ===
+
+void FUN_CODE_e5f7(void)
+
+{
+  if (((DAT_EXTMEM_02cb & 0x40) == 0) && ((DAT_EXTMEM_02a6 & 0x70) == 0)) {
+    FUN_CODE_8755(0x2cb);
+    FUN_CODE_e637(0,0xe373);
+    DAT_EXTMEM_e373 = 0x68;
+    FUN_CODE_0775(0x97,0x30,2,0xc9);
+    DAT_EXTMEM_02a6 = DAT_EXTMEM_02a6 & 0x8f | 0x70;
+    FUN_CODE_e637(0x80,0xe373);
+  }
+  return;
+}
+

@@ -1,0 +1,33 @@
+=== 0x38e3 ===
+
+byte FUN_CODE_38e3(byte param_1,byte param_2,undefined1 param_3,undefined1 param_4,byte param_5)
+
+{
+  char cVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e3ca = param_3;
+  DAT_EXTMEM_e3cb = param_4;
+  DAT_EXTMEM_e3cc = param_1;
+  DAT_EXTMEM_e3cd = param_2;
+  if (bEXTMEMfffd <= param_5) {
+    DAT_EXTMEM_ff7c = DAT_EXTMEM_ff7c | 3;
+    DAT_EXTMEM_ff78 = BANK0_R7;
+    cVar1 = '\0';
+    cVar2 = '\0';
+    DAT_EXTMEM_ff79 = param_3;
+    DAT_EXTMEM_ff7a = param_4;
+    while ((byte)(cVar1 - (((DAT_EXTMEM_e3cd < cVar2 + 1U) << 7) >> 7)) <= DAT_EXTMEM_e3cc) {
+      FUN_CODE_130a(DAT_EXTMEM_ff7b,CONCAT11(cVar1,cVar2),DAT_EXTMEM_e3d0,DAT_EXTMEM_e3cf,
+                    DAT_EXTMEM_e3ce);
+      cVar2 = cVar2 + '\x01';
+      if (cVar2 == '\0') {
+        cVar1 = cVar1 + '\x01';
+      }
+    }
+    DAT_EXTMEM_ff7c = DAT_EXTMEM_ff7c & 0xfe;
+    return DAT_EXTMEM_ff7c;
+  }
+  return param_5 - bEXTMEMfffd;
+}
+

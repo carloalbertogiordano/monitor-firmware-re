@@ -1,0 +1,9 @@
+=== 0xbf00 ===
+
+void FUN_CODE_bf00(void)
+
+{
+  FUN_CODE_15e8(8,DAT_INTMEM_29,DAT_INTMEM_2a,DAT_INTMEM_2b,DAT_INTMEM_2c);
+  return;
+}
+

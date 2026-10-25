@@ -1,0 +1,11 @@
+=== 0xe88d ===
+
+char FUN_CODE_e88d(void)
+
+{
+  DAT_EXTMEM_0b08 = DAT_EXTMEM_0b08 & 0xe7 | (DAT_EXTMEM_e6c9 & 3) << 3;
+  DAT_EXTMEM_e402 = DAT_EXTMEM_0b0b;
+  DAT_EXTMEM_e403 = DAT_EXTMEM_0b0c;
+  return DAT_EXTMEM_0b0b + (((DAT_EXTMEM_0b0c < 0x31) << 7) >> 7);
+}
+

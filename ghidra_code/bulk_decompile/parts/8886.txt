@@ -1,0 +1,8 @@
+=== 0x8886 ===
+
+byte FUN_CODE_8886(void)
+
+{
+  return DAT_EXTMEM_e662 & 7;
+}
+

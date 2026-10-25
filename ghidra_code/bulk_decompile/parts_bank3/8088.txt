@@ -1,0 +1,10 @@
+=== 0x8088 ===
+
+void FUN_CODE_8088(void)
+
+{
+  nop();
+  nop();
+  return;
+}
+

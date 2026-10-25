@@ -1,0 +1,11 @@
+=== 0x92e0 ===
+
+void FUN_CODE_92e0(short param_1)
+
+{
+  FUN_CODE_a76e();
+  FUN_CODE_a821(0,param_1 + 1);
+  FUN_CODE_0d8d();
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0x83b0 ===
+
+void FUN_CODE_83b0(char param_1,char param_2)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_811d(param_1 + (param_2 - (in_PSW >> 7)));
+  return;
+}
+

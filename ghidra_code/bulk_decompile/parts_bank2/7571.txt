@@ -1,0 +1,10 @@
+=== 0x7571 ===
+
+void FUN_CODE_7571(byte param_1,char *param_2)
+
+{
+  *param_2 = *param_2 - (((0xfe < param_1) << 7) >> 7);
+  param_2[1] = param_1 + 1 & 0xfe;
+  return;
+}
+

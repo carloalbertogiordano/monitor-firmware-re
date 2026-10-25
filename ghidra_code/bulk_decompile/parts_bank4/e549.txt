@@ -1,0 +1,25 @@
+=== 0xe549 ===
+
+void FUN_CODE_e549(undefined1 param_1,undefined1 param_2,undefined1 param_3,char param_4)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e334 = param_3;
+  DAT_EXTMEM_e335 = param_2;
+  DAT_EXTMEM_e336 = param_1;
+  if (param_4 == '\x04') {
+    cVar1 = FUN_CODE_f16f();
+    cVar1 = cVar1 + 'B';
+  }
+  else {
+    if (3 < param_4 - 3U) {
+      return;
+    }
+    cVar1 = FUN_CODE_f16f();
+    cVar1 = cVar1 + '>';
+  }
+  FUN_CODE_1259(DAT_EXTMEM_e336,cVar1,DAT_EXTMEM_e335,DAT_EXTMEM_e334,BANK0_R2,BANK0_R3);
+  return;
+}
+

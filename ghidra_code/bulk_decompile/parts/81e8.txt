@@ -1,0 +1,10 @@
+=== 0x81e8 ===
+
+void FUN_CODE_81e8(undefined1 *param_1)
+
+{
+  FUN_CODE_074b(*param_1,param_1[1]);
+  DAT_EXTMEM_e32e = 1;
+  return;
+}
+

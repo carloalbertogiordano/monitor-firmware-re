@@ -1,0 +1,8 @@
+=== 0xcb0d ===
+
+undefined1 FUN_CODE_cb0d(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 2);
+}
+

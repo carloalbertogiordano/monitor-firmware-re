@@ -1,0 +1,9 @@
+=== 0x0877 ===
+
+void FUN_CODE_0877(void)
+
+{
+  FUN_CODE_0451(0x4586);
+  return;
+}
+

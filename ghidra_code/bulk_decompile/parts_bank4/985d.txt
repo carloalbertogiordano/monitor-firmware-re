@@ -1,0 +1,9 @@
+=== 0x985d ===
+
+void FUN_CODE_985d(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1724(0x8834);
+}
+

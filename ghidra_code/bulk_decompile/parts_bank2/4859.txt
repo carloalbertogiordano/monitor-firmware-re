@@ -1,0 +1,8 @@
+=== 0x4859 ===
+
+byte FUN_CODE_4859(void)
+
+{
+  return DAT_EXTMEM_e4ca & 0xf;
+}
+

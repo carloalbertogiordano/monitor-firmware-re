@@ -1,0 +1,11 @@
+=== 0x749d ===
+
+void FUN_CODE_749d(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  DAT_EXTMEM_e377 = param_1;
+  DAT_EXTMEM_e378 = param_3;
+  DAT_EXTMEM_e379 = param_2;
+  return;
+}
+

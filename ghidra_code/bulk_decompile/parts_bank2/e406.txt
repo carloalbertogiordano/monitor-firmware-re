@@ -1,0 +1,10 @@
+=== 0xe406 ===
+
+undefined1 FUN_CODE_e406(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  param_2[1] = 10;
+  return 0;
+}
+

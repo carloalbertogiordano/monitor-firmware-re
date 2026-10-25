@@ -1,0 +1,11 @@
+=== 0xfc92 ===
+
+byte FUN_CODE_fc92(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  DAT_EXTMEM_3017 = DAT_EXTMEM_3017 & 0xf8;
+  DAT_EXTMEM_3018 = DAT_EXTMEM_3018 & 0xcf;
+  return DAT_EXTMEM_301c & 0x7f;
+}
+

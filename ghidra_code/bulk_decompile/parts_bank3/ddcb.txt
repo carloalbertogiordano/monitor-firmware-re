@@ -1,0 +1,10 @@
+=== 0xddcb ===
+
+void FUN_CODE_ddcb(void)
+
+{
+  DAT_EXTMEM_b7d0 = DAT_EXTMEM_b7d0 & 0xfd;
+  EX0 = 1;
+  return;
+}
+

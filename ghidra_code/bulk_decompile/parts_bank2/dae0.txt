@@ -1,0 +1,8 @@
+=== 0xdae0 ===
+
+void FUN_CODE_dae0(void)
+
+{
+  return;
+}
+

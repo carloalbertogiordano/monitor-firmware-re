@@ -1,0 +1,13 @@
+=== 0x8811 ===
+
+byte FUN_CODE_8811(void)
+
+{
+  DAT_EXTMEM_0bb3 = DAT_EXTMEM_0bb3 & 0xf0;
+  DAT_EXTMEM_0bb4 = DAT_EXTMEM_0bb4 & 0xf0;
+  DAT_EXTMEM_0bb1 = DAT_EXTMEM_0bb1 & 0xdf | 0x20;
+  DAT_EXTMEM_0b00 = DAT_EXTMEM_0b00 & 0xfe;
+  DAT_EXTMEM_0bb0 = DAT_EXTMEM_0bb0 & 0xf7;
+  return DAT_EXTMEM_0bc9 & 0xbf;
+}
+

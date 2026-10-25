@@ -1,0 +1,8 @@
+=== 0xd555 ===
+
+byte FUN_CODE_d555(byte param_1)
+
+{
+  return (param_1 & 0x30) >> 4;
+}
+

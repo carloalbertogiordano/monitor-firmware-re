@@ -1,0 +1,9 @@
+=== 0xb501 ===
+
+void FUN_CODE_b501(void)
+
+{
+  _0_2 = 0;
+  return;
+}
+

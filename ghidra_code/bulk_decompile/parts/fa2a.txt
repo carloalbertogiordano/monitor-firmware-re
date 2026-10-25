@@ -1,0 +1,9 @@
+=== 0xfa2a ===
+
+void FUN_CODE_fa2a(void)
+
+{
+  FUN_CODE_1298(DAT_INTMEM_29,DAT_EXTMEM_e372,DAT_EXTMEM_e371,DAT_EXTMEM_e370);
+  return;
+}
+

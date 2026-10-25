@@ -1,0 +1,44 @@
+=== 0x0253 ===
+
+byte FUN_CODE_0253(byte param_1,undefined1 *param_2,char *param_3,char param_4,char param_5,
+                  char param_6,byte param_7,char param_8)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  char in_PSW;
+  
+  bVar3 = (char)param_3 - (in_PSW >> 7);
+  bVar2 = param_1 + bVar3;
+  bVar2 = bVar2 >> 1 | bVar2 * -0x80;
+  bVar3 = param_8 - ((CARRY1(param_1,bVar3) << 7) >> 7);
+  bVar1 = CARRY1(bVar2 - bVar3,param_5 - (((bVar2 < bVar3) << 7) >> 7));
+  if (param_8 != '\x01') {
+    return param_7;
+  }
+  DAT_INTMEM_23 = DAT_INTMEM_23 + -1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (!bVar1) {
+    nop();
+    *param_3 = *param_3 + -1;
+    bVar3 = FUN_CODE_102e(*param_2);
+    return bVar3;
+  }
+  if (bVar1) {
+    bVar2 = FUN_CODE_070c(param_6 + '\x01');
+    DAT_INTMEM_51 = DAT_INTMEM_51 + -1;
+    bVar3 = DAT_SFR_92;
+    DAT_SFR_92 = bVar3 & bVar2;
+    return bVar2;
+  }
+  bVar3 = FUN_CODE_00f6(param_5 + -1);
+  return (bVar3 + 0x32) - (param_4 - (((0xcd < bVar3) << 7) >> 7));
+}
+

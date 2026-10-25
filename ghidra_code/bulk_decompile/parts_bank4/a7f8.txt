@@ -1,0 +1,10 @@
+=== 0xa7f8 ===
+
+void FUN_CODE_a7f8(byte param_1,byte *param_2,byte param_3)
+
+{
+  *param_2 = param_1 >> 1;
+  param_2[1] = param_3 >> 1 | param_1 << 7;
+  return;
+}
+

@@ -1,0 +1,29 @@
+=== 0x0def ===
+
+void FUN_CODE_0def(byte param_1,short param_2,byte param_3,byte *param_4,char param_5,char param_6,
+                  char param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  undefined1 uStackX_0;
+  
+  *param_4 = param_1 << 1 | param_1 >> 7;
+  DAT_INTMEM_3d = uStackX_0;
+  bVar1 = CCON;
+  CCON = bVar1 | 0x3d;
+  bVar1 = *(byte *)(ushort)param_3;
+  bVar3 = bVar1 + param_6 + 1U;
+  bVar2 = CCAP0L;
+  CCAP0L = bVar2 ^ 0x3e;
+  *(byte *)ZEXT12(param_4) = bVar3;
+  *(byte *)ZEXT12(param_4) = bVar3;
+  bVar1 = param_7 - ((CARRY1(bVar1,param_6 + 1U) << 7) >> 7);
+  nop();
+  nop();
+  FUN_CODE_0800((char)FUN_CODE_0e01[(ushort)(bVar3 + bVar1) + 1] +
+                (param_7 - ((CARRY1(bVar3,bVar1) << 7) >> 7)),param_2,(byte)param_4,param_5);
+  return;
+}
+

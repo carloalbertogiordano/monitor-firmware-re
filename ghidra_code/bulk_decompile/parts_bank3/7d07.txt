@@ -1,0 +1,15 @@
+=== 0x7d07 ===
+
+void FUN_CODE_7d07(byte param_1,char param_2,char param_3,char param_4)
+
+{
+  nop();
+  nop();
+  nop();
+  DAT_INTMEM_20 = param_2 + '\x01';
+  DAT_INTMEM_44 = DAT_INTMEM_44 | param_1;
+  DAT_INTMEM_22 = param_4 + '\x01';
+  func_0x7844(0xf8,param_3 + '\x01');
+  return;
+}
+

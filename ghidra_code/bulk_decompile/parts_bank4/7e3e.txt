@@ -1,0 +1,8 @@
+=== 0x7e3e ===
+
+undefined1 FUN_CODE_7e3e(void)
+
+{
+  return DAT_EXTMEM_ffae;
+}
+

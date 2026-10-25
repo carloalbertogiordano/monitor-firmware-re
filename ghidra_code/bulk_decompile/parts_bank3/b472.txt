@@ -1,0 +1,10 @@
+=== 0xb472 ===
+
+undefined1 FUN_CODE_b472(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e33a = param_1;
+  DAT_EXTMEM_e33b = param_2;
+  return DAT_EXTMEM_8006;
+}
+

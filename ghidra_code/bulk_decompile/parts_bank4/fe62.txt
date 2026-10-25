@@ -1,0 +1,10 @@
+=== 0xfe62 ===
+
+void FUN_CODE_fe62(void)
+
+{
+  FUN_CODE_ec6c();
+  FUN_CODE_f966();
+  return;
+}
+

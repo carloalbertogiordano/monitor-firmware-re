@@ -1,0 +1,28 @@
+=== 0xee0a ===
+
+char FUN_CODE_ee0a(char param_1,char param_2)
+
+{
+  char cVar1;
+  
+  _0_1 = 1;
+  DAT_EXTMEM_e32e = param_2;
+  DAT_EXTMEM_e32f = param_1;
+  FUN_CODE_0a0f();
+  _0_1 = 1;
+  FUN_CODE_0643();
+  if (DAT_EXTMEM_e32e == '\x03') {
+    return DAT_EXTMEM_e32f;
+  }
+  if (DAT_EXTMEM_e32e == '\x04') {
+    cVar1 = FUN_CODE_fbc3(4,DAT_EXTMEM_e32f);
+  }
+  else {
+    cVar1 = DAT_EXTMEM_e32e + -2;
+    if (cVar1 == '\0') {
+      return DAT_EXTMEM_e32f;
+    }
+  }
+  return cVar1;
+}
+

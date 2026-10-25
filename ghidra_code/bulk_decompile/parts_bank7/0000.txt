@@ -1,0 +1,44 @@
+=== 0x0000 ===
+
+/* WARNING: Removing unreachable block (CODE,0x0009) */
+
+void FUN_CODE_0000(byte param_1,undefined1 *param_2,char *param_3,char param_4,byte param_5)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  while( true ) {
+    if (-1 < (char)in_PSW) {
+      nop();
+      *param_3 = *param_3 + -1;
+      FUN_CODE_102e(*param_2);
+      return;
+    }
+    param_1 = param_1 & BANK0_R7;
+    in_PSW = in_PSW & 0xdd;
+    if ((char)in_PSW < '\0') break;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    param_5 = param_1;
+  }
+  bVar2 = FUN_CODE_070c(param_4 + '\x01',param_5);
+  DAT_INTMEM_51 = DAT_INTMEM_51 + -1;
+  bVar1 = DAT_SFR_92;
+  DAT_SFR_92 = bVar1 & bVar2;
+  return;
+}
+

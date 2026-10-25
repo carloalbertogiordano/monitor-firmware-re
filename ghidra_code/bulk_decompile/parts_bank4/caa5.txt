@@ -1,0 +1,9 @@
+=== 0xcaa5 ===
+
+undefined1 FUN_CODE_caa5(void)
+
+{
+  FUN_CODE_1458();
+  return 0;
+}
+

@@ -1,0 +1,8 @@
+=== 0x9807 ===
+
+void FUN_CODE_9807(void)
+
+{
+  return;
+}
+

@@ -1,0 +1,15 @@
+=== 0x01a9 ===
+
+void FUN_CODE_01a9(char param_1)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar2 = FUN_CODE_070c(param_1 + '\x01');
+  DAT_INTMEM_51 = DAT_INTMEM_51 + -1;
+  bVar1 = DAT_SFR_92;
+  DAT_SFR_92 = bVar1 & bVar2;
+  return;
+}
+

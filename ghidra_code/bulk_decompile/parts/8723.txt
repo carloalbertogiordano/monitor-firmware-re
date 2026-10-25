@@ -1,0 +1,13 @@
+=== 0x8723 ===
+
+undefined1 FUN_CODE_8723(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 0x65;
+  FUN_CODE_152f(BANK0_R4,BANK0_R5,BANK0_R6,BANK0_R7,0,5,0x40);
+  DAT_EXTMEM_02e8 = uVar1;
+  return DAT_EXTMEM_8006;
+}
+

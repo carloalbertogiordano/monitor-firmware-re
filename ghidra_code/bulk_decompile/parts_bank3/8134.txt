@@ -1,0 +1,48 @@
+=== 0x8134 ===
+
+void FUN_CODE_8134(byte param_1,short param_2,char param_3,byte *param_4,char param_5,char param_6,
+                  char param_7)
+
+{
+  byte bVar1;
+  char cVar2;
+  undefined1 uStackX_0;
+  
+  bVar1 = *param_4;
+  *param_4 = param_1;
+  cVar2 = FUN_CODE_8070(bVar1 | 0x55,param_6 + '\x01',param_7 + -1);
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+                    /* WARNING: Could not recover jumptable at 0x815d. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)(byte)(cVar2 + param_5)))(uStackX_0,param_3 + '\x01',cVar2);
+  return;
+}
+

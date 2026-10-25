@@ -1,0 +1,33 @@
+=== 0x3dc1 ===
+
+void FUN_CODE_3dc1(void)
+
+{
+  char cVar1;
+  char in_PSW;
+  
+  cVar1 = FUN_CODE_8cee();
+  if (in_PSW < '\0') {
+    if ((cVar1 == '\0') || (cVar1 == '\x01')) {
+      FUN_CODE_8d70();
+    }
+    else if (cVar1 == '\x02') {
+      FUN_CODE_8cfc();
+    }
+    else if (cVar1 == '\x03') {
+      FUN_CODE_8d20();
+    }
+    else {
+      set_e3e4_to_const2();
+    }
+  }
+  else {
+    FUN_CODE_8c2b();
+  }
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

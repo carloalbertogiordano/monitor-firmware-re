@@ -1,0 +1,38 @@
+=== 0x5fad ===
+
+void FUN_CODE_5fad(undefined1 param_1,undefined1 param_2)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  FUN_CODE_1724(0xe339);
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_EXTMEM_e33d = 0;
+  DAT_EXTMEM_e33e = 0;
+  FUN_CODE_fec5();
+  DAT_EXTMEM_e33f = param_2;
+  FUN_CODE_faca();
+  DAT_EXTMEM_e342 = 0;
+  DAT_EXTMEM_e343 = 0;
+  DAT_EXTMEM_e344 = 0;
+  DAT_EXTMEM_e345 = 0;
+  DAT_EXTMEM_e340 = param_1;
+  DAT_EXTMEM_e341 = param_2;
+  FUN_CODE_dc79();
+  DAT_EXTMEM_e342 = param_1;
+  DAT_EXTMEM_e343 = param_2;
+  FUN_CODE_da9a(0,0,0,100);
+  FUN_CODE_14a4();
+  uVar2 = BANK0_R7;
+  uVar1 = BANK0_R6;
+  FUN_CODE_da80(0xe52b);
+  BANK0_R6 = uVar1;
+  BANK0_R7 = uVar2;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f();
+}
+

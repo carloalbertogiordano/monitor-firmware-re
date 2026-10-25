@@ -1,0 +1,76 @@
+=== 0x0ccd ===
+
+/* WARNING: Instruction at (CODE,0x0cce) overlaps instruction at (CODE,0x0ccd)
+    */
+
+void FUN_CODE_0ccd(byte param_1,byte *param_2,char *param_3,char *param_4,byte param_5,char param_6,
+                  char param_7,byte param_8)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  undefined1 uVar4;
+  byte bVar5;
+  byte *pbVar6;
+  char cVar7;
+  
+  if (param_5 != 0xb) {
+    *param_4 = *param_4 + '\x01';
+    if (param_5 >= 0xb) {
+      FUN_CODE_0ab9(param_1);
+      FUN_CODE_0ec0(param_2,param_3,(byte)param_4,param_5,param_8);
+      return;
+    }
+    *param_4 = *param_4 + '\x01';
+    uVar4 = P0;
+    param_3 = param_3 + '\x01';
+    cVar7 = P0_6;
+    if (cVar7 != '\0') {
+      bVar3 = TF0;
+      param_4 = param_4 + '\x01';
+      nop();
+      bVar3 = 9 - ((char)((param_5 < 0xb | bVar3 ^ 1) << 7) >> 7);
+      bVar1 = param_1 < bVar3;
+      cVar7 = param_1 - bVar3;
+      param_1 = 0;
+      if (cVar7 != '\0') {
+        bVar3 = DAT_SFR_9a;
+        DAT_SFR_9a = bVar3 ^ 0x39;
+        *(char *)ZEXT12(param_4) = cVar7;
+                    /* WARNING: Could not recover jumptable at 0x0c63. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+        (*(code *)(param_2 + (ushort)(cVar7 + (param_5 - ((bVar1 << 7) >> 7))) + 1))();
+        return;
+      }
+    }
+    pbVar6 = (byte *)(param_4 + '\x01');
+    *param_2 = param_1;
+    if (param_1 == 0) {
+      bVar2 = *pbVar6;
+      *pbVar6 = *pbVar6 & 0xf0;
+      bVar3 = *param_2;
+      bVar5 = CL;
+      CL = bVar5 & 0x3e;
+      cVar7 = *(char *)ZEXT12(pbVar6);
+      *(char *)ZEXT12(param_3) = cVar7;
+                    /* WARNING: Could not recover jumptable at 0x0c7e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      (*(code *)(param_2 +
+                (cVar7 + (param_8 -
+                         ((CARRY1(bVar3,param_7 - ((!CARRY1(bVar2 & 0xf,param_6 - ((_1_2 << 7) >> 7)
+                                                           ) << 7) >> 7)) << 7) >> 7)))))();
+      return;
+    }
+    _1_3 = _1_3 ^ 1;
+    if (*param_2 == 0) {
+      *param_3 = *param_3 + '\x01';
+      nop();
+      FUN_CODE_0800(0,(short)param_2,(byte)pbVar6,param_5 + 1);
+      return;
+    }
+  }
+  thunk_FUN_CODE_0e1a((short)param_2,param_3);
+  return;
+}
+

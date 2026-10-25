@@ -1,0 +1,10 @@
+=== 0xd630 ===
+
+void FUN_CODE_d630(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e188 = *param_1;
+  DAT_EXTMEM_e189 = param_1[1];
+  return;
+}
+

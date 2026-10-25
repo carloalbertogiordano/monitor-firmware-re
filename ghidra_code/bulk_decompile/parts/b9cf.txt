@@ -1,0 +1,15 @@
+=== 0xb9cf ===
+
+void FUN_CODE_b9cf(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = DAT_SFR_8e;
+  DAT_SFR_8e = bVar1 & 0xf8 | 7;
+  DAT_EXTMEM_ff6f = DAT_EXTMEM_ff6f & 0xdf | 0x20;
+  bVar1 = DAT_SFR_8e;
+  DAT_SFR_8e = bVar1 & 0xf8;
+  return;
+}
+

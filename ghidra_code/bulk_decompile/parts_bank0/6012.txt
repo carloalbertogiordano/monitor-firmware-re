@@ -1,0 +1,10 @@
+=== 0x6012 ===
+
+void FUN_CODE_6012(void)
+
+{
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

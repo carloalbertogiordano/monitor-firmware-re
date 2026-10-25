@@ -1,0 +1,130 @@
+=== 0x06b0 ===
+
+/* WARNING: Instruction at (CODE,0x0158) overlaps instruction at (CODE,0x0157)
+    */
+
+byte FUN_CODE_06b0(byte param_1,byte *param_2,char param_3,byte *param_4,char *param_5,char param_6,
+                  char param_7,byte param_8,byte param_9,char param_10,byte param_11)
+
+{
+  char cVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  undefined1 uVar5;
+  char cVar6;
+  byte bVar7;
+  byte bVar8;
+  byte in_PSW;
+  
+  cVar1 = param_6 + -1;
+  if (cVar1 != '\0') {
+    return param_1;
+  }
+  cVar6 = FUN_CODE_06e1(param_1,(char *)param_4,param_11);
+  cVar2 = param_10 + -1;
+  FUN_CODE_02e9(cVar6,(short)param_2);
+  bVar3 = cVar2 - 1;
+  FUN_CODE_06f1();
+  cVar2 = param_11 - 1;
+  bVar7 = func_0x02f9();
+  bVar4 = cVar2 - 1;
+  _0_1 = 1;
+  if (_a_2 == '\x01') {
+    return bVar7;
+  }
+  cVar2 = OV;
+  if (cVar2 == '\x01') {
+    if ((char)in_PSW < '\0') {
+      return bVar7;
+    }
+    DAT_INTMEM_48 = DAT_INTMEM_48 | bVar7;
+    bVar8 = bVar7 - 0x3e;
+    if (0x3d < bVar7) {
+      bINTMEM57 = bINTMEM57 | bVar8;
+      uVar5 = IPL1;
+      cVar1 = IPL1;
+      return (bVar8 + cVar1 & bVar4) + *param_4;
+    }
+    if (*param_4 != 0x2b) {
+      bVar3 = FUN_CODE_03ca(bVar8,param_2,param_4,param_5,cVar1,param_7,param_8,param_9,bVar3,bVar4)
+      ;
+      return bVar3;
+    }
+    if (bVar3 == 0x2c) {
+      bVar7 = *param_4;
+      *param_4 = bVar8;
+      uVar5 = RCLK;
+      bVar7 = CARRY1(bVar7 + param_8,param_9) << 7;
+      bVar8 = FUN_CODE_d52d((short)param_2,param_4);
+      CCON_5 = bVar7 >> 7;
+      bVar3 = CARRY1(bVar8,bVar3) << 7;
+      bVar7 = FUN_CODE_e52e((short)param_2,param_4);
+      HIFLG_5 = bVar3 >> 7;
+      bVar3 = CARRY1(bVar7,bVar4) << 7;
+      bVar4 = FUN_CODE_f52f((short)param_2,param_4);
+      F8_4 = bVar3 >> 7;
+      if (_0_3 == '\0') {
+        bVar4 = bVar4 >> 1 | bVar4 << 7;
+      }
+      else {
+        cVar1 = P0_3;
+        if (cVar1 == '\0') {
+          bVar7 = bVar4 & 0x7f | bVar3 & 0x80;
+          bVar3 = 0x33 - ((char)bVar4 >> 7);
+          bVar4 = *(byte *)((ushort)(bVar7 + bVar3) + 0x737);
+          bVar3 = param_8 - ((CARRY1(bVar7,bVar3) << 7) >> 7);
+          bVar7 = bVar4 + bVar3;
+          bVar3 = 3 - ((CARRY1(bVar4,bVar3) << 7) >> 7);
+                    /* WARNING: Could not recover jumptable at 0x0742. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+          bVar3 = (*(code *)(param_2 +
+                            ((*(byte *)((ushort)(bVar7 + bVar3 | 0x34) + 0x73d) | param_8) +
+                             (BANK0_R3 - ((CARRY1(bVar7,bVar3) << 7) >> 7)) & 0x35)))();
+          return bVar3;
+        }
+      }
+      cVar1 = func_0x0103(bVar4);
+      bVar8 = FUN_CODE_0183(cVar1 + -1,(short)param_2,param_9);
+    }
+    return bVar8;
+  }
+  func_0x050f();
+LAB_CODE_0154:
+  uVar5 = func_0x0031();
+  *param_5 = *param_5 + -1;
+  FUN_CODE_00b1(uVar5,(short)param_2);
+  bVar4 = bVar4 - 1;
+code_c0x015a:
+  do {
+    FUN_CODE_3127((short)param_2,param_4);
+    bVar7 = FUN_CODE_b12f((short)param_2,param_4);
+    bVar3 = in_PSW & 0x80;
+    in_PSW = bVar7 << 7;
+    bVar3 = FUN_CODE_0137(bVar7 >> 1 | bVar3,(short)param_2,param_3,(char *)param_4,param_5,param_8,
+                          param_9,bVar4);
+    while( true ) {
+      bVar7 = bVar3 << 7;
+      cVar1 = FUN_CODE_053f(bVar3 >> 1 | in_PSW & 0x80,(short)param_2,(char *)param_4,(byte)param_5,
+                            param_8,param_9);
+      bVar3 = cVar1 - 1;
+      bVar8 = HIFLG_7;
+      bVar7 = bVar7 >> 7 & ~bVar8;
+      in_PSW = bVar7 << 7;
+      bVar4 = bVar4 + 1;
+      if (-1 < param_3) break;
+      bVar8 = F8_7;
+      in_PSW = (bVar7 & ~bVar8) << 7;
+      if (_6_1 != '\0') {
+        _6_1 = '\0';
+        func_0x051f();
+        goto code_c0x015a;
+      }
+      cVar1 = TXD;
+      if (cVar1 == '\0') goto LAB_CODE_0154;
+      TXD = 0;
+    }
+    func_0x0127();
+  } while( true );
+}
+

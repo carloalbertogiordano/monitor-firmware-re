@@ -1,0 +1,122 @@
+=== 0x134b ===
+
+/* WARNING: Instruction at (CODE,0x1385) overlaps instruction at (CODE,0x1384)
+    */
+/* WARNING: Removing unreachable block (CODE,0x1354) */
+/* WARNING: Removing unreachable block (CODE,0x1358) */
+/* WARNING: Removing unreachable block (CODE,0x135a) */
+/* WARNING: Removing unreachable block (CODE,0x1361) */
+/* WARNING: Removing unreachable block (CODE,0x1367) */
+/* WARNING: Removing unreachable block (CODE,0x1364) */
+/* WARNING: Removing unreachable block (CODE,0x136d) */
+/* WARNING: Removing unreachable block (CODE,0x136f) */
+/* WARNING: Removing unreachable block (CODE,0x1385) */
+/* WARNING: Removing unreachable block (CODE,0x1376) */
+/* WARNING: Removing unreachable block (CODE,0x137b) */
+/* WARNING: Removing unreachable block (CODE,0x137e) */
+/* WARNING: Removing unreachable block (CODE,0x1378) */
+/* WARNING: Removing unreachable block (CODE,0x1381) */
+/* WARNING: Removing unreachable block (CODE,0x1313) */
+/* WARNING: Removing unreachable block (CODE,0x1316) */
+/* WARNING: Removing unreachable block (CODE,0x1332) */
+/* WARNING: Removing unreachable block (CODE,0x1334) */
+/* WARNING: Removing unreachable block (CODE,0x139d) */
+/* WARNING: Removing unreachable block (CODE,0x155e) */
+/* WARNING: Removing unreachable block (CODE,0x1519) */
+/* WARNING: Removing unreachable block (CODE,0x151b) */
+/* WARNING: Removing unreachable block (CODE,0x1560) */
+/* WARNING: Removing unreachable block (CODE,0x152d) */
+/* WARNING: Removing unreachable block (CODE,0x158b) */
+/* WARNING: Removing unreachable block (CODE,0x1533) */
+/* WARNING: Removing unreachable block (CODE,0x15a3) */
+/* WARNING: Removing unreachable block (CODE,0x153c) */
+/* WARNING: Removing unreachable block (CODE,0x1543) */
+/* WARNING: Removing unreachable block (CODE,0x1540) */
+/* WARNING: Removing unreachable block (CODE,0x1566) */
+/* WARNING: Removing unreachable block (CODE,0x1003) */
+/* WARNING: Removing unreachable block (CODE,0x1043) */
+/* WARNING: Removing unreachable block (CODE,0x1046) */
+/* WARNING: Removing unreachable block (CODE,0x1048) */
+/* WARNING: Removing unreachable block (CODE,0x104f) */
+/* WARNING: Removing unreachable block (CODE,0x1055) */
+/* WARNING: Removing unreachable block (CODE,0x1059) */
+/* WARNING: Removing unreachable block (CODE,0x1028) */
+/* WARNING: Removing unreachable block (CODE,0x1082) */
+/* WARNING: Removing unreachable block (CODE,0x102a) */
+/* WARNING: Removing unreachable block (CODE,0x1031) */
+/* WARNING: Removing unreachable block (CODE,0x1037) */
+/* WARNING: Removing unreachable block (CODE,0x10b0) */
+/* WARNING: Removing unreachable block (CODE,0x16c3) */
+/* WARNING: Removing unreachable block (CODE,0x16cd) */
+/* WARNING: Removing unreachable block (CODE,0x16de) */
+/* WARNING: Removing unreachable block (CODE,0x16d5) */
+/* WARNING: Removing unreachable block (CODE,0x16db) */
+/* WARNING: Removing unreachable block (CODE,0x16d8) */
+/* WARNING: Removing unreachable block (CODE,0x16e5) */
+/* WARNING: Removing unreachable block (CODE,0x16ea) */
+/* WARNING: Removing unreachable block (CODE,0x16cc) */
+/* WARNING: Removing unreachable block (CODE,0x1656) */
+/* WARNING: Removing unreachable block (CODE,0x16ce) */
+/* WARNING: Removing unreachable block (CODE,0x16f2) */
+/* WARNING: Removing unreachable block (CODE,0x16f6) */
+/* WARNING: Removing unreachable block (CODE,0x16f8) */
+/* WARNING: Removing unreachable block (CODE,0x16fc) */
+/* WARNING: Removing unreachable block (CODE,0x16ff) */
+/* WARNING: Removing unreachable block (CODE,0x16df) */
+/* WARNING: Removing unreachable block (CODE,0x16e3) */
+/* WARNING: Removing unreachable block (CODE,0x169c) */
+/* WARNING: Removing unreachable block (CODE,0x169e) */
+/* WARNING: Removing unreachable block (CODE,0x16c5) */
+/* WARNING: Removing unreachable block (CODE,0x16c6) */
+/* WARNING: Removing unreachable block (CODE,0x1039) */
+/* WARNING: Removing unreachable block (CODE,0x1060) */
+/* WARNING: Removing unreachable block (CODE,0x105d) */
+/* WARNING: Removing unreachable block (CODE,0x103b) */
+/* WARNING: Removing unreachable block (CODE,0x103d) */
+/* WARNING: Removing unreachable block (CODE,0x0fcc) */
+/* WARNING: Removing unreachable block (CODE,0x0fe0) */
+/* WARNING: Removing unreachable block (CODE,0x1000) */
+/* WARNING: Removing unreachable block (CODE,0x1042) */
+/* WARNING: Removing unreachable block (CODE,0x1063) */
+/* WARNING: Removing unreachable block (CODE,0x1064) */
+/* WARNING: Removing unreachable block (CODE,0x106a) */
+/* WARNING: Removing unreachable block (CODE,0x1072) */
+/* WARNING: Removing unreachable block (CODE,0x106c) */
+/* WARNING: Removing unreachable block (CODE,0x1078) */
+/* WARNING: Removing unreachable block (CODE,0x107b) */
+/* WARNING: Removing unreachable block (CODE,0x108b) */
+/* WARNING: Removing unreachable block (CODE,0x1044) */
+/* WARNING: Removing unreachable block (CODE,0x156d) */
+/* WARNING: Removing unreachable block (CODE,0x156f) */
+/* WARNING: Removing unreachable block (CODE,0x154a) */
+/* WARNING: Removing unreachable block (CODE,0x1552) */
+/* WARNING: Removing unreachable block (CODE,0x155b) */
+/* WARNING: Removing unreachable block (CODE,0x1336) */
+/* WARNING: Removing unreachable block (CODE,0x133a) */
+/* WARNING: Removing unreachable block (CODE,0x1318) */
+
+byte FUN_CODE_134b(byte param_1,byte *param_2,byte param_3,byte *param_4,char param_5,char param_6,
+                  char param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  if (param_1 == 0) {
+    *param_2 = 0;
+    cVar1 = *(char *)(ushort)(param_5 + 2U);
+    *(char *)(ushort)(param_5 + 2U) = cVar1;
+                    /* WARNING: Could not recover jumptable at 0x1301. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    bVar2 = (*(code *)(param_2 + (cVar1 + (param_11 - ((_1_2 << 7) >> 7)))))();
+    return bVar2;
+  }
+  bVar2 = SADEN;
+  SADEN = bVar2 | 0x3b;
+  _7_4 = 0;
+                    /* WARNING: Could not recover jumptable at 0x12f2. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  bVar2 = (*(code *)(param_2 + param_1))(DAT_INTMEM_3b);
+  return bVar2;
+}
+

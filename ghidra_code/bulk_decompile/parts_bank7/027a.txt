@@ -1,0 +1,12 @@
+=== 0x027a ===
+
+void FUN_CODE_027a(byte param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = DAT_SFR_92;
+  DAT_SFR_92 = bVar1 & param_1;
+  return;
+}
+

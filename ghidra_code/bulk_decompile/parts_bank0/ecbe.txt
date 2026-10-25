@@ -1,0 +1,26 @@
+=== 0xecbe ===
+
+char FUN_CODE_ecbe(undefined1 param_1,byte param_2)
+
+{
+  bool bVar1;
+  char cVar2;
+  undefined1 uVar3;
+  undefined1 *puVar4;
+  
+  cVar2 = FUN_CODE_bd62((undefined1 *)0xe67c,param_1,param_2);
+  puVar4 = &DAT_EXTMEM_e67f;
+  uVar3 = FUN_CODE_bec5(cVar2,(undefined1 *)0xe67f,param_2);
+  *puVar4 = uVar3;
+  for (; DAT_EXTMEM_e681 < DAT_EXTMEM_e67d; DAT_EXTMEM_e681 = DAT_EXTMEM_e681 + 1) {
+    FUN_CODE_bdeb(DAT_EXTMEM_e67f,DAT_EXTMEM_e680);
+    FUN_CODE_109f();
+    FUN_CODE_bdeb(DAT_EXTMEM_e67e,DAT_EXTMEM_e67f,DAT_EXTMEM_e680);
+    FUN_CODE_109f();
+    bVar1 = CARRY1(DAT_EXTMEM_e680,DAT_EXTMEM_e65c);
+    DAT_EXTMEM_e680 = DAT_EXTMEM_e680 + DAT_EXTMEM_e65c;
+    DAT_EXTMEM_e67f = DAT_EXTMEM_e67f - ((bVar1 << 7) >> 7);
+  }
+  return DAT_EXTMEM_e681 - DAT_EXTMEM_e67d;
+}
+

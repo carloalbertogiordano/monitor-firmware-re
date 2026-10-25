@@ -1,0 +1,9 @@
+=== 0xce7f ===
+
+undefined1 FUN_CODE_ce7f(undefined1 param_1)
+
+{
+  FUN_CODE_0865(param_1,0,100);
+  return DAT_EXTMEM_e37f;
+}
+

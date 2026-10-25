@@ -1,0 +1,10 @@
+=== 0x97bd ===
+
+void FUN_CODE_97bd(char param_1,byte param_2,char param_3,byte param_4)
+
+{
+  DAT_EXTMEM_e353 = param_1 - (param_3 - (((param_2 < param_4) << 7) >> 7));
+  DAT_EXTMEM_e354 = param_2 - param_4;
+  return;
+}
+

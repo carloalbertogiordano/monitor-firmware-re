@@ -1,0 +1,13 @@
+=== 0xfd98 ===
+
+void FUN_CODE_fd98(void)
+
+{
+  if (_0_1 != '\0') {
+    DAT_EXTMEM_0010 = DAT_EXTMEM_0010 & 0xfd | 2;
+    return;
+  }
+  DAT_EXTMEM_0010 = DAT_EXTMEM_0010 & 0xfd;
+  return;
+}
+

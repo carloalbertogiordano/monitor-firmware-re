@@ -1,0 +1,27 @@
+=== 0x0591 ===
+
+/* WARNING: Instruction at (CODE,0x0599) overlaps instruction at (CODE,0x0598)
+    */
+
+void FUN_CODE_0591(undefined1 param_1)
+
+{
+  char cVar1;
+  
+  if (_4_2 == '\x01') {
+    _1_7 = 0;
+  }
+  else {
+    if (_e_2 == '\x01') {
+      _3_5 = _3_5 ^ 1;
+      return;
+    }
+    cVar1 = FIFLG_2;
+    if (cVar1 == '\x01') {
+      return;
+    }
+  }
+  FUN_CODE_0112(param_1);
+  return;
+}
+

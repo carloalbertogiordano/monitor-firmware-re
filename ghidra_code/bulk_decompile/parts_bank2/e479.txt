@@ -1,0 +1,9 @@
+=== 0xe479 ===
+
+char FUN_CODE_e479(void)
+
+{
+  DAT_EXTMEM_e33a = DAT_EXTMEM_e33a + '\x01';
+  return DAT_EXTMEM_e33a;
+}
+

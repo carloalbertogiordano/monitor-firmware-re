@@ -1,0 +1,8 @@
+=== 0xfed1 ===
+
+void FUN_CODE_fed1(void)
+
+{
+  return;
+}
+

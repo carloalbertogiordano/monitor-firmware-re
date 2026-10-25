@@ -1,0 +1,19 @@
+=== 0xf40b ===
+
+void FUN_CODE_f40b(undefined1 param_1)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e332 = param_1;
+  cVar1 = FUN_CODE_cb03();
+  if (cVar1 != '\0') {
+    FUN_CODE_f425();
+  }
+  else {
+    FUN_CODE_f425();
+  }
+  FUN_CODE_0e5f(cVar1 != '\0');
+  return;
+}
+

@@ -1,0 +1,26 @@
+=== 0x3133 ===
+
+void FUN_CODE_3133(byte param_1,short param_2,byte param_3,byte param_4,byte param_5,
+                  undefined1 param_6)
+
+{
+  byte bVar1;
+  
+  DAT_INTMEM_77 = DAT_INTMEM_77 & 0x37;
+  bVar1 = DAT_SFR_86;
+  DAT_SFR_86 = bVar1 | 0x38;
+  _7_1 = 0;
+  bVar1 = DAT_SFR_96;
+  DAT_SFR_96 = bVar1 | 0x39;
+  bVar1 = *(byte *)((ushort)((byte)FUN_CODE_3143[*(byte *)(param_2 + (ushort)param_1) >> 1 | 0x80]
+                             >> 1 | (char)FUN_CODE_3143
+                                          [*(byte *)(param_2 + (ushort)param_1) >> 1 | 0x80] << 7) +
+                   0x314f);
+  bVar1 = (bVar1 - param_4) + (param_3 - (((bVar1 < param_4) << 7) >> 7));
+  *(byte *)(ushort)param_3 = (bVar1 - param_5) + (param_3 - (((bVar1 < param_5) << 7) >> 7));
+  DAT_INTMEM_38 = param_4;
+  DAT_INTMEM_39 = param_6;
+  FUN_CODE_353a(0x37,0x38);
+  return;
+}
+

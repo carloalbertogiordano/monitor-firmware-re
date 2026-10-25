@@ -1,0 +1,8 @@
+=== 0x444e ===
+
+char FUN_CODE_444e(char param_1)
+
+{
+  return param_1 * '\x03' + '\x04';
+}
+

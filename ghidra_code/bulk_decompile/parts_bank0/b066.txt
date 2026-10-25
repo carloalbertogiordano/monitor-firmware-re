@@ -1,0 +1,12 @@
+=== 0xb066 ===
+
+byte FUN_CODE_b066(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = (byte)((ushort)DAT_INTMEM_29 * 0xc);
+  return bVar1 - DAT_INTMEM_2a >> 1 |
+         ((char)((ushort)DAT_INTMEM_29 * 0xc >> 8) + (((bVar1 < DAT_INTMEM_2a) << 7) >> 7)) * -0x80;
+}
+

@@ -1,0 +1,8 @@
+=== 0xc105 ===
+
+undefined1 FUN_CODE_c105(void)
+
+{
+  return uEXTMEM007f;
+}
+

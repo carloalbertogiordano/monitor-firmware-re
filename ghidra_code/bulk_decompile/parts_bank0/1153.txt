@@ -1,0 +1,9 @@
+=== 0x1153 ===
+
+void FUN_CODE_1153(void)
+
+{
+  FUN_CODE_041b();
+  return;
+}
+

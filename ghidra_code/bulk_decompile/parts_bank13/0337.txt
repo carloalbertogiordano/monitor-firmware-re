@@ -1,0 +1,17 @@
+=== 0x0337 ===
+
+void FUN_CODE_0337(void)
+
+{
+  char cVar1;
+  undefined1 in_ACC;
+  short in_DPTR;
+  
+  cVar1 = P0_2;
+  if (cVar1 != '\x01') {
+    FUN_CODE_0070(in_ACC,in_DPTR);
+    return;
+  }
+  return;
+}
+

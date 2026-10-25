@@ -1,0 +1,9 @@
+=== 0x9dbc ===
+
+undefined1 FUN_CODE_9dbc(void)
+
+{
+  FUN_CODE_076f(0,0x2a);
+  return DAT_INTMEM_2a;
+}
+

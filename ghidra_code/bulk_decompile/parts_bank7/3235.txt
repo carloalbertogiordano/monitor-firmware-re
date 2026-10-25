@@ -1,0 +1,19 @@
+=== 0x3235 ===
+
+char FUN_CODE_3235(byte param_1,char param_2,char param_3)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  char cVar3;
+  
+  bVar1 = TCON;
+  TCON = bVar1 & *(byte *)(ushort)param_1;
+  bVar1 = TR1;
+  TR1 = bVar1 ^ 1;
+  cVar3 = FUN_CODE_9429(*(byte *)(ushort)param_1 + param_1 + param_2);
+  uVar2 = RB8;
+  SM0 = 0;
+  return cVar3 + param_2 + param_3;
+}
+

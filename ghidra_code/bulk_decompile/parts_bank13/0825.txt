@@ -1,0 +1,10 @@
+=== 0x0825 ===
+
+void FUN_CODE_0825(byte param_1,byte *param_2,char *param_3,byte param_4,char param_5,byte param_6)
+
+{
+  FUN_CODE_0ab8(param_1);
+  FUN_CODE_0ec0(param_2,param_3,param_4,param_5,param_6);
+  return;
+}
+

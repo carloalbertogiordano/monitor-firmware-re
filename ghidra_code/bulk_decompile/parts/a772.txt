@@ -1,0 +1,10 @@
+=== 0xa772 ===
+
+undefined1 FUN_CODE_a772(void)
+
+{
+  return *(undefined1 *)
+          CONCAT11(-0x1b - (((0x50U < (byte)(DAT_EXTMEM_e32e * '\x02')) << 7) >> 7),
+                   DAT_EXTMEM_e32e * '\x02' + 0xaf);
+}
+

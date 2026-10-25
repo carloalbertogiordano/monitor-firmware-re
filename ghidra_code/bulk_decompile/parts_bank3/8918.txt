@@ -1,0 +1,8 @@
+=== 0x8918 ===
+
+byte FUN_CODE_8918(void)
+
+{
+  return DAT_EXTMEM_e352 + DAT_EXTMEM_e353 >> 1 | CARRY1(DAT_EXTMEM_e352,DAT_EXTMEM_e353) << 7;
+}
+

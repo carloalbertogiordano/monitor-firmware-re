@@ -1,0 +1,8 @@
+=== 0x7505 ===
+
+undefined1 FUN_CODE_7505(void)
+
+{
+  return DAT_EXTMEM_e18a;
+}
+

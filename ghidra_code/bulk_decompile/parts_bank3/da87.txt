@@ -1,0 +1,102 @@
+=== 0xda87 ===
+
+void FUN_CODE_da87(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = (DAT_EXTMEM_e5a2 & 0xf) * '\x02';
+  FUN_CODE_b3f7();
+  cVar1 = FUN_CODE_b49a();
+  if ((cVar1 == '\x01') || (cVar1 == '\x02')) {
+    bVar2 = bVar2 & 0x18;
+    if (bVar2 == 8) {
+      FUN_CODE_b3f7();
+      bVar2 = FUN_CODE_b432();
+      bVar2 = bVar2 & 0x87 | 0x38;
+    }
+    else if (bVar2 == 0x10) {
+      FUN_CODE_b3f7();
+      bVar2 = FUN_CODE_b432();
+      bVar2 = bVar2 & 0x87 | 0x50;
+    }
+    else if (bVar2 == 0x18) {
+      FUN_CODE_b3f7();
+      bVar2 = FUN_CODE_b432();
+      bVar2 = bVar2 & 0x87 | 0x40;
+    }
+    else {
+      if (bVar2 != 0) {
+        return;
+      }
+      bVar2 = FUN_CODE_b431();
+      bVar2 = bVar2 & 0x87 | 0x48;
+    }
+  }
+  else {
+    FUN_CODE_b3f7();
+    cVar1 = FUN_CODE_b49a();
+    if (cVar1 == '\0') {
+      bVar2 = bVar2 & 0x1e;
+      if (bVar2 == 6) {
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87 | 0x10;
+      }
+      else if (bVar2 == 8) {
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87;
+      }
+      else if (bVar2 == 0xe) {
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87 | 0x20;
+      }
+      else if (bVar2 == 0x16) {
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87 | 0x18;
+      }
+      else if (bVar2 == 0x18) {
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87 | 8;
+      }
+      else if (bVar2 == 0x1e) {
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87 | 0x28;
+      }
+      else if (bVar2 == 0) {
+        bVar2 = FUN_CODE_b431();
+        bVar2 = bVar2 & 0x87;
+      }
+      else {
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87;
+      }
+    }
+    else {
+      FUN_CODE_b3f7();
+      cVar1 = FUN_CODE_b49a();
+      if (cVar1 == '\x05') {
+        bVar2 = FUN_CODE_b431();
+        bVar2 = bVar2 & 0x87 | 0x58;
+      }
+      else {
+        if (cVar1 != '\x06') {
+          return;
+        }
+        FUN_CODE_b3f7();
+        bVar2 = FUN_CODE_b432();
+        bVar2 = bVar2 & 0x87 | 0x60;
+      }
+    }
+  }
+  FUN_CODE_12f8(bVar2);
+  return;
+}
+

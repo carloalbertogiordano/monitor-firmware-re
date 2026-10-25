@@ -1,0 +1,32 @@
+=== 0xf1e6 ===
+
+void FUN_CODE_f1e6(void)
+
+{
+  byte in_PSW;
+  byte bVar1;
+  
+  if ((DAT_EXTMEM_b7d0 & 2) == 0) {
+    DAT_EXTMEM_b7d0 = DAT_EXTMEM_b7d0 & 0xef;
+    bVar1 = in_PSW & 0xdd;
+    FUN_CODE_e8ed(0xe402);
+    if (-1 < (char)bVar1) {
+      do {
+        DAT_INTMEM_55 = DAT_INTMEM_54;
+        do {
+          DAT_INTMEM_55 = DAT_INTMEM_55 + -1;
+        } while (DAT_INTMEM_55 != '\0');
+        FUN_CODE_e93f(0xe402);
+        if (-1 < (char)bVar1) break;
+        FUN_CODE_e8ef();
+      } while (-1 < (char)bVar1);
+      DAT_INTMEM_55 = DAT_INTMEM_54;
+      do {
+        DAT_INTMEM_55 = DAT_INTMEM_55 + -1;
+      } while (DAT_INTMEM_55 != '\0');
+    }
+    FUN_CODE_e92e();
+  }
+  return;
+}
+

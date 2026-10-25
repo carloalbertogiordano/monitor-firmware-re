@@ -1,0 +1,9 @@
+=== 0x8c81 ===
+
+void FUN_CODE_8c81(short param_1)
+
+{
+  FUN_CODE_160f(8,0,0,0,*(undefined1 *)(param_1 + 1));
+  return;
+}
+

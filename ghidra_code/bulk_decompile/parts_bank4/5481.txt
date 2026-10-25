@@ -1,0 +1,13 @@
+=== 0x5481 ===
+
+void FUN_CODE_5481(void)
+
+{
+  byte bVar1;
+  byte in_PSW;
+  
+  bVar1 = func_0x212d();
+  FUN_CODE_573f(bVar1 >> 1 | in_PSW & 0x80);
+  return;
+}
+

@@ -1,0 +1,12 @@
+=== 0xc13a ===
+
+void FUN_CODE_c13a(void)
+
+{
+  FUN_CODE_b224(1);
+  DAT_EXTMEM_e36c = 0xff;
+  DAT_EXTMEM_e36d = 0x6a;
+  DAT_EXTMEM_e36e = 0x40;
+  return;
+}
+

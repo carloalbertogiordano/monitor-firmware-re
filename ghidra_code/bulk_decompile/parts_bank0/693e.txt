@@ -1,0 +1,12 @@
+=== 0x693e ===
+
+char FUN_CODE_693e(byte param_1,char param_2,byte param_3,char param_4)
+
+{
+  byte bVar1;
+  
+  bVar1 = param_2 - ((CARRY1(param_1,param_3) << 7) >> 7);
+  return param_1 + param_3 + bVar1 + (param_2 - ((CARRY1(param_1 + param_3,bVar1) << 7) >> 7)) +
+         param_4 + -1;
+}
+

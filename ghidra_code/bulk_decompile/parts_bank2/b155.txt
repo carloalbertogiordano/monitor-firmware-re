@@ -1,0 +1,10 @@
+=== 0xb155 ===
+
+void FUN_CODE_b155(undefined1 param_1,undefined1 param_2,char param_3,byte param_4)
+
+{
+  FUN_CODE_14a4();
+  FUN_CODE_15fb(4,param_1,param_2,param_3 - (((0xfd < param_4) << 7) >> 7),param_4 + 2);
+  return;
+}
+

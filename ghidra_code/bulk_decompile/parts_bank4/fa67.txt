@@ -1,0 +1,9 @@
+=== 0xfa67 ===
+
+void FUN_CODE_fa67(byte param_1)
+
+{
+  DAT_EXTMEM_e07f = DAT_EXTMEM_e07f & 0xcf | (param_1 & 3) << 4 | 0x40;
+  return;
+}
+

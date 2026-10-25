@@ -1,0 +1,8 @@
+=== 0x7028 ===
+
+undefined1 FUN_CODE_7028(void)
+
+{
+  return 0;
+}
+

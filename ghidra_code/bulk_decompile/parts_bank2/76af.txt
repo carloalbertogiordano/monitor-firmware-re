@@ -1,0 +1,9 @@
+=== 0x76af ===
+
+void FUN_CODE_76af(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe386);
+}
+

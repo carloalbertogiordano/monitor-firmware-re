@@ -1,0 +1,9 @@
+=== 0xc592 ===
+
+undefined1 FUN_CODE_c592(void)
+
+{
+  FUN_CODE_1420();
+  return 0;
+}
+

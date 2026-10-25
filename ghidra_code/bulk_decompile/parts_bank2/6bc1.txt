@@ -1,0 +1,75 @@
+=== 0x6bc1 ===
+
+void FUN_CODE_6bc1(byte param_1,char param_2,char param_3,byte param_4)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  char cVar3;
+  byte bVar4;
+  char cVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  undefined1 uVar9;
+  char cVar10;
+  byte bVar11;
+  byte in_PSW;
+  char cVar12;
+  
+  bVar7 = DAT_EXTMEM_e517 << 1 | in_PSW >> 7;
+  cVar5 = '\0';
+  bVar6 = 0;
+  bVar8 = FUN_CODE_ddea(0xe33f);
+  DAT_INTMEM_38 = bVar8 + param_1;
+  bVar8 = bVar7 - ((CARRY1(bVar8,param_1) << 7) >> 7);
+  DAT_INTMEM_37 = param_4 + bVar8;
+  bVar8 = param_3 - ((CARRY1(param_4,bVar8) << 7) >> 7);
+  DAT_INTMEM_36 = bVar6 + bVar8;
+  DAT_INTMEM_35 = cVar5 + (param_2 - ((CARRY1(bVar6,bVar8) << 7) >> 7));
+  uVar9 = FUN_CODE_ddf5();
+  cVar12 = -0x80;
+  cVar3 = DAT_INTMEM_35;
+  bVar4 = DAT_INTMEM_36;
+  bVar8 = DAT_INTMEM_37;
+  FUN_CODE_15d7(DAT_INTMEM_38,uVar9);
+  if (cVar12 < '\0') {
+    uVar9 = FUN_CODE_ddf8(0xe33f);
+    uVar9 = FUN_CODE_dde7(uVar9);
+    cVar12 = -0x80;
+    FUN_CODE_15d7(uVar9);
+    if (cVar12 < '\0') {
+      DAT_INTMEM_2c = '\0';
+      DAT_INTMEM_2b = '\0';
+      DAT_INTMEM_2a = '\0';
+      DAT_INTMEM_29 = '\0';
+    }
+    else {
+      cVar10 = FUN_CODE_ddea(0xe33f);
+      bVar11 = FUN_CODE_ddf5();
+      bVar1 = cVar10 - (cVar12 >> 7);
+      DAT_INTMEM_2c = bVar11 - bVar1;
+      bVar8 = bVar8 - (((bVar11 < bVar1) << 7) >> 7);
+      DAT_INTMEM_2b = bVar7 - bVar8;
+      bVar4 = bVar4 - (((bVar7 < bVar8) << 7) >> 7);
+      DAT_INTMEM_2a = bVar6 - bVar4;
+      DAT_INTMEM_29 = cVar5 - (cVar3 - (((bVar6 < bVar4) << 7) >> 7));
+    }
+    FUN_CODE_de3f();
+                    /* WARNING: Subroutine does not return */
+    FUN_CODE_17ba(0,2);
+  }
+  cVar5 = FUN_CODE_dde7();
+  uVar2 = BANK0_R7;
+  uVar9 = BANK0_R6;
+  bVar6 = cVar5 - (cVar12 >> 7);
+  bVar8 = bVar8 - (((DAT_INTMEM_38 < bVar6) << 7) >> 7);
+  bVar4 = bVar4 - (((DAT_INTMEM_37 < bVar8) << 7) >> 7);
+  FUN_CODE_dddc(0xe517,DAT_INTMEM_35 - (cVar3 - (((DAT_INTMEM_36 < bVar4) << 7) >> 7)),
+                DAT_INTMEM_36 - bVar4,DAT_INTMEM_37 - bVar8,DAT_INTMEM_38 - bVar6);
+  BANK0_R6 = uVar9;
+  BANK0_R7 = uVar2;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f();
+}
+

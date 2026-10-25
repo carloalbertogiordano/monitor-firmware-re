@@ -1,0 +1,9 @@
+=== 0x5b66 ===
+
+void thunk_FUN_CODE_03f7(void)
+
+{
+  FUN_CODE_03f7();
+  return;
+}
+

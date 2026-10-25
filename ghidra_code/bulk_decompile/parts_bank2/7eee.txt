@@ -1,0 +1,9 @@
+=== 0x7eee ===
+
+void FUN_CODE_7eee(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe371,DAT_EXTMEM_e33a,DAT_EXTMEM_e33b,DAT_EXTMEM_e33c,DAT_EXTMEM_e33d);
+}
+

@@ -1,0 +1,16 @@
+=== 0xce56 ===
+
+char FUN_CODE_ce56(void)
+
+{
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e403;
+  FUN_CODE_fecb(0x10,2,0);
+  DAT_EXTMEM_e407 = 0x80;
+  DAT_EXTMEM_e408 = DAT_EXTMEM_e402;
+  FUN_CODE_fd19(0x11,2,0);
+  DAT_EXTMEM_0b08 = DAT_EXTMEM_0b08 & 0xe7 | (DAT_EXTMEM_e6c9 >> 2 & 3) << 3;
+  DAT_EXTMEM_e402 = DAT_EXTMEM_0b0b;
+  DAT_EXTMEM_e403 = DAT_EXTMEM_0b0c;
+  return DAT_EXTMEM_0b0b + (((DAT_EXTMEM_0b0c < 0x31) << 7) >> 7);
+}
+

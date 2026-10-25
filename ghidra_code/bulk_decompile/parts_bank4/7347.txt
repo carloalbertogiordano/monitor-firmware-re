@@ -1,0 +1,10 @@
+=== 0x7347 ===
+
+undefined1 FUN_CODE_7347(void)
+
+{
+  FUN_CODE_133e(0,5,DAT_EXTMEM_e18e,DAT_EXTMEM_e18f);
+  FUN_CODE_132c(0,0x78);
+  return DAT_EXTMEM_e18f;
+}
+

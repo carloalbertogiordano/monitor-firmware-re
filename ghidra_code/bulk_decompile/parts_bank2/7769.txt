@@ -1,0 +1,8 @@
+=== 0x7769 ===
+
+byte FUN_CODE_7769(void)
+
+{
+  return DAT_EXTMEM_e511 >> 6;
+}
+

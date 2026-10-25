@@ -1,0 +1,8 @@
+=== 0xb202 ===
+
+char FUN_CODE_b202(void)
+
+{
+  return DAT_INTMEM_35 + (((DAT_INTMEM_36 == '\0') << 7) >> 7);
+}
+

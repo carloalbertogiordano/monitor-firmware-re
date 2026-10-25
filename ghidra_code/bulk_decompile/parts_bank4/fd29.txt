@@ -1,0 +1,11 @@
+=== 0xfd29 ===
+
+void FUN_CODE_fd29(void)
+
+{
+  FUN_CODE_a7b8(0x5d0c);
+  _0_0 = 0;
+  FUN_CODE_0d87();
+  return;
+}
+

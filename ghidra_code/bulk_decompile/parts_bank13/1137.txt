@@ -1,0 +1,11 @@
+=== 0x1137 ===
+
+byte FUN_CODE_1137(undefined1 *param_1,undefined1 *param_2,undefined1 param_3)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_11f3(param_1,param_2,param_3);
+  return bVar1 << 1 | bVar1 >> 7;
+}
+

@@ -1,0 +1,9 @@
+=== 0x3d47 ===
+
+void FUN_CODE_3d47(undefined1 *param_1)
+
+{
+  FUN_CODE_0865(*param_1,0,0x60);
+  return;
+}
+

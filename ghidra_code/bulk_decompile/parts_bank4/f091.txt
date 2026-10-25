@@ -1,0 +1,20 @@
+=== 0xf091 ===
+
+void FUN_CODE_f091(void)
+
+{
+  if (_0_0 == 1) {
+    DAT_EXTMEM_b676 = DAT_EXTMEM_b676 & 0x6f | 0x90;
+    DAT_EXTMEM_b677 = 0x40;
+  }
+  else {
+    DAT_EXTMEM_b676 = DAT_EXTMEM_b676 & 0x60 | 0x8f;
+    DAT_EXTMEM_b677 = 1;
+  }
+  _1_0 = _0_0 & 1;
+  DAT_EXTMEM_e374 = 0;
+  DAT_EXTMEM_e375 = 0x30;
+  FUN_CODE_c6e8();
+  return;
+}
+

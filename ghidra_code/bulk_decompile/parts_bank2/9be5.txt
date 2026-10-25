@@ -1,0 +1,9 @@
+=== 0x9be5 ===
+
+void FUN_CODE_9be5(void)
+
+{
+  FUN_CODE_0865(BANK0_R7,0,0x24);
+  return;
+}
+

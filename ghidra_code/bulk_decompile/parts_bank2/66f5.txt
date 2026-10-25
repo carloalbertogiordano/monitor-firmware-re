@@ -1,0 +1,10 @@
+=== 0x66f5 ===
+
+void FUN_CODE_66f5(void)
+
+{
+  FUN_CODE_074b(1,0x2c);
+  FUN_CODE_f935();
+  return;
+}
+

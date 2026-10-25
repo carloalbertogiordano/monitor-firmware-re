@@ -1,0 +1,38 @@
+=== 0xecf2 ===
+
+byte FUN_CODE_ecf2(char param_1,char param_2)
+
+{
+  bool bVar1;
+  byte bVar2;
+  char cVar3;
+  
+  if ((DAT_EXTMEM_e66a >> 1 & 1) != 1) {
+    return DAT_EXTMEM_e66a;
+  }
+  DAT_EXTMEM_e339 = 0;
+  bVar1 = 0xeb < DAT_EXTMEM_e66c;
+  DAT_EXTMEM_e66c = DAT_EXTMEM_e66c + 0x14;
+  DAT_EXTMEM_e66b = DAT_EXTMEM_e66b - ((bVar1 << 7) >> 7);
+  bVar1 = 0x13 < DAT_EXTMEM_e670;
+  DAT_EXTMEM_e670 = DAT_EXTMEM_e670 - 0x14;
+  DAT_EXTMEM_e66f = DAT_EXTMEM_e66f + (-1 - ((bVar1 << 7) >> 7));
+  cVar3 = FUN_CODE_75d9();
+  if (cVar3 == '\0') {
+    FUN_CODE_75b8();
+    bVar2 = param_1 - (((DAT_EXTMEM_e53e < param_2 + 1U) << 7) >> 7);
+    cVar3 = (DAT_EXTMEM_e53d < bVar2) << 7;
+    if (DAT_EXTMEM_e53d < bVar2) {
+      FUN_CODE_e040(DAT_EXTMEM_e53d - bVar2);
+      if (cVar3 < '\0') goto LAB_CODE_ed3d;
+    }
+  }
+  DAT_EXTMEM_e339 = 1;
+LAB_CODE_ed3d:
+  cVar3 = FUN_CODE_75d9();
+  if (cVar3 == '\x03') {
+    DAT_EXTMEM_e339 = 1;
+  }
+  return DAT_EXTMEM_e339;
+}
+

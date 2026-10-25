@@ -1,0 +1,9 @@
+=== 0xae77 ===
+
+char FUN_CODE_ae77(char param_1,byte param_2)
+
+{
+  FUN_CODE_132c('\0',0x1b,param_1,param_2);
+  return DAT_INTMEM_29 * '\x03' + BANK0_R7;
+}
+

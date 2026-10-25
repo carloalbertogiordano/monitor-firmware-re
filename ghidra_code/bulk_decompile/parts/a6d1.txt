@@ -1,0 +1,10 @@
+=== 0xa6d1 ===
+
+void FUN_CODE_a6d1(void)
+
+{
+  FUN_CODE_06d9(DAT_EXTMEM_e32e);
+  FUN_CODE_06df(DAT_EXTMEM_e32e);
+  return;
+}
+

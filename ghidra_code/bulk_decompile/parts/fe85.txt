@@ -1,0 +1,9 @@
+=== 0xfe85 ===
+
+void FUN_CODE_fe85(void)
+
+{
+  FUN_CODE_f9c4(4);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xbedc ===
+
+void FUN_CODE_bedc(void)
+
+{
+  DAT_EXTMEM_e378 = DAT_EXTMEM_e378 + DAT_EXTMEM_e377;
+  return;
+}
+

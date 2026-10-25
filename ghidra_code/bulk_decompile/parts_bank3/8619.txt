@@ -1,0 +1,8 @@
+=== 0x8619 ===
+
+undefined1 FUN_CODE_8619(void)
+
+{
+  return DAT_EXTMEM_e370;
+}
+

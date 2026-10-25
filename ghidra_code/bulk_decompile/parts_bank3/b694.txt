@@ -1,0 +1,9 @@
+=== 0xb694 ===
+
+void FUN_CODE_b694(void)
+
+{
+  FUN_CODE_1420(0x11);
+  return;
+}
+

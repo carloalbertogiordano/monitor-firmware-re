@@ -1,0 +1,10 @@
+=== 0x81ba ===
+
+void FUN_CODE_81ba(char param_1,char param_2)
+
+{
+  thunk_FUN_CODE_851c(param_1 + -1);
+  FUN_CODE_87b5(param_2 + -1);
+  return;
+}
+

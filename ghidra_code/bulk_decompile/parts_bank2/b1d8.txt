@@ -1,0 +1,14 @@
+=== 0xb1d8 ===
+
+void FUN_CODE_b1d8(char param_1,char *param_2,undefined1 param_3,char param_4,char param_5)
+
+{
+  char in_PSW;
+  
+  param_1 = param_1 - (param_4 - (in_PSW >> 7));
+  *param_2 = param_1;
+  param_2[1] = param_5;
+  FUN_CODE_132c(param_1,param_5,0,param_3);
+  return;
+}
+

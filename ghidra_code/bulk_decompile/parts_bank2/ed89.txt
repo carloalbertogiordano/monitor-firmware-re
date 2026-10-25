@@ -1,0 +1,14 @@
+=== 0xed89 ===
+
+undefined1 FUN_CODE_ed89(undefined1 param_1,undefined1 *param_2)
+
+{
+  DAT_EXTMEM_e3e1 = *param_2;
+  DAT_EXTMEM_e3e2 = 0;
+  DAT_EXTMEM_e3e3 = 0x36;
+  DAT_EXTMEM_e3e4 = 1;
+  _0_6 = 0;
+  FUN_CODE_08b9(param_1,BANK0_R6,0xff,0,0x80);
+  return DAT_EXTMEM_0035;
+}
+

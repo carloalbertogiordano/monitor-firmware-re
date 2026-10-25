@@ -1,0 +1,24 @@
+=== 0x4980 ===
+
+void FUN_CODE_4980(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  thunk_FUN_CODE_218f();
+  return;
+}
+

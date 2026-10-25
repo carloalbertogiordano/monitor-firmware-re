@@ -1,0 +1,9 @@
+=== 0xb12f ===
+
+char FUN_CODE_b12f(char param_1)
+
+{
+  FUN_CODE_1420();
+  return param_1 >> 7;
+}
+

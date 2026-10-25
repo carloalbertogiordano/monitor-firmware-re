@@ -1,0 +1,8 @@
+=== 0xfe21 ===
+
+void FUN_CODE_fe21(void)
+
+{
+  return;
+}
+

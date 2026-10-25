@@ -1,0 +1,61 @@
+=== 0x3337 ===
+
+char FUN_CODE_3337(byte param_1,char *param_2,char *param_3,char param_4,char param_5,char param_6,
+                  byte param_7,char param_8)
+
+{
+  undefined1 uVar1;
+  char *pcVar2;
+  char cVar3;
+  byte bVar4;
+  byte bVar5;
+  char cVar6;
+  byte in_PSW;
+  
+  nop();
+  bVar4 = param_1 >> 1 | param_1 << 7;
+  nop();
+  if (bVar4 != 0) {
+    nop();
+    bVar5 = TCON;
+    TCON = bVar5 & bVar4;
+    bVar5 = TR1;
+    TR1 = bVar5 ^ 1;
+    cVar3 = FUN_CODE_9429(param_3 + param_4 + bVar4);
+    uVar1 = RB8;
+    P2_0 = 1;
+    return cVar3 + param_4 + param_5;
+  }
+  if (_7_6 != '\0') {
+    _7_6 = 0;
+    BANK0_R0 = BANK0_R0 ^ (param_1 >> 1) << 7;
+    nop();
+    nop();
+    *param_3 = *param_3 + '\x01';
+    bVar4 = P0_4;
+    pcVar2 = (char *)(param_4 + '\x01');
+    bVar5 = ET2;
+    cVar3 = (in_PSW >> 7 | (bVar4 ^ 1) & 1 | (bVar5 ^ 1) & 1 | param_7 >> 6 & 1 ^ 1) << 7;
+    cVar6 = F8_5;
+    if (cVar6 != '\x01') {
+      FUN_CODE_3311(param_6 + '\x01',*param_2 + '\x01',param_8 + '\x01');
+      bVar5 = func_0x30b1();
+      bVar4 = (0xed < bVar5) << 7;
+      bVar5 = func_0x3635(bVar5 + 0x12);
+      cVar3 = bVar5 << 7;
+      cVar6 = FUN_CODE_3645(bVar5 >> 1 | bVar4 & 0x80);
+      param_7 = FUN_CODE_3654(cVar6 + -1);
+      cVar6 = IEN1;
+      IEN1 = cVar6 + -1;
+    }
+    BANK2_R6 = BANK2_R6 ^ param_7;
+    cVar6 = FUN_CODE_3470();
+    *pcVar2 = *pcVar2 + -1;
+    FUN_CODE_35a1(cVar6 - (BANK3_R1 - (cVar3 >> 7)));
+    cVar3 = FUN_CODE_33ac(param_5 + -1);
+    return cVar3;
+  }
+  cVar3 = FUN_CODE_339c();
+  return cVar3;
+}
+

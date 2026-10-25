@@ -1,0 +1,94 @@
+=== 0xbcdf ===
+
+void FUN_CODE_bcdf(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  char cVar3;
+  byte *pbVar4;
+  
+  pbVar4 = (byte *)0xe6e1;
+  bVar2 = DAT_EXTMEM_e6e1 >> 4;
+  DAT_EXTMEM_e6e1 = DAT_EXTMEM_e6e1 & 0xf;
+  cVar3 = (1 < BANK0_R6) << 7;
+  if (BANK0_R6 == 2) {
+    cVar1 = FUN_CODE_f216(bVar2);
+    if (cVar1 == '\x03') {
+      FUN_CODE_d0b4(2);
+      FUN_CODE_e644(2);
+      if (-1 < cVar3) {
+        bVar2 = FUN_CODE_f21d();
+        *pbVar4 = bVar2 | 0x20;
+        return;
+      }
+    }
+  }
+  else if (BANK0_R6 == 3) {
+    cVar1 = FUN_CODE_f216(bVar2);
+    if (cVar1 == '\x03') {
+      FUN_CODE_d0b4(3);
+      FUN_CODE_e644(2);
+      if (-1 < cVar3) {
+        bVar2 = FUN_CODE_f21d();
+        *pbVar4 = bVar2 | 0x30;
+        return;
+      }
+    }
+  }
+  else if (BANK0_R6 == 4) {
+    bVar2 = BANK0_R6;
+    FUN_CODE_ef94();
+    if (bVar2 != 1) {
+      FUN_CODE_d0b4(4);
+      FUN_CODE_059b(0x1b);
+      FUN_CODE_e644(4);
+      if (-1 < cVar3) {
+        bVar2 = FUN_CODE_f21d();
+        *pbVar4 = bVar2 | 0x40;
+        return;
+      }
+    }
+  }
+  else if (BANK0_R6 == 5) {
+    cVar1 = FUN_CODE_bdc2();
+    if (cVar1 != '\0') {
+      FUN_CODE_059b(0x1c);
+      FUN_CODE_e644(5);
+      if (cVar3 < '\0') {
+        DAT_EXTMEM_e5c4 = DAT_EXTMEM_e5c4 & 0xf7;
+        return;
+      }
+      bVar2 = FUN_CODE_f21d();
+      *pbVar4 = bVar2 | 0x50;
+      return;
+    }
+  }
+  else {
+    cVar3 = (2 < BANK0_R6 - 5) << 7;
+    if (BANK0_R6 == 8) {
+      FUN_CODE_059b(0x1b);
+      FUN_CODE_059b(0x1c);
+      FUN_CODE_059b(0x1a);
+      FUN_CODE_e644(8);
+      if (-1 < cVar3) {
+        bVar2 = FUN_CODE_f21d();
+        *pbVar4 = bVar2 | 0x80;
+      }
+    }
+    else {
+      cVar3 = (0xf8 < BANK0_R6 - 8) << 7;
+      if ((BANK0_R6 - 5 == 0xfc) && (cVar1 = FUN_CODE_bdc2(), cVar1 != '\0')) {
+        FUN_CODE_d0b4(1);
+        FUN_CODE_e644(1);
+        if (-1 < cVar3) {
+          bVar2 = FUN_CODE_f21d();
+          *pbVar4 = bVar2 | 0x10;
+          return;
+        }
+      }
+    }
+  }
+  return;
+}
+

@@ -1,0 +1,68 @@
+=== 0x2db2 ===
+
+/* WARNING: Instruction at (CODE,0x2e56) overlaps instruction at (CODE,0x2e55)
+    */
+
+byte FUN_CODE_2db2(char param_1,char param_2,char *param_3,char param_4,char param_5,byte param_6,
+                  char param_7,byte param_8,byte param_9)
+
+{
+  undefined1 uVar1;
+  char *pcVar2;
+  char *pcVar3;
+  char *pcVar4;
+  byte bVar5;
+  undefined1 uStackX_0;
+  
+  pcVar3 = (char *)(param_1 + param_7 + ' ' + DAT_INTMEM_26 + param_5);
+  if (_5_3 == '\x01') {
+    pcVar2 = (char *)(param_4 + -1);
+    pcVar3 = pcVar3 + (char)pcVar2;
+    if (_3_6 == '\x01') goto LAB_CODE_2df7;
+    pcVar4 = pcVar3 + param_5 * '\x02' + BANK3_R4 + param_6;
+    pcVar3 = pcVar4 + -1;
+    param_6 = param_6 - 1;
+    param_7 = param_7 + -2;
+    pcVar4 = pcVar2 + ((char)pcVar4 * '\x02' | (byte)pcVar4 >> 7);
+LAB_CODE_2de4:
+    pcVar2 = (char *)(param_4 + -1);
+    param_7 = param_7 + -1;
+    pcVar3 = pcVar3 + -1;
+    if (_3_3 == '\x01') {
+      pcVar3 = pcVar4;
+    }
+    if (param_3 != (char *)0xb9) {
+      uVar1 = F8_7;
+      bVar5 = ((byte)pcVar4 ^ param_9) + *param_3 + *param_3 + *param_3;
+      uVar1 = DAT_SFR_ab;
+      uVar1 = DAT_SFR_ce;
+      DAT_SFR_ce = bVar5 >> 4 | bVar5 * '\x10';
+      return bVar5 * param_2 + *param_3 + *param_3 + *param_3;
+    }
+    pcVar4 = (char *)((byte)pcVar4 & (byte)pcVar3);
+  }
+  else {
+    pcVar4 = pcVar3 + param_4 + -1;
+    if (_4_3 == '\x01') goto LAB_CODE_2de4;
+    pcVar2 = (char *)(param_4 + -2);
+    pcVar4 = pcVar4 + *param_3 + (char)pcVar2;
+    if (_3_7 != '\x01') {
+      return (char)(pcVar4 + *pcVar2 + (char)pcVar2) * '\x02' |
+             (byte)(pcVar4 + *pcVar2 + (char)pcVar2) >> 7;
+    }
+  }
+  param_5 = param_5 + -1;
+  pcVar3 = pcVar4 + DAT_INTMEM_2b + *param_3 + (char)pcVar2;
+  param_3 = param_3 + -1;
+LAB_CODE_2df7:
+  pcVar3 = pcVar3 + param_3[-1] +
+                    (char)pcVar2 * '\x02' +
+                    DAT_INTMEM_2b * '\x02' + *param_3 + param_6 * '\x02' + param_5 * '\x03' + -3;
+  pcVar4 = (char *)(*pcVar2 - ((CARRY1((byte)pcVar3,param_6) << 7) >> 7));
+  BANK0_R0 = uStackX_0;
+  bVar5 = FUN_CODE_2da2((byte)(pcVar3 + param_6 +
+                              (-(char)(param_3 + (-2 - (((pcVar3 + param_6 < pcVar4) << 7) >> 7))) -
+                              (char)pcVar4)),(char)pcVar2,param_7 - 1,param_8);
+  return bVar5;
+}
+

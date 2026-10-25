@@ -1,0 +1,29 @@
+=== 0x9445 ===
+
+void FUN_CODE_9445(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  short sVar3;
+  
+  cVar1 = FUN_CODE_8dad();
+  if (cVar1 == -2) {
+    FUN_CODE_923f();
+  }
+  if (0x65 < DAT_EXTMEM_e700) {
+    _0_5 = 0;
+    FUN_CODE_f106(0xff);
+    FUN_CODE_faeb(4);
+    DAT_EXTMEM_ff6d = 0xff;
+    DAT_EXTMEM_ff61 = 0xff;
+    return;
+  }
+  sVar3 = -0x6b9e;
+  bVar2 = FUN_CODE_8cd5(DAT_EXTMEM_e700);
+                    /* WARNING: Could not recover jumptable at 0x9461. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(sVar3 + (ushort)bVar2))();
+  return;
+}
+

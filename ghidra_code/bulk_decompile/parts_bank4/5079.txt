@@ -1,0 +1,34 @@
+=== 0x5079 ===
+
+char FUN_CODE_5079(char param_1,undefined1 param_2,byte param_3,char param_4)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  char in_PSW;
+  
+  uVar1 = FIFLG;
+  nop();
+  nop();
+  if (_1_3 != '\0') {
+    _1_3 = 0;
+    return param_1;
+  }
+  BANK1_R3 = BANK1_R3 + '\x01';
+  if (-1 < in_PSW) {
+    BANK1_R2 = BANK1_R2 + '\x01';
+    BANK0_R0 = BANK0_R0 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  bVar3 = param_1 - (param_4 - (in_PSW >> 7)) | param_3;
+  if (param_3 == 0) {
+    bVar3 = FUN_CODE_5602(param_2);
+  }
+  cVar2 = FUN_CODE_22e0(bVar3 >> 1 | bVar3 << 7);
+  return cVar2;
+}
+

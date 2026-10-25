@@ -1,0 +1,8 @@
+=== 0xfeda ===
+
+void FUN_CODE_feda(void)
+
+{
+  return;
+}
+

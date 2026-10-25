@@ -1,0 +1,11 @@
+=== 0x8906 ===
+
+undefined1 FUN_CODE_8906(void)
+
+{
+  DAT_EXTMEM_e332 = 0x7f;
+  DAT_EXTMEM_e333 = 0xff;
+  DAT_EXTMEM_e334 = 0x7f;
+  return 0xff;
+}
+

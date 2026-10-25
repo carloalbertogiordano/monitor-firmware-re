@@ -1,0 +1,9 @@
+=== 0xbd97 ===
+
+void FUN_CODE_bd97(void)
+
+{
+  FUN_CODE_133e('\0',10,BANK0_R2,BANK0_R3);
+  return;
+}
+

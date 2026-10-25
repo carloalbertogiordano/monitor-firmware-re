@@ -1,0 +1,19 @@
+=== 0x3de1 ===
+
+void FUN_CODE_3de1(byte param_1,byte param_2,char param_3)
+
+{
+  short sVar1;
+  char cVar2;
+  char cVar3;
+  
+  cVar3 = (0xde < param_1) << 7;
+  cVar2 = thunk_FUN_CODE_26eb(param_1 + 0x21);
+  nop();
+  nop();
+  nop();
+  sVar1 = (ushort)(byte)(cVar2 - (param_3 - (cVar3 >> 7))) * (ushort)param_2;
+  FUN_CODE_390d((char)sVar1,(char)((ushort)sVar1 >> 8));
+  return;
+}
+

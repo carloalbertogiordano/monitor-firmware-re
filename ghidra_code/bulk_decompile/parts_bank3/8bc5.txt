@@ -1,0 +1,8 @@
+=== 0x8bc5 ===
+
+undefined1 FUN_CODE_8bc5(void)
+
+{
+  return 0;
+}
+

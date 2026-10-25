@@ -1,0 +1,32 @@
+=== 0x0a39 ===
+
+void FUN_CODE_0a39(byte param_1,short param_2,char *param_3,char *param_4,byte param_5,byte param_6)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  char in_PSW;
+  short sVar4;
+  
+  sVar4 = param_2 + 1;
+  bVar1 = param_6 - (in_PSW >> 7);
+  bVar2 = param_1 + bVar1;
+  bVar1 = 0x13 - ((CARRY1(param_1,bVar1) << 7) >> 7);
+  bVar3 = *(byte *)(sVar4 + (ushort)(bVar2 + bVar1 | DAT_INTMEM_34)) | param_6;
+  bVar1 = BANK2_R3 - ((CARRY1(bVar2,bVar1) << 7) >> 7);
+  bVar2 = *(byte *)(sVar4 + (ushort)(bVar3 + bVar1 & DAT_INTMEM_35)) & param_6;
+  bVar1 = *param_3 - ((CARRY1(bVar3,bVar1) << 7) >> 7);
+  bVar3 = bVar2 + bVar1;
+  *(byte *)ZEXT12(param_4) = DAT_CODE_0a89;
+                    /* WARNING: Could not recover jumptable at 0x0a57. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(sVar4 + ZEXT12(param_3 + (*(char *)((ushort)DAT_CODE_0a89 + 0xa56) -
+                                      ((CARRY1(*(byte *)((ushort)((bVar3 >> 1 |
+                                                                  CARRY1(bVar2,bVar1) << 7) ^ 0x36)
+                                                        + 0xa4c) ^ param_5,
+                                               *param_4 - ((char)(bVar3 * -0x80) >> 7)) << 7) >> 7))
+                           )))(0x37);
+  return;
+}
+

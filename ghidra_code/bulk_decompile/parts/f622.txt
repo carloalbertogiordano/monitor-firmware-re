@@ -1,0 +1,16 @@
+=== 0xf622 ===
+
+void FUN_CODE_f622(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_d8a1(0x4a,0xf1,0x37,0xe6,0,0xc);
+  FUN_CODE_d894(1);
+  FUN_CODE_b1ea();
+  if (in_PSW < '\0') {
+    FUN_CODE_fb44();
+  }
+  return;
+}
+

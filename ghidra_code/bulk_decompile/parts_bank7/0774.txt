@@ -1,0 +1,25 @@
+=== 0x0774 ===
+
+char FUN_CODE_0774(byte param_1,short param_2,char param_3,char param_4,char param_5)
+
+{
+  char cVar1;
+  byte in_PSW;
+  
+  DAT_INTMEM_2d = DAT_INTMEM_2d + -1;
+  if (DAT_INTMEM_2d != '\0') {
+    DAT_INTMEM_39 = param_5;
+    cVar1 = FUN_CODE_0439(param_1 >> 1 | param_1 << 7);
+                    /* WARNING: Could not recover jumptable at 0x07f1. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    cVar1 = (*(code *)(param_2 +
+                      (ushort)((cVar1 << 1 | in_PSW >> 7) - (DAT_INTMEM_39 - (cVar1 >> 7)))))();
+    return cVar1;
+  }
+  if (param_3 == '\x01') {
+    CF = 1;
+    return param_1 + param_5;
+  }
+  return *(char *)(param_2 + (ushort)param_1) + param_4;
+}
+

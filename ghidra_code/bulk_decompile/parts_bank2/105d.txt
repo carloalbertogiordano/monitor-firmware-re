@@ -1,0 +1,9 @@
+=== 0x105d ===
+
+void FUN_CODE_105d(void)
+
+{
+  FUN_CODE_0409(0xfac5);
+  return;
+}
+

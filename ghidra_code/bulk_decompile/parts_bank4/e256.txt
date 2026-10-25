@@ -1,0 +1,17 @@
+=== 0xe256 ===
+
+void FUN_CODE_e256(short param_1)
+
+{
+  byte bVar1;
+  
+  FUN_CODE_c506();
+  bVar1 = FUN_CODE_c506();
+  *(byte *)(param_1 + 1) = *(byte *)(param_1 + 1) & 0xf0 | bVar1;
+  *(byte *)(param_1 + 2) = BANK0_R4 >> 4 | 0x30;
+  FUN_CODE_c534(0x5524);
+  FUN_CODE_c534(0x5534);
+  DAT_EXTMEM_5503 = DAT_EXTMEM_5503 & 0xfc | 1;
+  return;
+}
+

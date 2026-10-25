@@ -1,0 +1,10 @@
+=== 0x2280 ===
+
+undefined1 FUN_CODE_2280(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 8;
+  uEXTMEMffff = 8;
+  return param_1;
+}
+

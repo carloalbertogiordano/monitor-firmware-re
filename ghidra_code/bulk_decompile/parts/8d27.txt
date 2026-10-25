@@ -1,0 +1,10 @@
+=== 0x8d27 ===
+
+undefined1 FUN_CODE_8d27(undefined1 *param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  *param_1 = param_3;
+  param_1[1] = param_2;
+  return 0;
+}
+

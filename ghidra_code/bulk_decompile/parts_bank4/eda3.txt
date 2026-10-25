@@ -1,0 +1,18 @@
+=== 0xeda3 ===
+
+void FUN_CODE_eda3(undefined1 param_1)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_d2c1(0xe337);
+  DAT_EXTMEM_e33f = param_1;
+  FUN_CODE_d2c2(DAT_EXTMEM_e337,0xe340,DAT_EXTMEM_e339,DAT_EXTMEM_e338);
+  DAT_EXTMEM_e343 = DAT_EXTMEM_e33a;
+  FUN_CODE_70e0(0,0,0,0xa0);
+  if (in_PSW < '\0') {
+    return;
+  }
+  return;
+}
+

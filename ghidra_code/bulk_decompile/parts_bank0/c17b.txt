@@ -1,0 +1,9 @@
+=== 0xc17b ===
+
+char FUN_CODE_c17b(void)
+
+{
+  FUN_CODE_c81f();
+  return DAT_EXTMEM_e32e + '\v';
+}
+

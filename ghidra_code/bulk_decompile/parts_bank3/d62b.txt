@@ -1,0 +1,9 @@
+=== 0xd62b ===
+
+void FUN_CODE_d62b(void)
+
+{
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e60a;
+  return;
+}
+

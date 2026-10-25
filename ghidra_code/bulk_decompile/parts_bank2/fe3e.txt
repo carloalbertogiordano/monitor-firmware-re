@@ -1,0 +1,11 @@
+=== 0xfe3e ===
+
+void FUN_CODE_fe3e(void)
+
+{
+  if ((DAT_EXTMEM_14c0 & 0x80) == 0) {
+    return;
+  }
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x7e7c ===
+
+char FUN_CODE_7e7c(char *param_1,char param_2,char param_3,byte param_4)
+
+{
+  char in_PSW;
+  
+  return param_3 - (param_2 - (((param_4 < (byte)(*param_1 - (in_PSW >> 7))) << 7) >> 7));
+}
+

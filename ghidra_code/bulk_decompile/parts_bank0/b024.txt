@@ -1,0 +1,8 @@
+=== 0xb024 ===
+
+char FUN_CODE_b024(void)
+
+{
+  return DAT_INTMEM_37 - ((CARRY1(DAT_INTMEM_38,DAT_INTMEM_2a) << 7) >> 7);
+}
+

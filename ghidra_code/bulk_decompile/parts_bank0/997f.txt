@@ -1,0 +1,8 @@
+=== 0x997f ===
+
+byte FUN_CODE_997f(byte *param_1)
+
+{
+  return *param_1 & 4 ^ 4;
+}
+

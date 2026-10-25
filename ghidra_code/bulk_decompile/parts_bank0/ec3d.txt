@@ -1,0 +1,9 @@
+=== 0xec3d ===
+
+void FUN_CODE_ec3d(void)
+
+{
+  DAT_EXTMEM_ff22 = DAT_EXTMEM_ff22 & 0xf0;
+  return;
+}
+

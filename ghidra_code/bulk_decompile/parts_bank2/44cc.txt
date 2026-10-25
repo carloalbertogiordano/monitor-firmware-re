@@ -1,0 +1,11 @@
+=== 0x44cc ===
+
+void FUN_CODE_44cc(void)
+
+{
+  DAT_EXTMEM_e34d = 1;
+  DAT_EXTMEM_e34e = 0x68;
+  DAT_EXTMEM_e34f = 0;
+  return;
+}
+

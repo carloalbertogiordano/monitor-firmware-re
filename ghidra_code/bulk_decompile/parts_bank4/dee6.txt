@@ -1,0 +1,8 @@
+=== 0xdee6 ===
+
+undefined1 FUN_CODE_dee6(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,10 @@
+=== 0x9805 ===
+
+void FUN_CODE_9805(void)
+
+{
+  FUN_CODE_ae9d(1);
+  FUN_CODE_f5ae();
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xcb38 ===
+
+undefined1 FUN_CODE_cb38(undefined1 *param_1)
+
+{
+  return *param_1;
+}
+

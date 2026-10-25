@@ -1,0 +1,14 @@
+=== 0xf20c ===
+
+void FUN_CODE_f20c(void)
+
+{
+  DAT_EXTMEM_06c3 = DAT_EXTMEM_06c3 & 0xf0 | 10;
+  _0_0 = 0;
+  FUN_CODE_ed70();
+  DAT_EXTMEM_06c2 = DAT_EXTMEM_06c2 & 0xfe | 1;
+  DAT_EXTMEM_06d4 = DAT_EXTMEM_06d4 & 0xef;
+  FUN_CODE_fb55(4);
+  return;
+}
+

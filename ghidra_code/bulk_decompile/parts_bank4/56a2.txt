@@ -1,0 +1,9 @@
+=== 0x56a2 ===
+
+void FUN_CODE_56a2(undefined1 param_1,byte param_2)
+
+{
+  func_0x562d(*(undefined1 *)(ushort)param_2,param_1);
+  return;
+}
+

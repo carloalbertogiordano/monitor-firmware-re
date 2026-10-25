@@ -1,0 +1,9 @@
+=== 0x1743 ===
+
+void FUN_CODE_1743(void)
+
+{
+  FUN_CODE_13aa();
+  return;
+}
+

@@ -1,0 +1,30 @@
+=== 0xbc9d ===
+
+void FUN_CODE_bc9d(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  char in_PSW;
+  
+  DAT_EXTMEM_e33f = param_3;
+  DAT_EXTMEM_e340 = param_2;
+  DAT_EXTMEM_e341 = param_1;
+  cVar1 = FUN_CODE_c170();
+  if (cVar1 == '\0') {
+    FUN_CODE_c1b3();
+    if (in_PSW < '\0') {
+      FUN_CODE_c0e3();
+    }
+    else {
+      FUN_CODE_c12b();
+    }
+  }
+  else {
+    FUN_CODE_c12c();
+  }
+  uVar2 = FUN_CODE_c15c();
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(uVar2,uVar2,0x14,uVar2);
+}
+

@@ -1,0 +1,8 @@
+=== 0x7360 ===
+
+undefined1 FUN_CODE_7360(void)
+
+{
+  return DAT_EXTMEM_e18f;
+}
+

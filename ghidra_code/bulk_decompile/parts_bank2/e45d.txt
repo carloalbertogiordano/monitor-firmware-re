@@ -1,0 +1,8 @@
+=== 0xe45d ===
+
+undefined1 FUN_CODE_e45d(void)
+
+{
+  return DAT_EXTMEM_e335;
+}
+

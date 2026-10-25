@@ -1,0 +1,42 @@
+=== 0xd689 ===
+
+byte FUN_CODE_d689(void)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  char cVar3;
+  
+  uVar1 = FUN_CODE_70a6(0,0xe3bb);
+  cVar3 = -0x80;
+  bVar2 = FUN_CODE_15d7(DAT_EXTMEM_e4eb,DAT_EXTMEM_e4ec,DAT_EXTMEM_e4ed,DAT_EXTMEM_e4ee,uVar1,uVar1,
+                        uVar1,uVar1);
+  if (-1 < cVar3) {
+    if ((DAT_EXTMEM_e4bc < 0xcU - (cVar3 >> 7)) << 7 < '\0') {
+      bVar2 = DAT_EXTMEM_e4bc + 1;
+      DAT_EXTMEM_e3bc = bVar2;
+    }
+    else {
+      bVar2 = 0xb;
+      DAT_EXTMEM_e3bc = 0xb;
+    }
+  }
+  do {
+    FUN_CODE_6e9b(bVar2);
+    if (DAT_EXTMEM_e3bc == BANK0_R7) {
+      if ((DAT_EXTMEM_e3bc < 0xc) << 7 < '\0') {
+        DAT_EXTMEM_e3bc = DAT_EXTMEM_e3bc + 1;
+      }
+      else {
+        DAT_EXTMEM_e3bc = 0xb;
+      }
+      DAT_EXTMEM_e3bb = '\0';
+    }
+    else {
+      DAT_EXTMEM_e3bb = DAT_EXTMEM_e3bb + '\x01';
+    }
+    bVar2 = DAT_EXTMEM_e3bb - 1;
+  } while ((DAT_EXTMEM_e3bb == '\0') << 7 < '\0');
+  return DAT_EXTMEM_e3bc;
+}
+

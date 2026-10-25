@@ -1,0 +1,9 @@
+=== 0xc645 ===
+
+void FUN_CODE_c645(short param_1,char param_2)
+
+{
+  FUN_CODE_0865(*(char *)(param_1 + 1) + param_2,0,0x60);
+  return;
+}
+

@@ -1,0 +1,21 @@
+=== 0x9829 ===
+
+void FUN_CODE_9829(void)
+
+{
+  FUN_CODE_1724(0xe33f);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe343);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_6ee6(0,0xe347);
+  FUN_CODE_6eba();
+                    /* WARNING: Subroutine does not return */
+  thunk_FUN_CODE_152f();
+}
+

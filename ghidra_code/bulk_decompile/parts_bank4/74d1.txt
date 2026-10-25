@@ -1,0 +1,9 @@
+=== 0x74d1 ===
+
+byte FUN_CODE_74d1(byte param_1)
+
+{
+  DAT_EXTMEM_e4e0 = DAT_EXTMEM_e4e0 & 0xf3 | (param_1 & 3) * '\x04';
+  return param_1 & 3;
+}
+

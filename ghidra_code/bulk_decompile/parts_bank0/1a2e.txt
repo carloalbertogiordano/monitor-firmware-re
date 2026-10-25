@@ -1,0 +1,166 @@
+=== 0x1a2e ===
+
+byte FUN_CODE_1a2e(byte param_1,byte param_2,byte param_3,byte param_4,byte param_5,byte param_6,
+                  byte param_7,byte param_8)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  byte bVar9;
+  byte bVar10;
+  byte in_PSW;
+  byte bVar11;
+  
+  bVar11 = in_PSW & 0x7f;
+  bVar5 = param_1 << 1 | param_2 >> 7;
+  if (bVar5 == 0) {
+    return 0;
+  }
+  if (bVar5 != 0xff) {
+    bVar5 = param_5 << 1 | param_6 >> 7;
+    if (bVar5 == 0) {
+      return param_4;
+    }
+    if (bVar5 != 0xff) {
+      bVar1 = (param_1 & 0x7f) <
+              (param_5 & 0x7f) -
+              ((char)(bVar11 | (param_2 <
+                               param_6 - ((char)(bVar11 | (param_3 <
+                                                          param_7 - ((char)(bVar11 | (param_4 <
+                                                                                     param_8 - ((
+                                                  char)(bVar11 | 0x80) >> 7)) << 7) >> 7)) << 7) >>
+                                         7)) << 7) >> 7);
+      bVar11 = bVar11 | bVar1 << 7;
+      bVar3 = param_1;
+      bVar10 = param_2;
+      bVar5 = param_3;
+      bVar9 = param_4;
+      if (!bVar1) {
+        bVar3 = param_5;
+        bVar10 = param_6;
+        bVar5 = param_7;
+        bVar9 = param_8;
+        param_5 = param_1;
+        param_6 = param_2;
+        param_7 = param_3;
+        param_8 = param_4;
+      }
+      bVar6 = FUN_CODE_1d3a(bVar3,param_5,param_6);
+      if (((bVar6 & bVar3) != 0xff) || (cVar2 = F0, cVar2 != '\x01')) {
+        if (bVar3 == 0xff) {
+          if ((char)bVar11 < '\0') {
+            bVar11 = F0;
+            F0 = bVar11 ^ 1;
+          }
+        }
+        else {
+          F0 = bVar11 >> 7;
+          if (param_5 != 0xff) {
+            bVar7 = param_5 - bVar3;
+            bVar6 = bVar10;
+            bVar8 = 0;
+            if (bVar7 != 0) {
+              bVar3 = 0x18 - (((param_5 < bVar3) << 7) >> 7);
+              if (bVar7 == bVar3) {
+                bVar9 = 0;
+                bVar5 = 0;
+                bVar6 = 0;
+                bVar8 = bVar10;
+              }
+              else {
+                if (bVar3 <= bVar7) {
+                  bVar11 = FUN_CODE_1d51(param_5,'\0',param_6,param_7,param_8);
+                  return bVar11;
+                }
+                bVar3 = bVar10;
+                bVar4 = bVar5;
+                if ((bVar7 >> 4 & 1) != 0) {
+                  bVar3 = 0;
+                  bVar4 = 0;
+                  bVar9 = bVar10;
+                  bVar8 = bVar5;
+                }
+                bVar6 = bVar3;
+                bVar5 = bVar4;
+                bVar10 = bVar9;
+                if ((bVar7 >> 3 & 1) != 0) {
+                  bVar6 = 0;
+                  bVar5 = bVar3;
+                  bVar10 = bVar4;
+                  bVar8 = bVar9;
+                }
+                bVar9 = bVar10;
+                for (bVar7 = bVar7 & 7; bVar7 != 0; bVar7 = bVar7 - 1) {
+                  bVar3 = bVar6 << 7;
+                  bVar10 = bVar5 << 7;
+                  bVar8 = bVar8 >> 1 | bVar9 << 7;
+                  bVar6 = bVar6 >> 1;
+                  bVar5 = bVar5 >> 1 | bVar3;
+                  bVar9 = bVar9 >> 1 | bVar10;
+                }
+              }
+            }
+            if ((bVar11 >> 5 & 1) == 0) {
+              bVar3 = param_8 + bVar9;
+              bVar5 = bVar5 - ((CARRY1(param_8,bVar9) << 7) >> 7);
+              bVar10 = param_7 + bVar5;
+              bVar6 = bVar6 - ((CARRY1(param_7,bVar5) << 7) >> 7);
+              bVar7 = param_6 + bVar6;
+              bVar11 = bVar7;
+              bVar5 = bVar10;
+              bVar9 = bVar3;
+              if (CARRY1(param_6,bVar6)) {
+                param_5 = param_5 + 1;
+                if (param_5 == 0) {
+                  bVar11 = FUN_CODE_1d79();
+                  return bVar11;
+                }
+                bVar11 = bVar7 >> 1;
+                bVar5 = bVar10 >> 1 | bVar7 * -0x80;
+                bVar9 = bVar3 >> 1 | bVar10 * -0x80;
+                bVar8 = bVar8 >> 1 | bVar3 * -0x80;
+              }
+              bVar11 = FUN_CODE_1d51(param_5,bVar8,bVar11,bVar5,bVar9);
+              return bVar11;
+            }
+            bVar11 = -bVar8;
+            bVar9 = bVar9 - (((bVar8 != 0) << 7) >> 7);
+            bVar3 = param_8 - bVar9;
+            bVar5 = bVar5 - (((param_8 < bVar9) << 7) >> 7);
+            bVar9 = param_7 - bVar5;
+            bVar5 = param_6 - (bVar6 - (((param_7 < bVar5) << 7) >> 7));
+            if (((bVar3 == 0 && bVar9 == 0) && bVar5 == 0) && bVar11 == 0) {
+              return 0;
+            }
+            while( true ) {
+              if ((char)bVar5 < '\0') {
+                bVar11 = FUN_CODE_1d51(param_5,bVar11,bVar5,bVar9,bVar3);
+                return bVar11;
+              }
+              param_5 = param_5 - 1;
+              if (param_5 == 0) break;
+              bVar1 = CARRY1(bVar11,bVar11);
+              bVar11 = bVar11 * '\x02';
+              bVar5 = bVar5 << 1 | bVar9 >> 7;
+              bVar9 = bVar9 << 1 | bVar3 >> 7;
+              bVar3 = bVar3 << 1 | bVar1;
+            }
+            bVar11 = FUN_CODE_1d76();
+            return bVar11;
+          }
+        }
+        bVar11 = FUN_CODE_1d79();
+        return bVar11;
+      }
+    }
+  }
+  bVar11 = FUN_CODE_1d6f();
+  return bVar11;
+}
+

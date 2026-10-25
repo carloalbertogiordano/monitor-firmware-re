@@ -1,0 +1,32 @@
+=== 0x3052 ===
+
+void FUN_CODE_3052(byte param_1,byte *param_2,byte *param_3,char param_4,byte param_5,byte param_6)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = *param_2;
+  *param_3 = 0xf3;
+  *param_3 = (byte)param_2 | bVar1 | param_5;
+  RS0 = 1;
+  nop();
+  nop();
+  bVar1 = 0;
+  bVar2 = param_5;
+  if (param_1 != 0) {
+    bVar2 = param_5 / param_1;
+    bVar1 = param_5 % param_1;
+  }
+  _4_4 = 0;
+  nop();
+  param_4 = DAT_INTMEM_41 + param_4;
+  *(char *)ZEXT12(param_3) = param_4;
+  DAT_INTMEM_41 = bVar2;
+  *param_3 = param_6;
+                    /* WARNING: Could not recover jumptable at 0x307d. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)param_6 + 0xcf3a))(bVar1,param_4);
+  return;
+}
+

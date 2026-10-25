@@ -1,0 +1,10 @@
+=== 0x8c05 ===
+
+void FUN_CODE_8c05(void)
+
+{
+  DAT_EXTMEM_ff61 = 0xff;
+  DAT_EXTMEM_fe1d = 0;
+  return;
+}
+

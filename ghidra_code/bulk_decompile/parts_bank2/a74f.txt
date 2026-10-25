@@ -1,0 +1,10 @@
+=== 0xa74f ===
+
+void FUN_CODE_a74f(void)
+
+{
+  FUN_CODE_059b(4);
+  FUN_CODE_059b(5);
+  return;
+}
+

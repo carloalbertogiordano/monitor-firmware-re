@@ -1,0 +1,8 @@
+=== 0x8801 ===
+
+char FUN_CODE_8801(void)
+
+{
+  return -0x1d - (((0xbeU < (byte)(DAT_EXTMEM_e357 * '\x02')) << 7) >> 7);
+}
+

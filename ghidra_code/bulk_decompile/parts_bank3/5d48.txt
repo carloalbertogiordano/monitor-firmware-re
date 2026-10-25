@@ -1,0 +1,52 @@
+=== 0x5d48 ===
+
+byte FUN_CODE_5d48(char param_1,char param_2,char *param_3,char param_4,byte param_5)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  char in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar3 = param_1 + 2;
+  if (_9_7 == '\x01') {
+    nop();
+  }
+  else {
+    param_4 = param_4 + '\x01';
+    bVar3 = (bVar3 | 0x88) << 1 | (bVar3 | 0x88) >> 7 | param_5 | 0x88;
+    bVar1 = P0;
+    in_PSW = CARRY1(bVar3,bVar1) << 7;
+    cVar2 = P0;
+    bVar3 = bVar3 + cVar2;
+    DAT_INTMEM_22 = param_4;
+  }
+  nop();
+  if (-1 < in_PSW) {
+    return bVar3;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_3 = *param_3 + '\x01';
+  if (_8_4 != '\x01') {
+    DAT_INTMEM_22 = *(undefined1 *)(param_2 + '\x03');
+    return bVar3 + 1 | (byte)(param_2 + '\x03');
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar3 = FUN_CODE_0008(param_4 + '\x01',param_5 + 1);
+  return bVar3;
+}
+

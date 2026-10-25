@@ -1,0 +1,9 @@
+=== 0x6ef6 ===
+
+void FUN_CODE_6ef6(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xef | 0x10;
+  return;
+}
+

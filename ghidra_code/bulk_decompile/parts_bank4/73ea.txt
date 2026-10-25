@@ -1,0 +1,9 @@
+=== 0x73ea ===
+
+void FUN_CODE_73ea(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  return;
+}
+

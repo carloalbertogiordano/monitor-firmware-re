@@ -1,0 +1,32 @@
+=== 0xdf63 ===
+
+void FUN_CODE_df63(undefined1 param_1)
+
+{
+  undefined1 *puVar1;
+  
+  puVar1 = &DAT_EXTMEM_e333;
+  DAT_EXTMEM_e333 = param_1;
+  FUN_CODE_1991(0x34,0xe3,1,0,0,2);
+  FUN_CODE_88fc();
+  *puVar1 = 0xe3;
+  puVar1 = puVar1 + 1;
+  *puVar1 = 0x34;
+  _0_3 = 1;
+  FUN_CODE_882a(0xc0);
+  FUN_CODE_076f();
+  FUN_CODE_879d();
+  FUN_CODE_080b(0,0x2d);
+  FUN_CODE_879d();
+  FUN_CODE_080b(0,0x2d);
+  FUN_CODE_88fc();
+  *puVar1 = 0xe3;
+  puVar1[1] = 0x35;
+  _0_3 = 1;
+  FUN_CODE_076f(0,1,0xc0,2,0xc3);
+  if (DAT_EXTMEM_e334 != DAT_EXTMEM_e335) {
+    return;
+  }
+  return;
+}
+

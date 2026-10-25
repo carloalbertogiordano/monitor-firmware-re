@@ -1,0 +1,9 @@
+=== 0xd138 ===
+
+char FUN_CODE_d138(void)
+
+{
+  return DAT_EXTMEM_e388 + (DAT_EXTMEM_e38a - ((CARRY1(DAT_EXTMEM_e389,DAT_EXTMEM_e38b) << 7) >> 7))
+  ;
+}
+

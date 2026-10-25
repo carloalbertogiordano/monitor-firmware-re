@@ -1,0 +1,10 @@
+=== 0x4434 ===
+
+void FUN_CODE_4434(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e336 = param_1;
+  DAT_EXTMEM_e337 = 1;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x3f6f ===
+
+char FUN_CODE_3f6f(void)
+
+{
+  return (_0_0 & 1) << 6;
+}
+

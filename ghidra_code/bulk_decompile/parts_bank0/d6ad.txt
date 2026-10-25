@@ -1,0 +1,9 @@
+=== 0xd6ad ===
+
+void FUN_CODE_d6ad(undefined1 *param_1)
+
+{
+  FUN_CODE_1718((undefined1 *)0xe331,0,0,*param_1,param_1[1]);
+  return;
+}
+

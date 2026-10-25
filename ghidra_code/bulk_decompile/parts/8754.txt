@@ -1,0 +1,10 @@
+=== 0x8754 ===
+
+void FUN_CODE_8754(byte param_1,byte *param_2)
+
+{
+  *param_2 = param_1;
+  *param_2 = *param_2 & 0x7f | 0x80;
+  return;
+}
+

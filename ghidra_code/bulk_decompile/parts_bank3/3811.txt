@@ -1,0 +1,114 @@
+=== 0x3811 ===
+
+void FUN_CODE_3811(byte param_1,byte *param_2,byte param_3,byte param_4,byte param_5,char param_6,
+                  char param_7)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  do {
+    nop();
+    nop();
+    bVar2 = param_1 + 1;
+    if (bVar2 == 0) {
+      nop();
+      thunk_FUN_CODE_26eb(param_4 | 1,param_7);
+      return;
+    }
+    nop();
+    nop();
+    nop();
+    nop();
+    if ((param_3 & 1) == 0) {
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      param_1 = param_1 + 2;
+      cVar1 = param_4 + 1;
+LAB_CODE_378d:
+      BANK0_R0 = cVar1;
+      if (param_1 != 0) {
+        while (nop(), param_1 != 0) {
+          nop();
+          nop();
+          *param_2 = param_1 ^ param_5;
+          param_1 = *param_2;
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+        }
+        *param_2 = 0;
+        nop();
+        return;
+      }
+      param_1 = param_4 + 1 | 1;
+    }
+    else {
+      nop();
+      nop();
+      TCON = param_4;
+      nop();
+      P0 = param_4;
+      *param_2 = bVar2;
+      *param_2 = bVar2;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      param_1 = *param_2 >> 1 | *param_2 << 7;
+      BANK0_R0 = param_4 + 1;
+      nop();
+      nop();
+      param_7 = param_7 + '\x02';
+      cVar1 = param_6;
+      BANK1_R7 = BANK0_R0;
+      if ((param_3 & 1) == 0) goto LAB_CODE_378d;
+      nop();
+      nop();
+      nop();
+    }
+    param_4 = param_4 + 1;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+  } while( true );
+}
+

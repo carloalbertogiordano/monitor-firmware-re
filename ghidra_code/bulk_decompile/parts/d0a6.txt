@@ -1,0 +1,8 @@
+=== 0xd0a6 ===
+
+undefined1 FUN_CODE_d0a6(void)
+
+{
+  return 0;
+}
+

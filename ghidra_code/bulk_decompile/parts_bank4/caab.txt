@@ -1,0 +1,8 @@
+=== 0xcaab ===
+
+undefined1 FUN_CODE_caab(void)
+
+{
+  return 0;
+}
+

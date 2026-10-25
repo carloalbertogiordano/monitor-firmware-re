@@ -1,0 +1,12 @@
+=== 0xfe0d ===
+
+void FUN_CODE_fe0d(byte *param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_8e57();
+  *param_1 = bVar1 | 1;
+  return;
+}
+

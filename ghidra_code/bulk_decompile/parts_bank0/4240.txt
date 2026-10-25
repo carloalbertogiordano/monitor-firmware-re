@@ -1,0 +1,102 @@
+=== 0x4240 ===
+
+void FUN_CODE_4240(byte param_1,byte *param_2,byte *param_3,char param_4,byte param_5,byte param_6,
+                  char param_7,char param_8)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  char in_PSW;
+  
+  if (in_PSW < '\0') {
+    bVar5 = DAT_INTMEM_33 - (in_PSW >> 7);
+    bVar7 = CARRY1(param_1 & *param_3,bVar5) << 7;
+    bVar5 = (param_1 & *param_3) + bVar5;
+    bVar4 = bVar5;
+  }
+  else {
+    bVar7 = param_8 - (in_PSW >> 7);
+    bVar4 = param_1 + bVar7;
+    bVar5 = *param_3 - ((CARRY1(param_1,bVar7) << 7) >> 7);
+    bVar7 = CARRY1(bVar4,bVar5) << 7;
+    bVar4 = bVar4 + bVar5;
+    if ((char)bVar7 < '\0') {
+      bVar5 = (bVar4 | *param_3) & param_5 | param_5;
+      bVar7 = DAT_INTMEM_3b - ((char)bVar7 >> 7);
+      bVar5 = bVar5 + bVar7 + (*param_3 - ((CARRY1(bVar5,bVar7) << 7) >> 7));
+      bVar1 = CARRY1(bVar5 + param_7,bVar5);
+      bVar5 = bVar5 + param_7 + bVar5;
+    }
+    else {
+      while( true ) {
+        if (_7_6 != '\x01') {
+          bVar5 = (char)param_2 - ((char)bVar7 >> 7);
+          bVar7 = CARRY1(bVar4,bVar5) << 7;
+          bVar4 = bVar4 + bVar5;
+        }
+        if (-1 < (char)bVar7) {
+          FUN_CODE_4240((bVar4 | *param_3) + (param_5 - ((char)bVar7 >> 7)),param_2,param_3,param_4,
+                        param_5,param_6,param_7,param_8);
+          return;
+        }
+        bVar5 = bVar4 | *param_3 | *param_3;
+        bVar7 = param_8 - ((char)bVar7 >> 7);
+        bVar4 = bVar5 + bVar7;
+        bVar5 = *param_3 - ((CARRY1(bVar5,bVar7) << 7) >> 7);
+        cVar2 = CARRY1(bVar4,bVar5) << 7;
+        bVar6 = bVar4 + bVar5;
+        if (cVar2 < '\0') break;
+        bVar7 = bVar6 & 0x80;
+        bVar4 = bVar6 * '\x02' | CARRY1(bVar4,bVar5) | 1;
+      }
+      bVar7 = param_6 - (cVar2 >> 7);
+      bVar5 = (bVar6 | *param_3) + bVar7 | *param_2 | *param_3;
+      param_2 = param_2 + '\x01';
+      param_5 = param_5 - 1;
+      bVar7 = *param_3 - ((CARRY1(bVar6 | *param_3,bVar7) << 7) >> 7);
+      bVar1 = CARRY1(bVar5,bVar7);
+      bVar5 = bVar5 + bVar7;
+    }
+    bVar7 = bVar5 & 0x80;
+    bVar5 = bVar5 << 1 | bVar1 | 0x40 | *param_3;
+    if ((char)bVar7 < '\0') {
+      while( true ) {
+        bVar3 = bVar5 | 0x44;
+        bVar6 = *param_3 - ((char)bVar7 >> 7);
+        bVar7 = CARRY1(bVar3,bVar6) << 7;
+        bVar5 = bVar3 + bVar6;
+        bVar4 = bVar5;
+        if (!CARRY1(bVar3,bVar6)) break;
+        bVar7 = *param_3 - ((char)bVar7 >> 7);
+        bVar7 = CARRY1((bVar5 + bVar7 | 0x3f) & param_6,param_6 - ((CARRY1(bVar5,bVar7) << 7) >> 7))
+                << 7;
+        param_2 = &DAT_INTMEM_7c;
+        bVar5 = DAT_INTMEM_6b ^ DAT_INTMEM_7c;
+        *param_3 = 0x66;
+        param_4 = param_4 + -1;
+        bVar5 = bVar5 - 1 | *param_3;
+      }
+    }
+    else {
+      bVar5 = bVar5 - 1;
+      bVar4 = bVar5;
+    }
+  }
+  while( true ) {
+    param_2 = param_2 + -1;
+    bVar6 = bVar5 | *param_2 | *param_2;
+    bVar5 = *param_3 - ((char)bVar7 >> 7);
+    bVar7 = CARRY1(bVar6,bVar5) << 7;
+    if (!CARRY1(bVar6,bVar5)) break;
+    bVar5 = bVar6 + bVar5 | DAT_INTMEM_37;
+  }
+  FUN_CODE_4240(bVar6 + bVar5 + (param_5 - ((char)bVar7 >> 7)),param_2,param_3,param_4,param_5,
+                param_6,param_7,bVar4);
+  return;
+}
+

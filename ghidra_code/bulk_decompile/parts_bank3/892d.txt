@@ -1,0 +1,9 @@
+=== 0x892d ===
+
+undefined1 FUN_CODE_892d(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e38a = param_1;
+  return 0;
+}
+

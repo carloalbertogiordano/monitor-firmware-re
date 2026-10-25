@@ -1,0 +1,14 @@
+=== 0xfca6 ===
+
+char FUN_CODE_fca6(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e62a;
+  if (DAT_EXTMEM_e62a != -1) {
+    DAT_EXTMEM_e62a = DAT_EXTMEM_e62a + '\x01';
+  }
+  return cVar1 + '\x01';
+}
+

@@ -1,0 +1,8 @@
+=== 0x8247 ===
+
+void FUN_CODE_8247(void)
+
+{
+  return;
+}
+

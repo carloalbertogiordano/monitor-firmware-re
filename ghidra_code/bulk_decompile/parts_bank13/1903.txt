@@ -1,0 +1,17 @@
+=== 0x1903 ===
+
+void FUN_CODE_1903(char param_1,short param_2,char *param_3)
+
+{
+  byte bVar1;
+  
+  _c_1 = 0;
+  DAT_INTMEM_6a = DAT_INTMEM_6a & param_1 + *param_3;
+  bVar1 = param_1 + *param_3 + *param_3;
+  *(byte *)ZEXT12(param_3) = bVar1;
+                    /* WARNING: Could not recover jumptable at 0x190a. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)bVar1))();
+  return;
+}
+

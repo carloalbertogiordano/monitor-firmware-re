@@ -1,0 +1,13 @@
+=== 0xf8b0 ===
+
+void FUN_CODE_f8b0(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  DAT_EXTMEM_e590 = param_3;
+  DAT_EXTMEM_e591 = param_2;
+  DAT_EXTMEM_e592 = BANK0_R5;
+  DAT_EXTMEM_e593 = param_1;
+  DAT_EXTMEM_e594 = BANK0_R3;
+  return;
+}
+

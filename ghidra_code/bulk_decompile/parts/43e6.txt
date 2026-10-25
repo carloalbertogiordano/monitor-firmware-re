@@ -1,0 +1,55 @@
+=== 0x43e6 ===
+
+void FUN_CODE_43e6(void)
+
+{
+  switch(DAT_EXTMEM_e3e2) {
+  case 0:
+    break;
+  case 1:
+    break;
+  case 2:
+    break;
+  case 3:
+    break;
+  case 4:
+    break;
+  case 5:
+    break;
+  case 6:
+    break;
+  case 7:
+    break;
+  case 8:
+    goto LAB_CODE_442b;
+  case 9:
+    goto LAB_CODE_442b;
+  case 10:
+    goto LAB_CODE_442b;
+  case 0xb:
+LAB_CODE_442b:
+    FUN_CODE_8c2b();
+    goto LAB_CODE_443f;
+  case 0xc:
+    goto LAB_CODE_4430;
+  case 0xd:
+LAB_CODE_4430:
+    FUN_CODE_8c3a();
+    goto LAB_CODE_443f;
+  case 0xe:
+    FUN_CODE_8bbc();
+    goto LAB_CODE_443f;
+  case 0xf:
+  default:
+    set_e3e4_to_const2();
+    goto LAB_CODE_443f;
+  }
+  FUN_CODE_8cb6();
+LAB_CODE_443f:
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

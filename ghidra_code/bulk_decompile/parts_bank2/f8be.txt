@@ -1,0 +1,17 @@
+=== 0xf8be ===
+
+void FUN_CODE_f8be(byte param_1,undefined1 param_2)
+
+{
+  char in_PSW;
+  
+  DAT_EXTMEM_e33e = param_1;
+  DAT_EXTMEM_e33f = param_2;
+  FUN_CODE_fd89();
+  if (-1 < in_PSW) {
+    DAT_EXTMEM_001e = DAT_EXTMEM_001e & 0xfd | (DAT_EXTMEM_e33e & 1) * '\x02';
+    DAT_EXTMEM_001c = DAT_EXTMEM_e33f;
+  }
+  return;
+}
+

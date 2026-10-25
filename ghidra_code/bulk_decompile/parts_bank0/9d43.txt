@@ -1,0 +1,8 @@
+=== 0x9d43 ===
+
+undefined1 FUN_CODE_9d43(void)
+
+{
+  return DAT_EXTMEM_e3ff;
+}
+

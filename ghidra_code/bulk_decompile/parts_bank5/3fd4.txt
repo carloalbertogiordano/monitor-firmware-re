@@ -1,0 +1,8 @@
+=== 0x3fd4 ===
+
+void FUN_CODE_3fd4(void)
+
+{
+  return;
+}
+

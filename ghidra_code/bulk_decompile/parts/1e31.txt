@@ -1,0 +1,19 @@
+=== 0x1e31 ===
+
+/* WARNING: Instruction at (CODE,0x1e3a) overlaps instruction at (CODE,0x1e39)
+    */
+
+void FUN_CODE_1e31(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = RXFLG;
+  nop();
+  nop();
+  nop();
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

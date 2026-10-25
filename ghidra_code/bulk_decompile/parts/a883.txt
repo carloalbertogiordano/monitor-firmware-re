@@ -1,0 +1,8 @@
+=== 0xa883 ===
+
+byte FUN_CODE_a883(byte param_1)
+
+{
+  return param_1 & 1;
+}
+

@@ -1,0 +1,47 @@
+=== 0x4cfd ===
+
+void FUN_CODE_4cfd(void)
+
+{
+  undefined1 *puVar1;
+  
+  puVar1 = &DAT_EXTMEM_e3e2;
+  switch(DAT_EXTMEM_e3e2) {
+  case 0:
+    DAT_EXTMEM_e3e4 = 0x26;
+    break;
+  case 1:
+    DAT_EXTMEM_e3e4 = 0x2a;
+    break;
+  case 2:
+    goto LAB_CODE_4d33;
+  case 3:
+LAB_CODE_4d33:
+    DAT_EXTMEM_e3e4 = 0x2e;
+    break;
+  case 4:
+    goto LAB_CODE_4d3a;
+  case 5:
+LAB_CODE_4d3a:
+    DAT_EXTMEM_e3e4 = 0xe;
+    break;
+  case 6:
+    DAT_EXTMEM_e3e4 = 10;
+    break;
+  case 7:
+    DAT_EXTMEM_e3e4 = 6;
+    break;
+  default:
+    set_e3e4_to_const2();
+    puVar1[1] = 0;
+    goto LAB_CODE_4d5a;
+  }
+  DAT_EXTMEM_e3e5 = 0x40;
+LAB_CODE_4d5a:
+  _0_5 = 0;
+  bus_write_variant_a_ff64_65(DAT_EXTMEM_e3e5,DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

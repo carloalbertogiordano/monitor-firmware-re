@@ -1,0 +1,9 @@
+=== 0x12a9 ===
+
+char FUN_CODE_12a9(byte param_1,byte param_2,char param_3)
+
+{
+  HIFLG_5 = CARRY1(param_1,param_2);
+  return param_1 + param_2 + param_3;
+}
+

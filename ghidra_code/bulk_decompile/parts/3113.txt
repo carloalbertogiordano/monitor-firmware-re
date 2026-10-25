@@ -1,0 +1,38 @@
+=== 0x3113 ===
+
+void FUN_CODE_3113(byte param_1,byte *param_2,byte *param_3,char param_4,byte param_5,byte param_6,
+                  byte param_7,char param_8,char param_9)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  char in_PSW;
+  
+  param_4 = param_4 + -1;
+  bVar2 = FUN_CODE_3063(param_1 ^ param_6 ^ param_7 | param_5 | 0x50);
+  DAT_INTMEM_47 = DAT_INTMEM_47 ^ 0x6e;
+  bVar3 = bVar2 ^ param_5 | param_6;
+  bVar2 = param_8 - (in_PSW >> 7);
+  *param_3 = *param_3 - 1;
+  bVar4 = bVar3 + bVar2 ^ *param_2;
+  bVar2 = param_5 - ((CARRY1(bVar3,bVar2) << 7) >> 7);
+  bVar2 = bVar4 + bVar2 + ((param_4 + -1) - ((CARRY1(bVar4,bVar2) << 7) >> 7)) | *param_3;
+  DAT_INTMEM_5a = DAT_INTMEM_5a ^ bVar2;
+  bVar1 = CARRY1(bVar2,DAT_INTMEM_3d);
+  bVar2 = bVar2 + DAT_INTMEM_3d & DAT_INTMEM_42;
+  DAT_INTMEM_60 = DAT_INTMEM_60 | 0x3e;
+  *param_3 = *param_3 - 1;
+  bVar2 = (bVar2 + (param_6 - ((bVar1 << 7) >> 7)) | 0x7b) ^ (byte)param_3 | *param_3;
+  param_3 = param_3 + -1;
+  *param_3 = 0x2c;
+  bVar3 = (bVar2 >> 1 | bVar2 << 7) ^ *param_2;
+  DAT_INTMEM_7f = DAT_INTMEM_7f & 0x5a;
+  bVar2 = *param_2;
+  *param_3 = *param_3 - 1;
+  nop();
+  FUN_CODE_3100(param_2 + (bVar3 >> 1 | bVar3 << 7) + bVar2,param_5 - 1,0x72,0x57,param_9 + '\x02');
+  return;
+}
+

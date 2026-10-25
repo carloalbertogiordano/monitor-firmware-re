@@ -1,0 +1,23 @@
+=== 0xd91c ===
+
+void FUN_CODE_d91c(void)
+
+{
+  DAT_EXTMEM_e330 = 0;
+  DAT_EXTMEM_e331 = 0;
+  FUN_CODE_1724(0xe332,BANK0_R6,DAT_EXTMEM_e549,DAT_EXTMEM_e548);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_fdfe(BANK0_R2,BANK0_R3);
+  FUN_CODE_fdf0(DAT_EXTMEM_e554,DAT_EXTMEM_e555);
+  _0_1 = 1;
+  FUN_CODE_fd6b();
+  FUN_CODE_fea9(0);
+  _0_2 = 1;
+  FUN_CODE_fcba();
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe53f);
+}
+

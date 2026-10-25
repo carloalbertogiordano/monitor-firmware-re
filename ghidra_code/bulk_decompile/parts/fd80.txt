@@ -1,0 +1,11 @@
+=== 0xfd80 ===
+
+void FUN_CODE_fd80(char param_1)
+
+{
+  if (param_1 == '\x03') {
+    FUN_CODE_e5f7();
+  }
+  return;
+}
+

@@ -1,0 +1,12 @@
+=== 0xcf37 ===
+
+undefined1 FUN_CODE_cf37(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = DAT_EXTMEM_e331;
+  FUN_CODE_0ab7(DAT_EXTMEM_e331);
+  return uVar1;
+}
+

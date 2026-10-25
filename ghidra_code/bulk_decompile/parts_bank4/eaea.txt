@@ -1,0 +1,16 @@
+=== 0xeaea ===
+
+void FUN_CODE_eaea(void)
+
+{
+  FUN_CODE_0d93(1,1);
+  FUN_CODE_0d99(1,1);
+  FUN_CODE_0d9f(1,1);
+  FUN_CODE_0da5(1,1);
+  FUN_CODE_0dab(1,1);
+  FUN_CODE_0db1(1,1);
+  FUN_CODE_0db7(1,1);
+  FUN_CODE_0dbd(1,1);
+  return;
+}
+

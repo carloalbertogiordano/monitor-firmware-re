@@ -1,0 +1,8 @@
+=== 0xd6db ===
+
+undefined1 FUN_CODE_d6db(void)
+
+{
+  return DAT_EXTMEM_e4f2;
+}
+

@@ -1,0 +1,11 @@
+=== 0xfb33 ===
+
+void FUN_CODE_fb33(void)
+
+{
+  if ((DAT_EXTMEM_e36e == '\x04') || (DAT_EXTMEM_e36e == '\x03')) {
+    FUN_CODE_f016();
+  }
+  return;
+}
+

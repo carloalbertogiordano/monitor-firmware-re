@@ -1,0 +1,21 @@
+=== 0xfc2b ===
+
+byte FUN_CODE_fc2b(byte param_1)
+
+{
+  byte bVar1;
+  char cVar2;
+  
+  cVar2 = (param_1 < 2) << 7;
+  DAT_EXTMEM_e331 = param_1;
+  if ((param_1 >= 2) && (bVar1 = FUN_CODE_0817(DAT_EXTMEM_e5b7), -1 < cVar2)) {
+    return bVar1;
+  }
+  bVar1 = DAT_EXTMEM_e331 - DAT_EXTMEM_e5a0;
+  if (DAT_EXTMEM_e331 < DAT_EXTMEM_e5a0) {
+    DAT_EXTMEM_e5a0 = DAT_EXTMEM_e331;
+    bVar1 = DAT_EXTMEM_e331;
+  }
+  return bVar1;
+}
+

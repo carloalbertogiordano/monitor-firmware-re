@@ -1,0 +1,9 @@
+=== 0x9bae ===
+
+char FUN_CODE_9bae(undefined1 param_1,undefined1 param_2,char param_3,byte param_4)
+
+{
+  return *(char *)CONCAT11(param_1,param_2) -
+         (param_3 - ((((byte)((char *)CONCAT11(param_1,param_2))[1] < param_4) << 7) >> 7));
+}
+

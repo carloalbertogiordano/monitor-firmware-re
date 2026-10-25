@@ -1,0 +1,10 @@
+=== 0xbdee ===
+
+void FUN_CODE_bdee(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e347 = 0;
+  DAT_EXTMEM_e348 = *param_1;
+  return;
+}
+

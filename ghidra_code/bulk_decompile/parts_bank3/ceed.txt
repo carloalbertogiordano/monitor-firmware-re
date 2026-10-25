@@ -1,0 +1,9 @@
+=== 0xceed ===
+
+byte FUN_CODE_ceed(void)
+
+{
+  FUN_CODE_fd19(2,0);
+  return DAT_EXTMEM_e6c9 >> 4 | DAT_EXTMEM_e6c9 << 4;
+}
+

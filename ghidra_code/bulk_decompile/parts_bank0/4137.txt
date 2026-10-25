@@ -1,0 +1,11 @@
+=== 0x4137 ===
+
+void FUN_CODE_4137(byte param_1,short param_2,byte param_3)
+
+{
+                    /* WARNING: Could not recover jumptable at 0x413a. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)(param_1 ^ param_3)))(0x70);
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x6713 ===
+
+void FUN_CODE_6713(undefined1 *param_1)
+
+{
+  FUN_CODE_0ed7(*param_1);
+  FUN_CODE_0dd5(2);
+  return;
+}
+

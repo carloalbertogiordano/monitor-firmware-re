@@ -1,0 +1,22 @@
+=== 0xe4b4 ===
+
+void FUN_CODE_e4b4(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  DAT_EXTMEM_e33d = '\0';
+  bVar2 = FUN_CODE_9d17(0);
+  bVar1 = 2;
+  while (0x80 < (0xfe < bVar2 ^ 0x80U) - (((bVar1 < bVar2 + 1) << 7) >> 7)) {
+    DAT_EXTMEM_e33d =
+         DAT_EXTMEM_e33d + *(char *)CONCAT11(-0x1c - (((0xd5 < bVar1) << 7) >> 7),bVar1 + 0x2a);
+    bVar1 = bVar1 + 1;
+  }
+  if (DAT_EXTMEM_e33d == BANK0_R7) {
+    return;
+  }
+  return;
+}
+

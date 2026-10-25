@@ -1,0 +1,9 @@
+=== 0x9a3e ===
+
+void FUN_CODE_9a3e(void)
+
+{
+  DAT_EXTMEM_0bda = DAT_EXTMEM_0bda & 0xdf | 0x20;
+  return;
+}
+

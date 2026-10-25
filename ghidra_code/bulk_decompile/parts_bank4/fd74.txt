@@ -1,0 +1,8 @@
+=== 0xfd74 ===
+
+byte FUN_CODE_fd74(void)
+
+{
+  return DAT_EXTMEM_e4d3 >> 6 | (DAT_EXTMEM_e4d3 >> 4) << 7;
+}
+

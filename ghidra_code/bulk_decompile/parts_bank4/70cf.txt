@@ -1,0 +1,8 @@
+=== 0x70cf ===
+
+byte FUN_CODE_70cf(void)
+
+{
+  return DAT_EXTMEM_e4cd >> 3 & 7;
+}
+

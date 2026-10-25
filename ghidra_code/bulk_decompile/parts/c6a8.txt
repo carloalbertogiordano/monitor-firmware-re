@@ -1,0 +1,9 @@
+=== 0xc6a8 ===
+
+void FUN_CODE_c6a8(void)
+
+{
+  FUN_CODE_152f(0,0,0,DAT_EXTMEM_e338,DAT_EXTMEM_e339,DAT_EXTMEM_e33a,DAT_EXTMEM_e33b);
+  return;
+}
+

@@ -1,0 +1,37 @@
+=== 0xef01 ===
+
+void FUN_CODE_ef01(char param_1)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  char in_PSW;
+  
+  if (param_1 == '\0') {
+    cVar2 = DAT_EXTMEM_e5b7;
+    FUN_CODE_fc51();
+    if (in_PSW < '\0') {
+      FUN_CODE_f55a();
+      FUN_CODE_0907();
+      if (cVar2 != '\x01') {
+        return;
+      }
+      uVar1 = 4;
+    }
+    else {
+      uVar1 = 4;
+    }
+  }
+  else {
+    if ((param_1 != '\t') && (param_1 != '\b')) {
+      return;
+    }
+    if ((_4_6 != '\0') && (_3_6 == '\0')) {
+      return;
+    }
+    uVar1 = 0;
+  }
+  FUN_CODE_0919(uVar1);
+  return;
+}
+

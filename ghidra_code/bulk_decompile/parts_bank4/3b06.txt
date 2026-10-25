@@ -1,0 +1,14 @@
+=== 0x3b06 ===
+
+void FUN_CODE_3b06(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_3b06();
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xfb55 ===
+
+void FUN_CODE_fb55(byte param_1)
+
+{
+  DAT_EXTMEM_e6ff = DAT_EXTMEM_e6ff & 0xf8 | param_1 & 7 | 8;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xd5c6 ===
+
+undefined1 FUN_CODE_d5c6(void)
+
+{
+  return DAT_EXTMEM_e36d;
+}
+

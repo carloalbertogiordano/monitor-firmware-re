@@ -1,0 +1,11 @@
+=== 0xf151 ===
+
+char FUN_CODE_f151(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_127f();
+  return (bVar1 >> 3) - 9;
+}
+

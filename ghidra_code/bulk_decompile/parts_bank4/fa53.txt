@@ -1,0 +1,9 @@
+=== 0xfa53 ===
+
+void FUN_CODE_fa53(void)
+
+{
+  FUN_CODE_7da2();
+  return;
+}
+

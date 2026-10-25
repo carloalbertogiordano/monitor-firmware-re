@@ -1,0 +1,11 @@
+=== 0x0f92 ===
+
+void FUN_CODE_0f92(void)
+
+{
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

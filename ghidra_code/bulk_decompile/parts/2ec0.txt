@@ -1,0 +1,12 @@
+=== 0x2ec0 ===
+
+byte FUN_CODE_2ec0(byte param_1)
+
+{
+  if (_6_2 != '\x01') {
+    return param_1 | 0x31;
+  }
+  _8_4 = 0;
+  return param_1 | 0x31;
+}
+

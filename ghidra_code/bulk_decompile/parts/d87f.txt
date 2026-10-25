@@ -1,0 +1,8 @@
+=== 0xd87f ===
+
+byte FUN_CODE_d87f(byte param_1,byte param_2)
+
+{
+  return param_1 | param_2;
+}
+

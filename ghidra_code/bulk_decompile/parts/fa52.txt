@@ -1,0 +1,9 @@
+=== 0xfa52 ===
+
+void FUN_CODE_fa52(void)
+
+{
+  DAT_EXTMEM_0093 = DAT_EXTMEM_0093 & 0x7f | _0_0 << 7;
+  return;
+}
+

@@ -1,0 +1,19 @@
+=== 0x43db ===
+
+void FUN_CODE_43db(void)
+
+{
+  undefined1 *puVar1;
+  
+  FUN_CODE_8dc9();
+  DAT_EXTMEM_ff61 = 0x4c;
+  DAT_EXTMEM_ff64 = DAT_EXTMEM_e3e2;
+  DAT_EXTMEM_ff65 = DAT_EXTMEM_e3e3 << 4;
+  puVar1 = &DAT_EXTMEM_ff65;
+  FUN_CODE_8c71(0);
+  *puVar1 = 0x79;
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

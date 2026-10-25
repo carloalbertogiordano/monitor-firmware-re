@@ -1,0 +1,15 @@
+=== 0xbc89 ===
+
+char FUN_CODE_bc89(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = 0;
+  bVar2 = 100;
+  FUN_CODE_133e('\0',100,BANK0_R2,BANK0_R3);
+  FUN_CODE_133e('\0',10,bVar1,bVar2);
+  return bVar2 + 10;
+}
+

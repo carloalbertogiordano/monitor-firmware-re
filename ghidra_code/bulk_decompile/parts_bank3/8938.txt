@@ -1,0 +1,9 @@
+=== 0x8938 ===
+
+void FUN_CODE_8938(void)
+
+{
+  FUN_CODE_160f(0x10,0,0,0,DAT_EXTMEM_b558 & 0x1f);
+  return;
+}
+

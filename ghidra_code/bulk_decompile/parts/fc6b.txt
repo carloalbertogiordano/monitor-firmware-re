@@ -1,0 +1,16 @@
+=== 0xfc6b ===
+
+void FUN_CODE_fc6b(void)
+
+{
+  DAT_INTMEM_52 = 'K';
+  do {
+    DAT_INTMEM_55 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_55 = DAT_INTMEM_55 + -1;
+    } while (DAT_INTMEM_55 != '\0');
+    DAT_INTMEM_52 = DAT_INTMEM_52 + -1;
+  } while (DAT_INTMEM_52 != '\0');
+  return;
+}
+

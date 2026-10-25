@@ -1,0 +1,10 @@
+=== 0xbda7 ===
+
+void FUN_CODE_bda7(undefined1 param_1,undefined1 *param_2,byte param_3)
+
+{
+  *param_2 = param_1;
+  param_2[1] = (param_3 & 0xf) + 1;
+  return;
+}
+

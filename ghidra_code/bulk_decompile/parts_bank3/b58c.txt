@@ -1,0 +1,8 @@
+=== 0xb58c ===
+
+byte FUN_CODE_b58c(byte param_1)
+
+{
+  return DAT_EXTMEM_e5a2 & 0xf0 | (param_1 & 0x1e) >> 1;
+}
+

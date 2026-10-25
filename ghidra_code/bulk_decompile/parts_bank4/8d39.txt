@@ -1,0 +1,12 @@
+=== 0x8d39 ===
+
+void FUN_CODE_8d39(void)
+
+{
+  DAT_EXTMEM_b650 = DAT_EXTMEM_b650 & 0x9f;
+  DAT_EXTMEM_b682 = DAT_EXTMEM_b682 & 0x7f;
+  DAT_EXTMEM_b68c = DAT_EXTMEM_b68c & 0x7f;
+  bEXTMEMb6a0 = bEXTMEMb6a0 & 0x7f | 0x80;
+  return;
+}
+

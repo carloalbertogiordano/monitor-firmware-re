@@ -1,0 +1,9 @@
+=== 0x62c8 ===
+
+void FUN_CODE_62c8(undefined1 *param_1)
+
+{
+  FUN_CODE_1093(*param_1,param_1[1]);
+  return;
+}
+

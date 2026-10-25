@@ -1,0 +1,12 @@
+=== 0xfa7a ===
+
+void FUN_CODE_fa7a(void)
+
+{
+  if ((DAT_EXTMEM_e331 == '\x04') || (DAT_EXTMEM_e331 == '\x03')) {
+    _0_1 = _0_0 & 1;
+    FUN_CODE_dd89();
+  }
+  return;
+}
+

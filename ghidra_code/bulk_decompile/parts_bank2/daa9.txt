@@ -1,0 +1,9 @@
+=== 0xdaa9 ===
+
+void FUN_CODE_daa9(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(DAT_EXTMEM_e342,DAT_EXTMEM_e343,DAT_EXTMEM_e340,DAT_EXTMEM_e341);
+}
+

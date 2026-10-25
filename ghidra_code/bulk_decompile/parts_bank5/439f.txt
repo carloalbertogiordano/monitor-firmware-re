@@ -1,0 +1,11 @@
+=== 0x439f ===
+
+void FUN_CODE_439f(undefined1 param_1,byte param_2,byte param_3)
+
+{
+  DAT_EXTMEM_0094 = (DAT_EXTMEM_0094 & 0xf3 | param_3) & 0x1f | param_2;
+  FUN_CODE_45da(param_1);
+  FUN_CODE_4681(BANK0_R3);
+  return;
+}
+

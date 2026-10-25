@@ -1,0 +1,12 @@
+=== 0xfb0f ===
+
+void FUN_CODE_fb0f(char param_1)
+
+{
+  _0_0 = _0_0 & 1;
+  if (param_1 == '\x04') {
+    FUN_CODE_b0b5(0xe583);
+  }
+  return;
+}
+

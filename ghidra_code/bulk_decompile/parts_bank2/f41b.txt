@@ -1,0 +1,22 @@
+=== 0xf41b ===
+
+void FUN_CODE_f41b(void)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  
+  bVar1 = 0x30;
+  FUN_CODE_086b(0,0);
+  uVar2 = 0x30;
+  DAT_INTMEM_2b = bVar1;
+  FUN_CODE_086b(1,0);
+  bVar1 = 0x30;
+  DAT_INTMEM_2c = uVar2;
+  FUN_CODE_086b(3,0);
+  DAT_INTMEM_2d = bVar1;
+  DAT_INTMEM_29 = bVar1 & 0x10 | (byte)((ushort)DAT_INTMEM_2b * 0x10 >> 8);
+  DAT_INTMEM_2a = DAT_INTMEM_2c;
+  return;
+}
+

@@ -1,0 +1,12 @@
+=== 0x9c7b ===
+
+void FUN_CODE_9c7b(undefined1 param_1)
+
+{
+  DAT_EXTMEM_1da4 = param_1;
+  DAT_EXTMEM_1db4 = param_1;
+  DAT_EXTMEM_1dc4 = param_1;
+  DAT_EXTMEM_1dd4 = param_1;
+  return;
+}
+

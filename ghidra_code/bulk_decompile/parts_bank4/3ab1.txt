@@ -1,0 +1,15 @@
+=== 0x3ab1 ===
+
+char FUN_CODE_3ab1(byte param_1,char *param_2,undefined1 *param_3,byte param_4,char param_5)
+
+{
+  byte bVar1;
+  char in_PSW;
+  
+  *param_3 = 0x35;
+  DAT_INTMEM_61 = 0x21;
+  bVar1 = EX1;
+  return (param_4 & (byte)param_3) -
+         (param_5 - ((char)((param_1 < (byte)(*param_2 - (in_PSW >> 7)) & ~bVar1) << 7) >> 7));
+}
+

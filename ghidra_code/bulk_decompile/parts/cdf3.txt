@@ -1,0 +1,10 @@
+=== 0xcdf3 ===
+
+void FUN_CODE_cdf3(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e334 = param_1;
+  DAT_EXTMEM_e335 = DAT_EXTMEM_e333;
+  return;
+}
+

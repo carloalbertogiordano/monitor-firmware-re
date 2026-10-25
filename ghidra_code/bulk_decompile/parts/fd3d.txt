@@ -1,0 +1,8 @@
+=== 0xfd3d ===
+
+char FUN_CODE_fd3d(void)
+
+{
+  return DAT_EXTMEM_e337 << 3;
+}
+

@@ -1,0 +1,16 @@
+=== 0x0dcf ===
+
+void FUN_CODE_0dcf(byte param_1,short param_2,char *param_3,byte *param_4)
+
+{
+  char in_PSW;
+  
+  if ((param_1 ^ *param_4) + (*param_3 - (in_PSW >> 7)) == '\0') {
+    DAT_INTMEM_79 = DAT_INTMEM_79 | 0x37;
+    return;
+  }
+  BANK0_R0 = BANK0_R0 + '\x01';
+  FUN_CODE_0e1a(param_2,param_3);
+  return;
+}
+

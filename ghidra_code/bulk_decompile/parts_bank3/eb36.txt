@@ -1,0 +1,79 @@
+=== 0xeb36 ===
+
+void FUN_CODE_eb36(void)
+
+{
+  char cVar1;
+  char in_PSW;
+  
+  FUN_CODE_dd79();
+  if (-1 < in_PSW) {
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_54;
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+      } while (DAT_INTMEM_56 != '\0');
+      FUN_CODE_dd8d();
+      if (-1 < in_PSW) break;
+      FUN_CODE_dd80();
+    } while (-1 < in_PSW);
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+  FUN_CODE_ddcb();
+  if ((DAT_EXTMEM_e5a8 == '\f') || (DAT_EXTMEM_e5a8 == '\r')) {
+    cVar1 = '\x01';
+    FUN_CODE_e1be();
+    FUN_CODE_dd79();
+    if (-1 < in_PSW) {
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_54;
+        do {
+          DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+        } while (DAT_INTMEM_56 != '\0');
+        FUN_CODE_dd8d();
+        if (-1 < in_PSW) break;
+        FUN_CODE_dd80();
+      } while (-1 < in_PSW);
+      DAT_INTMEM_56 = DAT_INTMEM_54;
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+      } while (DAT_INTMEM_56 != '\0');
+    }
+    FUN_CODE_dd98();
+    FUN_CODE_e291();
+    FUN_CODE_ddbf();
+    FUN_CODE_fe61();
+    if (cVar1 != '\x02') {
+      FUN_CODE_ddbf();
+      FUN_CODE_fe61();
+      if (cVar1 != '\x05') {
+        if ((DAT_EXTMEM_e5b7 != 3) && (in_PSW = (DAT_EXTMEM_e5b7 < 4) << 7, DAT_EXTMEM_e5b7 == 4)) {
+          FUN_CODE_059b(0x2a);
+        }
+        FUN_CODE_f9ac();
+      }
+    }
+  }
+  FUN_CODE_dd79();
+  if (-1 < in_PSW) {
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_54;
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+      } while (DAT_INTMEM_56 != '\0');
+      FUN_CODE_dd8d();
+      if (-1 < in_PSW) break;
+      FUN_CODE_dd80();
+    } while (-1 < in_PSW);
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+  FUN_CODE_dd98();
+  return;
+}
+

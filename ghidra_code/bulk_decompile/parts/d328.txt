@@ -1,0 +1,9 @@
+=== 0xd328 ===
+
+void FUN_CODE_d328(void)
+
+{
+  FUN_CODE_074b(DAT_EXTMEM_e593,DAT_EXTMEM_e594);
+  return;
+}
+

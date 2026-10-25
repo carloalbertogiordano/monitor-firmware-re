@@ -1,0 +1,19 @@
+=== 0xf284 ===
+
+void FUN_CODE_f284(void)
+
+{
+  FUN_CODE_da84();
+  FUN_CODE_e9d7();
+  FUN_CODE_060d();
+  FUN_CODE_0613();
+  FUN_CODE_f7a7();
+  FUN_CODE_0619();
+  FUN_CODE_061f();
+  DAT_EXTMEM_e6f2 = DAT_EXTMEM_e6f2 & 0xf;
+  FUN_CODE_0625(0);
+  DAT_EXTMEM_e6f2 = DAT_EXTMEM_e6f2 & 0xf0 | 2;
+  DAT_EXTMEM_e6e0 = DAT_EXTMEM_e6e0 & 0xe0 | 7;
+  return;
+}
+

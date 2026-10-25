@@ -1,0 +1,34 @@
+=== 0xc1de ===
+
+void FUN_CODE_c1de(code param_1,code param_2,code param_3)
+
+{
+  code *pcVar1;
+  
+  pcVar1 = FUN_CODE_e33c;
+  FUN_CODE_6fee();
+  pcVar1[1] = param_3;
+  pcVar1[2] = param_1;
+  pcVar1[3] = param_2;
+  FUN_CODE_1724(0xe347);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe34b);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe34f);
+  nop();
+  nop();
+  nop();
+  nop();
+  if (_0_1 == '\0') {
+    FUN_CODE_6e53(0xe505);
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe353);
+}
+

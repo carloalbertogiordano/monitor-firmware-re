@@ -1,0 +1,77 @@
+=== 0xb067 ===
+
+/* WARNING: Removing unreachable block (CODE,0xb0c5) */
+
+byte FUN_CODE_b067(char param_1,byte param_2,byte param_3,byte param_4)
+
+{
+  byte bVar1;
+  char cVar2;
+  char in_PSW;
+  char cVar3;
+  char *pcVar4;
+  undefined1 *puVar5;
+  byte *pbVar6;
+  
+  FUN_CODE_7eca(0xe372);
+  FUN_CODE_7e58();
+  FUN_CODE_ef57();
+  DAT_EXTMEM_e375 = param_3;
+  DAT_EXTMEM_e376 = param_4;
+  FUN_CODE_7ee9();
+  FUN_CODE_7ef2();
+  if (in_PSW < '\0') {
+    DAT_EXTMEM_e372 = 0xee;
+    DAT_EXTMEM_e373 = 0x48;
+  }
+  FUN_CODE_7ee9();
+  bVar1 = DAT_EXTMEM_e376 + param_4;
+  param_3 = param_3 - ((CARRY1(DAT_EXTMEM_e376,param_4) << 7) >> 7);
+  cVar3 = CARRY1(DAT_EXTMEM_e375,param_3) << 7;
+  cVar2 = DAT_EXTMEM_e375 + param_3;
+  FUN_CODE_7ef2();
+  if ((cVar3 < '\0') ||
+     (FUN_CODE_7ee9(),
+     (DAT_EXTMEM_e375 + (cVar2 - ((CARRY1(DAT_EXTMEM_e376,bVar1) << 7) >> 7))) -
+     (((DAT_EXTMEM_e376 < DAT_EXTMEM_e376 + bVar1 + 1) << 7) >> 7) <= DAT_EXTMEM_e375)) {
+    _7_2 = 0;
+    DAT_INTMEM_58 = 0;
+    DAT_INTMEM_57 = 0;
+    DAT_EXTMEM_e374 = 0;
+    while( true ) {
+      pcVar4 = &DAT_EXTMEM_e374;
+      cVar3 = (DAT_EXTMEM_e374 < 0x12) << 7;
+      if (DAT_EXTMEM_e374 >= 0x12) break;
+      FUN_CODE_7da2(DAT_EXTMEM_e374 - 0x12,DAT_EXTMEM_e374);
+      if (*pcVar4 != '\0') {
+        puVar5 = &DAT_EXTMEM_e374;
+        bVar1 = DAT_EXTMEM_e374;
+        FUN_CODE_7e62(DAT_EXTMEM_e374);
+        pcVar4 = &DAT_EXTMEM_e375;
+        FUN_CODE_7eb4(puVar5[1],*puVar5);
+        if (cVar3 < '\0') {
+          puVar5 = &DAT_EXTMEM_e374;
+          FUN_CODE_7e61();
+          *puVar5 = 0;
+          puVar5[1] = 0;
+        }
+        else {
+          FUN_CODE_7e62(bVar1);
+          pbVar6 = (byte *)(pcVar4 + 1);
+          cVar3 = (char)((ushort)pbVar6 >> 8);
+          if ((char)pbVar6 == '\0') {
+            cVar3 = cVar3 + -1;
+          }
+          *pcVar4 = *(char *)CONCAT11(cVar3,(char)pbVar6 + -1) -
+                    (param_1 - (((*pbVar6 < param_2) << 7) >> 7));
+          pcVar4[1] = *pbVar6 - param_2;
+        }
+      }
+      DAT_EXTMEM_e374 = DAT_EXTMEM_e374 + 1;
+    }
+    DAT_EXTMEM_e375 = 0;
+    DAT_EXTMEM_e376 = 0;
+  }
+  return DAT_EXTMEM_e376;
+}
+

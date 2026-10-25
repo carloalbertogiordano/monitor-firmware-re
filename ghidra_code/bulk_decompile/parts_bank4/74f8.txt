@@ -1,0 +1,8 @@
+=== 0x74f8 ===
+
+undefined1 FUN_CODE_74f8(void)
+
+{
+  return DAT_EXTMEM_e4d1;
+}
+

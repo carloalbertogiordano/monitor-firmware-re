@@ -1,0 +1,9 @@
+=== 0xe919 ===
+
+void FUN_CODE_e919(void)
+
+{
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e403;
+  return;
+}
+

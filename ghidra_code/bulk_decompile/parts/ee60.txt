@@ -1,0 +1,10 @@
+=== 0xee60 ===
+
+byte FUN_CODE_ee60(void)
+
+{
+  byte in_PSW;
+  
+  return DAT_EXTMEM_e6f3 >> 1 | in_PSW & 0x80;
+}
+

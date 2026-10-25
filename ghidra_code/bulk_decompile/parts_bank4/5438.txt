@@ -1,0 +1,14 @@
+=== 0x5438 ===
+
+void FUN_CODE_5438(byte param_1,short param_2,char *param_3)
+
+{
+  byte in_PSW;
+  
+  *param_3 = *param_3 + -1;
+                    /* WARNING: Could not recover jumptable at 0x543b. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)((char)FUN_CODE_5439[param_1] << 1 | in_PSW >> 7)))();
+  return;
+}
+

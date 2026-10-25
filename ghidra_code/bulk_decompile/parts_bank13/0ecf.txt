@@ -1,0 +1,34 @@
+=== 0x0ecf ===
+
+void FUN_CODE_0ecf(byte param_1,byte *param_2,byte param_3,byte *param_4,byte *param_5,byte param_6,
+                  byte param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  
+  if (_4_2 == '\x01') {
+    _3_7 = _3_7 ^ 1;
+    return;
+  }
+  cVar2 = INT0;
+  if (cVar2 != '\x01') {
+    FUN_CODE_0932(param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,param_10,
+                  param_11);
+    return;
+  }
+  _8_0 = 0;
+  bVar3 = FUN_CODE_0a25(((param_1 << 1 | param_1 >> 7) + 0x42 | (byte)param_4) - 0x2e,param_2,
+                        param_3,param_4,param_5,param_6,param_7,param_8,param_9,param_10,param_11);
+  DAT_INTMEM_59 = DAT_INTMEM_59 & bVar3;
+  uVar1 = SOFL;
+  cVar2 = SOFL;
+  DAT_INTMEM_26 = DAT_INTMEM_26 ^ bVar3 + cVar2;
+  DAT_INTMEM_6a = DAT_INTMEM_6a ^ bVar3 + cVar2;
+  *(byte *)ZEXT12(param_4) = *(char *)ZEXT12(param_4) + *param_5;
+  uVar1 = TR0;
+  FUN_CODE_9429((short)param_2,param_4);
+  return;
+}
+

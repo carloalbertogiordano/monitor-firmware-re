@@ -1,0 +1,9 @@
+=== 0x875c ===
+
+void FUN_CODE_875c(void)
+
+{
+  FUN_CODE_152f(BANK0_R4,BANK0_R5,BANK0_R6,BANK0_R7,0,0,0x5d,0xc0);
+  return;
+}
+

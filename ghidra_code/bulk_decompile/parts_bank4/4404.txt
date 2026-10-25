@@ -1,0 +1,87 @@
+=== 0x4404 ===
+
+/* WARNING: Restarted to delay deadcode elimination for space: INTMEM */
+
+void FUN_CODE_4404(char param_1,byte param_2,byte *param_3,byte param_4,byte param_5,char param_6,
+                  char param_7,byte param_8)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  char in_PSW;
+  undefined1 uStackX_0;
+  undefined1 in_stack_000000fe;
+  undefined1 in_stack_000000ff;
+  
+  DAT_SFR_9d = uStackX_0;
+  DAT_SFR_9d = in_stack_000000ff;
+  DAT_INTMEM_21 = in_stack_000000fe;
+  cVar3 = FUN_CODE_9284(param_1 - (param_7 - (in_PSW >> 7)) | param_4 | (byte)param_3);
+  bVar4 = FUN_CODE_9284(cVar3 + 0x21U | param_4 | (byte)param_3);
+  DAT_SFR_b5 = param_4;
+  if (bVar4 + 0x21 == 0) {
+    param_3 = param_3 + -1;
+    bVar4 = 0;
+    if (param_3 != (byte *)0x0) goto LAB_CODE_4467;
+    BANK0_R0 = '\x01';
+    nop();
+    nop();
+    nop();
+  }
+  else {
+    bVar5 = bVar4 + 0x21 & (byte)param_3;
+    bVar6 = bVar5 & 0xf0 | *param_3 & 0xf;
+    *param_3 = *param_3 & 0xf0 | bVar5 & 0xf;
+    bVar5 = T1;
+    if (bVar6 != 0) {
+      bVar6 = bVar6 & (byte)param_3;
+      bVar1 = *param_3;
+      *param_3 = *param_3 & 0xf0 | bVar6 & 0xf;
+      bVar2 = T1;
+      _4_4 = 0xde < bVar4 & bVar5 & bVar2;
+      *param_3 = bVar6 & 0xf0 | bVar1 & 0xf | param_4 | param_4 | param_4 | param_4 | param_4;
+      DAT_SFR_bd = *param_3;
+      FUN_CODE_436f(0x2449,param_4 + 1,param_6 + '\x02');
+      return;
+    }
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar4 = ((((param_4 ^ *param_3) + *param_3 | param_4) ^ *param_3) + *param_3 | param_4) ^ *param_3
+  ;
+LAB_CODE_4467:
+  _c_4 = CARRY1(bVar4,*param_3);
+  DAT_INTMEM_24 =
+       DAT_INTMEM_24 & ((((bVar4 + *param_3 | param_4) ^ *param_3) + *param_3 | param_4) ^ *param_3)
+  ;
+  BANK0_R0 = BANK0_R0 + '\x01';
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar4 = 0;
+  if (param_2 != 0) {
+    bVar4 = param_5 % param_2;
+  }
+  bVar5 = param_8;
+  if (bVar4 != 0) {
+    bVar5 = param_8 / bVar4;
+  }
+  DAT_INTMEM_27 = DAT_INTMEM_27 | bVar5 | param_8;
+  FUN_CODE_4149();
+  return;
+}
+

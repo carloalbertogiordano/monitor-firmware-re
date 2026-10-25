@@ -1,0 +1,24 @@
+=== 0xee65 ===
+
+void FUN_CODE_ee65(undefined1 param_1,byte param_2)
+
+{
+  undefined1 uVar1;
+  
+  DAT_EXTMEM_e32f = param_1;
+  DAT_EXTMEM_e330 = param_2;
+  if (DAT_EXTMEM_e1ff == '\0') {
+    uVar1 = FUN_CODE_bc40(DAT_EXTMEM_e19a,&LAB_CODE_e198_1);
+    DAT_EXTMEM_e334 = 1;
+    DAT_EXTMEM_e335 = 0x10;
+    FUN_CODE_ef4e(uVar1,param_2);
+    uVar1 = FUN_CODE_bc40(DAT_EXTMEM_e330,(char *)0xe32f);
+    DAT_EXTMEM_e334 = 1;
+    DAT_EXTMEM_e335 = 0x20;
+    FUN_CODE_ef4e(uVar1,param_2);
+  }
+  DAT_EXTMEM_e199 = DAT_EXTMEM_e32f;
+  DAT_EXTMEM_e19a = DAT_EXTMEM_e330;
+  return;
+}
+

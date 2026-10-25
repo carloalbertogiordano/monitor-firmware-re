@@ -1,0 +1,10 @@
+=== 0xf1ba ===
+
+void FUN_CODE_f1ba(void)
+
+{
+  DAT_EXTMEM_06d5 = DAT_EXTMEM_06d5 & 0xf | 0xf0;
+  DAT_EXTMEM_06d2 = DAT_EXTMEM_06d2 & 0x7f | 0x80;
+  return;
+}
+

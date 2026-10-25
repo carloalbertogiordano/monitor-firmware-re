@@ -1,0 +1,8 @@
+=== 0x4717 ===
+
+undefined1 FUN_CODE_4717(void)
+
+{
+  return DAT_EXTMEM_e18a;
+}
+

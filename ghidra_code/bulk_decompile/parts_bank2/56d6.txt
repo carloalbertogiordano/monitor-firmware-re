@@ -1,0 +1,15 @@
+=== 0x56d6 ===
+
+void FUN_CODE_56d6(undefined1 param_1)
+
+{
+  FUN_CODE_1021();
+  DAT_EXTMEM_e18e = 0;
+  _0_2 = 0;
+  DAT_EXTMEM_e18f = param_1;
+  FUN_CODE_e8e7(0,0,0,100);
+  DAT_EXTMEM_e18e = 0;
+  DAT_EXTMEM_e18f = param_1;
+  return;
+}
+

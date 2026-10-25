@@ -1,0 +1,155 @@
+=== 0x3169 ===
+
+char FUN_CODE_3169(byte param_1,short param_2,byte *param_3,char *param_4,byte param_5,char param_6,
+                  byte param_7,byte param_8)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  byte in_PSW;
+  
+  bVar3 = param_1 ^ DAT_INTMEM_47;
+  if ((param_1 ^ DAT_INTMEM_47) == 0) {
+    param_7 = param_7 - ((char)in_PSW >> 7);
+    bVar3 = BANK1_R1 - ((CARRY1(param_7,(byte)param_3) << 7) >> 7);
+    bVar1 = ((byte)(param_3 + param_7) ^ (byte)param_4) + bVar3;
+    bVar3 = *param_4 - ((CARRY1((byte)(param_3 + param_7) ^ (byte)param_4,bVar3) << 7) >> 7);
+                    /* WARNING: Could not recover jumptable at 0x3178. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    cVar2 = (*(code *)(param_2 + (ushort)(bVar1 + bVar3 + ('V' - ((CARRY1(bVar1,bVar3) << 7) >> 7)))
+                      ))(0x26);
+    return cVar2;
+  }
+  do {
+    if (_2_2 == '\0') {
+      bVar3 = bVar3 + (char)param_3 * '\x03';
+      param_4 = param_4 + '\x01';
+      param_3 = param_3 + '\x01';
+      bVar1 = CARRY1(bVar3,(byte)param_3) << 7;
+      DAT_INTMEM_43 = DAT_INTMEM_43 | (byte)(param_3 + bVar3) ^ param_7 ^ (byte)param_4;
+      bVar3 = FUN_CODE_3115(0x5a);
+LAB_CODE_3188:
+      bVar1 = bVar1 & 0xdd;
+      if ((bVar3 & 0x23) != 0) {
+        param_7 = ((bVar3 & 0x23) >> 1 | bVar3 << 7 | (byte)param_3) + DAT_INTMEM_5f + param_6 + 1 ^
+                  param_7;
+        DAT_INTMEM_22 = DAT_INTMEM_22 | param_7;
+        cVar2 = FUN_CODE_302a(param_7 ^ *param_3,0x48);
+                    /* WARNING: Could not recover jumptable at 0x319f. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+        cVar2 = (*(code *)(param_2 +
+                          (ushort)(((byte)(param_4 + cVar2 + -1) ^ (byte)param_3) & (byte)param_4)))
+                          (param_5 - 1);
+        return cVar2;
+      }
+      if (_b_1 == '\0') {
+        return 'T';
+      }
+      _b_1 = '\0';
+      bVar3 = 0;
+LAB_CODE_31be:
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+    }
+    else {
+      cVar2 = FUN_CODE_3000(param_8);
+      *param_3 = *param_3 + 1;
+      if (_5_0 == '\x01') {
+        bVar3 = cVar2 + 1U | param_8;
+        *param_3 = 0x47;
+        bVar1 = bVar3 << 7;
+        bVar3 = ((bVar3 >> 1 | in_PSW & 0x80) ^ param_8) & param_5 ^ param_5;
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        goto LAB_CODE_31be;
+      }
+      nop();
+      bVar1 = (cVar2 + 1U < param_8 - ((char)in_PSW >> 7)) << 7;
+      bVar3 = param_8;
+      if (_2_2 == '\0') goto LAB_CODE_3188;
+      bVar3 = FUN_CODE_3000(param_8);
+      *param_3 = *param_3 + 1;
+      do {
+        bVar3 = bVar3 + 1;
+      } while (_0_2 == '\x01');
+      nop();
+      bVar1 = param_8 - ((char)bVar1 >> 7);
+      param_8 = 0x9d;
+      bVar3 = ((bVar3 - bVar1) - (-0x55 - (((bVar3 < bVar1) << 7) >> 7))) + *param_3;
+      bVar1 = bVar3 - 0x29;
+      nop();
+      bVar3 = param_7 - (((0x28 < bVar3) << 7) >> 7);
+      bVar4 = bVar1 - bVar3;
+      nop();
+      bVar3 = 0x9d - (((bVar1 < bVar3) << 7) >> 7);
+      cVar2 = (bVar4 < bVar3) << 7;
+      _4_0 = 0;
+      bVar3 = FUN_CODE_90c2(bVar4 - bVar3,0x7f);
+      bVar3 = bVar3 >> 1 | bVar3 << 7;
+      nop();
+      *param_3 = *param_3 + 1;
+      do {
+        bVar3 = bVar3 + 1;
+      } while (_0_2 == '\x01');
+      nop();
+      bVar4 = param_8 - (cVar2 >> 7);
+      bVar1 = (bVar3 < bVar4) << 7;
+      param_7 = param_7 - 1;
+      cVar2 = func_0x3112(bVar3 - bVar4);
+      param_2 = 0x1c11;
+      nop();
+      *param_3 = *param_3 + 1;
+      bVar3 = cVar2 + 1;
+      if (_0_2 != '\x01') {
+        nop();
+        return bVar3 - (param_8 - ((char)bVar1 >> 7));
+      }
+    }
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    in_PSW = (bVar3 < param_8 - ((char)bVar1 >> 7)) << 7;
+    bVar3 = param_8;
+  } while( true );
+}
+

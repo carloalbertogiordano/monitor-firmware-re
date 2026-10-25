@@ -1,0 +1,14 @@
+=== 0xf7ad ===
+
+void FUN_CODE_f7ad(void)
+
+{
+  if (2 < DAT_EXTMEM_e61e) {
+    DAT_EXTMEM_e19d = DAT_EXTMEM_e19d | 8;
+    return;
+  }
+  DAT_EXTMEM_e19d = DAT_EXTMEM_e19d & 0xf7;
+  DAT_EXTMEM_e61e = DAT_EXTMEM_e61e + 1;
+  return;
+}
+

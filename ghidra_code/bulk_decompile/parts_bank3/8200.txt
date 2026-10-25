@@ -1,0 +1,8 @@
+=== 0x8200 ===
+
+void FUN_CODE_8200(void)
+
+{
+  return;
+}
+

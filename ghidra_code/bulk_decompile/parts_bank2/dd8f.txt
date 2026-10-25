@@ -1,0 +1,18 @@
+=== 0xdd8f ===
+
+void FUN_CODE_dd8f(void)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_0f91(0xc,4);
+  uVar1 = DAT_EXTMEM_e191;
+  FUN_CODE_0f85();
+  DAT_EXTMEM_e36d = uVar1;
+  DAT_EXTMEM_e36b = 3;
+  DAT_EXTMEM_e36c = DAT_EXTMEM_e191;
+  DAT_EXTMEM_e36e = 0x10;
+  DAT_EXTMEM_e36f = 0;
+  return;
+}
+

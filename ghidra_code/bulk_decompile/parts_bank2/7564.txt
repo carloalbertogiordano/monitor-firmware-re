@@ -1,0 +1,9 @@
+=== 0x7564 ===
+
+void FUN_CODE_7564(byte *param_1)
+
+{
+  DAT_EXTMEM_002b = *param_1 & 0x1f;
+  return;
+}
+

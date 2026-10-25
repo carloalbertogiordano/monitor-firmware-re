@@ -1,0 +1,9 @@
+=== 0xe910 ===
+
+void FUN_CODE_e910(void)
+
+{
+  _0_2 = 0;
+  return;
+}
+

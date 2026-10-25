@@ -1,0 +1,8 @@
+=== 0xfe66 ===
+
+undefined1 FUN_CODE_fe66(void)
+
+{
+  return DAT_EXTMEM_03a3;
+}
+

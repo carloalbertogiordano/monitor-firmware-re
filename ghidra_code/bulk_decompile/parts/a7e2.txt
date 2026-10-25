@@ -1,0 +1,10 @@
+=== 0xa7e2 ===
+
+char FUN_CODE_a7e2(void)
+
+{
+  char in_PSW;
+  
+  return -0x1b - (in_PSW >> 7);
+}
+

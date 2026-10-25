@@ -1,0 +1,15 @@
+=== 0xae9d ===
+
+void FUN_CODE_ae9d(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_1761(param_1,0);
+  uVar1 = RXCNTL;
+  nop();
+  uVar1 = TXCNTL;
+  FUN_CODE_a8ae(uVar1);
+  return;
+}
+

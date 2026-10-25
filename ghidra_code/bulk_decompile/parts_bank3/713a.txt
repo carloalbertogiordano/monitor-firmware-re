@@ -1,0 +1,32 @@
+=== 0x713a ===
+
+void FUN_CODE_713a(char param_1)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  thunk_FUN_CODE_218f(param_1 + '\x01');
+  return;
+}
+

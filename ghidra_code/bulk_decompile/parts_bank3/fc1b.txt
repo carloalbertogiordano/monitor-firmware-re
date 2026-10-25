@@ -1,0 +1,8 @@
+=== 0xfc1b ===
+
+char FUN_CODE_fc1b(byte param_1,char param_2)
+
+{
+  return param_2 + (DAT_EXTMEM_e35c - ((CARRY1(param_1,DAT_EXTMEM_e35d) << 7) >> 7));
+}
+

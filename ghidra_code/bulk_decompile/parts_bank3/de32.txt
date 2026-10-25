@@ -1,0 +1,8 @@
+=== 0xde32 ===
+
+byte FUN_CODE_de32(void)
+
+{
+  return DAT_EXTMEM_e6c9 >> 2 & 3;
+}
+

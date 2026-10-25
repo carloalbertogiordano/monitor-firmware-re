@@ -1,0 +1,37 @@
+=== 0xf456 ===
+
+void FUN_CODE_f456(void)
+
+{
+  char cVar1;
+  
+  FUN_CODE_074b(0,10);
+  DAT_EXTMEM_0b06 = DAT_EXTMEM_0b06 & 0xf0 | 0xf;
+  FUN_CODE_074b(0,2);
+  cVar1 = FUN_CODE_8d87();
+  if (cVar1 == '\x10') {
+    DAT_INTMEM_29 = 0x20;
+    DAT_INTMEM_2a = 2;
+  }
+  else if (cVar1 == ' ') {
+    DAT_INTMEM_29 = 0x40;
+    DAT_INTMEM_2a = 4;
+  }
+  else if (cVar1 == '0') {
+    DAT_INTMEM_29 = 0x80;
+    DAT_INTMEM_2a = 8;
+  }
+  else if (cVar1 == '\0') {
+    DAT_INTMEM_29 = 0x10;
+    DAT_INTMEM_2a = 1;
+  }
+  else {
+    DAT_INTMEM_29 = 0;
+    DAT_INTMEM_2a = 0;
+  }
+  if (((DAT_EXTMEM_0b06 & DAT_INTMEM_2a) == 0) && ((DAT_EXTMEM_0b14 & DAT_INTMEM_29) != 0)) {
+    return;
+  }
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xfc40 ===
+
+void FUN_CODE_fc40(undefined1 *param_1,undefined1 param_2)
+
+{
+  *param_1 = param_2;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x0e0c ===
+
+void thunk_FUN_CODE_0e1a(short param_1,undefined1 *param_2)
+
+{
+  nop();
+  FUN_CODE_0e1a(param_1,param_2);
+  return;
+}
+

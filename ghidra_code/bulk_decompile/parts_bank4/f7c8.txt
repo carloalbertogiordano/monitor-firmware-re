@@ -1,0 +1,19 @@
+=== 0xf7c8 ===
+
+void FUN_CODE_f7c8(void)
+
+{
+  char cVar1;
+  
+  cVar1 = '\0';
+  FUN_CODE_ef28();
+  if ((cVar1 != '\x01') && (cVar1 != '\0')) {
+    return;
+  }
+  cVar1 = FUN_CODE_f00d();
+  if (cVar1 == '\0') {
+    return;
+  }
+  return;
+}
+

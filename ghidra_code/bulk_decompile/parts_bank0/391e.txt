@@ -1,0 +1,19 @@
+=== 0x391e ===
+
+void FUN_CODE_391e(byte param_1,byte *param_2,char *param_3,byte *param_4,char param_5,byte param_6,
+                  char param_7,char param_8)
+
+{
+  byte bVar1;
+  char cVar2;
+  
+  bVar1 = param_1;
+  do {
+    bVar1 = (bVar1 << 1 | bVar1 >> 7) + *param_3 + param_8;
+    cVar2 = CARRY1(bVar1,param_1) << 7;
+    param_1 = FUN_CODE_3ff2(bVar1 + param_1,param_2,param_4,param_5,param_6,param_7,param_8);
+    bVar1 = param_1 - (param_6 - (cVar2 >> 7));
+    param_4 = (byte *)0xff;
+  } while( true );
+}
+

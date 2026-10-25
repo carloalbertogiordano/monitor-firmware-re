@@ -1,0 +1,10 @@
+=== 0x745b ===
+
+void FUN_CODE_745b(void)
+
+{
+  FUN_CODE_17ba(0x37 < DAT_EXTMEM_e358,DAT_EXTMEM_e358 - 0x38,DAT_EXTMEM_e35f,DAT_EXTMEM_e360);
+  FUN_CODE_152f(0,0,0,200);
+  return;
+}
+

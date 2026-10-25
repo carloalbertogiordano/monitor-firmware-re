@@ -1,0 +1,9 @@
+=== 0x8b45 ===
+
+byte FUN_CODE_8b45(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  return DAT_EXTMEM_0b96 & 0xfc;
+}
+

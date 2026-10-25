@@ -1,0 +1,9 @@
+=== 0xfce2 ===
+
+void FUN_CODE_fce2(undefined1 param_1,undefined1 param_2)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(BANK0_R5,0,BANK0_R2,param_1,param_2);
+}
+

@@ -1,0 +1,35 @@
+=== 0x4927 ===
+
+void FUN_CODE_4927(char param_1,char *param_2,char param_3,char param_4,undefined1 param_5)
+
+{
+  char cVar1;
+  char cVar2;
+  
+  cVar2 = FUN_CODE_4927(param_1 + param_4,param_2,param_3,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  cVar1 = param_3 + -1;
+  cVar2 = FUN_CODE_4927(cVar2 + param_4,param_2,cVar1,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  cVar1 = cVar1 + -1;
+  cVar2 = FUN_CODE_4927(cVar2 + param_4,param_2,cVar1,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  cVar1 = cVar1 + -1;
+  cVar2 = FUN_CODE_4927(cVar2 + param_4,param_2,cVar1,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  cVar1 = cVar1 + -1;
+  cVar2 = FUN_CODE_4927(cVar2 + param_4,param_2,cVar1,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  cVar1 = cVar1 + -1;
+  cVar2 = FUN_CODE_4927(cVar2 + param_4,param_2,cVar1,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  cVar1 = cVar1 + -1;
+  cVar2 = FUN_CODE_4927(cVar2 + param_4,param_2,cVar1,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  FUN_CODE_4927(cVar2 + param_4,param_2,cVar1 + -1,param_4,param_5);
+  *param_2 = *param_2 + '\x01';
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

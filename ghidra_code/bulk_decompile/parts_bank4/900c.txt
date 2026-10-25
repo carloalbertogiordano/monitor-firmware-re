@@ -1,0 +1,20 @@
+=== 0x900c ===
+
+void FUN_CODE_900c(char param_1)
+
+{
+  byte bVar1;
+  short sVar2;
+  
+  if (param_1 - 1U < 0xf) {
+    sVar2 = -0x6fe1;
+    bVar1 = FUN_CODE_bec9(1);
+                    /* WARNING: Could not recover jumptable at 0x901e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)(sVar2 + (ushort)bVar1))();
+    return;
+  }
+  FUN_CODE_9172();
+  return;
+}
+

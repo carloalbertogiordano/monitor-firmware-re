@@ -1,0 +1,8 @@
+=== 0x1640 ===
+
+char FUN_CODE_1640(char param_1,char *param_2)
+
+{
+  return param_1 + *param_2;
+}
+

@@ -1,0 +1,10 @@
+=== 0xe35a ===
+
+void FUN_CODE_e35a(short param_1)
+
+{
+  DAT_EXTMEM_e34d = *(undefined1 *)(param_1 + 1);
+  DAT_EXTMEM_e34e = *(undefined1 *)(param_1 + 2);
+  return;
+}
+

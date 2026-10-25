@@ -1,0 +1,145 @@
+=== 0x3213 ===
+
+/* WARNING: Instruction at (CODE,0x3215) overlaps instruction at (CODE,0x3213)
+    */
+
+char FUN_CODE_3213(byte param_1,byte *param_2,byte param_3,byte param_4,char param_5,byte param_6,
+                  byte param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  char in_PSW;
+  short sVar5;
+  
+  do {
+    nop();
+    *param_2 = *param_2 + 1;
+    do {
+      param_1 = param_1 + 1;
+    } while (_0_2 == '\x01');
+    nop();
+    bVar4 = param_7 - (in_PSW >> 7);
+    bVar1 = (param_1 < bVar4) << 7;
+    param_6 = param_6 - 1;
+    cVar3 = func_0x3112(param_1 - bVar4,0xc203);
+    sVar5 = 0x1c11;
+    nop();
+    *param_2 = *param_2 + 1;
+    bVar4 = cVar3 + 1;
+    if (_0_2 != '\x01') {
+      nop();
+      return bVar4 - (param_7 - ((char)bVar1 >> 7));
+    }
+LAB_CODE_31c6:
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    bVar4 = (bVar4 < param_7 - ((char)bVar1 >> 7)) << 7;
+    if (_2_2 == '\0') {
+      bVar4 = param_7 + (char)param_2 * '\x03';
+      param_3 = param_3 + 1;
+      param_2 = param_2 + '\x01';
+      bVar1 = CARRY1(bVar4,(byte)param_2) << 7;
+      DAT_INTMEM_43 = DAT_INTMEM_43 | (byte)(param_2 + bVar4) ^ param_6 ^ param_3;
+      bVar4 = FUN_CODE_3115(0x5a);
+LAB_CODE_3188:
+      bVar1 = bVar1 & 0xdd;
+      if ((bVar4 & 0x23) != 0) {
+        param_6 = ((bVar4 & 0x23) >> 1 | bVar4 << 7 | (byte)param_2) + DAT_INTMEM_5f + param_5 + 1 ^
+                  param_6;
+        DAT_INTMEM_22 = DAT_INTMEM_22 | param_6;
+        cVar3 = FUN_CODE_302a(param_6 ^ *param_2,0x48);
+                    /* WARNING: Could not recover jumptable at 0x319f. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+        cVar3 = (*(code *)(sVar5 + (ushort)((cVar3 + -1 + param_3 ^ (byte)param_2) & param_3)))
+                          (param_4 - 1);
+        return cVar3;
+      }
+      if (_b_1 == '\0') {
+        return 'T';
+      }
+      _b_1 = '\0';
+      bVar4 = 0;
+LAB_CODE_31be:
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      goto LAB_CODE_31c6;
+    }
+    cVar3 = FUN_CODE_3000(param_7);
+    *param_2 = *param_2 + 1;
+    if (_5_0 == '\x01') {
+      bVar2 = cVar3 + 1U | param_7;
+      *param_2 = 0x47;
+      bVar1 = bVar2 << 7;
+      bVar4 = ((bVar2 >> 1 | bVar4 & 0x80) ^ param_7) & param_4 ^ param_4;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      goto LAB_CODE_31be;
+    }
+    nop();
+    bVar1 = (cVar3 + 1U < param_7 - ((char)bVar4 >> 7)) << 7;
+    bVar4 = param_7;
+    if (_2_2 == '\0') goto LAB_CODE_3188;
+    bVar4 = FUN_CODE_3000(param_7);
+    *param_2 = *param_2 + 1;
+    do {
+      bVar4 = bVar4 + 1;
+    } while (_0_2 == '\x01');
+    nop();
+    bVar1 = param_7 - ((char)bVar1 >> 7);
+    param_7 = 0x9d;
+    bVar1 = ((bVar4 - bVar1) - (-0x55 - (((bVar4 < bVar1) << 7) >> 7))) + *param_2;
+    bVar4 = bVar1 - 0x29;
+    nop();
+    bVar1 = param_6 - (((0x28 < bVar1) << 7) >> 7);
+    bVar2 = bVar4 - bVar1;
+    nop();
+    bVar1 = 0x9d - (((bVar4 < bVar1) << 7) >> 7);
+    in_PSW = (bVar2 < bVar1) << 7;
+    _4_0 = 0;
+    bVar1 = FUN_CODE_90c2(bVar2 - bVar1,0x7f);
+    param_1 = bVar1 >> 1 | bVar1 << 7;
+  } while( true );
+}
+

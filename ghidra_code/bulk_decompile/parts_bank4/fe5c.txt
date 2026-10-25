@@ -1,0 +1,9 @@
+=== 0xfe5c ===
+
+undefined1 FUN_CODE_fe5c(undefined1 *param_1)
+
+{
+  FUN_CODE_7da2();
+  return *param_1;
+}
+

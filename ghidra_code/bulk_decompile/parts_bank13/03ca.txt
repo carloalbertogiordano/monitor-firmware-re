@@ -1,0 +1,129 @@
+=== 0x03ca ===
+
+/* WARNING: Instruction at (CODE,0x0439) overlaps instruction at (CODE,0x0438)
+    */
+
+void FUN_CODE_03ca(byte param_1,byte *param_2,byte *param_3,char *param_4,char param_5,char param_6,
+                  byte param_7,char param_8,byte param_9,char param_10)
+
+{
+  ushort uVar1;
+  byte bVar2;
+  char cVar3;
+  byte in_B;
+  byte bVar4;
+  undefined1 *puVar5;
+  undefined1 *puVar6;
+  undefined1 *puVar7;
+  byte in_PSW;
+  
+  puVar5 = (undefined1 *)0x0;
+code_c0x03ca:
+  param_1 = param_1 + (*param_4 - ((char)in_PSW >> 7));
+  DAT_INTMEM_79 = DAT_INTMEM_79 ^ 0x37;
+  in_PSW = 0;
+  puVar7 = puVar5;
+  if (param_4 == &BANK1_R3) {
+    while( true ) {
+      _1_4 = 0;
+      if (param_1 != 0) goto code_c0x043f;
+      nop();
+      param_1 = 0;
+      if ((char)in_PSW < '\0') break;
+      if (-1 < (char)in_PSW) {
+        FUN_CODE_030a(0,param_2,in_B,param_3,(char)param_4,param_5,param_6,param_7,param_8,param_9,
+                      param_10);
+        return;
+      }
+      if (-1 < (char)in_PSW) {
+        bVar2 = param_5 - ((char)in_PSW >> 7);
+                    /* WARNING: Could not recover jumptable at 0x0742. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+        (*(code *)(param_2 + (bVar2 + 1 >> 1 | (0xfe < bVar2) << 7)))();
+        return;
+      }
+      DAT_INTMEM_50 = DAT_INTMEM_50 + '\x01';
+      param_1 = param_7 & 1;
+      *param_3 = *param_3 + 1;
+      puVar6 = puVar7;
+      do {
+        if (_d_0 != '\x01') {
+          param_1 = 7;
+          param_2 = &LAB_CODE_7e08;
+        }
+        cVar3 = IT0;
+        if (cVar3 == '\0') {
+code_c0x0434:
+          param_5 = param_5 + 1;
+          bVar2 = RXD;
+          bVar2 = in_PSW >> 7 & ~bVar2;
+          goto LAB_CODE_0436;
+        }
+        DAT_SFR_92 = *puVar6;
+        puVar5 = puVar6 + -1;
+        puVar7 = puVar6 + -1;
+        param_4 = param_4 + '\x01';
+        if (param_1 != 0) {
+          param_4 = &DAT_INTMEM_37;
+          goto code_c0x03ca;
+        }
+        cVar3 = P2_6;
+        puVar6 = puVar6 + -1;
+        if (cVar3 == '\0') goto code_c0x0434;
+        P2_6 = 0;
+        param_5 = 0;
+code_c0x043f:
+        param_7 = param_7 + 1;
+        _1_5 = 1;
+        param_1 = 0;
+        puVar6 = puVar7;
+      } while (*param_2 == 0);
+      param_8 = param_8 + 1;
+      param_1 = *(byte *)ZEXT12(param_3);
+      param_9 = param_9 + 1;
+      if (param_1 != 0) {
+        do {
+          bVar2 = *param_2;
+          *(byte *)ZEXT12(param_3) = bVar2;
+        } while (bVar2 == 0);
+        FUN_CODE_0702(bVar2,param_6);
+        return;
+      }
+      while( true ) {
+        bVar2 = in_PSW >> 7 & ~_1_3;
+        in_PSW = bVar2 << 7;
+        if (-1 < (char)in_PSW) break;
+        bVar4 = CCON;
+        CCON = bVar4 | 0x3d;
+        bVar2 = bVar2 ^ 1;
+        param_10 = param_10 - 1;
+        if (param_10 == 0) {
+          bVar2 = -((CARRY1(*param_3,param_9 - ((char)param_1 >> 7)) << 7) >> 7);
+          bVar4 = param_9 + bVar2;
+          DAT_INTMEM_3f = bVar4 >> 1 | CARRY1(param_9,bVar2) << 7;
+          uVar1 = (ushort)DAT_INTMEM_3f;
+          puVar6['\x01'] = BANK0_R0;
+          nop();
+          nop();
+          nop();
+          nop();
+          FUN_CODE_0070(*(char *)(uVar1 + 0x402) - ((char)(bVar4 * -0x80) >> 7),(short)(param_2 + 2)
+                       );
+          return;
+        }
+LAB_CODE_0436:
+        in_PSW = bVar2 << 7;
+        param_6 = param_6 + '\x01';
+      }
+      param_6 = param_6 + '\x01';
+      DAT_SFR_c2 = *puVar6;
+      puVar7 = puVar6 + -1;
+      param_7 = param_7 + 1;
+    }
+  }
+  nop();
+  *param_2 = param_1;
+  FUN_CODE_00a0(param_1 - 1,(short)param_2);
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0xfca6 ===
+
+void FUN_CODE_fca6(void)
+
+{
+  if (((bEXTMEM0002 & 99) == 0) && ((DAT_EXTMEM_000c & 1) == 0)) {
+    return;
+  }
+  return;
+}
+

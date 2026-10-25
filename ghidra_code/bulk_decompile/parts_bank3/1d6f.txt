@@ -1,0 +1,8 @@
+=== 0x1d6f ===
+
+undefined1 FUN_CODE_1d6f(void)
+
+{
+  return 0xff;
+}
+

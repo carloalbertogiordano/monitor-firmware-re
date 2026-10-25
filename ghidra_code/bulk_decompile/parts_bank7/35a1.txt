@@ -1,0 +1,4093 @@
+=== 0x35a1 ===
+
+/* WARNING: Instruction at (CODE,0xbff2) overlaps instruction at (CODE,0xbff0)
+    */
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Possible PIC construction at 0xbd21: Changing call to branch */
+/* WARNING: Possible PIC construction at 0xbb21: Changing call to branch */
+/* WARNING: Possible PIC construction at 0xb431: Changing call to branch */
+/* WARNING: Removing unreachable block (CODE,0x0000) */
+/* WARNING: Removing unreachable block (CODE,0xb433) */
+/* WARNING: Removing unreachable block (CODE,0xbb23) */
+/* WARNING: Removing unreachable block (CODE,0xbd23) */
+/* WARNING: Removing unreachable block (CODE,0x0009) */
+/* WARNING: Removing unreachable block (CODE,0xb539) */
+/* WARNING: Removing unreachable block (CODE,0xb54c) */
+/* WARNING: Removing unreachable block (CODE,0xb54e) */
+/* WARNING: Removing unreachable block (CODE,0xb549) */
+/* WARNING: Removing unreachable block (CODE,0xb339) */
+/* WARNING: Removing unreachable block (CODE,0xbd09) */
+/* WARNING: Removing unreachable block (CODE,0xbc29) */
+/* WARNING: Removing unreachable block (CODE,0xbc3c) */
+/* WARNING: Removing unreachable block (CODE,0xbc3e) */
+/* WARNING: Removing unreachable block (CODE,0xbc39) */
+/* WARNING: Removing unreachable block (CODE,0xb739) */
+/* WARNING: Removing unreachable block (CODE,0xb139) */
+/* WARNING: Removing unreachable block (CODE,0xb619) */
+/* WARNING: Removing unreachable block (CODE,0xbb29) */
+/* WARNING: Removing unreachable block (CODE,0xbd29) */
+/* WARNING: Removing unreachable block (CODE,0xba29) */
+/* WARNING: Removing unreachable block (CODE,0xb9e9) */
+/* WARNING: Removing unreachable block (CODE,0xb2f9) */
+/* WARNING: Removing unreachable block (CODE,0xb439) */
+/* WARNING: Removing unreachable block (CODE,0xb30e) */
+/* WARNING: Removing unreachable block (CODE,0xb829) */
+/* WARNING: Removing unreachable block (CODE,0xb9fe) */
+/* WARNING: Removing unreachable block (CODE,0xbe29) */
+/* WARNING: Removing unreachable block (CODE,0xbf59) */
+/* WARNING: Removing unreachable block (CODE,0xb559) */
+/* WARNING: Removing unreachable block (CODE,0xbc49) */
+
+byte * FUN_CODE_35a1(byte *param_1,undefined1 *param_2,byte param_3,byte *param_4,byte *param_5,
+                    byte *param_6,byte *param_7,byte *param_8,byte *param_9,byte *param_10)
+
+{
+  short sVar1;
+  char cVar2;
+  byte *pbVar3;
+  byte *pbVar4;
+  byte *pbVar5;
+  byte *pbVar6;
+  byte bVar7;
+  byte bVar8;
+  byte *pbVar9;
+  byte *pbVar10;
+  undefined1 *puVar11;
+  undefined1 *puVar12;
+  undefined1 *puVar13;
+  undefined1 *puVar14;
+  undefined1 *puVar16;
+  undefined1 *puVar17;
+  undefined1 *puVar18;
+  byte in_PSW;
+  undefined1 *puVar19;
+  undefined1 *puVar20;
+  undefined1 *puVar15;
+  
+  puVar18 = (undefined1 *)0x0;
+  nop();
+  pbVar6 = param_1;
+  do {
+    while (pbVar5 = pbVar6, param_1 = param_1 + '\x01', -1 < (char)in_PSW) {
+LAB_CODE_b067:
+      nop();
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        goto LAB_CODE_b074;
+      }
+      pbVar6 = param_1;
+      if ((char)in_PSW < '\0') {
+        pbVar6 = (byte *)((byte)param_1 ^ 0x50);
+LAB_CODE_b070:
+        param_1 = (byte *)(((byte)(pbVar6 + '\x01') | (byte)param_10) ^ 100);
+LAB_CODE_b074:
+        param_6 = param_6 + '\x01';
+        nop();
+        nop();
+        nop();
+        param_1 = param_1 + '\x01';
+        if (_3_2 != '\0') {
+          _3_2 = '\0';
+          goto LAB_CODE_b084;
+        }
+        pbVar6 = pbVar5;
+        if ((char)in_PSW < '\0') {
+          pbVar6 = (byte *)((byte)param_1 ^ 0x35);
+LAB_CODE_b080:
+          param_1 = (byte *)(((byte)(pbVar6 + '\x01') | (byte)param_9) ^ 100);
+LAB_CODE_b084:
+          param_6 = param_6 + '\x01';
+          nop();
+          nop();
+          nop();
+          param_1 = param_1 + '\x01';
+          if (_3_2 != '\0') {
+            _3_2 = '\0';
+            goto LAB_CODE_b094;
+          }
+          if (-1 < (char)in_PSW) goto LAB_CODE_b010;
+          pbVar6 = (byte *)((byte)param_1 ^ 0x1d);
+LAB_CODE_b090:
+          param_1 = (byte *)(((byte)(pbVar6 + '\x01') | (byte)param_8) ^ 100);
+LAB_CODE_b094:
+          param_6 = param_6 + '\x01';
+          nop();
+          nop();
+          nop();
+          param_1 = param_1 + '\x01';
+          if (_3_2 != '\0') {
+            _3_2 = '\0';
+            puVar13 = puVar18;
+            goto LAB_CODE_b0a4;
+          }
+          if ((char)in_PSW < '\0') {
+            pbVar6 = (byte *)((byte)param_1 ^ 0x78);
+LAB_CODE_b0a0:
+            param_1 = (byte *)(((byte)(pbVar6 + '\x01') | (byte)param_7) ^ 100);
+            puVar13 = puVar18;
+LAB_CODE_b0a4:
+            param_6 = param_6 + '\x01';
+            nop();
+            nop();
+            nop();
+            param_1 = param_1 + '\x01';
+            if (_3_2 == '\0') {
+              if ((char)in_PSW < '\0') {
+                param_1 = (byte *)((byte)param_1 ^ 0x4d);
+                goto LAB_CODE_b0b0;
+              }
+              BANK0_R0 = BANK0_R0 + '\x01';
+              puVar18 = puVar13;
+              puVar19 = param_2;
+              goto LAB_CODE_b401;
+            }
+            _3_2 = '\0';
+            do {
+              param_6 = param_6 + '\x01';
+              nop();
+              nop();
+              nop();
+              param_1 = param_1 + '\x01';
+              if (_3_2 == '\0') {
+                if ((char)in_PSW < '\0') {
+                  pbVar6 = (byte *)((byte)param_1 ^ 0x28);
+                  goto LAB_CODE_b0c0;
+                }
+                nop();
+                nop();
+                nop();
+                nop();
+                nop();
+                bVar8 = (byte)(param_1 + (char)param_10) & BANK0_R2;
+                nop();
+                nop();
+                nop();
+                puVar13['\x01'] = 0x57;
+                puVar13['\x02'] = 0xb0;
+                FUN_CODE_3124(bVar8,param_1 + (char)param_10);
+                nop();
+                pbVar6 = (byte *)FUN_CODE_004b(1);
+                return pbVar6;
+              }
+              _3_2 = '\0';
+              puVar11 = puVar13;
+LAB_CODE_b0c4:
+              param_6 = param_6 + '\x01';
+              nop();
+              nop();
+              nop();
+              param_1 = param_1 + '\x01';
+              if (_3_2 == '\0') {
+                if ((char)in_PSW < '\0') goto LAB_CODE_b0d0;
+                do {
+                  pbVar6 = param_1;
+                  nop();
+                  nop();
+                  nop();
+                  nop();
+                  nop();
+                  nop();
+                  nop();
+                  if (-1 < (char)in_PSW) {
+                    nop();
+                    *param_4 = *param_4 - 1;
+                    pbVar6 = (byte *)FUN_CODE_102e(*param_2);
+                    return pbVar6;
+                  }
+                  in_PSW = in_PSW & 0xdd;
+                  param_1 = (byte *)((byte)pbVar6 & BANK0_R7);
+                } while (-1 < (char)in_PSW);
+                puVar11['\x01'] = 0x18;
+                puVar11['\x02'] = 0;
+                pbVar6 = (byte *)FUN_CODE_070c(param_8 + '\x01',pbVar6);
+                DAT_INTMEM_51 = DAT_INTMEM_51 + -1;
+                bVar8 = DAT_SFR_92;
+                DAT_SFR_92 = bVar8 & (byte)pbVar6;
+                return pbVar6;
+              }
+              _3_2 = '\0';
+              puVar18 = puVar11;
+LAB_CODE_b0d4:
+              pbVar3 = param_6 + '\x01';
+              nop();
+              nop();
+              nop();
+              pbVar6 = param_1 + '\x01';
+              if (_3_2 == '\0') {
+                if ((char)in_PSW < '\0') {
+                  param_1 = (byte *)((byte)pbVar6 ^ 0x65);
+                  goto LAB_CODE_b0e0;
+                }
+                param_1 = (byte *)(((byte)(param_1 + '\x02') | (byte)pbVar5) ^ 100);
+                param_6 = param_6 + '\x02';
+                nop();
+                nop();
+                goto LAB_CODE_b067;
+              }
+              _3_2 = '\0';
+LAB_CODE_b0e4:
+              param_6 = pbVar3 + '\x01';
+              nop();
+              nop();
+              nop();
+              pbVar6 = pbVar6 + '\x01';
+              if (_3_2 != '\0') {
+                _3_2 = '\0';
+                pbVar3 = param_6;
+                goto LAB_CODE_b0f4;
+              }
+              if (-1 < (char)in_PSW) goto LAB_CODE_b070;
+              param_1 = (byte *)((byte)pbVar6 ^ 0x6d);
+LAB_CODE_b0f0:
+              pbVar6 = (byte *)(((byte)(param_1 + '\x01') | *param_4) ^ 100);
+              pbVar3 = param_6;
+LAB_CODE_b0f4:
+              param_6 = pbVar3 + '\x01';
+              nop();
+              nop();
+              nop();
+              pbVar6 = pbVar6 + '\x01';
+              if (_3_2 != '\0') {
+                _3_2 = '\0';
+                param_6 = pbVar3 + '\x02';
+                goto code_c0xb105;
+              }
+              if (-1 < (char)in_PSW) goto LAB_CODE_b080;
+              param_1 = (byte *)((byte)pbVar6 ^ 8);
+LAB_CODE_b100:
+              pbVar6 = (byte *)(((byte)(param_1 + '\x01') | (byte)DAT_INTMEM_64) ^ 10);
+code_c0xb105:
+              nop();
+              nop();
+              nop();
+              pbVar6 = pbVar6 + '\x01';
+              if (_3_2 != '\0') {
+                _3_2 = '\0';
+                param_6 = param_6 + '\x01';
+                goto code_c0xb115;
+              }
+              if (-1 < (char)in_PSW) goto LAB_CODE_b090;
+              param_1 = (byte *)((byte)pbVar6 ^ 0x20);
+LAB_CODE_b110:
+              pbVar6 = (byte *)(((byte)(param_1 + '\x01') | 100) ^ 10);
+code_c0xb115:
+              nop();
+              nop();
+              nop();
+              pbVar6 = pbVar6 + '\x01';
+              if (_3_2 == '\0') {
+                if ((char)in_PSW < '\0') {
+                  param_1 = (byte *)((byte)pbVar6 ^ 0x45);
+                  goto LAB_CODE_b120;
+                }
+                goto LAB_CODE_b0a0;
+              }
+              _3_2 = '\0';
+              puVar13 = puVar18;
+LAB_CODE_b124:
+              pbVar3 = param_6 + '\x01';
+              nop();
+              nop();
+              nop();
+              param_1 = pbVar6 + '\x01';
+              if (_3_2 != '\0') goto code_c0xb129;
+              param_6 = pbVar3;
+              if ((char)in_PSW < '\0') {
+                param_1 = (byte *)((byte)param_1 ^ 0x70);
+                puVar18 = puVar13;
+                puVar19 = param_2;
+LAB_CODE_b130:
+                param_1 = param_1 + '\x01';
+LAB_CODE_b664:
+                param_6 = param_6 + '\x01';
+                nop();
+                nop();
+                nop();
+                param_1 = param_1 + '\x01';
+                if (_3_2 == '\0') {
+                  if (-1 < (char)in_PSW) goto LAB_CODE_b5f0;
+                  param_1 = (byte *)((byte)param_1 ^ 0x41);
+                  goto LAB_CODE_b670;
+                }
+                _3_2 = '\0';
+LAB_CODE_b674:
+                param_6 = param_6 + '\x01';
+                nop();
+                nop();
+                nop();
+                param_1 = param_1 + '\x01';
+                if (_3_2 != '\0') {
+                  _3_2 = '\0';
+                  goto LAB_CODE_b684;
+                }
+                if ((char)in_PSW < '\0') {
+                  param_1 = (byte *)((byte)param_1 ^ 0x69);
+                  goto LAB_CODE_b680;
+                }
+LAB_CODE_b600:
+                param_1 = (byte *)0x6e;
+code_c0xb605:
+                nop();
+                nop();
+                nop();
+                pbVar6 = param_1 + '\x01';
+                if (_3_2 == '\0') {
+                  if (-1 < (char)in_PSW) goto LAB_CODE_b590;
+                  param_1 = (byte *)((byte)pbVar6 ^ 0x4b);
+LAB_CODE_b610:
+                  pbVar6 = (byte *)(*(code *)(puVar19 + ZEXT12(param_1 + '\x01')))();
+                  return pbVar6;
+                }
+                _3_2 = '\0';
+                pbVar6 = param_6 + '\x01';
+                nop();
+                nop();
+                nop();
+                param_1 = param_1 + '\x02';
+                if (-1 < (char)in_PSW) goto LAB_CODE_b5a0;
+                param_1 = (byte *)((byte)param_1 ^ 0x7e);
+LAB_CODE_b620:
+                in_PSW = (in_PSW >> 7 | _c_4) << 7;
+                nop();
+                nop();
+                nop();
+                bVar8 = ((byte)(param_1 + '\x01') ^ 10) + 1;
+                if (_3_2 == '\0') {
+                  param_6 = pbVar6;
+                  if (-1 < (char)in_PSW) goto LAB_CODE_b5b0;
+                  param_1 = (byte *)(bVar8 ^ 0x1b);
+                  goto LAB_CODE_b630;
+                }
+                _3_2 = '\0';
+                param_6 = pbVar6 + '\x01';
+code_c0xb635:
+                nop();
+                nop();
+                nop();
+                bVar8 = bVar8 + 1;
+                if (_3_2 == '\0') {
+                  if (-1 < (char)in_PSW) goto LAB_CODE_b5c0;
+                  param_1 = (byte *)(bVar8 ^ 0x33);
+LAB_CODE_b640:
+                  param_1 = param_1 + '\x01';
+                  if (param_1 != (byte *)0x0) {
+LAB_CODE_b6a7:
+                    nop();
+                    param_1 = param_1 + '\x01';
+                    if (_3_2 != '\0') {
+                      _3_2 = '\0';
+                      goto LAB_CODE_b6b4;
+                    }
+                    if (-1 < (char)in_PSW) goto LAB_CODE_b630;
+                    pbVar6 = (byte *)((byte)param_1 ^ 0x5c);
+                    while( true ) {
+                      param_1 = (byte *)((byte)(pbVar6 + '\x01') ^ (byte)param_5 ^ 100);
+LAB_CODE_b6b4:
+                      param_6 = param_6 + '\x01';
+                      nop();
+                      nop();
+                      nop();
+                      param_1 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        goto LAB_CODE_b6c4;
+                      }
+                      if (-1 < (char)in_PSW) break;
+                      param_1 = (byte *)((byte)param_1 ^ 0x74);
+LAB_CODE_b6c0:
+                      param_1 = (byte *)((byte)(param_1 + '\x01') ^ (byte)param_4 ^ 100);
+LAB_CODE_b6c4:
+                      param_6 = param_6 + '\x01';
+                      nop();
+                      nop();
+                      nop();
+                      param_1 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        goto LAB_CODE_b6d4;
+                      }
+                      if (-1 < (char)in_PSW) goto LAB_CODE_b650;
+                      bVar8 = (byte)param_1 ^ 0x11;
+LAB_CODE_b6d0:
+                      param_1 = (byte *)(bVar8 + 1 ^ *param_5 ^ 100);
+LAB_CODE_b6d4:
+                      param_6 = param_6 + '\x01';
+                      nop();
+                      nop();
+                      nop();
+                      param_1 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        pbVar6 = param_6;
+                        goto LAB_CODE_b6e4;
+                      }
+                      if (-1 < (char)in_PSW) goto LAB_CODE_b660;
+                      bVar8 = (byte)param_1 ^ 0x19;
+LAB_CODE_b6e0:
+                      param_1 = (byte *)(bVar8 + 1 ^ *param_4 ^ 100);
+                      pbVar6 = param_6;
+LAB_CODE_b6e4:
+                      param_6 = pbVar6 + '\x01';
+                      nop();
+                      nop();
+                      nop();
+                      param_1 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        param_6 = pbVar6 + '\x02';
+                        goto code_c0xb6f5;
+                      }
+                      if (-1 < (char)in_PSW) goto LAB_CODE_b670;
+                      bVar8 = (byte)param_1 ^ 0x7c;
+LAB_CODE_b6f0:
+                      param_1 = (byte *)(bVar8 + 1 ^ (byte)DAT_INTMEM_64 ^ 10);
+code_c0xb6f5:
+                      nop();
+                      nop();
+                      nop();
+                      param_1 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        param_6 = param_6 + '\x01';
+                        goto code_c0xb705;
+                      }
+                      if (-1 < (char)in_PSW) goto LAB_CODE_b680;
+                      bVar8 = (byte)param_1 ^ 0x54;
+LAB_CODE_b700:
+                      param_1 = (byte *)(bVar8 + 1 ^ 0x6e);
+code_c0xb705:
+                      nop();
+                      nop();
+                      nop();
+                      param_1 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        goto LAB_CODE_b714;
+                      }
+                      if (-1 < (char)in_PSW) goto LAB_CODE_b690;
+                      bVar8 = (byte)param_1 ^ 0x31;
+LAB_CODE_b710:
+                      param_1 = (byte *)(bVar8 + 1);
+                      DAT_INTMEM_64 = (byte *)((byte)DAT_INTMEM_64 ^ 100);
+LAB_CODE_b714:
+                      pbVar6 = param_6 + '\x01';
+                      nop();
+                      nop();
+                      nop();
+                      param_1 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        param_6 = param_6 + '\x02';
+                        goto code_c0xb725;
+                      }
+                      if (-1 < (char)in_PSW) goto LAB_CODE_b6a0;
+                      bVar8 = (byte)param_1 ^ 4;
+LAB_CODE_b720:
+                      DAT_INTMEM_64 = (byte *)((byte)DAT_INTMEM_64 ^ bVar8 + 1);
+                      param_1 = (byte *)(bVar8 + 1 ^ 10);
+                      param_6 = pbVar6;
+code_c0xb725:
+                      nop();
+                      nop();
+                      nop();
+                      pbVar6 = param_1 + '\x01';
+                      if (_3_2 != '\0') {
+                        _3_2 = '\0';
+                        param_6 = param_6 + '\x01';
+                        nop();
+                        nop();
+                        nop();
+                        param_1 = param_1 + '\x02';
+                        if ((char)in_PSW < '\0') {
+                          bVar7 = (byte)param_1 ^ 0x49;
+LAB_CODE_b740:
+                          bVar8 = 0;
+                          if (bVar7 + 1 == 0) goto LAB_CODE_b7a7;
+                          nop();
+                          nop();
+                          nop();
+                          bVar8 = (bVar7 + 1 ^ 10) + 1;
+                          if (_3_2 != '\0') {
+                            _3_2 = '\0';
+                            goto LAB_CODE_b754;
+                          }
+                          if ((char)in_PSW < '\0') {
+                            bVar7 = bVar8 ^ 0x2c;
+LAB_CODE_b750:
+                            in_PSW = in_PSW & 0xdd;
+                            bVar8 = bVar7 + 1 & (byte)pbVar5 ^ 100;
+LAB_CODE_b754:
+                            param_6 = param_6 + '\x01';
+                            nop();
+                            nop();
+                            nop();
+                            bVar8 = bVar8 + 1;
+                            if (_3_2 != '\0') {
+                              _3_2 = '\0';
+                              goto LAB_CODE_b764;
+                            }
+                            if ((char)in_PSW < '\0') {
+                              bVar7 = bVar8 ^ 0x2a;
+LAB_CODE_b760:
+                              in_PSW = in_PSW & 0xdd;
+                              bVar8 = bVar7 + 1 & (byte)param_10 ^ 100;
+LAB_CODE_b764:
+                              param_6 = param_6 + '\x01';
+                              nop();
+                              nop();
+                              nop();
+                              bVar8 = bVar8 + 1;
+                              if (_3_2 != '\0') {
+                                _3_2 = '\0';
+                                goto LAB_CODE_b774;
+                              }
+                              if ((char)in_PSW < '\0') {
+                                bVar7 = bVar8 ^ 0x4f;
+LAB_CODE_b770:
+                                in_PSW = in_PSW & 0xdd;
+                                bVar8 = bVar7 + 1 & (byte)param_9 ^ 100;
+LAB_CODE_b774:
+                                param_6 = param_6 + '\x01';
+                                nop();
+                                nop();
+                                nop();
+                                bVar8 = bVar8 + 1;
+                                if (_3_2 != '\0') {
+                                  _3_2 = '\0';
+                                  goto LAB_CODE_b784;
+                                }
+                                if ((char)in_PSW < '\0') {
+                                  bVar7 = bVar8 ^ 0x67;
+LAB_CODE_b780:
+                                  in_PSW = in_PSW & 0xdd;
+                                  bVar8 = bVar7 + 1 & (byte)param_8 ^ 100;
+LAB_CODE_b784:
+                                  param_6 = param_6 + '\x01';
+                                  nop();
+                                  nop();
+                                  nop();
+                                  bVar8 = bVar8 + 1;
+                                  if (_3_2 != '\0') {
+                                    _3_2 = '\0';
+                                    goto LAB_CODE_b794;
+                                  }
+                                  if ((char)in_PSW < '\0') {
+                                    pbVar3 = (byte *)(bVar8 ^ 2);
+LAB_CODE_b790:
+                                    in_PSW = in_PSW & 0xdd;
+                                    bVar8 = (byte)(pbVar3 + '\x01') & (byte)param_7 ^ 100;
+LAB_CODE_b794:
+                                    pbVar6 = param_6 + '\x01';
+                                    nop();
+                                    nop();
+                                    nop();
+                                    bVar8 = bVar8 + 1;
+                                    if (_3_2 != '\0') {
+                                      _3_2 = '\0';
+                                      goto LAB_CODE_b7a4;
+                                    }
+                                    if ((char)in_PSW < '\0') {
+                                      pbVar9 = (byte *)(bVar8 ^ 0x37);
+LAB_CODE_b7a0:
+                                      in_PSW = in_PSW & 0xdd;
+                                      bVar8 = (byte)(pbVar9 + '\x01') & (byte)pbVar6 ^ 100;
+LAB_CODE_b7a4:
+                                      param_6 = pbVar6 + '\x01';
+                                      nop();
+                                      nop();
+LAB_CODE_b7a7:
+                                      nop();
+                                      bVar8 = bVar8 + 1;
+                                      if (_3_2 != '\0') {
+                                        _3_2 = '\0';
+                                        puVar13 = puVar18;
+                                        goto LAB_CODE_b7b4;
+                                      }
+                                      if ((char)in_PSW < '\0') {
+                                        pbVar3 = (byte *)(bVar8 ^ 0x52);
+LAB_CODE_b7b0:
+                                        in_PSW = in_PSW & 0xdd;
+                                        bVar8 = (byte)(pbVar3 + '\x01') & (byte)param_5 ^ 100;
+                                        puVar13 = puVar18;
+LAB_CODE_b7b4:
+                                        param_6 = param_6 + '\x01';
+                                        nop();
+                                        nop();
+                                        nop();
+                                        bVar7 = bVar8 + 1;
+                                        puVar18 = puVar13;
+                                        if (_3_2 != '\0') {
+                                          _3_2 = '\0';
+                                          goto LAB_CODE_b7c4;
+                                        }
+                                        if ((char)in_PSW < '\0') {
+                                          pbVar3 = (byte *)(bVar7 ^ 0x7a);
+LAB_CODE_b7c0:
+                                          in_PSW = in_PSW & 0xdd;
+                                          bVar7 = (byte)(pbVar3 + '\x01') & (byte)param_4 ^ 100;
+                                          puVar18 = puVar13;
+LAB_CODE_b7c4:
+                                          param_6 = param_6 + '\x01';
+                                          nop();
+                                          nop();
+                                          nop();
+                                          bVar7 = bVar7 + 1;
+                                          if (_3_2 != '\0') {
+                                            _3_2 = '\0';
+                                            goto LAB_CODE_b7d4;
+                                          }
+                                          if ((char)in_PSW < '\0') {
+                                            pbVar3 = (byte *)(bVar7 ^ 0x1f);
+LAB_CODE_b7d0:
+                                            in_PSW = in_PSW & 0xdd;
+                                            bVar7 = (byte)(pbVar3 + '\x01') & *param_5 ^ 100;
+LAB_CODE_b7d4:
+                                            param_6 = param_6 + '\x01';
+                                            nop();
+                                            nop();
+                                            nop();
+                                            bVar7 = bVar7 + 1;
+                                            if (_3_2 != '\0') {
+                                              _3_2 = '\0';
+                                              pbVar6 = param_6;
+                                              goto LAB_CODE_b7e4;
+                                            }
+                                            if ((char)in_PSW < '\0') {
+                                              pbVar3 = (byte *)(bVar7 ^ 0x17);
+LAB_CODE_b7e0:
+                                              in_PSW = in_PSW & 0xdd;
+                                              bVar7 = (byte)(pbVar3 + '\x01') & *param_4 ^ 100;
+                                              pbVar6 = param_6;
+LAB_CODE_b7e4:
+                                              param_6 = pbVar6 + '\x01';
+                                              nop();
+                                              nop();
+                                              nop();
+                                              bVar7 = bVar7 + 1;
+                                              if (_3_2 != '\0') {
+                                                _3_2 = '\0';
+                                                param_6 = pbVar6 + '\x02';
+                                                goto code_c0xb7f5;
+                                              }
+                                              if ((char)in_PSW < '\0') {
+                                                pbVar3 = (byte *)(bVar7 ^ 0x72);
+LAB_CODE_b7f0:
+                                                in_PSW = in_PSW & 0xdd;
+                                                bVar7 = (byte)(pbVar3 + '\x01') &
+                                                        (byte)DAT_INTMEM_64 ^ 10;
+code_c0xb7f5:
+                                                nop();
+                                                nop();
+                                                nop();
+                                                bVar7 = bVar7 + 1;
+                                                if (_3_2 != '\0') {
+                                                  _3_2 = '\0';
+                                                  param_6 = param_6 + '\x01';
+                                                  goto code_c0xb805;
+                                                }
+                                                if (-1 < (char)in_PSW) goto LAB_CODE_b780;
+                                                pbVar3 = (byte *)(bVar7 ^ 0x5a);
+LAB_CODE_b800:
+                                                in_PSW = in_PSW & 0xdd;
+                                                bVar7 = (byte)(pbVar3 + '\x01') & 100 ^ 10;
+code_c0xb805:
+                                                nop();
+                                                nop();
+                                                nop();
+                                                pbVar3 = (byte *)(bVar7 + 1);
+                                                if (_3_2 != '\0') {
+                                                  _3_2 = '\0';
+                                                  goto LAB_CODE_b814;
+                                                }
+                                                if (-1 < (char)in_PSW) goto LAB_CODE_b790;
+                                                pbVar3 = (byte *)((byte)pbVar3 ^ 0x3f);
+LAB_CODE_b810:
+                                                pbVar3 = pbVar3 + '\x01';
+                                                DAT_INTMEM_64 = (byte *)((byte)DAT_INTMEM_64 & 100);
+                                                in_PSW = in_PSW & 0xdd;
+LAB_CODE_b814:
+                                                pbVar6 = param_6 + '\x01';
+                                                nop();
+                                                nop();
+                                                nop();
+                                                pbVar9 = pbVar3 + '\x01';
+                                                if (_3_2 == '\0') {
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar3 = (byte *)((byte)pbVar9 ^ 10);
+                                                    goto LAB_CODE_b820;
+                                                  }
+                                                  goto LAB_CODE_b7a0;
+                                                }
+                                                _3_2 = '\0';
+                                                param_6 = param_6 + '\x02';
+                                                nop();
+                                                nop();
+                                                nop();
+                                                pbVar3 = pbVar3 + '\x02';
+                                                if (-1 < (char)in_PSW) goto LAB_CODE_b7b0;
+                                                pbVar3 = (byte *)((byte)pbVar3 ^ 100);
+                                                while( true ) {
+                                                  puVar14 = puVar18 + '\x01';
+                                                  puVar13 = puVar18 + '\x01';
+                                                  puVar15 = puVar18 + '\x01';
+                                                  puVar18 = puVar18 + '\x01';
+                                                  *puVar14 = DAT_INTMEM_64;
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = (byte *)(((byte)(pbVar3 + '\x01') ^ 10) +
+                                                                   1);
+                                                  if (_3_2 != '\0') break;
+                                                  if (-1 < (char)in_PSW) goto LAB_CODE_b7c0;
+                                                  pbVar3 = (byte *)((byte)pbVar3 ^ 1);
+                                                  puVar18 = puVar15;
+LAB_CODE_b840:
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  in_PSW = (pbVar5 < &DAT_INTMEM_64) << 7;
+                                                  if ((byte **)pbVar5 == &DAT_INTMEM_64)
+                                                  goto LAB_CODE_b844;
+LAB_CODE_b8a8:
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 != '\0') {
+                                                    _3_2 = '\0';
+LAB_CODE_b8b4:
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    goto LAB_CODE_b8b8;
+                                                  }
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar3 = (byte *)((byte)pbVar3 ^ 0x38);
+                                                    while( true ) {
+                                                      pbVar3 = pbVar3 + '\x01';
+                                                      in_PSW = (param_4 < &DAT_INTMEM_64) << 7;
+                                                      if ((byte **)param_4 == &DAT_INTMEM_64) break;
+LAB_CODE_b918:
+                                                      pbVar3 = pbVar3 + '\x01';
+                                                      if (_3_2 != '\0') {
+                                                        _3_2 = '\0';
+                                                        param_6 = param_6 + '\x01';
+                                                        goto code_c0xb925;
+                                                      }
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_b8a0;
+                                                      pbVar3 = (byte *)((byte)pbVar3 ^ 0x2d);
+LAB_CODE_b920:
+                                                      puVar18['\x01'] = 0x23;
+                                                      puVar18['\x02'] = 0xb9;
+                                                      bVar8 = FUN_CODE_bd64(pbVar3 + '\x01');
+                                                      pbVar3 = (byte *)(bVar8 ^ 10);
+code_c0xb925:
+                                                      nop();
+                                                      nop();
+                                                      nop();
+LAB_CODE_b928:
+                                                      pbVar3 = pbVar3 + '\x01';
+                                                      if (_3_2 != '\0') {
+                                                        _3_2 = '\0';
+                                                        param_6 = param_6 + '\x01';
+                                                        goto code_c0xb935;
+                                                      }
+                                                      if ((char)in_PSW < '\0') {
+                                                        pbVar3 = (byte *)((byte)pbVar3 ^ 5);
+LAB_CODE_b930:
+                                                        in_PSW = (in_PSW >> 7 & ~_c_4) << 7;
+                                                        pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^
+                                                                         10);
+code_c0xb935:
+                                                        nop();
+                                                        nop();
+                                                        nop();
+LAB_CODE_b938:
+                                                        pbVar3 = pbVar3 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_b8c0;
+                                                          pbVar3 = (byte *)((byte)pbVar3 ^ 0x60);
+                                                          goto LAB_CODE_b940;
+                                                        }
+                                                        _3_2 = '\0';
+                                                        param_6 = param_6 + '\x01';
+code_c0xb945:
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar6 = pbVar5;
+LAB_CODE_b948:
+                                                        pbVar3 = pbVar3 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          pbVar5 = pbVar6;
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_b8d0;
+                                                          pbVar3 = (byte *)((byte)pbVar3 ^ 0x12);
+                                                          goto LAB_CODE_b950;
+                                                        }
+                                                        _3_2 = '\0';
+                                                        param_6 = param_6 + '\x01';
+code_c0xb955:
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar5 = pbVar6;
+LAB_CODE_b958:
+                                                        pbVar3 = pbVar3 + '\x01';
+                                                        if (_3_2 != '\0') {
+                                                          _3_2 = '\0';
+                                                          param_6 = param_6 + '\x01';
+                                                          goto code_c0xb965;
+                                                        }
+                                                        if ((char)in_PSW < '\0') {
+                                                          pbVar6 = (byte *)((byte)pbVar3 ^ 0x77);
+                                                          goto LAB_CODE_b960;
+                                                        }
+LAB_CODE_b8e0:
+                                                        pbVar3 = pbVar3 + '\x01';
+                                                        in_PSW = (pbVar3 < DAT_INTMEM_64) << 7;
+                                                        pbVar6 = pbVar5;
+                                                        if (pbVar3 == DAT_INTMEM_64) {
+LAB_CODE_b8e4:
+                                                          param_6 = param_6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+LAB_CODE_b8e8:
+                                                          pbVar3 = pbVar3 + '\x01';
+                                                          if (_3_2 != '\0') {
+                                                            _3_2 = '\0';
+                                                            goto LAB_CODE_b8f4;
+                                                          }
+                                                          if ((char)in_PSW < '\0') {
+                                                            pbVar3 = (byte *)((byte)pbVar3 ^ 0x18);
+                                                            goto LAB_CODE_b8f0;
+                                                          }
+LAB_CODE_b870:
+                                                          pbVar3 = pbVar3 + '\x01';
+                                                          in_PSW = (param_8 < &DAT_INTMEM_64) << 7;
+                                                          if ((byte **)param_8 != &DAT_INTMEM_64) {
+LAB_CODE_b8d8:
+                                                            pbVar3 = pbVar3 + '\x01';
+                                                            if (_3_2 != '\0') {
+                                                              _3_2 = '\0';
+                                                              goto LAB_CODE_b8e4;
+                                                            }
+                                                            if (-1 < (char)in_PSW) {
+LAB_CODE_b860:
+                                                              pbVar3 = pbVar3 + '\x01';
+                                                              in_PSW = (param_9 < &DAT_INTMEM_64) <<
+                                                                       7;
+                                                              if ((byte **)param_9 == &DAT_INTMEM_64
+                                                                 ) goto LAB_CODE_b864;
+                                                              while( true ) {
+                                                                pbVar3 = pbVar3 + '\x01';
+                                                                if (_3_2 != '\0') {
+                                                                  _3_2 = '\0';
+                                                                  goto LAB_CODE_b8d4;
+                                                                }
+                                                                if ((char)in_PSW < '\0') break;
+LAB_CODE_b850:
+                                                                pbVar3 = pbVar3 + '\x01';
+                                                                in_PSW = (param_10 < &DAT_INTMEM_64)
+                                                                         << 7;
+                                                                if ((byte **)param_10 ==
+                                                                    &DAT_INTMEM_64)
+                                                                goto LAB_CODE_b854;
+LAB_CODE_b8b8:
+                                                                pbVar3 = pbVar3 + '\x01';
+                                                                if (_3_2 == '\0') {
+                                                                  if (-1 < (char)in_PSW)
+                                                                  goto LAB_CODE_b840;
+                                                                  pbVar3 = (byte *)((byte)pbVar3 ^
+                                                                                   0x5d);
+LAB_CODE_b8c0:
+                                                                  pbVar3 = pbVar3 + '\x01';
+                                                                  in_PSW = (*param_5 < 100) << 7;
+                                                                  if (*param_5 != 100)
+                                                                  goto LAB_CODE_b928;
+                                                                }
+                                                                else {
+                                                                  _3_2 = '\0';
+                                                                }
+                                                                param_6 = param_6 + '\x01';
+                                                                nop();
+                                                                nop();
+                                                                nop();
+                                                              }
+                                                              pbVar3 = (byte *)((byte)pbVar3 ^ 0x55)
+                                                              ;
+LAB_CODE_b8d0:
+                                                              pbVar3 = pbVar3 + '\x01';
+                                                              in_PSW = (*param_4 < 100) << 7;
+                                                              if (*param_4 == 100)
+                                                              goto LAB_CODE_b8d4;
+                                                              goto LAB_CODE_b938;
+                                                            }
+                                                            pbVar3 = (byte *)((byte)pbVar3 ^ 0x30);
+                                                            goto LAB_CODE_b8e0;
+                                                          }
+LAB_CODE_b874:
+                                                          param_6 = param_6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          pbVar3 = pbVar3 + '\x01';
+                                                          if (_3_2 != '\0') {
+                                                            _3_2 = '\0';
+                                                            goto LAB_CODE_b884;
+                                                          }
+                                                          if ((char)in_PSW < '\0') {
+                                                            pbVar3 = (byte *)((byte)pbVar3 ^ 0x40);
+LAB_CODE_b880:
+                                                            pbVar3 = pbVar3 + '\x01';
+                                                            in_PSW = (param_7 < &DAT_INTMEM_64) << 7
+                                                            ;
+                                                            if ((byte **)param_7 == &DAT_INTMEM_64)
+                                                            {
+LAB_CODE_b884:
+                                                              param_6 = param_6 + '\x01';
+                                                              nop();
+                                                              nop();
+                                                              nop();
+                                                              pbVar3 = pbVar3 + '\x01';
+                                                              if (_3_2 != '\0') {
+                                                                _3_2 = '\0';
+                                                                goto LAB_CODE_b894;
+                                                              }
+                                                              if ((char)in_PSW < '\0') {
+                                                                pbVar3 = (byte *)((byte)pbVar3 ^
+                                                                                 0x75);
+LAB_CODE_b890:
+                                                                pbVar3 = pbVar3 + '\x01';
+                                                                in_PSW = (param_6 < &DAT_INTMEM_64)
+                                                                         << 7;
+                                                                if ((byte **)param_6 !=
+                                                                    &DAT_INTMEM_64)
+                                                                goto LAB_CODE_b8f8;
+LAB_CODE_b894:
+                                                                param_6 = param_6 + '\x01';
+                                                                nop();
+                                                                nop();
+                                                                nop();
+                                                                pbVar3 = pbVar3 + '\x01';
+                                                                if (_3_2 == '\0') {
+                                                                  pbVar6 = param_6;
+                                                                  if (-1 < (char)in_PSW) {
+LAB_CODE_b820:
+                                                                    pbVar3 = pbVar3 + '\x01';
+LAB_CODE_be64:
+                                                                    do {
+                                                                      pbVar9 = pbVar6 + '\x01';
+                                                                      nop();
+                                                                      nop();
+                                                                      nop();
+                                                                      pbVar3 = pbVar3 + '\x01';
+                                                                      if (_3_2 != '\0') {
+                                                                        _3_2 = '\0';
+                                                                        goto LAB_CODE_be74;
+                                                                      }
+                                                                      if (-1 < (char)in_PSW)
+                                                                      goto LAB_CODE_bdf0;
+                                                                      pbVar10 = (byte *)((byte)
+                                                  pbVar3 ^ 0x67);
+LAB_CODE_be70:
+                                                  in_PSW = in_PSW & 0xdd;
+                                                  pbVar3 = (byte *)((byte)(pbVar10 + '\x01') &
+                                                                    (byte)param_8 ^ 100);
+LAB_CODE_be74:
+                                                  pbVar9 = pbVar9 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 != '\0') {
+                                                    _3_2 = '\0';
+                                                    goto LAB_CODE_be84;
+                                                  }
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar10 = (byte *)((byte)pbVar3 ^ 2);
+                                                    goto LAB_CODE_be80;
+                                                  }
+LAB_CODE_be00:
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  DAT_INTMEM_64 =
+                                                       (byte *)((byte)DAT_INTMEM_64 ^ 100);
+LAB_CODE_be04:
+                                                  param_6 = pbVar9 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 != '\0') {
+                                                    _3_2 = '\0';
+                                                    param_6 = pbVar9 + '\x02';
+                                                    goto code_c0xbe15;
+                                                  }
+                                                  if (-1 < (char)in_PSW) goto LAB_CODE_bd90;
+                                                  pbVar3 = (byte *)((byte)pbVar3 ^ 4);
+LAB_CODE_be10:
+                                                  DAT_INTMEM_64 =
+                                                       (byte *)((byte)DAT_INTMEM_64 ^
+                                                               (byte)(pbVar3 + '\x01'));
+                                                  pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+code_c0xbe15:
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar6 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_bda0;
+                                                    pbVar3 = (byte *)((byte)pbVar6 ^ 0x61);
+LAB_CODE_be20:
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    goto LAB_CODE_bb63_1;
+                                                  }
+                                                  _3_2 = '\0';
+                                                  param_6 = param_6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x02';
+                                                  if (-1 < (char)in_PSW) goto LAB_CODE_bdb0;
+                                                  pbVar10 = (byte *)((byte)pbVar3 ^ 0x49);
+LAB_CODE_be30:
+                                                  pbVar3 = (byte *)0x0;
+                                                  if (pbVar10 + '\x01' == (byte *)0x0) {
+LAB_CODE_be97:
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    if (_3_2 != '\0') {
+                                                      _3_2 = '\0';
+                                                      goto LAB_CODE_bea4;
+                                                    }
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_be20;
+                                                    pbVar10 = (byte *)((byte)pbVar3 ^ 0x52);
+LAB_CODE_bea0:
+                                                    in_PSW = in_PSW & 0xdd;
+                                                    pbVar3 = (byte *)((byte)(pbVar10 + '\x01') &
+                                                                      (byte)param_5 ^ 100);
+LAB_CODE_bea4:
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar10 = pbVar3 + '\x01';
+                                                    if (_3_2 != '\0') {
+                                                      _3_2 = '\0';
+                                                      goto LAB_CODE_beb4;
+                                                    }
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_be30;
+                                                    pbVar10 = (byte *)((byte)pbVar10 ^ 0x7a);
+LAB_CODE_beb0:
+                                                    in_PSW = in_PSW & 0xdd;
+                                                    pbVar10 = (byte *)((byte)(pbVar10 + '\x01') &
+                                                                       (byte)param_4 ^ 100);
+LAB_CODE_beb4:
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar10 = pbVar10 + '\x01';
+                                                    if (_3_2 != '\0') {
+                                                      _3_2 = '\0';
+                                                      goto LAB_CODE_bec4;
+                                                    }
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_be40;
+                                                    pbVar10 = (byte *)((byte)pbVar10 ^ 0x1f);
+LAB_CODE_bec0:
+                                                    in_PSW = in_PSW & 0xdd;
+                                                    pbVar10 = (byte *)((byte)(pbVar10 + '\x01') &
+                                                                       *param_5 ^ 100);
+LAB_CODE_bec4:
+                                                    pbVar6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar10 = pbVar10 + '\x01';
+                                                    if (_3_2 != '\0') {
+                                                      _3_2 = '\0';
+                                                      goto LAB_CODE_bed4;
+                                                    }
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_be50;
+                                                    pbVar3 = (byte *)((byte)pbVar10 ^ 0x17);
+                                                    while( true ) {
+                                                      in_PSW = in_PSW & 0xdd;
+                                                      pbVar10 = (byte *)((byte)(pbVar3 + '\x01') &
+                                                                         *param_4 ^ 100);
+LAB_CODE_bed4:
+                                                      pbVar9 = pbVar6 + '\x01';
+                                                      nop();
+                                                      nop();
+                                                      nop();
+                                                      pbVar10 = pbVar10 + '\x01';
+                                                      if (_3_2 == '\0') break;
+                                                      _3_2 = '\0';
+                                                      pbVar9 = pbVar6 + '\x02';
+                                                      while( true ) {
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_be70;
+                                                          in_PSW = in_PSW & 0xdd;
+                                                          pbVar10 = (byte *)(((byte)pbVar10 ^ 0x5a)
+                                                                             + 1 & 100 ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          pbVar9 = pbVar9 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_be80;
+                                                          pbVar10 = (byte *)(((byte)pbVar10 ^ 0x3f)
+                                                                            + 1);
+                                                          DAT_INTMEM_64 =
+                                                               (byte *)((byte)DAT_INTMEM_64 & 100);
+                                                          in_PSW = in_PSW & 0xdd;
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                        }
+                                                        param_6 = pbVar9 + '\x01';
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_be90;
+                                                          bVar8 = ((byte)pbVar10 ^ 10) + 1;
+                                                          DAT_INTMEM_64 =
+                                                               (byte *)((byte)DAT_INTMEM_64 & bVar8)
+                                                          ;
+                                                          in_PSW = in_PSW & 0xdd;
+                                                          pbVar10 = (byte *)(bVar8 ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          param_6 = pbVar9 + '\x02';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bea0;
+                                                          puVar18['\x01'] = 0x23;
+                                                          puVar18['\x02'] = 0xbf;
+                                                          bVar8 = FUN_CODE_ba64(((byte)pbVar10 ^
+                                                                                0x6f) + 1);
+                                                          pbVar10 = (byte *)(bVar8 ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          param_6 = param_6 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_beb0;
+                                                          bVar8 = ((byte)pbVar10 ^ 0x47) + 1;
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bf97;
+                                                          pbVar10 = (byte *)(bVar8 ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          param_6 = param_6 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bec0;
+                                                          pbVar10 = (byte *)((((byte)pbVar10 ^ 0x22)
+                                                                              + 1 | (byte)pbVar5) ^
+                                                                            100);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                        }
+                                                        pbVar6 = param_6 + '\x01';
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar3 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') break;
+                                                        _3_2 = '\0';
+                                                        pbVar9 = param_6 + '\x02';
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x02';
+                                                        if ((char)in_PSW < '\0') {
+                                                          _3_2 = '\0';
+                                                          bVar8 = (byte)pbVar10 ^ 100;
+LAB_CODE_bf97:
+                                                          do {
+                                                            bVar7 = bVar8;
+                                                            BANK0_R0 = BANK0_R0 + -1;
+                                                            nop();
+                                                            nop();
+                                                            *param_5 = *param_5 + 1;
+                                                            nop();
+                                                            nop();
+                                                            nop();
+                                                            bVar8 = (bVar7 + 1 ^ 10) + 1;
+                                                            if (_3_2 != '\0') {
+                                                              _3_2 = 0;
+                                                              puVar18['\x01'] = 0x17;
+                                                              puVar18['\x02'] = 0xc0;
+                                                              FUN_CODE_3124();
+                                                              nop();
+                                                              pbVar6 = (byte *)FUN_CODE_004b(1);
+                                                              return pbVar6;
+                                                            }
+                                                          } while (-1 < (char)(_c_4 << 7));
+                                                          pbVar6 = (byte *)FUN_CODE_0000(bVar8 ^ 
+                                                  0x57,bVar7);
+                                                  return pbVar6;
+                                                  }
+LAB_CODE_bee0:
+                                                  in_PSW = in_PSW & 0xdd;
+                                                  pbVar10 = (byte *)((byte)(pbVar10 + '\x01') &
+                                                                     (byte)DAT_INTMEM_64 ^ 10);
+                                                  }
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar3 = (byte *)(((byte)pbVar3 ^ 0x50) + 1);
+                                                    goto LAB_CODE_be64;
+                                                  }
+                                                  }
+                                                  pbVar6 = pbVar9;
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar10 = (byte *)((byte)pbVar10 ^ 0x72);
+                                                    goto LAB_CODE_bee0;
+                                                  }
+                                                  goto LAB_CODE_be60;
+                                                  }
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar8 = ((byte)(pbVar10 + '\x01') ^ 10) + 1;
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_bdc0;
+                                                    pbVar10 = (byte *)(bVar8 ^ 0x2c);
+LAB_CODE_be40:
+                                                    in_PSW = in_PSW & 0xdd;
+                                                    bVar8 = (byte)(pbVar10 + '\x01') & (byte)pbVar5
+                                                            ^ 100;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                  }
+                                                  pbVar6 = param_6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar8 = bVar8 + 1;
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_bdd0;
+                                                    pbVar10 = (byte *)(bVar8 ^ 0x2a);
+LAB_CODE_be50:
+                                                    in_PSW = in_PSW & 0xdd;
+                                                    bVar8 = (byte)(pbVar10 + '\x01') &
+                                                            (byte)param_10 ^ 100;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                  }
+                                                  pbVar6 = pbVar6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = (byte *)(bVar8 + 1);
+                                                  if (_3_2 != '\0') {
+                                                    _3_2 = '\0';
+                                                    goto LAB_CODE_be64;
+                                                  }
+                                                  pbVar9 = pbVar6;
+                                                  if (-1 < (char)in_PSW) {
+LAB_CODE_bde0:
+                                                    bVar8 = (byte)(pbVar3 + '\x01') ^
+                                                            (byte)DAT_INTMEM_64 ^ 10;
+                                                    do {
+                                                      nop();
+                                                      nop();
+                                                      nop();
+                                                      bVar8 = bVar8 + 1;
+                                                      if (_3_2 == '\0') {
+                                                        if (-1 < (char)in_PSW) goto LAB_CODE_bd70;
+                                                        pbVar3 = (byte *)(bVar8 ^ 0x54);
+LAB_CODE_bdf0:
+                                                        bVar8 = (byte)(pbVar3 + '\x01') ^ 0x6e;
+                                                      }
+                                                      else {
+                                                        _3_2 = '\0';
+                                                        pbVar9 = pbVar9 + '\x01';
+                                                      }
+                                                      nop();
+                                                      nop();
+                                                      nop();
+                                                      pbVar3 = (byte *)(bVar8 + 1);
+                                                      if (_3_2 != '\0') {
+                                                        _3_2 = '\0';
+                                                        goto LAB_CODE_be04;
+                                                      }
+                                                      if ((char)in_PSW < '\0') {
+                                                        pbVar3 = (byte *)((byte)pbVar3 ^ 0x31);
+                                                        goto LAB_CODE_be00;
+                                                      }
+LAB_CODE_bd80:
+                                                      bVar8 = (byte)(pbVar3 + '\x01') ^
+                                                              (byte)param_7 ^ 100;
+LAB_CODE_bd84:
+                                                      param_6 = pbVar9 + '\x01';
+                                                      nop();
+                                                      nop();
+                                                      nop();
+                                                      bVar8 = bVar8 + 1;
+                                                      if (_3_2 == '\0') {
+                                                        if (-1 < (char)in_PSW) goto LAB_CODE_bd10;
+                                                        pbVar3 = (byte *)(bVar8 ^ 0x39);
+LAB_CODE_bd90:
+                                                        bVar8 = (byte)(pbVar3 + '\x01') ^
+                                                                (byte)param_6 ^ 100;
+                                                      }
+                                                      else {
+                                                        _3_2 = '\0';
+                                                      }
+                                                      param_6 = param_6 + '\x01';
+                                                      nop();
+                                                      nop();
+LAB_CODE_bd97:
+                                                      nop();
+                                                      bVar8 = bVar8 + 1;
+                                                      if (_3_2 == '\0') {
+                                                        if (-1 < (char)in_PSW) goto LAB_CODE_bd20;
+                                                        pbVar6 = (byte *)(bVar8 ^ 0x5c);
+LAB_CODE_bda0:
+                                                        bVar8 = (byte)(pbVar6 + '\x01') ^
+                                                                (byte)param_5 ^ 100;
+                                                      }
+                                                      else {
+                                                        _3_2 = '\0';
+                                                      }
+                                                      param_6 = param_6 + '\x01';
+                                                      nop();
+                                                      nop();
+                                                      nop();
+                                                      bVar8 = bVar8 + 1;
+                                                      if (_3_2 == '\0') {
+                                                        if (-1 < (char)in_PSW) goto LAB_CODE_bd30;
+                                                        pbVar3 = (byte *)(bVar8 ^ 0x74);
+LAB_CODE_bdb0:
+                                                        bVar8 = (byte)(pbVar3 + '\x01') ^
+                                                                (byte)param_4 ^ 100;
+                                                      }
+                                                      else {
+                                                        _3_2 = '\0';
+                                                      }
+                                                      param_6 = param_6 + '\x01';
+                                                      nop();
+                                                      nop();
+                                                      nop();
+                                                      bVar8 = bVar8 + 1;
+                                                      if (_3_2 != '\0') {
+                                                        _3_2 = '\0';
+                                                        goto LAB_CODE_bdc4;
+                                                      }
+                                                      if (-1 < (char)in_PSW) {
+LAB_CODE_bd40:
+                                                        bVar8 = bVar8 + 1 ^ (byte)pbVar5 ^ 100;
+                                                        while( true ) {
+                                                          pbVar6 = param_6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = bVar8 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            pbVar9 = pbVar6;
+                                                            if (-1 < (char)in_PSW)
+                                                            goto LAB_CODE_bcd0;
+                                                            bVar8 = bVar8 ^ 0x24;
+LAB_CODE_bd50:
+                                                            bVar8 = bVar8 + 1 ^ (byte)param_10 ^ 100
+                                                            ;
+                                                          }
+                                                          else {
+                                                            _3_2 = '\0';
+                                                          }
+                                                          pbVar9 = pbVar6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = bVar8 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW)
+                                                            goto LAB_CODE_bce0;
+                                                            bVar8 = bVar8 ^ 0x41;
+LAB_CODE_bd60:
+                                                            bVar8 = bVar8 + 1 ^ (byte)param_9 ^ 100;
+                                                          }
+                                                          else {
+                                                            _3_2 = '\0';
+                                                          }
+                                                          pbVar9 = pbVar9 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = bVar8 + 1;
+                                                          if (_3_2 != '\0') {
+                                                            _3_2 = '\0';
+                                                            goto LAB_CODE_bd74;
+                                                          }
+                                                          if ((char)in_PSW < '\0') break;
+LAB_CODE_bcf0:
+                                                          pbVar6 = (byte *)0x6e;
+code_c0xbcf5:
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          pbVar10 = pbVar6 + '\x01';
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW)
+                                                            goto LAB_CODE_bc80;
+                                                            bVar8 = (byte)pbVar10 ^ 0x4b;
+                                                            goto LAB_CODE_bd00;
+                                                          }
+                                                          _3_2 = '\0';
+                                                          param_6 = pbVar9 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          pbVar6 = pbVar6 + '\x02';
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bc90;
+                                                          bVar8 = (byte)pbVar6 ^ 0x7e;
+LAB_CODE_bd10:
+                                                          in_PSW = (in_PSW >> 7 | _c_4) << 7;
+                                                          bVar8 = bVar8 + 1 ^ 10;
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar7 = bVar8 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW)
+                                                            goto LAB_CODE_bca0;
+                                                            bVar8 = bVar7 ^ 0x1b;
+LAB_CODE_bd20:
+                                                            pbVar3 = (byte *)(bVar8 + 1);
+                                                            puVar18['\x01'] = 0x23;
+                                                            puVar17 = puVar18 + '\x02';
+                                                            puVar18 = puVar18 + '\x02';
+                                                            *puVar17 = 0xbd;
+LAB_CODE_bb63_1:
+                                                            param_6 = param_6 + '\x01';
+code_c0xbb65:
+                                                            nop();
+                                                            nop();
+                                                            nop();
+                                                            pbVar3 = pbVar3 + '\x01';
+                                                            if (_3_2 == '\0') {
+                                                              if (-1 < (char)in_PSW)
+                                                              goto LAB_CODE_baf0;
+                                                              pbVar3 = (byte *)((byte)pbVar3 ^ 0x2b)
+                                                              ;
+                                                              goto LAB_CODE_bb70;
+                                                            }
+                                                            _3_2 = '\0';
+                                                            param_6 = param_6 + '\x01';
+code_c0xbb75:
+                                                            nop();
+                                                            nop();
+                                                            nop();
+                                                            pbVar3 = pbVar3 + '\x01';
+                                                            if (_3_2 == '\0') {
+                                                              if (-1 < (char)in_PSW)
+                                                              goto LAB_CODE_bb00;
+                                                              pbVar3 = (byte *)((byte)pbVar3 ^ 0x4e)
+                                                              ;
+                                                              goto LAB_CODE_bb80;
+                                                            }
+                                                            _3_2 = '\0';
+                                                            param_6 = param_6 + '\x01';
+                                                            do {
+                                                              nop();
+                                                              nop();
+                                                              nop();
+                                                              pbVar3 = pbVar3 + '\x01';
+                                                              if (_3_2 == '\0') {
+                                                                pbVar9 = param_6;
+                                                                if (-1 < (char)in_PSW)
+                                                                goto LAB_CODE_bb10;
+                                                                pbVar3 = (byte *)((byte)pbVar3 ^
+                                                                                 0x7b);
+                                                                goto LAB_CODE_bb90;
+                                                              }
+                                                              _3_2 = '\0';
+                                                              pbVar9 = param_6 + '\x01';
+code_c0xbb95:
+                                                              nop();
+                                                              nop();
+                                                              nop();
+                                                              pbVar3 = pbVar3 + '\x01';
+                                                              if (_3_2 != '\0') {
+                                                                _3_2 = '\0';
+                                                                param_6 = pbVar9 + '\x01';
+                                                                goto code_c0xbba5;
+                                                              }
+                                                              if (-1 < (char)in_PSW)
+                                                              goto LAB_CODE_bb20;
+                                                              pbVar10 = (byte *)((byte)pbVar3 ^ 0x1e
+                                                                                );
+                                                              param_6 = pbVar9;
+LAB_CODE_bba0:
+                                                              pbVar3 = (byte *)((byte)(pbVar10 +
+                                                                                      '\x01') ^ 10);
+                                                              DAT_INTMEM_64 = param_5;
+code_c0xbba5:
+                                                              nop();
+                                                              nop();
+                                                              nop();
+                                                              pbVar3 = pbVar3 + '\x01';
+                                                              if (_3_2 != '\0') {
+                                                                _3_2 = '\0';
+                                                                param_6 = param_6 + '\x01';
+                                                                pbVar6 = pbVar5;
+                                                                goto code_c0xbbb5;
+                                                              }
+                                                              if ((char)in_PSW < '\0') {
+                                                                pbVar3 = (byte *)((byte)pbVar3 ^
+                                                                                 0x36);
+                                                                goto LAB_CODE_bbb0;
+                                                              }
+LAB_CODE_bb30:
+                                                              puVar20 = (undefined1 *)0x6464;
+                                                              puVar19 = (undefined1 *)0x6464;
+                                                              pbVar6 = param_6 + '\x01';
+                                                              nop();
+                                                              nop();
+                                                              nop();
+                                                              pbVar3 = pbVar3 + '\x02';
+                                                              if (_3_2 == '\0') {
+                                                                param_6 = pbVar6;
+                                                                if (-1 < (char)in_PSW)
+                                                                goto LAB_CODE_bac0;
+                                                                pbVar3 = (byte *)((byte)pbVar3 ^
+                                                                                 0x14);
+                                                                goto LAB_CODE_bb40;
+                                                              }
+                                                              _3_2 = '\0';
+                                                              param_6 = param_6 + '\x02';
+                                                              pbVar6 = pbVar5;
+code_c0xbb45:
+                                                              nop();
+                                                              nop();
+                                                              nop();
+                                                              pbVar3 = pbVar3 + '\x01';
+                                                              if (_3_2 != '\0') {
+                                                                _3_2 = '\0';
+                                                                param_6 = param_6 + '\x01';
+                                                                pbVar4 = param_10;
+                                                                pbVar5 = pbVar6;
+                                                                goto code_c0xbb55;
+                                                              }
+                                                              if (-1 < (char)in_PSW)
+                                                              goto LAB_CODE_bad0;
+                                                              pbVar3 = (byte *)((byte)pbVar3 ^ 0x66)
+                                                              ;
+LAB_CODE_bb50:
+                                                              pbVar3 = (byte *)((byte)(pbVar3 + 
+                                                  '\x01') ^ 10);
+                                                  pbVar4 = param_10;
+                                                  pbVar5 = pbVar6;
+                                                  DAT_INTMEM_64 = param_10;
+code_c0xbb55:
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 != '\0') {
+                                                    _3_2 = '\0';
+                                                    param_10 = pbVar4;
+                                                    goto LAB_CODE_bb63_1;
+                                                  }
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar3 = (byte *)((byte)pbVar3 ^ 3);
+LAB_CODE_bb60:
+                                                    pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+                                                    param_10 = pbVar4;
+                                                    DAT_INTMEM_64 = param_9;
+                                                    goto code_c0xbb65;
+                                                  }
+LAB_CODE_bae0:
+                                                  cVar2 = (char)in_PSW >> 7;
+                                                  in_PSW = (pbVar3 + '\x01' < DAT_INTMEM_64 + -cVar2
+                                                           ) << 7;
+                                                  bVar8 = (char)(pbVar3 + '\x01') -
+                                                          (char)(DAT_INTMEM_64 + -cVar2) ^ 10;
+                                                  param_10 = pbVar4;
+                                                  while( true ) {
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 1;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_ba70;
+                                                      pbVar3 = (byte *)(bVar8 ^ 0x6c);
+LAB_CODE_baf0:
+                                                      pbVar6 = (byte *)('d' - ((char)in_PSW >> 7));
+                                                      in_PSW = (pbVar3 + '\x01' < pbVar6) << 7;
+                                                      bVar8 = (char)(pbVar3 + '\x01') - (char)pbVar6
+                                                              ^ 10;
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                      param_6 = param_6 + '\x01';
+                                                    }
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 1;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_ba80;
+                                                      pbVar3 = (byte *)(bVar8 ^ 9);
+LAB_CODE_bb00:
+                                                      bVar8 = puVar19[ZEXT12(pbVar3 + '\x01')] ^ 100
+                                                      ;
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                    }
+                                                    pbVar9 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 1;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_ba90;
+                                                      pbVar3 = (byte *)(bVar8 ^ 0x3c);
+LAB_CODE_bb10:
+                                                      _c_4 = in_PSW >> 7;
+                                                      bVar8 = (byte)(pbVar3 + '\x01') ^ 10;
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                      pbVar9 = param_6 + '\x02';
+                                                    }
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar7 = bVar8 + 1;
+                                                    if (_3_2 == '\0') break;
+                                                    _3_2 = '\0';
+                                                    param_6 = pbVar9 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 2;
+                                                    if ((char)in_PSW < '\0') {
+                                                      pbVar3 = (byte *)(bVar8 ^ 0x71);
+                                                      goto LAB_CODE_bb30;
+                                                    }
+LAB_CODE_bab0:
+                                                    bVar7 = (char)param_4 - ((char)in_PSW >> 7);
+                                                    in_PSW = (bVar8 + 1 < bVar7) << 7;
+                                                    bVar8 = (bVar8 + 1) - bVar7 ^ 100;
+                                                    puVar20 = puVar19;
+LAB_CODE_bab4:
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 1;
+                                                    puVar19 = puVar20;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_ba40;
+                                                      pbVar3 = (byte *)(bVar8 ^ 0x29);
+LAB_CODE_bac0:
+                                                      pbVar6 = (byte *)(*param_5 -
+                                                                       ((char)in_PSW >> 7));
+                                                      in_PSW = (pbVar3 + '\x01' < pbVar6) << 7;
+                                                      bVar8 = (char)(pbVar3 + '\x01') - (char)pbVar6
+                                                              ^ 100;
+                                                      pbVar6 = pbVar5;
+                                                      puVar19 = puVar20;
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                      pbVar6 = pbVar5;
+                                                    }
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 1;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_ba50;
+                                                      pbVar3 = (byte *)(bVar8 ^ 0x21);
+LAB_CODE_bad0:
+                                                      pbVar5 = (byte *)(*param_4 -
+                                                                       ((char)in_PSW >> 7));
+                                                      in_PSW = (pbVar3 + '\x01' < pbVar5) << 7;
+                                                      bVar8 = (char)(pbVar3 + '\x01') - (char)pbVar5
+                                                              ^ 100;
+                                                      pbVar4 = param_10;
+                                                      pbVar5 = pbVar6;
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                      pbVar4 = param_10;
+                                                      pbVar5 = pbVar6;
+                                                    }
+                                                    pbVar6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 1;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) {
+LAB_CODE_ba60:
+                                                        bVar7 = (char)param_9 - ((char)in_PSW >> 7);
+                                                        in_PSW = (bVar8 + 1 < bVar7) << 7;
+                                                        bVar7 = (bVar8 + 1) - bVar7 ^ 100;
+                                                        param_10 = pbVar4;
+                                                        do {
+                                                          param_6 = pbVar6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar7 = bVar7 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW)
+                                                            goto LAB_CODE_b9f0;
+                                                            bVar8 = bVar7 ^ 0x51;
+LAB_CODE_ba70:
+                                                            bVar7 = (char)param_8 -
+                                                                    ((char)in_PSW >> 7);
+                                                            in_PSW = (bVar8 + 1 < bVar7) << 7;
+                                                            bVar7 = (bVar8 + 1) - bVar7 ^ 100;
+                                                          }
+                                                          else {
+                                                            _3_2 = '\0';
+                                                          }
+                                                          param_6 = param_6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = bVar7 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW) {
+                                                              puVar19 = puVar19 + 1;
+                                                              bVar8 = bVar7 + 2 ^ 100;
+                                                              pbVar6 = param_6;
+                                                              goto LAB_CODE_ba04;
+                                                            }
+                                                            bVar8 = bVar8 ^ 0x34;
+LAB_CODE_ba80:
+                                                            bVar7 = (char)param_7 -
+                                                                    ((char)in_PSW >> 7);
+                                                            in_PSW = (bVar8 + 1 < bVar7) << 7;
+                                                            bVar8 = (bVar8 + 1) - bVar7 ^ 100;
+                                                          }
+                                                          else {
+                                                            _3_2 = '\0';
+                                                          }
+                                                          pbVar9 = param_6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = bVar8 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            param_6 = pbVar9;
+                                                            if (-1 < (char)in_PSW)
+                                                            goto LAB_CODE_ba10;
+                                                            bVar8 = bVar8 ^ 1;
+LAB_CODE_ba90:
+                                                            bVar7 = (char)pbVar9 -
+                                                                    ((char)in_PSW >> 7);
+                                                            in_PSW = (bVar8 + 1 < bVar7) << 7;
+                                                            bVar8 = (bVar8 + 1) - bVar7 ^ 100;
+                                                          }
+                                                          else {
+                                                            _3_2 = '\0';
+                                                          }
+                                                          pbVar9 = pbVar9 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = bVar8 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW) {
+LAB_CODE_ba20:
+                                                              pbVar6 = (byte *)FUN_CODE_bd64(bVar8 +
+                                                                                             1);
+                                                              return pbVar6;
+                                                            }
+                                                            bVar7 = bVar8 ^ 100;
+LAB_CODE_baa0:
+                                                            bVar8 = (char)param_5 -
+                                                                    ((char)in_PSW >> 7);
+                                                            in_PSW = (bVar7 + 1 < bVar8) << 7;
+                                                            bVar8 = (bVar7 + 1) - bVar8 ^ 100;
+                                                          }
+                                                          else {
+                                                            _3_2 = '\0';
+                                                          }
+                                                          param_6 = pbVar9 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = bVar8 + 1;
+                                                          if (_3_2 != '\0') {
+                                                            _3_2 = '\0';
+                                                            puVar20 = puVar19;
+                                                            goto LAB_CODE_bab4;
+                                                          }
+                                                          if ((char)in_PSW < '\0') {
+                                                            bVar8 = bVar8 ^ 0x4c;
+                                                            goto LAB_CODE_bab0;
+                                                          }
+LAB_CODE_ba30:
+                                                          in_PSW = (in_PSW >> 7 | _c_4 ^ 1) << 7;
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar7 = (bVar8 + 1 ^ 10) + 1;
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW)
+                                                            goto LAB_CODE_b9c0;
+                                                            bVar8 = bVar7 ^ 0x1a;
+LAB_CODE_ba40:
+                                                            bVar7 = (char)pbVar5 -
+                                                                    ((char)in_PSW >> 7);
+                                                            in_PSW = (bVar8 + 1 < bVar7) << 7;
+                                                            bVar7 = (bVar8 + 1) - bVar7 ^ 100;
+                                                            pbVar6 = pbVar5;
+                                                          }
+                                                          else {
+                                                            _3_2 = '\0';
+                                                            pbVar6 = pbVar5;
+                                                          }
+                                                          param_6 = param_6 + '\x01';
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar7 = bVar7 + 1;
+                                                          if (_3_2 == '\0') {
+                                                            if (-1 < (char)in_PSW) {
+LAB_CODE_b9d0:
+                                                              *param_4 = (byte)DAT_INTMEM_64;
+                                                              pbVar3 = (byte *)(bVar7 + 1 ^ 10);
+                                                              pbVar5 = pbVar6;
+                                                              do {
+                                                                nop();
+                                                                nop();
+                                                                nop();
+                                                                pbVar6 = pbVar3 + '\x01';
+                                                                if (_3_2 == '\0') {
+                                                                  if ((char)in_PSW < '\0') {
+                                                                    halt_baddata();
+                                                                  }
+LAB_CODE_b960:
+                                                                  pbVar3 = (byte *)((byte)(pbVar6 + 
+                                                  '\x01') ^ 10);
+                                                  param_9 = DAT_INTMEM_64;
+code_c0xb965:
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_b8f0;
+                                                    pbVar3 = (byte *)((byte)pbVar3 ^ 0x5f);
+LAB_CODE_b970:
+                                                    pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+                                                    param_8 = DAT_INTMEM_64;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                    param_6 = param_6 + '\x01';
+                                                  }
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_b900;
+                                                    bVar8 = (byte)pbVar3 ^ 0x3a;
+LAB_CODE_b980:
+                                                    pbVar3 = (byte *)(bVar8 + 1 ^ 10);
+                                                    param_7 = DAT_INTMEM_64;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                    param_6 = param_6 + '\x01';
+                                                  }
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_b910;
+                                                    bVar8 = (byte)pbVar3 ^ 0xf;
+LAB_CODE_b990:
+                                                    pbVar3 = (byte *)(bVar8 + 1 ^ 10);
+                                                    param_6 = DAT_INTMEM_64;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                    param_6 = param_6 + '\x01';
+                                                  }
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_b920;
+                                                    bVar7 = (byte)pbVar3 ^ 0x6a;
+LAB_CODE_b9a0:
+                                                    pbVar3 = (byte *)(bVar7 + 1 ^ 10);
+                                                    param_5 = DAT_INTMEM_64;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                    param_6 = param_6 + '\x01';
+                                                  }
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') {
+                                                    if ((char)in_PSW < '\0') {
+                                                      bVar8 = (byte)pbVar3 ^ 0x42;
+                                                      goto LAB_CODE_b9b0;
+                                                    }
+                                                    goto LAB_CODE_b930;
+                                                  }
+                                                  _3_2 = '\0';
+                                                  param_6 = param_6 + '\x01';
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x02';
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_b970;
+                                                    bVar7 = (byte)pbVar3 ^ 0x62;
+LAB_CODE_b9f0:
+                                                    sVar1 = (ushort)(bVar7 + 1) * (ushort)param_3;
+                                                    param_3 = (byte)((ushort)sVar1 >> 8);
+                                                    in_PSW = 0;
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = ((byte)sVar1 ^ 100) + 1;
+                                                    if (_3_2 == '\0') goto LAB_CODE_b980;
+                                                    _3_2 = '\0';
+                                                    pbVar6 = param_6;
+                                                    in_PSW = 0;
+LAB_CODE_ba04:
+                                                    param_6 = pbVar6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 1;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_b990;
+                                                      bVar8 = bVar8 ^ 0x32;
+LAB_CODE_ba10:
+                                                      in_PSW = _c_4 << 7;
+                                                      bVar8 = bVar8 + 1 ^ 10;
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                      param_6 = pbVar6 + '\x02';
+                                                    }
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar7 = bVar8 + 1;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_b9a0;
+                                                      bVar8 = bVar7 ^ 0x57;
+                                                      goto LAB_CODE_ba20;
+                                                    }
+                                                    _3_2 = '\0';
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    bVar8 = bVar8 + 2;
+                                                    if ((char)in_PSW < '\0') {
+                                                      bVar8 = bVar8 ^ 0x7f;
+                                                      goto LAB_CODE_ba30;
+                                                    }
+LAB_CODE_b9b0:
+                                                    pbVar3 = (byte *)(bVar8 + 1 ^ 10);
+                                                    param_4 = DAT_INTMEM_64;
+                                                  }
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_b940;
+                                                    bVar7 = (byte)pbVar3 ^ 0x27;
+LAB_CODE_b9c0:
+                                                    *param_5 = (byte)DAT_INTMEM_64;
+                                                    pbVar3 = (byte *)(bVar7 + 1 ^ 10);
+                                                    pbVar6 = pbVar5;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                    param_6 = param_6 + '\x01';
+                                                    pbVar6 = pbVar5;
+                                                  }
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  if (_3_2 == '\0') goto code_c0xb9cc;
+                                                  _3_2 = '\0';
+                                                  param_6 = param_6 + '\x01';
+                                                  pbVar5 = pbVar6;
+                                                  } while( true );
+                                                  }
+                                                  bVar8 = bVar7 ^ 0x1c;
+LAB_CODE_ba50:
+                                                  bVar7 = (char)param_10 - ((char)in_PSW >> 7);
+                                                  in_PSW = (bVar8 + 1 < bVar7) << 7;
+                                                  bVar7 = (bVar8 + 1) - bVar7 ^ 100;
+                                                  pbVar4 = param_10;
+                                                  pbVar5 = pbVar6;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                    pbVar4 = param_10;
+                                                    pbVar5 = pbVar6;
+                                                  }
+                                                  pbVar6 = param_6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar7 = bVar7 + 1;
+                                                  if (_3_2 == '\0') goto code_c0xba5c;
+                                                  _3_2 = '\0';
+                                                  param_10 = pbVar4;
+                                                  } while( true );
+                                                  }
+                                                  pbVar3 = (byte *)(bVar8 ^ 0x44);
+                                                  param_6 = pbVar6;
+                                                  goto LAB_CODE_bae0;
+                                                  }
+                                                  _3_2 = '\0';
+                                                  param_6 = param_6 + '\x02';
+                                                  param_10 = pbVar4;
+                                                  }
+                                                  if (-1 < (char)in_PSW) goto LAB_CODE_baa0;
+                                                  pbVar3 = (byte *)(bVar7 ^ 0x59);
+LAB_CODE_bb20:
+                                                  pbVar10 = pbVar3 + '\x01';
+                                                  puVar18['\x01'] = 0x23;
+                                                  puVar16 = puVar18 + '\x02';
+                                                  puVar18 = puVar18 + '\x02';
+                                                  *puVar16 = 0xbb;
+LAB_CODE_bc63_1:
+                                                  pbVar9 = pbVar9 + '\x01';
+code_c0xbc65:
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  pbVar10 = pbVar10 + '\x01';
+                                                  if (_3_2 != '\0') {
+                                                    _3_2 = '\0';
+                                                    pbVar9 = pbVar9 + '\x01';
+                                                    goto code_c0xbc75;
+                                                  }
+                                                  param_6 = pbVar9;
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar6 = (byte *)((byte)pbVar10 ^ 0x13);
+                                                    goto LAB_CODE_bc70;
+                                                  }
+LAB_CODE_bbf0:
+                                                  pbVar10 = pbVar10 + '\x01';
+                                                  in_PSW = 0;
+                                                  pbVar3 = pbVar10;
+                                                  if (param_3 != 0) {
+                                                    pbVar3 = (byte *)((byte)pbVar10 / param_3);
+                                                    param_3 = (byte)pbVar10 % param_3;
+                                                  }
+                                                  pbVar3 = (byte *)((byte)pbVar3 ^ 100);
+                                                  while( true ) {
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    if (_3_2 == '\0') break;
+                                                    _3_2 = '\0';
+LAB_CODE_bc04:
+                                                    pbVar9 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    if (_3_2 != '\0') {
+                                                      _3_2 = '\0';
+                                                      pbVar9 = param_6 + '\x02';
+                                                      goto code_c0xbc15;
+                                                    }
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_bb90;
+                                                    pbVar10 = (byte *)((byte)pbVar3 ^ 0x46);
+LAB_CODE_bc10:
+                                                    in_PSW = (in_PSW >> 7 & _c_4) << 7;
+                                                    pbVar3 = (byte *)((byte)(pbVar10 + '\x01') ^ 10)
+                                                    ;
+code_c0xbc15:
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar10 = pbVar3 + '\x01';
+                                                    if (_3_2 == '\0') {
+                                                      param_6 = pbVar9;
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_bba0;
+                                                      pbVar10 = (byte *)((byte)pbVar10 ^ 0x23);
+LAB_CODE_bc20:
+                                                      pbVar10 = pbVar10 + '\x01';
+                                                      goto LAB_CODE_bc63_1;
+                                                    }
+                                                    _3_2 = '\0';
+                                                    param_6 = pbVar9 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x02';
+                                                    if ((char)in_PSW < '\0') {
+                                                      pbVar10 = (byte *)((byte)pbVar3 ^ 0xb);
+LAB_CODE_bc30:
+                                                      pbVar10 = pbVar10 + '\x01';
+                                                      pbVar9 = param_6;
+                                                      do {
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bc20;
+                                                          bVar7 = (byte)pbVar10 ^ 0x26;
+                                                          param_6 = pbVar9;
+LAB_CODE_bca0:
+                                                          param_5 = (byte *)&DAT_INTMEM_64;
+                                                          pbVar10 = (byte *)(bVar7 + 1 ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          param_6 = pbVar9 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bc30;
+                                                          bVar8 = (byte)pbVar10 ^ 0xe;
+LAB_CODE_bcb0:
+                                                          param_4 = (byte *)&DAT_INTMEM_64;
+                                                          pbVar10 = (byte *)(bVar8 + 1 ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          param_6 = param_6 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar6 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if ((char)in_PSW < '\0') {
+                                                            bVar8 = (byte)pbVar6 ^ 0x6b;
+LAB_CODE_bcc0:
+                                                            *param_5 = 100;
+                                                            pbVar6 = (byte *)(bVar8 + 1 ^ 10);
+                                                            goto code_c0xbcc5;
+                                                          }
+                                                          pbVar6 = (byte *)&DAT_INTMEM_64;
+                                                          pbVar5 = (byte *)&DAT_INTMEM_64;
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          bVar8 = ((byte)(pbVar10 + '\x02') ^ 10) +
+                                                                  1;
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bbd0;
+                                                          pbVar6 = (byte *)(bVar8 ^ 0x5e);
+                                                          pbVar9 = param_6;
+LAB_CODE_bc50:
+                                                          pbVar4 = (byte *)&DAT_INTMEM_64;
+                                                          param_10 = (byte *)&DAT_INTMEM_64;
+                                                          nop();
+                                                          nop();
+                                                          nop();
+                                                          pbVar10 = (byte *)(((byte)(pbVar6 + '\x01'
+                                                                                    ) ^ 10) + 1);
+                                                          if (_3_2 != '\0') {
+                                                            _3_2 = '\0';
+                                                            goto LAB_CODE_bc63_1;
+                                                          }
+                                                          param_6 = pbVar9;
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bbe0;
+                                                          pbVar6 = (byte *)((byte)pbVar10 ^ 0x3b);
+LAB_CODE_bc60:
+                                                          param_9 = (byte *)&DAT_INTMEM_64;
+                                                          pbVar10 = (byte *)((byte)(pbVar6 + '\x01')
+                                                                            ^ 10);
+                                                          goto code_c0xbc65;
+                                                        }
+                                                        _3_2 = '\0';
+                                                        param_6 = param_6 + '\x01';
+code_c0xbcc5:
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar6 = pbVar6 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          pbVar9 = param_6;
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bc50;
+                                                          bVar8 = (byte)pbVar6 ^ 99;
+LAB_CODE_bcd0:
+                                                          *param_4 = 100;
+                                                          pbVar6 = (byte *)(bVar8 + 1 ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          pbVar9 = param_6 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar6 = pbVar6 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bc60;
+                                                          bVar8 = (byte)pbVar6 ^ 6;
+LAB_CODE_bce0:
+                                                          pbVar6 = (byte *)(bVar8 + 1);
+                                                          DAT_INTMEM_64 = (byte *)&DAT_INTMEM_64;
+                                                          pbVar3 = pbVar9;
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          pbVar3 = pbVar9;
+                                                        }
+                                                        pbVar9 = pbVar3 + '\x01';
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar6 = pbVar6 + '\x01';
+                                                        if (_3_2 != '\0') {
+                                                          _3_2 = '\0';
+                                                          pbVar9 = pbVar3 + '\x02';
+                                                          goto code_c0xbcf5;
+                                                        }
+                                                        if ((char)in_PSW < '\0') goto LAB_CODE_bcf0;
+LAB_CODE_bc70:
+                                                        param_8 = (byte *)&DAT_INTMEM_64;
+                                                        pbVar10 = (byte *)((byte)(pbVar6 + '\x01') ^
+                                                                          10);
+code_c0xbc75:
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          param_6 = pbVar9;
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bc00;
+                                                          pbVar10 = (byte *)((byte)pbVar10 ^ 0x76);
+LAB_CODE_bc80:
+                                                          param_7 = (byte *)&DAT_INTMEM_64;
+                                                          pbVar10 = (byte *)((byte)(pbVar10 + '\x01'
+                                                                                   ) ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          pbVar9 = pbVar9 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                        nop();
+                                                        pbVar10 = pbVar10 + '\x01';
+                                                        if (_3_2 == '\0') {
+                                                          if (-1 < (char)in_PSW) goto LAB_CODE_bc10;
+                                                          pbVar6 = (byte *)((byte)pbVar10 ^ 0x43);
+LAB_CODE_bc90:
+                                                          pbVar9 = (byte *)&DAT_INTMEM_64;
+                                                          pbVar10 = (byte *)((byte)(pbVar6 + '\x01')
+                                                                            ^ 10);
+                                                        }
+                                                        else {
+                                                          _3_2 = '\0';
+                                                          pbVar9 = pbVar9 + '\x01';
+                                                        }
+                                                        nop();
+                                                        nop();
+                                                      } while( true );
+                                                    }
+LAB_CODE_bbb0:
+                                                    pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+                                                    pbVar6 = pbVar5;
+                                                    DAT_INTMEM_64 = param_4;
+code_c0xbbb5:
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    pbVar5 = pbVar6;
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_bb40;
+                                                      DAT_INTMEM_64 = (byte *)*param_5;
+                                                      pbVar3 = (byte *)(((byte)pbVar3 ^ 0x53) + 1 ^
+                                                                       10);
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                      param_6 = param_6 + '\x01';
+                                                    }
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    if (_3_2 == '\0') {
+                                                      if (-1 < (char)in_PSW) goto LAB_CODE_bb50;
+                                                      bVar8 = (byte)pbVar3 ^ 0x5b;
+LAB_CODE_bbd0:
+                                                      DAT_INTMEM_64 = (byte *)*param_4;
+                                                      pbVar3 = (byte *)(bVar8 + 1 ^ 10);
+                                                      pbVar4 = param_10;
+                                                      pbVar5 = pbVar6;
+                                                    }
+                                                    else {
+                                                      _3_2 = '\0';
+                                                      param_6 = param_6 + '\x01';
+                                                      pbVar4 = param_10;
+                                                    }
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    if (_3_2 == '\0') {
+                                                      if ((char)in_PSW < '\0') {
+                                                        pbVar10 = (byte *)((byte)pbVar3 ^ 0x3e);
+LAB_CODE_bbe0:
+                                                        pbVar3 = pbVar10 + '\x01';
+                                                        param_10 = pbVar4;
+                                                        goto LAB_CODE_bbe4;
+                                                      }
+                                                      goto LAB_CODE_bb60;
+                                                    }
+                                                    _3_2 = '\0';
+                                                    param_10 = pbVar4;
+LAB_CODE_bbe4:
+                                                    param_6 = param_6 + '\x01';
+                                                    nop();
+                                                    nop();
+                                                    nop();
+                                                    pbVar3 = pbVar3 + '\x01';
+                                                    if (_3_2 == '\0') goto code_c0xbbec;
+                                                    _3_2 = '\0';
+                                                  }
+                                                  if ((char)in_PSW < '\0') {
+                                                    pbVar10 = (byte *)((byte)pbVar3 ^ 0x73);
+                                                    goto LAB_CODE_bc00;
+                                                  }
+LAB_CODE_bb80:
+                                                  pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+                                                  DAT_INTMEM_64 = param_7;
+                                                  } while( true );
+                                                  }
+                                                  _3_2 = '\0';
+                                                  param_6 = param_6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar8 = bVar8 + 2;
+                                                  if (-1 < (char)in_PSW) goto LAB_CODE_bcb0;
+                                                  bVar8 = bVar8 ^ 0x33;
+LAB_CODE_bd30:
+                                                  bVar8 = bVar8 + 1;
+                                                  if (bVar8 != 0) goto LAB_CODE_bd97;
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar8 = 0xb;
+                                                  if (_3_2 == '\0') goto code_c0xbd3c;
+                                                  _3_2 = '\0';
+                                                  }
+                                                  bVar8 = bVar8 ^ 0x69;
+LAB_CODE_bd70:
+                                                  bVar8 = bVar8 + 1 ^ (byte)param_8 ^ 100;
+LAB_CODE_bd74:
+                                                  pbVar9 = pbVar9 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar8 = bVar8 + 1;
+                                                  if (_3_2 == '\0') goto code_c0xbd7c;
+                                                  _3_2 = '\0';
+                                                  goto LAB_CODE_bd84;
+                                                  }
+                                                  bVar8 = bVar8 ^ 0x11;
+LAB_CODE_bdc0:
+                                                  bVar8 = bVar8 + 1 ^ *param_5 ^ 100;
+LAB_CODE_bdc4:
+                                                  pbVar6 = param_6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar8 = bVar8 + 1;
+                                                  if (_3_2 == '\0') {
+                                                    if (-1 < (char)in_PSW) goto LAB_CODE_bd50;
+                                                    bVar8 = bVar8 ^ 0x19;
+LAB_CODE_bdd0:
+                                                    bVar8 = bVar8 + 1 ^ *param_4 ^ 100;
+                                                  }
+                                                  else {
+                                                    _3_2 = '\0';
+                                                  }
+                                                  pbVar9 = pbVar6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  bVar8 = bVar8 + 1;
+                                                  if (_3_2 == '\0') goto code_c0xbddc;
+                                                  _3_2 = '\0';
+                                                  pbVar9 = pbVar6 + '\x02';
+                                                  } while( true );
+                                                  }
+                                                  pbVar10 = (byte *)((byte)pbVar3 ^ 0x4f);
+LAB_CODE_be60:
+                                                  in_PSW = in_PSW & 0xdd;
+                                                  pbVar3 = (byte *)((byte)(pbVar10 + '\x01') &
+                                                                    (byte)param_9 ^ 100);
+                                                  } while( true );
+                                                  }
+                                                  pbVar3 = (byte *)((byte)pbVar3 ^ 0x10);
+LAB_CODE_b8a0:
+                                                  pbVar3 = pbVar3 + '\x01';
+                                                  in_PSW = (param_5 < &DAT_INTMEM_64) << 7;
+                                                  if ((byte **)param_5 == &DAT_INTMEM_64)
+                                                  goto LAB_CODE_b8a4;
+                                                  goto LAB_CODE_b908;
+                                                  }
+                                                  _3_2 = '\0';
+LAB_CODE_b8a4:
+                                                  param_6 = param_6 + '\x01';
+                                                  nop();
+                                                  nop();
+                                                  nop();
+                                                  goto LAB_CODE_b8a8;
+                                                  }
+                                                  goto LAB_CODE_b810;
+                                                  }
+                                                  goto LAB_CODE_b8e8;
+                                                  }
+                                                  goto LAB_CODE_b800;
+                                                  }
+                                                  goto LAB_CODE_b948;
+                                                  }
+                                                  }
+                                                  goto LAB_CODE_b8b4;
+                                                  }
+                                                }
+                                                _3_2 = '\0';
+LAB_CODE_b844:
+                                                param_6 = param_6 + '\x01';
+                                                nop();
+                                                nop();
+                                                nop();
+                                                pbVar3 = pbVar3 + '\x01';
+                                                if (_3_2 != '\0') {
+                                                  _3_2 = '\0';
+                                                  goto LAB_CODE_b854;
+                                                }
+                                                if ((char)in_PSW < '\0') {
+                                                  pbVar3 = (byte *)((byte)pbVar3 ^ 0x68);
+                                                  goto LAB_CODE_b850;
+                                                }
+                                                goto LAB_CODE_b7d0;
+                                              }
+                                              goto LAB_CODE_b770;
+                                            }
+                                            goto LAB_CODE_b760;
+                                          }
+                                          goto LAB_CODE_b750;
+                                        }
+                                        goto LAB_CODE_b740;
+                                      }
+                                      goto LAB_CODE_b730;
+                                    }
+                                    goto LAB_CODE_b720;
+                                  }
+                                  goto LAB_CODE_b710;
+                                }
+                                goto LAB_CODE_b700;
+                              }
+                              goto LAB_CODE_b6f0;
+                            }
+                            goto LAB_CODE_b6e0;
+                          }
+                          goto LAB_CODE_b6d0;
+                        }
+                        goto LAB_CODE_b6c0;
+                      }
+                      if ((char)in_PSW < '\0') {
+                        bVar8 = (byte)pbVar6 ^ 0x61;
+LAB_CODE_b730:
+                        bVar8 = bVar8 + 1;
+                        goto code_c0xb364;
+                      }
+                    }
+                    goto LAB_CODE_b640;
+                  }
+                  bVar8 = 10;
+                }
+                else {
+                  _3_2 = '\0';
+                  param_6 = param_6 + '\x01';
+                }
+                nop();
+                nop();
+                nop();
+                bVar8 = bVar8 + 1;
+                if (_3_2 == '\0') {
+                  if (-1 < (char)in_PSW) goto LAB_CODE_b5d0;
+                  param_1 = (byte *)(bVar8 ^ 0x56);
+LAB_CODE_b650:
+                  bVar8 = (byte)(param_1 + '\x01') ^ (byte)pbVar5 ^ 100;
+                }
+                else {
+                  _3_2 = '\0';
+                }
+                param_6 = param_6 + '\x01';
+                nop();
+                nop();
+                nop();
+                param_1 = (byte *)(bVar8 + 1);
+                if (_3_2 == '\0') {
+                  if (-1 < (char)in_PSW) goto LAB_CODE_b5e0;
+                  param_1 = (byte *)((byte)param_1 ^ 0x24);
+LAB_CODE_b660:
+                  param_1 = (byte *)((byte)(param_1 + '\x01') ^ (byte)param_10 ^ 100);
+                }
+                else {
+                  _3_2 = '\0';
+                }
+                goto LAB_CODE_b664;
+              }
+LAB_CODE_b0b0:
+              param_1 = (byte *)(((byte)(param_1 + '\x01') | (byte)param_6) ^ 100);
+            } while( true );
+          }
+          *param_4 = *param_4 + 1;
+          nop();
+          param_1 = (byte *)((byte)param_1 >> 1 | (char)param_1 * -0x80);
+          pbVar6 = pbVar5;
+        }
+      }
+    }
+    nop();
+    nop();
+    nop();
+    param_1 = (byte *)(((byte)param_1 ^ 10) + 1);
+    if (_3_2 != '\0') {
+      _3_2 = 0;
+      return param_1;
+    }
+    pbVar6 = param_1;
+  } while (-1 < (char)in_PSW);
+  param_1 = (byte *)((byte)param_1 ^ 0x22);
+LAB_CODE_b010:
+  *param_5 = *param_5 + 1;
+  nop();
+  return param_1;
+code_c0xb129:
+  _3_2 = '\0';
+  param_6 = param_6 + '\x02';
+  nop();
+  nop();
+  nop();
+  pbVar6 = pbVar6 + '\x02';
+  if ((char)in_PSW < '\0') {
+    param_1 = (byte *)((byte)pbVar6 ^ 100);
+    goto LAB_CODE_b140;
+  }
+LAB_CODE_b0c0:
+  param_1 = (byte *)(((byte)(pbVar6 + '\x01') | (byte)param_5) ^ 100);
+  puVar11 = puVar13;
+  goto LAB_CODE_b0c4;
+LAB_CODE_b630:
+  puVar18['\x01'] = 0x33;
+  puVar18['\x02'] = 0xb6;
+  bVar8 = FUN_CODE_b364(param_1 + '\x01');
+  bVar8 = bVar8 ^ 10;
+  goto code_c0xb635;
+LAB_CODE_b670:
+  param_1 = (byte *)((byte)(param_1 + '\x01') ^ (byte)param_9 ^ 100);
+  goto LAB_CODE_b674;
+LAB_CODE_b680:
+  param_1 = (byte *)((byte)(param_1 + '\x01') ^ (byte)param_8 ^ 100);
+LAB_CODE_b684:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b610;
+    param_1 = (byte *)((byte)param_1 ^ 0xc);
+LAB_CODE_b690:
+    param_1 = (byte *)((byte)(param_1 + '\x01') ^ (byte)param_7 ^ 100);
+  }
+  else {
+    _3_2 = '\0';
+  }
+  pbVar6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b620;
+    param_1 = (byte *)((byte)param_1 ^ 0x39);
+LAB_CODE_b6a0:
+    param_1 = (byte *)((byte)(param_1 + '\x01') ^ (byte)pbVar6 ^ 100);
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = pbVar6 + '\x01';
+  nop();
+  nop();
+  goto LAB_CODE_b6a7;
+LAB_CODE_b8d4:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  goto LAB_CODE_b8d8;
+LAB_CODE_b854:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  pbVar3 = pbVar3 + '\x01';
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+LAB_CODE_b864:
+    param_6 = param_6 + '\x01';
+    nop();
+    nop();
+    nop();
+    pbVar3 = pbVar3 + '\x01';
+    if (_3_2 != '\0') {
+      _3_2 = '\0';
+      goto LAB_CODE_b874;
+    }
+    if (-1 < (char)in_PSW) goto LAB_CODE_b7f0;
+    pbVar3 = (byte *)((byte)pbVar3 ^ 0x25);
+    goto LAB_CODE_b870;
+  }
+  if (-1 < (char)in_PSW) goto LAB_CODE_b7e0;
+  pbVar3 = (byte *)((byte)pbVar3 ^ 0xd);
+  goto LAB_CODE_b860;
+LAB_CODE_be80:
+  in_PSW = in_PSW & 0xdd;
+  pbVar3 = (byte *)((byte)(pbVar10 + '\x01') & (byte)param_7 ^ 100);
+LAB_CODE_be84:
+  param_6 = pbVar9 + '\x01';
+  nop();
+  nop();
+  nop();
+  pbVar3 = pbVar3 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_be10;
+    pbVar10 = (byte *)((byte)pbVar3 ^ 0x37);
+LAB_CODE_be90:
+    in_PSW = in_PSW & 0xdd;
+    pbVar3 = (byte *)((byte)(pbVar10 + '\x01') & (byte)param_6 ^ 100);
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  goto LAB_CODE_be97;
+code_c0xbddc:
+  if (-1 < (char)in_PSW) goto LAB_CODE_bd60;
+  pbVar3 = (byte *)(bVar8 ^ 0x7c);
+  goto LAB_CODE_bde0;
+code_c0xbd3c:
+  if (-1 < (char)in_PSW) goto LAB_CODE_bcc0;
+  bVar8 = 0x5d;
+  goto LAB_CODE_bd40;
+LAB_CODE_bb90:
+  pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+  DAT_INTMEM_64 = pbVar9;
+  goto code_c0xbb95;
+LAB_CODE_bb40:
+  pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+  pbVar6 = pbVar5;
+  DAT_INTMEM_64 = pbVar5;
+  goto code_c0xbb45;
+code_c0xbbec:
+  if (-1 < (char)in_PSW) goto LAB_CODE_bb70;
+  pbVar10 = (byte *)((byte)pbVar3 ^ 0x16);
+  goto LAB_CODE_bbf0;
+LAB_CODE_bb70:
+  pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+  DAT_INTMEM_64 = param_8;
+  goto code_c0xbb75;
+LAB_CODE_bc00:
+  pbVar3 = (byte *)(*(byte *)(ZEXT12(pbVar10 + '\x01') + 0xbc02) ^ 100);
+  goto LAB_CODE_bc04;
+LAB_CODE_b8f0:
+  pbVar3 = pbVar3 + '\x01';
+  in_PSW = (pbVar3 < &DAT_INTMEM_64) << 7;
+  if ((byte **)pbVar3 != &DAT_INTMEM_64) goto LAB_CODE_b958;
+LAB_CODE_b8f4:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+LAB_CODE_b8f8:
+  pbVar3 = pbVar3 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b880;
+    pbVar3 = (byte *)((byte)pbVar3 ^ 0x7d);
+LAB_CODE_b900:
+    in_PSW = (in_PSW >> 7 ^ 1) << 7;
+    pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 100);
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+LAB_CODE_b908:
+  pbVar3 = pbVar3 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b890;
+    pbVar3 = (byte *)((byte)pbVar3 ^ 0x48);
+LAB_CODE_b910:
+    _c_4 = _c_4 ^ 1;
+    pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  goto LAB_CODE_b918;
+LAB_CODE_b940:
+  pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+  pbVar5 = DAT_INTMEM_64;
+  goto code_c0xb945;
+code_c0xb9cc:
+  if (-1 < (char)in_PSW) goto LAB_CODE_b950;
+  bVar7 = (byte)pbVar3 ^ 0x2f;
+  goto LAB_CODE_b9d0;
+LAB_CODE_b950:
+  pbVar3 = (byte *)((byte)(pbVar3 + '\x01') ^ 10);
+  param_10 = DAT_INTMEM_64;
+  goto code_c0xb955;
+code_c0xba5c:
+  if (-1 < (char)in_PSW) {
+                    /* WARNING: Bad instruction - Truncating control flow here */
+    halt_baddata();
+  }
+  bVar8 = bVar7 ^ 0x79;
+  goto LAB_CODE_ba60;
+code_c0xbd7c:
+  if (-1 < (char)in_PSW) {
+LAB_CODE_bd00:
+    pbVar6 = (byte *)(*(code *)(puVar19 + (bVar8 + 1)))();
+    return pbVar6;
+  }
+  pbVar3 = (byte *)(bVar8 ^ 0xc);
+  goto LAB_CODE_bd80;
+LAB_CODE_b5e0:
+  *param_4 = 100;
+  bVar8 = (byte)(param_1 + '\x01') ^ 10;
+code_c0xb5e5:
+  nop();
+  nop();
+  nop();
+  param_1 = (byte *)(bVar8 + 1);
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b570;
+    param_1 = (byte *)((byte)param_1 ^ 6);
+LAB_CODE_b5f0:
+    param_1 = param_1 + '\x01';
+    DAT_INTMEM_64 = (byte *)&DAT_INTMEM_64;
+    pbVar6 = param_6;
+  }
+  else {
+    _3_2 = '\0';
+    pbVar6 = param_6;
+  }
+  param_6 = pbVar6 + '\x01';
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    param_6 = pbVar6 + '\x02';
+    goto code_c0xb605;
+  }
+  if ((char)in_PSW < '\0') goto LAB_CODE_b600;
+LAB_CODE_b580:
+  param_8 = (byte *)&DAT_INTMEM_64;
+  bVar7 = (byte)(param_1 + '\x01') ^ 10;
+code_c0xb585:
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b510;
+    pbVar6 = (byte *)(bVar7 ^ 0x76);
+LAB_CODE_b590:
+    param_7 = (byte *)&DAT_INTMEM_64;
+    bVar7 = (byte)(pbVar6 + '\x01') ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b520;
+    param_1 = (byte *)(bVar7 ^ 0x43);
+LAB_CODE_b5a0:
+    param_6 = (byte *)&DAT_INTMEM_64;
+    bVar7 = (byte)(param_1 + '\x01') ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+LAB_CODE_b5a7:
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) {
+LAB_CODE_b530:
+      bVar7 = bVar7 + 1;
+      goto LAB_CODE_b463_1;
+    }
+    bVar8 = bVar7 ^ 0x26;
+LAB_CODE_b5b0:
+    param_5 = (byte *)&DAT_INTMEM_64;
+    bVar7 = bVar8 + 1 ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if ((char)in_PSW < '\0') {
+      bVar8 = bVar7 ^ 0xe;
+LAB_CODE_b5c0:
+      param_4 = (byte *)&DAT_INTMEM_64;
+      bVar7 = bVar8 + 1 ^ 10;
+      goto code_c0xb5c5;
+    }
+LAB_CODE_b540:
+    bVar7 = bVar7 + 1;
+    goto LAB_CODE_b5a7;
+  }
+  _3_2 = '\0';
+  param_6 = param_6 + '\x01';
+code_c0xb5c5:
+  nop();
+  nop();
+  nop();
+  bVar8 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if ((char)in_PSW < '\0') {
+      bVar8 = bVar8 ^ 0x6b;
+LAB_CODE_b5d0:
+      *param_5 = 100;
+      bVar8 = bVar8 + 1 ^ 10;
+      goto code_c0xb5d5;
+    }
+    pbVar5 = (byte *)&DAT_INTMEM_64;
+    nop();
+    nop();
+    nop();
+    bVar8 = (bVar7 + 2 ^ 10) + 1;
+    pbVar6 = (byte *)&DAT_INTMEM_64;
+    if (-1 < (char)in_PSW) goto LAB_CODE_b4e0;
+    bVar8 = bVar8 ^ 0x5e;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+code_c0xb5d5:
+    nop();
+    nop();
+    nop();
+    bVar8 = bVar8 + 1;
+    if (_3_2 != '\0') {
+      _3_2 = '\0';
+      param_6 = param_6 + '\x01';
+      goto code_c0xb5e5;
+    }
+    if ((char)in_PSW < '\0') {
+      param_1 = (byte *)(bVar8 ^ 99);
+      goto LAB_CODE_b5e0;
+    }
+  }
+  param_10 = (byte *)&DAT_INTMEM_64;
+  bVar7 = bVar8 + 1 ^ 10;
+code_c0xb565:
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b4f0;
+    param_1 = (byte *)(bVar7 ^ 0x3b);
+LAB_CODE_b570:
+    param_9 = (byte *)&DAT_INTMEM_64;
+    bVar7 = (byte)(param_1 + '\x01') ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+    goto code_c0xb585;
+  }
+  if ((char)in_PSW < '\0') {
+    param_1 = (byte *)(bVar7 ^ 0x13);
+    goto LAB_CODE_b580;
+  }
+LAB_CODE_b500:
+  bVar7 = bVar7 + 1;
+  in_PSW = 0;
+  bVar8 = bVar7;
+  if (param_3 != 0) {
+    bVar8 = bVar7 / param_3;
+    param_3 = bVar7 % param_3;
+  }
+  bVar7 = bVar8 ^ 100;
+LAB_CODE_b504:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b490;
+    bVar7 = bVar7 ^ 0x73;
+LAB_CODE_b510:
+    bVar7 = *(byte *)((ushort)(bVar7 + 1) + 0xb512) ^ 100;
+    pbVar6 = param_6;
+  }
+  else {
+    _3_2 = '\0';
+    pbVar6 = param_6;
+  }
+  param_6 = pbVar6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b4a0;
+    bVar7 = bVar7 ^ 0x46;
+LAB_CODE_b520:
+    in_PSW = (in_PSW >> 7 & _c_4) << 7;
+    bVar7 = bVar7 + 1 ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = pbVar6 + '\x02';
+  }
+  nop();
+  nop();
+  nop();
+  bVar8 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b4b0;
+    bVar7 = bVar8 ^ 0x23;
+    goto LAB_CODE_b530;
+  }
+  _3_2 = '\0';
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 2;
+  if ((char)in_PSW < '\0') {
+    bVar7 = bVar7 ^ 0xb;
+    goto LAB_CODE_b540;
+  }
+LAB_CODE_b4c0:
+  bVar7 = bVar7 + 1 ^ 10;
+  DAT_INTMEM_64 = param_4;
+code_c0xb4c5:
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b450;
+    DAT_INTMEM_64 = (byte *)*param_5;
+    bVar7 = (bVar7 ^ 0x53) + 1 ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+    goto code_c0xb4e5;
+  }
+  if ((char)in_PSW < '\0') goto code_c0xb4de;
+LAB_CODE_b460:
+  bVar7 = bVar7 + 1 ^ 10;
+  DAT_INTMEM_64 = param_10;
+code_c0xb465:
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+code_c0xb475:
+    nop();
+    nop();
+    nop();
+    bVar7 = bVar7 + 1;
+    if (_3_2 == '\0') {
+      if (-1 < (char)in_PSW) goto LAB_CODE_b400;
+      bVar7 = bVar7 ^ 0x2b;
+LAB_CODE_b480:
+      bVar7 = bVar7 + 1 ^ 10;
+      DAT_INTMEM_64 = param_8;
+    }
+    else {
+      _3_2 = '\0';
+      param_6 = param_6 + '\x01';
+    }
+    nop();
+    nop();
+    nop();
+    bVar7 = bVar7 + 1;
+    if (_3_2 == '\0') {
+      if ((char)in_PSW < '\0') {
+        bVar7 = bVar7 ^ 0x4e;
+LAB_CODE_b490:
+        bVar7 = bVar7 + 1 ^ 10;
+        DAT_INTMEM_64 = param_7;
+        goto code_c0xb495;
+      }
+LAB_CODE_b410:
+      bVar7 = puVar19[bVar7 + 1] ^ 100;
+LAB_CODE_b414:
+      pbVar6 = param_6 + '\x01';
+      nop();
+      nop();
+      nop();
+      bVar7 = bVar7 + 1;
+      if (_3_2 == '\0') {
+        if (-1 < (char)in_PSW) goto LAB_CODE_b3a0;
+        bVar7 = bVar7 ^ 0x3c;
+        param_6 = pbVar6;
+LAB_CODE_b420:
+        _c_4 = in_PSW >> 7;
+        bVar7 = bVar7 + 1 ^ 10;
+      }
+      else {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x02';
+      }
+      nop();
+      nop();
+      nop();
+      bVar8 = bVar7 + 1;
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+        nop();
+        nop();
+        nop();
+        bVar7 = bVar7 + 2;
+        if (-1 < (char)in_PSW) goto LAB_CODE_b3c0;
+        bVar7 = bVar7 ^ 0x71;
+        goto LAB_CODE_b440;
+      }
+      if (-1 < (char)in_PSW) goto LAB_CODE_b3b0;
+      bVar7 = bVar8 ^ 0x59;
+LAB_CODE_b430:
+      bVar7 = bVar7 + 1;
+      puVar18['\x01'] = 0x33;
+      puVar12 = puVar18 + '\x02';
+      puVar18 = puVar18 + '\x02';
+      *puVar12 = 0xb4;
+    }
+    else {
+      _3_2 = '\0';
+      param_6 = param_6 + '\x01';
+code_c0xb495:
+      nop();
+      nop();
+      nop();
+      bVar7 = bVar7 + 1;
+      if (_3_2 == '\0') {
+        if (-1 < (char)in_PSW) goto LAB_CODE_b420;
+        bVar7 = bVar7 ^ 0x7b;
+LAB_CODE_b4a0:
+        bVar7 = bVar7 + 1 ^ 10;
+        DAT_INTMEM_64 = param_6;
+      }
+      else {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+      }
+      nop();
+      nop();
+      nop();
+      bVar7 = bVar7 + 1;
+      if (_3_2 == '\0') {
+        if (-1 < (char)in_PSW) goto LAB_CODE_b430;
+        bVar8 = bVar7 ^ 0x1e;
+LAB_CODE_b4b0:
+        bVar7 = bVar8 + 1 ^ 10;
+        DAT_INTMEM_64 = param_5;
+      }
+      else {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+      }
+      nop();
+      nop();
+      nop();
+      bVar7 = bVar7 + 1;
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+        goto code_c0xb4c5;
+      }
+      if ((char)in_PSW < '\0') {
+        bVar7 = bVar7 ^ 0x36;
+        goto LAB_CODE_b4c0;
+      }
+LAB_CODE_b440:
+      param_2 = (undefined1 *)0x6464;
+      puVar19 = (undefined1 *)0x6464;
+      pbVar6 = param_6 + '\x01';
+      nop();
+      nop();
+      nop();
+      bVar7 = bVar7 + 2;
+      if (_3_2 == '\0') {
+        param_6 = pbVar6;
+        if (-1 < (char)in_PSW) goto LAB_CODE_b3d0;
+        bVar7 = bVar7 ^ 0x14;
+LAB_CODE_b450:
+        bVar7 = bVar7 + 1 ^ 10;
+        DAT_INTMEM_64 = pbVar5;
+      }
+      else {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x02';
+      }
+      nop();
+      nop();
+      nop();
+      bVar7 = bVar7 + 1;
+      if (_3_2 == '\0') goto code_c0xb45c;
+      _3_2 = '\0';
+    }
+LAB_CODE_b463_1:
+    param_6 = param_6 + '\x01';
+    goto code_c0xb465;
+  }
+  if ((char)in_PSW < '\0') {
+    bVar7 = bVar7 ^ 3;
+LAB_CODE_b470:
+    bVar7 = bVar7 + 1 ^ 10;
+    DAT_INTMEM_64 = param_9;
+    goto code_c0xb475;
+  }
+LAB_CODE_b3f0:
+  bVar8 = (char)DAT_INTMEM_64 - ((char)in_PSW >> 7);
+  in_PSW = (bVar7 + 1 < bVar8) << 7;
+  bVar7 = (bVar7 + 1) - bVar8 ^ 10;
+code_c0xb3f5:
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b380;
+    bVar7 = bVar7 ^ 0x6c;
+LAB_CODE_b400:
+    param_1 = (byte *)(bVar7 + 1);
+LAB_CODE_b401:
+    pbVar6 = (byte *)('d' - ((char)in_PSW >> 7));
+    in_PSW = (param_1 < pbVar6) << 7;
+    bVar7 = (char)param_1 - (char)pbVar6 ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    goto LAB_CODE_b414;
+  }
+  if ((char)in_PSW < '\0') {
+    bVar7 = bVar7 ^ 9;
+    goto LAB_CODE_b410;
+  }
+LAB_CODE_b390:
+  bVar8 = (char)param_7 - ((char)in_PSW >> 7);
+  in_PSW = (bVar7 + 1 < bVar8) << 7;
+  bVar7 = (bVar7 + 1) - bVar8 ^ 100;
+LAB_CODE_b394:
+  pbVar6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    param_6 = pbVar6;
+    if (-1 < (char)in_PSW) goto LAB_CODE_b320;
+    bVar7 = bVar7 ^ 1;
+LAB_CODE_b3a0:
+    bVar8 = (char)pbVar6 - ((char)in_PSW >> 7);
+    in_PSW = (bVar7 + 1 < bVar8) << 7;
+    bVar7 = (bVar7 + 1) - bVar8 ^ 100;
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = pbVar6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) {
+LAB_CODE_b330:
+      bVar7 = bVar7 + 1;
+      param_6 = param_6 + '\x01';
+      goto code_c0xb565;
+    }
+    bVar8 = bVar7 ^ 100;
+LAB_CODE_b3b0:
+    bVar7 = (char)param_5 - ((char)in_PSW >> 7);
+    in_PSW = (bVar8 + 1 < bVar7) << 7;
+    bVar7 = (bVar8 + 1) - bVar7 ^ 100;
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  param_2 = puVar19;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b340;
+    bVar7 = bVar7 ^ 0x4c;
+LAB_CODE_b3c0:
+    bVar8 = (char)param_4 - ((char)in_PSW >> 7);
+    in_PSW = (bVar7 + 1 < bVar8) << 7;
+    bVar7 = (bVar7 + 1) - bVar8 ^ 100;
+    param_2 = puVar19;
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b350;
+    bVar7 = bVar7 ^ 0x29;
+LAB_CODE_b3d0:
+    bVar8 = *param_5 - ((char)in_PSW >> 7);
+    in_PSW = (bVar7 + 1 < bVar8) << 7;
+    bVar7 = (bVar7 + 1) - bVar8 ^ 100;
+    puVar19 = param_2;
+  }
+  else {
+    _3_2 = '\0';
+    puVar19 = param_2;
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b360;
+    bVar7 = bVar7 ^ 0x21;
+LAB_CODE_b3e0:
+    bVar8 = *param_4 - ((char)in_PSW >> 7);
+    in_PSW = (bVar7 + 1 < bVar8) << 7;
+    bVar7 = (bVar7 + 1) - bVar8 ^ 100;
+    pbVar6 = param_6;
+  }
+  else {
+    _3_2 = '\0';
+    pbVar6 = param_6;
+  }
+  param_6 = pbVar6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    param_6 = pbVar6 + '\x02';
+    goto code_c0xb3f5;
+  }
+  if ((char)in_PSW < '\0') {
+    bVar7 = bVar7 ^ 0x44;
+    goto LAB_CODE_b3f0;
+  }
+LAB_CODE_b370:
+  bVar8 = (char)param_9 - ((char)in_PSW >> 7);
+  in_PSW = (bVar7 + 1 < bVar8) << 7;
+  bVar8 = (bVar7 + 1) - bVar8 ^ 100;
+LAB_CODE_b374:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar8 = bVar8 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b300;
+    bVar7 = bVar8 ^ 0x51;
+LAB_CODE_b380:
+    bVar8 = (char)param_8 - ((char)in_PSW >> 7);
+    in_PSW = (bVar7 + 1 < bVar8) << 7;
+    bVar8 = (bVar7 + 1) - bVar8 ^ 100;
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar8 + 1;
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    goto LAB_CODE_b394;
+  }
+  if ((char)in_PSW < '\0') {
+    bVar7 = bVar7 ^ 0x34;
+    goto LAB_CODE_b390;
+  }
+  puVar19 = puVar19 + 1;
+  bVar7 = bVar8 + 2 ^ 100;
+  pbVar6 = param_6;
+LAB_CODE_b314:
+  param_6 = pbVar6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b2a0;
+    bVar7 = bVar7 ^ 0x32;
+LAB_CODE_b320:
+    in_PSW = _c_4 << 7;
+    bVar7 = bVar7 + 1 ^ 10;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = pbVar6 + '\x02';
+  }
+  nop();
+  nop();
+  nop();
+  bVar8 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b2b0;
+    bVar7 = bVar8 ^ 0x57;
+    goto LAB_CODE_b330;
+  }
+  _3_2 = '\0';
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 2;
+  if ((char)in_PSW < '\0') goto code_c0xb33e;
+LAB_CODE_b2c0:
+  param_1 = (byte *)(bVar7 + 1 ^ 10);
+  param_4 = DAT_INTMEM_64;
+  param_2 = puVar19;
+code_c0xb2c5:
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b250;
+    bVar8 = (byte)param_1 ^ 0x27;
+LAB_CODE_b2d0:
+    *param_5 = (byte)DAT_INTMEM_64;
+    param_1 = (byte *)(bVar8 + 1 ^ 10);
+    puVar19 = param_2;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+    puVar19 = param_2;
+  }
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) {
+LAB_CODE_b260:
+      param_1 = (byte *)((byte)(param_1 + '\x01') ^ 10);
+      param_10 = DAT_INTMEM_64;
+code_c0xb265:
+      nop();
+      nop();
+      nop();
+LAB_CODE_b268:
+      param_1 = param_1 + '\x01';
+      if (_3_2 == '\0') {
+        if (-1 < (char)in_PSW) goto LAB_CODE_b1f0;
+        pbVar6 = (byte *)((byte)param_1 ^ 0x77);
+LAB_CODE_b270:
+        param_1 = (byte *)((byte)(pbVar6 + '\x01') ^ 10);
+        param_9 = DAT_INTMEM_64;
+      }
+      else {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+      }
+      nop();
+      nop();
+      nop();
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+        bVar8 = in_PSW;
+        goto code_c0xb285;
+      }
+      if ((char)in_PSW < '\0') {
+        param_1 = (byte *)((byte)param_1 ^ 0x5f);
+        goto LAB_CODE_b280;
+      }
+LAB_CODE_b200:
+      param_1 = param_1 + '\x01';
+      in_PSW = (param_1 < &DAT_INTMEM_64) << 7;
+      if ((byte **)param_1 != &DAT_INTMEM_64) goto LAB_CODE_b268;
+LAB_CODE_b204:
+      param_6 = param_6 + '\x01';
+      nop();
+      nop();
+      nop();
+      bVar8 = in_PSW;
+LAB_CODE_b208:
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        goto LAB_CODE_b214;
+      }
+      if ((char)bVar8 < '\0') {
+        param_1 = (byte *)((byte)param_1 ^ 0x7d);
+        goto LAB_CODE_b210;
+      }
+LAB_CODE_b190:
+      param_1 = param_1 + '\x01';
+      in_PSW = (param_7 < &DAT_INTMEM_64) << 7;
+      if ((byte **)param_7 != &DAT_INTMEM_64) goto LAB_CODE_b1f8;
+LAB_CODE_b194:
+      param_6 = param_6 + '\x01';
+      nop();
+      nop();
+      nop();
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        goto LAB_CODE_b1a4;
+      }
+      param_2 = puVar19;
+      if (-1 < (char)in_PSW) goto LAB_CODE_b120;
+      param_1 = (byte *)((byte)param_1 ^ 0x75);
+LAB_CODE_b1a0:
+      param_1 = param_1 + '\x01';
+      bVar8 = (param_6 < &DAT_INTMEM_64) << 7;
+      in_PSW = bVar8;
+      if ((byte **)param_6 != &DAT_INTMEM_64) goto LAB_CODE_b208;
+LAB_CODE_b1a4:
+      param_6 = param_6 + '\x01';
+      nop();
+      nop();
+      nop();
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+LAB_CODE_b1b4:
+        param_6 = param_6 + '\x01';
+        nop();
+        nop();
+        nop();
+        goto LAB_CODE_b1b8;
+      }
+      if (-1 < (char)in_PSW) goto LAB_CODE_b130;
+      param_1 = (byte *)((byte)param_1 ^ 0x10);
+LAB_CODE_b1b0:
+      param_1 = param_1 + '\x01';
+      in_PSW = (param_5 < &DAT_INTMEM_64) << 7;
+      if ((byte **)param_5 == &DAT_INTMEM_64) goto LAB_CODE_b1b4;
+LAB_CODE_b218:
+      param_1 = param_1 + '\x01';
+      if (_3_2 == '\0') {
+        if (-1 < (char)in_PSW) goto LAB_CODE_b1a0;
+        param_1 = (byte *)((byte)param_1 ^ 0x48);
+LAB_CODE_b220:
+        _c_4 = _c_4 ^ 1;
+        param_1 = (byte *)((byte)(param_1 + '\x01') ^ 10);
+      }
+      else {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+      }
+      nop();
+      nop();
+      nop();
+LAB_CODE_b228:
+      param_1 = param_1 + '\x01';
+      if (_3_2 == '\0') {
+        if (-1 < (char)in_PSW) goto LAB_CODE_b1b0;
+        param_1 = (byte *)((byte)param_1 ^ 0x2d);
+LAB_CODE_b230:
+        puVar18['\x01'] = 0x33;
+        puVar18['\x02'] = 0xb2;
+        bVar8 = func_0xb564(param_1 + '\x01');
+        param_1 = (byte *)(bVar8 ^ 10);
+      }
+      else {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+      }
+      nop();
+      nop();
+      nop();
+LAB_CODE_b238:
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        param_6 = param_6 + '\x01';
+        goto code_c0xb245;
+      }
+      if ((char)in_PSW < '\0') {
+        param_1 = (byte *)((byte)param_1 ^ 5);
+        goto LAB_CODE_b240;
+      }
+LAB_CODE_b1c0:
+      param_1 = param_1 + '\x01';
+      in_PSW = (param_4 < &DAT_INTMEM_64) << 7;
+      if ((byte **)param_4 != &DAT_INTMEM_64) goto LAB_CODE_b228;
+LAB_CODE_b1c4:
+      param_6 = param_6 + '\x01';
+      nop();
+      nop();
+      nop();
+      param_2 = puVar19;
+LAB_CODE_b1c8:
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        goto LAB_CODE_b1d4;
+      }
+      if ((char)in_PSW < '\0') {
+        param_1 = (byte *)((byte)param_1 ^ 0x5d);
+        goto LAB_CODE_b1d0;
+      }
+      while( true ) {
+        param_1 = param_1 + '\x01';
+        in_PSW = (pbVar5 < &DAT_INTMEM_64) << 7;
+        puVar19 = param_2;
+        if ((byte **)pbVar5 == &DAT_INTMEM_64) break;
+LAB_CODE_b1b8:
+        param_1 = param_1 + '\x01';
+        if (_3_2 != '\0') {
+          _3_2 = '\0';
+          goto LAB_CODE_b1c4;
+        }
+        puVar13 = puVar18;
+        param_2 = puVar19;
+        if ((char)in_PSW < '\0') {
+          param_1 = (byte *)((byte)param_1 ^ 0x38);
+          goto LAB_CODE_b1c0;
+        }
+LAB_CODE_b140:
+        puVar11 = puVar13 + '\x01';
+        puVar18 = puVar13 + '\x01';
+        puVar13['\x01'] = DAT_INTMEM_64;
+        nop();
+        nop();
+        nop();
+        param_1 = (byte *)(((byte)(param_1 + '\x01') ^ 10) + 1);
+        if (_3_2 != '\0') {
+          _3_2 = '\0';
+          puVar18 = puVar13 + '\x01';
+          puVar19 = param_2;
+          break;
+        }
+        if (-1 < (char)in_PSW) goto LAB_CODE_b0d0;
+        param_1 = (byte *)((byte)param_1 ^ 1);
+      }
+      param_6 = param_6 + '\x01';
+      nop();
+      nop();
+      nop();
+      param_1 = param_1 + '\x01';
+      if (_3_2 != '\0') {
+        _3_2 = '\0';
+        goto LAB_CODE_b164;
+      }
+      pbVar3 = param_6;
+      param_2 = puVar19;
+      if ((char)in_PSW < '\0') {
+        param_1 = (byte *)((byte)param_1 ^ 0x68);
+LAB_CODE_b160:
+        param_1 = param_1 + '\x01';
+        in_PSW = (param_10 < &DAT_INTMEM_64) << 7;
+        param_2 = puVar19;
+        if ((byte **)param_10 == &DAT_INTMEM_64) {
+LAB_CODE_b164:
+          param_6 = param_6 + '\x01';
+          nop();
+          nop();
+          nop();
+          param_1 = param_1 + '\x01';
+          if (_3_2 != '\0') {
+            _3_2 = '\0';
+            goto LAB_CODE_b174;
+          }
+          param_2 = puVar19;
+          if ((char)in_PSW < '\0') {
+            param_1 = (byte *)((byte)param_1 ^ 0xd);
+LAB_CODE_b170:
+            param_1 = param_1 + '\x01';
+            in_PSW = (param_9 < &DAT_INTMEM_64) << 7;
+            if ((byte **)param_9 != &DAT_INTMEM_64) goto LAB_CODE_b1d8;
+LAB_CODE_b174:
+            param_6 = param_6 + '\x01';
+            nop();
+            nop();
+            nop();
+            param_1 = param_1 + '\x01';
+            if (_3_2 != '\0') {
+              _3_2 = '\0';
+              goto LAB_CODE_b184;
+            }
+            param_2 = puVar19;
+            if ((char)in_PSW < '\0') goto code_c0xb17e;
+            goto LAB_CODE_b100;
+          }
+          goto LAB_CODE_b0f0;
+        }
+        goto LAB_CODE_b1c8;
+      }
+LAB_CODE_b0e0:
+      pbVar6 = (byte *)(((byte)(param_1 + '\x01') | *param_5) ^ 100);
+      goto LAB_CODE_b0e4;
+    }
+    bVar8 = (byte)param_1 ^ 0x2f;
+LAB_CODE_b2e0:
+    *param_4 = (byte)DAT_INTMEM_64;
+    param_1 = (byte *)(bVar8 + 1 ^ 10);
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  pbVar6 = param_1 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b270;
+    halt_baddata();
+  }
+  _3_2 = '\0';
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x02';
+  if ((char)in_PSW < '\0') {
+    bVar8 = (byte)param_1 ^ 0x62;
+LAB_CODE_b300:
+    sVar1 = (ushort)(bVar8 + 1) * (ushort)param_3;
+    param_3 = (byte)((ushort)sVar1 >> 8);
+    bVar8 = 0;
+    in_PSW = 0;
+    param_6 = param_6 + '\x01';
+    nop();
+    nop();
+    nop();
+    bVar7 = ((byte)sVar1 ^ 100) + 1;
+    if (_3_2 != '\0') {
+      _3_2 = '\0';
+      pbVar6 = param_6;
+      goto LAB_CODE_b314;
+    }
+LAB_CODE_b290:
+    param_1 = (byte *)(bVar7 + 1 ^ 10);
+    param_7 = DAT_INTMEM_64;
+    in_PSW = bVar8;
+  }
+  else {
+LAB_CODE_b280:
+    param_1 = (byte *)((byte)(param_1 + '\x01') ^ 10);
+    param_8 = DAT_INTMEM_64;
+    bVar8 = in_PSW;
+code_c0xb285:
+    nop();
+    nop();
+    nop();
+    param_1 = param_1 + '\x01';
+    if (_3_2 == '\0') {
+      if (-1 < (char)bVar8) {
+LAB_CODE_b210:
+        bVar8 = (bVar8 >> 7 ^ 1) << 7;
+        param_1 = (byte *)((byte)(param_1 + '\x01') ^ 100);
+LAB_CODE_b214:
+        param_6 = param_6 + '\x01';
+        nop();
+        nop();
+        nop();
+        in_PSW = bVar8;
+        goto LAB_CODE_b218;
+      }
+      bVar7 = (byte)param_1 ^ 0x3a;
+      goto LAB_CODE_b290;
+    }
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+    in_PSW = bVar8;
+  }
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b220;
+    bVar7 = (byte)param_1 ^ 0xf;
+LAB_CODE_b2a0:
+    param_1 = (byte *)(bVar7 + 1 ^ 10);
+    param_6 = DAT_INTMEM_64;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b230;
+    bVar8 = (byte)param_1 ^ 0x6a;
+LAB_CODE_b2b0:
+    param_1 = (byte *)(bVar8 + 1 ^ 10);
+    param_5 = DAT_INTMEM_64;
+  }
+  else {
+    _3_2 = '\0';
+    param_6 = param_6 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 == '\0') goto code_c0xb2bc;
+  _3_2 = '\0';
+  param_6 = param_6 + '\x01';
+  param_2 = puVar19;
+  goto code_c0xb2c5;
+code_c0xb4de:
+  bVar8 = bVar7 ^ 0x5b;
+  pbVar6 = pbVar5;
+LAB_CODE_b4e0:
+  pbVar5 = pbVar6;
+  DAT_INTMEM_64 = (byte *)*param_4;
+  bVar7 = bVar8 + 1 ^ 10;
+code_c0xb4e5:
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b470;
+    bVar7 = bVar7 ^ 0x3e;
+LAB_CODE_b4f0:
+    bVar7 = bVar7 + 1;
+  }
+  else {
+    _3_2 = '\0';
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar7 = bVar7 + 1;
+  if (_3_2 == '\0') goto code_c0xb4fc;
+  _3_2 = '\0';
+  goto LAB_CODE_b504;
+code_c0xb4fc:
+  if (-1 < (char)in_PSW) goto LAB_CODE_b480;
+  bVar7 = bVar7 ^ 0x16;
+  goto LAB_CODE_b500;
+code_c0xb45c:
+  if (-1 < (char)in_PSW) goto LAB_CODE_b3e0;
+  bVar7 = bVar7 ^ 0x66;
+  goto LAB_CODE_b460;
+code_c0xb33e:
+  bVar7 = bVar7 ^ 0x7f;
+  param_2 = puVar19;
+LAB_CODE_b340:
+  in_PSW = (in_PSW >> 7 | _c_4 ^ 1) << 7;
+  nop();
+  nop();
+  nop();
+  bVar8 = (bVar7 + 1 ^ 10) + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b2d0;
+    bVar7 = bVar8 ^ 0x1a;
+LAB_CODE_b350:
+    bVar8 = (char)pbVar5 - ((char)in_PSW >> 7);
+    in_PSW = (bVar7 + 1 < bVar8) << 7;
+    bVar8 = (bVar7 + 1) - bVar8 ^ 100;
+    puVar19 = param_2;
+  }
+  else {
+    _3_2 = '\0';
+    puVar19 = param_2;
+  }
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar8 = bVar8 + 1;
+  if (_3_2 == '\0') {
+    if (-1 < (char)in_PSW) goto LAB_CODE_b2e0;
+    bVar7 = bVar8 ^ 0x1c;
+LAB_CODE_b360:
+    bVar8 = (char)param_10 - ((char)in_PSW >> 7);
+    in_PSW = (bVar7 + 1 < bVar8) << 7;
+    bVar8 = (bVar7 + 1) - bVar8 ^ 100;
+  }
+  else {
+    _3_2 = '\0';
+  }
+code_c0xb364:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  bVar8 = bVar8 + 1;
+  if (_3_2 == '\0') goto code_c0xb36c;
+  _3_2 = '\0';
+  goto LAB_CODE_b374;
+code_c0xb36c:
+  if (-1 < (char)in_PSW) {
+                    /* WARNING: Bad instruction - Truncating control flow here */
+    halt_baddata();
+  }
+  bVar7 = bVar8 ^ 0x79;
+  goto LAB_CODE_b370;
+code_c0xb2bc:
+  if (-1 < (char)in_PSW) {
+LAB_CODE_b240:
+    in_PSW = (in_PSW >> 7 & ~_c_4) << 7;
+    param_1 = (byte *)((byte)(param_1 + '\x01') ^ 10);
+code_c0xb245:
+    nop();
+    nop();
+    nop();
+    param_2 = puVar19;
+    goto LAB_CODE_b248;
+  }
+  bVar7 = (byte)param_1 ^ 0x42;
+  goto LAB_CODE_b2c0;
+LAB_CODE_b120:
+  pbVar6 = param_1 + '\x01';
+  DAT_INTMEM_64 = (byte *)((byte)DAT_INTMEM_64 | 100);
+  puVar13 = puVar18;
+  goto LAB_CODE_b124;
+code_c0xb17e:
+  param_1 = (byte *)((byte)param_1 ^ 0x25);
+  while( true ) {
+    param_1 = param_1 + '\x01';
+    in_PSW = (param_8 < &DAT_INTMEM_64) << 7;
+    if ((byte **)param_8 == &DAT_INTMEM_64) break;
+LAB_CODE_b1e8:
+    param_1 = param_1 + '\x01';
+    if (_3_2 == '\0') {
+      if ((char)in_PSW < '\0') {
+        param_1 = (byte *)((byte)param_1 ^ 0x30);
+LAB_CODE_b1f0:
+        param_1 = param_1 + '\x01';
+        in_PSW = (param_1 < DAT_INTMEM_64) << 7;
+        if (param_1 != DAT_INTMEM_64) {
+LAB_CODE_b258:
+          param_1 = param_1 + '\x01';
+          if (_3_2 != '\0') {
+            _3_2 = '\0';
+            param_6 = param_6 + '\x01';
+            goto code_c0xb265;
+          }
+          if (-1 < (char)in_PSW) {
+            do {
+              param_1 = param_1 + '\x01';
+              in_PSW = (*param_4 < 100) << 7;
+              param_2 = puVar19;
+              if (*param_4 == 100) {
+LAB_CODE_b1e4:
+                param_6 = param_6 + '\x01';
+                nop();
+                nop();
+                nop();
+                goto LAB_CODE_b1e8;
+              }
+LAB_CODE_b248:
+              param_1 = param_1 + '\x01';
+              if (_3_2 != '\0') {
+                _3_2 = '\0';
+                param_6 = param_6 + '\x01';
+                goto code_c0xb255;
+              }
+              if ((char)in_PSW < '\0') goto code_c0xb24e;
+LAB_CODE_b1d0:
+              param_1 = param_1 + '\x01';
+              in_PSW = (*param_5 < 100) << 7;
+              puVar19 = param_2;
+              if (*param_5 != 100) goto LAB_CODE_b238;
+LAB_CODE_b1d4:
+              param_6 = param_6 + '\x01';
+              nop();
+              nop();
+              nop();
+              puVar19 = param_2;
+LAB_CODE_b1d8:
+              param_1 = param_1 + '\x01';
+              if (_3_2 != '\0') {
+                _3_2 = '\0';
+                goto LAB_CODE_b1e4;
+              }
+              if (-1 < (char)in_PSW) goto LAB_CODE_b160;
+              param_1 = (byte *)((byte)param_1 ^ 0x55);
+            } while( true );
+          }
+          param_1 = (byte *)((byte)param_1 ^ 0x12);
+          goto LAB_CODE_b260;
+        }
+        goto LAB_CODE_b1f4;
+      }
+      goto LAB_CODE_b170;
+    }
+    _3_2 = '\0';
+LAB_CODE_b1f4:
+    param_6 = param_6 + '\x01';
+    nop();
+    nop();
+    nop();
+LAB_CODE_b1f8:
+    param_1 = param_1 + '\x01';
+    if (_3_2 != '\0') {
+      _3_2 = '\0';
+      goto LAB_CODE_b204;
+    }
+    if ((char)in_PSW < '\0') {
+      param_1 = (byte *)((byte)param_1 ^ 0x18);
+      goto LAB_CODE_b200;
+    }
+  }
+LAB_CODE_b184:
+  param_6 = param_6 + '\x01';
+  nop();
+  nop();
+  nop();
+  param_1 = param_1 + '\x01';
+  if (_3_2 != '\0') {
+    _3_2 = '\0';
+    goto LAB_CODE_b194;
+  }
+  param_2 = puVar19;
+  if (-1 < (char)in_PSW) goto LAB_CODE_b110;
+  param_1 = (byte *)((byte)param_1 ^ 0x40);
+  goto LAB_CODE_b190;
+code_c0xb24e:
+  param_1 = (byte *)((byte)param_1 ^ 0x60);
+LAB_CODE_b250:
+  param_1 = (byte *)((byte)(param_1 + '\x01') ^ 10);
+  pbVar5 = DAT_INTMEM_64;
+code_c0xb255:
+  nop();
+  nop();
+  nop();
+  puVar19 = param_2;
+  goto LAB_CODE_b258;
+LAB_CODE_b0d0:
+  param_1 = (byte *)(((byte)(param_1 + '\x01') | (byte)param_4) ^ 100);
+  puVar18 = puVar11;
+  goto LAB_CODE_b0d4;
+}
+

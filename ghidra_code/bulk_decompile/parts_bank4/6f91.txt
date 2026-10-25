@@ -1,0 +1,9 @@
+=== 0x6f91 ===
+
+char FUN_CODE_6f91(byte param_1)
+
+{
+  return ((char)((ushort)param_1 * 6 >> 8) - (((0x9f < (byte)((ushort)param_1 * 6)) << 7) >> 7)) +
+         ']';
+}
+

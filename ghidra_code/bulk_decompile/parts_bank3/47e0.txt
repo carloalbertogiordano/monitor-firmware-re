@@ -1,0 +1,22 @@
+=== 0x47e0 ===
+
+void FUN_CODE_47e0(char param_1)
+
+{
+  BANK0_R0 = param_1 + '\x01';
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_4001();
+  return;
+}
+

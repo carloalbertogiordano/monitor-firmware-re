@@ -1,0 +1,9 @@
+=== 0x0f19 ===
+
+void FUN_CODE_0f19(void)
+
+{
+  FUN_CODE_0409(0xf622);
+  return;
+}
+

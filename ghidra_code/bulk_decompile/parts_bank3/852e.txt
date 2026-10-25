@@ -1,0 +1,20 @@
+=== 0x852e ===
+
+void FUN_CODE_852e(char param_1,char param_2,char param_3,byte param_4)
+
+{
+  char cVar1;
+  
+  nop();
+  cVar1 = FIFLG_5;
+  if (cVar1 != '\0') {
+    FIFLG_5 = 0;
+    thunk_FUN_CODE_851c(param_1 + 4U ^ 9 ^ param_4,param_3 + -1);
+    FUN_CODE_87b5(param_2 + -1);
+    return;
+  }
+  FUN_CODE_8045();
+  FUN_CODE_81e6(param_3 + -1);
+  return;
+}
+

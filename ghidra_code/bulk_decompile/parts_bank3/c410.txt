@@ -1,0 +1,9 @@
+=== 0xc410 ===
+
+void FUN_CODE_c410(void)
+
+{
+  FUN_CODE_07f3(0,2);
+  return;
+}
+

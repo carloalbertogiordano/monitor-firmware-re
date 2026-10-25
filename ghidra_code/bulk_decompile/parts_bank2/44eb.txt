@@ -1,0 +1,8 @@
+=== 0x44eb ===
+
+undefined1 FUN_CODE_44eb(void)
+
+{
+  return 1;
+}
+

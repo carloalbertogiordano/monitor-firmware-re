@@ -1,0 +1,12 @@
+=== 0xfe3c ===
+
+void FUN_CODE_fe3c(byte *param_1,byte param_2)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_a7d3();
+  *param_1 = bVar1 | param_2;
+  return;
+}
+

@@ -1,0 +1,35 @@
+=== 0xf327 ===
+
+byte FUN_CODE_f327(undefined1 param_1,undefined1 param_2,byte param_3,char param_4)
+
+{
+  byte bVar1;
+  byte *pbVar2;
+  
+  DAT_EXTMEM_b5c5 = DAT_EXTMEM_b5c5 & 0x3f | 0x80;
+  DAT_INTMEM_53 = '2';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+  DAT_EXTMEM_b5a8 = DAT_EXTMEM_b5a8 & 0x3e | (_0_1 & 1) << 6 | 0x80;
+  if (param_4 - 2U < 5) {
+    return param_4 - 7;
+  }
+  DAT_EXTMEM_b5b1 = 0x43;
+  DAT_EXTMEM_b5b2 = 7;
+  DAT_EXTMEM_b5ae = param_3 & 0xf;
+  DAT_EXTMEM_b5ad = param_4 - 2U;
+  DAT_EXTMEM_b5af = param_1;
+  DAT_EXTMEM_b5b0 = param_2;
+  FUN_CODE_88ff(0xb5ac);
+  pbVar2 = &DAT_EXTMEM_b5a8;
+  FUN_CODE_88ff();
+  bVar1 = *pbVar2;
+  *pbVar2 = bVar1 & 0xfe;
+  return bVar1 & 0xfe;
+}
+

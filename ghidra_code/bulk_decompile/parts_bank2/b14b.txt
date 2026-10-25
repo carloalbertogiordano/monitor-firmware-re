@@ -1,0 +1,10 @@
+=== 0xb14b ===
+
+void FUN_CODE_b14b(short param_1)
+
+{
+  *(undefined1 *)(param_1 + 1) = 1;
+  *(undefined1 *)(param_1 + 2) = 0xe3;
+  return;
+}
+

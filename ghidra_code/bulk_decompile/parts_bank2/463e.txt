@@ -1,0 +1,10 @@
+=== 0x463e ===
+
+void FUN_CODE_463e(void)
+
+{
+  DAT_EXTMEM_e336 = 0;
+  DAT_EXTMEM_e337 = 0;
+  return;
+}
+

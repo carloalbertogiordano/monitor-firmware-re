@@ -1,0 +1,9 @@
+=== 0xb18d ===
+
+void FUN_CODE_b18d(undefined1 *param_1)
+
+{
+  FUN_CODE_1393(1,0x68,*param_1,param_1[1]);
+  return;
+}
+

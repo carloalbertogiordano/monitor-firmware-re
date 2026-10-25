@@ -1,0 +1,14 @@
+=== 0xfc79 ===
+
+void FUN_CODE_fc79(char param_1)
+
+{
+  if (param_1 == '\x01') {
+    DAT_EXTMEM_b5ea = DAT_EXTMEM_b5ea & 0xdf | 0x20;
+    DAT_EXTMEM_b5ec = 0x22;
+    return;
+  }
+  DAT_EXTMEM_b5ea = DAT_EXTMEM_b5ea & 0xdf;
+  return;
+}
+

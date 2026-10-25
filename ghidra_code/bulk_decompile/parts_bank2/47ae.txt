@@ -1,0 +1,11 @@
+=== 0x47ae ===
+
+void FUN_CODE_47ae(char param_1)
+
+{
+  DAT_EXTMEM_e36b = param_1 + '\x01';
+  DAT_EXTMEM_e36c = 8;
+  DAT_EXTMEM_e36d = 0;
+  return;
+}
+

@@ -1,0 +1,64 @@
+=== 0x6810 ===
+
+undefined1
+FUN_CODE_6810(undefined1 param_1,undefined1 param_2,undefined1 param_3,undefined1 param_4)
+
+{
+  undefined1 uVar1;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar1 = DAT_SFR_aa;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  TCON = param_2;
+  nop();
+  TCON = param_4;
+  nop();
+  TCON = param_2;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  TCON = param_3;
+  nop();
+  BANK0_R0 = param_2;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return param_1;
+}
+

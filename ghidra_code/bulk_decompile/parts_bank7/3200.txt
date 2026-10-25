@@ -1,0 +1,28 @@
+=== 0x3200 ===
+
+char * FUN_CODE_3200(char *param_1,byte *param_2,byte param_3,char param_4)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  char *pcVar3;
+  byte bVar4;
+  
+  _0_1 = 1;
+  if (_a_2 == '\x01') {
+    DAT_INTMEM_29 = DAT_INTMEM_29 & (byte)param_1;
+    return param_1;
+  }
+  if (((byte)param_1 >> 2 & 1) != 1) {
+    pcVar3 = (char *)FUN_CODE_3162(param_4 + -1);
+    return pcVar3;
+  }
+  uVar1 = RXSTAT;
+  cVar2 = RXSTAT;
+  bVar4 = ((((byte)(param_1 + '2') | *param_2) + 0xa2 | param_3) + BANK2_R2 & 0x25) + cVar2;
+  DAT_INTMEM_26 = DAT_INTMEM_26 ^ bVar4;
+  DAT_INTMEM_68 = DAT_INTMEM_68 & bVar4;
+  _d_7 = _d_7 ^ 1;
+  return (char *)(bVar4 + *param_2 + *param_1);
+}
+

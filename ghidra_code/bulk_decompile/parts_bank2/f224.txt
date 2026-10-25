@@ -1,0 +1,21 @@
+=== 0xf224 ===
+
+void FUN_CODE_f224(byte param_1)
+
+{
+  DAT_EXTMEM_0010 = DAT_EXTMEM_0010 & 0xe0 | param_1;
+  DAT_EXTMEM_0012 = DAT_EXTMEM_0012 & 0xe3;
+  DAT_EXTMEM_0011 = DAT_EXTMEM_0011 & 0xd7;
+  _0_0 = 0;
+  FUN_CODE_fd7a();
+  _0_1 = 0;
+  FUN_CODE_fd98();
+  FUN_CODE_efc1(0,0);
+  FUN_CODE_f8be(0,0);
+  FUN_CODE_f614(0,0);
+  FUN_CODE_fe4a(0,0);
+  _0_1 = 1;
+  FUN_CODE_fd98();
+  return;
+}
+

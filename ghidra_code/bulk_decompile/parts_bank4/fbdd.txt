@@ -1,0 +1,17 @@
+=== 0xfbdd ===
+
+void FUN_CODE_fbdd(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e199;
+  if (DAT_EXTMEM_e199 == '\0') {
+    cVar1 = DAT_EXTMEM_e19a;
+  }
+  if (cVar1 != '\0') {
+    return;
+  }
+  return;
+}
+

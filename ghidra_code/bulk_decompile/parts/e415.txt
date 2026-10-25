@@ -1,0 +1,24 @@
+=== 0xe415 ===
+
+void FUN_CODE_e415(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  DAT_EXTMEM_e376 = param_1;
+  FUN_CODE_d603(0x77,0xbb,0x31,0xe3,0x1c);
+  uVar1 = 0xd7;
+  FUN_CODE_d603(0x93,0xd7,0x31,0xe3,0xe);
+  FUN_CODE_f605(DAT_EXTMEM_e376);
+  FUN_CODE_d58c(0xe3a1);
+  uVar2 = FUN_CODE_d5e8();
+  FUN_CODE_d58d(uVar1,0xe3a7,uVar2);
+  uVar1 = 0x77;
+  FUN_CODE_741d(0x77,0xe3,1);
+  uVar2 = FUN_CODE_d5e8();
+  FUN_CODE_d58d(uVar1,0xe3a7,uVar2);
+  FUN_CODE_9d01(0x93,0xe3,1);
+  return;
+}
+

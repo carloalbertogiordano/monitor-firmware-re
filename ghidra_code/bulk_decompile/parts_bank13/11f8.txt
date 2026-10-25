@@ -1,0 +1,42 @@
+=== 0x11f8 ===
+
+/* WARNING: Instruction at (CODE,0x120c) overlaps instruction at (CODE,0x120a)
+    */
+
+void FUN_CODE_11f8(byte param_1,byte *param_2,byte param_3,char *param_4,char *param_5,char param_6,
+                  char param_7,char param_8,char param_9,byte param_10,byte param_11)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte in_PSW;
+  
+  if (_6_1 == '\0') {
+    cVar1 = TXD;
+    if (cVar1 == '\0') {
+      FUN_CODE_1021(param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,param_10
+                    ,param_11);
+      *param_4 = *param_4 + -1;
+      bVar2 = thunk_FUN_CODE_144b(param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_10,
+                                  param_11);
+      param_9 = param_9 + -1;
+    }
+    else {
+      TXD = 0;
+      bVar2 = param_1 << 1 | in_PSW >> 7;
+      in_PSW = param_1 & 0x80;
+    }
+  }
+  else {
+    _6_1 = '\0';
+    bVar2 = param_1;
+  }
+  func_0x141d(bVar2,param_9);
+  FUN_CODE_1124((short)param_2,param_4);
+  FUN_CODE_812c((short)param_2,param_4);
+  bVar2 = func_0xf133();
+  FUN_CODE_133a(bVar2 >> 1 | in_PSW & 0x80,(short)param_2);
+  FUN_CODE_13aa();
+  return;
+}
+

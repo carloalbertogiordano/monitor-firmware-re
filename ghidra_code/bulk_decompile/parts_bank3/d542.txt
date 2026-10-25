@@ -1,0 +1,12 @@
+=== 0xd542 ===
+
+undefined1 FUN_CODE_d542(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 0;
+  FUN_CODE_fe81(0);
+  return uVar1;
+}
+

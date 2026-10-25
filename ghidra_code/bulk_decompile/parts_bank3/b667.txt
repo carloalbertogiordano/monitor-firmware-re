@@ -1,0 +1,10 @@
+=== 0xb667 ===
+
+byte FUN_CODE_b667(undefined1 *param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  *param_1 = param_2;
+  param_1[1] = param_3;
+  return DAT_EXTMEM_e6c9 >> 4 | DAT_EXTMEM_e6c9 << 4;
+}
+

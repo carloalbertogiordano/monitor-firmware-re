@@ -1,0 +1,9 @@
+=== 0x6fda ===
+
+void FUN_CODE_6fda(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe39a);
+}
+

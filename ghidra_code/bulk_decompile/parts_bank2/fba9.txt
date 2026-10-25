@@ -1,0 +1,9 @@
+=== 0xfba9 ===
+
+void FUN_CODE_fba9(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,0,0x40,DAT_INTMEM_29,DAT_INTMEM_2a,DAT_INTMEM_2b,DAT_INTMEM_2c);
+}
+

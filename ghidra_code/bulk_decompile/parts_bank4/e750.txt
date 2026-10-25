@@ -1,0 +1,15 @@
+=== 0xe750 ===
+
+void FUN_CODE_e750(void)
+
+{
+  DAT_EXTMEM_e332 = 0;
+  FUN_CODE_0e77(0,0xff,2);
+  _0_0 = 1;
+  _0_1 = 1;
+  _0_2 = 1;
+  _0_3 = 1;
+  FUN_CODE_0e7d();
+  return;
+}
+

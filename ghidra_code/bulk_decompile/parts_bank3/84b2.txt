@@ -1,0 +1,8 @@
+=== 0x84b2 ===
+
+void FUN_CODE_84b2(void)
+
+{
+  return;
+}
+

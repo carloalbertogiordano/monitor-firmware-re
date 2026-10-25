@@ -1,0 +1,10 @@
+=== 0xb08d ===
+
+char FUN_CODE_b08d(char param_1,char param_2)
+
+{
+  DAT_EXTMEM_e3c8 = param_1;
+  DAT_EXTMEM_e3c9 = param_2;
+  return param_1 + (((param_2 == '\0') << 7) >> 7);
+}
+

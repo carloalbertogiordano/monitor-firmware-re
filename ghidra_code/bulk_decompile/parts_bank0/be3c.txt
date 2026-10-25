@@ -1,0 +1,9 @@
+=== 0xbe3c ===
+
+void FUN_CODE_be3c(void)
+
+{
+  FUN_CODE_1cca(0,DAT_INTMEM_60,DAT_INTMEM_61);
+  return;
+}
+

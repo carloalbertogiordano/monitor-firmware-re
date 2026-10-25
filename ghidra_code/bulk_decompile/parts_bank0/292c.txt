@@ -1,0 +1,96 @@
+=== 0x292c ===
+
+/* WARNING: Instruction at (CODE,0x282b) overlaps instruction at (CODE,0x282a)
+    */
+
+char * FUN_CODE_292c(byte param_1,char param_2,char *param_3,char *param_4,byte param_5,byte param_6
+                    ,char param_7,byte param_8,char *param_9)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  char *pcVar5;
+  char *pcVar6;
+  byte bVar7;
+  
+  bVar7 = (char)param_9 - ((CARRY1(param_1,DAT_INTMEM_47) << 7) >> 7);
+  bVar7 = CARRY1((byte)(param_9 +
+                       ((param_1 + DAT_INTMEM_47 + bVar7) -
+                       ((CARRY1(param_1 + DAT_INTMEM_47,bVar7) << 7) >> 7))),(byte)param_4) << 7;
+  bVar3 = param_7 - 2;
+  pcVar6 = (char *)FUN_CODE_2db2(*param_4,param_2,param_3,(char)param_4,param_5,param_6,bVar3,
+                                 param_8,(byte)param_9);
+  if (_4_4 == '\x01') {
+    if (param_4 == (char *)0xff) {
+      pcVar6 = pcVar6 + '$';
+      bVar4 = bVar3;
+code_c0x2b91:
+      param_3 = param_3 + -1;
+      pcVar5 = param_9;
+      goto LAB_CODE_2b92;
+    }
+  }
+  else {
+    bVar4 = bVar3 - 1;
+    pcVar5 = param_9 + -1;
+    if (_4_4 == '\x01') {
+LAB_CODE_2b92:
+      pcVar5 = pcVar5 + -1;
+      bVar3 = bVar4 - 1;
+      bVar4 = bVar3;
+      if (_4_5 == '\x01') goto LAB_CODE_2bb3;
+    }
+    else {
+      pcVar5 = param_9 + -2;
+      bVar4 = bVar3 - 2;
+      if (_4_4 != '\x01') {
+        param_9 = param_9 + -3;
+        pcVar6 = (char *)((((byte)pcVar6 ^ bVar3 - 3 ^ param_8) >> 1 | (bVar7 >> 7 | _b_6) << 7) - 1
+                         );
+        bVar4 = bVar3 - 3;
+        BANK0_R0 = param_9;
+        if (_4_4 == '\x01') {
+          bVar3 = bVar3 - 4;
+          goto LAB_CODE_2bb3;
+        }
+        goto code_c0x2b91;
+      }
+    }
+    bVar3 = bVar4;
+    if (_4_4 == '\x01') goto LAB_CODE_2bb3;
+    uVar1 = DAT_SFR_ff;
+    cVar2 = DAT_SFR_ff;
+    if (_4_4 == '\x01') {
+      nop();
+      uVar1 = P2_3;
+      bVar7 = (param_5 ^ param_8) + *BANK0_R0;
+      pcVar5 = param_4 + (bVar7 * '\x02' | bVar7 >> 7) + *BANK0_R0;
+      goto code_c0x280a;
+    }
+    bVar3 = bVar3 - 2;
+    pcVar6 = pcVar5 + (char)(pcVar6 + *param_3 + cVar2 + (char)param_4 +
+                            DAT_INTMEM_2b + bVar3 * '\x02') * '\x02' + -3;
+  }
+  if (_6_2 == '\x01') {
+    pcVar5 = (char *)0x0;
+    if (pcVar6 + '\'' != (char *)0x0) {
+      return pcVar6 + '\'';
+    }
+code_c0x280a:
+    FUN_CODE_1259(0x3a,-1,'\x01',(char)pcVar5,' ');
+    DAT_EXTMEM_e33a = 0xca;
+    DAT_EXTMEM_e33b = 9;
+    DAT_EXTMEM_e33c = 0;
+    DAT_EXTMEM_e33d = 0xff;
+    DAT_EXTMEM_e33e = 0xff;
+    FUN_CODE_1991((undefined1 *)0x3f,0xe3,'\x01',0xff,'\0','\x06');
+    pcVar6 = (char *)FUN_CODE_2785(0x3a,-0x1d,'\x01',0xd);
+    return pcVar6;
+  }
+  pcVar6 = pcVar6 + (char)param_4;
+LAB_CODE_2bb3:
+  return pcVar6 + BANK3_R4 + bVar3;
+}
+

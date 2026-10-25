@@ -1,0 +1,9 @@
+=== 0xe8ed ===
+
+char FUN_CODE_e8ed(undefined1 *param_1)
+
+{
+  *param_1 = 0;
+  return (((DAT_EXTMEM_b7c7 & 7) < 3) << 7) >> 7;
+}
+

@@ -1,0 +1,9 @@
+=== 0x74b5 ===
+
+void FUN_CODE_74b5(byte param_1)
+
+{
+  DAT_EXTMEM_e4d5 = DAT_EXTMEM_e4d5 & 0xfe | param_1 & 1;
+  return;
+}
+

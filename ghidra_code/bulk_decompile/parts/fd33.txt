@@ -1,0 +1,12 @@
+=== 0xfd33 ===
+
+void FUN_CODE_fd33(char param_1)
+
+{
+  FUN_CODE_073f();
+  if (param_1 == '\x01') {
+    return;
+  }
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x860c ===
+
+undefined1 FUN_CODE_860c(void)
+
+{
+  return DAT_EXTMEM_e370;
+}
+

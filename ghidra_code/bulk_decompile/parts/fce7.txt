@@ -1,0 +1,8 @@
+=== 0xfce7 ===
+
+byte FUN_CODE_fce7(void)
+
+{
+  return DAT_EXTMEM_e6e0 >> 7 | (DAT_EXTMEM_e6e0 >> 5) << 7;
+}
+

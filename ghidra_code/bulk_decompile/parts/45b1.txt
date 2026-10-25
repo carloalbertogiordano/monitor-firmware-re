@@ -1,0 +1,19 @@
+=== 0x45b1 ===
+
+void FUN_CODE_45b1(void)
+
+{
+  if (0x3f < DAT_EXTMEM_e3e2) {
+    set_e3e4_to_const2();
+    _0_5 = 0;
+    FUN_CODE_f106(DAT_EXTMEM_e3e4);
+    DAT_EXTMEM_ff6d = 2;
+    DAT_EXTMEM_ff61 = 0xff;
+    return;
+  }
+                    /* WARNING: Could not recover jumptable at 0x45c3. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)(DAT_EXTMEM_e3e2 * '\x03') + 0x45c4))();
+  return;
+}
+

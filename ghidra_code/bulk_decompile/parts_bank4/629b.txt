@@ -1,0 +1,11 @@
+=== 0x629b ===
+
+void FUN_CODE_629b(void)
+
+{
+  FUN_CODE_9d5d(DAT_EXTMEM_e504);
+  FUN_CODE_bc3b(DAT_EXTMEM_e501,DAT_EXTMEM_e502);
+  FUN_CODE_d3d8();
+  return;
+}
+

@@ -1,0 +1,12 @@
+=== 0x866a ===
+
+void FUN_CODE_866a(void)
+
+{
+  DAT_EXTMEM_1daa = 0;
+  DAT_EXTMEM_1dba = 0;
+  DAT_EXTMEM_1dca = 0;
+  DAT_EXTMEM_1dda = 0;
+  return;
+}
+

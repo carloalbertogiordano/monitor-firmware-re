@@ -1,0 +1,8 @@
+=== 0xd43d ===
+
+byte FUN_CODE_d43d(byte *param_1)
+
+{
+  return *param_1 & 0x1f;
+}
+

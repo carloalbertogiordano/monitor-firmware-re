@@ -1,0 +1,22 @@
+=== 0xe235 ===
+
+void FUN_CODE_e235(void)
+
+{
+  byte bVar1;
+  short sVar2;
+  
+  DAT_EXTMEM_5521 = DAT_EXTMEM_5521 & 0x7f;
+  DAT_EXTMEM_5531 = DAT_EXTMEM_5531 & 0x7f;
+  sVar2 = 0x5504;
+  FUN_CODE_c507(0,0,0);
+  FUN_CODE_c506();
+  bVar1 = FUN_CODE_c506();
+  *(byte *)(sVar2 + 1) = *(byte *)(sVar2 + 1) & 0xf0 | bVar1;
+  *(byte *)(sVar2 + 2) = BANK0_R4 >> 4 | 0x30;
+  FUN_CODE_c534(0x5524);
+  FUN_CODE_c534(0x5534);
+  DAT_EXTMEM_5503 = DAT_EXTMEM_5503 & 0xfc | 1;
+  return;
+}
+

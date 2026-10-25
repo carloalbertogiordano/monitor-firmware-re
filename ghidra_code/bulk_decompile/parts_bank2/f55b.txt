@@ -1,0 +1,21 @@
+=== 0xf55b ===
+
+void FUN_CODE_f55b(undefined1 *param_1)
+
+{
+  char cVar1;
+  char cVar2;
+  char *pcVar3;
+  
+  pcVar3 = param_1 + 1;
+  cVar1 = BANK0_R6;
+  cVar2 = BANK0_R7;
+  if (BANK0_R7 == '\0' && BANK0_R6 == '\0') {
+    cVar2 = '\x01';
+    cVar1 = '\0';
+  }
+  FUN_CODE_980e(cVar1,*param_1,*pcVar3);
+  *pcVar3 = cVar2;
+  return;
+}
+

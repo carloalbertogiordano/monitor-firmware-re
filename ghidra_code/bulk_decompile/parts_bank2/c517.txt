@@ -1,0 +1,9 @@
+=== 0xc517 ===
+
+undefined1 FUN_CODE_c517(undefined1 param_1,short param_2)
+
+{
+  *(undefined1 *)(param_2 + 1) = param_1;
+  return DAT_EXTMEM_e332;
+}
+

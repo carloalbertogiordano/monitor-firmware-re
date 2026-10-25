@@ -1,0 +1,18 @@
+=== 0xe55a ===
+
+void FUN_CODE_e55a(void)
+
+{
+  FUN_CODE_fcb7(0xe336);
+  DAT_EXTMEM_e33b = 0;
+  DAT_EXTMEM_e33c = 0;
+  FUN_CODE_f3d4(DAT_EXTMEM_e33a);
+  FUN_CODE_eda3(DAT_EXTMEM_e33a,0x18,DAT_EXTMEM_e336,DAT_EXTMEM_e337);
+  FUN_CODE_f3f9(DAT_EXTMEM_e33a,DAT_EXTMEM_e338,DAT_EXTMEM_e339);
+  FUN_CODE_08dd();
+  DAT_EXTMEM_e33b = 0;
+  DAT_EXTMEM_e33c = 0x10;
+  FUN_CODE_f899(0,0x10);
+  return;
+}
+

@@ -1,0 +1,25 @@
+=== 0xf10c ===
+
+void FUN_CODE_f10c(void)
+
+{
+  DAT_EXTMEM_b7da = DAT_EXTMEM_b7da & 0xe8 | 4;
+  DAT_EXTMEM_b7a5 = DAT_EXTMEM_b7a5 & 0xf8 | 4;
+  FUN_CODE_87d1();
+  DAT_EXTMEM_b7dc = DAT_EXTMEM_b7dc & 0xd3;
+  DAT_EXTMEM_b777 = DAT_EXTMEM_b777 & 0x7f;
+  DAT_EXTMEM_b7de = 0xe5;
+  DAT_EXTMEM_b7f3 = 0xa1;
+  _0_1 = 1;
+  func_0x07e1();
+  DAT_EXTMEM_b7b4 = 0x30;
+  DAT_EXTMEM_b7b5 = 0x22;
+  DAT_EXTMEM_b7b6 = 0;
+  DAT_EXTMEM_b7fb = DAT_EXTMEM_b7fb & 0x14 | 0x40;
+  DAT_EXTMEM_b7bd = 0x10;
+  DAT_EXTMEM_b7be = 2;
+  DAT_EXTMEM_b7bf = 0x10;
+  EX0 = 1;
+  return;
+}
+

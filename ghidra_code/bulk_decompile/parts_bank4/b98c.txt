@@ -1,0 +1,10 @@
+=== 0xb98c ===
+
+void FUN_CODE_b98c(void)
+
+{
+  FUN_CODE_df03();
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1724(0xe3bb);
+}
+

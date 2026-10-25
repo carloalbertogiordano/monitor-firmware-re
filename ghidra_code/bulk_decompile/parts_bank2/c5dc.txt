@@ -1,0 +1,10 @@
+=== 0xc5dc ===
+
+void FUN_CODE_c5dc(char param_1,char *param_2,byte param_3)
+
+{
+  *param_2 = param_1 - (((0xfe < param_3) << 7) >> 7);
+  param_2[1] = param_3 + 1;
+  return;
+}
+

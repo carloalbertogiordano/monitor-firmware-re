@@ -1,0 +1,8 @@
+=== 0xf008 ===
+
+void FUN_CODE_f008(void)
+
+{
+  return;
+}
+

@@ -1,0 +1,34 @@
+=== 0xef6d ===
+
+void FUN_CODE_ef6d(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  if ((DAT_EXTMEM_007a & 3) == 3) {
+    bVar1 = 3;
+  }
+  else {
+    bVar1 = 1;
+  }
+  if ((DAT_EXTMEM_007a & 0x80) == 0x80) {
+    bVar1 = bVar1 * '\x02';
+  }
+  bVar2 = (0xfd < bVar1) << 7;
+  DAT_EXTMEM_e342 = bVar1 + 2;
+  while( true ) {
+    bVar2 = bVar2 & 0xdd;
+    if ((DAT_EXTMEM_007d & 1) == 0) {
+      return;
+    }
+    FUN_CODE_082f(1);
+    if (-1 < (char)bVar2) break;
+    DAT_EXTMEM_e342 = DAT_EXTMEM_e342 + -1;
+    if (DAT_EXTMEM_e342 == '\0') {
+      return;
+    }
+  }
+  return;
+}
+

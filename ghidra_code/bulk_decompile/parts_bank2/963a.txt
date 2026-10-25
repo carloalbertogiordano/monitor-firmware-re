@@ -1,0 +1,8 @@
+=== 0x963a ===
+
+undefined1 FUN_CODE_963a(void)
+
+{
+  return 0;
+}
+

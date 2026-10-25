@@ -1,0 +1,37 @@
+=== 0xe20a ===
+
+void FUN_CODE_e20a(byte param_1)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  
+  FUN_CODE_a45b(0,0xe345);
+  DAT_EXTMEM_e34b = DAT_EXTMEM_e554;
+  DAT_EXTMEM_e34c = DAT_EXTMEM_e555;
+  bVar3 = DAT_EXTMEM_e555;
+  FUN_CODE_0aed();
+  bVar1 = param_1 - (((DAT_EXTMEM_e34c < bVar3 + 1) << 7) >> 7);
+  if (DAT_EXTMEM_e34b < bVar1) {
+    FUN_CODE_0aed(DAT_EXTMEM_e34b - bVar1);
+    FUN_CODE_a4c9(0xe34b);
+    DAT_EXTMEM_e349 = param_1;
+    DAT_EXTMEM_e34a = bVar3;
+  }
+  FUN_CODE_0af3();
+  FUN_CODE_a46b();
+  cVar2 = ((bVar3 < 0x32) << 7) >> 7;
+  if (param_1 < (byte)-cVar2) {
+    FUN_CODE_0af3(param_1 + cVar2);
+    FUN_CODE_a46b();
+  }
+  else {
+    param_1 = 0;
+    bVar3 = 0x32;
+  }
+  DAT_EXTMEM_e345 = param_1;
+  DAT_EXTMEM_e346 = bVar3;
+  return;
+}
+

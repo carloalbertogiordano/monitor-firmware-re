@@ -1,0 +1,10 @@
+=== 0xd176 ===
+
+void FUN_CODE_d176(undefined1 param_1)
+
+{
+  DAT_EXTMEM_24a7 = param_1;
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  return;
+}
+

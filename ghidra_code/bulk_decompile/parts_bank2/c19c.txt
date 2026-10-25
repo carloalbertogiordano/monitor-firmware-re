@@ -1,0 +1,8 @@
+=== 0xc19c ===
+
+byte FUN_CODE_c19c(void)
+
+{
+  return DAT_EXTMEM_02a4 & 0x18 ^ 0x18;
+}
+

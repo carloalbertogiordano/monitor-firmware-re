@@ -1,0 +1,9 @@
+=== 0x8895 ===
+
+byte FUN_CODE_8895(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  return DAT_EXTMEM_0bc4 & 0xcf;
+}
+

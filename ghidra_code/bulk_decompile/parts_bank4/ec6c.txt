@@ -1,0 +1,27 @@
+=== 0xec6c ===
+
+void FUN_CODE_ec6c(undefined1 param_1)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  
+  cVar1 = INT0;
+  if (cVar1 == '\x01') {
+    DAT_EXTMEM_e382 = 0x19;
+    DAT_EXTMEM_e383 = 0;
+    uVar3 = 0;
+    uVar2 = 0x32;
+  }
+  else {
+    DAT_EXTMEM_e382 = 0x1f;
+    DAT_EXTMEM_e383 = 0xff;
+    uVar3 = 0xff;
+    uVar2 = 0x3f;
+  }
+  DAT_EXTMEM_e36f = param_1;
+  FUN_CODE_0d75(0,0,uVar2,uVar3,param_1);
+  return;
+}
+

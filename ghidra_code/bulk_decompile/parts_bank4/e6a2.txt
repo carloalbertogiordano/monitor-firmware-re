@@ -1,0 +1,28 @@
+=== 0xe6a2 ===
+
+void FUN_CODE_e6a2(void)
+
+{
+  char cVar1;
+  
+  if ((((DAT_EXTMEM_e4ce >> 3 & 1) != 0) && (_6_5 != '\0')) && (DAT_EXTMEM_e42a == 'q')) {
+    cVar1 = DAT_EXTMEM_e42d;
+    if (DAT_EXTMEM_e42c != 'w') {
+      if (DAT_EXTMEM_e42c != -0x56) {
+        return;
+      }
+      cVar1 = -0x56;
+    }
+    if (cVar1 == -0x37) {
+      FUN_CODE_e468();
+    }
+    else {
+      FUN_CODE_fab3();
+    }
+    FUN_CODE_fbb1();
+    _6_5 = 0;
+    return;
+  }
+  return;
+}
+

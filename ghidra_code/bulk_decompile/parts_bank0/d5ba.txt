@@ -1,0 +1,9 @@
+=== 0xd5ba ===
+
+void FUN_CODE_d5ba(void)
+
+{
+  DAT_EXTMEM_ff57 = DAT_EXTMEM_ff57 & 0xfc;
+  return;
+}
+

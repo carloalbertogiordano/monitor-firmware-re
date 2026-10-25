@@ -1,0 +1,9 @@
+=== 0x74bf ===
+
+void FUN_CODE_74bf(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(DAT_EXTMEM_e52b,DAT_EXTMEM_e52c);
+}
+

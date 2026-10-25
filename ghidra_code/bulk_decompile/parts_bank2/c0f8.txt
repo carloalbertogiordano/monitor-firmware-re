@@ -1,0 +1,8 @@
+=== 0xc0f8 ===
+
+undefined1 FUN_CODE_c0f8(void)
+
+{
+  return DAT_EXTMEM_e341;
+}
+

@@ -1,0 +1,9 @@
+=== 0x88c9 ===
+
+void FUN_CODE_88c9(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xfe | 1;
+  return;
+}
+

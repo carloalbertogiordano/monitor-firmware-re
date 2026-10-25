@@ -1,0 +1,9 @@
+=== 0x7626 ===
+
+void FUN_CODE_7626(short param_1,char param_2)
+
+{
+  DAT_EXTMEM_002b = param_2 + *(char *)(param_1 + 1);
+  return;
+}
+

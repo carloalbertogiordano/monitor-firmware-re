@@ -1,0 +1,11 @@
+=== 0x43f8 ===
+
+void FUN_CODE_43f8(void)
+
+{
+  DAT_EXTMEM_e335 = 0;
+  DAT_EXTMEM_e336 = 0;
+  DAT_EXTMEM_e337 = 1;
+  return;
+}
+

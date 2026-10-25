@@ -1,0 +1,11 @@
+=== 0xf184 ===
+
+char FUN_CODE_f184(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_1298(1);
+  return (bVar1 & 0x1f) - 9;
+}
+

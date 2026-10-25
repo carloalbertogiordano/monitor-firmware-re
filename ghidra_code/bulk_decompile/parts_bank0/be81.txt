@@ -1,0 +1,8 @@
+=== 0xbe81 ===
+
+byte FUN_CODE_be81(void)
+
+{
+  return DAT_EXTMEM_e33b >> 7;
+}
+

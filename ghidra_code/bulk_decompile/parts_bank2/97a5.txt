@@ -1,0 +1,8 @@
+=== 0x97a5 ===
+
+char FUN_CODE_97a5(void)
+
+{
+  return DAT_EXTMEM_e525 - (((0xfd < DAT_EXTMEM_e526) << 7) >> 7);
+}
+

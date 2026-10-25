@@ -1,0 +1,27 @@
+=== 0x4138 ===
+
+void FUN_CODE_4138(void)
+
+{
+  if (DAT_EXTMEM_e3e2 == '\x01') {
+    FUN_CODE_8c3a();
+  }
+  else if (DAT_EXTMEM_e3e2 == '\x02') {
+    FUN_CODE_8ce7();
+  }
+  else if (DAT_EXTMEM_e3e2 == '\x03') {
+    FUN_CODE_8ce0();
+  }
+  else if (DAT_EXTMEM_e3e2 == '\0') {
+    FUN_CODE_8c2b();
+  }
+  else {
+    set_e3e4_to_const2();
+  }
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

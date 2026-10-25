@@ -1,0 +1,10 @@
+=== 0xb368 ===
+
+undefined1 FUN_CODE_b368(void)
+
+{
+  FUN_CODE_0ff1();
+  DAT_EXTMEM_e34d = 0;
+  return 0x9c;
+}
+

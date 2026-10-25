@@ -1,0 +1,127 @@
+=== 0x4080 ===
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void FUN_CODE_4080(byte param_1,byte param_2,byte *param_3,char param_4,char param_5)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  char *pcVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  char in_PSW;
+  
+  param_1 = param_1 & DAT_INTMEM_50;
+  DAT_INTMEM_55 = DAT_INTMEM_55 + '\x01';
+  if (in_PSW < '\0') {
+    bVar5 = P2;
+    param_1 = param_1 & bVar5;
+    nop();
+    nop();
+    nop();
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_3 = *param_3 + 1;
+  bVar4 = (byte)((ushort)param_1 * (ushort)param_2 >> 8);
+  bVar5 = 0;
+  bVar6 = FUN_CODE_4109((char)((ushort)param_1 * (ushort)param_2));
+  pcVar3 = (char *)(param_4 + '\x02');
+  nop();
+  uVar1 = TL0;
+  cVar2 = DAT_SFR_92;
+  DAT_SFR_92 = cVar2 + -1;
+  cVar2 = DAT_SFR_92;
+  if (cVar2 == '\0') {
+                    /* WARNING: Bad instruction - Truncating control flow here */
+    halt_baddata();
+  }
+  nop();
+  bVar7 = (bVar6 << 1 & 0x7f | bVar5 >> 7 | bVar6 & 0x80 | (byte)pcVar3) -
+          ((char)param_3 - ((char)(bVar6 << 1) >> 7));
+  bVar5 = 0;
+  bVar6 = bVar7;
+  if (bVar4 != 0) {
+    bVar6 = bVar7 / bVar4;
+    bVar5 = bVar7 % bVar4;
+  }
+  bVar6 = bVar6 - (char)pcVar3;
+  bVar4 = 0;
+  bVar7 = bVar6;
+  if (bVar5 != 0) {
+    bVar7 = bVar6 / bVar5;
+    bVar4 = bVar6 % bVar5;
+  }
+  bVar7 = bVar7 - (char)pcVar3;
+  if (bVar4 != 0) {
+    bVar7 = bVar7 / bVar4;
+  }
+  bVar4 = func_0x4440(bVar7,uVar1);
+  *pcVar3 = *pcVar3 + '\x01';
+  nop();
+  bVar5 = DPX;
+  bVar6 = (bVar4 & *param_3) + param_5 + 0x55 | bVar5;
+  bVar4 = DAT_SFR_95;
+  DAT_SFR_95 = bVar4 & bVar6;
+  _4_4 = 0xc6 < bVar6;
+  _e_4 = _4_4;
+  thunk_FUN_CODE_26eb(bVar6 + 0x39 | bVar5 | bVar5 | bVar5 | bVar5);
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x6003 ===
+
+void FUN_CODE_6003(void)
+
+{
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

@@ -1,0 +1,10 @@
+=== 0x670a ===
+
+void FUN_CODE_670a(undefined1 param_1)
+
+{
+  FUN_CODE_fed7();
+  DAT_EXTMEM_e18b = param_1;
+  return;
+}
+

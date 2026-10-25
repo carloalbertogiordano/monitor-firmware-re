@@ -1,0 +1,9 @@
+=== 0xdff9 ===
+
+void FUN_CODE_dff9(void)
+
+{
+  FUN_CODE_febf(2,0);
+  return;
+}
+

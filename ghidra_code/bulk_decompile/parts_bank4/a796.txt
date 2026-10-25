@@ -1,0 +1,10 @@
+=== 0xa796 ===
+
+void FUN_CODE_a796(void)
+
+{
+  DAT_EXTMEM_e674 = DAT_EXTMEM_e539 + (-1 - (((1 < DAT_EXTMEM_e53a) << 7) >> 7));
+  DAT_EXTMEM_e675 = DAT_EXTMEM_e53a - 2;
+  return;
+}
+

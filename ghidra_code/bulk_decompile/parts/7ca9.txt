@@ -1,0 +1,12 @@
+=== 0x7ca9 ===
+
+void FUN_CODE_7ca9(undefined1 param_1)
+
+{
+  FUN_CODE_0eb9();
+  FUN_CODE_0ec5();
+  DAT_EXTMEM_e4b4 = param_1;
+  FUN_CODE_0ba1(0xaa,0xe4,1);
+  return;
+}
+

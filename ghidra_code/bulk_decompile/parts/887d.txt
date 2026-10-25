@@ -1,0 +1,8 @@
+=== 0x887d ===
+
+void FUN_CODE_887d(void)
+
+{
+  return;
+}
+

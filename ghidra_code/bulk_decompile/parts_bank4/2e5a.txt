@@ -1,0 +1,32 @@
+=== 0x2e5a ===
+
+void FUN_CODE_2e5a(byte param_1,char *param_2,byte param_3,char param_4,char param_5,char param_6,
+                  undefined1 param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  _4_4 = 0xb6 < param_1;
+  param_3 = param_1 + 0x49 | param_3;
+  P1_3 = _4_4;
+  bVar1 = param_3 + 0xb1;
+  bVar1 = bVar1 >> 1 | bVar1 * -0x80;
+  nop();
+  nop();
+  EX1 = 0x4e < param_3;
+  bVar2 = bVar1 + 0xa9 + (param_4 - (((0x56 < bVar1) << 7) >> 7)) | DAT_INTMEM_4a;
+  DAT_INTMEM_76 = DAT_INTMEM_76 & bVar2;
+  nop();
+  nop();
+  bVar1 = TL0;
+  TL0 = bVar1 & 0xc4;
+  nop();
+  nop();
+  DAT_INTMEM_7d = param_4;
+  FUN_CODE_2e5a(param_7,0x7448,param_4 + '\x01',
+                bVar2 + param_5 + BANK0_R1 + *param_2 + 9 | DAT_INTMEM_4a,BANK0_R2,param_6 + '\x01',
+                param_5);
+  return;
+}
+

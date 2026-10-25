@@ -1,0 +1,8 @@
+=== 0xc707 ===
+
+undefined1 FUN_CODE_c707(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,9 @@
+=== 0x800b ===
+
+void FUN_CODE_800b(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe371);
+}
+

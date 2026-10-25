@@ -1,0 +1,9 @@
+=== 0x48e8 ===
+
+void FUN_CODE_48e8(void)
+
+{
+  DAT_EXTMEM_e5a7 = DAT_EXTMEM_e5a7 | 1;
+  return;
+}
+

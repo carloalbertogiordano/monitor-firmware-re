@@ -1,0 +1,8 @@
+=== 0x99dd ===
+
+byte FUN_CODE_99dd(void)
+
+{
+  return DAT_EXTMEM_e6c9 & 3;
+}
+

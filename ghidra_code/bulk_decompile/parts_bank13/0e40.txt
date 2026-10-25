@@ -1,0 +1,134 @@
+=== 0x0e40 ===
+
+/* WARNING: Instruction at (CODE,0x0e79) overlaps instruction at (CODE,0x0e78)
+    */
+/* WARNING: Removing unreachable block (CODE,0x0e3c) */
+
+void FUN_CODE_0e40(char param_1,byte *param_2,byte param_3,byte *param_4,byte *param_5,byte param_6,
+                  byte param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  char cVar6;
+  undefined1 *puVar7;
+  byte in_PSW;
+  byte bVar8;
+  
+  puVar7 = (undefined1 *)0x0;
+  cVar6 = P1_6;
+  if (cVar6 == '\0') goto LAB_CODE_0e4c;
+  bVar8 = SM1;
+  param_6 = param_6 + 1;
+  cVar6 = P2_6;
+  cVar1 = param_1;
+  if (cVar6 == '\x01') {
+code_c0x0e55:
+    BANK1_R4 = cVar1;
+    FUN_CODE_0e23((char *)param_4,param_7);
+    return;
+  }
+  bVar2 = EC;
+  in_PSW = (in_PSW >> 7 | (bVar8 ^ 1) & 1 | bVar2 ^ 1) << 7;
+  do {
+    param_7 = param_7 + 1;
+LAB_CODE_0e4c:
+    cVar6 = WR;
+    if (cVar6 == '\x01') {
+      if (param_1 == '\0') {
+        *param_2 = 0;
+        bVar8 = DAT_INTMEM_23 - ((char)((in_PSW >> 7 & _1_0) << 7) >> 7);
+        bVar2 = (*param_2 | param_10) + bVar8 & *param_4;
+        cVar6 = FIE1;
+        bVar8 = cVar6 - ((CARRY1(*param_2 | param_10,bVar8) << 7) >> 7);
+        bVar3 = bVar2 + bVar8 & param_11;
+        bVar8 = *param_4 - ((CARRY1(bVar2,bVar8) << 7) >> 7);
+        cVar6 = bVar3 + bVar8;
+        if (((cVar6 * '\x02' | CARRY1(bVar3,bVar8)) ^ *param_5) + (*param_4 - (cVar6 >> 7)) == '\0')
+        {
+          DAT_INTMEM_79 = DAT_INTMEM_79 | 0x37;
+          return;
+        }
+        BANK0_R0 = BANK0_R0 + '\x01';
+        FUN_CODE_0e1a((short)param_2,param_4);
+        return;
+      }
+      param_9 = param_9 + 2;
+      EPCON = *puVar7;
+      puVar7 = puVar7 + -1;
+      param_10 = param_10 + 1;
+    }
+    else {
+      bVar8 = PT2;
+      in_PSW = (in_PSW >> 7 | bVar8 ^ 1) << 7;
+      param_8 = param_8 + 1;
+      cVar6 = FIFLG_5;
+      cVar1 = BANK1_R4;
+      if (cVar6 == '\0') goto code_c0x0e55;
+      FIFLG_5 = 0;
+    }
+    if (-1 < (char)in_PSW) {
+      bVar2 = param_10 + 1;
+      bVar8 = HIFLG_7;
+      bVar8 = (in_PSW >> 7 & ~bVar8) << 7;
+      bVar3 = param_11 + 1;
+      if ((param_3 >> 6 & 1) == 1) {
+        puVar7['\x01'] = 0x7b;
+        puVar7['\x02'] = 0xe;
+        FUN_CODE_0f22((short)param_2,param_4,(char)param_5,bVar2,bVar3);
+        puVar7['\x01'] = 0x7e;
+        puVar7['\x02'] = 0xe;
+        FUN_CODE_612a((short)param_2,param_4);
+      }
+      else {
+        param_2 = &LAB_CODE_fd10;
+        puVar7['\x01'] = 0x6f;
+        puVar7['\x02'] = 0xe;
+        FUN_CODE_0804(param_1,&LAB_CODE_fd10,param_3,param_4,param_5,param_6,param_7,param_8,param_9
+                      ,bVar2,bVar3);
+        cVar6 = P0_1;
+        if (cVar6 == '\0') {
+          puVar7['\x01'] = 0x74;
+          puVar7['\x02'] = 0xe;
+          bVar4 = func_0x0801();
+          puVar7['\x01'] = 0x77;
+          puVar7['\x02'] = 0xe;
+          FUN_CODE_0871(bVar4 >> 1 | bVar8 & 0x80,param_2,param_3,param_4,param_5,param_6,param_7,
+                        param_8,param_9,bVar2,bVar3);
+          puVar7['\x01'] = 0x7a;
+          puVar7['\x02'] = 0xe;
+          func_0x08f1(param_7 - 1);
+          return;
+        }
+        P0_1 = 0;
+      }
+      puVar7['\x01'] = 0x81;
+      puVar7['\x02'] = 0xe;
+      bVar5 = FUN_CODE_e132((short)param_2,param_4);
+      bVar4 = bVar5 << 7;
+      puVar7['\x01'] = 0x84;
+      puVar7['\x02'] = 0xe;
+      bVar5 = FUN_CODE_0a39(bVar5 >> 1 | bVar8 & 0x80,(short)param_2,(char *)param_4,(char *)param_5
+                            ,param_8,param_9);
+      bVar8 = bVar5 << 7;
+      puVar7['\x01'] = 0x87;
+      puVar7['\x02'] = 0xe;
+      cVar6 = FUN_CODE_0e40(bVar5 >> 1 | bVar4 & 0x80,param_2,param_3,param_4,param_5,param_6,
+                            param_7,param_8,param_9,bVar2,bVar3);
+      *(byte *)ZEXT12(param_5) = DAT_CODE_0a89;
+                    /* WARNING: Could not recover jumptable at 0x0a57. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      (*(code *)(param_2 +
+                ZEXT12(param_4 + (*(char *)((ushort)DAT_CODE_0a89 + 0xa56) -
+                                 ((CARRY1(*(byte *)((ushort)((cVar6 - 1U >> 1 | bVar8 & 0x80) ^ 0x36
+                                                            ) + 0xa4c) ^ param_8,
+                                          *param_5 - ((char)((cVar6 - 1U) * -0x80) >> 7)) << 7) >> 7
+                                 )))))(0x37);
+      return;
+    }
+  } while( true );
+}
+

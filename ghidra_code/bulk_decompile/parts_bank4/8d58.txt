@@ -1,0 +1,10 @@
+=== 0x8d58 ===
+
+undefined1 FUN_CODE_8d58(byte param_1)
+
+{
+  FUN_CODE_15e8(0x10);
+  DAT_EXTMEM_028e = DAT_EXTMEM_028e & 0x40 | param_1 & 0x1f;
+  return DAT_EXTMEM_e686;
+}
+

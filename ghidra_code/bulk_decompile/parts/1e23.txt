@@ -1,0 +1,12 @@
+=== 0x1e23 ===
+
+void thunk_FUN_CODE_1e26(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = P2;
+  FUN_CODE_1d76(uVar1);
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xc57c ===
+
+char FUN_CODE_c57c(byte param_1,byte param_2)
+
+{
+  char in_PSW;
+  
+  return (param_2 ^ 0x80) - (-0x80 - (((param_1 < 2U - (in_PSW >> 7)) << 7) >> 7));
+}
+

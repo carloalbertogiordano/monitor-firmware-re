@@ -1,0 +1,9 @@
+=== 0x302a ===
+
+void FUN_CODE_302a(char param_1,char param_2)
+
+{
+  FUN_CODE_3100(param_1 + param_2);
+  return;
+}
+

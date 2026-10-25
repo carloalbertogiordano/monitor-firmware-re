@@ -1,0 +1,12 @@
+=== 0x50b6 ===
+
+byte FUN_CODE_50b6(byte param_1,byte param_2)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  return param_1 ^ 10 | param_2;
+}
+

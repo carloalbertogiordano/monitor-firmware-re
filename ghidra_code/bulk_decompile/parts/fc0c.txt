@@ -1,0 +1,15 @@
+=== 0xfc0c ===
+
+void FUN_CODE_fc0c(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_fafd();
+  if (in_PSW < '\0') {
+    DAT_EXTMEM_e58b = 1;
+    return;
+  }
+  return;
+}
+

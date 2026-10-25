@@ -1,0 +1,9 @@
+=== 0x702f ===
+
+char FUN_CODE_702f(byte param_1)
+
+{
+  return ((char)((ushort)param_1 * 4 >> 8) - (((0xb3 < (byte)((ushort)param_1 * 4)) << 7) >> 7)) +
+         ']';
+}
+

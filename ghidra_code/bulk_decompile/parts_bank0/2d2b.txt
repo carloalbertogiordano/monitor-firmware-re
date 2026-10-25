@@ -1,0 +1,19 @@
+=== 0x2d2b ===
+
+void FUN_CODE_2d2b(undefined1 *param_1,undefined1 param_2)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = P1;
+  nop();
+  *param_1 = param_2;
+  param_1[1] = 9;
+  param_1[2] = 0;
+  param_1[3] = 0xff;
+  param_1[4] = 0xff;
+  FUN_CODE_1991((undefined1 *)0x3f,0xe3,'\x01',0xff,'\0','\x06');
+  FUN_CODE_2785(0x3a,-0x1d,'\x01',0xd);
+  return;
+}
+

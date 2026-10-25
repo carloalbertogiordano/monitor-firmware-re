@@ -1,0 +1,10 @@
+=== 0x93a2 ===
+
+void FUN_CODE_93a2(undefined1 param_1)
+
+{
+  FUN_CODE_108d();
+  DAT_EXTMEM_ff06 = param_1;
+  return;
+}
+

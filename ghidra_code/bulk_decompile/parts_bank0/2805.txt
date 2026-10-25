@@ -1,0 +1,18 @@
+=== 0x2805 ===
+
+void FUN_CODE_2805(char param_1)
+
+{
+  if (param_1 == '\t') {
+    FUN_CODE_1259(0x3a,-1,'\x01','\0',' ');
+    DAT_EXTMEM_e33a = 0xca;
+    DAT_EXTMEM_e33b = 9;
+    DAT_EXTMEM_e33c = 0;
+    DAT_EXTMEM_e33d = 0xff;
+    DAT_EXTMEM_e33e = 0xff;
+    FUN_CODE_1991((undefined1 *)0x3f,0xe3,'\x01',0xff,'\0','\x06');
+    FUN_CODE_2785(0x3a,-0x1d,'\x01',0xd);
+  }
+  return;
+}
+

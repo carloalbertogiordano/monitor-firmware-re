@@ -1,0 +1,14 @@
+=== 0xfeb9 ===
+
+void thunk_FUN_CODE_ee6e(void)
+
+{
+  DAT_EXTMEM_0b1a = DAT_EXTMEM_0b1a & 0xcf | 0x20;
+  DAT_EXTMEM_0b1b = DAT_EXTMEM_0b1b & 0x7f | 0x80;
+  DAT_EXTMEM_0b01 = DAT_EXTMEM_0b01 & 0xbf | 0x40;
+  if ((DAT_EXTMEM_0b20 & 0x80) == 0x80) {
+    DAT_EXTMEM_0b63 = DAT_EXTMEM_0b63 & 0x7f;
+  }
+  return;
+}
+

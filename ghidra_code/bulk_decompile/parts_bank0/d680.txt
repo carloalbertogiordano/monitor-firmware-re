@@ -1,0 +1,8 @@
+=== 0xd680 ===
+
+undefined1 FUN_CODE_d680(void)
+
+{
+  return DAT_EXTMEM_e4f2;
+}
+

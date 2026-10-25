@@ -1,0 +1,15 @@
+=== 0xfb23 ===
+
+void FUN_CODE_fb23(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  DAT_EXTMEM_e339 = param_3;
+  DAT_EXTMEM_e33a = param_2;
+  DAT_EXTMEM_e33b = param_1;
+  FUN_CODE_75e6(0xe339);
+  FUN_CODE_9a18();
+  FUN_CODE_75e6(0xe339);
+  FUN_CODE_839b();
+  return;
+}
+

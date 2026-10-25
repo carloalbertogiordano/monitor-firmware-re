@@ -1,0 +1,30 @@
+=== 0xe5ef ===
+
+void FUN_CODE_e5ef(char param_1,char param_2)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  bVar3 = BANK0_R5;
+  bVar2 = FUN_CODE_e46b(BANK0_R3);
+  DAT_EXTMEM_e3a7 = bVar2 + bVar3;
+  DAT_EXTMEM_e3a6 = param_1 + (param_2 - ((CARRY1(bVar2,bVar3) << 7) >> 7));
+  bVar2 = DAT_EXTMEM_e3a2 & 8;
+  bVar3 = DAT_EXTMEM_e3a2 & 4;
+  cVar1 = '\x02';
+  do {
+    bVar3 = bVar3 >> 1;
+    cVar1 = cVar1 + -1;
+  } while (cVar1 != '\0');
+  DAT_EXTMEM_e3ac = DAT_EXTMEM_e3a3 & 7 | DAT_EXTMEM_e3a2 << 6 | (DAT_EXTMEM_e3a4 & 7) << 3;
+  DAT_EXTMEM_e3a2 = DAT_EXTMEM_e3a2 & 0xf;
+  FUN_CODE_1099(BANK0_R1,bVar3 | (DAT_EXTMEM_e3a5 & 7) * '\x02' |
+                                 (DAT_EXTMEM_e3a3 & 8) * '\x02' | bVar2 * '\x04' | 0x80,
+                DAT_EXTMEM_e3a6 +
+                (DAT_EXTMEM_e658 - ((CARRY1(DAT_EXTMEM_e3a7,DAT_EXTMEM_e659) << 7) >> 7)),
+                DAT_EXTMEM_e3a7 + DAT_EXTMEM_e659);
+  return;
+}
+

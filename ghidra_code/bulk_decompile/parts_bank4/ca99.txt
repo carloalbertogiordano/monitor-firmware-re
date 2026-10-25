@@ -1,0 +1,9 @@
+=== 0xca99 ===
+
+undefined1 FUN_CODE_ca99(void)
+
+{
+  FUN_CODE_1458(0,DAT_EXTMEM_e334,DAT_EXTMEM_e333,DAT_EXTMEM_e332);
+  return 0;
+}
+

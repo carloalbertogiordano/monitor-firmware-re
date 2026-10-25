@@ -1,0 +1,9 @@
+=== 0xa2bd ===
+
+void FUN_CODE_a2bd(undefined1 param_1)
+
+{
+  FUN_CODE_0ff1(param_1,param_1,0x4b,2);
+  return;
+}
+

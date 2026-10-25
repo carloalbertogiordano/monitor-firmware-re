@@ -1,0 +1,10 @@
+=== 0x9751 ===
+
+void FUN_CODE_9751(char *param_1,char param_2,byte param_3,char param_4,byte param_5)
+
+{
+  *param_1 = param_4 - (param_2 - (((param_5 < param_3) << 7) >> 7));
+  param_1[1] = param_5 - param_3;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x8720 ===
+
+void FUN_CODE_8720(void)
+
+{
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e60d;
+  FUN_CODE_0793(7,2,0);
+  return;
+}
+

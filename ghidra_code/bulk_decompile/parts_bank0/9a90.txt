@@ -1,0 +1,8 @@
+=== 0x9a90 ===
+
+char FUN_CODE_9a90(byte param_1)
+
+{
+  return (((param_1 & 3) == 0) << 7) >> 7;
+}
+

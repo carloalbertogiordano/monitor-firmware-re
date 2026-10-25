@@ -1,0 +1,8 @@
+=== 0x75b8 ===
+
+undefined1 FUN_CODE_75b8(void)
+
+{
+  return DAT_EXTMEM_e53a;
+}
+

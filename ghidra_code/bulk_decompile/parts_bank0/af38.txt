@@ -1,0 +1,8 @@
+=== 0xaf38 ===
+
+char FUN_CODE_af38(char *param_1)
+
+{
+  return *param_1 + '\x01';
+}
+

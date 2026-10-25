@@ -1,0 +1,31 @@
+=== 0xe6d9 ===
+
+void FUN_CODE_e6d9(byte param_1)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  
+  FUN_CODE_a463(0,0xe33e);
+  bVar1 = DAT_EXTMEM_e548;
+  bVar2 = DAT_EXTMEM_e549;
+  FUN_CODE_0a87();
+  FUN_CODE_a498(0xe340);
+  FUN_CODE_a48d();
+  cVar3 = ((bVar2 < 0x33) << 7) >> 7;
+  if (bVar1 < (byte)-cVar3) {
+    FUN_CODE_0a87(bVar1 + cVar3);
+    cVar3 = FUN_CODE_a498(0xe340);
+    DAT_EXTMEM_e33f = (param_1 - bVar2) + -1;
+    DAT_EXTMEM_e33e =
+         (cVar3 - (bVar1 - (((param_1 < bVar2) << 7) >> 7))) +
+         (-1 - (((param_1 - bVar2 != '\0') << 7) >> 7));
+  }
+  else {
+    DAT_EXTMEM_e33e = '\0';
+    DAT_EXTMEM_e33f = '2';
+  }
+  return;
+}
+

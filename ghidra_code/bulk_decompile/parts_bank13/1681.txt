@@ -1,0 +1,13 @@
+=== 0x1681 ===
+
+void FUN_CODE_1681(void)
+
+{
+  nop();
+  nop();
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

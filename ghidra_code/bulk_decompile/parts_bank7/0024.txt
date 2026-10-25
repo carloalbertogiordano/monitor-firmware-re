@@ -1,0 +1,9 @@
+=== 0x0024 ===
+
+void FUN_CODE_0024(char param_1)
+
+{
+  FUN_CODE_04c4(param_1 + -1);
+  return;
+}
+

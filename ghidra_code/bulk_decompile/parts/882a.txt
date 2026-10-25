@@ -1,0 +1,8 @@
+=== 0x882a ===
+
+void FUN_CODE_882a(void)
+
+{
+  return;
+}
+

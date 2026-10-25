@@ -1,0 +1,14 @@
+=== 0xfe19 ===
+
+void FUN_CODE_fe19(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_e1ae();
+  if (in_PSW < '\0') {
+    return;
+  }
+  return;
+}
+

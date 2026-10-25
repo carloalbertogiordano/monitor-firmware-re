@@ -1,0 +1,37 @@
+=== 0xee07 ===
+
+void FUN_CODE_ee07(byte *param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  
+  FUN_CODE_1991(0xa8,0xe1,1,0xff,0,0x25);
+  cVar3 = '\0';
+  do {
+    bVar2 = 0;
+    do {
+      FUN_CODE_44fe();
+      bVar4 = FUN_CODE_4374();
+      if (bVar4 == 0x56) {
+        FUN_CODE_4353();
+        bVar4 = 1;
+        cVar1 = BANK0_R6 + '\x01';
+        while (cVar1 = cVar1 + -1, cVar1 != '\0') {
+          bVar4 = bVar4 << 1;
+        }
+        *param_1 = bVar4 | *param_1;
+      }
+      else {
+        param_1 = (byte *)CONCAT11(-0x1f - (((0x88 < bVar4) << 7) >> 7),bVar4 + 0x77);
+        *param_1 = cVar3 << 4 | bVar2;
+      }
+      bVar2 = bVar2 + 1;
+    } while (bVar2 != 6);
+    cVar3 = cVar3 + '\x01';
+  } while (cVar3 != '\x06');
+  return;
+}
+

@@ -1,0 +1,42 @@
+=== 0x2134 ===
+
+void FUN_CODE_2134(undefined1 *param_1)
+
+{
+  *param_1 = 0xde;
+  param_1[1] = 10;
+  FUN_CODE_0134(1);
+  _7_6 = 0;
+  DAT_EXTMEM_e1d9 = 0;
+  FUN_CODE_26b2();
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  if (DAT_EXTMEM_e335 != '\0') {
+    FUN_CODE_1fb0();
+    return;
+  }
+  return;
+}
+

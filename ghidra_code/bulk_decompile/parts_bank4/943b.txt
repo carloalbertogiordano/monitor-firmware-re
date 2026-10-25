@@ -1,0 +1,10 @@
+=== 0x943b ===
+
+undefined1 FUN_CODE_943b(void)
+
+{
+  FUN_CODE_0a57();
+  FUN_CODE_0a5d(DAT_EXTMEM_e519,DAT_EXTMEM_e51a);
+  return DAT_EXTMEM_e526;
+}
+

@@ -1,0 +1,10 @@
+=== 0x6908 ===
+
+char FUN_CODE_6908(byte param_1,char param_2,char param_3,char param_4)
+
+{
+  nop();
+  return param_1 + (param_3 - 2U) + (param_4 - ((CARRY1(param_1,param_3 - 2U) << 7) >> 7)) + param_2
+  ;
+}
+

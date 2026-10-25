@@ -1,0 +1,10 @@
+=== 0xfe44 ===
+
+void FUN_CODE_fe44(void)
+
+{
+  FUN_CODE_f708();
+  FUN_CODE_f49c();
+  return;
+}
+

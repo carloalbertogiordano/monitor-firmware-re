@@ -1,0 +1,9 @@
+=== 0xb0cc ===
+
+void FUN_CODE_b0cc(void)
+
+{
+  DAT_EXTMEM_e3c5 = 0xff;
+  return;
+}
+

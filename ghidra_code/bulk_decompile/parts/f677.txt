@@ -1,0 +1,13 @@
+=== 0xf677 ===
+
+void FUN_CODE_f677(char param_1)
+
+{
+  if (param_1 != '\v') {
+    DAT_EXTMEM_e38a = FUN_CODE_f54f(0xe33b);
+    DAT_EXTMEM_e38b = DAT_EXTMEM_e33d;
+    FUN_CODE_090d();
+  }
+  return;
+}
+

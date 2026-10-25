@@ -1,0 +1,10 @@
+=== 0xbd57 ===
+
+void FUN_CODE_bd57(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e398 = param_1;
+  DAT_EXTMEM_e399 = param_2;
+  return;
+}
+

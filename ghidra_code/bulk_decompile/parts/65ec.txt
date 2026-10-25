@@ -1,0 +1,13 @@
+=== 0x65ec ===
+
+byte FUN_CODE_65ec(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = 0x15;
+  FUN_CODE_f826();
+  DAT_EXTMEM_e3ea = bVar1;
+  return bVar1 & 8;
+}
+

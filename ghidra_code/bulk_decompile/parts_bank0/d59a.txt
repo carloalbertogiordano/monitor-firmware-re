@@ -1,0 +1,13 @@
+=== 0xd59a ===
+
+void FUN_CODE_d59a(char *param_1,undefined1 param_2)
+
+{
+  char cVar1;
+  
+  cVar1 = *param_1;
+  *param_1 = *param_1 + '\x01';
+  FUN_CODE_130a(param_2,cVar1);
+  return;
+}
+

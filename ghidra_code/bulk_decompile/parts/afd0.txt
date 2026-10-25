@@ -1,0 +1,9 @@
+=== 0xafd0 ===
+
+void FUN_CODE_afd0(byte param_1,char param_2)
+
+{
+  FUN_CODE_127f(param_1 + 1,param_2 - (((0xfe < param_1) << 7) >> 7));
+  return;
+}
+

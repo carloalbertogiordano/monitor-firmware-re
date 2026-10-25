@@ -1,0 +1,12 @@
+=== 0x5244 ===
+
+char FUN_CODE_5244(undefined1 *param_1)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_5011(*param_1);
+  nop();
+  return cVar1 + '\x11';
+}
+

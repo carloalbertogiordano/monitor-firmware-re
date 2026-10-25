@@ -1,0 +1,37 @@
+=== 0x4376 ===
+
+void FUN_CODE_4376(byte param_1,byte *param_2,byte *param_3,char param_4,byte param_5,byte param_6,
+                  char param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char in_PSW;
+  
+  *param_2 = 0x6d;
+  while (bVar1 = param_1, in_PSW < '\0') {
+    bVar1 = *param_3 - (in_PSW >> 7);
+    param_2 = &DAT_INTMEM_7c;
+    bVar2 = DAT_INTMEM_6b ^ DAT_INTMEM_7c;
+    *param_3 = 0x66;
+    param_4 = param_4 + -1;
+    bVar2 = bVar2 - 1 | *param_3 | 0x44;
+    bVar1 = *param_3 -
+            ((CARRY1((param_1 + bVar1 | 0x3f) & param_6,
+                     param_6 - ((CARRY1(param_1,bVar1) << 7) >> 7)) << 7) >> 7);
+    param_1 = bVar2 + bVar1;
+    in_PSW = CARRY1(bVar2,bVar1) << 7;
+  }
+  while( true ) {
+    param_2 = param_2 + -1;
+    bVar2 = bVar1 | *param_2 | *param_2;
+    bVar1 = *param_3 - (in_PSW >> 7);
+    in_PSW = CARRY1(bVar2,bVar1) << 7;
+    if (!CARRY1(bVar2,bVar1)) break;
+    bVar1 = bVar2 + bVar1 | DAT_INTMEM_37;
+  }
+  FUN_CODE_4240(bVar2 + bVar1 + (param_5 - (in_PSW >> 7)),param_2,param_3,param_4,param_5,param_6,
+                param_7,param_1);
+  return;
+}
+

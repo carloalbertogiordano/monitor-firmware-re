@@ -1,0 +1,12 @@
+=== 0xad6f ===
+
+undefined1 FUN_CODE_ad6f(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 2;
+  FUN_CODE_ae9d(2);
+  return uVar1;
+}
+

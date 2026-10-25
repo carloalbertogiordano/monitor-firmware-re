@@ -1,0 +1,10 @@
+=== 0xc523 ===
+
+void FUN_CODE_c523(undefined1 param_1)
+
+{
+  DAT_EXTMEM_5527 = param_1;
+  DAT_EXTMEM_5528 = param_1;
+  return;
+}
+

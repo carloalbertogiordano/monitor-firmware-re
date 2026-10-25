@@ -1,0 +1,44 @@
+=== 0x6ac3 ===
+
+void FUN_CODE_6ac3(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  DAT_EXTMEM_e336 = param_1;
+  FUN_CODE_1724(0xe337);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe33b);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe33f);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe343);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_de21(0xe537,DAT_EXTMEM_e52b,DAT_EXTMEM_e52c);
+  FUN_CODE_ddc8(0xe52d);
+  FUN_CODE_de0f(0xe33f);
+  FUN_CODE_ddd0(0xe525);
+  uVar2 = FUN_CODE_ddea(0xe33f);
+  FUN_CODE_14a4(uVar2);
+  uVar1 = BANK0_R7;
+  uVar2 = BANK0_R6;
+  FUN_CODE_ddd9();
+  BANK0_R6 = uVar2;
+  BANK0_R7 = uVar1;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f();
+}
+

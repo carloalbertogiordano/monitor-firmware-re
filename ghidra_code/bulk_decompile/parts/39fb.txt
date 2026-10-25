@@ -1,0 +1,24 @@
+=== 0x39fb ===
+
+void FUN_CODE_39fb(void)
+
+{
+  if (DAT_EXTMEM_e3e2 != '\x01') {
+    if ((DAT_EXTMEM_e3e2 == '\x02') || (DAT_EXTMEM_e3e2 == '\x03')) {
+      FUN_CODE_8ce7();
+      goto LAB_CODE_4131;
+    }
+    if (DAT_EXTMEM_e3e2 != '\0') {
+      set_e3e4_to_const2();
+      goto LAB_CODE_4131;
+    }
+  }
+  FUN_CODE_8c3a();
+LAB_CODE_4131:
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

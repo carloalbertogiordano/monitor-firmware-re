@@ -1,0 +1,14 @@
+=== 0xd528 ===
+
+void FUN_CODE_d528(void)
+
+{
+  bool bVar1;
+  
+  bVar1 = DAT_EXTMEM_e34e != '\0';
+  DAT_EXTMEM_e34e = DAT_EXTMEM_e34e + -1;
+  DAT_EXTMEM_e34d = DAT_EXTMEM_e34d + (-1 - ((bVar1 << 7) >> 7));
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  return;
+}
+

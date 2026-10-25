@@ -1,0 +1,10 @@
+=== 0x8a9e ===
+
+void FUN_CODE_8a9e(short param_1)
+
+{
+  *(byte *)(param_1 + 1) = *(byte *)(param_1 + 1) & 0xf7 | 8;
+  DAT_EXTMEM_0b01 = DAT_EXTMEM_0b01 & 0xbf;
+  return;
+}
+

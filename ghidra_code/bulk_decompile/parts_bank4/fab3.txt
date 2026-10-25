@@ -1,0 +1,13 @@
+=== 0xfab3 ===
+
+void FUN_CODE_fab3(short param_1)
+
+{
+  FUN_CODE_f17f();
+  *(undefined1 *)(param_1 + 1) = 0x80;
+  FUN_CODE_f3e6();
+  FUN_CODE_f166(0xe4ac);
+  FUN_CODE_0ba1();
+  return;
+}
+

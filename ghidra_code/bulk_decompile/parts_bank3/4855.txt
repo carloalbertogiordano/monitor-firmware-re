@@ -1,0 +1,114 @@
+=== 0x4855 ===
+
+byte FUN_CODE_4855(char param_1,byte *param_2,byte param_3,char param_4,char param_5,char param_6,
+                  char param_7)
+
+{
+  char cVar1;
+  char cVar2;
+  char cVar3;
+  char *pcVar4;
+  byte bVar5;
+  char cVar6;
+  byte bVar7;
+  byte in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  cVar2 = param_7 + '\x02';
+  nop();
+  func_0x4800(param_1 + 1U | param_7 + 1U | param_3,cVar2);
+  BANK2_R1 = param_3;
+  func_0x4800();
+  FUN_CODE_4824();
+  nop();
+  cVar3 = FUN_CODE_8000();
+  nop();
+  nop();
+  nop();
+  param_6 = param_6 + '\x01';
+  FUN_CODE_4f00(cVar3 + '\x01',param_6);
+  pcVar4 = (char *)~*param_2;
+  *param_2 = *param_2;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_3;
+  bVar5 = FUN_CODE_4b01(param_4 + '\x01');
+  nop();
+  cVar3 = bVar5 << 7;
+  cVar6 = func_0x4800(bVar5 >> 1 | in_PSW & 0x80,param_5 + -1,cVar2);
+  cVar1 = DAT_SFR_95;
+  nop();
+  FUN_CODE_480f(cVar6 + (cVar1 - (cVar3 >> 7)) & (byte)pcVar4);
+  cVar3 = FUN_CODE_480f();
+  nop();
+  if (_0_0 != '\0') {
+    _0_0 = '\0';
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  param_3 = param_3 + 1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_3;
+  *pcVar4 = *pcVar4 + '\x01';
+  bVar5 = cVar2 + 1;
+  bVar7 = thunk_FUN_CODE_4824(cVar3 + cVar2,param_6 + '\x01',bVar5);
+  *(byte *)(ushort)param_3 = bVar7 | 0xf1;
+  *pcVar4 = *pcVar4 + -1;
+  nop();
+  return ~(bVar7 | 0xf1) + bVar5 | bVar5;
+}
+

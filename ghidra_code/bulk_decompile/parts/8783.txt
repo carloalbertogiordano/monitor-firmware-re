@@ -1,0 +1,10 @@
+=== 0x8783 ===
+
+undefined1 FUN_CODE_8783(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  DAT_EXTMEM_02c9 = 0x28;
+  return DAT_EXTMEM_02ca;
+}
+

@@ -1,0 +1,22 @@
+=== 0xf818 ===
+
+byte FUN_CODE_f818(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  cVar1 = FUN_CODE_7769();
+  if (cVar1 != '\x01') {
+    if (DAT_EXTMEM_e671 == '\x02') {
+      return 0;
+    }
+    if (DAT_EXTMEM_e671 == '\x01') {
+      return 0;
+    }
+  }
+  FUN_CODE_75e6(0xe6b3);
+  bVar2 = FUN_CODE_127f();
+  return bVar2 >> 3;
+}
+

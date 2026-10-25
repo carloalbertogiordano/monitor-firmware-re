@@ -1,0 +1,12 @@
+=== 0x99c3 ===
+
+void FUN_CODE_99c3(undefined1 *param_1)
+
+{
+  *param_1 = 0x11;
+  FUN_CODE_febf(2,2,0);
+  DAT_EXTMEM_e38a = 0x11;
+  FUN_CODE_febf(3,2,0);
+  return;
+}
+

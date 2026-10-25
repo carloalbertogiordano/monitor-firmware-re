@@ -1,0 +1,10 @@
+=== 0xa533 ===
+
+void FUN_CODE_a533(void)
+
+{
+  FUN_CODE_152f();
+  FUN_CODE_152f(0,0,0,2);
+  return;
+}
+

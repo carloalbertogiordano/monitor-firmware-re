@@ -1,0 +1,10 @@
+=== 0xf9ee ===
+
+void FUN_CODE_f9ee(byte param_1,char param_2)
+
+{
+  DAT_EXTMEM_3a0a = (DAT_EXTMEM_3a0a & 0xfe | param_1) & 0xfd | param_2 * '\x02';
+  FUN_CODE_0877();
+  return;
+}
+

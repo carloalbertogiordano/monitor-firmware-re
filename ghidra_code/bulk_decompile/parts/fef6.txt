@@ -1,0 +1,8 @@
+=== 0xfef6 ===
+
+void FUN_CODE_fef6(void)
+
+{
+  return;
+}
+

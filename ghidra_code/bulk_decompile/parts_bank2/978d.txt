@@ -1,0 +1,10 @@
+=== 0x978d ===
+
+void FUN_CODE_978d(void)
+
+{
+  DAT_EXTMEM_0043 = DAT_EXTMEM_0043 & 0xdf;
+  DAT_EXTMEM_0044 = DAT_EXTMEM_0044 & 0x7f | 0x80;
+  return;
+}
+

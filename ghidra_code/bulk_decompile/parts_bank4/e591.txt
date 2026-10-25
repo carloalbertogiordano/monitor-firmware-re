@@ -1,0 +1,19 @@
+=== 0xe591 ===
+
+void FUN_CODE_e591(void)
+
+{
+  _0_3 = _0_3 & 1;
+  DAT_EXTMEM_04b7 = DAT_EXTMEM_04b7 & 0x5f | 0xa0;
+  DAT_INTMEM_53 = '\x15';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1724(0x8804);
+}
+

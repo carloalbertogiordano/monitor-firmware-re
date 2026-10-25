@@ -1,0 +1,20 @@
+=== 0x7311 ===
+
+void FUN_CODE_7311(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  thunk_FUN_CODE_218f();
+  return;
+}
+

@@ -1,0 +1,20 @@
+=== 0xe081 ===
+
+undefined1 FUN_CODE_e081(char param_1)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  short sVar3;
+  
+  if (8 < param_1 - 1U) {
+    return 0;
+  }
+  sVar3 = -0x1f71;
+  bVar1 = FUN_CODE_bec9();
+                    /* WARNING: Could not recover jumptable at 0xe08e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  uVar2 = (*(code *)(sVar3 + (ushort)bVar1))();
+  return uVar2;
+}
+

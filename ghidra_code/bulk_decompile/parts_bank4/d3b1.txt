@@ -1,0 +1,10 @@
+=== 0xd3b1 ===
+
+void FUN_CODE_d3b1(void)
+
+{
+  DAT_EXTMEM_e6cf = 0;
+  DAT_EXTMEM_e6d0 = 0;
+  return;
+}
+

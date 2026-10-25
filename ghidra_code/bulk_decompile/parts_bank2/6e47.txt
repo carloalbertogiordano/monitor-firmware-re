@@ -1,0 +1,9 @@
+=== 0x6e47 ===
+
+undefined1 FUN_CODE_6e47(byte *param_1,byte param_2)
+
+{
+  *param_1 = param_2 | *param_1 & 0xf0;
+  return DAT_EXTMEM_e352;
+}
+

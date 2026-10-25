@@ -1,0 +1,10 @@
+=== 0x4600 ===
+
+void FUN_CODE_4600(void)
+
+{
+  DAT_EXTMEM_e386 = DAT_INTMEM_57;
+  DAT_EXTMEM_e387 = DAT_INTMEM_58;
+  return;
+}
+

@@ -1,0 +1,21 @@
+=== 0x58a2 ===
+
+void FUN_CODE_58a2(char *param_1,undefined1 param_2,char param_3,char param_4,char param_5)
+
+{
+  undefined1 uVar1;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_1 = *param_1 + '\x01';
+  uVar1 = EX1;
+  FUN_CODE_5d48(param_2,DAT_INTMEM_27,param_3 + '\x01',param_4 + '\x01',param_5 + -1);
+  return;
+}
+

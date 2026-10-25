@@ -1,0 +1,11 @@
+=== 0xd81b ===
+
+void FUN_CODE_d81b(void)
+
+{
+  FUN_CODE_0853(0,0,0);
+  _0_1 = 1;
+  FUN_CODE_083b();
+  return;
+}
+

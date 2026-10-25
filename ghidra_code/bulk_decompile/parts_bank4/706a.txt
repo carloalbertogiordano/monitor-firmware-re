@@ -1,0 +1,8 @@
+=== 0x706a ===
+
+void FUN_CODE_706a(void)
+
+{
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x2925 ===
+
+undefined1 FUN_CODE_2925(void)
+
+{
+  return DAT_EXTMEM_e1da;
+}
+

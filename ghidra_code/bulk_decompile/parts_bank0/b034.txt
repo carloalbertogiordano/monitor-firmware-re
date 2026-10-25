@@ -1,0 +1,8 @@
+=== 0xb034 ===
+
+char FUN_CODE_b034(char *param_1)
+
+{
+  return 'Z' - (((0x5eU < (byte)(*param_1 * '\x03')) << 7) >> 7);
+}
+

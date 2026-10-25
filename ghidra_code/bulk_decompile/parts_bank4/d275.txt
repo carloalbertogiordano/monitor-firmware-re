@@ -1,0 +1,14 @@
+=== 0xd275 ===
+
+void FUN_CODE_d275(void)
+
+{
+  bool bVar1;
+  
+  bVar1 = DAT_EXTMEM_e34a != '\0';
+  DAT_EXTMEM_e34a = DAT_EXTMEM_e34a + -1;
+  DAT_EXTMEM_e349 = DAT_EXTMEM_e349 + (-1 - ((bVar1 << 7) >> 7));
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  return;
+}
+

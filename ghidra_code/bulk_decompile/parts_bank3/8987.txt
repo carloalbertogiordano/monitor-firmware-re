@@ -1,0 +1,8 @@
+=== 0x8987 ===
+
+byte FUN_CODE_8987(void)
+
+{
+  return DAT_EXTMEM_e6c9 >> 2 & 3;
+}
+

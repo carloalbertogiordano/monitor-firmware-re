@@ -1,0 +1,16 @@
+=== 0x5427 ===
+
+void FUN_CODE_5427(undefined1 param_1)
+
+{
+  byte bVar1;
+  byte in_PSW;
+  
+  _3_6 = 1;
+  _0_1 = in_PSW >> 7;
+  bVar1 = FUN_CODE_5602();
+  nop();
+  FUN_CODE_22e0(param_1,bVar1 >> 1 | bVar1 << 7);
+  return;
+}
+

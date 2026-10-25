@@ -1,0 +1,13 @@
+=== 0xb994 ===
+
+void FUN_CODE_b994(undefined1 param_1)
+
+{
+  *(undefined1 *)
+   CONCAT11(DAT_EXTMEM_e3cc +
+            (DAT_EXTMEM_e3d4 - ((CARRY1(DAT_EXTMEM_e3cd,DAT_EXTMEM_e3d5) << 7) >> 7)),
+            DAT_EXTMEM_e3cd + DAT_EXTMEM_e3d5) = param_1;
+  bEXTMEMfffc = bEXTMEMfffc | 0x10;
+  return;
+}
+

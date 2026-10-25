@@ -1,0 +1,11 @@
+=== 0x901a ===
+
+/* WARNING: Removing unreachable block (CODE,0x9022) */
+
+void FUN_CODE_901a(void)
+
+{
+  _0_0 = 0;
+  return;
+}
+

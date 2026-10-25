@@ -1,0 +1,10 @@
+=== 0x47c5 ===
+
+void FUN_CODE_47c5(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e337 = param_1;
+  DAT_EXTMEM_e338 = param_2;
+  return;
+}
+

@@ -1,0 +1,25 @@
+=== 0xef94 ===
+
+byte FUN_CODE_ef94(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  
+  cVar3 = (1 < DAT_EXTMEM_e6f2 >> 4) << 7;
+  if (DAT_EXTMEM_e6f2 >> 4 != 2) {
+    return DAT_EXTMEM_e6f2 >> 4;
+  }
+  bVar1 = DAT_EXTMEM_e6f3;
+  bVar2 = FUN_CODE_ee41(2);
+  if (cVar3 < '\0') {
+    return bVar2;
+  }
+  bVar2 = bVar1 >> 6 | (bVar1 >> 4) << 7;
+  if ((char)((bVar1 >> 5) << 7) < '\0') {
+    return bVar2;
+  }
+  return bVar2;
+}
+

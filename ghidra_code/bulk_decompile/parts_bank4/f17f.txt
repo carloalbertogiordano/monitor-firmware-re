@@ -1,0 +1,9 @@
+=== 0xf17f ===
+
+void FUN_CODE_f17f(void)
+
+{
+  DAT_EXTMEM_e4aa = 0x6e;
+  return;
+}
+

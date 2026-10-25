@@ -1,0 +1,11 @@
+=== 0x4537 ===
+
+void FUN_CODE_4537(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e65d = param_1;
+  DAT_EXTMEM_e65e = 0x17;
+  DAT_EXTMEM_e65f = 0x91;
+  return;
+}
+

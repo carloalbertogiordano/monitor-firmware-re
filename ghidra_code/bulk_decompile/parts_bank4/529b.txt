@@ -1,0 +1,78 @@
+=== 0x529b ===
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Removing unreachable block (CODE,0x52fb) */
+/* WARNING: Removing unreachable block (CODE,0x5359) */
+/* WARNING: Removing unreachable block (CODE,0x535d) */
+/* WARNING: Removing unreachable block (CODE,0x5361) */
+/* WARNING: Removing unreachable block (CODE,0x53c9) */
+/* WARNING: Removing unreachable block (CODE,0x53cd) */
+/* WARNING: Removing unreachable block (CODE,0x53aa) */
+/* WARNING: Removing unreachable block (CODE,0x5378) */
+/* WARNING: Removing unreachable block (CODE,0x5387) */
+/* WARNING: Removing unreachable block (CODE,0x5406) */
+/* WARNING: Removing unreachable block (CODE,0x5409) */
+/* WARNING: Removing unreachable block (CODE,0x53db) */
+/* WARNING: Removing unreachable block (CODE,0x5395) */
+/* WARNING: Removing unreachable block (CODE,0x53e9) */
+/* WARNING: Removing unreachable block (CODE,0x53ef) */
+/* WARNING: Removing unreachable block (CODE,0x53ad) */
+/* WARNING: Removing unreachable block (CODE,0x5356) */
+/* WARNING: Removing unreachable block (CODE,0x5399) */
+
+void FUN_CODE_529b(char param_1,undefined1 param_2,char param_3,byte param_4,char param_5)
+
+{
+  undefined1 uVar1;
+  char in_PSW;
+  
+  uVar1 = FIFLG;
+  nop();
+  nop();
+  if (_1_3 != '\0') {
+    _1_3 = 0;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    uVar1 = FIFLG;
+    nop();
+    nop();
+    BANK1_R3 = BANK1_R3 + '\x01';
+    if (-1 < in_PSW) {
+      BANK1_R2 = BANK1_R2 + '\x01';
+      BANK0_R0 = BANK0_R0 + '\x01';
+    }
+    nop();
+    nop();
+    nop();
+    uVar1 = FIFLG;
+    nop();
+    FUN_CODE_d102(param_3 + '\x01',param_1 - (param_5 - (in_PSW >> 7)) | param_4);
+    return;
+  }
+  BANK1_R3 = BANK1_R3 + '\x01';
+  if (-1 < in_PSW) {
+    BANK1_R2 = BANK1_R2 + '\x01';
+    BANK0_R0 = BANK0_R0 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  nop();
+  FUN_CODE_d102(param_2,param_3);
+  return;
+}
+

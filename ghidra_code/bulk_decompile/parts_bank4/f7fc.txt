@@ -1,0 +1,18 @@
+=== 0xf7fc ===
+
+void FUN_CODE_f7fc(char param_1)
+
+{
+  FUN_CODE_fdc7();
+  if (param_1 == '\x04') {
+    FUN_CODE_f1e3();
+  }
+  FUN_CODE_bf13();
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+  } while (DAT_INTMEM_56 != '\0');
+  DAT_EXTMEM_08a0 = DAT_EXTMEM_08a0 & 0xbf;
+  return;
+}
+

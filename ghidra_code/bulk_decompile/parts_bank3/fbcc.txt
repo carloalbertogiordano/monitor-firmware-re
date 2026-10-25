@@ -1,0 +1,8 @@
+=== 0xfbcc ===
+
+char FUN_CODE_fbcc(char param_1)
+
+{
+  return (param_1 >> 7) * -2;
+}
+

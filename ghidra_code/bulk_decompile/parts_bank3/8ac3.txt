@@ -1,0 +1,8 @@
+=== 0x8ac3 ===
+
+undefined1 FUN_CODE_8ac3(void)
+
+{
+  return 0;
+}
+

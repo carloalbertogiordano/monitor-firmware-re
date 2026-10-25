@@ -1,0 +1,9 @@
+=== 0xbed5 ===
+
+void FUN_CODE_bed5(void)
+
+{
+  DAT_EXTMEM_e376 = DAT_EXTMEM_e376 + '\x01';
+  return;
+}
+

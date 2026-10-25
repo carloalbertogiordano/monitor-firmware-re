@@ -1,0 +1,23 @@
+=== 0x1671 ===
+
+void FUN_CODE_1671(byte param_1,char *param_2,char param_3,char param_4)
+
+{
+  byte bVar1;
+  char in_PSW;
+  undefined1 uStackX_0;
+  
+  DAT_INTMEM_3d = uStackX_0;
+  bVar1 = CCAPM1;
+  CCAPM1 = bVar1 ^ 0x3e;
+  func_0x173f(*param_2 + (param_4 - ((!CARRY1(param_1,param_3 - (in_PSW >> 7)) << 7) >> 7)));
+  bVar1 = CCAP2H;
+  CCAP2H = bVar1 ^ 0x3f;
+  nop();
+  nop();
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

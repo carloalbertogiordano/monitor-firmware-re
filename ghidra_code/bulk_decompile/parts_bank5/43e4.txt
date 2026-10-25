@@ -1,0 +1,8 @@
+=== 0x43e4 ===
+
+undefined1 FUN_CODE_43e4(void)
+
+{
+  return DAT_EXTMEM_e350;
+}
+

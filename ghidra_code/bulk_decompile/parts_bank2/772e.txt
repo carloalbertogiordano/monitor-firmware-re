@@ -1,0 +1,8 @@
+=== 0x772e ===
+
+undefined1 FUN_CODE_772e(void)
+
+{
+  return DAT_EXTMEM_e536;
+}
+

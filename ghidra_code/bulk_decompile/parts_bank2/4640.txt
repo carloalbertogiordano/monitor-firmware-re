@@ -1,0 +1,10 @@
+=== 0x4640 ===
+
+void FUN_CODE_4640(void)
+
+{
+  DAT_EXTMEM_e336 = 0;
+  DAT_EXTMEM_e337 = 0;
+  return;
+}
+

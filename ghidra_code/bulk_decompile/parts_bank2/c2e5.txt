@@ -1,0 +1,9 @@
+=== 0xc2e5 ===
+
+void FUN_CODE_c2e5(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe366);
+}
+

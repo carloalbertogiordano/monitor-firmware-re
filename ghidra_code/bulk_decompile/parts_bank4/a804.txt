@@ -1,0 +1,8 @@
+=== 0xa804 ===
+
+undefined1 FUN_CODE_a804(void)
+
+{
+  return DAT_EXTMEM_e52f;
+}
+

@@ -1,0 +1,8 @@
+=== 0x3eae ===
+
+byte FUN_CODE_3eae(byte param_1,byte param_2)
+
+{
+  return param_2 | param_1;
+}
+

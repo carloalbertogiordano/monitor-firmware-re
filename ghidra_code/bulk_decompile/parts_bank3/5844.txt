@@ -1,0 +1,10 @@
+=== 0x5844 ===
+
+char FUN_CODE_5844(byte param_1,char param_2,undefined1 param_3)
+
+{
+  DAT_SFR_ab = param_1;
+  DAT_SFR_aa = param_3;
+  return *(char *)(ushort)param_1 + param_2;
+}
+

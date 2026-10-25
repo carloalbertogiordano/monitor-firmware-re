@@ -1,0 +1,9 @@
+=== 0xb121 ===
+
+void FUN_CODE_b121(void)
+
+{
+  FUN_CODE_f73a(0,DAT_EXTMEM_e378);
+  return;
+}
+

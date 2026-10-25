@@ -1,0 +1,8 @@
+=== 0xe421 ===
+
+undefined1 FUN_CODE_e421(void)
+
+{
+  return DAT_EXTMEM_e4c4;
+}
+

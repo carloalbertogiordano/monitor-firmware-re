@@ -1,0 +1,8 @@
+=== 0xb0aa ===
+
+char FUN_CODE_b0aa(void)
+
+{
+  return DAT_EXTMEM_e554 - ('\x03' - (((DAT_EXTMEM_e555 < 0xe8) << 7) >> 7));
+}
+

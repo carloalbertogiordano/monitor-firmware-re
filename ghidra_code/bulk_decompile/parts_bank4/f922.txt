@@ -1,0 +1,14 @@
+=== 0xf922 ===
+
+char FUN_CODE_f922(byte param_1,byte param_2)
+
+{
+  byte bVar1;
+  
+  bVar1 = 3 - (((param_2 < 0xd8) << 7) >> 7);
+  if (param_1 < bVar1) {
+    return param_1 - bVar1;
+  }
+  return param_1 + (-4 - (((0xcc < param_2) << 7) >> 7));
+}
+

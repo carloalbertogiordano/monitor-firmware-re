@@ -1,0 +1,8 @@
+=== 0x267f ===
+
+undefined1 FUN_CODE_267f(undefined1 param_1)
+
+{
+  return param_1;
+}
+

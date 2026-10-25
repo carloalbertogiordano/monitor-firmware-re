@@ -1,0 +1,29 @@
+=== 0xdf6d ===
+
+void FUN_CODE_df6d(void)
+
+{
+  undefined1 uVar1;
+  
+  DAT_EXTMEM_e33d = 0;
+  DAT_EXTMEM_e33e = 0;
+  uVar1 = FUN_CODE_9d35(0x3f,0x8b,0x5e,0xe3);
+  FUN_CODE_0b71(uVar1);
+  if (DAT_EXTMEM_e42f == '\0') {
+    FUN_CODE_9d1e(DAT_EXTMEM_e434,0xe33d);
+    FUN_CODE_9c7b();
+    FUN_CODE_0b89();
+    FUN_CODE_ce26(0x3f,0xe3,1,0);
+    FUN_CODE_9c53(0xe33d);
+    FUN_CODE_0bd1();
+    FUN_CODE_9caf();
+    FUN_CODE_cea4();
+    FUN_CODE_0b7d(0);
+  }
+  FUN_CODE_0b71(1);
+  _0_1 = 0;
+  FUN_CODE_083b();
+  FUN_CODE_0853(0,0,0);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x6f1a ===
+
+byte FUN_CODE_6f1a(byte param_1)
+
+{
+  FUN_CODE_15e8(0x18);
+  return param_1 & 0xf;
+}
+

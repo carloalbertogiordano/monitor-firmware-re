@@ -1,0 +1,11 @@
+=== 0xfb09 ===
+
+void FUN_CODE_fb09(undefined1 param_1,byte param_2)
+
+{
+  nop();
+  FUN_CODE_ee65(param_1,param_2);
+  FUN_CODE_f7fb(0);
+  return;
+}
+

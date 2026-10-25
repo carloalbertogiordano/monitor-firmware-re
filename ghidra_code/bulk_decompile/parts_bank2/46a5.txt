@@ -1,0 +1,10 @@
+=== 0x46a5 ===
+
+undefined1 FUN_CODE_46a5(undefined1 *param_1)
+
+{
+  *param_1 = 0;
+  param_1[1] = 100;
+  return 0;
+}
+

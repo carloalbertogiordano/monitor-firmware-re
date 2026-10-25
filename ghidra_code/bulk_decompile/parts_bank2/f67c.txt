@@ -1,0 +1,19 @@
+=== 0xf67c ===
+
+void FUN_CODE_f67c(char param_1)
+
+{
+  if ((DAT_EXTMEM_e55e & 1) == 0) {
+    DAT_EXTMEM_0011 = DAT_EXTMEM_0011 & 0xfb | 4;
+  }
+  else {
+    DAT_EXTMEM_0011 = DAT_EXTMEM_0011 & 0xfb;
+  }
+  if ((param_1 != '\x04') && ((DAT_EXTMEM_e55e >> 1 & 1) == 0)) {
+    DAT_EXTMEM_0011 = DAT_EXTMEM_0011 & 0xf7 | 8;
+    return;
+  }
+  DAT_EXTMEM_0011 = DAT_EXTMEM_0011 & 0xf7;
+  return;
+}
+

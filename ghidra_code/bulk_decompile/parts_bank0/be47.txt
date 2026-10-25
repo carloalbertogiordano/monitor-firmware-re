@@ -1,0 +1,10 @@
+=== 0xbe47 ===
+
+void FUN_CODE_be47(undefined1 param_1,undefined1 param_2)
+
+{
+  FUN_CODE_1718((undefined1 *)0xe331,0,0,param_1,param_2);
+  DAT_EXTMEM_e335 = 0x21;
+  return;
+}
+

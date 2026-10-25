@@ -1,0 +1,39 @@
+=== 0xd5ab ===
+
+void FUN_CODE_d5ab(undefined1 param_1,char param_2)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  
+  if (param_2 != '\x01') {
+    uVar4 = FUN_CODE_fc5d(*(undefined1 *)
+                           CONCAT11('Y' - (((0xd4U < (byte)(param_2 * '\t')) << 7) >> 7),
+                                    param_2 * '\t' + 0x2b));
+    uVar3 = BANK0_R3;
+    uVar2 = BANK0_R2;
+    uVar1 = BANK0_R1;
+    uVar5 = FUN_CODE_fc58('Y' - (((0xd1U < (byte)(param_2 * '\t')) << 7) >> 7),param_2 * '\t' + 0x2e
+                         );
+    DAT_EXTMEM_e333 = uVar4;
+    DAT_EXTMEM_e334 = param_1;
+    DAT_EXTMEM_e335 = uVar5;
+    DAT_EXTMEM_e338 =
+         FUN_CODE_fc58('Y' - (((0xceU < (byte)(param_2 * '\t')) << 7) >> 7),
+                       CONCAT11(0xe3,param_2 * '\t' + 0x31));
+    DAT_EXTMEM_e339 = uEXTMEMffff;
+    DAT_EXTMEM_e33a = 0;
+    DAT_EXTMEM_e33b = 0x12;
+    BANK0_R1 = uVar1;
+    BANK0_R2 = uVar2;
+    BANK0_R3 = uVar3;
+    DAT_EXTMEM_e336 = uVar5;
+    DAT_EXTMEM_e337 = param_1;
+    FUN_CODE_0dc9(0x10);
+  }
+  return;
+}
+

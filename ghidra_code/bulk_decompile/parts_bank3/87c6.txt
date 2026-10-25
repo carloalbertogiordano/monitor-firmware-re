@@ -1,0 +1,11 @@
+=== 0x87c6 ===
+
+void FUN_CODE_87c6(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0x7f;
+  param_1[1] = 0x18;
+  DAT_EXTMEM_0bd7 = DAT_EXTMEM_0bd7 & 0xbf | 0x40;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x88cf ===
+
+undefined1 FUN_CODE_88cf(void)
+
+{
+  return DAT_EXTMEM_0bd6;
+}
+

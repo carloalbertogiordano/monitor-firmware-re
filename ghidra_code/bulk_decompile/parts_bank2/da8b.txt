@@ -1,0 +1,9 @@
+=== 0xda8b ===
+
+void FUN_CODE_da8b(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(4,0x65,DAT_EXTMEM_e52b,DAT_EXTMEM_e52c);
+}
+

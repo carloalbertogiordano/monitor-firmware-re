@@ -1,0 +1,8 @@
+=== 0xfecb ===
+
+void FUN_CODE_fecb(void)
+
+{
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x8b21 ===
+
+byte FUN_CODE_8b21(void)
+
+{
+  return DAT_EXTMEM_0bc8 & 0x20 ^ 0x20;
+}
+

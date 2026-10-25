@@ -1,0 +1,11 @@
+=== 0x00e1 ===
+
+void FUN_CODE_00e1(undefined1 param_1,short param_2)
+
+{
+  nop();
+  nop();
+  FUN_CODE_0070(param_1,param_2 + 1);
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x9c4f ===
+
+byte FUN_CODE_9c4f(short param_1,byte param_2)
+
+{
+  return param_2 ^ *(byte *)(param_1 + 1);
+}
+

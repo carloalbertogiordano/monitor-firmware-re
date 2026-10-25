@@ -1,0 +1,30 @@
+=== 0xd44e ===
+
+void FUN_CODE_d44e(void)
+
+{
+  undefined1 *puVar1;
+  
+  DAT_EXTMEM_e377 = 0x25;
+  DAT_EXTMEM_e378 = DAT_EXTMEM_e4e0 & 1;
+  DAT_EXTMEM_e4e0 = DAT_EXTMEM_e4e0 & 0xfe;
+  DAT_EXTMEM_e376 = 0;
+  while( true ) {
+    if ((DAT_EXTMEM_e376 >= 3) || (3U - (((DAT_EXTMEM_e376 < 3) << 7) >> 7) <= DAT_EXTMEM_e376))
+    goto LAB_CODE_d4b4;
+    puVar1 = &DAT_EXTMEM_e377;
+    if ((DAT_EXTMEM_e377 < 0xf) << 7 < '\0') break;
+    FUN_CODE_6fcc(DAT_EXTMEM_e377 - 0xf);
+    DAT_EXTMEM_e37d = 0xe;
+    FUN_CODE_0f25();
+    DAT_EXTMEM_e377 = DAT_EXTMEM_e377 - 0xe;
+    DAT_EXTMEM_e376 = DAT_EXTMEM_e376 + 1;
+  }
+  FUN_CODE_6fcc(DAT_EXTMEM_e377 - 0xf);
+  DAT_EXTMEM_e37d = puVar1[1];
+  FUN_CODE_0f25();
+LAB_CODE_d4b4:
+  DAT_EXTMEM_e4e0 = DAT_EXTMEM_e4e0 & 0xfe | DAT_EXTMEM_e378 & 1;
+  return;
+}
+

@@ -1,0 +1,12 @@
+=== 0xef63 ===
+
+void FUN_CODE_ef63(char param_1)
+
+{
+  DAT_EXTMEM_e33e = param_1;
+  FUN_CODE_082f(0x20);
+  DAT_EXTMEM_e373 = DAT_EXTMEM_e33e == '\x01';
+  FUN_CODE_0775(0xfe,0xc,0,0x60);
+  return;
+}
+

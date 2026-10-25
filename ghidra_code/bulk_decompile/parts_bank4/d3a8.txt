@@ -1,0 +1,8 @@
+=== 0xd3a8 ===
+
+undefined1 FUN_CODE_d3a8(void)
+
+{
+  return DAT_EXTMEM_e528;
+}
+

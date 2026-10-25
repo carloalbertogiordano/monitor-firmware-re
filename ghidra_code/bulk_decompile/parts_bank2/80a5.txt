@@ -1,0 +1,9 @@
+=== 0x80a5 ===
+
+void FUN_CODE_80a5(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe375);
+}
+

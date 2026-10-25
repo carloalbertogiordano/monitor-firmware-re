@@ -1,0 +1,10 @@
+=== 0x8ae0 ===
+
+void FUN_CODE_8ae0(void)
+
+{
+  FUN_CODE_152f(0,0);
+  FUN_CODE_1718(0xe39a);
+  return;
+}
+

@@ -1,0 +1,17 @@
+=== 0xf25e ===
+
+void FUN_CODE_f25e(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_6eeb();
+  DAT_EXTMEM_e348 = 0xc;
+  FUN_CODE_0f13(0xe);
+  if (in_PSW < '\0') {
+    FUN_CODE_6eeb(0xf5,0xe4,1);
+  }
+  FUN_CODE_1259(0,0xc);
+  return;
+}
+

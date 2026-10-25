@@ -1,0 +1,10 @@
+=== 0xda7e ===
+
+void FUN_CODE_da7e(undefined1 param_1,undefined1 *param_2,char param_3)
+
+{
+  *param_2 = param_1;
+  FUN_CODE_febf(param_3 + '\x01');
+  return;
+}
+

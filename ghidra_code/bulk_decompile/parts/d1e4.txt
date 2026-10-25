@@ -1,0 +1,9 @@
+=== 0xd1e4 ===
+
+void FUN_CODE_d1e4(void)
+
+{
+  FUN_CODE_094f(DAT_EXTMEM_e32f);
+  return;
+}
+

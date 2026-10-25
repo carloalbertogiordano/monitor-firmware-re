@@ -1,0 +1,10 @@
+=== 0xdc7c ===
+
+void FUN_CODE_dc7c(void)
+
+{
+  DAT_EXTMEM_e38a = 10;
+  FUN_CODE_febf(1,0,0);
+  return;
+}
+

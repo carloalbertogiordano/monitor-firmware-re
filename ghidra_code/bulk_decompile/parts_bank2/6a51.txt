@@ -1,0 +1,10 @@
+=== 0x6a51 ===
+
+char FUN_CODE_6a51(void)
+
+{
+  FUN_CODE_fd5b();
+  return DAT_EXTMEM_e34b + (DAT_EXTMEM_e6cf - ((CARRY1(DAT_EXTMEM_e34c,DAT_EXTMEM_e6d0) << 7) >> 7))
+  ;
+}
+

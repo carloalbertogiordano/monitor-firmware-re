@@ -1,0 +1,11 @@
+=== 0x3f4c ===
+
+byte FUN_CODE_3f4c(byte *param_1)
+
+{
+  byte in_PSW;
+  
+  *param_1 = *param_1 & 0xbf | (in_PSW >> 7) << 6;
+  return DAT_EXTMEM_e349 | *param_1 & 0xc0;
+}
+

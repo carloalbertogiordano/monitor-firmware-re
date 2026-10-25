@@ -1,0 +1,9 @@
+=== 0x8ae6 ===
+
+void FUN_CODE_8ae6(void)
+
+{
+  FUN_CODE_1718(0xe39a);
+  return;
+}
+

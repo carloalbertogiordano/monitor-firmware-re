@@ -1,0 +1,23 @@
+=== 0x42e5 ===
+
+void FUN_CODE_42e5(void)
+
+{
+  undefined1 *puVar1;
+  
+  puVar1 = &DAT_EXTMEM_e3e2;
+  if (0xf < DAT_EXTMEM_e3e2) {
+    set_e3e4_to_const2();
+    puVar1[1] = 0;
+    _0_5 = 0;
+    bus_write_variant_a_ff64_65(DAT_EXTMEM_e3e5,DAT_EXTMEM_e3e4);
+    DAT_EXTMEM_ff6d = 2;
+    DAT_EXTMEM_ff61 = 0xff;
+    return;
+  }
+                    /* WARNING: Could not recover jumptable at 0x42f7. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)(DAT_EXTMEM_e3e2 * '\x03') + 0x42f8))();
+  return;
+}
+

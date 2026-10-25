@@ -1,0 +1,9 @@
+=== 0x72c0 ===
+
+void FUN_CODE_72c0(void)
+
+{
+  nop();
+  return;
+}
+

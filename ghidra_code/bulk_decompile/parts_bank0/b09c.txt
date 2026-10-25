@@ -1,0 +1,8 @@
+=== 0xb09c ===
+
+char FUN_CODE_b09c(void)
+
+{
+  return DAT_EXTMEM_e548 - ('\x03' - (((DAT_EXTMEM_e549 < 0xe8) << 7) >> 7));
+}
+

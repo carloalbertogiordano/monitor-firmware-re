@@ -1,0 +1,8 @@
+=== 0x891f ===
+
+byte FUN_CODE_891f(byte param_1,byte *param_2)
+
+{
+  return *param_2 + param_1 >> 1 | CARRY1(*param_2,param_1) << 7;
+}
+

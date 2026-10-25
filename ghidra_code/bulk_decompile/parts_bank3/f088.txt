@@ -1,0 +1,29 @@
+=== 0xf088 ===
+
+byte FUN_CODE_f088(byte *param_1,byte param_2,char *param_3,char param_4)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = param_4 - 1;
+  if (bVar1 != 0) {
+    bVar2 = FUN_CODE_7402();
+    *param_1 = bVar2;
+    DAT_EXTMEM_e381 = bVar1 >> 4;
+    if (DAT_EXTMEM_e381 == 0) {
+      DAT_EXTMEM_e610 = DAT_EXTMEM_e610 & 0xf0 | 1;
+      return DAT_EXTMEM_e610;
+    }
+    DAT_EXTMEM_e610 = DAT_EXTMEM_e610 & 0xf0 | DAT_EXTMEM_e381;
+    return DAT_EXTMEM_e610;
+  }
+  if ((param_2 & 1) != 1) {
+    bVar1 = *param_1;
+    *param_1 = bVar1 & 0xdf;
+    return bVar1 & 0xdf;
+  }
+  *param_3 = *param_3 + '\x01';
+  return (DAT_EXTMEM_e6cc & 0x30) - 0x10;
+}
+

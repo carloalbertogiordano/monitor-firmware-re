@@ -1,0 +1,8 @@
+=== 0xfc73 ===
+
+byte FUN_CODE_fc73(void)
+
+{
+  return DAT_EXTMEM_e511 >> 3 & 7;
+}
+

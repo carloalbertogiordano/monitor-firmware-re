@@ -1,0 +1,10 @@
+=== 0xd023 ===
+
+undefined1 FUN_CODE_d023(undefined1 *param_1)
+
+{
+  *param_1 = 0;
+  param_1[1] = 0x7f;
+  return 0;
+}
+

@@ -1,0 +1,9 @@
+=== 0xdb22 ===
+
+void FUN_CODE_db22(void)
+
+{
+  DAT_EXTMEM_e33d = 0;
+  return;
+}
+

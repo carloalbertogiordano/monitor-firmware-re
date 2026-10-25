@@ -1,0 +1,19 @@
+=== 0x3be0 ===
+
+void FUN_CODE_3be0(undefined1 param_1,byte param_2,byte *param_3,byte param_4)
+
+{
+  byte bVar1;
+  
+  bVar1 = *param_3;
+  *param_3 = param_2;
+  TH0 = param_1;
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_INTMEM_70 = param_1;
+  FUN_CODE_3d08((bVar1 | param_4) >> 1 | (bVar1 | param_4) << 7);
+  return;
+}
+

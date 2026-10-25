@@ -1,0 +1,9 @@
+=== 0xb19b ===
+
+byte FUN_CODE_b19b(void)
+
+{
+  DAT_EXTMEM_ff03 = DAT_EXTMEM_ff03 | 1;
+  return DAT_INTMEM_36 | DAT_INTMEM_35;
+}
+

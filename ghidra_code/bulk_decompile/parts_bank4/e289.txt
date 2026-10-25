@@ -1,0 +1,24 @@
+=== 0xe289 ===
+
+undefined1 FUN_CODE_e289(void)
+
+{
+  if ((DAT_EXTMEM_e199 == '\0') &&
+     ((DAT_EXTMEM_e19a - 0x31U < 4 ||
+      ((DAT_EXTMEM_e19a != 'C' &&
+       ((((DAT_EXTMEM_e19a - 0x3eU < 10 || (DAT_EXTMEM_e19a == 'N')) || (DAT_EXTMEM_e19a == 'T')) ||
+        (((DAT_EXTMEM_e19a == 'U' || (DAT_EXTMEM_e19a == 'Z')) || (DAT_EXTMEM_e19a == 'L'))))))))))
+  {
+    DAT_EXTMEM_e32e = 1;
+    DAT_EXTMEM_e625 = '\x01';
+  }
+  else if (DAT_EXTMEM_e625 == '\0') {
+    DAT_EXTMEM_e32e = 2;
+    DAT_EXTMEM_e625 = '\x02';
+  }
+  else {
+    DAT_EXTMEM_e32e = 0;
+  }
+  return DAT_EXTMEM_e32e;
+}
+

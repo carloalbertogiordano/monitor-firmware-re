@@ -1,0 +1,10 @@
+=== 0x775f ===
+
+void FUN_CODE_775f(void)
+
+{
+  DAT_EXTMEM_e377 = 0;
+  DAT_EXTMEM_e378 = 0;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xae8b ===
+
+void FUN_CODE_ae8b(void)
+
+{
+  DAT_EXTMEM_e366 = DAT_EXTMEM_e366 + 1;
+  FUN_CODE_1298((ushort)DAT_EXTMEM_e366,DAT_EXTMEM_e34a,DAT_EXTMEM_e349,DAT_EXTMEM_e348);
+  return;
+}
+

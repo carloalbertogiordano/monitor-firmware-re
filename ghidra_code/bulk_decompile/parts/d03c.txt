@@ -1,0 +1,8 @@
+=== 0xd03c ===
+
+undefined1 FUN_CODE_d03c(void)
+
+{
+  return 0;
+}
+

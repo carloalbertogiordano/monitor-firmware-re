@@ -1,0 +1,30 @@
+=== 0x1477 ===
+
+void FUN_CODE_1477(undefined1 param_1,undefined2 param_2,undefined1 param_3,byte param_4,
+                  char param_5,char param_6)
+
+{
+  byte bVar2;
+  undefined1 *puVar1;
+  
+  bVar2 = (byte)param_2;
+  if (param_6 == '\x01') {
+    puVar1 = (undefined1 *)
+             CONCAT11((char)((ushort)param_2 >> 8) + (param_5 - ((CARRY1(bVar2,param_4) << 7) >> 7))
+                      ,bVar2 + param_4);
+    *puVar1 = param_1;
+    puVar1[1] = param_3;
+    return;
+  }
+  if (param_6 == '\0') {
+    *(undefined1 *)(param_4 + bVar2) = param_1;
+    ((undefined1 *)(param_4 + bVar2))['\x01'] = param_3;
+    return;
+  }
+  if (param_6 == -2) {
+    *(undefined1 *)(ushort)(param_4 + bVar2) = param_1;
+    *(undefined1 *)(ushort)(param_4 + bVar2 + 1) = param_3;
+  }
+  return;
+}
+

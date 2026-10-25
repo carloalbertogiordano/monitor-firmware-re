@@ -1,0 +1,15 @@
+=== 0xf716 ===
+
+void FUN_CODE_f716(char param_1)
+
+{
+  if (param_1 == '\x04') {
+    DAT_EXTMEM_02c2 = DAT_EXTMEM_02c2 & 0xf9 | 2;
+  }
+  else if (param_1 == '\x03') {
+    DAT_EXTMEM_02c2 = DAT_EXTMEM_02c2 & 0xf9;
+    return;
+  }
+  return;
+}
+

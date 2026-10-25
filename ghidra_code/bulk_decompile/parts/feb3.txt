@@ -1,0 +1,12 @@
+=== 0xfeb3 ===
+
+void thunk_FUN_CODE_fd08(void)
+
+{
+  P1_4 = 1;
+  FUN_CODE_08a7();
+  FUN_CODE_08ad();
+  FUN_CODE_08b3();
+  return;
+}
+

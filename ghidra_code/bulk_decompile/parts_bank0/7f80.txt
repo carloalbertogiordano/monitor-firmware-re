@@ -1,0 +1,17 @@
+=== 0x7f80 ===
+
+void FUN_CODE_7f80(char param_1,char *param_2)
+
+{
+  *param_2 = *param_2 + -1;
+  if (param_1 == '\x01') {
+    DAT_EXTMEM_1039 = 1;
+    return;
+  }
+  if (param_1 != -1) {
+    return;
+  }
+  DAT_EXTMEM_1039 = 0;
+  return;
+}
+

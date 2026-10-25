@@ -1,0 +1,12 @@
+=== 0x4620 ===
+
+char FUN_CODE_4620(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e3e5;
+  DAT_EXTMEM_e3e5 = DAT_EXTMEM_e3e5 + -1;
+  return cVar1 + -2;
+}
+

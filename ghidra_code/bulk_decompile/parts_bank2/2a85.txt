@@ -1,0 +1,21 @@
+=== 0x2a85 ===
+
+byte FUN_CODE_2a85(byte param_1)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  char in_PSW;
+  
+  uVar2 = HSTAT;
+  bVar4 = DAT_SFR_d3;
+  cVar1 = DAT_SFR_ab;
+  bVar5 = HPSC;
+  bVar3 = DAT_SFR_b5;
+  nop();
+  return ((bVar4 & DAT_INTMEM_7c) - (cVar1 - (in_PSW >> 7)) & bVar5 ^ param_1) & bVar3;
+}
+

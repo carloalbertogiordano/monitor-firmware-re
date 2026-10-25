@@ -1,0 +1,8 @@
+=== 0x9cb3 ===
+
+undefined1 FUN_CODE_9cb3(void)
+
+{
+  return DAT_EXTMEM_0b54;
+}
+

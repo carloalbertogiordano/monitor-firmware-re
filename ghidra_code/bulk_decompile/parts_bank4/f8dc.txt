@@ -1,0 +1,24 @@
+=== 0xf8dc ===
+
+void FUN_CODE_f8dc(byte param_1)
+
+{
+  char in_PSW;
+  char cVar1;
+  
+  FUN_CODE_ab1c();
+  if (-1 < in_PSW) {
+    return;
+  }
+  FUN_CODE_0e23();
+  cVar1 = (param_1 < 3) << 7;
+  if (param_1 == 3) {
+    FUN_CODE_ec00();
+    if (cVar1 < '\0') {
+      return;
+    }
+    return;
+  }
+  return;
+}
+

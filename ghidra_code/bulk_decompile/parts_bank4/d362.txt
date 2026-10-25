@@ -1,0 +1,10 @@
+=== 0xd362 ===
+
+void FUN_CODE_d362(void)
+
+{
+  DAT_EXTMEM_e337 = DAT_EXTMEM_0044 & 0x1f;
+  DAT_EXTMEM_e338 = DAT_EXTMEM_0045;
+  return;
+}
+

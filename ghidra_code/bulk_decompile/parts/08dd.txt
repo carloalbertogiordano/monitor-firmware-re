@@ -1,0 +1,9 @@
+=== 0x08dd ===
+
+void FUN_CODE_08dd(void)
+
+{
+  FUN_CODE_041b(0xfe32);
+  return;
+}
+

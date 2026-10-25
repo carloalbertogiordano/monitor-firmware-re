@@ -1,0 +1,11 @@
+=== 0x2e38 ===
+
+void FUN_CODE_2e38(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0x7f | 0x80;
+  _0_4 = 1;
+  FUN_CODE_080b(0x40,6,0xa0,0,10);
+  return;
+}
+

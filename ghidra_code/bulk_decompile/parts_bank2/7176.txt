@@ -1,0 +1,9 @@
+=== 0x7176 ===
+
+void FUN_CODE_7176(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe349);
+}
+

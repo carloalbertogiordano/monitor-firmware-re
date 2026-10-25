@@ -1,0 +1,8 @@
+=== 0xda7d ===
+
+undefined1 FUN_CODE_da7d(void)
+
+{
+  return 0;
+}
+

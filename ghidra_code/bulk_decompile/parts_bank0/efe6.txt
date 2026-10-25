@@ -1,0 +1,39 @@
+=== 0xefe6 ===
+
+void FUN_CODE_efe6(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  if (BANK0_R7 == 0 && BANK0_R6 == 0) {
+    DAT_INTMEM_29 = '\"';
+  }
+  else {
+    DAT_INTMEM_29 = ((BANK0_R6 & 0x7c) >> 2) + 10;
+  }
+  if (BANK0_R7 == 0 && BANK0_R6 == 0) {
+    DAT_INTMEM_2a = '\"';
+  }
+  else {
+    bVar3 = BANK0_R7 & 0xe0;
+    cVar1 = '\x05';
+    bVar2 = BANK0_R6 & 3;
+    do {
+      bVar3 = bVar3 >> 1 | bVar2 << 7;
+      cVar1 = cVar1 + -1;
+      bVar2 = bVar2 >> 1;
+    } while (cVar1 != '\0');
+    DAT_INTMEM_2a = bVar3 + 10;
+  }
+  if (BANK0_R7 == 0 && BANK0_R6 == 0) {
+    DAT_INTMEM_2b = '\"';
+  }
+  else {
+    DAT_INTMEM_2b = (BANK0_R7 & 0x1f) + 10;
+  }
+  DAT_INTMEM_2c = 0xff;
+  return;
+}
+

@@ -1,0 +1,16 @@
+=== 0x0772 ===
+
+void FUN_CODE_0772(short param_1,byte param_2,char param_3)
+
+{
+  byte bVar1;
+  char in_PSW;
+  
+  bVar1 = CCAPM0;
+  CCAPM0 = bVar1 ^ 0x3d;
+                    /* WARNING: Could not recover jumptable at 0x0778. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_1 + (ushort)(byte)(*(char *)(ushort)param_2 + (param_3 - (in_PSW >> 7)))))();
+  return;
+}
+

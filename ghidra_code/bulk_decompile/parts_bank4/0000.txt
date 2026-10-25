@@ -1,0 +1,9 @@
+=== 0x0000 ===
+
+void thunk_FUN_CODE_26eb(void)
+
+{
+  FUN_CODE_26eb();
+  return;
+}
+

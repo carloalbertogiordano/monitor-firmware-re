@@ -1,0 +1,9 @@
+=== 0xb46a ===
+
+char FUN_CODE_b46a(char *param_1)
+
+{
+  *param_1 = *param_1 + '\x01';
+  return *param_1 + -0x2e;
+}
+

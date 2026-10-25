@@ -1,0 +1,8 @@
+=== 0xea20 ===
+
+char FUN_CODE_ea20(void)
+
+{
+  return DAT_EXTMEM_e333 + -4;
+}
+

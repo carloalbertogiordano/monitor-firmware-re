@@ -1,0 +1,15 @@
+=== 0xa5c2 ===
+
+void FUN_CODE_a5c2(byte param_1)
+
+{
+  DAT_EXTMEM_e32e = param_1;
+  if (0xd < param_1) {
+    return;
+  }
+                    /* WARNING: Could not recover jumptable at 0xa5d5. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)(param_1 * '\x03') + 0xa5d6))();
+  return;
+}
+

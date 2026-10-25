@@ -1,0 +1,8 @@
+=== 0xa834 ===
+
+byte FUN_CODE_a834(byte param_1)
+
+{
+  return (byte)(&LAB_CODE_3875)[param_1] >> 4;
+}
+

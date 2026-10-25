@@ -1,0 +1,11 @@
+=== 0x6808 ===
+
+char FUN_CODE_6808(char param_1)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_6825();
+  return cVar1 + param_1;
+}
+

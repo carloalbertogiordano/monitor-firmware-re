@@ -1,0 +1,9 @@
+=== 0x0799 ===
+
+void FUN_CODE_0799(void)
+
+{
+  FUN_CODE_042d();
+  return;
+}
+

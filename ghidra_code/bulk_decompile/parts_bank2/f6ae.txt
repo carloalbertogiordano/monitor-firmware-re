@@ -1,0 +1,8 @@
+=== 0xf6ae ===
+
+byte FUN_CODE_f6ae(byte *param_1)
+
+{
+  return *param_1 & 0xf;
+}
+

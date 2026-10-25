@@ -1,0 +1,22 @@
+=== 0xe840 ===
+
+void FUN_CODE_e840(void)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_e373 = 0;
+  FUN_CODE_0775(0x83,0x51,2,0xc9);
+  FUN_CODE_c6d9();
+  FUN_CODE_0775();
+  FUN_CODE_074b(0,0x14);
+  bVar1 = FUN_CODE_c681();
+  FUN_CODE_12f8(bVar1 & 0xf8);
+  bVar1 = FUN_CODE_127f(DAT_EXTMEM_e6b5 + 1,DAT_EXTMEM_e6b4 - (((0xfe < DAT_EXTMEM_e6b5) << 7) >> 7)
+                        ,DAT_EXTMEM_e6b3);
+  FUN_CODE_12f8(bVar1 & 0x9f);
+  bVar1 = FUN_CODE_c681();
+  FUN_CODE_f1dc(bVar1 & 7);
+  return;
+}
+

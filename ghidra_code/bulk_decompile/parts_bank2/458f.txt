@@ -1,0 +1,10 @@
+=== 0x458f ===
+
+undefined1 FUN_CODE_458f(short param_1)
+
+{
+  *(undefined1 *)(param_1 + 1) = 5;
+  *(undefined1 *)(param_1 + 2) = 0xe;
+  return 0;
+}
+

@@ -1,0 +1,8 @@
+=== 0xd03e ===
+
+undefined1 FUN_CODE_d03e(void)
+
+{
+  return 0;
+}
+

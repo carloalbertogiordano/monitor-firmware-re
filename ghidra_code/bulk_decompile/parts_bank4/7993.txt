@@ -1,0 +1,11 @@
+=== 0x7993 ===
+
+void FUN_CODE_7993(void)
+
+{
+  FUN_CODE_0bd1(0xd);
+  DAT_INTMEM_29 = DAT_INTMEM_2b + DAT_INTMEM_29;
+  DAT_EXTMEM_e342 = DAT_EXTMEM_e342 + '\x01';
+  return;
+}
+

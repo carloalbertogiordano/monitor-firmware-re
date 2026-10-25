@@ -1,0 +1,8 @@
+=== 0xfece ===
+
+void FUN_CODE_fece(void)
+
+{
+  return;
+}
+

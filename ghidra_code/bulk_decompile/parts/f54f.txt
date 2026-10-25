@@ -1,0 +1,8 @@
+=== 0xf54f ===
+
+undefined1 FUN_CODE_f54f(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 1);
+}
+

@@ -1,0 +1,9 @@
+=== 0xee67 ===
+
+void FUN_CODE_ee67(void)
+
+{
+  DAT_EXTMEM_e32e = 1;
+  return;
+}
+

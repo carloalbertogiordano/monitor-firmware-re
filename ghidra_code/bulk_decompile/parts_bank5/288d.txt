@@ -1,0 +1,18 @@
+=== 0x288d ===
+
+undefined1 FUN_CODE_288d(undefined1 param_1,char param_2)
+
+{
+  DAT_EXTMEM_e6de = DAT_EXTMEM_fff4;
+  FUN_CODE_057d();
+  FUN_CODE_0583();
+  if (param_2 == '\0') {
+    FUN_CODE_24d1();
+  }
+  else {
+    FUN_CODE_0589();
+  }
+  DAT_EXTMEM_fff4 = DAT_EXTMEM_e6de;
+  return param_1;
+}
+

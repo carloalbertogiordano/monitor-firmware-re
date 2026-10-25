@@ -1,0 +1,12 @@
+=== 0xb128 ===
+
+char FUN_CODE_b128(byte *param_1,byte param_2)
+
+{
+  char cVar1;
+  
+  cVar1 = (char)((ushort)*param_1 * (ushort)param_2 >> 8);
+  FUN_CODE_1420((ushort)*param_1 * (ushort)param_2);
+  return cVar1 >> 7;
+}
+

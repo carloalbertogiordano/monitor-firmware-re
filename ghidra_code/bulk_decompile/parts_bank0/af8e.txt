@@ -1,0 +1,8 @@
+=== 0xaf8e ===
+
+undefined1 FUN_CODE_af8e(void)
+
+{
+  return 0;
+}
+

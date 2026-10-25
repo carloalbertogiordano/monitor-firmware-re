@@ -1,0 +1,45 @@
+=== 0xdfa4 ===
+
+void FUN_CODE_dfa4(byte param_1)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  byte *pbVar5;
+  
+  if ((param_1 == 2) || (param_1 == 3)) {
+    pbVar5 = &DAT_EXTMEM_02a7;
+    if ((DAT_EXTMEM_02a7 & 0x80) == 0x80) {
+      cVar2 = FUN_CODE_c19c();
+      if (cVar2 != '\0') {
+        DAT_EXTMEM_e543 = DAT_EXTMEM_e543 | 3;
+        return;
+      }
+      pbVar5 = &DAT_EXTMEM_02c0;
+      bVar1 = (DAT_EXTMEM_02c0 & 0x40) == 0;
+      bVar3 = FUN_CODE_c1ba(bVar1);
+      *pbVar5 = bVar3 | bVar1;
+      bVar1 = DAT_EXTMEM_02c0 & 0x20;
+      goto LAB_CODE_e010;
+    }
+    bVar3 = FUN_CODE_127f();
+    bVar1 = bVar3 & 1;
+    bVar4 = FUN_CODE_c1bd();
+    *pbVar5 = bVar4 | bVar1;
+    *pbVar5 = (bVar4 | bVar1) & 0xfd | bVar3 & 2;
+  }
+  else if (param_1 == 4) {
+    DAT_EXTMEM_b600 = DAT_EXTMEM_b600 & 0x1f | 0xe0;
+    pbVar5 = &DAT_EXTMEM_b60e;
+    bVar1 = FUN_CODE_c1ba((DAT_EXTMEM_b60e & 0x80) == 0);
+    *pbVar5 = bVar1 | param_1;
+    bVar1 = DAT_EXTMEM_b618 & 0x80;
+LAB_CODE_e010:
+    DAT_EXTMEM_e543 = DAT_EXTMEM_e543 & 0xfd | (bVar1 == 0) * '\x02';
+    return;
+  }
+  return;
+}
+

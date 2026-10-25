@@ -1,0 +1,47 @@
+=== 0x1501 ===
+
+byte FUN_CODE_1501(byte param_1,byte param_2,char param_3,char param_4,char param_5,char param_6,
+                  char param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte in_PSW;
+  
+  while( true ) {
+    bVar4 = param_8 << 1 | in_PSW >> 7;
+    bVar5 = param_2 << 1 | param_8 >> 7;
+    bVar2 = param_4 - (((bVar4 < (byte)(param_5 -
+                                       (((param_1 <
+                                         (byte)(param_6 -
+                                               (((param_9 < (byte)(param_7 - ((char)param_2 >> 7)))
+                                                << 7) >> 7))) << 7) >> 7))) << 7) >> 7);
+    param_2 = bVar5;
+    if (bVar5 >= bVar2) {
+      bVar3 = param_7 - (((bVar5 < bVar2) << 7) >> 7);
+      bVar1 = param_10 < bVar3;
+      param_10 = param_10 - bVar3;
+      bVar3 = param_6 - ((bVar1 << 7) >> 7);
+      bVar1 = param_1 < bVar3;
+      param_1 = param_1 - bVar3;
+      bVar4 = bVar4 - (param_5 - ((bVar1 << 7) >> 7));
+      param_11 = param_11 + 1;
+      param_2 = bVar5 - bVar2;
+    }
+    param_3 = param_3 + -1;
+    if (param_3 == '\0') break;
+    bVar1 = CARRY1(param_11,param_11);
+    param_11 = param_11 * '\x02';
+    param_9 = param_10 << 1 | bVar1;
+    bVar2 = param_10 >> 7;
+    in_PSW = param_1 & 0x80;
+    param_8 = bVar4;
+    param_10 = param_9;
+    param_1 = param_1 << 1 | bVar2;
+  }
+  return bVar4;
+}
+

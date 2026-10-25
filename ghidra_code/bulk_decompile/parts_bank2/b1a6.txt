@@ -1,0 +1,8 @@
+=== 0xb1a6 ===
+
+undefined1 FUN_CODE_b1a6(void)
+
+{
+  return DAT_EXTMEM_e39e;
+}
+

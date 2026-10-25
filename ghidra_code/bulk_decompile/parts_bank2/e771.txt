@@ -1,0 +1,48 @@
+=== 0xe771 ===
+
+void FUN_CODE_e771(void)
+
+{
+  char cVar1;
+  byte in_PSW;
+  
+  FUN_CODE_f015();
+  FUN_CODE_712d(0x519);
+  FUN_CODE_712d(0x599);
+  DAT_EXTMEM_0527 = DAT_EXTMEM_0527 & 0x81 | 2;
+  DAT_EXTMEM_0528 = DAT_EXTMEM_0528 & 0xac | 0x40;
+  DAT_EXTMEM_0529 = DAT_EXTMEM_0529 & 0xfa;
+  DAT_EXTMEM_05b1 = 0;
+  DAT_EXTMEM_05af = DAT_EXTMEM_05af & 0xfa;
+  DAT_EXTMEM_05ae = DAT_EXTMEM_05ae & 0x7f;
+  DAT_EXTMEM_05ac = DAT_EXTMEM_05ac & 7;
+  in_PSW = in_PSW & 0xdd;
+  cVar1 = FUN_CODE_6fba();
+  if (cVar1 != '\x03') {
+    _0_1 = 0;
+    FUN_CODE_fc51();
+  }
+  cVar1 = FUN_CODE_6fba();
+  if (cVar1 == '\0') {
+    _0_1 = 1;
+    FUN_CODE_e176(0x11);
+    FUN_CODE_fae9(1);
+    FUN_CODE_1724(0xe636);
+    nop();
+    nop();
+    nop();
+    nop();
+    FUN_CODE_1724(0xe62e);
+    nop();
+    nop();
+    nop();
+    nop();
+  }
+  FUN_CODE_6ef3();
+  FUN_CODE_fef9();
+  if (-1 < (char)in_PSW) {
+    FUN_CODE_082f(8);
+  }
+  return;
+}
+

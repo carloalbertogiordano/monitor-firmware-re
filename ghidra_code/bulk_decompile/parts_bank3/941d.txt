@@ -1,0 +1,10 @@
+=== 0x941d ===
+
+void FUN_CODE_941d(void)
+
+{
+  DAT_EXTMEM_e412 = 0x11;
+  FUN_CODE_fecb(2,2,0);
+  return;
+}
+

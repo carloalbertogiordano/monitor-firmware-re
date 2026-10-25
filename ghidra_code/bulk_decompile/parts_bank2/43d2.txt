@@ -1,0 +1,10 @@
+=== 0x43d2 ===
+
+void FUN_CODE_43d2(undefined1 *param_1)
+
+{
+  FUN_CODE_14a4(BANK0_R4,BANK0_R5,BANK0_R6,BANK0_R7,0,0,*param_1,param_1[1]);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,0,100);
+}
+

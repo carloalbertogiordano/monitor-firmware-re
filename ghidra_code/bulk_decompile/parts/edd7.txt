@@ -1,0 +1,19 @@
+=== 0xedd7 ===
+
+void FUN_CODE_edd7(void)
+
+{
+  DAT_EXTMEM_3a33 = DAT_EXTMEM_3a33 & 0xbf | 0x40;
+  DAT_EXTMEM_e3b1 = 0;
+  DAT_EXTMEM_e3b2 = 0;
+  FUN_CODE_0a09(0,0,0,8);
+  FUN_CODE_fc36(0);
+  _0_0 = 0;
+  FUN_CODE_fa52();
+  FUN_CODE_0877();
+  _0_1 = 1;
+  FUN_CODE_0889();
+  FUN_CODE_f365(0,10,1);
+  return;
+}
+

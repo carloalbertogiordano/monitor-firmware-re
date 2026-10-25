@@ -1,0 +1,9 @@
+=== 0x0c13 ===
+
+void FUN_CODE_0c13(void)
+
+{
+  FUN_CODE_041b(0xf895);
+  return;
+}
+

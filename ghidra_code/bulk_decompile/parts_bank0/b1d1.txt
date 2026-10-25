@@ -1,0 +1,10 @@
+=== 0xb1d1 ===
+
+byte FUN_CODE_b1d1(undefined1 *param_1)
+
+{
+  *param_1 = DAT_INTMEM_31;
+  DAT_INTMEM_2f = DAT_INTMEM_30;
+  return DAT_INTMEM_30 ^ 0xc;
+}
+

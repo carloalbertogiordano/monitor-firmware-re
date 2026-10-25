@@ -1,0 +1,21 @@
+=== 0x4b05 ===
+
+void FUN_CODE_4b05(void)
+
+{
+  if (DAT_EXTMEM_e3e2 < 0x10) {
+    FUN_CODE_8c24();
+  }
+  else if (DAT_EXTMEM_e3e2 - 0x10 < 0x10) {
+    FUN_CODE_8cfc();
+  }
+  else {
+    set_e3e4_to_const2();
+  }
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

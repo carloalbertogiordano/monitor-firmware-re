@@ -1,0 +1,10 @@
+=== 0x0f53 ===
+
+void FUN_CODE_0f53(void)
+
+{
+  DAT_INTMEM_78 = DAT_INTMEM_78 | 0x37;
+  FUN_CODE_0f92();
+  return;
+}
+

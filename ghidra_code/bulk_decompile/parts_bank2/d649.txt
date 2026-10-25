@@ -1,0 +1,60 @@
+=== 0xd649 ===
+
+byte FUN_CODE_d649(char param_1,undefined1 param_2,undefined1 param_3,undefined1 param_4)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  char cVar4;
+  byte bVar5;
+  char cVar6;
+  byte *pbVar7;
+  
+  pbVar7 = &DAT_EXTMEM_02a7;
+  bVar2 = DAT_EXTMEM_02a7 & 0x80 ^ 0x80;
+  DAT_EXTMEM_e332 = param_4;
+  DAT_EXTMEM_e333 = param_2;
+  DAT_EXTMEM_e334 = param_3;
+  if ((bVar2 == 0) && (bVar2 = FUN_CODE_c19c(), bVar2 == 0)) {
+    bVar2 = FUN_CODE_c1d7();
+    *pbVar7 = bVar2 | 1;
+    FUN_CODE_f2a4(0x1f,0xff,0,2);
+    bVar2 = -(((0xfe < DAT_EXTMEM_e56e) << 7) >> 7);
+    cVar6 = CARRY1(DAT_EXTMEM_e56d,bVar2) << 7;
+    pbVar7 = &DAT_EXTMEM_e551;
+    bVar3 = DAT_EXTMEM_e551;
+    FUN_CODE_f8e7(DAT_EXTMEM_e550,DAT_EXTMEM_e56d + bVar2,DAT_EXTMEM_e56e + 1);
+    bVar2 = FUN_CODE_c1d7();
+    *pbVar7 = bVar2 | 1;
+    bVar2 = FUN_CODE_082f(1);
+    if (cVar6 < '\0') {
+      bVar1 = 1;
+      bVar2 = FUN_CODE_082f();
+      if (cVar6 < '\0') {
+        FUN_CODE_c108(0x81);
+        DAT_INTMEM_2a = bVar1 | bVar3;
+        bVar3 = DAT_EXTMEM_0081 & 0xf;
+        DAT_INTMEM_2c = DAT_EXTMEM_0083;
+        cVar4 = bVar3 - (param_1 - (((DAT_EXTMEM_0083 < DAT_INTMEM_2a) << 7) >> 7));
+        DAT_INTMEM_2e = (DAT_EXTMEM_0083 - DAT_INTMEM_2a) + 1;
+        DAT_INTMEM_2d = cVar4 - (((0xfe < DAT_EXTMEM_0083 - DAT_INTMEM_2a) << 7) >> 7);
+        cVar6 = '\0';
+        DAT_INTMEM_29 = param_1;
+        DAT_INTMEM_2b = bVar3;
+        FUN_CODE_c185(&LAB_CODE_e333);
+        bVar2 = cVar4 - (cVar6 >> 7);
+        bVar5 = DAT_INTMEM_2e - bVar2;
+        bVar1 = DAT_INTMEM_2d - (bVar3 - (((DAT_INTMEM_2e < bVar2) << 7) >> 7));
+        FUN_CODE_002e();
+        bVar3 = 0x80 - (((bVar5 < 2) << 7) >> 7);
+        bVar2 = (bVar1 ^ 0x80) - bVar3;
+        if ((bVar1 ^ 0x80) < bVar3) {
+          bVar2 = FUN_CODE_0859(9,DAT_EXTMEM_e332);
+        }
+      }
+    }
+  }
+  return bVar2;
+}
+

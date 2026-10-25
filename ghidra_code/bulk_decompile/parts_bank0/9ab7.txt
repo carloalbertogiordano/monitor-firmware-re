@@ -1,0 +1,9 @@
+=== 0x9ab7 ===
+
+void FUN_CODE_9ab7(byte param_1,byte *param_2)
+
+{
+  DAT_EXTMEM_e60d = *param_2 | param_1;
+  return;
+}
+

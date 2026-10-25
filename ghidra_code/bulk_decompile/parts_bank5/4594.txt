@@ -1,0 +1,13 @@
+=== 0x4594 ===
+
+void FUN_CODE_4594(void)
+
+{
+  if (_0_0 != '\0') {
+    DAT_EXTMEM_07d8 = 1;
+    return;
+  }
+  DAT_EXTMEM_07d8 = 3;
+  return;
+}
+

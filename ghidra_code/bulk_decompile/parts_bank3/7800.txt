@@ -1,0 +1,10 @@
+=== 0x7800 ===
+
+char FUN_CODE_7800(byte param_1,char param_2,undefined1 param_3)
+
+{
+  DAT_INTMEM_4f = param_3;
+  DAT_INTMEM_44 = param_1;
+  return *(char *)(ushort)param_1 + param_2;
+}
+

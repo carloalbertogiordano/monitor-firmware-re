@@ -1,0 +1,10 @@
+=== 0x4844 ===
+
+void thunk_FUN_CODE_4980(void)
+
+{
+  nop();
+  FUN_CODE_4980();
+  return;
+}
+

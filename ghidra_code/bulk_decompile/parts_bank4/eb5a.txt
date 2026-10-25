@@ -1,0 +1,29 @@
+=== 0xeb5a ===
+
+void FUN_CODE_eb5a(void)
+
+{
+  byte bVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e33e = 0;
+  FUN_CODE_706a(0);
+  FUN_CODE_1259();
+  DAT_EXTMEM_e33e = 0;
+  while( true ) {
+    cVar2 = -3;
+    if ((DAT_EXTMEM_e33e >= 3) ||
+       (bVar1 = 3 - (((DAT_EXTMEM_e33e < 3) << 7) >> 7), cVar2 = -bVar1, bVar1 <= DAT_EXTMEM_e33e))
+    break;
+    cVar2 = (0xfb < DAT_EXTMEM_e33e) << 7;
+    FUN_CODE_6e8a(DAT_EXTMEM_e33e + 4);
+    FUN_CODE_0f13();
+    if (-1 < cVar2) {
+      return;
+    }
+    DAT_EXTMEM_e33e = DAT_EXTMEM_e33e + 1;
+  }
+  FUN_CODE_d44e(DAT_EXTMEM_e33e + cVar2);
+  return;
+}
+

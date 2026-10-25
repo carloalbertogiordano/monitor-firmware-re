@@ -1,0 +1,19 @@
+=== 0xa28f ===
+
+char FUN_CODE_a28f(undefined1 param_1,char param_2,char param_3)
+
+{
+  char cVar1;
+  char in_PSW;
+  
+  DAT_EXTMEM_e34f = param_3 - (in_PSW >> 7);
+  DAT_EXTMEM_e34d = 1;
+  DAT_EXTMEM_e34e = 0xe0;
+  DAT_EXTMEM_e351 = 0;
+  DAT_EXTMEM_e350 = param_1;
+  FUN_CODE_0ff1(0,0x54,param_2 + '\n');
+  cVar1 = DAT_EXTMEM_e32e;
+  DAT_EXTMEM_e32e = DAT_EXTMEM_e32e + '\x01';
+  return cVar1 + -5;
+}
+

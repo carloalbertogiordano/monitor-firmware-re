@@ -1,0 +1,11 @@
+=== 0x1187 ===
+
+void FUN_CODE_1187(byte param_1,byte *param_2,byte param_3,char *param_4,char *param_5,byte param_6,
+                  char param_7,char param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  FUN_CODE_1197(param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,param_10,
+                param_11);
+  return;
+}
+

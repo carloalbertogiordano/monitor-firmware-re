@@ -1,0 +1,30 @@
+=== 0x10f5 ===
+
+void FUN_CODE_10f5(byte param_1,short param_2,char *param_3,char *param_4)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  
+  uVar1 = DAT_SFR_c2;
+  cVar2 = DAT_SFR_c2;
+  bVar3 = (param_1 & (byte)param_3) + cVar2;
+  if (bVar3 == 0) {
+    uVar1 = CCF_3;
+    *param_3 = -0x80;
+    nop();
+    nop();
+    FUN_CODE_0070(0,param_2 + 1);
+    return;
+  }
+  DAT_INTMEM_69 = DAT_INTMEM_69 & bVar3;
+  _e_2 = 1;
+  bVar3 = bVar3 + *param_3 + *param_4;
+  DAT_INTMEM_7a = DAT_INTMEM_7a ^ bVar3;
+  *(byte *)ZEXT12(param_3) = bVar3 + *param_4;
+  uVar1 = TR0;
+  FUN_CODE_9529(param_2,param_3);
+  return;
+}
+

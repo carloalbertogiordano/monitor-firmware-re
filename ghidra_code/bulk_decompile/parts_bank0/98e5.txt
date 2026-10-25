@@ -1,0 +1,16 @@
+=== 0x98e5 ===
+
+void FUN_CODE_98e5(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_1da2 = *param_1;
+  DAT_EXTMEM_1db2 = DAT_EXTMEM_1da2;
+  DAT_EXTMEM_1dc2 = DAT_EXTMEM_1da2;
+  uEXTMEM1dd2 = DAT_EXTMEM_1da2;
+  DAT_EXTMEM_1daa = 0;
+  DAT_EXTMEM_1dba = 0;
+  DAT_EXTMEM_1dca = 0;
+  DAT_EXTMEM_1dda = 0;
+  return;
+}
+

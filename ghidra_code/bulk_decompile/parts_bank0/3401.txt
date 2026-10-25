@@ -1,0 +1,85 @@
+=== 0x3401 ===
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Instruction at (CODE,0x31f9) overlaps instruction at (CODE,0x31f7)
+    */
+
+byte * FUN_CODE_3401(char param_1,byte *param_2,byte *param_3,char param_4,byte param_5,char param_6
+                    ,byte param_7,byte param_8)
+
+{
+  undefined1 uVar1;
+  byte *pbVar2;
+  byte bVar3;
+  byte bVar4;
+  char cVar5;
+  char cVar6;
+  char cVar7;
+  byte bVar8;
+  byte *pbVar9;
+  
+  cVar6 = param_6 + -1;
+  cVar7 = ((char)(param_3 + param_1) * '\x02' | (byte)(param_3 + param_1) >> 7) + *param_2;
+  do {
+    cVar5 = cVar6 + -1;
+    cVar7 = cVar7 + cVar6 + *param_2;
+    bVar4 = param_5 - 1;
+    bVar3 = param_4 - 1;
+    if (_3_4 == '\x01') {
+      pbVar9 = (byte *)(cVar7 + '\x18');
+code_c0x3267:
+      pbVar9 = FUN_CODE_311a((char)(pbVar9 + bVar3 + BANK3_R0),param_2,param_3,bVar3,bVar4,cVar5,
+                             param_7,param_8,(byte)pbVar9);
+      return pbVar9 + param_7 + DAT_INTMEM_20 + (char)param_3;
+    }
+    bVar8 = cVar7 + bVar4;
+    pbVar2 = param_2;
+    if (_4_5 == '\x01') {
+LAB_CODE_323a:
+      TMOD = pbVar2;
+      pbVar9 = (byte *)FUN_CODE_35a2();
+      return pbVar9;
+    }
+    cVar7 = param_4 + -2;
+    if (cVar7 == '\0') {
+      param_3 = &DAT_INTMEM_97;
+      pbVar9 = (byte *)(param_8 + bVar4 * '\x02' + cVar5 + -0x69);
+      if (_4_6 == '\x01') {
+        return pbVar9;
+      }
+      pbVar9 = pbVar9 + cVar5 + bVar4 * '\x02' + -0x69;
+      pbVar2 = param_2 + -4;
+      if (_4_6 == '\x01') {
+        bVar3 = param_4 - 3;
+        if (_b_3 == '\x01') {
+          SADDR = ~(byte)pbVar9;
+          uVar1 = DAT_SFR_ff;
+                    /* WARNING: Bad instruction - Truncating control flow here */
+          halt_baddata();
+        }
+        pbVar2 = param_2 + -7;
+        cVar7 = ((byte)(pbVar9 + cVar5 + bVar4 + bVar3 + -0x69) & 0x97 & (byte)pbVar2) + *pbVar2;
+      }
+      else {
+        cVar7 = ((byte)pbVar9 & DAT_INTMEM_97) + bVar4 * '\x02';
+        bVar3 = 0;
+        if (_3_6 != '\x01') goto LAB_CODE_323a;
+      }
+      bVar4 = param_5 - 2;
+      param_8 = param_7;
+      pbVar9 = FUN_CODE_3124(cVar7 + *pbVar2,pbVar2,&DAT_INTMEM_97,bVar3,bVar4,cVar5,bVar8,param_7);
+      param_2 = pbVar2 + -1;
+      param_7 = bVar8;
+      goto code_c0x3267;
+    }
+    cVar5 = bVar8 * '\x03' + cVar5;
+    cVar6 = cVar6 + -2;
+    param_4 = cVar7;
+    param_5 = bVar8;
+    cVar7 = cVar5 + '/';
+    if (_6_2 == '\x01') {
+      cVar7 = cVar5 + '/';
+    }
+  } while( true );
+}
+

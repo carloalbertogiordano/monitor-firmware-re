@@ -1,0 +1,103 @@
+=== 0x4008 ===
+
+/* WARNING: Removing unreachable block (CODE,0x3f08) */
+/* WARNING: Removing unreachable block (CODE,0x3f0c) */
+/* WARNING: Removing unreachable block (CODE,0x3f1d) */
+/* WARNING: Removing unreachable block (CODE,0x3ed0) */
+
+void FUN_CODE_4008(byte param_1,byte *param_2,byte param_3,char *param_4,byte param_5,char param_6)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  char in_PSW;
+  
+  if (-1 < in_PSW) {
+    *param_2 = param_1;
+    bVar2 = 0;
+    bVar3 = param_1;
+    if (param_3 != 0) {
+      bVar3 = param_1 / param_3;
+      bVar2 = param_1 % param_3;
+    }
+    if ((bVar2 & 1) != 0) {
+      while( true ) {
+        nop();
+        nop();
+        if (bVar3 == 0) break;
+        nop();
+        bVar3 = bVar3 | param_5;
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+      }
+      bVar2 = FUN_CODE_3888();
+      *param_4 = *param_4 + -1;
+      param_6 = param_6 + -1;
+      cVar1 = param_5 + 1;
+      nop();
+      *param_2 = bVar2;
+      do {
+        *param_2 = bVar2;
+        bVar2 = *param_2;
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+      } while (bVar2 != 0);
+      FUN_CODE_3800(cVar1,param_6);
+      *param_4 = *param_4 + -1;
+      bVar2 = FUN_CODE_3811(cVar1 + '\x01',param_6 + -1);
+      nop();
+      *param_2 = bVar2;
+      *param_2 = bVar2;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      FUN_CODE_3800(*param_2);
+      return;
+    }
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+  }
+  nop();
+  nop();
+  nop();
+  *param_4 = *param_4 + '\x01';
+  BANK0_R0 = 8;
+  TCON = param_4;
+  nop();
+  FUN_CODE_4380();
+  return;
+}
+

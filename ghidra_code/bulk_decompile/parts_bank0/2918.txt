@@ -1,0 +1,21 @@
+=== 0x2918 ===
+
+undefined1 FUN_CODE_2918(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return DAT_EXTMEM_e1da;
+}
+

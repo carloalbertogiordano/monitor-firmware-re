@@ -1,0 +1,27 @@
+=== 0x59eb ===
+
+void FUN_CODE_59eb(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = 0x3a;
+  FUN_CODE_fa02(5,4);
+  if ((bVar1 & 8) == 8) {
+    DAT_EXTMEM_e3e2 = 0x3f - DAT_EXTMEM_e3e2;
+  }
+  DAT_EXTMEM_e3eb = bVar1;
+  if (DAT_EXTMEM_e3e2 < 0x40) {
+                    /* WARNING: Could not recover jumptable at 0x5a20. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)((ushort)(DAT_EXTMEM_e3e2 * '\x03') + 0x5a21))();
+    return;
+  }
+  DAT_EXTMEM_e3e4 = 0;
+  _0_5 = 0;
+  FUN_CODE_f106(0);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

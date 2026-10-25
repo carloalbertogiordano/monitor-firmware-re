@@ -1,0 +1,161 @@
+=== 0xa680 ===
+
+void FUN_CODE_a680(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  char cVar3;
+  char cVar4;
+  byte bVar5;
+  char cVar6;
+  byte *pbVar7;
+  
+  FUN_CODE_87f7(param_1);
+  EX0 = 1;
+  DAT_EXTMEM_0b0e = DAT_EXTMEM_0b0e & 0x3f;
+  FUN_CODE_8c2f();
+  pbVar7 = &DAT_EXTMEM_0b01;
+  FUN_CODE_87fa();
+  *pbVar7 = *pbVar7 & 0xfd;
+  bVar2 = 2;
+  FUN_CODE_074b(0);
+  bVar5 = (DAT_EXTMEM_e5a8 < 10) << 7;
+  if (DAT_EXTMEM_e5a8 == 10) {
+    FUN_CODE_fef3();
+  }
+  FUN_CODE_a81b();
+  uVar1 = BANK0_R7;
+  FUN_CODE_8ac3();
+  FUN_CODE_fee1();
+  bVar5 = bVar5 & 0xdd;
+  BANK0_R7 = uVar1;
+  FUN_CODE_f92c(bVar2 & 0x1f);
+  if ((char)bVar5 < '\0') {
+    bVar2 = 0;
+    FUN_CODE_fee1(0,1);
+    uVar1 = BANK0_R7;
+    FUN_CODE_8ac3();
+    FUN_CODE_fee1();
+    bVar5 = bVar5 & 0xdd;
+    BANK0_R7 = uVar1;
+    FUN_CODE_c611(bVar2 & 0x1f);
+    if (((((char)bVar5 < '\0') && (FUN_CODE_fefb(), (char)bVar5 < '\0')) &&
+        (FUN_CODE_fb75(), (char)bVar5 < '\0')) && (FUN_CODE_cefa(), (char)bVar5 < '\0')) {
+      DAT_EXTMEM_e330 = 0;
+      EX0 = 0;
+      cVar3 = ((DAT_EXTMEM_b7c7 & 7) < 2U - ((char)bVar5 >> 7)) << 7;
+      cVar4 = cVar3 >> 7;
+      cVar6 = (cVar3 < '\0') << 7;
+      if (cVar3 >= '\0') {
+        do {
+          DAT_INTMEM_56 = DAT_INTMEM_54;
+          do {
+            DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+          } while (DAT_INTMEM_56 != '\0');
+          FUN_CODE_877e(cVar4);
+        } while ((cVar6 < '\0') && (cVar4 = FUN_CODE_85cb(), -1 < cVar6));
+        DAT_INTMEM_56 = DAT_INTMEM_54;
+        do {
+          DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+        } while (DAT_INTMEM_56 != '\0');
+      }
+      bVar5 = FUN_CODE_8953();
+      if ((bVar5 == 10) || (cVar6 = (bVar5 < 0xb) << 7, bVar5 == 0xb)) {
+        DAT_EXTMEM_e5a8 = 9;
+        _4_1 = 0;
+        FUN_CODE_d3f9();
+      }
+      FUN_CODE_85c4();
+      if (-1 < cVar6) {
+        do {
+          DAT_INTMEM_56 = DAT_INTMEM_54;
+          do {
+            DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+          } while (DAT_INTMEM_56 != '\0');
+          FUN_CODE_877e();
+        } while ((cVar6 < '\0') && (FUN_CODE_85cb(), -1 < cVar6));
+        DAT_INTMEM_56 = DAT_INTMEM_54;
+        do {
+          DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+        } while (DAT_INTMEM_56 != '\0');
+      }
+      FUN_CODE_87f7();
+      EX0 = 1;
+      cVar3 = '-';
+      FUN_CODE_074b(0);
+      FUN_CODE_8961();
+      FUN_CODE_fe61();
+      if (cVar3 != '\x02') {
+        FUN_CODE_8961();
+        FUN_CODE_fe61();
+        if (cVar3 != '\x05') {
+          return;
+        }
+      }
+      return;
+    }
+  }
+  FUN_CODE_85c4();
+  if (-1 < (char)bVar5) {
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_54;
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+      } while (DAT_INTMEM_56 != '\0');
+      FUN_CODE_877e();
+    } while (((char)bVar5 < '\0') && (FUN_CODE_85cb(), -1 < (char)bVar5));
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+  bVar5 = FUN_CODE_8953();
+  cVar3 = (bVar5 < 0xb) << 7;
+  if (bVar5 == 0xb) {
+    FUN_CODE_e1be(0);
+    FUN_CODE_e291();
+  }
+  else if (DAT_EXTMEM_e5a8 == 10) {
+    DAT_EXTMEM_e5a8 = 0xd;
+    FUN_CODE_85c4();
+    if (-1 < cVar3) {
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_54;
+        do {
+          DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+        } while (DAT_INTMEM_56 != '\0');
+        FUN_CODE_877e();
+      } while ((cVar3 < '\0') && (FUN_CODE_85cb(), -1 < cVar3));
+      DAT_INTMEM_56 = DAT_INTMEM_54;
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+      } while (DAT_INTMEM_56 != '\0');
+    }
+    FUN_CODE_87f7();
+    EX0 = 1;
+    return;
+  }
+  FUN_CODE_85c4();
+  if (-1 < cVar3) {
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_54;
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+      } while (DAT_INTMEM_56 != '\0');
+      FUN_CODE_877e();
+    } while ((cVar3 < '\0') && (FUN_CODE_85cb(), -1 < cVar3));
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+  FUN_CODE_87f7();
+  EX0 = 1;
+  if (_6_0 != '\0') {
+    FUN_CODE_feee();
+    _6_0 = '\0';
+  }
+  return;
+}
+

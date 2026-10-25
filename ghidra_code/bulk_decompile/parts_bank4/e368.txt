@@ -1,0 +1,10 @@
+=== 0xe368 ===
+
+void FUN_CODE_e368(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e34f = *param_1;
+  DAT_EXTMEM_e350 = param_1[1];
+  return;
+}
+

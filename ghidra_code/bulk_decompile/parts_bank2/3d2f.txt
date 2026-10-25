@@ -1,0 +1,9 @@
+=== 0x3d2f ===
+
+void FUN_CODE_3d2f(void)
+
+{
+  FUN_CODE_1033(1,7);
+  return;
+}
+

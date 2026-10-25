@@ -1,0 +1,8 @@
+=== 0x4349 ===
+
+char FUN_CODE_4349(void)
+
+{
+  return -0x1f - (((0x32 < DAT_EXTMEM_e1a9 >> 4) << 7) >> 7);
+}
+

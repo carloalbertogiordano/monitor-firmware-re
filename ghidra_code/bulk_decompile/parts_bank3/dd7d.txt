@@ -1,0 +1,10 @@
+=== 0xdd7d ===
+
+char FUN_CODE_dd7d(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  EX0 = 0;
+  return (((DAT_EXTMEM_b7c7 & 7) < 3) << 7) >> 7;
+}
+

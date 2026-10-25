@@ -1,0 +1,15 @@
+=== 0xfb65 ===
+
+void FUN_CODE_fb65(undefined1 *param_1)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_8d93();
+  FUN_CODE_f454(0x27);
+  FUN_CODE_f777();
+  uVar1 = FUN_CODE_8e0f();
+  *param_1 = uVar1;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x74a8 ===
+
+byte FUN_CODE_74a8(void)
+
+{
+  return DAT_EXTMEM_e4ca & 0xf;
+}
+

@@ -1,0 +1,9 @@
+=== 0xbce3 ===
+
+void FUN_CODE_bce3(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1724(0xe403,BANK1_R5,BANK1_R7);
+}
+

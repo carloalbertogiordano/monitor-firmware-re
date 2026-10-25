@@ -1,0 +1,24 @@
+=== 0x4822 ===
+
+undefined1 thunk_FUN_CODE_4824(undefined1 param_1)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return param_1;
+}
+

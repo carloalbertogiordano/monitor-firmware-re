@@ -1,0 +1,8 @@
+=== 0x981f ===
+
+undefined1 FUN_CODE_981f(void)
+
+{
+  return DAT_EXTMEM_e360;
+}
+

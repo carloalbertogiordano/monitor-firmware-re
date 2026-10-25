@@ -1,0 +1,8 @@
+=== 0xa7b8 ===
+
+undefined1 FUN_CODE_a7b8(void)
+
+{
+  return uEXTMEMffff;
+}
+

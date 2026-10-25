@@ -1,0 +1,20 @@
+=== 0x32ca ===
+
+void FUN_CODE_32ca(char param_1,short param_2,char *param_3)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char in_PSW;
+  
+  bVar1 = param_1 + (*param_3 - (in_PSW >> 7));
+  DAT_INTMEM_76 = DAT_INTMEM_76 | 0x37;
+  bVar2 = *(byte *)((ushort)(bVar1 >> 1 | bVar1 * -0x80) + 0x32d2);
+  bVar1 = DAT_SFR_86;
+  DAT_SFR_86 = bVar1 | 0x38;
+                    /* WARNING: Could not recover jumptable at 0x32dd. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)(bVar2 >> 1 | bVar2 << 7)))(0x37,0x38);
+  return;
+}
+

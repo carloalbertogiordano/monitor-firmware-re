@@ -1,0 +1,11 @@
+=== 0x9da3 ===
+
+void FUN_CODE_9da3(void)
+
+{
+  FUN_CODE_002e(DAT_EXTMEM_e345 -
+                (DAT_EXTMEM_e537 - (((DAT_EXTMEM_e346 < DAT_EXTMEM_e538) << 7) >> 7)),
+                DAT_EXTMEM_e346 - DAT_EXTMEM_e538);
+  return;
+}
+

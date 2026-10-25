@@ -1,0 +1,23 @@
+=== 0xed06 ===
+
+void FUN_CODE_ed06(byte param_1,char param_2)
+
+{
+  if (param_2 == '\x03') {
+    if (4 < param_1) {
+      param_1 = 4;
+    }
+  }
+  else if (param_2 == '\x04') {
+    if (4 < param_1) {
+      param_1 = 4;
+    }
+  }
+  else if ((param_2 == '\x05') && (4 < param_1)) {
+    param_1 = 4;
+  }
+  DAT_EXTMEM_e59c = param_1;
+  DAT_EXTMEM_e59f = DAT_EXTMEM_e59f | 0x80;
+  return;
+}
+

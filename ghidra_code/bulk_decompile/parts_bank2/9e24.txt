@@ -1,0 +1,35 @@
+=== 0x9e24 ===
+
+void FUN_CODE_9e24(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  char in_PSW;
+  undefined1 *puVar2;
+  
+  if (in_PSW < '\0') {
+    puVar2 = &DAT_EXTMEM_e347;
+  }
+  else {
+    puVar2 = &DAT_EXTMEM_e341;
+  }
+  uVar1 = BANK0_R4;
+  FUN_CODE_f16a(*puVar2);
+  *puVar2 = uVar1;
+  puVar2[1] = param_1;
+  if ((DAT_EXTMEM_009c & 1) == 0) {
+    DAT_EXTMEM_14a1 = DAT_EXTMEM_14a1 & 0xf9;
+  }
+  else {
+    DAT_EXTMEM_14a1 = DAT_EXTMEM_14a1 & 0xf9 | 6;
+  }
+  FUN_CODE_f161(0xe33a);
+  DAT_EXTMEM_e3e1 = uEXTMEMffff;
+  DAT_EXTMEM_e3e2 = 0x14;
+  DAT_EXTMEM_e3e3 = 0xa2;
+  DAT_EXTMEM_e3e4 = 0;
+  _0_6 = 0;
+  FUN_CODE_08b9(0,0x1a);
+  return;
+}
+

@@ -1,0 +1,12 @@
+=== 0xd3ff ===
+
+undefined1 FUN_CODE_d3ff(void)
+
+{
+  DAT_EXTMEM_e333 = 1;
+  DAT_EXTMEM_e334 = 0xe5;
+  DAT_EXTMEM_e335 = 0x6d;
+  FUN_CODE_abae(0x5e,0xe5,1);
+  return DAT_EXTMEM_e32f;
+}
+

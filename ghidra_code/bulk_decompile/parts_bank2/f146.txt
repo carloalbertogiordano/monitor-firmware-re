@@ -1,0 +1,11 @@
+=== 0xf146 ===
+
+char FUN_CODE_f146(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_127f(DAT_EXTMEM_e6b5,DAT_EXTMEM_e6b4,DAT_EXTMEM_e6b3);
+  return (bVar1 >> 3) - 9;
+}
+

@@ -1,0 +1,10 @@
+=== 0xcd9e ===
+
+void FUN_CODE_cd9e(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xdf;
+  DAT_EXTMEM_e33a = 0x32;
+  return;
+}
+

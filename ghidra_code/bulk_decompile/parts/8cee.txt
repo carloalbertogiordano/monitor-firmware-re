@@ -1,0 +1,8 @@
+=== 0x8cee ===
+
+char FUN_CODE_8cee(void)
+
+{
+  return DAT_EXTMEM_e3e2 + -4;
+}
+

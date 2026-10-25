@@ -1,0 +1,11 @@
+=== 0xe915 ===
+
+void FUN_CODE_e915(void)
+
+{
+  DAT_EXTMEM_b7c1 = DAT_EXTMEM_e606;
+  DAT_EXTMEM_b7c2 = DAT_EXTMEM_e607;
+  DAT_EXTMEM_b7c3 = DAT_EXTMEM_e608;
+  return;
+}
+

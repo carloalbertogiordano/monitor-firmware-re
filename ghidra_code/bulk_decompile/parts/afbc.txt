@@ -1,0 +1,9 @@
+=== 0xafbc ===
+
+undefined1 FUN_CODE_afbc(void)
+
+{
+  DAT_EXTMEM_e5a6 = DAT_EXTMEM_e5a6 & 0xe7 | 0x10;
+  return DAT_EXTMEM_e6b5;
+}
+

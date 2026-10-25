@@ -1,0 +1,26 @@
+=== 0x7488 ===
+
+void FUN_CODE_7488(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_700f();
+  return;
+}
+

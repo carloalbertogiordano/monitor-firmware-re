@@ -1,0 +1,10 @@
+=== 0xfdc4 ===
+
+undefined1 FUN_CODE_fdc4(char param_1)
+
+{
+  return *(undefined1 *)
+          (CONCAT11(-0x7b - (((0x71U < (byte)(param_1 * '\x03')) << 7) >> 7),param_1 * '\x03' + 0x8e
+                   ) + 2);
+}
+

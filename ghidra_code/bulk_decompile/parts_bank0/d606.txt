@@ -1,0 +1,8 @@
+=== 0xd606 ===
+
+undefined1 FUN_CODE_d606(void)
+
+{
+  return DAT_EXTMEM_e188;
+}
+

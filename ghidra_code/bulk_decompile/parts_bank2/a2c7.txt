@@ -1,0 +1,9 @@
+=== 0xa2c7 ===
+
+void FUN_CODE_a2c7(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe376);
+}
+

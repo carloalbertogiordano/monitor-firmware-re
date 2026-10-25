@@ -1,0 +1,9 @@
+=== 0xea11 ===
+
+byte FUN_CODE_ea11(byte param_1)
+
+{
+  FUN_CODE_091f(param_1);
+  return DAT_EXTMEM_e32e ^ param_1;
+}
+

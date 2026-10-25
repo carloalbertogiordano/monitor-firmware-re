@@ -1,0 +1,9 @@
+=== 0x4681 ===
+
+void FUN_CODE_4681(undefined1 param_1)
+
+{
+  DAT_EXTMEM_0091 = param_1;
+  return;
+}
+

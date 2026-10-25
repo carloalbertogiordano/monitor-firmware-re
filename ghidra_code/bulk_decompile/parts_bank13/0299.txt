@@ -1,0 +1,196 @@
+=== 0x0299 ===
+
+/* WARNING: Instruction at (CODE,0x02de) overlaps instruction at (CODE,0x02dd)
+    */
+
+void FUN_CODE_0299(byte param_1,byte *param_2,byte param_3,byte *param_4,char *param_5,byte param_6,
+                  char param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char *pcVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  char cVar7;
+  undefined1 *puVar8;
+  undefined1 *puVar9;
+  byte in_PSW;
+  
+  puVar8 = (undefined1 *)0x0;
+  if ((char)in_PSW < '\0') {
+    cVar7 = EPINDEX;
+    EPINDEX = cVar7 + -1;
+    BANK2_R6 = BANK2_R6 ^ 0x71;
+    *param_4 = *param_4 - 1;
+    FUN_CODE_0772((short)param_2,(byte)param_4,param_10);
+    return;
+  }
+  while( true ) {
+    *param_4 = *param_4 + 1;
+    nop();
+    bVar6 = *param_4;
+    *param_4 = *param_4 + 1;
+    puVar9 = puVar8 + '\x01';
+    puVar8['\x01'] = DAT_INTMEM_71;
+    *param_5 = *param_5 + '\x01';
+    if ((param_1 ^ bVar6) != 0) {
+      puVar8['\x02'] = 0x22;
+      puVar8['\x03'] = 3;
+      FUN_CODE_05ce(param_1 ^ bVar6,(short)param_2,param_4);
+      FUN_CODE_01d6((short)param_2,param_4);
+      return;
+    }
+    param_4 = param_4 + '\x01';
+    cVar7 = P0_6;
+    if (cVar7 != '\0') break;
+    bVar6 = P1_0;
+    in_PSW = (in_PSW >> 7 & ~bVar6) << 7;
+    pcVar3 = param_5 + '\x01';
+    if (-1 < (char)in_PSW) {
+      pcVar3 = param_5 + '\x02';
+      bVar6 = *param_2;
+      param_2 = param_2 + 1;
+      goto LAB_CODE_02b0;
+    }
+    puVar8['\x02'] = 0x48;
+    puVar8['\x03'] = 2;
+    cVar7 = FUN_CODE_0337();
+    puVar9 = puVar8 + '\x01';
+    puVar8 = puVar8 + '\x01';
+    DAT_INTMEM_79 = DAT_INTMEM_79 & 0x37;
+    nop();
+    if (cVar7 == '\0') {
+      cVar7 = '\0';
+      goto code_c0x00c6;
+    }
+    bVar6 = BANK2_R3;
+    if (cVar7 + 1U == 0) goto LAB_CODE_0043_1;
+    DAT_INTMEM_40 = DAT_INTMEM_40 + '\x01';
+    param_1 = cVar7 + 1U & param_6;
+    in_PSW = 0;
+    param_5 = pcVar3;
+  }
+  P0_6 = 0;
+  bVar6 = 0;
+  pcVar3 = param_5;
+LAB_CODE_02b0:
+  param_6 = param_6 + 1;
+  bVar4 = param_9;
+  bVar5 = 0;
+  if (bVar6 != 0) {
+    _7_3 = _7_3 ^ 1;
+    bVar6 = SADEN;
+    SADEN = bVar6 ^ 0x3b;
+    puVar9 = puVar8 + '\x02';
+    puVar8['\x02'] = DAT_INTMEM_3c;
+    bVar6 = EPCONFIG;
+    EPCONFIG = bVar6 | 0x3c;
+    bVar6 = (param_10 + param_9) * '\x02';
+    bVar5 = bVar6 & 0xf0 | *param_4 & 0xf;
+    *param_4 = *param_4 & 0xf0 | bVar6 & 0xf | param_10 + param_9 >> 7;
+    bVar6 = param_9 - ((CARRY1(param_10,param_9) << 7) >> 7);
+    in_PSW = CARRY1(bVar5,bVar6) << 7;
+    bVar5 = bVar5 + bVar6;
+    param_2 = param_2 + 1;
+    bVar4 = param_9 - 1;
+    param_10 = *(byte *)ZEXT12(pcVar3);
+    if (bVar4 == 0) {
+      bVar6 = param_11 - ((char)(bVar5 * -0x80) >> 7);
+      bVar4 = param_8 + bVar6;
+      bVar4 = ~(bVar4 >> 1 | bVar4 * -0x80);
+      bVar6 = param_11 - ((CARRY1(param_8,bVar6) << 7) >> 7);
+      puVar8['\x03'] = BANK0_R0;
+      nop();
+      nop();
+      FUN_CODE_0070((char)FUN_CODE_0279[(ushort)(bVar4 + bVar6) + 6] +
+                    (param_11 - ((CARRY1(bVar4,bVar6) << 7) >> 7)),(short)param_2);
+      return;
+    }
+  }
+  param_9 = bVar5;
+  param_7 = param_7 + '\x01';
+  cVar7 = WR;
+  bVar6 = param_9;
+  if (cVar7 == '\0') {
+    bVar5 = in_PSW >> 7;
+    bVar1 = PC;
+    in_PSW = (bVar5 | bVar1 ^ 1) << 7;
+    param_8 = param_8 + 1;
+    cVar7 = FIFLG_7;
+    if (cVar7 == '\0') goto FUN_CODE_02c9;
+    bVar2 = TF2;
+    in_PSW = ((bVar5 | (bVar1 ^ 1) & 1) & ~bVar2) << 7;
+    cVar7 = C;
+    if (cVar7 != '\0') goto code_c0x02c3;
+    if (_2_1 == '\0') goto code_c0x02d4;
+    _2_1 = '\0';
+code_c0x02d9:
+    BANK2_R1 = BANK2_R1 + -1;
+    puVar9['\x01'] = 0xdd;
+    puVar9['\x02'] = 2;
+    func_0x041d();
+    puVar9['\x01'] = 0xe0;
+    puVar9['\x02'] = 2;
+    FUN_CODE_1125(param_10,param_11);
+    puVar9['\x01'] = 0xe3;
+    puVar9['\x02'] = 2;
+    bVar4 = FUN_CODE_912d((short)param_2,param_4);
+    bVar6 = bVar4 >> 1 | in_PSW & 0x80;
+    in_PSW = bVar4 << 7;
+  }
+  else {
+    WR = 0;
+code_c0x02c3:
+    bVar4 = bVar4 + 1;
+    bVar5 = CR;
+    in_PSW = (in_PSW >> 7 & ~bVar5) << 7;
+    param_10 = param_10 + 1;
+    if ((param_9 >> 6 & 1) == 1) {
+LAB_CODE_02d7:
+      puVar9['\x01'] = 0xd9;
+      puVar9['\x02'] = 2;
+      thunk_FUN_CODE_0091(bVar6,(short)param_2);
+      param_9 = bVar4;
+      goto code_c0x02d9;
+    }
+FUN_CODE_02c9:
+    bVar6 = HIFLG_6;
+    in_PSW = (in_PSW >> 7 | bVar6 ^ 1) << 7;
+    param_11 = param_11 + 1;
+    if ((param_3 >> 6 & 1) == 1) {
+      puVar9['\x01'] = 0xe0;
+      puVar9['\x02'] = 2;
+      func_0x0025();
+      param_9 = bVar4;
+      goto code_c0x02d9;
+    }
+    param_2 = &LAB_CODE_fd10;
+    puVar9['\x01'] = 0xd4;
+    puVar9['\x02'] = 2;
+    bVar6 = FUN_CODE_0005(param_9,-0x2f0);
+    param_9 = bVar4;
+code_c0x02d4:
+    cVar7 = P1_1;
+    bVar4 = param_9;
+    if (cVar7 == '\0') goto LAB_CODE_02d7;
+    P1_1 = 0;
+  }
+  puVar9['\x01'] = 0xe6;
+  puVar9['\x02'] = 2;
+  bVar6 = FUN_CODE_0035(bVar6,(short)param_2,param_10);
+  bVar6 = bVar6 >> 1 | in_PSW & 0x80;
+LAB_CODE_0043_1:
+  puVar9['\x01'] = 0xe9;
+  puVar9['\x02'] = 2;
+  cVar7 = FUN_CODE_043c(bVar6,param_2,param_3,param_4,(char)pcVar3,param_6,param_7,param_8,param_9,
+                        param_10,param_11);
+  cVar7 = cVar7 + -1;
+code_c0x00c6:
+  nop();
+  nop();
+  FUN_CODE_0070(cVar7,(short)(param_2 + 1));
+  return;
+}
+

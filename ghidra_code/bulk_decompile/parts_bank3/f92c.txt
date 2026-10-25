@@ -1,0 +1,38 @@
+=== 0xf92c ===
+
+void FUN_CODE_f92c(byte param_1,undefined1 param_2)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  
+  _6_4 = '\0';
+  cVar2 = (1 < param_1) << 7;
+  DAT_EXTMEM_e331 = param_2;
+  if (param_1 == 2) {
+    uVar1 = FUN_CODE_88c3();
+    FUN_CODE_e4eb(uVar1);
+    if (cVar2 < '\0') {
+      return;
+    }
+  }
+  else if (param_1 == 1) {
+    uVar1 = FUN_CODE_88c3();
+    FUN_CODE_e4eb(uVar1);
+    if (cVar2 < '\0') {
+      return;
+    }
+  }
+  else {
+    cVar2 = (DAT_EXTMEM_e6c9 >> 5) << 7;
+    FUN_CODE_e4eb(DAT_EXTMEM_e6c9 >> 6,DAT_EXTMEM_e6c9,param_2);
+    if (cVar2 < '\0') {
+      return;
+    }
+  }
+  if (_6_4 != '\0') {
+    return;
+  }
+  return;
+}
+

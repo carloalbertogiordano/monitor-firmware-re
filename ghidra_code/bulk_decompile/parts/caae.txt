@@ -1,0 +1,12 @@
+=== 0xcaae ===
+
+undefined1 FUN_CODE_caae(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 0xcd;
+  FUN_CODE_085f(6,2,0xcd);
+  return uVar1;
+}
+

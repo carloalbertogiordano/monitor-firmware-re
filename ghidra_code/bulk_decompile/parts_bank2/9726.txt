@@ -1,0 +1,8 @@
+=== 0x9726 ===
+
+undefined1 FUN_CODE_9726(void)
+
+{
+  return 0;
+}
+

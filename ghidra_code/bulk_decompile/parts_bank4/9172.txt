@@ -1,0 +1,8 @@
+=== 0x9172 ===
+
+void FUN_CODE_9172(void)
+
+{
+  return;
+}
+

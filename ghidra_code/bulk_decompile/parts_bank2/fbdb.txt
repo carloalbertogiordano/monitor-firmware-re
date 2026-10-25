@@ -1,0 +1,19 @@
+=== 0xfbdb ===
+
+void FUN_CODE_fbdb(void)
+
+{
+  byte in_PSW;
+  byte bVar1;
+  
+  bVar1 = in_PSW & 0xdd;
+  if ((DAT_EXTMEM_0028 & 8) != 8) {
+    return;
+  }
+  FUN_CODE_fe19();
+  if ((char)bVar1 < '\0') {
+    return;
+  }
+  return;
+}
+

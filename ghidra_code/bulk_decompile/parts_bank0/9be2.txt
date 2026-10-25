@@ -1,0 +1,8 @@
+=== 0x9be2 ===
+
+byte FUN_CODE_9be2(byte *param_1)
+
+{
+  return *param_1 & 3;
+}
+

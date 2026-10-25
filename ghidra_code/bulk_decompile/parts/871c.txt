@@ -1,0 +1,9 @@
+=== 0x871c ===
+
+undefined1 FUN_CODE_871c(undefined1 param_1)
+
+{
+  DAT_EXTMEM_02c9 = param_1;
+  return DAT_EXTMEM_02ca;
+}
+

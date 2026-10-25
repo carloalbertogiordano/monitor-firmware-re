@@ -1,0 +1,10 @@
+=== 0xa729 ===
+
+void FUN_CODE_a729(void)
+
+{
+  FUN_CODE_17ba(DAT_EXTMEM_e36f,DAT_EXTMEM_e370,DAT_EXTMEM_e4ef,DAT_EXTMEM_e4f0);
+  FUN_CODE_152f(0,0,0,0x80);
+  return;
+}
+

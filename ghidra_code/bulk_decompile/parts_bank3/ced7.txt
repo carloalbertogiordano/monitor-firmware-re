@@ -1,0 +1,11 @@
+=== 0xced7 ===
+
+void FUN_CODE_ced7(void)
+
+{
+  FUN_CODE_fecb(2,0);
+  DAT_EXTMEM_e407 = 0x80;
+  DAT_EXTMEM_e408 = DAT_EXTMEM_e402;
+  return;
+}
+

@@ -1,0 +1,25 @@
+=== 0x0966 ===
+
+void FUN_CODE_0966(byte *param_1,byte param_2,byte *param_3,byte *param_4,byte param_5,byte param_6,
+                  byte param_7,byte param_8,byte param_9,byte param_10)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte in_PSW;
+  
+  bVar2 = FUN_CODE_0821(param_6);
+  *param_3 = *param_3 - 1;
+  FUN_CODE_08a1(bVar2,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,
+                param_10);
+  bVar1 = param_8 - 1;
+  FUN_CODE_1125(param_9,param_10);
+  bVar3 = FUN_CODE_912d((short)param_1,param_3);
+  bVar2 = bVar3 << 7;
+  bVar3 = func_0x0834(bVar3 >> 1 | in_PSW & 0x80);
+  FUN_CODE_0c3c(bVar3 >> 1 | bVar2 & 0x80,(short)param_1,param_3,param_4,param_7,bVar1,param_9,
+                param_10);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x5796 ===
+
+void thunk_FUN_CODE_9000(char *param_1)
+
+{
+  *param_1 = *param_1 + '\x01';
+  return;
+}
+

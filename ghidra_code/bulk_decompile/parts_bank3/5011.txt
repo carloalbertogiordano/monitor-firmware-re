@@ -1,0 +1,36 @@
+=== 0x5011 ===
+
+char FUN_CODE_5011(char param_1,undefined1 param_2,char *param_3,char param_4)
+
+{
+  char cVar1;
+  
+  while( true ) {
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    *param_3 = *param_3 + '\x01';
+    param_1 = param_1 + param_4 + '\x03';
+    param_4 = param_4 + '\x04';
+    cVar1 = P2_0;
+    if (cVar1 != '\0') break;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    BANK0_R0 = param_2;
+  }
+  return param_1;
+}
+

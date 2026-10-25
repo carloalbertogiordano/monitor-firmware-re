@@ -1,0 +1,13 @@
+=== 0xfc44 ===
+
+void FUN_CODE_fc44(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = FUN_CODE_a78d();
+  FUN_CODE_f5ae(uVar1);
+  DAT_EXTMEM_e5d9 = param_1;
+  return;
+}
+

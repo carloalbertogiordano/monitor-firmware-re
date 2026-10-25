@@ -1,0 +1,13 @@
+=== 0xfb5b ===
+
+void FUN_CODE_fb5b(void)
+
+{
+  if ((DAT_EXTMEM_e512 & 0x1f) == 0x1e) {
+    DAT_EXTMEM_05af = DAT_EXTMEM_05af & 0x3f | 0xc0;
+    return;
+  }
+  DAT_EXTMEM_05af = DAT_EXTMEM_05af & 0x3f | 0x80;
+  return;
+}
+

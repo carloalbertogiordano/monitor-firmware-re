@@ -1,0 +1,8 @@
+=== 0xbdc4 ===
+
+void FUN_CODE_bdc4(void)
+
+{
+  return;
+}
+

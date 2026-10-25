@@ -1,0 +1,10 @@
+=== 0x2250 ===
+
+undefined1 FUN_CODE_2250(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 5;
+  uEXTMEMffff = 5;
+  return param_1;
+}
+

@@ -1,0 +1,10 @@
+=== 0xfe9b ===
+
+void FUN_CODE_fe9b(void)
+
+{
+  _0_2 = _0_1 & 1;
+  FUN_CODE_089b();
+  return;
+}
+

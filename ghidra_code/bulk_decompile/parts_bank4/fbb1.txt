@@ -1,0 +1,9 @@
+=== 0xfbb1 ===
+
+void FUN_CODE_fbb1(void)
+
+{
+  FUN_CODE_1991(0x2a,0xe4,1,0,0,0x80);
+  return;
+}
+

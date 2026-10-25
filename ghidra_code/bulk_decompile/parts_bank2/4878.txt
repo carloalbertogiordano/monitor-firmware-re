@@ -1,0 +1,8 @@
+=== 0x4878 ===
+
+char FUN_CODE_4878(char param_1,byte param_2)
+
+{
+  return param_1 + (((param_2 < 0x31) << 7) >> 7);
+}
+

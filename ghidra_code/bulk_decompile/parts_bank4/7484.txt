@@ -1,0 +1,9 @@
+=== 0x7484 ===
+
+undefined1 FUN_CODE_7484(void)
+
+{
+  _0_2 = 1;
+  return 0;
+}
+

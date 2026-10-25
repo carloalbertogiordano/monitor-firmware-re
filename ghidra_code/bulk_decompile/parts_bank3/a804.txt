@@ -1,0 +1,12 @@
+=== 0xa804 ===
+
+byte FUN_CODE_a804(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = 0;
+  FUN_CODE_fee1(1,1,0);
+  return bVar1 & 0x1f;
+}
+

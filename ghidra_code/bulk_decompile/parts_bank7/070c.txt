@@ -1,0 +1,33 @@
+=== 0x070c ===
+
+char * FUN_CODE_070c(char *param_1,char *param_2,char *param_3,byte param_4)
+
+{
+  undefined1 uVar1;
+  char *pcVar2;
+  byte bVar3;
+  char cVar4;
+  
+  if (_8_2 == '\x01') {
+    return param_1;
+  }
+  cVar4 = FIFLG_2;
+  if (cVar4 != '\x01') {
+    pcVar2 = (char *)FUN_CODE_0132();
+    return pcVar2;
+  }
+  bVar3 = (char)param_1 << 1 | (byte)param_1 >> 7;
+  DAT_INTMEM_37 = DAT_INTMEM_37 | bVar3;
+  DAT_INTMEM_24 = DAT_INTMEM_24 | 0x62;
+  uVar1 = TXSTAT;
+  cVar4 = TXSTAT;
+  bVar3 = ((((bVar3 << 1 | ((byte)param_1 & 0x7f) >> 6) + 2 | (byte)param_3) - 0x3e | param_4) +
+           DAT_INTMEM_22 & DAT_INTMEM_25) + cVar4;
+  DAT_INTMEM_26 = DAT_INTMEM_26 ^ bVar3;
+  DAT_INTMEM_68 = DAT_INTMEM_68 & bVar3;
+  _d_6 = _d_6 ^ 1;
+  cVar4 = FUN_CODE_7427(bVar3 + *param_2 + *param_3);
+  P0_0 = 1;
+  return param_2 + cVar4 + *param_3;
+}
+

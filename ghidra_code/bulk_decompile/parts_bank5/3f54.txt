@@ -1,0 +1,9 @@
+=== 0x3f54 ===
+
+byte FUN_CODE_3f54(byte *param_1,byte param_2)
+
+{
+  *param_1 = *param_1 & 0xbf | param_2;
+  return DAT_EXTMEM_e349 | *param_1 & 0xc0;
+}
+

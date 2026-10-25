@@ -1,0 +1,8 @@
+=== 0xacc4 ===
+
+undefined1 FUN_CODE_acc4(void)
+
+{
+  return 0;
+}
+

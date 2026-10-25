@@ -1,0 +1,8 @@
+=== 0x9418 ===
+
+void FUN_CODE_9418(void)
+
+{
+  return;
+}
+

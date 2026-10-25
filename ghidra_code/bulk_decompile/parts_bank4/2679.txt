@@ -1,0 +1,8 @@
+=== 0x2679 ===
+
+undefined1 FUN_CODE_2679(void)
+
+{
+  return DAT_EXTMEM_e1dc;
+}
+

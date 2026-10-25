@@ -1,0 +1,9 @@
+=== 0xfe14 ===
+
+void FUN_CODE_fe14(void)
+
+{
+  DAT_EXTMEM_3902 = 1;
+  return;
+}
+

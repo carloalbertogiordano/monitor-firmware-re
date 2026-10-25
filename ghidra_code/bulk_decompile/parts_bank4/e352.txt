@@ -1,0 +1,10 @@
+=== 0xe352 ===
+
+void FUN_CODE_e352(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e34d = param_1;
+  DAT_EXTMEM_e34e = param_2;
+  return;
+}
+

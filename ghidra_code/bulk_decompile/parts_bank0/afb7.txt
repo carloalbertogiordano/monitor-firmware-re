@@ -1,0 +1,9 @@
+=== 0xafb7 ===
+
+char FUN_CODE_afb7(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  *(undefined1 *)CONCAT11(param_1,param_2) = param_3;
+  return DAT_INTMEM_29 * '\x03';
+}
+

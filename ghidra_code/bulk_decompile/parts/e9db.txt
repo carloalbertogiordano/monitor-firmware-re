@@ -1,0 +1,28 @@
+=== 0xe9db ===
+
+void FUN_CODE_e9db(undefined1 param_1,char param_2)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e32e = param_1;
+  if ((param_2 == '\t') || (param_2 == '\x03')) {
+    DAT_EXTMEM_e38a = 0x80;
+    cVar1 = '\0';
+    FUN_CODE_0907(0xe,0);
+    if (cVar1 == -0x80) {
+      cVar1 = FUN_CODE_ea11(0,0x22);
+      if (cVar1 != '\0') {
+        return;
+      }
+    }
+    else {
+      cVar1 = FUN_CODE_ea11(0,0);
+      if (cVar1 != '\0') {
+        return;
+      }
+    }
+  }
+  return;
+}
+

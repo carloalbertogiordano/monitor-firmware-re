@@ -1,0 +1,36 @@
+=== 0xe76c ===
+
+void FUN_CODE_e76c(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_be18(0xe32f);
+  FUN_CODE_be6f(0x33,0x74,0x75,0xe3,0);
+  DAT_INTMEM_29 = 0x1a;
+  DAT_INTMEM_2a = 0xe;
+  DAT_INTMEM_2b = 0x58;
+  DAT_EXTMEM_e347 = 0x10;
+  DAT_EXTMEM_e348 = 1;
+  DAT_EXTMEM_e349 = 0xe3;
+  DAT_EXTMEM_e34a = 0x33;
+  DAT_EXTMEM_e34b = 10;
+  FUN_CODE_cfb1(0,0,1,0xa0);
+  if (in_PSW < '\0') {
+    DAT_INTMEM_2c = (DAT_EXTMEM_e337 >> 4) + 1;
+    DAT_INTMEM_2d = (DAT_EXTMEM_e337 & 0xf) + 1;
+    DAT_INTMEM_2e = (DAT_EXTMEM_e338 >> 4) + 1;
+    DAT_INTMEM_2f = (DAT_EXTMEM_e338 & 0xf) + 1;
+    DAT_INTMEM_30 = 0xff;
+    FUN_CODE_bc23(DAT_EXTMEM_e330,DAT_EXTMEM_e32f);
+    FUN_CODE_b224(DAT_EXTMEM_e332);
+    return;
+  }
+  DAT_INTMEM_2c = 0x10;
+  DAT_INTMEM_2d = 0xb;
+  DAT_INTMEM_2e = 0x13;
+  DAT_INTMEM_2f = 0x16;
+  DAT_INTMEM_30 = 0xff;
+  return;
+}
+

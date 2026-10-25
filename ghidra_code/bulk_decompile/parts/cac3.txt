@@ -1,0 +1,11 @@
+=== 0xcac3 ===
+
+undefined1 FUN_CODE_cac3(void)
+
+{
+  DAT_EXTMEM_e3af =
+       FUN_CODE_1298(CONCAT11(DAT_EXTMEM_e3aa,DAT_EXTMEM_e3ab) + 2,DAT_EXTMEM_e3a9,DAT_EXTMEM_e3a8,
+                     DAT_EXTMEM_e3a7,DAT_EXTMEM_e3ab);
+  return DAT_EXTMEM_e3a6;
+}
+

@@ -1,0 +1,9 @@
+=== 0x8928 ===
+
+void FUN_CODE_8928(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xfc | 2;
+  return;
+}
+

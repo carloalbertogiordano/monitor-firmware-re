@@ -1,0 +1,9 @@
+=== 0x8bf4 ===
+
+byte FUN_CODE_8bf4(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  return DAT_EXTMEM_0bd2 & 0xf;
+}
+

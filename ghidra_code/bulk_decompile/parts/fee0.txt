@@ -1,0 +1,11 @@
+=== 0xfee0 ===
+
+void thunk_FUN_CODE_fda4(char param_1)
+
+{
+  if (param_1 != '\v') {
+    FUN_CODE_09d9();
+  }
+  return;
+}
+

@@ -1,0 +1,20 @@
+=== 0x7874 ===
+
+void FUN_CODE_7874(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_7800();
+  return;
+}
+

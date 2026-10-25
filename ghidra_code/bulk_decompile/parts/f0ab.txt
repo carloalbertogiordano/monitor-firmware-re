@@ -1,0 +1,26 @@
+=== 0xf0ab ===
+
+void FUN_CODE_f0ab(byte param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  undefined1 uVar6;
+  
+  FUN_CODE_d58c(0xe36f);
+  uVar5 = BANK0_R5;
+  uVar3 = BANK0_R3;
+  uVar1 = BANK0_R2;
+  uVar6 = FUN_CODE_d584(0xe36f,param_1 + 0x73,'0' - (((0x8c < param_1) << 7) >> 7),0xff,0,BANK0_R4);
+  uVar4 = BANK0_R3;
+  uVar2 = BANK0_R2;
+  BANK0_R7 = uVar5;
+  BANK0_R2 = uVar1;
+  BANK0_R3 = uVar3;
+  FUN_CODE_1259(uVar6,uVar2,uVar4);
+  return;
+}
+

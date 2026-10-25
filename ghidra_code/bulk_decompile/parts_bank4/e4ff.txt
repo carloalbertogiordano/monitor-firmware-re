@@ -1,0 +1,28 @@
+=== 0xe4ff ===
+
+void FUN_CODE_e4ff(void)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_8d30();
+  if (cVar1 == '\0') {
+    if ((char)((_0_0 & 1 ^ 1) << 7) < '\0') {
+      DAT_EXTMEM_e373 = 3;
+    }
+    else {
+      DAT_EXTMEM_e373 = 0;
+    }
+    FUN_CODE_0775(0xfc,7,2,0xc9);
+    FUN_CODE_8db9(8);
+    FUN_CODE_0865();
+    FUN_CODE_8e47(9);
+    FUN_CODE_0865();
+    return;
+  }
+  _0_1 = _0_0 & 1 ^ 1;
+  DAT_EXTMEM_e32e = 3;
+  FUN_CODE_fa8d();
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x6f76 ===
+
+undefined1 FUN_CODE_6f76(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e3c6 = *param_1;
+  DAT_EXTMEM_e3c7 = param_1[1];
+  return param_1[2];
+}
+

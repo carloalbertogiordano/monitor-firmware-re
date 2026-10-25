@@ -1,0 +1,42 @@
+=== 0x5660 ===
+
+undefined1 * FUN_CODE_5660(char param_1,undefined1 *param_2,undefined1 *param_3,char param_4)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  char cVar3;
+  undefined1 uVar4;
+  undefined1 *in_stack_000000fc;
+  
+  cVar3 = IT0;
+  DAT_INTMEM_22 = param_3;
+  if (cVar3 != '\x01') {
+    uVar2 = P0_0;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    *param_2 = param_3;
+    bVar1 = DAT_SFR_91;
+    DAT_SFR_91 = bVar1 & 0xef;
+    FUN_CODE_075d(*param_3);
+    if (((DAT_EXTMEM_ffeb & 0x80) == 0x80) && (bVar1 = DAT_SFR_91, (bVar1 & 0x10) == 0)) {
+      bVar1 = DAT_SFR_91;
+      DAT_SFR_91 = bVar1 & 0xef | 0x10;
+    }
+    DAT_EXTMEM_fff4 = DAT_EXTMEM_e6c8;
+    return in_stack_000000fc;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar4 = FUN_CODE_53f1(param_1 + '\x02',param_4 + '\x01');
+  uVar2 = TXSTAT;
+  *param_2 = uVar4;
+  return param_3;
+}
+

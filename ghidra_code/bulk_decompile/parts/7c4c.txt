@@ -1,0 +1,10 @@
+=== 0x7c4c ===
+
+void FUN_CODE_7c4c(undefined1 *param_1)
+
+{
+  FUN_CODE_d08f(*param_1,2);
+  FUN_CODE_7ca9();
+  return;
+}
+

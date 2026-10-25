@@ -1,0 +1,11 @@
+=== 0x4512 ===
+
+void FUN_CODE_4512(undefined1 *param_1)
+
+{
+  *param_1 = 1;
+  param_1[1] = 0x38;
+  param_1[2] = 0;
+  return;
+}
+

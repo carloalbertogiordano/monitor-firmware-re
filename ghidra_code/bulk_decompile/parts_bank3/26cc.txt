@@ -1,0 +1,9 @@
+=== 0x26cc ===
+
+void FUN_CODE_26cc(void)
+
+{
+  DAT_EXTMEM_e33f = 0xbb;
+  return;
+}
+

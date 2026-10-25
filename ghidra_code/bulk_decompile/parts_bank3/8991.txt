@@ -1,0 +1,13 @@
+=== 0x8991 ===
+
+void FUN_CODE_8991(void)
+
+{
+  DAT_EXTMEM_0bab = DAT_EXTMEM_0bab & 0xfc | 3;
+  DAT_EXTMEM_0bad = DAT_EXTMEM_0bad & 0xfc | 3;
+  DAT_EXTMEM_0bae = DAT_EXTMEM_0bae & 0xfc | 2;
+  DAT_EXTMEM_0baf = DAT_EXTMEM_0baf & 0xf0 | 7;
+  DAT_EXTMEM_0bda = 0;
+  return;
+}
+

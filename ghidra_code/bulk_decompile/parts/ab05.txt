@@ -1,0 +1,9 @@
+=== 0xab05 ===
+
+undefined1 FUN_CODE_ab05(void)
+
+{
+  FUN_CODE_c89e(2);
+  return DAT_EXTMEM_e661;
+}
+

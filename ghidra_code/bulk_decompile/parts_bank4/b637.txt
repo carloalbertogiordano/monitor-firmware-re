@@ -1,0 +1,21 @@
+=== 0xb637 ===
+
+void FUN_CODE_b637(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e4af = DAT_EXTMEM_e341;
+  DAT_EXTMEM_e4b0 = DAT_EXTMEM_e342;
+  DAT_EXTMEM_e4b1 = DAT_EXTMEM_e343;
+  DAT_EXTMEM_e4b2 = DAT_EXTMEM_e344;
+  DAT_EXTMEM_e4b3 = DAT_EXTMEM_e345;
+  DAT_EXTMEM_e4b4 = DAT_EXTMEM_e346;
+  DAT_EXTMEM_e4b5 = DAT_EXTMEM_e347;
+  DAT_EXTMEM_e4b6 = DAT_EXTMEM_e348;
+  DAT_EXTMEM_e4b7 = DAT_EXTMEM_e349;
+  FUN_CODE_f3e6(param_1);
+  DAT_EXTMEM_e4b8 = param_2;
+  FUN_CODE_0ba1(0xaa,0xe4,1);
+  EX1 = 1;
+  return;
+}
+

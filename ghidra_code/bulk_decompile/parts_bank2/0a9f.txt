@@ -1,0 +1,9 @@
+=== 0x0a9f ===
+
+void FUN_CODE_0a9f(void)
+
+{
+  FUN_CODE_043f(0x95b2);
+  return;
+}
+

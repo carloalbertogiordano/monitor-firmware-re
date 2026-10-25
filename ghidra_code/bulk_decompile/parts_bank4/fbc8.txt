@@ -1,0 +1,9 @@
+=== 0xfbc8 ===
+
+void FUN_CODE_fbc8(void)
+
+{
+  DAT_EXTMEM_e19c = 3;
+  return;
+}
+

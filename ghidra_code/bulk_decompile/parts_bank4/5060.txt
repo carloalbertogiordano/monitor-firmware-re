@@ -1,0 +1,10 @@
+=== 0x5060 ===
+
+void FUN_CODE_5060(void)
+
+{
+  nop();
+  nop();
+  return;
+}
+

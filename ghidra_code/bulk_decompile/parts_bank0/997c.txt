@@ -1,0 +1,8 @@
+=== 0x997c ===
+
+byte FUN_CODE_997c(void)
+
+{
+  return DAT_EXTMEM_e404 & 4 ^ 4;
+}
+

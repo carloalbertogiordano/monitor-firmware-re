@@ -1,0 +1,9 @@
+=== 0x2c25 ===
+
+void FUN_CODE_2c25(void)
+
+{
+  FUN_CODE_3625(0,7,0xd9);
+  return;
+}
+

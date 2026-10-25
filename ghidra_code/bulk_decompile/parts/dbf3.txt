@@ -1,0 +1,48 @@
+=== 0xdbf3 ===
+
+void FUN_CODE_dbf3(void)
+
+{
+  char cVar1;
+  byte in_PSW;
+  byte bVar2;
+  
+  FUN_CODE_fb55(4);
+  bVar2 = in_PSW;
+  FUN_CODE_fc5e(4);
+  if ((char)in_PSW < '\0') {
+    bVar2 = (bVar2 >> 7 ^ 1) << 7;
+  }
+  if (-1 < (char)bVar2) goto LAB_CODE_dc4f;
+  cVar1 = '\x04';
+  FUN_CODE_fb55();
+  if ((char)bVar2 < '\0') {
+    if (_4_6 != '\x01') {
+      FUN_CODE_ef94();
+      if (cVar1 == '\x01') goto LAB_CODE_dc43;
+    }
+    FUN_CODE_ef94();
+    bVar2 = (cVar1 == '\0') << 7;
+    if (cVar1 == '\x01') {
+      FUN_CODE_f133();
+      if (cVar1 == '\x02') goto LAB_CODE_dc43;
+    }
+    FUN_CODE_0541(0x29,0,100);
+  }
+  else {
+    FUN_CODE_0547(4);
+    FUN_CODE_fe7b(1,4);
+    thunk_FUN_CODE_09cd(4);
+  }
+LAB_CODE_dc43:
+  FUN_CODE_fb55(4);
+  _0_0 = bVar2 >> 7;
+  FUN_CODE_fb0f(4);
+LAB_CODE_dc4f:
+  if ((_7_1 != '\0') && (DAT_EXTMEM_e5b7 == '\x04')) {
+    FUN_CODE_054d(0x29,0,100);
+    _7_1 = '\0';
+  }
+  return;
+}
+

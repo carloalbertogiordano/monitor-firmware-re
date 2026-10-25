@@ -1,0 +1,9 @@
+=== 0x9c22 ===
+
+byte FUN_CODE_9c22(void)
+
+{
+  DAT_EXTMEM_0bc6 = DAT_EXTMEM_0bc6 & 0xf0 | 0xf;
+  return DAT_EXTMEM_0b50 & 0xde;
+}
+

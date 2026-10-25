@@ -1,0 +1,11 @@
+=== 0x8caf ===
+
+void FUN_CODE_8caf(undefined1 param_1)
+
+{
+  DAT_EXTMEM_0bf6 = param_1;
+  DAT_EXTMEM_0bf7 = param_1;
+  DAT_EXTMEM_0bf8 = param_1;
+  return;
+}
+

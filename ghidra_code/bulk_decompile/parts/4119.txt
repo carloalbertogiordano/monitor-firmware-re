@@ -1,0 +1,27 @@
+=== 0x4119 ===
+
+void FUN_CODE_4119(void)
+
+{
+  byte bVar1;
+  char in_PSW;
+  
+  bVar1 = FUN_CODE_8cee();
+  if (in_PSW < '\0') {
+    if (bVar1 < 4) {
+      FUN_CODE_8ce0();
+    }
+    else {
+      set_e3e4_to_const2();
+    }
+  }
+  else {
+    FUN_CODE_8c2b();
+  }
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x8c74 ===
+
+undefined1 FUN_CODE_8c74(undefined1 param_1)
+
+{
+  return param_1;
+}
+

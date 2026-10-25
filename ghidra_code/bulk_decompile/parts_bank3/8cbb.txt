@@ -1,0 +1,11 @@
+=== 0x8cbb ===
+
+byte FUN_CODE_8cbb(void)
+
+{
+  byte in_PSW;
+  
+  return ((DAT_EXTMEM_e6c9 >> 4 | DAT_EXTMEM_e6c9 << 4) >> 1 | in_PSW & 0x80) >> 1 |
+         (DAT_EXTMEM_e6c9 >> 4) << 7;
+}
+

@@ -1,0 +1,10 @@
+=== 0xb0c7 ===
+
+void FUN_CODE_b0c7(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e337 = param_1;
+  DAT_EXTMEM_e338 = param_1;
+  return;
+}
+

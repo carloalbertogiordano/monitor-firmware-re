@@ -1,0 +1,8 @@
+=== 0xe951 ===
+
+byte FUN_CODE_e951(void)
+
+{
+  return DAT_EXTMEM_e5a8 ^ 1;
+}
+

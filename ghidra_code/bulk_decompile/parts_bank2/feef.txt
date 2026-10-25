@@ -1,0 +1,9 @@
+=== 0xfeef ===
+
+void thunk_FUN_CODE_71a9(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe33f);
+}
+

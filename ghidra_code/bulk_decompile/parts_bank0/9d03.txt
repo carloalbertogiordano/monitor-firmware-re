@@ -1,0 +1,8 @@
+=== 0x9d03 ===
+
+char FUN_CODE_9d03(void)
+
+{
+  return -0x1c - (((0xfaU < (byte)(DAT_INTMEM_4a * '\x02')) << 7) >> 7);
+}
+

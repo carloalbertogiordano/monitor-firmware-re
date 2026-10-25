@@ -1,0 +1,15 @@
+=== 0xbc18 ===
+
+void FUN_CODE_bc18(void)
+
+{
+  DAT_EXTMEM_e36c = 0xff;
+  DAT_EXTMEM_e36d = 0x6a;
+  DAT_EXTMEM_e36e = 0x40;
+  DAT_EXTMEM_e36f = 0;
+  DAT_EXTMEM_e370 = 0;
+  DAT_EXTMEM_e371 = 0x29;
+  DAT_EXTMEM_e372 = 0;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xfcc3 ===
+
+void FUN_CODE_fcc3(void)
+
+{
+  DAT_EXTMEM_e339 = DAT_EXTMEM_e335;
+  FUN_CODE_fd47();
+  return;
+}
+

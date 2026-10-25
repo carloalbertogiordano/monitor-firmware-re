@@ -1,0 +1,75 @@
+=== 0x3c00 ===
+
+byte FUN_CODE_3c00(char param_1,byte *param_2,byte param_3,byte param_4,char *param_5,byte param_6,
+                  byte param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_INTMEM_70 = param_4;
+  bVar2 = FUN_CODE_3800(param_1 + '\x01');
+  nop();
+  bVar2 = bVar2 | 0x33 | param_4;
+  DAT_INTMEM_44 = param_4 | bVar2;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_5 = *param_5 + '\x01';
+  TH0 = bVar2;
+  if (bVar2 == 0) {
+    bVar2 = FUN_CODE_3be6();
+    return bVar2;
+  }
+  if ((param_3 & 1) == 0) {
+    if (in_PSW < '\0') {
+      bVar1 = bVar2 * '\x02' - (in_PSW >> 7);
+      DAT_INTMEM_44 = DAT_INTMEM_44 | (bVar1 >> 4 | bVar1 * '\x10') ^ bVar2;
+      nop();
+      DAT_EXTMEM_e6c5 = DAT_EXTMEM_fff4;
+      return param_7;
+    }
+    *param_2 = bVar2;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    bVar2 = FUN_CODE_3800((bVar2 >> 4 | bVar2 << 4) + 1);
+    return (bVar2 | 0x11) >> 1 | (bVar2 | 0x11) << 7 | param_6;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar2 = FUN_CODE_3d08(bVar2 >> 1 | bVar2 << 7);
+  return bVar2;
+}
+

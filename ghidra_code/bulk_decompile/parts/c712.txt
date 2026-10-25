@@ -1,0 +1,8 @@
+=== 0xc712 ===
+
+byte FUN_CODE_c712(void)
+
+{
+  return DAT_EXTMEM_02cc & 0x60;
+}
+

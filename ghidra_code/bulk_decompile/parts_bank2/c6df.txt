@@ -1,0 +1,13 @@
+=== 0xc6df ===
+
+void FUN_CODE_c6df(undefined1 param_1)
+
+{
+  FUN_CODE_0fd3(param_1);
+  FUN_CODE_0fd9(4);
+  FUN_CODE_0fdf(8);
+  FUN_CODE_0e6b(1);
+  FUN_CODE_0feb(4);
+  return;
+}
+

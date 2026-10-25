@@ -1,0 +1,10 @@
+=== 0xaf67 ===
+
+void FUN_CODE_af67(void)
+
+{
+  FUN_CODE_152f('\0','\x01',-0x7a,0xa0,DAT_EXTMEM_e371,DAT_EXTMEM_e372,DAT_EXTMEM_e373,
+                DAT_EXTMEM_e374);
+  return;
+}
+

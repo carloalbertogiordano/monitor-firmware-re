@@ -1,0 +1,13 @@
+=== 0x4c80 ===
+
+void FUN_CODE_4c80(byte *param_1,byte *param_2)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_1 = ~*param_2;
+  return;
+}
+

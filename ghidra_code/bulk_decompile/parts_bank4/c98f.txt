@@ -1,0 +1,50 @@
+=== 0xc98f ===
+
+void FUN_CODE_c98f(byte *param_1,undefined1 param_2,char param_3)
+
+{
+  char cVar1;
+  bool bVar2;
+  byte bVar3;
+  
+  if (param_3 == '\x01') {
+    if (DAT_EXTMEM_e709 == '\x03') {
+      param_2 = 0x4b;
+      cVar1 = 'K';
+    }
+    else if (DAT_EXTMEM_e709 == '\x02') {
+      cVar1 = '<';
+    }
+    else if (DAT_EXTMEM_e709 == '\x01') {
+      cVar1 = '-';
+    }
+    else {
+      cVar1 = '\0';
+    }
+    param_1 = &DAT_EXTMEM_e709;
+    if (cVar1 != '\0') {
+      param_1 = (byte *)0xe511;
+      if (DAT_EXTMEM_e511 >> 6 != 1) {
+        bVar3 = DAT_EXTMEM_e511 >> 3 & 7;
+        if (((bVar3 == 1) || (bVar3 == 4)) || (bVar3 == 2)) {
+          bVar2 = true;
+        }
+        else {
+          bVar2 = false;
+        }
+        if (bVar2) {
+          DAT_EXTMEM_e704 = 1;
+          FUN_CODE_0871(1,2);
+          return;
+        }
+        bVar3 = FUN_CODE_ca02();
+        *param_1 = bVar3 | 0xc0;
+        return;
+      }
+    }
+  }
+  bVar3 = FUN_CODE_ca02(param_2);
+  *param_1 = bVar3;
+  return;
+}
+

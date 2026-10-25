@@ -1,0 +1,73 @@
+=== 0xcefa ===
+
+char FUN_CODE_cefa(byte param_1)
+
+{
+  byte bVar1;
+  char cVar2;
+  char cVar3;
+  
+  DAT_EXTMEM_e331 = '\x03';
+  do {
+    DAT_EXTMEM_0b06 = DAT_EXTMEM_0b06 & 0xf0 | 0xf;
+    DAT_INTMEM_53 = '%';
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_51;
+      do {
+        DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+      } while (DAT_INTMEM_56 != '\0');
+      DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+    } while (DAT_INTMEM_53 != '\0');
+    FUN_CODE_de3b();
+    FUN_CODE_fee1();
+    bVar1 = param_1 & 0x1f;
+    if (bVar1 == 2) {
+      cVar2 = FUN_CODE_ddb7();
+      if ((((((cVar2 == '\0') && ((param_1 >> 2 & 3) == 1)) ||
+            ((cVar2 == '\x01' && (cVar2 = FUN_CODE_de32(), cVar2 == '\0')))) &&
+           ((DAT_EXTMEM_0b06 & 3) == 0)) ||
+          ((((((cVar2 = FUN_CODE_ddb7(), cVar2 == '\0' && (cVar2 = FUN_CODE_de49(), cVar2 == '\0'))
+              || ((cVar2 = FUN_CODE_ddb7(), cVar2 == '\x02' && ((param_1 >> 2 & 3) == 0)))) &&
+             ((DAT_EXTMEM_0b06 & 5) == 0)) ||
+            ((((cVar2 = FUN_CODE_ddb7(), cVar2 == '\0' && (cVar3 = FUN_CODE_de51(), cVar3 == '\0'))
+              || ((cVar2 == '\x03' && (cVar2 = FUN_CODE_de32(), cVar2 == '\0')))) &&
+             ((DAT_EXTMEM_0b06 & 9) == 0)))) ||
+           ((((cVar2 = FUN_CODE_ddb7(), cVar2 == '\x01' && (cVar2 = FUN_CODE_de49(), cVar2 == '\0'))
+             || ((cVar2 = FUN_CODE_ddb7(), cVar2 == '\x02' &&
+                 (param_1 = param_1 >> 2 & 3, param_1 == 1)))) && ((DAT_EXTMEM_0b06 & 6) == 0))))))
+         || (((((cVar2 = FUN_CODE_ddb7(), cVar2 == '\x01' &&
+                (cVar3 = FUN_CODE_de51(), cVar3 == '\0')) ||
+               ((cVar2 == '\x03' && (param_1 = FUN_CODE_de32(), param_1 == 1)))) &&
+              ((DAT_EXTMEM_0b06 & 10) == 0)) ||
+             ((((cVar2 = FUN_CODE_ddb7(), cVar2 == '\x02' &&
+                (cVar2 = FUN_CODE_de51(), cVar2 == '\0')) ||
+               ((cVar2 = FUN_CODE_ddb7(), cVar2 == '\x03' &&
+                (cVar2 = FUN_CODE_de49(), cVar2 == '\0')))) && ((DAT_EXTMEM_0b06 & 0xc) == 0)))))) {
+        return '\0';
+      }
+    }
+    else if (bVar1 == 4) {
+      if ((DAT_EXTMEM_0b06 & 0xf) == 0) {
+        return '\0';
+      }
+    }
+    else {
+      if (bVar1 - 1 != '\0') {
+        return bVar1 - 1;
+      }
+      cVar2 = FUN_CODE_de59();
+      if (((((cVar2 == '\0') && ((DAT_EXTMEM_0b06 & 1) == 0)) ||
+           ((cVar2 == '\x01' && ((DAT_EXTMEM_0b06 & 2) == 0)))) ||
+          ((param_1 = FUN_CODE_de59(), param_1 == 2 && ((DAT_EXTMEM_0b06 & 4) == 0)))) ||
+         ((cVar2 = FUN_CODE_de59(), cVar2 == '\x03' && ((DAT_EXTMEM_0b06 & 8) == 0)))) {
+        return '\0';
+      }
+    }
+    cVar2 = DAT_EXTMEM_e331;
+    DAT_EXTMEM_e331 = DAT_EXTMEM_e331 + -1;
+    if ((DAT_EXTMEM_e331 == '\0') << 7 < '\0') {
+      return cVar2 + -2;
+    }
+  } while( true );
+}
+

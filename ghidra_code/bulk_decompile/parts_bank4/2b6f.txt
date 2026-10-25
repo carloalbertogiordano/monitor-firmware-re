@@ -1,0 +1,15 @@
+=== 0x2b6f ===
+
+void FUN_CODE_2b6f(byte param_1,char param_2,byte param_3)
+
+{
+  byte in_PSW;
+  
+  *(undefined1 *)(param_2 + '\x01') = 0x92;
+  _5_3 = in_PSW >> 7;
+                    /* WARNING: Could not recover jumptable at 0x2a77. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)(param_1 & param_3) + 0x2449))(0x27,param_3 - 1,(param_1 & param_3) + 1);
+  return;
+}
+

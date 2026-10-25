@@ -1,0 +1,11 @@
+=== 0x34e4 ===
+
+void FUN_CODE_34e4(void)
+
+{
+  nop();
+  nop();
+  nop();
+  return;
+}
+

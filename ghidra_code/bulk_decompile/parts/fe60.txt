@@ -1,0 +1,10 @@
+=== 0xfe60 ===
+
+void FUN_CODE_fe60(void)
+
+{
+  FUN_CODE_beaf();
+  FUN_CODE_0cdf();
+  return;
+}
+

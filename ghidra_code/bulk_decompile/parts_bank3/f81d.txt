@@ -1,0 +1,32 @@
+=== 0xf81d ===
+
+void FUN_CODE_f81d(byte param_1)
+
+{
+  byte bVar1;
+  char cVar2;
+  undefined1 uVar3;
+  
+  FUN_CODE_1718(0xe384);
+  bVar1 = FUN_CODE_b68e();
+  if (bVar1 == 0) {
+    bVar1 = param_1 ^ 5;
+  }
+  if (bVar1 == 0) {
+    cVar2 = FUN_CODE_b694();
+    if ((cVar2 == '\0') && (param_1 == 4)) {
+      uVar3 = FUN_CODE_b580(0xe384,0,0x2e,0x18);
+      cVar2 = '\0';
+      FUN_CODE_15d7(uVar3);
+      if (-1 < cVar2) {
+        cVar2 = -0x80;
+        FUN_CODE_15d7(DAT_EXTMEM_e387,DAT_EXTMEM_e384,0,0,0x2f,0xa8);
+        if (cVar2 < '\0') {
+          return;
+        }
+      }
+    }
+  }
+  return;
+}
+

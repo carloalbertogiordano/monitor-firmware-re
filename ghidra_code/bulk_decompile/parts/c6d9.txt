@@ -1,0 +1,9 @@
+=== 0xc6d9 ===
+
+void FUN_CODE_c6d9(void)
+
+{
+  DAT_EXTMEM_e373 = 0;
+  return;
+}
+

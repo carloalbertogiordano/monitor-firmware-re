@@ -1,0 +1,9 @@
+=== 0xbf5a ===
+
+byte FUN_CODE_bf5a(void)
+
+{
+  FUN_CODE_1420(6);
+  return DAT_EXTMEM_e53a >> 1 | DAT_EXTMEM_e539 << 7;
+}
+

@@ -1,0 +1,22 @@
+=== 0xf73a ===
+
+undefined1 FUN_CODE_f73a(void)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  
+  uVar1 = 1;
+  bVar2 = DAT_EXTMEM_e511 >> 3 & 7;
+  if (bVar2 == 2) {
+    uVar1 = 3;
+  }
+  else if (bVar2 == 4) {
+    uVar1 = 5;
+  }
+  else if (bVar2 == 1) {
+    uVar1 = 2;
+  }
+  return uVar1;
+}
+

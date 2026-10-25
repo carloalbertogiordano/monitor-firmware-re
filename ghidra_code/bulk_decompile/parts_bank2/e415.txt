@@ -1,0 +1,10 @@
+=== 0xe415 ===
+
+void FUN_CODE_e415(void)
+
+{
+  DAT_EXTMEM_fe0b = 1;
+  DAT_EXTMEM_fe0d = 0;
+  return;
+}
+

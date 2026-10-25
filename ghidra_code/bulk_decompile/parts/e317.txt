@@ -1,0 +1,26 @@
+=== 0xe317 ===
+
+void FUN_CODE_e317(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar2 = FUN_CODE_a764();
+  bVar1 = (byte)(&LAB_CODE_3875)[bVar2] >> 4;
+  DAT_EXTMEM_e32f = (&LAB_CODE_3875)[bVar2] & 0xf;
+  DAT_EXTMEM_e32e = bVar1;
+  FUN_CODE_a88a(DAT_EXTMEM_e5c4 >> 6,DAT_EXTMEM_e32f,DAT_EXTMEM_e5c4);
+  if (DAT_EXTMEM_e32f == 4) {
+    FUN_CODE_a7ca();
+    if (bVar1 == 2) {
+      FUN_CODE_fd9b(DAT_EXTMEM_e32e);
+    }
+  }
+  else if ((DAT_EXTMEM_e32f - 2 < 4) && (FUN_CODE_a7ca(), bVar1 == 2)) {
+    FUN_CODE_fb75(DAT_EXTMEM_e32e);
+    return;
+  }
+  return;
+}
+

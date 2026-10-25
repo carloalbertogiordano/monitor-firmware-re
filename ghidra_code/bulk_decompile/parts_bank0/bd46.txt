@@ -1,0 +1,17 @@
+=== 0xbd46 ===
+
+void FUN_CODE_bd46(byte param_1,byte *param_2)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = (byte)((ushort)param_1 * 3);
+  bVar2 = (byte)((ushort)*param_2 * 0x1b);
+  DAT_EXTMEM_e398 =
+       (char)((ushort)*param_2 * 0x1b >> 8) +
+       ((char)((ushort)param_1 * 3 >> 8) - ((CARRY1(bVar2,bVar1) << 7) >> 7));
+  DAT_EXTMEM_e399 = bVar2 + bVar1;
+  return;
+}
+

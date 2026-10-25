@@ -1,0 +1,11 @@
+=== 0xfb75 ===
+
+void FUN_CODE_fb75(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e330 = param_1;
+  FUN_CODE_9b76();
+  FUN_CODE_bbf3(DAT_EXTMEM_e330);
+  return;
+}
+

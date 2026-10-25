@@ -1,0 +1,26 @@
+=== 0xecd1 ===
+
+void FUN_CODE_ecd1(void)
+
+{
+  byte bVar1;
+  undefined1 *puVar2;
+  
+  FUN_CODE_8d27(0xe3ec);
+  bVar1 = 0x45;
+  FUN_CODE_f826();
+  puVar2 = &DAT_EXTMEM_e3ec;
+  if ((DAT_EXTMEM_e3ec & DAT_EXTMEM_e3ed) != (DAT_EXTMEM_e3ed & bVar1)) {
+    FUN_CODE_8c41(DAT_EXTMEM_e3ec);
+    if (_0_5 == '\0') {
+      *puVar2 = 0x68;
+    }
+    else {
+      *puVar2 = 0x88;
+    }
+    FUN_CODE_8bcd(0x41,0xff61);
+    FUN_CODE_8c05();
+  }
+  return;
+}
+

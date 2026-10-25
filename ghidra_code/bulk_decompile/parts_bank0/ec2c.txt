@@ -1,0 +1,9 @@
+=== 0xec2c ===
+
+void FUN_CODE_ec2c(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xef;
+  return;
+}
+

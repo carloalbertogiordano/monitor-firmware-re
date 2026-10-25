@@ -1,0 +1,30 @@
+=== 0x0173 ===
+
+void FUN_CODE_0173(undefined1 param_1,byte *param_2,byte param_3,byte *param_4,byte *param_5,
+                  byte param_6,byte param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  byte *pbVar1;
+  byte bVar2;
+  char cVar3;
+  undefined1 uVar4;
+  
+  bVar2 = FUN_CODE_0065(param_1,(short)param_2);
+  *param_4 = *param_4 - 1;
+  cVar3 = thunk_FUN_CODE_034a(bVar2,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,
+                              param_10,param_11);
+  *param_5 = *param_5 - 1;
+  bVar2 = FUN_CODE_0075(cVar3,(short)param_2);
+  *param_5 = *param_5 - 1;
+  uVar4 = FUN_CODE_047d(bVar2,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,
+                        param_10,param_11);
+  pbVar1 = param_4 + -1;
+  FUN_CODE_0085(uVar4,(short)param_2);
+  uVar4 = FUN_CODE_048d(param_2,param_3,pbVar1 + -1,(char)param_5,param_6,param_7,param_8,param_9,
+                        param_10,param_11);
+  nop();
+  nop();
+  FUN_CODE_0070(uVar4,(short)(param_2 + 1));
+  return;
+}
+

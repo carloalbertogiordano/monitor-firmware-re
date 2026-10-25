@@ -1,0 +1,23 @@
+=== 0xfa69 ===
+
+void FUN_CODE_fa69(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  if ((DAT_EXTMEM_0b1e == 'S') && (DAT_EXTMEM_0b1f == '\x1f')) {
+    bVar2 = FUN_CODE_fa9c();
+    if ((bVar2 >> 2 & 1) != 0) {
+      cVar1 = '\x06';
+      FUN_CODE_fee1(0x29,0x80);
+      if (cVar1 == '\0') {
+        bVar2 = FUN_CODE_fa9c();
+        DAT_EXTMEM_e38a = bVar2 & 0xfb;
+        FUN_CODE_febf(1,2,0);
+      }
+    }
+  }
+  return;
+}
+

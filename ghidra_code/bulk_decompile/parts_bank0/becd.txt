@@ -1,0 +1,10 @@
+=== 0xbecd ===
+
+char FUN_CODE_becd(void)
+
+{
+  char in_PSW;
+  
+  return -0x1d - (in_PSW >> 7);
+}
+

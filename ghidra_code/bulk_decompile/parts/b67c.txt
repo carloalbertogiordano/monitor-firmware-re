@@ -1,0 +1,14 @@
+=== 0xb67c ===
+
+void FUN_CODE_b67c(undefined1 *param_1,undefined1 param_2)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_054d(param_2,3);
+  uVar1 = FUN_CODE_d5a7();
+  *param_1 = uVar1;
+  FUN_CODE_059b(9);
+  return;
+}
+

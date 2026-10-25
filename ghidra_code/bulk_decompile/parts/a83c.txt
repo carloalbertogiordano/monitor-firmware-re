@@ -1,0 +1,8 @@
+=== 0xa83c ===
+
+byte FUN_CODE_a83c(void)
+
+{
+  return DAT_EXTMEM_e5c4 | 8;
+}
+

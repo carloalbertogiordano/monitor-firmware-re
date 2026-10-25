@@ -1,0 +1,75 @@
+=== 0x7f22 ===
+
+char FUN_CODE_7f22(char param_1,char *param_2,char param_3,char *param_4,char param_5)
+
+{
+  byte bVar1;
+  char cVar2;
+  char in_stack_000000fc;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_4 = *param_4 + '\x01';
+  cVar2 = param_1 + '\x01' + param_5;
+  if (_1_0 != '\0') {
+    _1_0 = 0;
+    nop();
+    nop();
+    nop();
+    nop();
+    BANK0_R0 = param_3 + '\x01';
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    *param_2 = param_3 + '\x02';
+    bVar1 = DAT_SFR_91;
+    DAT_SFR_91 = bVar1 & 0xef;
+    FUN_CODE_075d(*(undefined1 *)(param_3 + '\x02'),param_5 + '\x01');
+    if (((DAT_EXTMEM_ffeb & 0x80) == 0x80) && (bVar1 = DAT_SFR_91, (bVar1 & 0x10) == 0)) {
+      bVar1 = DAT_SFR_91;
+      DAT_SFR_91 = bVar1 & 0xef | 0x10;
+    }
+    DAT_EXTMEM_fff4 = DAT_EXTMEM_e6c8;
+    return in_stack_000000fc;
+  }
+  *param_2 = cVar2;
+  *param_2 = cVar2;
+  *param_2 = cVar2;
+  return cVar2;
+}
+

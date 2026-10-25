@@ -1,0 +1,26 @@
+=== 0x16dc ===
+
+void FUN_CODE_16dc(undefined2 param_1,byte param_2,char param_3,char param_4)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = (byte)param_1;
+  cVar1 = (char)((ushort)param_1 >> 8);
+  if (param_4 == '\x01') {
+    FUN_CODE_19f2(cVar1 + (param_3 - ((CARRY1(bVar2,param_2) << 7) >> 7)),bVar2 + param_2);
+    return;
+  }
+  if (param_4 == '\0') {
+    FUN_CODE_19e5(param_2 + bVar2);
+    return;
+  }
+  if (param_4 == -2) {
+    FUN_CODE_19fe(param_2 + bVar2);
+    return;
+  }
+  FUN_CODE_1a0b(cVar1 + (param_3 - ((CARRY1(bVar2,param_2) << 7) >> 7)),bVar2 + param_2);
+  return;
+}
+

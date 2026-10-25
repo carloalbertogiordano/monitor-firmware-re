@@ -1,0 +1,8 @@
+=== 0xf2bc ===
+
+char FUN_CODE_f2bc(void)
+
+{
+  return DAT_EXTMEM_e37f << 4;
+}
+

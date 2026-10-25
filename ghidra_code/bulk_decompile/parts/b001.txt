@@ -1,0 +1,8 @@
+=== 0xb001 ===
+
+char FUN_CODE_b001(void)
+
+{
+  return DAT_EXTMEM_e32e - (DAT_EXTMEM_e32f + '\x01');
+}
+

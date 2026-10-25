@@ -1,0 +1,32 @@
+=== 0x5b74 ===
+
+void FUN_CODE_5b74(void)
+
+{
+  FUN_CODE_7faf(0,0xe336);
+  FUN_CODE_1724();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe33e);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe342);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe346);
+  nop();
+  nop();
+  nop();
+  nop();
+  _0_1 = 1;
+  FUN_CODE_7f1d(0xe505);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe34a);
+}
+

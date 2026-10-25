@@ -1,0 +1,11 @@
+=== 0x999a ===
+
+byte FUN_CODE_999a(void)
+
+{
+  DAT_EXTMEM_0bda =
+       DAT_EXTMEM_0bda & 0xf1 | (DAT_EXTMEM_0bb2 & 1) << 3 | (DAT_EXTMEM_0bb2 & 2) * '\x02' |
+       (DAT_EXTMEM_0bb2 & 4) >> 1;
+  return DAT_EXTMEM_e6c9 & 3;
+}
+

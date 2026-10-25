@@ -1,0 +1,23 @@
+=== 0xe9cc ===
+
+void FUN_CODE_e9cc(void)
+
+{
+  if ((char)((DAT_EXTMEM_e19d >> 4) << 7) < '\0') {
+    if (DAT_EXTMEM_e62b == '\x02') {
+      DAT_EXTMEM_e19c = 0;
+    }
+    else if (DAT_EXTMEM_e62b == '\x04') {
+      DAT_EXTMEM_e19c = 1;
+    }
+    else if (DAT_EXTMEM_e62b == '\b') {
+      DAT_EXTMEM_e19c = 2;
+    }
+    else if (DAT_EXTMEM_e62b == '\x10') {
+      FUN_CODE_fbc8();
+    }
+    FUN_CODE_f9d4();
+  }
+  return;
+}
+

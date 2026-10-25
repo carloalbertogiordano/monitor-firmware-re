@@ -1,0 +1,75 @@
+=== 0x5821 ===
+
+undefined1 FUN_CODE_5821(char param_1,byte *param_2,char param_3,undefined1 param_4)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  undefined1 uVar6;
+  undefined1 uVar7;
+  byte bVar8;
+  undefined1 uStackX_0;
+  undefined1 in_stack_000000fb;
+  
+  uVar6 = BANK0_R7;
+  uVar5 = BANK0_R6;
+  uVar4 = BANK0_R5;
+  uVar3 = BANK0_R4;
+  uVar2 = BANK0_R3;
+  uVar1 = BANK0_R2;
+  uVar7 = BANK0_R1;
+  nop();
+  nop();
+  nop();
+  bVar8 = param_1 + 1U | 0x99;
+  if (bVar8 == 0) {
+    nop();
+    nop();
+    BANK0_R0 = param_3 + '\x01';
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    TCON = BANK0_R0;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    DAT_EXTMEM_e6c7 = DAT_EXTMEM_fff4;
+    TF2 = 0;
+    DAT_EXTMEM_ffeb = DAT_EXTMEM_ffeb & 0x7f | 8;
+    _7_3 = 1;
+    if (4 < (DAT_EXTMEM_ffad & 7)) {
+      DAT_EXTMEM_ffea = DAT_EXTMEM_ffea | 0x40;
+    }
+    _7_2 = 1;
+    DAT_INTMEM_58 = DAT_INTMEM_58 + '\x01';
+    if (DAT_INTMEM_58 == '\0') {
+      DAT_INTMEM_57 = DAT_INTMEM_57 + '\x01';
+    }
+    FUN_CODE_03ca(param_3 + '\x02',param_4);
+    DAT_EXTMEM_fff4 = DAT_EXTMEM_e6c7;
+    BANK0_R7 = uVar6;
+    BANK0_R6 = uVar5;
+    BANK0_R5 = uVar4;
+    BANK0_R4 = uVar3;
+    BANK0_R3 = uVar2;
+    BANK0_R2 = uVar1;
+    BANK0_R1 = uVar7;
+    BANK0_R0 = uStackX_0;
+    return in_stack_000000fb;
+  }
+  nop();
+  *param_2 = bVar8;
+  uVar7 = FUN_CODE_58a2(*param_2,param_1 + 1U,bVar8);
+  return uVar7;
+}
+

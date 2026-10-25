@@ -1,0 +1,9 @@
+=== 0x6adc ===
+
+void FUN_CODE_6adc(void)
+
+{
+  FUN_CODE_0865(0x38,2,0xc9);
+  return;
+}
+

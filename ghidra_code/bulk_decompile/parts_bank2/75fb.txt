@@ -1,0 +1,10 @@
+=== 0x75fb ===
+
+byte FUN_CODE_75fb(char param_1,byte param_2)
+
+{
+  DAT_EXTMEM_e33d = DAT_EXTMEM_e33d - (param_1 - (((DAT_EXTMEM_e33e < param_2) << 7) >> 7));
+  DAT_EXTMEM_e33e = DAT_EXTMEM_e33e - param_2;
+  return DAT_EXTMEM_e33d & 0x1f;
+}
+

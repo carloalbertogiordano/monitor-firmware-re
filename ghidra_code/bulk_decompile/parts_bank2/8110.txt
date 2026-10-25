@@ -1,0 +1,8 @@
+=== 0x8110 ===
+
+undefined1 FUN_CODE_8110(void)
+
+{
+  return 0;
+}
+

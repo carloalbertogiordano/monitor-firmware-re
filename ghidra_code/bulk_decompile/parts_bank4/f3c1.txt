@@ -1,0 +1,17 @@
+=== 0xf3c1 ===
+
+void FUN_CODE_f3c1(void)
+
+{
+  if (_0_6 != '\x01') {
+    DAT_EXTMEM_08a0 = DAT_EXTMEM_08a0 & 0xe0 | 0xf;
+    DAT_EXTMEM_08a1 = DAT_EXTMEM_08a1 & 0xc0;
+    DAT_EXTMEM_08a2 = 1;
+    return;
+  }
+  DAT_EXTMEM_08a0 = DAT_EXTMEM_08a0 & 0xef | 0x10;
+  DAT_EXTMEM_08a1 = DAT_EXTMEM_08a1 & 0xc0;
+  DAT_EXTMEM_08a2 = 0x40;
+  return;
+}
+

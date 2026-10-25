@@ -1,0 +1,9 @@
+=== 0xa843 ===
+
+void FUN_CODE_a843(void)
+
+{
+  DAT_EXTMEM_e5c4 = DAT_EXTMEM_e5c4 & 0x3f | 0x43;
+  return;
+}
+

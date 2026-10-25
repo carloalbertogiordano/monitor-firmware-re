@@ -1,0 +1,9 @@
+=== 0xa8cf ===
+
+void FUN_CODE_a8cf(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe348);
+}
+

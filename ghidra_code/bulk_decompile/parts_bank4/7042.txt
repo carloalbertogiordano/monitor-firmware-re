@@ -1,0 +1,9 @@
+=== 0x7042 ===
+
+void FUN_CODE_7042(void)
+
+{
+  DAT_EXTMEM_e37d = 6;
+  return;
+}
+

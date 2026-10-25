@@ -1,0 +1,46 @@
+=== 0x024d ===
+
+byte FUN_CODE_024d(byte param_1,undefined1 *param_2,byte param_3,char *param_4,char param_5,
+                  char param_6,char param_7,byte param_8,char param_9)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  char in_PSW;
+  
+  if ((param_3 >> 3 & 1) != 0) {
+    bVar3 = 99 - (in_PSW >> 7);
+    bVar2 = param_1 + bVar3;
+    DAT_INTMEM_38 = DAT_INTMEM_38 ^ 3;
+    bVar3 = param_9 - ((CARRY1(param_1,bVar3) << 7) >> 7);
+    bVar1 = CARRY1(bVar2 - bVar3,param_6 - (((bVar2 < bVar3) << 7) >> 7));
+    if (param_9 != '\x01') {
+      return param_8;
+    }
+    DAT_INTMEM_23 = DAT_INTMEM_23 + -1;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    if (!bVar1) {
+      nop();
+      *param_4 = *param_4 + -1;
+      bVar3 = FUN_CODE_102e(*param_2);
+      return bVar3;
+    }
+    if (!bVar1) {
+      bVar3 = FUN_CODE_00f6(param_6 + -1);
+      return (bVar3 + 0x32) - (param_5 - (((0xcd < bVar3) << 7) >> 7));
+    }
+    param_1 = FUN_CODE_070c(param_7 + '\x01');
+    DAT_INTMEM_51 = DAT_INTMEM_51 + -1;
+  }
+  bVar3 = DAT_SFR_92;
+  DAT_SFR_92 = bVar3 & param_1;
+  return param_1;
+}
+

@@ -1,0 +1,8 @@
+=== 0xc12c ===
+
+void FUN_CODE_c12c(void)
+
+{
+  return;
+}
+

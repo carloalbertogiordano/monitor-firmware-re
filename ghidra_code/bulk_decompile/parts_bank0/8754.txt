@@ -1,0 +1,10 @@
+=== 0x8754 ===
+
+byte FUN_CODE_8754(void)
+
+{
+  DAT_EXTMEM_e412 = 0;
+  FUN_CODE_0793(7,2,0);
+  return DAT_EXTMEM_e404 & 4 ^ 4;
+}
+

@@ -1,0 +1,8 @@
+=== 0x8b57 ===
+
+char FUN_CODE_8b57(byte param_1)
+
+{
+  return (param_1 >> 3) * '\x04';
+}
+

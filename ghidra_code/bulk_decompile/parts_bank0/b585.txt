@@ -1,0 +1,13 @@
+=== 0xb585 ===
+
+void FUN_CODE_b585(void)
+
+{
+  DAT_EXTMEM_e3da = uEXTMEMffff;
+  DAT_EXTMEM_e3db = 3;
+  _0_5 = 1;
+  FUN_CODE_1141(0x7d,0xe3,1,0,0x1b);
+  FUN_CODE_074b();
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0xb558 ===
+
+byte FUN_CODE_b558(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_1298(2);
+  return bVar1 >> 3 & 0xf;
+}
+

@@ -1,0 +1,9 @@
+=== 0x869b ===
+
+undefined1 FUN_CODE_869b(void)
+
+{
+  FUN_CODE_aa23(0);
+  return DAT_EXTMEM_e687;
+}
+

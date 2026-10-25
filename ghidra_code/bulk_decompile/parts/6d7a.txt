@@ -1,0 +1,14 @@
+=== 0x6d7a ===
+
+void FUN_CODE_6d7a(undefined1 param_1,byte param_2)
+
+{
+  DAT_EXTMEM_e4cb = param_2 & 0xf0 | 5;
+  DAT_EXTMEM_e32e = param_1;
+  FUN_CODE_0eb3(5);
+  DAT_EXTMEM_e382 = 0;
+  DAT_EXTMEM_e383 = 0x7f;
+  FUN_CODE_c07a(0,0,0,0xff,DAT_EXTMEM_e42f);
+  return;
+}
+

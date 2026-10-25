@@ -1,0 +1,8 @@
+=== 0x8888 ===
+
+undefined1 FUN_CODE_8888(void)
+
+{
+  return 0;
+}
+

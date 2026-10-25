@@ -1,0 +1,9 @@
+=== 0x0800 ===
+
+void FUN_CODE_0800(byte param_1,short param_2,byte param_3,char param_4)
+
+{
+  FUN_CODE_0c5c(param_1 & BANK2_R5,param_2,param_3,param_4);
+  return;
+}
+

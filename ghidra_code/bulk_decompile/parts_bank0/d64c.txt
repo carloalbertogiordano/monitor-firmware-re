@@ -1,0 +1,8 @@
+=== 0xd64c ===
+
+undefined1 FUN_CODE_d64c(void)
+
+{
+  return DAT_EXTMEM_e4f0;
+}
+

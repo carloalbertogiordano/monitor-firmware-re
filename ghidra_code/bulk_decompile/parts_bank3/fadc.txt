@@ -1,0 +1,21 @@
+=== 0xfadc ===
+
+void FUN_CODE_fadc(void)
+
+{
+  byte bVar1;
+  byte *pbVar2;
+  
+  pbVar2 = (byte *)0xe6c9;
+  if (DAT_EXTMEM_fe01 == '\0') {
+    DAT_EXTMEM_e6c9 = DAT_EXTMEM_e6c9 & 0xc3 | 0x1b;
+    bVar1 = FUN_CODE_ddd5(0x1b);
+    *pbVar2 = bVar1 | 1;
+    return;
+  }
+  DAT_EXTMEM_e6c9 = DAT_EXTMEM_e6c9 & 0xc0 | 0x24;
+  bVar1 = FUN_CODE_ddd5(0xe4);
+  *pbVar2 = bVar1;
+  return;
+}
+

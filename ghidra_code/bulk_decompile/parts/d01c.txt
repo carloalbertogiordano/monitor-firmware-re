@@ -1,0 +1,10 @@
+=== 0xd01c ===
+
+undefined1 FUN_CODE_d01c(void)
+
+{
+  DAT_EXTMEM_e382 = 0;
+  DAT_EXTMEM_e383 = 0x7f;
+  return 0;
+}
+

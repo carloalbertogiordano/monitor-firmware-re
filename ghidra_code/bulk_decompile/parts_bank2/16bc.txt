@@ -1,0 +1,21 @@
+=== 0x16bc ===
+
+void FUN_CODE_16bc(undefined1 param_1,char param_2)
+
+{
+  if (param_2 == '\x01') {
+    FUN_CODE_19f2(param_1);
+    return;
+  }
+  if (param_2 == '\0') {
+    FUN_CODE_19e5(param_1);
+    return;
+  }
+  if (param_2 == -2) {
+    FUN_CODE_19fe(param_1);
+    return;
+  }
+  FUN_CODE_1a0b(param_1);
+  return;
+}
+

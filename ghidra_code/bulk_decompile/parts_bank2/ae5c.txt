@@ -1,0 +1,30 @@
+=== 0xae5c ===
+
+void FUN_CODE_ae5c(void)
+
+{
+  char cVar1;
+  byte in_PSW;
+  byte bVar2;
+  
+  DAT_EXTMEM_3002 = DAT_EXTMEM_3002 & 0xde;
+  DAT_EXTMEM_3017 = DAT_EXTMEM_3017 & 0xf8;
+  DAT_EXTMEM_3016 = DAT_EXTMEM_3016 & 0x8f;
+  bVar2 = in_PSW & 0xdd;
+  cVar1 = FUN_CODE_c586();
+  if (cVar1 == '\0') {
+    FUN_CODE_c5b2();
+    if ((char)bVar2 < '\0') {
+      FUN_CODE_c4f1();
+    }
+    else {
+      FUN_CODE_c54a();
+    }
+  }
+  else {
+    FUN_CODE_c54b();
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,2,0);
+}
+

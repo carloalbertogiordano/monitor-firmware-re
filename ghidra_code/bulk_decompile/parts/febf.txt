@@ -1,0 +1,9 @@
+=== 0xfebf ===
+
+void thunk_FUN_CODE_09cd(void)
+
+{
+  FUN_CODE_042d(0xfd73);
+  return;
+}
+

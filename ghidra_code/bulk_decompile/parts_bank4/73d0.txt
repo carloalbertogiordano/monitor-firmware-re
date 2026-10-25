@@ -1,0 +1,9 @@
+=== 0x73d0 ===
+
+void FUN_CODE_73d0(byte param_1,byte *param_2)
+
+{
+  *param_2 = *param_2 & 0xef | (param_1 & 1) << 4;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xfd47 ===
+
+void FUN_CODE_fd47(void)
+
+{
+  FUN_CODE_f566(0xe339);
+  FUN_CODE_091f();
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x1a01 ===
+
+undefined1 FUN_CODE_1a01(undefined1 param_1)
+
+{
+  return param_1;
+}
+

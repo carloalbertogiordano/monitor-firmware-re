@@ -1,0 +1,10 @@
+=== 0x455d ===
+
+undefined1 FUN_CODE_455d(void)
+
+{
+  DAT_EXTMEM_e373 = 0;
+  DAT_EXTMEM_e374 = DAT_EXTMEM_e4c6;
+  return 0;
+}
+

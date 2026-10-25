@@ -1,0 +1,28 @@
+=== 0xf5dc ===
+
+void FUN_CODE_f5dc(void)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_b600 = DAT_EXTMEM_b600 & 0x13 | 0xe8;
+  FUN_CODE_e910(0x29,0);
+  FUN_CODE_07f3(0xb5,0x45);
+  FUN_CODE_e910(0x2b,0);
+  FUN_CODE_07f3(0xb6,0xc);
+  FUN_CODE_e912(0x2d,0,0);
+  FUN_CODE_07f3(0xb5,0x4d);
+  FUN_CODE_e912(0x2f,0,0);
+  FUN_CODE_07f3(0xb6,0x16);
+  if ((DAT_INTMEM_2a == DAT_INTMEM_2c) && (DAT_INTMEM_29 == DAT_INTMEM_2b)) {
+    bVar1 = DAT_INTMEM_2e ^ DAT_INTMEM_30;
+    if (bVar1 == 0) {
+      bVar1 = DAT_INTMEM_2d ^ DAT_INTMEM_2f;
+    }
+    if (bVar1 == 0) {
+      return;
+    }
+  }
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xcf8f ===
+
+char FUN_CODE_cf8f(void)
+
+{
+  FUN_CODE_1147(0);
+  return (DAT_EXTMEM_e33b & 0xf) * '\x04';
+}
+

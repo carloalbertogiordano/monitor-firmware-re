@@ -1,0 +1,8 @@
+=== 0xb630 ===
+
+byte FUN_CODE_b630(byte param_1)
+
+{
+  return DAT_EXTMEM_e5a3 >> 3 & 3 ^ param_1;
+}
+

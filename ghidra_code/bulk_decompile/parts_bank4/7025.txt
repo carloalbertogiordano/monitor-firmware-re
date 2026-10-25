@@ -1,0 +1,8 @@
+=== 0x7025 ===
+
+undefined1 FUN_CODE_7025(void)
+
+{
+  return 0;
+}
+

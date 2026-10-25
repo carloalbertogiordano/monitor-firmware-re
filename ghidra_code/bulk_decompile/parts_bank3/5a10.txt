@@ -1,0 +1,45 @@
+=== 0x5a10 ===
+
+void FUN_CODE_5a10(char param_1,byte *param_2,byte param_3,byte param_4)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  
+  nop();
+  P0 = param_1 + '\x01';
+  uVar1 = P0_0;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar3 = ~(*param_2 | 0x4f | param_4 | param_3 | 0x74);
+  bVar3 = bVar3 >> 4 | bVar3 << 4 | 0xc4;
+  cVar2 = FIFLG_0;
+  if (cVar2 != '\0') {
+    FIFLG_0 = 0;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK1_R0 = param_4 + 1;
+  TCON = param_1 + '\x02';
+  DAT_SFR_f8 = param_1 + '\x02';
+  FADDR = bVar3;
+  TCON = BANK1_R0;
+  DAT_INTMEM_22 = param_1;
+  DAT_INTMEM_54 = param_1;
+  FUN_CODE_59d6(bVar3);
+  return;
+}
+

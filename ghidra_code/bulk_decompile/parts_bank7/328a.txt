@@ -1,0 +1,23 @@
+=== 0x328a ===
+
+void FUN_CODE_328a(short param_1,char *param_2,char param_3)
+
+{
+  byte bVar1;
+  
+  FUN_CODE_3143();
+  *param_2 = *param_2 + -1;
+  FUN_CODE_3193();
+  bVar1 = func_0x31d3(param_3 + -1);
+  if (_6_2 != '\x01') {
+                    /* WARNING: Could not recover jumptable at 0x3298. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)(param_1 + (ushort)(bVar1 + 0x32)))();
+    return;
+  }
+                    /* WARNING: Could not recover jumptable at 0x32b9. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_1 + (ushort)bVar1))();
+  return;
+}
+

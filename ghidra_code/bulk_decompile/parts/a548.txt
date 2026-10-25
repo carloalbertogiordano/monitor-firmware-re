@@ -1,0 +1,8 @@
+=== 0xa548 ===
+
+undefined1 FUN_CODE_a548(void)
+
+{
+  return DAT_EXTMEM_e372;
+}
+

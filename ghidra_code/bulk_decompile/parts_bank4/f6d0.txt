@@ -1,0 +1,21 @@
+=== 0xf6d0 ===
+
+void FUN_CODE_f6d0(void)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  FUN_CODE_fe44();
+  FUN_CODE_fcd9();
+  uVar1 = BANK0_R7;
+  FUN_CODE_0523();
+  uVar2 = BANK0_R7;
+  BANK0_R7 = uVar1;
+  FUN_CODE_c7fa(uVar2);
+  _0_0 = 1;
+  FUN_CODE_ed70();
+  FUN_CODE_fb55(1);
+  return;
+}
+

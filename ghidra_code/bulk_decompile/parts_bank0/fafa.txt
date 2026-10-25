@@ -1,0 +1,9 @@
+=== 0xfafa ===
+
+void FUN_CODE_fafa(void)
+
+{
+  DAT_EXTMEM_10af = DAT_EXTMEM_10af & 0x3f;
+  return;
+}
+

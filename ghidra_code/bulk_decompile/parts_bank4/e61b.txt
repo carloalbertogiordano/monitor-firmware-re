@@ -1,0 +1,29 @@
+=== 0xe61b ===
+
+void FUN_CODE_e61b(undefined1 param_1,byte param_2)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e32e = param_1;
+  if ((DAT_EXTMEM_e62b == DAT_EXTMEM_e629) ||
+     (cVar1 = (param_2 < BANK0_R6) << 7, param_2 != BANK0_R6)) {
+    if ((char)((DAT_EXTMEM_e19d >> 3) << 7) < '\0') {
+      if ((char)((DAT_EXTMEM_e19d >> 2) << 7) < '\0') {
+        DAT_EXTMEM_e19c = param_1;
+        return;
+      }
+      FUN_CODE_cb1e(1,1,0xf4);
+    }
+  }
+  else {
+    FUN_CODE_f583();
+    if (-1 < cVar1) {
+      DAT_EXTMEM_e19c = DAT_EXTMEM_e32e;
+      FUN_CODE_f9d4();
+      return;
+    }
+  }
+  return;
+}
+

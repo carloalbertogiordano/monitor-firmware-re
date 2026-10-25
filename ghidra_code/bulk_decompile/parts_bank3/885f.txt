@@ -1,0 +1,9 @@
+=== 0x885f ===
+
+void FUN_CODE_885f(void)
+
+{
+  FUN_CODE_15d7(DAT_EXTMEM_e380,DAT_EXTMEM_e37d,0);
+  return;
+}
+

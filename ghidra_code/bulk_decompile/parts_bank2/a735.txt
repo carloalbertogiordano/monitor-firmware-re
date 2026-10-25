@@ -1,0 +1,11 @@
+=== 0xa735 ===
+
+void FUN_CODE_a735(void)
+
+{
+  FUN_CODE_0853(0xff,0xff,0xff);
+  _0_1 = 1;
+  FUN_CODE_083b();
+  return;
+}
+

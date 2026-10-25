@@ -1,0 +1,11 @@
+=== 0x88d0 ===
+
+void FUN_CODE_88d0(undefined1 param_1)
+
+{
+  DAT_EXTMEM_1daa = param_1;
+  DAT_EXTMEM_1dba = param_1;
+  DAT_EXTMEM_1dca = param_1;
+  return;
+}
+

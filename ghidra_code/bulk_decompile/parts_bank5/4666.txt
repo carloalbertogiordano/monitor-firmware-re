@@ -1,0 +1,8 @@
+=== 0x4666 ===
+
+byte FUN_CODE_4666(void)
+
+{
+  return DAT_EXTMEM_3a09 & 0x9f;
+}
+

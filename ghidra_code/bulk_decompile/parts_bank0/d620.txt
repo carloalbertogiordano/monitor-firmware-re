@@ -1,0 +1,8 @@
+=== 0xd620 ===
+
+undefined1 FUN_CODE_d620(void)
+
+{
+  return DAT_EXTMEM_e4f2;
+}
+

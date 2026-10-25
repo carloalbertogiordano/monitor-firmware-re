@@ -1,0 +1,9 @@
+=== 0xf435 ===
+
+void FUN_CODE_f435(void)
+
+{
+  DAT_EXTMEM_fff2 = DAT_EXTMEM_fff2 | 0x3f;
+  return;
+}
+

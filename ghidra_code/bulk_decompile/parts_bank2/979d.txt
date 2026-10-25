@@ -1,0 +1,9 @@
+=== 0x979d ===
+
+void FUN_CODE_979d(undefined1 *param_1)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(*param_1,param_1[1]);
+}
+

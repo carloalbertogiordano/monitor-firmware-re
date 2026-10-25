@@ -1,0 +1,8 @@
+=== 0x994d ===
+
+char FUN_CODE_994d(char param_1)
+
+{
+  return -0x1d - (((0xedU < (byte)(param_1 * '\x02')) << 7) >> 7);
+}
+

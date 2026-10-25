@@ -1,0 +1,9 @@
+=== 0xa812 ===
+
+void FUN_CODE_a812(void)
+
+{
+  FUN_CODE_fee1(0,1,0);
+  return;
+}
+

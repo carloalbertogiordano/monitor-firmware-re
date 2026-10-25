@@ -1,0 +1,9 @@
+=== 0xcbc0 ===
+
+void FUN_CODE_cbc0(void)
+
+{
+  FUN_CODE_febf(0,0);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x3ff4 ===
+
+undefined1 FUN_CODE_3ff4(void)
+
+{
+  DAT_EXTMEM_b6d8 = DAT_EXTMEM_e35b;
+  return DAT_EXTMEM_b6d9;
+}
+

@@ -1,0 +1,9 @@
+=== 0x0a39 ===
+
+void FUN_CODE_0a39(void)
+
+{
+  FUN_CODE_041b(&LAB_CODE_f614);
+  return;
+}
+

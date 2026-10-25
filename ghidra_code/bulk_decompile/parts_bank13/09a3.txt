@@ -1,0 +1,13 @@
+=== 0x09a3 ===
+
+void FUN_CODE_09a3(byte *param_1,char *param_2,byte param_3,char param_4,char param_5,byte param_6)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_0eb1(param_5);
+  FUN_CODE_0ab9(bVar1);
+  FUN_CODE_0ec0(param_1,param_2,param_3,param_4,param_6);
+  return;
+}
+

@@ -1,0 +1,33 @@
+=== 0x0379 ===
+
+void FUN_CODE_0379(void)
+
+{
+  bool bVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e346 = '\x02';
+  DAT_EXTMEM_e347 = 'X';
+  while( true ) {
+    if ((DAT_EXTMEM_ff5d & 1) == 1) {
+      DAT_EXTMEM_ff5d = DAT_EXTMEM_ff5d | 7;
+      return;
+    }
+    cVar2 = DAT_EXTMEM_e346;
+    if (DAT_EXTMEM_e346 == '\0') {
+      cVar2 = DAT_EXTMEM_e347;
+    }
+    if (cVar2 == '\0') break;
+    bVar1 = DAT_EXTMEM_e347 != '\0';
+    DAT_EXTMEM_e347 = DAT_EXTMEM_e347 + -1;
+    DAT_EXTMEM_e346 = DAT_EXTMEM_e346 + (-1 - ((bVar1 << 7) >> 7));
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+  DAT_EXTMEM_ff55 = DAT_EXTMEM_ff55 & 0x7f | 0x80;
+  DAT_EXTMEM_ff57 = DAT_EXTMEM_ff57 & 0xbf;
+  return;
+}
+

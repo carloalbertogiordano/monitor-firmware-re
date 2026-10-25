@@ -1,0 +1,31 @@
+=== 0x39c6 ===
+
+/* WARNING: Removing unreachable block (CODE,0x3a29) */
+
+byte FUN_CODE_39c6(void)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  char cVar4;
+  
+  DAT_EXTMEM_e3e7 = 0;
+  DAT_EXTMEM_e3e8 = 0;
+  FUN_CODE_14a4(DAT_EXTMEM_e505,DAT_EXTMEM_e506,DAT_EXTMEM_e507,DAT_EXTMEM_e508,0,0,0,2);
+  bVar3 = 0xd0;
+  bVar2 = 0xfa;
+  FUN_CODE_152f(BANK0_R4,BANK0_R5,BANK0_R6,BANK0_R7,1,0x8d);
+  DAT_EXTMEM_e3e8 = bVar3 - 2;
+  bVar3 = 0xff - (((1 < bVar3) << 7) >> 7);
+  cVar4 = CARRY1(bVar2,bVar3) << 7;
+  DAT_EXTMEM_e3e7 = bVar2 + bVar3;
+  FUN_CODE_45b0();
+  if (cVar4 < '\0') {
+    bVar1 = CARRY1(DAT_EXTMEM_e3e8,DAT_EXTMEM_e3e8);
+    DAT_EXTMEM_e3e8 = DAT_EXTMEM_e3e8 * '\x02';
+    DAT_EXTMEM_e3e7 = DAT_EXTMEM_e3e7 << 1 | bVar1;
+  }
+  return DAT_EXTMEM_e3e7;
+}
+

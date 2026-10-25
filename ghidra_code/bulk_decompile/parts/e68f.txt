@@ -1,0 +1,49 @@
+=== 0xe68f ===
+
+void FUN_CODE_e68f(byte param_1,byte param_2)
+
+{
+  byte bVar1;
+  char cVar2;
+  char in_PSW;
+  char cVar3;
+  
+  FUN_CODE_d60c();
+  if (in_PSW < '\0') {
+    return;
+  }
+  FUN_CODE_fde9();
+  cVar3 = (2 < param_2) << 7;
+  if (param_2 == 3) {
+    FUN_CODE_e6ce();
+    if (-1 < cVar3) {
+      return;
+    }
+    FUN_CODE_fd6e();
+    cVar2 = FUN_CODE_fbe1();
+    if (-1 < cVar3) {
+      return;
+    }
+  }
+  else if (param_2 == 4) {
+    FUN_CODE_fdad();
+    bVar1 = 9 - (((param_2 < 0xc4) << 7) >> 7);
+    cVar2 = param_1 - bVar1;
+    if (bVar1 <= param_1) {
+      return;
+    }
+  }
+  else {
+    cVar3 = (0xfd < param_2 - 4) << 7;
+    cVar2 = param_2 - 2;
+    if (cVar2 == '\0') {
+      cVar2 = FUN_CODE_e6ce();
+      if (-1 < cVar3) {
+        return;
+      }
+    }
+  }
+  FUN_CODE_0ce5(cVar2);
+  return;
+}
+

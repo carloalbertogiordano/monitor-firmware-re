@@ -1,0 +1,10 @@
+=== 0xd615 ===
+
+void FUN_CODE_d615(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e407 = param_1;
+  DAT_EXTMEM_e408 = 0;
+  return;
+}
+

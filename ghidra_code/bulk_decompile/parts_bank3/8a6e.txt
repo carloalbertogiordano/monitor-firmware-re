@@ -1,0 +1,13 @@
+=== 0x8a6e ===
+
+undefined1 FUN_CODE_8a6e(void)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  
+  bVar1 = FUN_CODE_127f();
+  uVar2 = FUN_CODE_132c(0,6,0,bVar1 >> 3);
+  return uVar2;
+}
+

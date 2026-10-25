@@ -1,0 +1,11 @@
+=== 0x9c53 ===
+
+void FUN_CODE_9c53(void)
+
+{
+  DAT_EXTMEM_e3c6 = 0;
+  DAT_EXTMEM_e3c7 = 0;
+  DAT_EXTMEM_e3c8 = 0x29;
+  return;
+}
+

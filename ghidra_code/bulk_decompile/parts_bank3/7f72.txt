@@ -1,0 +1,12 @@
+=== 0x7f72 ===
+
+void thunk_FUN_CODE_26eb(void)
+
+{
+  nop();
+  nop();
+  nop();
+  thunk_FUN_CODE_26eb();
+  return;
+}
+

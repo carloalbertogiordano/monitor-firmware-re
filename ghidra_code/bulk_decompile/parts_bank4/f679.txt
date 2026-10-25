@@ -1,0 +1,14 @@
+=== 0xf679 ===
+
+void FUN_CODE_f679(char param_1)
+
+{
+  char cVar1;
+  
+  if ((param_1 == '\x01') &&
+     (cVar1 = FUN_CODE_8d30(), (bool)(DAT_EXTMEM_e683 & 1) != (cVar1 == '\0'))) {
+    return;
+  }
+  return;
+}
+

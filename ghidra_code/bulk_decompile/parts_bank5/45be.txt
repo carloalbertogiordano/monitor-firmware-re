@@ -1,0 +1,11 @@
+=== 0x45be ===
+
+void FUN_CODE_45be(void)
+
+{
+  if ((DAT_EXTMEM_3a0a & 1) == 1) {
+    return;
+  }
+  return;
+}
+

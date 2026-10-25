@@ -1,0 +1,9 @@
+=== 0xdbc7 ===
+
+byte FUN_CODE_dbc7(void)
+
+{
+  FUN_CODE_082f();
+  return DAT_EXTMEM_0028 & 0xf7;
+}
+

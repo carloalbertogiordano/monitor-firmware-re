@@ -1,0 +1,9 @@
+=== 0xe93f ===
+
+char FUN_CODE_e93f(char *param_1)
+
+{
+  *param_1 = *param_1 + '\x01';
+  return *param_1 + -0x2e;
+}
+

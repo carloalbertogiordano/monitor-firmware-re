@@ -1,0 +1,8 @@
+=== 0xbf41 ===
+
+undefined1 FUN_CODE_bf41(void)
+
+{
+  return 0;
+}
+

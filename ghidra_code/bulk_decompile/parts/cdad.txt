@@ -1,0 +1,13 @@
+=== 0xcdad ===
+
+void FUN_CODE_cdad(byte param_1,byte param_2,char param_3)
+
+{
+  byte bVar1;
+  
+  bVar1 = (byte)((ushort)param_1 * 2);
+  FUN_CODE_1298(1,param_2 + bVar1,
+                param_3 + ((char)((ushort)param_1 * 2 >> 8) - ((CARRY1(param_2,bVar1) << 7) >> 7)));
+  return;
+}
+

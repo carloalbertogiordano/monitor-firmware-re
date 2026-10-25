@@ -1,0 +1,16 @@
+=== 0x6180 ===
+
+void thunk_FUN_CODE_6000(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_6000();
+  return;
+}
+

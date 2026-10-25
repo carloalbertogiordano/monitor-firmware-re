@@ -1,0 +1,14 @@
+=== 0x7dc0 ===
+
+void FUN_CODE_7dc0(void)
+
+{
+  short sVar1;
+  
+  sVar1 = (ushort)(DAT_EXTMEM_e407 & 0x7f) * 0x20;
+  DAT_EXTMEM_e409 = (char)((ushort)sVar1 >> 8);
+  DAT_EXTMEM_e40a = (byte)sVar1 | DAT_EXTMEM_e408 >> 3;
+  DAT_EXTMEM_ffea = DAT_EXTMEM_ffea | 0x40;
+  return;
+}
+

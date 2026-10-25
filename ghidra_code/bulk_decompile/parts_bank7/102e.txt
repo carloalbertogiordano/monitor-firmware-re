@@ -1,0 +1,81 @@
+=== 0x102e ===
+
+/* WARNING: Instruction at (CODE,0x300a) overlaps instruction at (CODE,0x3009)
+    */
+/* WARNING: Removing unreachable block (CODE,0x3021) */
+/* WARNING: Removing unreachable block (CODE,0x3027) */
+/* WARNING: Removing unreachable block (CODE,0x302d) */
+/* WARNING: Removing unreachable block (CODE,0x302a) */
+/* WARNING: Removing unreachable block (CODE,0x303d) */
+/* WARNING: Removing unreachable block (CODE,0x300a) */
+/* WARNING: Removing unreachable block (CODE,0x3011) */
+
+byte * FUN_CODE_102e(byte *param_1,char *param_2,char *param_3,char param_4,undefined1 param_5,
+                    char param_6,byte param_7)
+
+{
+  byte *pbVar1;
+  byte bVar2;
+  undefined1 uVar3;
+  byte bVar4;
+  char cVar5;
+  byte *pbVar6;
+  char in_PSW;
+  
+  do {
+    nop();
+    nop();
+    bVar4 = (byte)param_1 >> 1 | (char)param_1 << 7;
+    nop();
+    if (bVar4 != 0) {
+      nop();
+      bVar2 = TCON;
+      TCON = bVar2 & bVar4;
+      bVar2 = TR1;
+      TR1 = bVar2 ^ 1;
+      cVar5 = FUN_CODE_9429(param_2 + bVar4 + (char)param_3);
+      uVar3 = RB8;
+      P2_0 = 1;
+      return (byte *)(param_3 + param_4 + cVar5);
+    }
+    pbVar6 = (byte *)(((byte)param_1 >> 1) * -0x80);
+    if (_7_5 == '\0') {
+      if (pbVar6 != (byte *)0x0) {
+        _0_1 = 0;
+        if (_a_2 == '\x01') {
+          return pbVar6;
+        }
+        cVar5 = OV;
+        if (cVar5 != '\x01') {
+          pbVar1 = (byte *)(param_6 - (in_PSW >> 7));
+          *(byte **)ZEXT12(param_3) =
+               pbVar6 + (char)(param_3 + (-(((pbVar6 < pbVar1) << 7) >> 7) - (char)pbVar1));
+          pbVar6 = (byte *)FUN_CODE_353a(param_5);
+          return pbVar6;
+        }
+        uVar3 = TXSTAT;
+        cVar5 = TXSTAT;
+        bVar4 = ((((byte)(pbVar6 + (char)(param_1 + ('1' - (in_PSW >> 7)))) | *pbVar6) + 0xa2 |
+                 param_7) + BANK2_R2 & DAT_INTMEM_25) + cVar5;
+        DAT_INTMEM_26 = DAT_INTMEM_26 ^ bVar4;
+        DAT_INTMEM_69 = DAT_INTMEM_69 & bVar4;
+        _d_7 = 0;
+        return (byte *)(bVar4 + *pbVar6 + *param_3);
+      }
+      cVar5 = P0;
+      P0 = cVar5 + '\x01';
+      pbVar6 = (byte *)0x0;
+    }
+    else {
+      _7_5 = '\0';
+    }
+    nop();
+    nop();
+    *param_2 = *param_2 + '\x01';
+    param_1 = pbVar6;
+    if (pbVar6 == (byte *)0x0) {
+      param_3 = param_3 + '\x01';
+    }
+  } while( true );
+}
+

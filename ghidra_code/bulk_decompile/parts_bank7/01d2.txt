@@ -1,0 +1,22 @@
+=== 0x01d2 ===
+
+void FUN_CODE_01d2(short param_1,undefined1 *param_2,undefined1 param_3,char param_4,char param_5)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  
+  BANK3_R2 = *param_2;
+  bVar1 = thunk_FUN_CODE_007c();
+  bVar3 = 0;
+  DAT_INTMEM_38 = param_3;
+  DAT_INTMEM_39 = param_5;
+  cVar2 = FUN_CODE_0439(*(byte *)((ushort)bVar1 + 0x7e6) >> 1 |
+                        *(byte *)((ushort)bVar1 + 0x7e6) << 7,param_4 + -1);
+                    /* WARNING: Could not recover jumptable at 0x07f1. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_1 + (ushort)((cVar2 << 1 | bVar3 >> 7) - (DAT_INTMEM_39 - (cVar2 >> 7)))))();
+  return;
+}
+

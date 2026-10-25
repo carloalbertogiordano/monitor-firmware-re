@@ -1,0 +1,10 @@
+=== 0x97d8 ===
+
+void FUN_CODE_97d8(void)
+
+{
+  FUN_CODE_15e8();
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe35d);
+}
+

@@ -1,0 +1,13 @@
+=== 0x73a3 ===
+
+undefined1 FUN_CODE_73a3(void)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_133e();
+  uVar1 = 0x24;
+  FUN_CODE_132c(0,0x24);
+  return uVar1;
+}
+

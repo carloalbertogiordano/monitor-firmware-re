@@ -1,0 +1,66 @@
+=== 0x4e8b ===
+
+void FUN_CODE_4e8b(char *param_1,char param_2,undefined1 param_3)
+
+{
+  byte bVar1;
+  char in_PSW;
+  
+  *param_1 = *param_1 + '\x01';
+  BANK0_R7 = param_3;
+  bVar1 = FUN_CODE_4807(param_1 + -1,param_2 + '\x01');
+  FUN_CODE_4f47(bVar1 | 0xba,0xf0);
+  if (-1 < in_PSW) {
+    if (_0_0 != '\0') {
+      _0_0 = '\0';
+    }
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    thunk_FUN_CODE_26eb(BANK3_R7);
+    return;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  thunk_FUN_CODE_26eb(BANK3_R7);
+  return;
+}
+

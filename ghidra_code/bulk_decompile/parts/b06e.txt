@@ -1,0 +1,8 @@
+=== 0xb06e ===
+
+char FUN_CODE_b06e(void)
+
+{
+  return DAT_INTMEM_2a * '\x03';
+}
+

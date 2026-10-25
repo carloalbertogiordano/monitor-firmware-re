@@ -1,0 +1,9 @@
+=== 0xdaba ===
+
+char FUN_CODE_daba(void)
+
+{
+  return DAT_EXTMEM_e537 + (DAT_EXTMEM_e539 - ((CARRY1(DAT_EXTMEM_e538,DAT_EXTMEM_e53a) << 7) >> 7))
+  ;
+}
+

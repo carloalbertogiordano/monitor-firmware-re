@@ -1,0 +1,18 @@
+=== 0x160d ===
+
+void FUN_CODE_160d(char param_1,short param_2,undefined1 *param_3,undefined1 *param_4)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  
+  DAT_INTMEM_28 = *param_4;
+  bVar1 = P1_0;
+  P1_0 = bVar1 ^ 1;
+  bVar1 = SBUF;
+  SBUF = bVar1 | (byte)(param_4 + param_1);
+  uVar2 = ES;
+  FUN_CODE_b52b(param_2,param_3);
+  return;
+}
+

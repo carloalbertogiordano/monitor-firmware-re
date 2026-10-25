@@ -1,0 +1,8 @@
+=== 0xacc8 ===
+
+undefined1 FUN_CODE_acc8(void)
+
+{
+  return 0;
+}
+

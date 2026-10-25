@@ -1,0 +1,9 @@
+=== 0xd5dc ===
+
+void FUN_CODE_d5dc(byte param_1)
+
+{
+  DAT_EXTMEM_e60a = (DAT_EXTMEM_e60a & 0xfc | param_1) + 1;
+  return;
+}
+

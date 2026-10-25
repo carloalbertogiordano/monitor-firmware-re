@@ -1,0 +1,8 @@
+=== 0xaf80 ===
+
+undefined1 FUN_CODE_af80(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,15 @@
+=== 0xc7e3 ===
+
+void FUN_CODE_c7e3(undefined1 param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = DAT_EXTMEM_e6c9 & 3;
+  FUN_CODE_f17a(1,0);
+  DAT_EXTMEM_e33c = param_1;
+  DAT_EXTMEM_e33d = bVar1;
+  FUN_CODE_f17a(1,0,DAT_EXTMEM_e6c9 >> 2 & 3);
+  return;
+}
+

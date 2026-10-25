@@ -1,0 +1,11 @@
+=== 0x45b0 ===
+
+void FUN_CODE_45b0(void)
+
+{
+  if ((DAT_EXTMEM_3a0a & 2) == 2) {
+    return;
+  }
+  return;
+}
+

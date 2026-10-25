@@ -1,0 +1,9 @@
+=== 0x472b ===
+
+void FUN_CODE_472b(void)
+
+{
+  DAT_EXTMEM_e199 = 0;
+  return;
+}
+

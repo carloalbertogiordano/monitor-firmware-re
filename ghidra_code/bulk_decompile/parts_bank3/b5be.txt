@@ -1,0 +1,8 @@
+=== 0xb5be ===
+
+void FUN_CODE_b5be(void)
+
+{
+  return;
+}
+

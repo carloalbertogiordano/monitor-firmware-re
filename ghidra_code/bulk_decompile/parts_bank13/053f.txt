@@ -1,0 +1,20 @@
+=== 0x053f ===
+
+void FUN_CODE_053f(byte param_1,short param_2,char *param_3,byte param_4,byte param_5,byte param_6)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char in_PSW;
+  
+  bVar2 = *param_3 - (in_PSW >> 7);
+  bVar1 = (param_1 & param_6) + bVar2;
+  bVar2 = (*(byte *)((ushort)((bVar1 >> 1 | CARRY1(param_1 & param_6,bVar2) << 7) ^ DAT_INTMEM_36) +
+                    0x546) ^ param_5) + (*param_3 - ((char)(bVar1 * -0x80) >> 7));
+  *(byte *)(ushort)param_4 = bVar2;
+                    /* WARNING: Could not recover jumptable at 0x0549. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + 1 + (ushort)bVar2))();
+  return;
+}
+

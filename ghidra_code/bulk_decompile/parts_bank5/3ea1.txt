@@ -1,0 +1,10 @@
+=== 0x3ea1 ===
+
+void FUN_CODE_3ea1(undefined1 param_1)
+
+{
+  DAT_EXTMEM_07d8 = param_1;
+  _0_2 = 1;
+  return;
+}
+

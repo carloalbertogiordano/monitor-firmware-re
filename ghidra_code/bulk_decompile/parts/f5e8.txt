@@ -1,0 +1,17 @@
+=== 0xf5e8 ===
+
+void FUN_CODE_f5e8(undefined1 param_1,undefined1 param_2,char param_3)
+
+{
+  if (param_3 == '\x03') {
+    DAT_EXTMEM_e5cb = BANK0_R5;
+    DAT_EXTMEM_e5ca = param_1;
+  }
+  else if (param_3 == '\x01') {
+    DAT_EXTMEM_e5b2 = param_1;
+    DAT_EXTMEM_e5b3 = param_2;
+    return;
+  }
+  return;
+}
+

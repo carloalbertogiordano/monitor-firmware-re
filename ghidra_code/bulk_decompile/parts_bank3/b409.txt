@@ -1,0 +1,8 @@
+=== 0xb409 ===
+
+char FUN_CODE_b409(void)
+
+{
+  return (((DAT_EXTMEM_b7c7 & 7) < 3) << 7) >> 7;
+}
+

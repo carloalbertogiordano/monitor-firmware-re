@@ -1,0 +1,10 @@
+=== 0xd504 ===
+
+void FUN_CODE_d504(void)
+
+{
+  DAT_EXTMEM_e38a = 0x80;
+  FUN_CODE_fe61(1,1,0);
+  return;
+}
+

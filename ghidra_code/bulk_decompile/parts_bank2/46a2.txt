@@ -1,0 +1,10 @@
+=== 0x46a2 ===
+
+undefined1 FUN_CODE_46a2(void)
+
+{
+  DAT_EXTMEM_e375 = 0;
+  DAT_EXTMEM_e376 = 100;
+  return 0;
+}
+

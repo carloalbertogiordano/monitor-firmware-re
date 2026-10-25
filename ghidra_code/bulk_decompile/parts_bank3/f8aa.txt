@@ -1,0 +1,36 @@
+=== 0xf8aa ===
+
+void FUN_CODE_f8aa(char param_1)
+
+{
+  byte bVar1;
+  
+  if (param_1 == '\x01') {
+    if (BANK0_R7 == '\0') {
+      bVar1 = FUN_CODE_e92d();
+      DAT_EXTMEM_e38a = bVar1 | 1;
+    }
+    else {
+      if (BANK0_R7 != '\x01') {
+        return;
+      }
+      bVar1 = FUN_CODE_e92d();
+      DAT_EXTMEM_e38a = bVar1 | 2;
+    }
+  }
+  else if (BANK0_R7 == '\0') {
+    bVar1 = FUN_CODE_e92d();
+    DAT_EXTMEM_e38a = bVar1 & 0xfe;
+  }
+  else {
+    if (BANK0_R7 != '\x01') {
+      return;
+    }
+    bVar1 = 0;
+    FUN_CODE_fee1(5,2);
+    DAT_EXTMEM_e38a = bVar1 & 0xfd;
+  }
+  FUN_CODE_febf(0);
+  return;
+}
+

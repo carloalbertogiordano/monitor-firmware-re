@@ -1,0 +1,18 @@
+=== 0x004b ===
+
+void FUN_CODE_004b(char param_1,char *param_2,char *param_3,char param_4)
+
+{
+  char in_PSW;
+  
+  param_1 = param_1 + (param_4 * '\a' - (in_PSW >> 7));
+  BANK3_R7 = BANK3_R7 + -1;
+  nop();
+  nop();
+  *param_3 = *param_3 + '\x01';
+  nop();
+  *param_2 = param_1 + param_4;
+  FUN_CODE_4032(param_3 + -1,param_1);
+  return;
+}
+

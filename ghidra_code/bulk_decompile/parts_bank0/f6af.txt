@@ -1,0 +1,12 @@
+=== 0xf6af ===
+
+void FUN_CODE_f6af(undefined1 *param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = FUN_CODE_1787(param_3,param_2);
+  *param_1 = uVar1;
+  return;
+}
+

@@ -1,0 +1,17 @@
+=== 0xf7de ===
+
+void FUN_CODE_f7de(byte param_1)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_0649();
+  if (in_PSW < '\0') {
+    FUN_CODE_067f();
+    if ((DAT_EXTMEM_e511 >> 3 & 7) != param_1) {
+      return;
+    }
+  }
+  return;
+}
+

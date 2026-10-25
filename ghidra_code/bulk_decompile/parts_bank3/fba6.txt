@@ -1,0 +1,8 @@
+=== 0xfba6 ===
+
+byte FUN_CODE_fba6(char *param_1,byte param_2)
+
+{
+  return *param_1 << 4 | param_2 & 0xf;
+}
+

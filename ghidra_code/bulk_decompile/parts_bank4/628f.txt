@@ -1,0 +1,10 @@
+=== 0x628f ===
+
+void FUN_CODE_628f(void)
+
+{
+  _0_2 = 1;
+  FUN_CODE_10ab(0,0,0,1);
+  return;
+}
+

@@ -1,0 +1,14 @@
+=== 0xce03 ===
+
+void FUN_CODE_ce03(void)
+
+{
+  FUN_CODE_f8ac(1,0xf4);
+  DAT_EXTMEM_fe29 = 0;
+  DAT_EXTMEM_fe2a = 1;
+  FUN_CODE_f8ac(1,0xf4);
+  DAT_EXTMEM_fe29 = 1;
+  DAT_EXTMEM_fe2a = 0;
+  return;
+}
+

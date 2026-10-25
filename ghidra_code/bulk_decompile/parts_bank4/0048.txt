@@ -1,0 +1,11 @@
+=== 0x0048 ===
+
+undefined1 FUN_CODE_0048(void)
+
+{
+  undefined1 uStackX_0;
+  
+  DAT_EXTMEM_e6c5 = DAT_EXTMEM_fff4;
+  return uStackX_0;
+}
+

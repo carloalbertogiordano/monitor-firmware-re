@@ -1,0 +1,9 @@
+=== 0xfe80 ===
+
+void FUN_CODE_fe80(void)
+
+{
+  DAT_EXTMEM_e61e = 0;
+  return;
+}
+

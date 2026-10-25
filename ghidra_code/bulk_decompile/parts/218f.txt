@@ -1,0 +1,22 @@
+=== 0x218f ===
+
+undefined1 FUN_CODE_218f(undefined1 param_1,char param_2)
+
+{
+  DAT_EXTMEM_e6dd = DAT_EXTMEM_fff4;
+  FUN_CODE_0559();
+  if (param_2 != '\x01') {
+    FUN_CODE_055f();
+    FUN_CODE_0565();
+    if ((DAT_EXTMEM_e6f2 >> 4 == 3) || (DAT_EXTMEM_e6f2 >> 4 == 1)) {
+      FUN_CODE_0571();
+    }
+    else {
+      FUN_CODE_056b();
+    }
+    FUN_CODE_0577();
+  }
+  DAT_EXTMEM_fff4 = DAT_EXTMEM_e6dd;
+  return param_1;
+}
+

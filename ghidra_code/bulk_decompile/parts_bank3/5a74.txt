@@ -1,0 +1,10 @@
+=== 0x5a74 ===
+
+void FUN_CODE_5a74(void)
+
+{
+  nop();
+  nop();
+  return;
+}
+

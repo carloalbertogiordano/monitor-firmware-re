@@ -1,0 +1,37 @@
+=== 0x69fd ===
+
+void FUN_CODE_69fd(char param_1,byte param_2,byte param_3,char param_4,byte param_5,byte param_6)
+
+{
+  undefined1 uVar1;
+  byte *pbVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  char in_PSW;
+  undefined1 uStackX_0;
+  
+  DAT_EXTMEM_e32e = 0;
+  FUN_CODE_dfc8();
+  if (-1 < in_PSW) {
+    FUN_CODE_6d76();
+    return;
+  }
+  bVar4 = FUN_CODE_1761(DAT_EXTMEM_e42d);
+  uVar1 = BANK2_R0;
+  BANK0_R2 = BANK0_R2 ^ 0x6b;
+  bVar5 = bVar4 ^ param_2 ^ param_3;
+  DAT_INTMEM_6b = DAT_INTMEM_6b + '\x01';
+  bVar4 = BANK0_R6 - (in_PSW >> 7);
+  pbVar2 = (byte *)(param_1 + '\x01');
+  bVar3 = param_4 + 1;
+  BANK2_R2 = uStackX_0;
+  BANK1_R6 = ((bVar5 + bVar4 ^ param_3 | param_3) ^ param_3 | param_6) ^ param_5 ^ param_3;
+  bVar6 = BANK1_R6 - 1;
+  *pbVar2 = *pbVar2 - 1;
+  FUN_CODE_f080(((bVar6 ^ bVar3 | 0xe) ^ bVar3 ^ *pbVar2 ^ bVar3) +
+                (DAT_INTMEM_44 - ((CARRY1(bVar5,bVar4) << 7) >> 7)),param_1,uVar1);
+  return;
+}
+

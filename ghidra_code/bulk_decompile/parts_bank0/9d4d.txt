@@ -1,0 +1,8 @@
+=== 0x9d4d ===
+
+byte FUN_CODE_9d4d(byte param_1)
+
+{
+  return param_1 >> 6;
+}
+

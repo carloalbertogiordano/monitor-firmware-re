@@ -1,0 +1,19 @@
+=== 0x96fd ===
+
+void FUN_CODE_96fd(byte param_1,char param_2,char param_3,char param_4,char param_5,char param_6,
+                  byte param_7,byte param_8)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  char in_PSW;
+  
+  bVar1 = param_5 - (in_PSW >> 7);
+  bVar2 = param_4 - (((param_1 < bVar1) << 7) >> 7);
+  bVar3 = param_3 - (((param_8 < bVar2) << 7) >> 7);
+  FUN_CODE_15e8(4,param_6 - (param_2 - (((param_7 < bVar3) << 7) >> 7)),param_7 - bVar3,
+                param_8 - bVar2,param_1 - bVar1);
+  return;
+}
+

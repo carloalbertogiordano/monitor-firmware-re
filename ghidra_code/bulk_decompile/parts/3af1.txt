@@ -1,0 +1,28 @@
+=== 0x3af1 ===
+
+void FUN_CODE_3af1(void)
+
+{
+  if (DAT_EXTMEM_e3e3 == 0) {
+    DAT_EXTMEM_e3e4 = 0xe4;
+  }
+  else if (DAT_EXTMEM_e3e3 == 1) {
+    DAT_EXTMEM_e3e4 = 0xe8;
+  }
+  else if ((DAT_EXTMEM_e3e3 == 2) || (DAT_EXTMEM_e3e3 == 3)) {
+    DAT_EXTMEM_e3e4 = 0xec;
+  }
+  else if (((DAT_EXTMEM_e3e3 < 4) << 7 < '\0') || (7 < DAT_EXTMEM_e3e3)) {
+    DAT_EXTMEM_e3e4 = 0xa4;
+  }
+  else {
+    DAT_EXTMEM_e3e4 = 0xf8;
+  }
+  DAT_EXTMEM_e3e5 = 0x40;
+  _0_5 = 0;
+  bus_write_variant_a_ff64_65(0x40,DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x85d2 ===
+
+char FUN_CODE_85d2(byte param_1)
+
+{
+  char in_PSW;
+  
+  return ((param_1 < 2U - (in_PSW >> 7)) << 7) >> 7;
+}
+

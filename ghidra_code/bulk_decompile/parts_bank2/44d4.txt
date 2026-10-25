@@ -1,0 +1,10 @@
+=== 0x44d4 ===
+
+void FUN_CODE_44d4(undefined1 param_1,short param_2)
+
+{
+  *(undefined1 *)(param_2 + 1) = param_1;
+  *(undefined1 *)(param_2 + 2) = 0;
+  return;
+}
+

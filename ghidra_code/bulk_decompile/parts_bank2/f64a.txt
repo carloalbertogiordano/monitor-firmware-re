@@ -1,0 +1,23 @@
+=== 0xf64a ===
+
+byte FUN_CODE_f64a(byte param_1,byte param_2,byte param_3)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar2 = FUN_CODE_1420(0xb);
+  if (bVar2 == 0) {
+    bVar2 = param_1 ^ 5;
+  }
+  if (bVar2 == 0) {
+    bVar2 = FUN_CODE_1420(0xd);
+    if ((((bVar2 == 0) && (bVar2 = param_1, param_1 == 4)) &&
+        (bVar1 = 4 - (((param_3 < 0xa6) << 7) >> 7), bVar2 = param_2 - bVar1, bVar1 <= param_2)) &&
+       (bVar1 = 4 - (((param_3 < 0xbb) << 7) >> 7), bVar2 = param_2 - bVar1, param_2 < bVar1)) {
+      return bVar2;
+    }
+  }
+  return bVar2;
+}
+

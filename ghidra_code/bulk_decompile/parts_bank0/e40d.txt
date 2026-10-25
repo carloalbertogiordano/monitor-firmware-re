@@ -1,0 +1,37 @@
+=== 0xe40d ===
+
+void FUN_CODE_e40d(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  FUN_CODE_be18(0xe32f);
+  DAT_INTMEM_6d = 0;
+  DAT_INTMEM_6e = 0;
+  DAT_INTMEM_6f = 0;
+  DAT_EXTMEM_e337 = 0;
+  DAT_EXTMEM_e338 = 0;
+  DAT_EXTMEM_e3c6 = 1;
+  DAT_EXTMEM_e3c7 = 0xe3;
+  DAT_EXTMEM_e3c8 = 0x37;
+  FUN_CODE_0bd1(0,2,0xff,0xfe,1);
+  DAT_INTMEM_29 = 1;
+  DAT_INTMEM_2a = 0x3c;
+  bVar1 = DAT_EXTMEM_e337;
+  bVar2 = DAT_EXTMEM_e338;
+  FUN_CODE_be06(0xe334,DAT_EXTMEM_e337,DAT_EXTMEM_e338);
+  FUN_CODE_be06(bVar2 >> 4 | bVar1 << 4,0xe333);
+  bVar1 = DAT_EXTMEM_e337;
+  FUN_CODE_bef3(DAT_EXTMEM_e337,0xe336);
+  FUN_CODE_bef3(bVar1 >> 4 | bVar1 << 4,0xe335);
+  DAT_INTMEM_2e = DAT_EXTMEM_e334;
+  DAT_INTMEM_2d = DAT_EXTMEM_e333;
+  DAT_INTMEM_2c = DAT_EXTMEM_e336;
+  DAT_INTMEM_2b = DAT_EXTMEM_e335;
+  DAT_INTMEM_2f = 0xff;
+  FUN_CODE_bc23(DAT_EXTMEM_e330,DAT_EXTMEM_e32f);
+  FUN_CODE_b224(DAT_EXTMEM_e332);
+  return;
+}
+

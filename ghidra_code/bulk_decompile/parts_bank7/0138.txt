@@ -1,0 +1,32 @@
+=== 0x0138 ===
+
+/* WARNING: Instruction at (CODE,0x0143) overlaps instruction at (CODE,0x0142)
+    */
+
+char FUN_CODE_0138(char param_1,char *param_2,byte param_3,char param_4,char param_5,char param_6)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte in_PSW;
+  
+  bVar1 = param_1 + 1;
+  if (_a_4 != '\0') {
+    _a_4 = 0;
+    cVar2 = FUN_CODE_0774(bVar1 >> 1 | in_PSW & 0x80);
+    return cVar2;
+  }
+  DAT_EXTMEM_8209 = bVar1;
+  if (param_6 == '\x0e') {
+    cVar2 = FUN_CODE_0774(bVar1 >> 1,param_5 + '\x01');
+    return cVar2;
+  }
+  *(byte *)(ushort)param_3 = bVar1;
+  if (param_4 == '\x01') {
+    *param_2 = *param_2 + -1;
+    return bVar1 + param_6 * '\x03';
+  }
+  cVar2 = FUN_CODE_8244();
+  return cVar2;
+}
+

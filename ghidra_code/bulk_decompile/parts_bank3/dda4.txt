@@ -1,0 +1,10 @@
+=== 0xdda4 ===
+
+void FUN_CODE_dda4(void)
+
+{
+  DAT_EXTMEM_b765 = DAT_EXTMEM_b765 & 0xf0 | 0xc;
+  DAT_EXTMEM_b761 = DAT_EXTMEM_b761 & 0xdf | 0x20;
+  return;
+}
+

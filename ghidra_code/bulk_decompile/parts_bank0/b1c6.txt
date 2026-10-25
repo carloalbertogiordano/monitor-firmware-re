@@ -1,0 +1,8 @@
+=== 0xb1c6 ===
+
+char FUN_CODE_b1c6(char param_1)
+
+{
+  return param_1 * '\x03';
+}
+

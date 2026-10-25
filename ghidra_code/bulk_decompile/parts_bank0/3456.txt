@@ -1,0 +1,8 @@
+=== 0x3456 ===
+
+void FUN_CODE_3456(void)
+
+{
+  return;
+}
+

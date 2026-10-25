@@ -1,0 +1,10 @@
+=== 0xfe11 ===
+
+void FUN_CODE_fe11(void)
+
+{
+  FUN_CODE_8917(0x7f);
+  FUN_CODE_0865();
+  return;
+}
+

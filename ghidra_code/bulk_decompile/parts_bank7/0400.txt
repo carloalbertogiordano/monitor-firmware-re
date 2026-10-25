@@ -1,0 +1,15 @@
+=== 0x0400 ===
+
+void FUN_CODE_0400(char param_1,char param_2,byte param_3)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  
+  uVar1 = RXSTAT;
+  cVar2 = RXSTAT;
+  BANK3_R5 = BANK3_R5 + -1;
+  FUN_CODE_06fd((param_1 + param_2 & param_3) + cVar2);
+  return;
+}
+

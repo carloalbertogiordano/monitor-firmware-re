@@ -1,0 +1,9 @@
+=== 0x0152 ===
+
+void FUN_CODE_0152(byte param_1)
+
+{
+  FUN_CODE_077e((param_1 << 1 | param_1 >> 7) - 1);
+  return;
+}
+

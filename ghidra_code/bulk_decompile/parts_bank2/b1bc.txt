@@ -1,0 +1,10 @@
+=== 0xb1bc ===
+
+void FUN_CODE_b1bc(void)
+
+{
+  DAT_EXTMEM_e395 = DAT_EXTMEM_e38d;
+  DAT_EXTMEM_e396 = DAT_EXTMEM_e38e;
+  return;
+}
+

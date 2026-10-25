@@ -1,0 +1,27 @@
+=== 0x04ae ===
+
+void FUN_CODE_04ae(byte param_1,short param_2,char param_3,char param_4,byte param_5,byte param_6)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char in_PSW;
+  
+  bVar1 = param_3 - (in_PSW >> 7);
+  DAT_INTMEM_73 = DAT_INTMEM_38;
+  _7_1 = 0;
+  bVar2 = DAT_SFR_96;
+  DAT_SFR_96 = bVar2 | 0x39;
+  bVar1 = *(byte *)((ushort)(param_1 + bVar1 & 0x7f | CARRY1(param_1,bVar1) << 7) + 0x4bf);
+  bVar1 = (bVar1 - param_5) + (param_4 - (((bVar1 < param_5) << 7) >> 7));
+  bVar2 = (bVar1 - param_6) + (param_5 - (((bVar1 < param_6) << 7) >> 7));
+  bVar1 = DAT_SFR_a5;
+  DAT_SFR_a5 = bVar1 | 0x3a;
+                    /* WARNING: Could not recover jumptable at 0x04ca. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  DAT_INTMEM_38 = param_4;
+  DAT_INTMEM_39 = param_6;
+  (*(code *)(param_2 + (ushort)(bVar2 >> 1 | bVar2 * -0x80)))();
+  return;
+}
+

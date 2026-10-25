@@ -1,0 +1,9 @@
+=== 0x05e9 ===
+
+void FUN_CODE_05e9(void)
+
+{
+  state_dispatch_arg22_case1();
+  return;
+}
+

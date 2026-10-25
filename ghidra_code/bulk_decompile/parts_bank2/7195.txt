@@ -1,0 +1,8 @@
+=== 0x7195 ===
+
+undefined1 FUN_CODE_7195(void)
+
+{
+  return DAT_EXTMEM_e359;
+}
+

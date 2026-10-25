@@ -1,0 +1,8 @@
+=== 0xb00e ===
+
+byte FUN_CODE_b00e(void)
+
+{
+  return DAT_EXTMEM_e57f & 0x80;
+}
+

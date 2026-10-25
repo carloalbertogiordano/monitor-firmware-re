@@ -1,0 +1,16 @@
+=== 0xf8f4 ===
+
+void FUN_CODE_f8f4(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = _0_0;
+  _0_0 = _0_0 & 1;
+  if ((DAT_EXTMEM_e331 == '\x04') || (DAT_EXTMEM_e331 == '\x03')) {
+    _1_0 = bVar1 & 1;
+    FUN_CODE_f696();
+  }
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xafb9 ===
+
+void FUN_CODE_afb9(void)
+
+{
+  return;
+}
+

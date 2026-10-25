@@ -1,0 +1,43 @@
+=== 0xde60 ===
+
+void FUN_CODE_de60(char param_1)
+
+{
+  char cVar1;
+  
+  FUN_CODE_f095();
+  DAT_EXTMEM_b7c0 = DAT_EXTMEM_b7c0 & 0x5c;
+  DAT_EXTMEM_b772 = 0xc0;
+  FUN_CODE_8c2f(0xb773);
+  DAT_EXTMEM_b7c6 = DAT_EXTMEM_b7c6 & 0xef;
+  DAT_EXTMEM_b774 = DAT_EXTMEM_b774 & 0xe0 | 9;
+  DAT_EXTMEM_b775 = 0xd;
+  DAT_EXTMEM_b7a2 = 10;
+  DAT_EXTMEM_b7d0 = DAT_EXTMEM_b7d0 & 0xf2 | 1;
+  DAT_EXTMEM_b7d1 = 2;
+  DAT_EXTMEM_b7da = DAT_EXTMEM_b7da & 0xe4 | 8;
+  FUN_CODE_8d0e(0xb7db);
+  FUN_CODE_8c2f(0xb776);
+  DAT_EXTMEM_b7dc = DAT_EXTMEM_b7dc & 0xc1;
+  DAT_EXTMEM_b777 = DAT_EXTMEM_b777 & 0x3f;
+  DAT_EXTMEM_b7f0 = DAT_EXTMEM_b7f0 & 0xdb | 0x24;
+  DAT_EXTMEM_b7f1 = 0xd;
+  DAT_EXTMEM_b7f4 = DAT_EXTMEM_b7f4 & 0x9f;
+  DAT_EXTMEM_b778 = DAT_EXTMEM_b778 & 0x80 | 0x30;
+  FUN_CODE_8648(0xb765);
+  FUN_CODE_ed85();
+  DAT_EXTMEM_b767 = 0x17;
+  DAT_EXTMEM_b76f = 0x17;
+  cVar1 = FUN_CODE_8b9c();
+  if ((cVar1 != '\0') && (param_1 == '\x04')) {
+    FUN_CODE_8c2f(0xb760);
+    DAT_EXTMEM_6f09 = DAT_EXTMEM_6f09 & 0xfc | 1;
+  }
+  FUN_CODE_074b(0,100);
+  FUN_CODE_864c(0xb779);
+  DAT_EXTMEM_000b = DAT_EXTMEM_000b & 0xcf;
+  DAT_EXTMEM_b773 = DAT_EXTMEM_b773 & 0xf0 | 1;
+  DAT_EXTMEM_b7b0 = DAT_EXTMEM_b7b0 & 0xf0 | 1;
+  return;
+}
+

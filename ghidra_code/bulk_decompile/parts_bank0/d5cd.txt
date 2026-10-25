@@ -1,0 +1,8 @@
+=== 0xd5cd ===
+
+undefined1 FUN_CODE_d5cd(void)
+
+{
+  return 1;
+}
+

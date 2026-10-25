@@ -1,0 +1,9 @@
+=== 0x5812 ===
+
+void thunk_FUN_CODE_58a2(void)
+
+{
+  FUN_CODE_58a2();
+  return;
+}
+

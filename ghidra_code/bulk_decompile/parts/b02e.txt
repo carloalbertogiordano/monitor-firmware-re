@@ -1,0 +1,8 @@
+=== 0xb02e ===
+
+char FUN_CODE_b02e(void)
+
+{
+  return -0x1d - (((0xcbU < (byte)(DAT_EXTMEM_e32f * '\x03')) << 7) >> 7);
+}
+

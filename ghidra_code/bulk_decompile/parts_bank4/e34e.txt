@@ -1,0 +1,10 @@
+=== 0xe34e ===
+
+void FUN_CODE_e34e(byte param_1,char *param_2,char param_3,byte param_4)
+
+{
+  DAT_EXTMEM_e34d = *param_2 + (param_3 - ((CARRY1(param_1,param_4) << 7) >> 7));
+  DAT_EXTMEM_e34e = param_1 + param_4;
+  return;
+}
+

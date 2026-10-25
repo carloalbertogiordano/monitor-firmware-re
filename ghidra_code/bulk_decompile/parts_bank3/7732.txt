@@ -1,0 +1,36 @@
+=== 0x7732 ===
+
+void FUN_CODE_7732(byte param_1,undefined1 param_2)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_2;
+  FUN_CODE_7000(param_1 | 0x9a);
+  return;
+}
+

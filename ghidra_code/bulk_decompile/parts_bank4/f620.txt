@@ -1,0 +1,18 @@
+=== 0xf620 ===
+
+void FUN_CODE_f620(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_6e8a();
+  FUN_CODE_0f13(0x10);
+  if (in_PSW < '\0') {
+    FUN_CODE_6ee9(0xbb,0xe4);
+    FUN_CODE_1259(0,1);
+    return;
+  }
+  DAT_EXTMEM_e4bb = 0;
+  return;
+}
+

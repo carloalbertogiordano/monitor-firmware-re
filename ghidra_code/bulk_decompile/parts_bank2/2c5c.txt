@@ -1,0 +1,42 @@
+=== 0x2c5c ===
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void FUN_CODE_2c5c(byte param_1,undefined1 *param_2,char *param_3,byte param_4)
+
+{
+  char *pcVar1;
+  byte bVar2;
+  undefined1 uVar3;
+  
+  pcVar1 = (char *)DPXL;
+  *pcVar1 = *pcVar1 + '\x01';
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (_e_2 != '\0') {
+    _e_2 = 0;
+    nop();
+    FUN_CODE_0505();
+    return;
+  }
+  _4_4 = CARRY1(param_1,param_4);
+  bVar2 = param_1 + param_4 | (byte)pcVar1 | (byte)pcVar1 | (byte)pcVar1;
+  *(byte *)ZEXT12(param_3) = bVar2;
+  nop();
+  uVar3 = decimal_adjust(bVar2);
+  *param_2 = uVar3;
+  nop();
+  nop();
+  *param_3 = *param_3 + '\x01';
+  nop();
+  nop();
+  nop();
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+

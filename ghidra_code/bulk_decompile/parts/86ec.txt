@@ -1,0 +1,10 @@
+=== 0x86ec ===
+
+void FUN_CODE_86ec(void)
+
+{
+  FUN_CODE_14a4(0,0,0,2);
+  FUN_CODE_152f(0,0,7,0xd0);
+  return;
+}
+

@@ -1,0 +1,18 @@
+=== 0xf8ac ===
+
+/* WARNING: Removing unreachable block (CODE,0xf8b8) */
+/* WARNING: Removing unreachable block (CODE,0xf8be) */
+/* WARNING: Removing unreachable block (CODE,0xf8bf) */
+
+void FUN_CODE_f8ac(char param_1,char param_2)
+
+{
+  char cVar1;
+  
+  if ((param_2 != '\0' || param_1 != '\0') && (cVar1 = TR2, cVar1 != '\0')) {
+    do {
+    } while( true );
+  }
+  return;
+}
+

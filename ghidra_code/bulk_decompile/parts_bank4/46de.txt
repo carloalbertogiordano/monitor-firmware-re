@@ -1,0 +1,77 @@
+=== 0x46de ===
+
+/* WARNING: Instruction at (CODE,0x4754) overlaps instruction at (CODE,0x4753)
+    */
+/* WARNING: Removing unreachable block (CODE,0x4739) */
+/* WARNING: Removing unreachable block (CODE,0x4754) */
+/* WARNING: Removing unreachable block (CODE,0x474b) */
+/* WARNING: Removing unreachable block (CODE,0x4756) */
+/* WARNING: Removing unreachable block (CODE,0x476b) */
+/* WARNING: Removing unreachable block (CODE,0x479e) */
+/* WARNING: Removing unreachable block (CODE,0x47a6) */
+/* WARNING: Removing unreachable block (CODE,0x47f7) */
+/* WARNING: Removing unreachable block (CODE,0x4814) */
+/* WARNING: Removing unreachable block (CODE,0x482a) */
+/* WARNING: Removing unreachable block (CODE,0x482b) */
+/* WARNING: Removing unreachable block (CODE,0x4830) */
+
+undefined1 FUN_CODE_46de(byte param_1,short param_2,byte *param_3,char *param_4,char param_5)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  undefined1 uVar4;
+  char in_PSW;
+  char cVar5;
+  byte bVar6;
+  
+  if (_4_4 == '\x01') {
+    bVar3 = ((param_1 ^ *param_3) + *param_3 | (byte)param_4) ^ *param_3;
+    _c_4 = CARRY1(bVar3,*param_3);
+    bVar3 = (bVar3 + *param_3 | (byte)param_4) ^ *param_3;
+    bVar1 = CARRY1(bVar3,*param_3);
+    bVar3 = bVar3 + *param_3 | DAT_INTMEM_52 | DAT_INTMEM_52;
+  }
+  else {
+    bVar3 = *(byte *)(param_2 + (ushort)((param_1 - (*param_3 - (in_PSW >> 7))) + 0xb5));
+    bVar1 = 0xd8 < bVar3;
+    bVar3 = bVar3 + 0x27 | (byte)param_4 | (byte)param_4 | (byte)param_4;
+    DAT_INTMEM_26 = 0x21;
+    nop();
+    _c_4 = bVar1;
+    if (bVar3 != 0) {
+      bVar3 = bVar3 + param_5;
+      cVar5 = (0x36 < bVar3) << 7;
+      bVar3 = bVar3 - 0x37;
+      goto LAB_CODE_46f9;
+    }
+    nop();
+    bVar3 = 0;
+    _4_4 = bVar1;
+  }
+  cVar5 = bVar1 << 7;
+  bVar3 = bVar3 | DAT_INTMEM_52 | DAT_INTMEM_52 | DAT_INTMEM_52 | DAT_INTMEM_52 | DAT_INTMEM_52 |
+          DAT_INTMEM_52 | DAT_INTMEM_52;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (-1 < cVar5) {
+    cVar2 = P3;
+    uVar4 = FUN_CODE_4324(param_3 + (*param_3 - (cVar2 - (cVar5 >> 7))));
+    return uVar4;
+  }
+LAB_CODE_46f9:
+  bVar3 = bVar3 - ((char)param_4 - (cVar5 >> 7));
+  _4_4 = 0xb6 < bVar3;
+  bVar6 = _4_4 << 7;
+  bVar3 = FUN_CODE_2049(bVar3 + 0x49 | (byte)param_4 | (byte)param_4);
+  _4_4 = bVar6 >> 7;
+  _5_3 = _5_3 ^ 1;
+  uVar4 = FUN_CODE_4109(param_4,(bVar3 | (byte)param_4 | (byte)param_4) + *param_4 | (byte)param_4);
+  return uVar4;
+}
+

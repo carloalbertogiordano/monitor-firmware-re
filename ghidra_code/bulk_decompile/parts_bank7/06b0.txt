@@ -1,0 +1,137 @@
+=== 0x06b0 ===
+
+/* WARNING: Instruction at (CODE,0x052e) overlaps instruction at (CODE,0x052d)
+    */
+/* WARNING: Removing unreachable block (CODE,0x053b) */
+/* WARNING: Removing unreachable block (CODE,0x053e) */
+/* WARNING: Removing unreachable block (CODE,0x052e) */
+
+void FUN_CODE_06b0(byte *param_1,char *param_2,char *param_3,char param_4,undefined1 param_5,
+                  char param_6,byte param_7,byte param_8)
+
+{
+  bool bVar1;
+  byte bVar2;
+  char *pcVar3;
+  byte bVar4;
+  byte bVar5;
+  char cVar6;
+  byte bVar7;
+  char *pcVar8;
+  undefined1 uStackX_0;
+  
+  *param_3 = *param_3 + -1;
+  nop();
+  nop();
+  bVar1 = 0xfd < *param_1;
+  do {
+    pcVar8 = &DAT_EXTMEM_3103;
+    DAT_INTMEM_30 = DAT_INTMEM_30 + '\x01';
+    bVar7 = bVar1 << 7;
+    nop();
+    nop();
+    nop();
+    *param_2 = *param_2 + '\x01';
+    if (_e_7 != '\x01') {
+      FUN_CODE_0680(0x990a);
+      return;
+    }
+    param_6 = param_6 + '\x01';
+    param_8 = param_8 + 1;
+    bVar5 = FUN_CODE_0302(param_5,param_6);
+    cVar6 = UD;
+    if (cVar6 == '\0') {
+      bVar5 = FUN_CODE_112b();
+      bVar7 = *(byte *)((ushort)(bVar5 >> 1 | bVar7 & 0x80) + 0x7e6);
+      bVar5 = 0;
+      DAT_INTMEM_38 = param_4;
+      DAT_INTMEM_39 = param_7;
+      cVar6 = FUN_CODE_0439(bVar7 >> 1 | bVar7 << 7);
+                    /* WARNING: Could not recover jumptable at 0x07f1. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      (*(code *)(pcVar8 + ((cVar6 << 1 | bVar5 >> 7) - (DAT_INTMEM_39 - (cVar6 >> 7)))))();
+      return;
+    }
+    UD = 0;
+    bVar2 = *param_2 - ((char)bVar7 >> 7);
+    param_3 = param_3 + -1;
+    bVar4 = bVar5 - bVar2 & (byte)param_3;
+    cVar6 = P1;
+    bVar7 = cVar6 - ((char)(bVar7 & 0x5d | (bVar5 < bVar2) << 7) >> 7);
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    bVar1 = false;
+  } while (!CARRY1(bVar4,bVar7));
+  nop();
+  *pcVar8 = bVar4 + bVar7;
+  nop();
+  bVar5 = FUN_CODE_070c();
+  DAT_INTMEM_51 = DAT_INTMEM_51 + -1;
+  bVar7 = DAT_SFR_92;
+  DAT_SFR_92 = bVar7 & bVar5;
+  cVar6 = *(char *)ZEXT12(param_2);
+  DAT_INTMEM_7a = uStackX_0;
+  param_2 = param_2 + '\x01';
+  if (cVar6 == '\0') {
+    bVar7 = (char)param_3 -
+            ((CARRY1((bVar5 + param_8) -
+                     (DAT_INTMEM_21 - ((char)((!CARRY1(bVar5,param_8) | _7_7) << 7) >> 7)),
+                     (byte)param_3) << 7) >> 7);
+    bVar5 = (bVar7 - param_7) + (param_4 - (((bVar7 < param_7) << 7) >> 7));
+    bVar7 = DAT_SFR_a5;
+    DAT_SFR_a5 = bVar7 | 0x3a;
+                    /* WARNING: Could not recover jumptable at 0x04ca. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)(pcVar8 + (bVar5 >> 1 | bVar5 * -0x80)))();
+    return;
+  }
+  pcVar3 = param_3 + '\x01';
+  BANK0_R0 = WDTRST;
+  param_4 = param_4 + '\x01';
+  *pcVar8 = cVar6;
+  bVar7 = (pcVar3 < &BANK1_R4) << 7;
+  if (pcVar3 == &BANK1_R4) {
+    if (_a_1 == '\0') {
+      BANK0_R1 = 0x2f;
+      BANK0_R2 = 0x30;
+      bVar5 = func_0x30a1(DAT_INTMEM_21,param_6 + '\x01',param_8 - 1);
+      BANK0_R1 = 0x33;
+      BANK0_R2 = 0x30;
+      bVar5 = FUN_CODE_c135(bVar5 << 1 | bVar5 >> 7);
+      BANK0_R1 = 0x36;
+      BANK0_R2 = 0x30;
+      cVar6 = FUN_CODE_3645(bVar5 >> 1 | bVar7 & 0x80);
+      BANK0_R1 = 0x39;
+      BANK0_R2 = 0x30;
+      bVar7 = FUN_CODE_3654(cVar6 + -1);
+      cVar6 = IEN1;
+      IEN1 = cVar6 + -1;
+      BANK2_R6 = BANK2_R6 ^ bVar7;
+    }
+    else {
+      _a_1 = '\0';
+    }
+    BANK0_R1 = 0x3f;
+    BANK0_R2 = 0x30;
+    FUN_CODE_3470();
+    *pcVar3 = *pcVar3 + -1;
+    BANK0_R1 = 0x42;
+    BANK0_R2 = 0x30;
+    FUN_CODE_337e();
+    FUN_CODE_328a(param_2 + -1);
+    return;
+  }
+  BANK0_R1 = 0x6b;
+  BANK0_R2 = 5;
+  FUN_CODE_059f(cVar6 - (*param_2 - ((char)bVar7 >> 7)),param_3,param_4);
+  param_4 = param_4 + -1;
+  BANK0_R1 = 0x6e;
+  BANK0_R2 = 5;
+  func_0x01a8(param_4);
+  FUN_CODE_06b0(param_4 + -1);
+  return;
+}
+

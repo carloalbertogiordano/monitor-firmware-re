@@ -1,0 +1,81 @@
+=== 0x76cc ===
+
+/* WARNING: Instruction at (CODE,0x770a) overlaps instruction at (CODE,0x7709)
+    */
+
+void FUN_CODE_76cc(char *param_1,char param_2,byte param_3,byte param_4)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  byte bVar5;
+  undefined1 uVar6;
+  undefined1 uVar7;
+  byte *pbVar8;
+  byte bVar9;
+  char *pcVar10;
+  byte *pbVar11;
+  char in_PSW;
+  
+  pcVar10 = (char *)((in_PSW >> 7) * param_2);
+  cVar3 = DAT_SFR_ff;
+  bVar4 = F8_7;
+  F8_7 = bVar4 ^ 1;
+  bVar4 = cVar3 - *pcVar10;
+  uVar6 = F8_7;
+  bVar5 = FUN_CODE_76ff(*pcVar10,bVar4,bVar4);
+  pbVar11 = pbINTMEMff;
+  *(byte *)(ushort)param_3 = bVar5;
+  uVar6 = F8_7;
+  uVar6 = decimal_adjust(bVar5);
+  do {
+  } while (param_3 != 0xff);
+  uVar7 = DAT_SFR_ff;
+  uVar7 = decimal_adjust(bVar5);
+  pbVar8 = (byte *)((byte)pbINTMEMff & param_4);
+  cVar3 = param_4 - 1;
+  pbINTMEMff = (byte *)uVar7;
+  *pcVar10 = *param_1;
+  *pbVar8 = *pbVar8 - 1;
+  bVar2 = *pbVar8;
+  do {
+    bVar9 = bVar2;
+    uVar7 = DAT_SFR_ff;
+    bVar1 = DAT_SFR_ff;
+    bVar2 = ~bVar5;
+  } while (~bVar5 != bVar1);
+  bVar5 = FUN_CODE_71ff(bVar9,uVar6,bVar5);
+  *(byte *)ZEXT12(pbVar8) = bVar5;
+  pcVar10 = (char *)(~bVar5 & 0xf0 | *pbVar11 & 0xf);
+  *pbVar11 = *pbVar11 & 0xf0 | ~bVar5 & 0xf;
+  uVar6 = F8_7;
+  *pcVar10 = *pcVar10 + -1;
+  *pcVar10 = (char)pcVar10;
+  bVar5 = ((byte)pcVar10 | (byte)(pcVar10 + '\x01')) + *pcVar10;
+  pbVar11 = (byte *)~(bVar5 * '\x02');
+  bVar5 = *pbVar11 - ((CARRY1(bVar5,bVar5) << 7) >> 7);
+  pbVar11 = (byte *)((((byte)pbVar11 ^ *pbVar11) + bVar5) * '\x02' -
+                    ((CARRY1((byte)pbVar11 ^ *pbVar11,bVar5) << 7) >> 7));
+  DAT_SFR_ff = cVar3;
+  pbVar8 = pbVar11 + '\x01';
+  BANK3_R3 = pbVar11;
+  *pbVar11 = (byte)pbVar8;
+  bVar5 = CARRY1((byte)pbVar8,bVar4) << 7;
+  while( true ) {
+    bVar2 = F8_7;
+    bVar5 = (bVar5 >> 7 & bVar2) << 7;
+    cVar3 = F8_7;
+    if (cVar3 == '\0') break;
+    F8_7 = 0;
+  }
+  bVar5 = (char)pbVar11 - ((char)bVar5 >> 7);
+  pcVar10 = (char *)((char)pbVar8 + bVar4 + bVar5);
+  *pcVar10 = *pcVar10 + -1;
+  DAT_INTMEM_5f = (char)pcVar10 - ((char)pbVar11 - ((CARRY1((char)pbVar8 + bVar4,bVar5) << 7) >> 7))
+  ;
+  uVar6 = F8_7;
+  return;
+}
+

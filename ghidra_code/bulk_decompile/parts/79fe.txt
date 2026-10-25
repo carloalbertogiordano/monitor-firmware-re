@@ -1,0 +1,16 @@
+=== 0x79fe ===
+
+void FUN_CODE_79fe(void)
+
+{
+  FUN_CODE_1259(0x2e,0x73,0x38,0xff,0xe3,1,0,2);
+  DAT_EXTMEM_e4aa = 0x6e;
+  DAT_EXTMEM_e4ab = 0x88;
+  DAT_EXTMEM_e4ac = 2;
+  DAT_EXTMEM_e4ad = 0;
+  DAT_EXTMEM_e4ae = DAT_EXTMEM_e42d;
+  FUN_CODE_1761();
+  FUN_CODE_7b6e(0x9a);
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xa753 ===
+
+void FUN_CODE_a753(undefined1 *param_1)
+
+{
+  *param_1 = 0;
+  param_1[1] = 0x80;
+  return;
+}
+

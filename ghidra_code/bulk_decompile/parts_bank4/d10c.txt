@@ -1,0 +1,12 @@
+=== 0xd10c ===
+
+void FUN_CODE_d10c(undefined1 *param_1)
+
+{
+  *param_1 = 0;
+  param_1[1] = 0;
+  param_1[2] = 0;
+  param_1[3] = 0;
+  return;
+}
+

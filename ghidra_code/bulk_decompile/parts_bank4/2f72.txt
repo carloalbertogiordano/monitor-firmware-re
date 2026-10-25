@@ -1,0 +1,89 @@
+=== 0x2f72 ===
+
+/* WARNING: Instruction at (CODE,0x2efd) overlaps instruction at (CODE,0x2efc)
+    */
+/* WARNING: Removing unreachable block (CODE,0x2f18) */
+/* WARNING: Removing unreachable block (CODE,0x2f2a) */
+/* WARNING: Removing unreachable block (CODE,0x2f41) */
+/* WARNING: Removing unreachable block (CODE,0x2eab) */
+/* WARNING: Removing unreachable block (CODE,0x2eb5) */
+/* WARNING: Removing unreachable block (CODE,0x2eb6) */
+/* WARNING: Removing unreachable block (CODE,0x2ec4) */
+/* WARNING: Removing unreachable block (CODE,0x2ec5) */
+/* WARNING: Removing unreachable block (CODE,0x2efd) */
+/* WARNING: Removing unreachable block (CODE,0x2ed9) */
+/* WARNING: Removing unreachable block (CODE,0x2ede) */
+/* WARNING: Removing unreachable block (CODE,0x2ee2) */
+/* WARNING: Removing unreachable block (CODE,0x2ee3) */
+/* WARNING: Removing unreachable block (CODE,0x2efc) */
+
+undefined1
+FUN_CODE_2f72(byte *param_1,byte *param_2,byte param_3,byte param_4,char param_5,char param_6,
+             char param_7)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  
+  bVar3 = FUN_CODE_2ba2();
+  DAT_INTMEM_43 = DAT_INTMEM_43 ^ bVar3;
+  *param_1 = *param_1 + 1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (*param_2 != 0) {
+    nop();
+    nop();
+    nop();
+    nop();
+    uVar2 = thunk_FUN_CODE_26eb(param_1);
+    return uVar2;
+  }
+  bVar4 = (param_3 | 0x90) + *param_1;
+  cVar1 = RXCON;
+  bVar3 = cVar1 - ((CARRY1(param_3 | 0x90,*param_1) << 7) >> 7);
+  bVar5 = bVar4 - bVar3;
+  bVar3 = 100 - (((bVar4 < bVar3) << 7) >> 7);
+  bVar4 = bVar5 - bVar3;
+  DAT_INTMEM_52 = DAT_INTMEM_52 | bVar4;
+  BANK0_R0 = BANK0_R0 + -1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar4 = (param_5 + 1U | (byte)param_2) & bVar4;
+  if (_0_3 == '\0') {
+    nop();
+    nop();
+    bVar4 = bVar4 ^ *param_2;
+  }
+  else if (_c_3 != '\0') {
+    DAT_INTMEM_77 = DAT_INTMEM_77 ^ 0xcd;
+    bVar3 = (char)param_2 - (((bVar5 < bVar3) << 7) >> 7);
+    bVar5 = DAT_SFR_9c;
+    *param_1 = bVar5;
+    uVar2 = FUN_CODE_26b2(param_6 - (param_7 -
+                                    ((((bVar4 ^ param_4) - bVar3 <
+                                      (byte)((char)param_2 -
+                                            ((((bVar4 ^ param_4) < bVar3) << 7) >> 7))) << 7) >> 7))
+                          ,param_2 + -1);
+    return uVar2;
+  }
+  uVar2 = FUN_CODE_2b27(bVar4);
+  return uVar2;
+}
+

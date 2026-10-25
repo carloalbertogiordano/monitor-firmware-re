@@ -1,0 +1,8 @@
+=== 0x6eeb ===
+
+void FUN_CODE_6eeb(void)
+
+{
+  return;
+}
+

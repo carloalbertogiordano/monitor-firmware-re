@@ -1,0 +1,8 @@
+=== 0x0006 ===
+
+void FUN_CODE_0006(void)
+
+{
+  return;
+}
+

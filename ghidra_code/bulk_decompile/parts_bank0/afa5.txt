@@ -1,0 +1,8 @@
+=== 0xafa5 ===
+
+char FUN_CODE_afa5(char param_1,byte param_2)
+
+{
+  return param_1 + (((param_2 < 0x57) << 7) >> 7);
+}
+

@@ -1,0 +1,11 @@
+=== 0x0b9a ===
+
+void thunk_FUN_CODE_0f82(void)
+
+{
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

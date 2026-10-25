@@ -1,0 +1,9 @@
+=== 0x6fcc ===
+
+undefined1 FUN_CODE_6fcc(undefined1 *param_1,undefined1 param_2)
+
+{
+  *param_1 = param_2;
+  return DAT_EXTMEM_e354;
+}
+

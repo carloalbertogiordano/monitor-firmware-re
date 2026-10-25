@@ -1,0 +1,34 @@
+=== 0xe655 ===
+
+void FUN_CODE_e655(void)
+
+{
+  undefined1 *puVar1;
+  short sVar2;
+  
+  FUN_CODE_1991(&DAT_INTMEM_2f,0xe3,'\x01',0,'\0','-');
+  FUN_CODE_0523();
+  DAT_EXTMEM_e36d = 0xc;
+  DAT_EXTMEM_e36e = 4;
+  FUN_CODE_1159(0x5c,0xe3,1);
+  DAT_EXTMEM_e32f = 0x10;
+  DAT_EXTMEM_e330 = 0x21;
+  DAT_EXTMEM_e331 = 0;
+  DAT_EXTMEM_e332 = 0x58;
+  DAT_EXTMEM_e333 = 0;
+  FUN_CODE_bda2(DAT_EXTMEM_e35f,0xe334);
+  FUN_CODE_bda2(DAT_EXTMEM_e35e,0xe336);
+  FUN_CODE_bda7((DAT_EXTMEM_e35d >> 4) + 1,0xe338,DAT_EXTMEM_e35d);
+  puVar1 = &DAT_EXTMEM_e33a;
+  FUN_CODE_bda7((DAT_EXTMEM_e35c >> 4) + 1,DAT_EXTMEM_e35c);
+  puVar1[1] = 0xff;
+  sVar2 = -0x1c94;
+  FUN_CODE_bd07();
+  *(undefined1 *)(sVar2 + 1) = 1;
+  *(undefined1 *)(sVar2 + 2) = 0xe3;
+  *(undefined1 *)(sVar2 + 3) = 0x2f;
+  *(undefined1 *)(sVar2 + 4) = 0;
+  FUN_CODE_b224(0,1,3);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x1033 ===
+
+void FUN_CODE_1033(void)
+
+{
+  FUN_CODE_03f7(0x8778);
+  return;
+}
+

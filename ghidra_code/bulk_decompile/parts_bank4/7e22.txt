@@ -1,0 +1,12 @@
+=== 0x7e22 ===
+
+void FUN_CODE_7e22(void)
+
+{
+  DAT_EXTMEM_ffeb = DAT_EXTMEM_ffeb & 0x7f | 8;
+  _7_3 = 0;
+  DAT_EXTMEM_e30d = DAT_EXTMEM_ffac;
+  DAT_EXTMEM_e30e = DAT_EXTMEM_ffab;
+  return;
+}
+

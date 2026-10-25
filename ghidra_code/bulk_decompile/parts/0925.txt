@@ -1,0 +1,9 @@
+=== 0x0925 ===
+
+void FUN_CODE_0925(void)
+
+{
+  FUN_CODE_042d(thunk_FUN_CODE_09cd);
+  return;
+}
+

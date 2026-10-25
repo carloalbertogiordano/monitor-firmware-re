@@ -1,0 +1,41 @@
+=== 0x3941 ===
+
+void FUN_CODE_3941(char param_1,byte *param_2,char *param_3,byte *param_4,byte param_5,byte param_6,
+                  byte param_7,char param_8,byte param_9)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  char cVar4;
+  
+  cVar4 = CARRY1(param_1 + *param_3,param_5) << 7;
+  bVar1 = param_1 + *param_3 + param_5;
+  bVar2 = FUN_CODE_3ed2(bVar1,param_6,param_7,param_9);
+  bVar3 = param_8 - (cVar4 >> 7);
+  bVar3 = (bVar2 - bVar3) - (param_9 - (((bVar2 < bVar3) << 7) >> 7));
+  if (bVar3 == 0) {
+    bVar3 = param_7 - 1;
+    bVar2 = param_7;
+    goto LAB_CODE_3819;
+  }
+  *(byte *)ZEXT12(param_4) = bVar3;
+  bVar1 = ~bVar3 + *param_4 + *param_3 + param_5;
+  bVar2 = bVar1;
+  if (_6_2 == '\x01') {
+    do {
+      bVar3 = param_7;
+      bVar2 = (bVar2 << 1 | bVar2 >> 7) + *param_3 + param_9;
+LAB_CODE_3819:
+      param_7 = bVar3;
+      cVar4 = CARRY1(bVar2,bVar1) << 7;
+      bVar1 = FUN_CODE_3ff2(bVar2 + bVar1,param_2,param_4,param_5,param_7,param_8,param_9);
+      param_4 = (byte *)0xff;
+      bVar2 = bVar1 - (param_7 - (cVar4 >> 7));
+    } while( true );
+  }
+  FUN_CODE_3826(bVar1 + *param_3 + BANK3_R4,param_2,param_3,param_4,param_5,param_7,param_8,param_9,
+                ~bVar3);
+  return;
+}
+

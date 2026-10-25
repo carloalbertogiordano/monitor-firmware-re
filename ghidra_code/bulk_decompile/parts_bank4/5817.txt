@@ -1,0 +1,9 @@
+=== 0x5817 ===
+
+char FUN_CODE_5817(char param_1,char param_2,char *param_3)
+
+{
+  P0_0 = 1;
+  return param_1 + *param_3 + param_2;
+}
+

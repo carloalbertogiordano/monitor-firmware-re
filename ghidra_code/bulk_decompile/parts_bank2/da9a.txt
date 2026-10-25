@@ -1,0 +1,8 @@
+=== 0xda9a ===
+
+undefined1 FUN_CODE_da9a(void)
+
+{
+  return DAT_EXTMEM_e508;
+}
+

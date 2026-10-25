@@ -1,0 +1,12 @@
+=== 0x4149 ===
+
+void FUN_CODE_4149(void)
+
+{
+  byte in_PSW;
+  
+  _e_4 = in_PSW >> 7;
+  thunk_FUN_CODE_26eb();
+  return;
+}
+

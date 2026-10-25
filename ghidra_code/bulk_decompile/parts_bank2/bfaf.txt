@@ -1,0 +1,12 @@
+=== 0xbfaf ===
+
+void FUN_CODE_bfaf(void)
+
+{
+  DAT_INTMEM_2c = 0x3f;
+  DAT_INTMEM_2b = 0;
+  DAT_INTMEM_2a = 0;
+  DAT_INTMEM_29 = 0;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x7509 ===
+
+undefined1 FUN_CODE_7509(void)
+
+{
+  return 0;
+}
+

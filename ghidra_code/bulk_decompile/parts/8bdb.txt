@@ -1,0 +1,9 @@
+=== 0x8bdb ===
+
+void FUN_CODE_8bdb(void)
+
+{
+  DAT_EXTMEM_e3e4 = 0x26;
+  return;
+}
+

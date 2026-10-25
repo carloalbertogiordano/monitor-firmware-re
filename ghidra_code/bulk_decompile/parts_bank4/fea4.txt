@@ -1,0 +1,47 @@
+=== 0xfea4 ===
+
+char thunk_FUN_CODE_d019(byte param_1,byte param_2)
+
+{
+  bool bVar1;
+  byte bVar2;
+  undefined1 uVar3;
+  char cVar4;
+  char in_PSW;
+  short sVar5;
+  short sVar6;
+  
+  sVar5 = -0x1c7d;
+  DAT_EXTMEM_e382 = param_2;
+  FUN_CODE_d16d();
+  *(undefined1 *)(sVar5 + 1) = 0;
+  *(undefined1 *)(sVar5 + 2) = 0;
+  DAT_EXTMEM_e386 = '\0';
+  DAT_EXTMEM_e387 = '\0';
+  while( true ) {
+    bVar2 = FUN_CODE_d15d(0xe386);
+    cVar4 = ((bVar2 < 8U - (in_PSW >> 7)) << 7) >> 7;
+    bVar1 = param_1 < (byte)-cVar4;
+    in_PSW = bVar1 << 7;
+    if (!bVar1) {
+      return param_1 + cVar4;
+    }
+    FUN_CODE_1755(param_2,0xe5da,5);
+    param_2 = FUN_CODE_d150(param_1);
+    if (param_2 == DAT_EXTMEM_e382) break;
+    DAT_EXTMEM_e387 = DAT_EXTMEM_e387 + '\x01';
+    param_1 = DAT_EXTMEM_e382;
+    if (DAT_EXTMEM_e387 == '\0') {
+      DAT_EXTMEM_e386 = DAT_EXTMEM_e386 + '\x01';
+    }
+  }
+  sVar5 = -0x1a25;
+  cVar4 = DAT_EXTMEM_e387;
+  uVar3 = FUN_CODE_d14c(5,DAT_EXTMEM_e386,DAT_EXTMEM_e387);
+  sVar6 = -0x1a23;
+  uVar3 = FUN_CODE_d14c(cVar4,5,uVar3,*(undefined1 *)(sVar5 + 1));
+  FUN_CODE_d164(0xe383,uVar3,*(undefined1 *)(sVar6 + 1));
+  cVar4 = FUN_CODE_86a5();
+  return cVar4;
+}
+

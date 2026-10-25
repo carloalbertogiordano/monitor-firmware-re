@@ -1,0 +1,9 @@
+=== 0x6f29 ===
+
+void FUN_CODE_6f29(void)
+
+{
+  FUN_CODE_1259(1,0);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x8a3d ===
+
+undefined1 FUN_CODE_8a3d(undefined1 param_1)
+
+{
+  FUN_CODE_1420(0x11);
+  return param_1;
+}
+

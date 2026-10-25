@@ -1,0 +1,8 @@
+=== 0xc0d5 ===
+
+char FUN_CODE_c0d5(byte *param_1)
+
+{
+  return (*param_1 & 0x1f) - (((0xfe < param_1[1]) << 7) >> 7);
+}
+

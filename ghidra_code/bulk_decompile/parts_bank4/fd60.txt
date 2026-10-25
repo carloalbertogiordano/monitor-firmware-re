@@ -1,0 +1,9 @@
+=== 0xfd60 ===
+
+undefined1 FUN_CODE_fd60(short param_1,undefined1 param_2)
+
+{
+  FUN_CODE_7e62(param_2);
+  return *(undefined1 *)(param_1 + 1);
+}
+

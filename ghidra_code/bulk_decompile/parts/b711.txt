@@ -1,0 +1,12 @@
+=== 0xb711 ===
+
+void FUN_CODE_b711(void)
+
+{
+  P1_2 = 1;
+  FUN_CODE_0c67();
+  _0_2 = 0;
+  FUN_CODE_0ac9();
+  return;
+}
+

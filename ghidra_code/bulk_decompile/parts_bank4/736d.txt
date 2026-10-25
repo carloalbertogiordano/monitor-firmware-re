@@ -1,0 +1,10 @@
+=== 0x736d ===
+
+void FUN_CODE_736d(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e18e = 0;
+  DAT_EXTMEM_e18f = param_1;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x47d4 ===
+
+void FUN_CODE_47d4(void)
+
+{
+  DAT_EXTMEM_e340 = 2;
+  DAT_EXTMEM_e341 = 1;
+  return;
+}
+

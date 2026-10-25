@@ -1,0 +1,17 @@
+=== 0x7839 ===
+
+void FUN_CODE_7839(char param_1)
+
+{
+  ushort uVar1;
+  
+  if (0x3f < param_1 - 1U) {
+    return;
+  }
+  uVar1 = (ushort)(param_1 - 1U) * 3;
+                    /* WARNING: Could not recover jumptable at 0x7850. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(CONCAT11((char)(uVar1 >> 8) + 'x',0x51) + (uVar1 & 0xff)))();
+  return;
+}
+

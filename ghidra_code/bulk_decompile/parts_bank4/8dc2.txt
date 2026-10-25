@@ -1,0 +1,8 @@
+=== 0x8dc2 ===
+
+void FUN_CODE_8dc2(void)
+
+{
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xd53a ===
+
+void FUN_CODE_d53a(void)
+
+{
+  FUN_CODE_14a4();
+  FUN_CODE_14a4(0,0,1,0);
+  return;
+}
+

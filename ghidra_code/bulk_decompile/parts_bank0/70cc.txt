@@ -1,0 +1,21 @@
+=== 0x70cc ===
+
+void FUN_CODE_70cc(void)
+
+{
+  do {
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+  } while( true );
+}
+

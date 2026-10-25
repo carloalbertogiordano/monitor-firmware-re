@@ -1,0 +1,10 @@
+=== 0xbc8f ===
+
+char FUN_CODE_bc8f(byte param_1,byte param_2,byte param_3)
+
+{
+  FUN_CODE_133e(param_1,param_2,BANK0_R2,param_3);
+  FUN_CODE_133e('\0',10,param_1,param_2);
+  return param_2 + 10;
+}
+

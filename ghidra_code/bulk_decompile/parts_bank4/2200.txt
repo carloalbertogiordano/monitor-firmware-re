@@ -1,0 +1,10 @@
+=== 0x2200 ===
+
+undefined1 FUN_CODE_2200(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 0;
+  uEXTMEMffff = 0;
+  return param_1;
+}
+

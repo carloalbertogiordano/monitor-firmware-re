@@ -1,0 +1,9 @@
+=== 0x96b2 ===
+
+char FUN_CODE_96b2(void)
+
+{
+  return DAT_EXTMEM_e353 -
+         (DAT_EXTMEM_e34d - (((DAT_EXTMEM_e354 < DAT_EXTMEM_e34e + 1U) << 7) >> 7));
+}
+

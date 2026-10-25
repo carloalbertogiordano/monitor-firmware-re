@@ -1,0 +1,8 @@
+=== 0xfe84 ===
+
+undefined1 FUN_CODE_fe84(void)
+
+{
+  return 0;
+}
+

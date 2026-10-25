@@ -1,0 +1,12 @@
+=== 0xf966 ===
+
+void FUN_CODE_f966(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e36f = param_1;
+  DAT_EXTMEM_e370 = param_2;
+  FUN_CODE_c269();
+  FUN_CODE_f9a8(DAT_EXTMEM_e36f,DAT_EXTMEM_e370);
+  return;
+}
+

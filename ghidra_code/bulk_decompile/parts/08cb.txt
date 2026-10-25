@@ -1,0 +1,9 @@
+=== 0x08cb ===
+
+void FUN_CODE_08cb(void)
+
+{
+  FUN_CODE_041b(thunk_FUN_CODE_f8b0);
+  return;
+}
+

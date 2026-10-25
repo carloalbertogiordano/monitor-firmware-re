@@ -1,0 +1,8 @@
+=== 0xf224 ===
+
+char FUN_CODE_f224(byte param_1)
+
+{
+  return (param_1 >> 6) << 7;
+}
+

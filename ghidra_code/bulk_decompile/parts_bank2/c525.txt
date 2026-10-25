@@ -1,0 +1,13 @@
+=== 0xc525 ===
+
+void FUN_CODE_c525(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xfd | 2;
+  DAT_INTMEM_2c = param_1[4];
+  DAT_INTMEM_2b = param_1[3];
+  DAT_INTMEM_2a = param_1[2];
+  DAT_INTMEM_29 = 0;
+  return;
+}
+

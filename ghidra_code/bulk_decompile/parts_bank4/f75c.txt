@@ -1,0 +1,10 @@
+=== 0xf75c ===
+
+void FUN_CODE_f75c(byte param_1)
+
+{
+  DAT_EXTMEM_6f01 = DAT_EXTMEM_6f01 & 0xf8 | param_1;
+  DAT_EXTMEM_6f00 = DAT_EXTMEM_6f00 & 0x88 | param_1 << 4 | param_1;
+  return;
+}
+

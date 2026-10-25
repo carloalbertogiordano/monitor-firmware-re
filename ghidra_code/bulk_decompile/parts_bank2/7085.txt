@@ -1,0 +1,9 @@
+=== 0x7085 ===
+
+void FUN_CODE_7085(undefined1 param_1)
+
+{
+  FUN_CODE_1420(param_1);
+  return;
+}
+

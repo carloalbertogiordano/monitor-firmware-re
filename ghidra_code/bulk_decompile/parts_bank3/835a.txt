@@ -1,0 +1,33 @@
+=== 0x835a ===
+
+void FUN_CODE_835a(byte *param_1,byte param_2,byte param_3,char param_4)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  
+  uVar2 = FUN_CODE_0e23(param_4 + -1);
+  *(undefined1 *)(ushort)param_2 = uVar2;
+  FUN_CODE_81c3();
+  cVar1 = P2_1;
+  if (cVar1 != '\0') {
+    P2_1 = 0;
+    DAT_INTMEM_36 = DAT_INTMEM_36 | *(byte *)(ushort)param_3;
+                    /* WARNING: Could not recover jumptable at 0x838b. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)(param_1 + *(byte *)(ushort)param_3))();
+    return;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_0007(*param_1 >> 1);
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0xfc7f ===
+
+void FUN_CODE_fc7f(char param_1)
+
+{
+  if (param_1 == '\x03') {
+    FUN_CODE_c5d2(DAT_EXTMEM_e4c4);
+  }
+  return;
+}
+

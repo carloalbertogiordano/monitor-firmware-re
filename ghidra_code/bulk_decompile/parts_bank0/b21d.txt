@@ -1,0 +1,8 @@
+=== 0xb21d ===
+
+undefined1 FUN_CODE_b21d(void)
+
+{
+  return DAT_EXTMEM_e375;
+}
+

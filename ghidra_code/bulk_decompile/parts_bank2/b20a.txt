@@ -1,0 +1,8 @@
+=== 0xb20a ===
+
+void FUN_CODE_b20a(void)
+
+{
+  return;
+}
+

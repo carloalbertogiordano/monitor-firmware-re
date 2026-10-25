@@ -1,0 +1,8 @@
+=== 0x9a19 ===
+
+char FUN_CODE_9a19(byte param_1)
+
+{
+  return (((param_1 & 3) < 2) << 7) >> 7;
+}
+

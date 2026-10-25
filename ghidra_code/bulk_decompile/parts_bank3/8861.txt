@@ -1,0 +1,9 @@
+=== 0x8861 ===
+
+void FUN_CODE_8861(void)
+
+{
+  FUN_CODE_15d7(DAT_EXTMEM_e380,DAT_EXTMEM_e37d);
+  return;
+}
+

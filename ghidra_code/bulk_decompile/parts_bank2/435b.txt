@@ -1,0 +1,13 @@
+=== 0x435b ===
+
+undefined1 FUN_CODE_435b(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = DAT_EXTMEM_e18a * '\f' + 0xa9;
+  return *(undefined1 *)
+          CONCAT11(('1' - (((0x56U < (byte)(DAT_EXTMEM_e18a * '\f')) << 7) >> 7)) -
+                   ((CARRY1(bVar1,DAT_EXTMEM_e191) << 7) >> 7),bVar1 + DAT_EXTMEM_e191);
+}
+

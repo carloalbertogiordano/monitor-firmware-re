@@ -1,0 +1,10 @@
+=== 0x45ca ===
+
+void FUN_CODE_45ca(void)
+
+{
+  DAT_EXTMEM_e375 = 0;
+  DAT_EXTMEM_e376 = 0x82;
+  return;
+}
+

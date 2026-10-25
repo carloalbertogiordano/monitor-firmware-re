@@ -1,0 +1,10 @@
+=== 0xfbeb ===
+
+void FUN_CODE_fbeb(void)
+
+{
+  FUN_CODE_70c8(4,1,0xe5);
+  FUN_CODE_0f25(7);
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xd5bb ===
+
+byte FUN_CODE_d5bb(void)
+
+{
+  return DAT_EXTMEM_e6c9 >> 2 & 3;
+}
+

@@ -1,0 +1,8 @@
+=== 0x42c0 ===
+
+undefined1 FUN_CODE_42c0(void)
+
+{
+  return DAT_EXTMEM_e333;
+}
+

@@ -1,0 +1,8 @@
+=== 0xb20c ===
+
+char FUN_CODE_b20c(void)
+
+{
+  return DAT_INTMEM_37 + (((DAT_INTMEM_38 == '\0') << 7) >> 7);
+}
+

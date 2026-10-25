@@ -1,0 +1,29 @@
+=== 0xf112 ===
+
+void FUN_CODE_f112(byte *param_1,char param_2)
+
+{
+  byte bVar1;
+  
+  if (param_2 == '\x01') {
+    bVar1 = FUN_CODE_c52d();
+    *param_1 = bVar1 | 0x76;
+    return;
+  }
+  if (param_2 != '\x02') {
+    if (param_2 == '\x03') {
+      bVar1 = FUN_CODE_c52d();
+      *param_1 = bVar1 | 0x6c;
+    }
+    else if (param_2 == '\0') {
+      bVar1 = FUN_CODE_c52d();
+      *param_1 = bVar1 | 0x68;
+      return;
+    }
+    return;
+  }
+  bVar1 = FUN_CODE_c52d();
+  *param_1 = bVar1 | 0x7e;
+  return;
+}
+

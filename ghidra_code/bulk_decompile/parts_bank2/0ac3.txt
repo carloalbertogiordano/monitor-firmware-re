@@ -1,0 +1,9 @@
+=== 0x0ac3 ===
+
+void FUN_CODE_0ac3(void)
+
+{
+  FUN_CODE_043f(0xec36);
+  return;
+}
+

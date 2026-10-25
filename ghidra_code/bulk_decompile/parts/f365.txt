@@ -1,0 +1,14 @@
+=== 0xf365 ===
+
+void FUN_CODE_f365(undefined1 param_1,byte param_2,char param_3)
+
+{
+  if (param_3 == '\0') {
+    DAT_EXTMEM_3a2c = param_1;
+    DAT_EXTMEM_3a2f = param_2;
+    return;
+  }
+  DAT_EXTMEM_3a32 = param_2 & 0xf;
+  return;
+}
+

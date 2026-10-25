@@ -1,0 +1,14 @@
+=== 0x35a2 ===
+
+void FUN_CODE_35a2(void)
+
+{
+  char *in_R1;
+  char in_R2;
+  char in_R3;
+  char in_ACC;
+  
+  FUN_CODE_346e(in_ACC,in_R1,in_R2,in_R3);
+  return;
+}
+

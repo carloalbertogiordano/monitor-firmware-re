@@ -1,0 +1,8 @@
+=== 0x8e45 ===
+
+undefined1 FUN_CODE_8e45(void)
+
+{
+  return 0;
+}
+

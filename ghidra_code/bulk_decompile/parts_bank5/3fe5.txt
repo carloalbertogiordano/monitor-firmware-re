@@ -1,0 +1,13 @@
+=== 0x3fe5 ===
+
+char FUN_CODE_3fe5(undefined1 param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  char cVar1;
+  
+  *(undefined1 *)CONCAT11(param_1,param_2) = param_3;
+  cVar1 = DAT_EXTMEM_e35b;
+  DAT_EXTMEM_e35b = DAT_EXTMEM_e35b + '\x01';
+  return cVar1 + -0x1b;
+}
+

@@ -1,0 +1,821 @@
+=== 0x3a15 ===
+
+/* WARNING: Instruction at (CODE,0x3fb3) overlaps instruction at (CODE,0x3fb2)
+    */
+/* WARNING: Removing unreachable block (CODE,0x37b1) */
+/* WARNING: Removing unreachable block (CODE,0x38e2) */
+/* WARNING: Removing unreachable block (CODE,0x37fe) */
+/* WARNING: Removing unreachable block (CODE,0x3aac) */
+/* WARNING: Removing unreachable block (CODE,0x3a57) */
+
+byte FUN_CODE_3a15(byte param_1,short param_2,byte param_3,byte *param_4,byte *param_5,byte param_6,
+                  byte param_7,char param_8,byte *param_9,byte param_10)
+
+{
+  bool bVar1;
+  undefined1 uVar2;
+  byte *pbVar3;
+  char cVar4;
+  byte *pbVar5;
+  byte *pbVar6;
+  byte *pbVar7;
+  byte *pbVar8;
+  byte bVar9;
+  byte bVar10;
+  byte *pbVar11;
+  byte *pbVar12;
+  byte bVar13;
+  char cVar14;
+  byte bVar15;
+  undefined1 *puVar16;
+  undefined1 *puVar17;
+  undefined1 *puVar18;
+  undefined1 *puVar19;
+  
+  bVar15 = DAT_INTMEM_7b;
+  puVar18 = (undefined1 *)0x0;
+  if (param_6 == 0xa1) {
+    bVar15 = 0xa1;
+    bVar13 = param_10;
+  }
+  else {
+    bVar13 = param_1 << 1 | param_6 < 0xa1;
+    bVar9 = DAT_SFR_92;
+    *param_4 = bVar9;
+    bVar9 = 0xb9 - ((char)param_1 >> 7);
+    param_1 = param_10 - bVar9;
+    if (param_10 < bVar9) {
+      param_1 = param_1 & (byte)param_4;
+      do {
+        pbVar12 = (byte *)SP;
+        if ((param_1 ^ *param_5) != 0) {
+          cVar14 = CARRY1(param_1 ^ *param_5,*param_4) << 7;
+          cVar4 = BANK0_R7;
+                    /* WARNING: Call to offcut address within same function */
+          bVar9 = func_0x3803();
+          nop();
+          *param_4 = *param_4 + 1;
+LAB_CODE_3aa3:
+          bVar13 = *param_4;
+          nop();
+          nop();
+          nop();
+          DAT_INTMEM_48 = cVar4;
+          *param_4 = *param_4 + 1;
+          bVar9 = bVar9 ^ bVar13 ^ *param_4;
+          if (bVar9 != 0) {
+            bVar13 = (char)param_4 - (cVar14 >> 7);
+            *param_5 = 0x35;
+            DAT_INTMEM_61 = 0x21;
+            bVar10 = EX1;
+            return (bVar15 & (byte)param_5) -
+                   ((param_7 + 1) -
+                   ((char)((bVar9 - bVar13 < *param_4 - (((bVar9 < bVar13) << 7) >> 7) & ~bVar10) <<
+                          7) >> 7));
+          }
+          cVar14 = FUN_CODE_5654();
+          pbVar8 = param_4 + cVar14;
+          goto code_c0x3acd;
+        }
+        cVar14 = P0_3;
+        if (cVar14 != '\0') {
+          cVar14 = -0x80;
+          bVar9 = DAT_SFR_96;
+          *param_4 = bVar9;
+          *param_4 = DAT_INTMEM_42;
+          cVar4 = DAT_SFR_95;
+          CPRL2 = 0;
+          bVar9 = FUN_CODE_cc06(0);
+          pbVar8 = param_9 + '\x01';
+          nop();
+          nop();
+          if (cVar14 < '\0') goto LAB_CODE_3aa3;
+          pbVar3 = *(byte **)(param_2 + (ushort)bVar9);
+          if (*param_4 != 0x9b) {
+            nop();
+            pbVar12 = pbVar3;
+            goto LAB_CODE_3a9b;
+          }
+          cVar14 = DAT_SFR_94;
+          bVar1 = CARRY1((byte)pbVar3,cVar14 - (((*param_4 < 0x9b) << 7) >> 7));
+          nop();
+          nop();
+          nop();
+          if (!bVar1) {
+            nop();
+            nop();
+            bVar15 = bVar15 - 1;
+          }
+          bVar9 = T1;
+          cVar14 = CARRY1(param_7,0x55 - ((char)((bVar1 & bVar9) << 7) >> 7)) << 7;
+          bVar9 = FUN_CODE_558d();
+          cVar4 = DAT_INTMEM_55;
+          pbVar3 = (byte *)0x0;
+          if ((bVar9 ^ param_7) == 0) goto LAB_CODE_3adb;
+          pbVar3 = (byte *)((bVar9 ^ param_7) - (bVar15 - (cVar14 >> 7)) & bVar15);
+          bVar9 = bVar15 - 1;
+          BANK0_R3 = BANK0_R3 + -1;
+          if (BANK0_R3 == '\0') {
+            nop();
+            nop();
+            goto LAB_CODE_3e75;
+          }
+          BANK3_R1 = *param_4;
+          bVar1 = pbVar8 < &DAT_INTMEM_52;
+          if (pbVar8 == &DAT_INTMEM_52) {
+            cVar14 = DAT_SFR_bd;
+            DAT_SFR_bd = cVar14 + -1;
+            cVar14 = DAT_SFR_bd;
+            if (cVar14 == '\0') {
+              bVar9 = (byte)pbVar3 & DAT_INTMEM_5b;
+              bVar15 = *param_4;
+              *param_4 = *param_4 & 0xf0 | bVar9 & 0xf;
+              bVar15 = FUN_CODE_26eb(bVar9 & 0xf0 | bVar15 & 0xf,param_7 + 1,cVar4);
+              return bVar15;
+            }
+          }
+          else {
+            nop();
+            if (!bVar1) {
+              nop();
+              nop();
+              nop();
+            }
+            nop();
+            nop();
+            if (!bVar1) goto LAB_CODE_3ad4;
+            BANK2_R6 = DAT_SFR_a4;
+          }
+          nop();
+          nop();
+          bVar9 = *param_4;
+          *param_4 = *param_4 & 0xf0 | (byte)param_4 & 0xf;
+          bVar15 = FUN_CODE_3cc6((char)param_4 -
+                                 (*param_4 -
+                                 (((0x72 < ((byte)param_4 & 0xf0 | bVar9 & 0xf)) << 7) >> 7)),bVar15
+                                );
+          param_4 = (byte *)(bVar15 | (byte)param_4);
+          goto LAB_CODE_3b64;
+        }
+        pbVar8 = param_9 + -1;
+        param_1 = 0;
+        param_9 = (byte *)0x0;
+        if (pbVar8 != (byte *)0x0) {
+          uVar2 = HSTAT;
+LAB_CODE_3a9b:
+          param_4 = pbVar12 + (char)(pbVar8 + (-0x2b - (((&DAT_INTMEM_2a < pbVar12) << 7) >> 7)));
+          bVar15 = TXCON;
+          TXCON = bVar15 & 0x4c;
+          nop();
+          nop();
+LAB_CODE_3b64:
+          nop();
+          nop();
+          nop();
+          bVar15 = FUN_CODE_3b06(param_4);
+          return bVar15;
+        }
+      } while( true );
+    }
+    nop();
+  }
+  pbVar12 = (byte *)(param_1 ^ (byte)param_4);
+  nop();
+  nop();
+  pbVar3 = (byte *)(param_8 + '\x01');
+  P0_6 = 0;
+LAB_CODE_3800:
+  param_7 = DAT_INTMEM_31;
+  uVar2 = P0_7;
+  uVar2 = CCON;
+  cVar4 = CCON;
+  *param_5 = *param_5 + 1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar1 = CARRY1((byte)(param_9 + cVar4 + bVar15),(byte)param_4);
+  cVar14 = bVar1 << 7;
+  pbVar8 = param_9 + cVar4 + bVar15 + (char)param_4;
+  puVar16 = puVar18;
+  if (!bVar1) goto LAB_CODE_381f_1;
+  bVar9 = (byte)pbVar8 & DAT_INTMEM_50;
+  DAT_INTMEM_55 = DAT_INTMEM_55 + '\x01';
+  if (!bVar1) {
+    nop();
+    nop();
+    nop();
+    if (bVar15 == 0xa1) {
+      nop();
+      nop();
+      nop();
+      nop();
+      if (param_7 == 0x87) {
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        DAT_INTMEM_6c = param_4;
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        return bVar9 + 0xa1;
+      }
+      param_5 = param_5 + -1;
+      nop();
+      bVar9 = bVar13;
+    }
+    nop();
+    nop();
+    return bVar9 | (byte)param_5;
+  }
+  cVar14 = (0x7a < bVar9) << 7;
+  pbVar8 = (byte *)(bVar9 + 0x85);
+code_c0x3823:
+  bVar15 = CCAP2L;
+  param_4 = (byte *)SOFL;
+  BANK1_R5 = *puVar16;
+  puVar17 = puVar16 + -1;
+  puVar18 = puVar16 + -1;
+  if (pbVar12 != &BANK0_R1) goto LAB_CODE_37fb;
+  pbVar5 = (byte *)0x0;
+  RCAP2L = param_5;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar15 = (char)param_4 - (cVar14 >> 7);
+  bVar10 = bVar13 + bVar15;
+  bVar9 = *param_5 - ((CARRY1(bVar13,bVar15) << 7) >> 7);
+  cVar14 = CARRY1(bVar10,bVar9) << 7;
+  DAT_INTMEM_67 = DAT_INTMEM_67 & bVar10 + bVar9;
+  pbVar8 = (byte *)(bVar10 + bVar9 & (byte)param_4);
+  *param_4 = 0xa0;
+  *param_4 = *param_4 - 1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (cVar14 < '\0') {
+    uVar2 = P2;
+    nop();
+    bVar15 = BANK0_R0;
+    if (cVar14 < '\0') goto LAB_CODE_37fb;
+    DAT_SFR_95 = param_5;
+    HIFLG = DAT_INTMEM_6e;
+    DAT_INTMEM_6e = *param_4;
+    *param_4 = *param_4 + 1;
+    nop();
+    nop();
+    if (_4_4 != '\0') {
+      pbVar7 = pbVar3 + (((byte)pbVar3 | (byte)param_4) & (byte)param_4);
+      nop();
+      nop();
+      nop();
+      nop();
+      goto LAB_CODE_3794;
+    }
+    DAT_INTMEM_55 = DAT_INTMEM_55 + '\x01';
+    pbVar12 = pbVar5;
+    pbVar8 = param_4;
+    puVar16 = puVar16 + -1;
+    if (CARRY1(bVar10,bVar9)) {
+      pbVar8 = (byte *)((byte)param_4 & DAT_INTMEM_50);
+      puVar16 = puVar17;
+LAB_CODE_381f_1:
+      DAT_SFR_85 = DAT_INTMEM_24;
+    }
+    goto code_c0x3823;
+  }
+  bVar10 = TF1;
+  pbVar7 = (byte *)(bVar13 - 1);
+  uVar2 = RXCNTL;
+  uVar2 = CMOD;
+  *puVar16 = uVar2;
+  bVar9 = DAT_INTMEM_69;
+  bVar15 = P0_7;
+  bVar15 = ((byte)pbVar8 >> 7 & ~bVar10 & ~bVar15) << 7;
+  *param_4 = *param_4 & 0xf0;
+  cVar14 = CCON;
+  CCON = cVar14 + -1;
+  cVar14 = CCON;
+  pbVar8 = pbVar3;
+  pbVar12 = pbVar7;
+  puVar18 = puVar16;
+  if (cVar14 != '\0') goto LAB_CODE_387c;
+  cVar14 = RXCNTH;
+  RXCNTH = cVar14 + '\x01';
+  puVar18 = puVar16 + '\x01';
+  puVar16['\x01'] = DAT_INTMEM_39;
+  pbVar12 = pbVar3;
+  if (_0_3 != '\0') {
+    nop();
+    nop();
+    nop();
+    nop();
+    if (-1 < (char)bVar15) {
+      bVar15 = DAT_SFR_c2;
+      bVar13 = P1_3;
+      pbVar12 = DAT_EXTMEM_0555 +
+                (bVar15 - ((char)((CARRY1((byte)pbVar7,bVar9) & bVar13) << 7) >> 7));
+      *param_5 = *param_5 + 1;
+      nop();
+      nop();
+      nop();
+      if (pbVar12 == (byte *)0x0) {
+        bVar15 = FUN_CODE_3b6f(param_8);
+        return bVar15;
+      }
+      nop();
+      nop();
+      uVar2 = FIFLG_0;
+      bVar13 = pbVar12[bVar9];
+      puVar16['\x02'] = 0x26;
+      puVar16['\x03'] = 0x3d;
+      FUN_CODE_2a39(bVar15 | bVar13 | (byte)(pbVar12 + bVar9));
+      uVar2 = RCAP2L;
+      bVar15 = FUN_CODE_3bad(uVar2);
+      return bVar15;
+    }
+LAB_CODE_3794:
+    nop();
+    bVar15 = FUN_CODE_351b(pbVar7);
+    return bVar15;
+  }
+LAB_CODE_389c:
+  bVar9 = 0xe0;
+  if (pbVar12 != &DAT_INTMEM_60) {
+    pbVar11 = pbVar7 + -0x56;
+    bVar15 = &DAT_INTMEM_55 < pbVar7 | _1_2 ^ 1;
+    nop();
+    nop();
+    nop();
+    nop();
+    pbVar6 = pbVar5;
+    goto LAB_CODE_38d6;
+  }
+  param_7 = param_7 + 1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  puVar19 = puVar18 + '\x01';
+  puVar18 = puVar18 + '\x01';
+  uVar2 = CCAP0L;
+  *puVar19 = uVar2;
+  pbVar8 = (byte *)((byte)pbVar7 & (byte)param_4 ^ *param_4);
+  BANK1_R4 = BANK1_R4 + -1;
+  if (BANK1_R4 == '\0') {
+    pbVar3 = pbVar3 + '\x01';
+    bVar15 = (param_4 < &DAT_INTMEM_2e) << 7;
+    pbVar8 = BANK3_R4;
+    if ((byte **)param_4 != &DAT_INTMEM_2e) {
+LAB_CODE_388d:
+      nop();
+      do {
+        nop();
+        nop();
+        pbVar6 = pbVar5;
+        while( true ) {
+          pbVar5 = pbVar8;
+          nop();
+          bVar15 = bVar15 >> 7 | _b_1 ^ 1;
+          param_7 = param_7 - 1;
+          pbVar11 = pbVar5;
+          if (param_7 == 0) {
+            uVar2 = ET1;
+            pbVar7 = DAT_EXTMEM_0555;
+            if (bVar9 != 0x59) {
+              uVar2 = RB8;
+              return ((byte)(pbVar6 + (char)pbVar3) | (byte)pbVar5) & (byte)pbVar5;
+            }
+            goto LAB_CODE_389c;
+          }
+LAB_CODE_38d6:
+          cVar14 = P1_2;
+          if (cVar14 == '\0') {
+            if (bVar9 == 0x61) {
+              DAT_INTMEM_54 = DAT_INTMEM_54 + -1;
+              bVar15 = FUN_CODE_3a15();
+              return bVar15;
+            }
+            goto LAB_CODE_38f7;
+          }
+          P1_2 = 0;
+          *param_4 = *param_4 - 1;
+          bVar15 = bVar15 << 7;
+          *param_5 = *param_5 - 1;
+          pbVar8 = pbVar3;
+          pbVar5 = pbVar6;
+          pbVar3 = (byte *)((byte)pbVar11 & (byte)pbVar3);
+LAB_CODE_387c:
+          if ((char)bVar15 < '\0') break;
+          bVar13 = P2;
+          pbVar8 = (byte *)((*param_5 - ((char)bVar15 >> 7)) + 0x43 & bVar13);
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          bVar15 = (bVar9 < 0x41) << 7;
+          pbVar6 = pbVar5;
+          if (bVar9 == 0x41) goto LAB_CODE_388d;
+        }
+      } while( true );
+    }
+    DAT_INTMEM_2e = BANK3_R4;
+    DAT_SFR_b5 = BANK3_R4;
+    if (BANK3_R4 != (byte *)0x0) {
+      bVar15 = FUN_CODE_3c73(BANK3_R4 +
+                             ('I' - ('.' - ((char)(((byte *)0xb6 < BANK3_R4 & _3_1) << 7) >> 7))));
+      return bVar15;
+    }
+    nop();
+    bVar9 = 0xe0;
+    nop();
+    nop();
+    nop();
+    nop();
+    pbVar11 = (byte *)*param_5;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+LAB_CODE_38f7:
+    bVar15 = DAT_SFR_ac;
+    pbVar3 = (byte *)(((byte)pbVar11 | (byte)param_5) & bVar15);
+  }
+  else {
+code_c0x3acd:
+    bVar15 = (byte)pbVar8 & *param_4 & 0x28 ^ (byte)param_4;
+    nop();
+    nop();
+    bVar1 = CARRY1(bVar15,(byte)param_4);
+    pbVar3 = param_4 + bVar15;
+LAB_CODE_3ad4:
+    pbVar3 = pbVar3 + (BANK0_R7 - ((char)((bVar1 & ~_1_2) << 7) >> 7));
+LAB_CODE_3adb:
+    pbVar3 = (byte *)((byte)pbVar3 ^ (byte)param_4 ^ param_7);
+    param_5 = BANK1_R2;
+    bVar9 = BANK3_R2;
+  }
+LAB_CODE_3e75:
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  param_4 = param_4 + -1;
+  if (bVar9 == 0x21) {
+    nop();
+  }
+  TR0 = bVar9 < 0x21;
+  bVar1 = &DAT_INTMEM_36 < pbVar3;
+  pbVar3 = pbVar3 + -0x37;
+  do {
+    bVar15 = (byte)pbVar3 | bVar9 | (byte)param_5 | (byte)param_5;
+    pbVar8 = param_5 + '\x01';
+    param_5 = param_5 + '\x02';
+    if (((bVar15 | (byte)pbVar8 | (byte)pbVar8 | (byte)pbVar8 | (byte)pbVar8) != 1) &&
+       (SM2 = bVar1, _0_0 != '\0')) {
+      _0_0 = '\0';
+    }
+    uVar2 = T2MOD;
+    uVar2 = T2MOD;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    if (param_3 != 0) {
+      param_3 = (byte)param_4 % param_3;
+    }
+    if (param_3 != 0) {
+      param_3 = (byte)pbVar12 % param_3;
+    }
+    if (param_3 != 0) {
+      param_3 = (byte)pbVar12 % param_3;
+    }
+    if (param_3 != 0) {
+      param_3 = (byte)pbVar12 % param_3;
+    }
+    if (param_3 != 0) {
+      param_3 = (byte)pbVar12 % param_3;
+    }
+    if (param_3 != 0) {
+      param_3 = (byte)pbVar12 % param_3;
+    }
+    bVar1 = false;
+    pbVar3 = pbVar12;
+    if (param_3 != 0) {
+      pbVar3 = (byte *)((byte)pbVar12 / param_3);
+      param_3 = (byte)pbVar12 % param_3;
+    }
+    *param_4 = *param_4 + 1;
+  } while( true );
+LAB_CODE_37fb:
+  param_9 = pbVar12 + -1;
+  if (pbVar8 != (byte *)0x0) {
+    bVar15 = FUN_CODE_3000(pbVar8 + (char)param_9);
+    return bVar15;
+  }
+  pbVar12 = (byte *)(DAT_INTMEM_43 - (cVar14 >> 7) ^ (byte)param_9);
+  goto LAB_CODE_3800;
+}
+

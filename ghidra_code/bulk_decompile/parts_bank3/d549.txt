@@ -1,0 +1,8 @@
+=== 0xd549 ===
+
+char FUN_CODE_d549(void)
+
+{
+  return (((DAT_INTMEM_4a & 3) < 2) << 7) >> 7;
+}
+

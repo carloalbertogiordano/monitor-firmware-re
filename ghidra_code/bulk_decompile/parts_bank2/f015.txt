@@ -1,0 +1,10 @@
+=== 0xf015 ===
+
+void FUN_CODE_f015(void)
+
+{
+  FUN_CODE_6e53(0xe63a);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe336);
+}
+

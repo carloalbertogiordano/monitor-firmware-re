@@ -1,0 +1,27 @@
+=== 0x3bf7 ===
+
+void FUN_CODE_3bf7(undefined1 param_1,byte param_2,byte param_3)
+
+{
+  byte bVar1;
+  
+  bVar1 = ~param_3;
+  if (bVar1 == 0) {
+    bVar1 = ~param_2;
+  }
+  DAT_EXTMEM_e336 = param_2;
+  DAT_EXTMEM_e337 = param_3;
+  DAT_EXTMEM_e338 = param_1;
+  if (bVar1 != 0) {
+    DAT_EXTMEM_006a = DAT_EXTMEM_006a & 0x3f | 0x40;
+    DAT_EXTMEM_e3e2 = 0;
+    DAT_EXTMEM_e3e3 = 0x69;
+    DAT_EXTMEM_e3e4 = 1;
+    _0_6 = 0;
+    DAT_EXTMEM_e3e1 = param_1;
+    FUN_CODE_2e4e(param_3,BANK0_R6,0xff,0,param_2);
+    DAT_EXTMEM_006a = DAT_EXTMEM_006a & 0x3f;
+  }
+  return;
+}
+

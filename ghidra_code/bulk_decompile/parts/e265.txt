@@ -1,0 +1,33 @@
+=== 0xe265 ===
+
+void FUN_CODE_e265(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_0595();
+  if (-1 < in_PSW) {
+    FUN_CODE_b619(1);
+  }
+  FUN_CODE_0cc1();
+  FUN_CODE_0cc7();
+  FUN_CODE_0b71(0);
+  FUN_CODE_0b77(0);
+  FUN_CODE_0b7d(0);
+  FUN_CODE_0bf5(0);
+  _0_1 = 0;
+  FUN_CODE_08e9();
+  FUN_CODE_0c9d(0);
+  FUN_CODE_e7fa(1,0);
+  FUN_CODE_0be3(0);
+  FUN_CODE_0bd7(0);
+  FUN_CODE_0c6d(0);
+  FUN_CODE_fa8c(0);
+  FUN_CODE_0b3b(2,0);
+  _0_0 = 0;
+  FUN_CODE_0be9();
+  _0_0 = 0;
+  FUN_CODE_0bef();
+  return;
+}
+

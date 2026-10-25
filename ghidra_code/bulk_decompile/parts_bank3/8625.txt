@@ -1,0 +1,11 @@
+=== 0x8625 ===
+
+void FUN_CODE_8625(void)
+
+{
+  DAT_EXTMEM_0b51 = DAT_EXTMEM_0b51 & 0xfc | (DAT_EXTMEM_0bd1 & 0x30) >> 4;
+  DAT_EXTMEM_0b52 = DAT_EXTMEM_0b52 & 0xbf;
+  DAT_EXTMEM_0b50 = DAT_EXTMEM_0b50 & 0x7f | 0x80;
+  return;
+}
+

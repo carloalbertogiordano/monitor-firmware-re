@@ -1,0 +1,14 @@
+=== 0xf8c6 ===
+
+byte FUN_CODE_f8c6(byte param_1)
+
+{
+  if (param_1 == 4) {
+    return DAT_EXTMEM_e580 >> 1 | 0x80;
+  }
+  if (param_1 - 3 == 0) {
+    return DAT_EXTMEM_e581 >> 1 | (3 < param_1) << 7;
+  }
+  return param_1 - 3;
+}
+

@@ -1,0 +1,19 @@
+=== 0xed08 ===
+
+void FUN_CODE_ed08(undefined1 param_1,undefined1 param_2)
+
+{
+  char cVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e338 = param_2;
+  DAT_EXTMEM_e339 = param_1;
+  FUN_CODE_1165(0xe0);
+  do {
+    DAT_EXTMEM_0092 = DAT_EXTMEM_e33a;
+    cVar1 = -1;
+    cVar2 = FUN_CODE_13c9(FUN_CODE_e33b);
+  } while (cVar2 != '\0' || cVar1 != '\0');
+  return;
+}
+

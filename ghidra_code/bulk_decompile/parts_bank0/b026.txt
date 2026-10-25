@@ -1,0 +1,8 @@
+=== 0xb026 ===
+
+char FUN_CODE_b026(char param_1)
+
+{
+  return param_1 + (DAT_INTMEM_37 - ((CARRY1(DAT_INTMEM_38,DAT_INTMEM_2a) << 7) >> 7));
+}
+

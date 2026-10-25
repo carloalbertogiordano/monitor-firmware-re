@@ -1,0 +1,13 @@
+=== 0x5c20 ===
+
+void FUN_CODE_5c20(void)
+
+{
+  nop();
+  nop();
+  nop();
+  func_0x0f33();
+  FUN_CODE_0409();
+  return;
+}
+

@@ -1,0 +1,16 @@
+=== 0x0b8a ===
+
+void FUN_CODE_0b8a(byte param_1,short param_2,char *param_3,byte param_4,byte param_5)
+
+{
+  char cVar1;
+  
+  DAT_INTMEM_71 = DAT_INTMEM_71 + -1;
+  cVar1 = EPINDEX;
+  EPINDEX = cVar1 + -1;
+  BANK2_R6 = BANK2_R6 ^ 0x61;
+  *param_3 = *param_3 + -1;
+  FUN_CODE_0f72(param_1 & param_5 ^ param_4,param_2);
+  return;
+}
+

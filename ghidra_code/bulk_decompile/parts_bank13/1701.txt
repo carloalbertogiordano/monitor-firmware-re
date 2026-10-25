@@ -1,0 +1,10 @@
+=== 0x1701 ===
+
+void FUN_CODE_1701(void)
+
+{
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

@@ -1,0 +1,9 @@
+=== 0x8137 ===
+
+void FUN_CODE_8137(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe35e);
+}
+

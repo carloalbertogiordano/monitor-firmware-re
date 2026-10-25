@@ -1,0 +1,15 @@
+=== 0xfb95 ===
+
+void FUN_CODE_fb95(void)
+
+{
+  char cVar1;
+  
+  cVar1 = '\a';
+  FUN_CODE_ca0e();
+  if (DAT_EXTMEM_e585 != cVar1) {
+    return;
+  }
+  return;
+}
+

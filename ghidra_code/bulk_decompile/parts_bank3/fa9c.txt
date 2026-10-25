@@ -1,0 +1,9 @@
+=== 0xfa9c ===
+
+undefined1 FUN_CODE_fa9c(undefined1 param_1)
+
+{
+  FUN_CODE_fee1(1,2,param_1);
+  return param_1;
+}
+

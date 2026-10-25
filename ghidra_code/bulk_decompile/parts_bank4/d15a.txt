@@ -1,0 +1,8 @@
+=== 0xd15a ===
+
+undefined1 FUN_CODE_d15a(void)
+
+{
+  return DAT_EXTMEM_e397;
+}
+

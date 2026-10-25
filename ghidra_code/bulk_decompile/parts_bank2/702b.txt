@@ -1,0 +1,9 @@
+=== 0x702b ===
+
+byte FUN_CODE_702b(void)
+
+{
+  DAT_EXTMEM_0527 = DAT_EXTMEM_0527 & 0x87 | 0x20;
+  return DAT_EXTMEM_05ac & 0x8f;
+}
+

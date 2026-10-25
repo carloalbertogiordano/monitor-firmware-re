@@ -1,0 +1,9 @@
+=== 0x1159 ===
+
+void FUN_CODE_1159(void)
+
+{
+  state_dispatch_arg22_case1();
+  return;
+}
+

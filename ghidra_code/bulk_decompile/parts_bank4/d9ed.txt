@@ -1,0 +1,45 @@
+=== 0xd9ed ===
+
+void FUN_CODE_d9ed(char param_1)
+
+{
+  byte bVar1;
+  char in_PSW;
+  
+  FUN_CODE_fd4a();
+  if (in_PSW < '\0') {
+    bVar1 = FUN_CODE_fdff();
+    if ((bVar1 & 3) == 1) {
+      FUN_CODE_fcd9();
+      if (param_1 == '\x01') {
+        FUN_CODE_0523();
+        FUN_CODE_f950();
+        if (param_1 == '\x02') {
+          bVar1 = DAT_EXTMEM_e5d9 & 0xf;
+          DAT_EXTMEM_e07f = DAT_EXTMEM_e07f & 0xf0 | bVar1;
+          FUN_CODE_0523();
+          _0_0 = 1;
+          DAT_EXTMEM_e36e = bVar1;
+          FUN_CODE_fb33();
+        }
+      }
+    }
+    else {
+      bVar1 = DAT_EXTMEM_e07f >> 4 & 3;
+      if (bVar1 == 2) {
+        FUN_CODE_fcd9();
+        if (bVar1 == 1) {
+          FUN_CODE_0523();
+          FUN_CODE_f950();
+          if (bVar1 == 2) {
+            DAT_EXTMEM_e07f = DAT_EXTMEM_e07f | 0x80;
+            return;
+          }
+        }
+      }
+    }
+  }
+  DAT_EXTMEM_e07f = DAT_EXTMEM_e07f & 0x7f;
+  return;
+}
+

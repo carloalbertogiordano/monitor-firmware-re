@@ -1,0 +1,33 @@
+=== 0x3295 ===
+
+char FUN_CODE_3295(byte *param_1,byte param_2,byte param_3,char param_4,byte param_5,byte param_6,
+                  char param_7)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  if (param_5 != 0x4e) {
+    P0_4 = param_5 < 0x4e;
+    nop();
+    cVar1 = FUN_CODE_339d((param_3 ^ 0xee | param_5) + (param_3 - (((param_5 < 0x4e) << 7) >> 7)));
+    return cVar1;
+  }
+  bVar2 = param_7 - 1;
+  cVar1 = param_3 - 1;
+  nop();
+  bVar3 = FUN_CODE_8148(cVar1);
+  if (param_5 == 1) {
+    if (param_6 ==
+        (((*param_1 | param_2) < param_5 - ((CARRY1(bVar3 & param_6 ^ bVar2,*param_1) << 7) >> 7))
+        << 7) >> 7) {
+      FIFLG1 = 0x75;
+      cVar1 = FUN_CODE_3675(param_6,param_4 + '\x02',cVar1);
+      return cVar1;
+    }
+    return (DAT_EXTMEM_b7ac | param_2) + 1;
+  }
+  return cVar1;
+}
+

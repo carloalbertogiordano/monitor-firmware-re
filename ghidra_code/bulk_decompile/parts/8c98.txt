@@ -1,0 +1,11 @@
+=== 0x8c98 ===
+
+undefined1 FUN_CODE_8c98(void)
+
+{
+  FUN_CODE_12f8(DAT_EXTMEM_ff67);
+  FUN_CODE_130a(DAT_EXTMEM_ff68,1);
+  FUN_CODE_130a(DAT_EXTMEM_ff69,2);
+  return 0;
+}
+

@@ -1,0 +1,38 @@
+=== 0xd869 ===
+
+void FUN_CODE_d869(byte param_1)
+
+{
+  char cVar1;
+  byte in_PSW;
+  byte bVar2;
+  
+  DAT_EXTMEM_3001 = DAT_EXTMEM_3001 & 0x26 | 0xc0;
+  DAT_EXTMEM_3002 = DAT_EXTMEM_3002 & 0xde;
+  if (param_1 == 0) {
+    bVar2 = in_PSW & 0xdd;
+    DAT_EXTMEM_3000 = DAT_EXTMEM_3000 & 0xf0 | 0xd;
+  }
+  else {
+    bVar2 = (3 < param_1) << 7;
+    if ((param_1 == 4) || (param_1 == 3)) {
+      DAT_EXTMEM_3000 = DAT_EXTMEM_3000 & 0xf0;
+    }
+  }
+  cVar1 = FUN_CODE_c170();
+  if (cVar1 == '\0') {
+    FUN_CODE_c1b3();
+    if ((char)bVar2 < '\0') {
+      FUN_CODE_c0e3();
+    }
+    else {
+      FUN_CODE_c12b();
+    }
+  }
+  else {
+    FUN_CODE_c12c();
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,6,0x66);
+}
+

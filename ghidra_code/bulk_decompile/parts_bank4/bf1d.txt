@@ -1,0 +1,10 @@
+=== 0xbf1d ===
+
+void FUN_CODE_bf1d(void)
+
+{
+  DAT_EXTMEM_08a3 = DAT_EXTMEM_08a3 & 0xf0 | DAT_INTMEM_29;
+  DAT_EXTMEM_08a4 = DAT_INTMEM_2a;
+  return;
+}
+

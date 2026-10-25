@@ -1,0 +1,8 @@
+=== 0x407a ===
+
+byte FUN_CODE_407a(void)
+
+{
+  return DAT_EXTMEM_006a & 0x3f;
+}
+

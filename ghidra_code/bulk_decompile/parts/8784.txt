@@ -1,0 +1,9 @@
+=== 0x8784 ===
+
+undefined1 FUN_CODE_8784(void)
+
+{
+  DAT_EXTMEM_02c9 = 0x28;
+  return DAT_EXTMEM_02ca;
+}
+

@@ -1,0 +1,28 @@
+=== 0xb709 ===
+
+void FUN_CODE_b709(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  short sVar2;
+  
+  DAT_EXTMEM_e380 = 0;
+  DAT_EXTMEM_e381 = 0;
+  DAT_EXTMEM_e37f = param_1;
+  FUN_CODE_1420(5);
+  FUN_CODE_7726(0xe382);
+  uVar1 = FUN_CODE_1420(7);
+  sVar2 = -0x1c7c;
+  FUN_CODE_7727(0xe384,uVar1);
+  FUN_CODE_1724(sVar2 + 1);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_127f();
+  DAT_EXTMEM_e380 = 7;
+  DAT_EXTMEM_e381 = 0x80;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(0,DAT_EXTMEM_e37f,7,0x80);
+}
+

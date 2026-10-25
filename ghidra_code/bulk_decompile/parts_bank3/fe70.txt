@@ -1,0 +1,11 @@
+=== 0xfe70 ===
+
+void FUN_CODE_fe70(void)
+
+{
+  if ((DAT_EXTMEM_0b20 & 0xe0) == 0xe0) {
+    return;
+  }
+  return;
+}
+

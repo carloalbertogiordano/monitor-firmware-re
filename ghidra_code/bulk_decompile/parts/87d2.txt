@@ -1,0 +1,9 @@
+=== 0x87d2 ===
+
+byte FUN_CODE_87d2(void)
+
+{
+  DAT_EXTMEM_02ef = DAT_EXTMEM_02ef & 0x1f | DAT_EXTMEM_e338 & 0x80;
+  return DAT_EXTMEM_02e6 & 0xb9;
+}
+

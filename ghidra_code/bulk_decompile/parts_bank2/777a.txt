@@ -1,0 +1,9 @@
+=== 0x777a ===
+
+void FUN_CODE_777a(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe336);
+}
+

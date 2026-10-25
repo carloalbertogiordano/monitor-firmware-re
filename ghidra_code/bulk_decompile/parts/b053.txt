@@ -1,0 +1,8 @@
+=== 0xb053 ===
+
+char FUN_CODE_b053(void)
+
+{
+  return DAT_EXTMEM_e337 - (DAT_EXTMEM_e335 - (((DAT_EXTMEM_e338 < DAT_EXTMEM_e336) << 7) >> 7));
+}
+

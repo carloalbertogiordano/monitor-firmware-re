@@ -1,0 +1,8 @@
+=== 0x4388 ===
+
+char FUN_CODE_4388(void)
+
+{
+  return DAT_INTMEM_33 - (DAT_INTMEM_35 - (((DAT_INTMEM_34 < DAT_INTMEM_36) << 7) >> 7));
+}
+

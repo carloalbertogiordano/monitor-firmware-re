@@ -1,0 +1,8 @@
+=== 0xfd89 ===
+
+void FUN_CODE_fd89(void)
+
+{
+  return;
+}
+

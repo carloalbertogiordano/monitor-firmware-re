@@ -1,0 +1,9 @@
+=== 0x1171 ===
+
+void FUN_CODE_1171(void)
+
+{
+  FUN_CODE_0451(0x3eed);
+  return;
+}
+

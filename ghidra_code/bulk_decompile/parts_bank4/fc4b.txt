@@ -1,0 +1,11 @@
+=== 0xfc4b ===
+
+void FUN_CODE_fc4b(void)
+
+{
+  if ((DAT_EXTMEM_e687 & 1) != 1) {
+    FUN_CODE_aa23(1);
+  }
+  return;
+}
+

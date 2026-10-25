@@ -1,0 +1,31 @@
+=== 0x0b3b ===
+
+void FUN_CODE_0b3b(byte param_1,char *param_2,char *param_3,char param_4,char param_5)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar2 = param_2[param_1];
+  bVar1 = param_4 + 1;
+  if (bVar2 == 0) {
+    bVar1 = param_4 + 2;
+    bVar2 = 0;
+    if (*param_2 != '\0') {
+      _1_3 = _1_3 ^ 1;
+      if (*param_2 == '\0') {
+        *param_3 = *param_3 + '\x01';
+        nop();
+        FUN_CODE_0800(0,(short)param_2,bVar1,param_5 + '\x01');
+        return;
+      }
+      thunk_FUN_CODE_0e1a((short)param_2,param_3);
+      return;
+    }
+  }
+  nop();
+  nop();
+  FUN_CODE_0800(bVar2,(short)param_2,bVar1,param_5);
+  return;
+}
+

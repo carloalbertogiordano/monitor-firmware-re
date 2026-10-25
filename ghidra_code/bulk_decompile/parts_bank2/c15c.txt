@@ -1,0 +1,9 @@
+=== 0xc15c ===
+
+void FUN_CODE_c15c(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,6,0x66);
+}
+

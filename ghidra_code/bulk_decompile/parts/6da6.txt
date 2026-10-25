@@ -1,0 +1,10 @@
+=== 0x6da6 ===
+
+void FUN_CODE_6da6(void)
+
+{
+  _8_3 = 0;
+  FUN_CODE_fe3c(0);
+  return;
+}
+

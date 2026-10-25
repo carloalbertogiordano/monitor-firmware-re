@@ -1,0 +1,8 @@
+=== 0x8c8d ===
+
+char FUN_CODE_8c8d(byte param_1,char param_2,char param_3,byte param_4)
+
+{
+  return param_2 - (param_3 - (((param_1 < param_4) << 7) >> 7));
+}
+

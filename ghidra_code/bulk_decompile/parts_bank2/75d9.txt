@@ -1,0 +1,8 @@
+=== 0x75d9 ===
+
+byte FUN_CODE_75d9(void)
+
+{
+  return DAT_EXTMEM_e511 >> 3 & 7;
+}
+

@@ -1,0 +1,14 @@
+=== 0xfafd ===
+
+void FUN_CODE_fafd(short param_1)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_c522();
+  uVar1 = FUN_CODE_c534();
+  *(undefined1 *)(param_1 + 1) = uVar1;
+  DAT_EXTMEM_5520 = DAT_EXTMEM_5520 & 0xf7 | 8;
+  return;
+}
+

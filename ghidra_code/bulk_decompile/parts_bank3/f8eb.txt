@@ -1,0 +1,18 @@
+=== 0xf8eb ===
+
+void FUN_CODE_f8eb(void)
+
+{
+  if (_0_0 == '\0') {
+    DAT_EXTMEM_b7da = DAT_EXTMEM_b7da & 0xfb;
+    DAT_EXTMEM_b7a5 = DAT_EXTMEM_b7a5 & 0xbf;
+  }
+  else {
+    DAT_EXTMEM_b7da = DAT_EXTMEM_b7da & 0xf9 | 6;
+    DAT_EXTMEM_b7a5 = DAT_EXTMEM_b7a5 & 0xb8 | 0x44;
+  }
+  DAT_EXTMEM_e38a = _0_0 != '\0';
+  FUN_CODE_febf(0x28,0x80,6);
+  return;
+}
+

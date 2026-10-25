@@ -1,0 +1,10 @@
+=== 0x4786 ===
+
+char FUN_CODE_4786(void)
+
+{
+  char in_PSW;
+  
+  return -0x1d - (in_PSW >> 7);
+}
+

@@ -1,0 +1,9 @@
+=== 0xae91 ===
+
+void FUN_CODE_ae91(void)
+
+{
+  FUN_CODE_1298((ushort)DAT_EXTMEM_e366,DAT_EXTMEM_e34a,DAT_EXTMEM_e349,DAT_EXTMEM_e348);
+  return;
+}
+

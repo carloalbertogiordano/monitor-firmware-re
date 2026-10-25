@@ -1,0 +1,14 @@
+=== 0xfcc0 ===
+
+char FUN_CODE_fcc0(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e62c;
+  if (DAT_EXTMEM_e62c != -1) {
+    DAT_EXTMEM_e62c = DAT_EXTMEM_e62c + '\x01';
+  }
+  return cVar1 + '\x01';
+}
+

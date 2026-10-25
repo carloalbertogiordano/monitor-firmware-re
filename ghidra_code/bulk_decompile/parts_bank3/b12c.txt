@@ -1,0 +1,11 @@
+=== 0xb12c ===
+
+void FUN_CODE_b12c(undefined1 param_1,undefined1 param_2)
+
+{
+  FUN_CODE_07ed();
+  DAT_EXTMEM_e372 = param_1;
+  DAT_EXTMEM_e373 = param_2;
+  return;
+}
+

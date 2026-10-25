@@ -1,0 +1,8 @@
+=== 0x8d69 ===
+
+undefined1 FUN_CODE_8d69(void)
+
+{
+  return DAT_EXTMEM_e686;
+}
+

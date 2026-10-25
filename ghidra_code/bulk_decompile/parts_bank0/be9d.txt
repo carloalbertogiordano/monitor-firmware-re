@@ -1,0 +1,11 @@
+=== 0xbe9d ===
+
+char FUN_CODE_be9d(byte param_1,char param_2,char param_3)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_1298(0x11,param_1,param_2,param_3);
+  return '\a' - (((0x39 < bVar1) << 7) >> 7);
+}
+

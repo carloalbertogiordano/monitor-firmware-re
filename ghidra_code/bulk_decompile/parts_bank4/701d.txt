@@ -1,0 +1,9 @@
+=== 0x701d ===
+
+void FUN_CODE_701d(void)
+
+{
+  DAT_EXTMEM_e3c6 = 1;
+  return;
+}
+

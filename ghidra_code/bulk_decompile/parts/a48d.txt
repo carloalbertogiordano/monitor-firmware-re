@@ -1,0 +1,8 @@
+=== 0xa48d ===
+
+char FUN_CODE_a48d(char param_1,byte param_2,char param_3,byte param_4)
+
+{
+  return param_1 - (param_3 - (((param_2 < param_4) << 7) >> 7));
+}
+

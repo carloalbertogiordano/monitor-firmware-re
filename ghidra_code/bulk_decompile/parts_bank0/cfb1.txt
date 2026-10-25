@@ -1,0 +1,91 @@
+=== 0xcfb1 ===
+
+byte FUN_CODE_cfb1(undefined1 param_1,undefined1 param_2,char param_3,byte param_4)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte *pbVar3;
+  
+  DAT_EXTMEM_e34c = 0;
+  DAT_EXTMEM_e343 = param_4;
+  DAT_EXTMEM_e344 = param_3;
+  DAT_EXTMEM_e345 = param_1;
+  DAT_EXTMEM_e346 = param_2;
+  FUN_CODE_d586(0xe34d);
+  if (0x18 < DAT_EXTMEM_e347) {
+    return DAT_EXTMEM_e347 - 0x19;
+  }
+  FUN_CODE_f373(DAT_EXTMEM_e34b);
+  FUN_CODE_d54f();
+  while ((DAT_EXTMEM_ff5d & 0x20) != 0x20) {
+    cVar1 = DAT_EXTMEM_e34d;
+    if (DAT_EXTMEM_e34d == '\0') {
+      cVar1 = DAT_EXTMEM_e34e;
+    }
+    if (cVar1 == '\0') goto LAB_CODE_d0b1;
+    FUN_CODE_d528();
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+  pbVar3 = (byte *)0xe344;
+  if (DAT_EXTMEM_e344 == '\x01') {
+    FUN_CODE_d5ba();
+    bVar2 = FUN_CODE_d572(*pbVar3 | 1);
+  }
+  else {
+    if (DAT_EXTMEM_e344 != '\x02') {
+      if (DAT_EXTMEM_e344 == '\0') {
+        FUN_CODE_d5ba();
+        DAT_EXTMEM_ff58 = DAT_EXTMEM_ff58 & 0xe7;
+        DAT_EXTMEM_ff5e = DAT_EXTMEM_e343 | 1;
+      }
+      goto LAB_CODE_d05e;
+    }
+    FUN_CODE_d5ba();
+    bVar2 = FUN_CODE_d572(*pbVar3 | 2);
+  }
+  DAT_EXTMEM_ff5e = bVar2 | 1;
+LAB_CODE_d05e:
+  DAT_EXTMEM_ff55 = DAT_EXTMEM_ff55 & 0xc1 | (DAT_EXTMEM_e347 - 1) * '\x02' | 0x40;
+  FUN_CODE_d583();
+  while ((DAT_EXTMEM_ff5d >> 1 & 1) != 1) {
+    cVar1 = DAT_EXTMEM_e34d;
+    if (DAT_EXTMEM_e34d == '\0') {
+      cVar1 = DAT_EXTMEM_e34e;
+    }
+    if (cVar1 == '\0') goto LAB_CODE_d0b1;
+    FUN_CODE_d528();
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+  FUN_CODE_d583();
+  while( true ) {
+    if ((DAT_EXTMEM_ff5d & 0x20) == 0x20) {
+      for (DAT_EXTMEM_e34c = 0; DAT_EXTMEM_e34c < DAT_EXTMEM_e347;
+          DAT_EXTMEM_e34c = DAT_EXTMEM_e34c + 1) {
+        bVar2 = DAT_EXTMEM_ff5e;
+        FUN_CODE_d4f2(0xe348,DAT_EXTMEM_ff5e);
+        FUN_CODE_12f8(bVar2);
+        FUN_CODE_13c9('\0',-0x1cb7,1);
+      }
+      DAT_EXTMEM_ff5d = DAT_EXTMEM_ff5d | 7;
+      return DAT_EXTMEM_ff5d;
+    }
+    cVar1 = DAT_EXTMEM_e34d;
+    if (DAT_EXTMEM_e34d == '\0') {
+      cVar1 = DAT_EXTMEM_e34e;
+    }
+    if (cVar1 == '\0') break;
+    FUN_CODE_d528();
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+  }
+LAB_CODE_d0b1:
+  bVar2 = FUN_CODE_d54f();
+  return bVar2;
+}
+

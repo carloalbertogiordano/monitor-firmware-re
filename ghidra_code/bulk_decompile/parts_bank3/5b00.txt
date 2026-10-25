@@ -1,0 +1,37 @@
+=== 0x5b00 ===
+
+undefined1
+FUN_CODE_5b00(char param_1,byte *param_2,byte param_3,undefined1 param_4,char param_5,char param_6)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  char in_PSW;
+  undefined1 in_stack_000000fc;
+  
+  bVar1 = *(byte *)(ushort)param_3;
+  *param_2 = bVar1;
+  DPXL = param_4;
+  if (_4_0 != '\0') {
+    _4_0 = 0;
+    nop();
+    uVar2 = FUN_CODE_0008();
+    return uVar2;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  func_0x04ef((bVar1 ^ DAT_INTMEM_24) +
+              (param_5 - (((0xbb < (param_1 - (param_6 - (in_PSW >> 7)) | 0x48U)) << 7) >> 7)));
+  FUN_CODE_075d();
+  if (((DAT_EXTMEM_ffeb & 0x80) == 0x80) && (bVar1 = DAT_SFR_91, (bVar1 & 0x10) == 0)) {
+    bVar1 = DAT_SFR_91;
+    DAT_SFR_91 = bVar1 & 0xef | 0x10;
+  }
+  DAT_EXTMEM_fff4 = DAT_EXTMEM_e6c8;
+  return in_stack_000000fc;
+}
+

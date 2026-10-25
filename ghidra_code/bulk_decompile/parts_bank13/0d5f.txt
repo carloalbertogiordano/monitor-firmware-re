@@ -1,0 +1,8 @@
+=== 0x0d5f ===
+
+byte FUN_CODE_0d5f(byte param_1)
+
+{
+  return param_1 << 1 | param_1 >> 7;
+}
+

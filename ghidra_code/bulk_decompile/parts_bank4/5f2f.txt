@@ -1,0 +1,20 @@
+=== 0x5f2f ===
+
+void FUN_CODE_5f2f(byte param_1,byte *param_2,byte param_3)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = FUN_CODE_6271(param_1 ^ param_3);
+  bVar1 = (bVar1 & 1) << 4;
+  bVar2 = FUN_CODE_756a();
+  *param_2 = bVar2 | bVar1;
+  if (((bVar2 | bVar1) >> 4 & 1) != 0) {
+    FUN_CODE_629b();
+  }
+  FUN_CODE_62bf();
+  FUN_CODE_626b();
+  return;
+}
+

@@ -1,0 +1,17 @@
+=== 0xb87f ===
+
+void FUN_CODE_b87f(short param_1)
+
+{
+  DAT_EXTMEM_e3ce = uEXTMEMffff;
+  DAT_EXTMEM_e3cf = 1;
+  DAT_EXTMEM_e3d0 = DAT_EXTMEM_e65e;
+  DAT_EXTMEM_e3d1 = DAT_EXTMEM_e65a;
+  DAT_EXTMEM_e3d2 = DAT_EXTMEM_e65b;
+  DAT_EXTMEM_e3d3 = DAT_EXTMEM_e3c8;
+  _0_4 = 1;
+  FUN_CODE_1087(*(undefined1 *)(param_1 + 3),*(undefined1 *)(param_1 + 2),
+                *(undefined1 *)(param_1 + 1),0,0x1b,1);
+  return;
+}
+

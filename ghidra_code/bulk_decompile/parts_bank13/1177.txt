@@ -1,0 +1,16 @@
+=== 0x1177 ===
+
+void FUN_CODE_1177(byte param_1,short param_2,byte param_3,char *param_4,char param_5,char param_6)
+
+{
+  char cVar1;
+  char in_PSW;
+  
+  cVar1 = *param_4 + (param_5 - ((CARRY1(param_1,param_5 - (in_PSW >> 7)) << 7) >> 7));
+  *(char *)(ushort)param_3 = cVar1;
+                    /* WARNING: Could not recover jumptable at 0x117e. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)(byte)(cVar1 + param_6 + '\x01')))();
+  return;
+}
+

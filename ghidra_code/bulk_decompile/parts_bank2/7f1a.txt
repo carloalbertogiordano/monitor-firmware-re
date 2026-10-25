@@ -1,0 +1,8 @@
+=== 0x7f1a ===
+
+undefined1 FUN_CODE_7f1a(void)
+
+{
+  return DAT_EXTMEM_e341;
+}
+

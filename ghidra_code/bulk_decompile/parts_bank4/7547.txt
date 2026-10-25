@@ -1,0 +1,8 @@
+=== 0x7547 ===
+
+byte FUN_CODE_7547(void)
+
+{
+  return DAT_EXTMEM_e4e0 >> 2 & 3 ^ 2;
+}
+

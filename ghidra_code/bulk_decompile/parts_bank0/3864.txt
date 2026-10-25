@@ -1,0 +1,11 @@
+=== 0x3864 ===
+
+char FUN_CODE_3864(byte param_1,char param_2)
+
+{
+  byte bVar1;
+  
+  bVar1 = (param_1 << 1 | param_1 >> 7) + param_2;
+  return (bVar1 * '\x02' | bVar1 >> 7) + param_2;
+}
+

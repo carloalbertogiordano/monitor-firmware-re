@@ -1,0 +1,48 @@
+=== 0xc0a0 ===
+
+char FUN_CODE_c0a0(void)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  undefined2 uVar3;
+  
+  cVar1 = '\0';
+  uVar3 = 0xe33d;
+  DAT_EXTMEM_e33d = '\x01';
+  do {
+    uVar2 = (undefined1)((ushort)uVar3 >> 8);
+    FUN_CODE_9cc7(cVar1);
+    FUN_CODE_9d0f();
+    uVar3 = CONCAT11(uVar2,cVar1 * '\x06' + '^');
+    FUN_CODE_9d0d(uVar3);
+    uVar3 = CONCAT11((char)((ushort)uVar3 >> 8),cVar1 * '\x06' + '`');
+    FUN_CODE_9d0d(uVar3);
+    cVar1 = cVar1 + '\x01';
+  } while (cVar1 != '\x05');
+  DAT_EXTMEM_e07c = DAT_EXTMEM_e42f;
+  if ((DAT_EXTMEM_e42f >> 1 & 1) != 0) {
+    DAT_EXTMEM_e33d = '\0';
+  }
+  if ((DAT_EXTMEM_e42f >> 2 & 1) != 0) {
+    DAT_EXTMEM_e33d = '\0';
+  }
+  if ((DAT_EXTMEM_e42f >> 3 & 7) != 5) {
+    DAT_EXTMEM_e33d = '\0';
+  }
+  FUN_CODE_0b7d(0);
+  _0_1 = 0;
+  FUN_CODE_0bcb();
+  FUN_CODE_0b77(0);
+  FUN_CODE_0be3(0);
+  FUN_CODE_0bd7(0);
+  _0_0 = 0;
+  FUN_CODE_0be9();
+  _0_0 = 0;
+  FUN_CODE_0bef();
+  FUN_CODE_0bf5(0);
+  _0_1 = 0;
+  FUN_CODE_08e9();
+  return DAT_EXTMEM_e33d + -1;
+}
+

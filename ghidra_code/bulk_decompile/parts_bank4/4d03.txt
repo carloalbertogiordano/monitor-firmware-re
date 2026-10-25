@@ -1,0 +1,189 @@
+=== 0x4d03 ===
+
+byte FUN_CODE_4d03(byte param_1,undefined1 param_2,byte *param_3,byte param_4,byte param_5,
+                  byte param_6)
+
+{
+  ushort uVar1;
+  undefined1 uVar2;
+  char cVar3;
+  byte bVar4;
+  
+  do {
+    nop();
+    nop();
+    nop();
+LAB_CODE_4d06:
+    nop();
+    nop();
+    nop();
+    nop();
+LAB_CODE_4d0a:
+    nop();
+    nop();
+    nop();
+    nop();
+LAB_CODE_4d0e:
+    nop();
+    nop();
+    nop();
+    nop();
+    while( true ) {
+      cVar3 = BANK1_R7;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      BANK1_R7 = BANK1_R7 + -1;
+      if (BANK1_R7 != '\0') break;
+      BANK1_R7 = cVar3 + -2;
+      if (BANK1_R7 != '\0') goto LAB_CODE_4cfa;
+      BANK1_R7 = cVar3 + -3;
+      if (BANK1_R7 != '\0') goto LAB_CODE_4cfe;
+      BANK1_R7 = cVar3 + -4;
+      if (BANK1_R7 != '\0') goto LAB_CODE_4d02;
+      BANK1_R7 = cVar3 + -5;
+      if (BANK1_R7 != '\0') goto LAB_CODE_4d06;
+      BANK1_R7 = cVar3 + -6;
+      if (BANK1_R7 != '\0') goto LAB_CODE_4d0a;
+LAB_CODE_4d36:
+      BANK1_R7 = BANK1_R7 + -1;
+      if (BANK1_R7 != '\0') goto LAB_CODE_4d0e;
+LAB_CODE_4d3a:
+      BANK1_R7 = BANK1_R7 + -1;
+      if (BANK1_R7 == '\0') {
+LAB_CODE_4d3e:
+        param_1 = ((param_1 & *param_3) + 1 & *param_3) + 1;
+LAB_CODE_4d42:
+        param_1 = ((param_1 & *param_3) + 1 & *param_3) + 1;
+LAB_CODE_4d46:
+        param_1 = ((param_1 & *param_3) + 1 & *param_3) + 1;
+LAB_CODE_4d4a:
+        param_1 = ((param_1 & *param_3) + 1 & *param_3) + 1;
+        do {
+          uVar1 = CONCAT11(param_2,((param_1 & *param_3) + 1 & *param_3) + 1);
+          while( true ) {
+            cVar3 = BANK1_R7;
+            param_2 = (undefined1)(uVar1 >> 8);
+            param_1 = (((((((byte)uVar1 & *param_3) + 1 & *param_3) + 1 & *param_3) + 1 & *param_3)
+                        + 1 & *param_3) + 1 & *param_3) + 1;
+            uVar1 = CONCAT11(param_2,param_1);
+            BANK1_R7 = BANK1_R7 + -1;
+            if (BANK1_R7 != '\0') goto LAB_CODE_4d36;
+            BANK1_R7 = cVar3 + -2;
+            if (BANK1_R7 != '\0') goto LAB_CODE_4d3a;
+            BANK1_R7 = cVar3 + -3;
+            if (BANK1_R7 != '\0') goto LAB_CODE_4d3e;
+            BANK1_R7 = cVar3 + -4;
+            if (BANK1_R7 != '\0') goto LAB_CODE_4d42;
+            BANK1_R7 = cVar3 + -5;
+            if (BANK1_R7 != '\0') goto LAB_CODE_4d46;
+            BANK1_R7 = cVar3 + -6;
+            if (BANK1_R7 != '\0') goto LAB_CODE_4d4a;
+            BANK1_R7 = cVar3 + -7;
+            if (BANK1_R7 != '\0') break;
+            while (BANK1_R7 = BANK1_R7 + -1, BANK1_R7 == '\0') {
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+              if (param_3 == &BANK0_R4) {
+                uVar1 = (ushort)((char)uVar1 + 8) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                uVar1 = (uVar1 & 0xff) * (uVar1 >> 8);
+                param_5 = (byte)((uVar1 & 0xff) * (uVar1 >> 8)) | param_4 | param_4 | param_5 |
+                          param_5;
+                nop();
+                nop();
+                uVar2 = FIFLG;
+                bVar4 = FUN_CODE_4e02(((param_5 | param_6) - param_5) - 1 | 4,2,param_6 - 1);
+                return bVar4 >> 1 | bVar4 << 7;
+              }
+            }
+          }
+        } while( true );
+      }
+    }
+    *param_3 = *param_3 - 1;
+    nop();
+    *param_3 = *param_3 - 1;
+    nop();
+LAB_CODE_4cfa:
+    *param_3 = *param_3 - 1;
+    nop();
+    *param_3 = *param_3 - 1;
+    nop();
+LAB_CODE_4cfe:
+    nop();
+    nop();
+    nop();
+    nop();
+LAB_CODE_4d02:
+    nop();
+  } while( true );
+}
+

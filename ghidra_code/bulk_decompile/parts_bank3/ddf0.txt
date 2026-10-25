@@ -1,0 +1,8 @@
+=== 0xddf0 ===
+
+void FUN_CODE_ddf0(void)
+
+{
+  return;
+}
+

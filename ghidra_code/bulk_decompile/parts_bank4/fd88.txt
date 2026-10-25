@@ -1,0 +1,8 @@
+=== 0xfd88 ===
+
+byte FUN_CODE_fd88(void)
+
+{
+  return DAT_EXTMEM_e07f >> 4 & 3;
+}
+

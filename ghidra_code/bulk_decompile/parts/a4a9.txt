@@ -1,0 +1,8 @@
+=== 0xa4a9 ===
+
+undefined1 FUN_CODE_a4a9(void)
+
+{
+  return uEXTMEMe387;
+}
+

@@ -1,0 +1,20 @@
+=== 0x0eb1 ===
+
+void FUN_CODE_0eb1(char param_1)
+
+{
+  byte *in_R0;
+  byte *in_R1;
+  byte in_R2;
+  byte in_R4;
+  byte in_R5;
+  byte in_R6;
+  byte in_R7;
+  byte in_B;
+  char in_ACC;
+  byte *in_DPTR;
+  
+  thunk_FUN_CODE_0ee0(in_ACC,in_DPTR,in_B,in_R0,in_R1,in_R2,param_1 - 1,in_R4,in_R5,in_R6,in_R7);
+  return;
+}
+

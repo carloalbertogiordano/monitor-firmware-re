@@ -1,0 +1,20 @@
+=== 0x8258 ===
+
+void FUN_CODE_8258(char param_1,byte param_2,char *param_3,char param_4,byte param_5,char param_6,
+                  char param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte in_PSW;
+  
+  bVar1 = ((param_1 << 1 | in_PSW >> 7) & param_5) + *param_3 + '\x01';
+  bVar2 = bVar1 - (param_6 + 1U);
+  bVar1 = param_4 - (((bVar1 < param_6 + 1U) << 7) >> 7);
+  *(byte *)ZEXT12(param_3) = bVar2 + bVar1;
+  FUN_CODE_2100(*(char *)(ushort)param_2 + (param_7 - ((CARRY1(bVar2,bVar1) << 7) >> 7)));
+  nop();
+  FUN_CODE_8000();
+  return;
+}
+

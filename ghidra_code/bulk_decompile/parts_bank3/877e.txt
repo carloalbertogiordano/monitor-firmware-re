@@ -1,0 +1,12 @@
+=== 0x877e ===
+
+char FUN_CODE_877e(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e330;
+  DAT_EXTMEM_e330 = DAT_EXTMEM_e330 + '\x01';
+  return cVar1 + -0x2d;
+}
+

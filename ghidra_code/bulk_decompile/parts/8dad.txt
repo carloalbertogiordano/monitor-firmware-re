@@ -1,0 +1,9 @@
+=== 0x8dad ===
+
+undefined1 FUN_CODE_8dad(void)
+
+{
+  DAT_EXTMEM_ffea = DAT_EXTMEM_ffea | 0x40;
+  return DAT_EXTMEM_e700;
+}
+

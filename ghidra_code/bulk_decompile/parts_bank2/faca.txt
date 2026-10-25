@@ -1,0 +1,14 @@
+=== 0xfaca ===
+
+char FUN_CODE_faca(void)
+
+{
+  char cVar1;
+  
+  cVar1 = ((DAT_EXTMEM_e538 < 5) << 7) >> 7;
+  if (DAT_EXTMEM_e537 >= (byte)-cVar1) {
+    cVar1 = ((DAT_EXTMEM_e538 < 4U - (((DAT_EXTMEM_e537 < (byte)-cVar1) << 7) >> 7)) << 7) >> 7;
+  }
+  return DAT_EXTMEM_e537 + cVar1;
+}
+

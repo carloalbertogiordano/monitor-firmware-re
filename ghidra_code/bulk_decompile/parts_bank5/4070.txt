@@ -1,0 +1,10 @@
+=== 0x4070 ===
+
+void FUN_CODE_4070(undefined1 param_1,undefined1 param_2)
+
+{
+  FUN_CODE_15e8(param_1);
+  DAT_EXTMEM_0069 = param_2;
+  return;
+}
+

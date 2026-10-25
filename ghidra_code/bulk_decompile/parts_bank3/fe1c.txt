@@ -1,0 +1,17 @@
+=== 0xfe1c ===
+
+void FUN_CODE_fe1c(void)
+
+{
+  byte bVar1;
+  
+  if (_0_0 == '\0') {
+    bVar1 = 0;
+  }
+  else {
+    bVar1 = 0x28;
+  }
+  DAT_EXTMEM_0b10 = DAT_EXTMEM_0b10 & 0xd7 | bVar1;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x8ce5 ===
+
+byte FUN_CODE_8ce5(void)
+
+{
+  return DAT_EXTMEM_b601 >> 1 & 1;
+}
+

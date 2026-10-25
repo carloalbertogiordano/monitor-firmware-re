@@ -1,0 +1,10 @@
+=== 0x2260 ===
+
+undefined1 FUN_CODE_2260(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 6;
+  uEXTMEMffff = 6;
+  return param_1;
+}
+

@@ -1,0 +1,26 @@
+=== 0xeb16 ===
+
+undefined1 FUN_CODE_eb16(byte *param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = FUN_CODE_877e();
+  *param_1 = bVar2 & 199;
+  FUN_CODE_88a7(BANK0_R5);
+  bVar2 = FUN_CODE_8783();
+  *param_1 = bVar2 & 199 | 8;
+  cVar1 = '\0';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    bVar2 = FUN_CODE_8784();
+  } while (((bVar2 & 8) != 0) && (cVar1 = cVar1 + '\x01', cVar1 != '\t'));
+  DAT_INTMEM_29 = FUN_CODE_8784();
+  DAT_INTMEM_2a = FUN_CODE_88b7();
+  return DAT_INTMEM_2a;
+}
+

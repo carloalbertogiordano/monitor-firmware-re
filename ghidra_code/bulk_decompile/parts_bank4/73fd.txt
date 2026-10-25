@@ -1,0 +1,10 @@
+=== 0x73fd ===
+
+void FUN_CODE_73fd(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e347 = 0;
+  DAT_EXTMEM_e348 = *param_1;
+  return;
+}
+

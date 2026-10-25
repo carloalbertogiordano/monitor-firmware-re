@@ -1,0 +1,30 @@
+=== 0x7007 ===
+
+byte FUN_CODE_7007(byte param_1,char param_2,char param_3)
+
+{
+  char cVar1;
+  
+  while( true ) {
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    param_1 = param_1 + param_3 + '\x02';
+    param_3 = param_3 + '\x02';
+    BANK1_R0 = param_2;
+    param_2 = param_2 + '\x01';
+    cVar1 = F8_0;
+    if (cVar1 != '\0') break;
+    nop();
+    nop();
+    nop();
+    nop();
+  }
+  return param_1 >> 1 | param_1 * -0x80;
+}
+

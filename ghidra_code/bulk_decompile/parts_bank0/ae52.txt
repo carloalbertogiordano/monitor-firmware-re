@@ -1,0 +1,12 @@
+=== 0xae52 ===
+
+undefined1 FUN_CODE_ae52(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 0;
+  FUN_CODE_078d(1,1,0);
+  return uVar1;
+}
+

@@ -1,0 +1,14 @@
+=== 0x438a ===
+
+void FUN_CODE_438a(void)
+
+{
+  DAT_EXTMEM_e36b = 0;
+  DAT_EXTMEM_e36c = 0;
+  DAT_EXTMEM_e36d = 1;
+  DAT_EXTMEM_e36e = 0x10;
+  DAT_EXTMEM_e36f = 0;
+  DAT_EXTMEM_e370 = DAT_EXTMEM_e4ca & 0xf;
+  return;
+}
+

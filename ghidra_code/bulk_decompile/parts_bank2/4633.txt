@@ -1,0 +1,10 @@
+=== 0x4633 ===
+
+void FUN_CODE_4633(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  param_2[1] = 0;
+  return;
+}
+

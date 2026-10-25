@@ -1,0 +1,10 @@
+=== 0xfd51 ===
+
+void FUN_CODE_fd51(void)
+
+{
+  FUN_CODE_059b(0x23);
+  FUN_CODE_059b(0x24);
+  return;
+}
+

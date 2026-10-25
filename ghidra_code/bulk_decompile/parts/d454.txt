@@ -1,0 +1,8 @@
+=== 0xd454 ===
+
+char FUN_CODE_d454(short param_1,char param_2,byte param_3)
+
+{
+  return param_2 + (*(char *)(param_1 + 1) - ((CARRY1(param_3,*(byte *)(param_1 + 2)) << 7) >> 7));
+}
+

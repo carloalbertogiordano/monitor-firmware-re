@@ -1,0 +1,39 @@
+=== 0xf095 ===
+
+void FUN_CODE_f095(char param_1)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_e381 = 0;
+  FUN_CODE_07d5();
+  if (param_1 == '\0') {
+    DAT_EXTMEM_e611 = 0;
+    DAT_EXTMEM_e612 = 0;
+  }
+  else {
+    FUN_CODE_07db(0x81,0xe3,1,1,5);
+    DAT_EXTMEM_e611 = 2;
+    bVar1 = DAT_EXTMEM_e381 & 3;
+    if (bVar1 == 0) {
+      DAT_EXTMEM_e612 = 1;
+    }
+    else if (bVar1 == 1) {
+      DAT_EXTMEM_e612 = 0;
+    }
+    else if (bVar1 == 2) {
+      DAT_EXTMEM_e612 = 3;
+    }
+    else {
+      DAT_EXTMEM_e612 = 2;
+    }
+    DAT_EXTMEM_e381 = DAT_EXTMEM_e381 >> 4;
+    if (DAT_EXTMEM_e381 != 0) {
+      DAT_EXTMEM_e610 = DAT_EXTMEM_e610 & 0xf0 | DAT_EXTMEM_e381;
+      return;
+    }
+  }
+  DAT_EXTMEM_e610 = DAT_EXTMEM_e610 & 0xf0 | 1;
+  return;
+}
+

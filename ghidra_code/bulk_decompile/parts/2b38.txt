@@ -1,0 +1,10 @@
+=== 0x2b38 ===
+
+void FUN_CODE_2b38(char param_1,char param_2,char param_3)
+
+{
+  nop();
+  FUN_CODE_2785(param_1 + param_2,param_3 + '\x01');
+  return;
+}
+

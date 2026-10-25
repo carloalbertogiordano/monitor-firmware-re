@@ -1,0 +1,90 @@
+=== 0xa9e9 ===
+
+void FUN_CODE_a9e9(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  char in_PSW;
+  byte *pbVar3;
+  code *pcVar4;
+  
+  if (_0_0 != '\x01') {
+    pbVar3 = (byte *)0x2cc;
+    if ((DAT_EXTMEM_02cc & 0x40) == 0x40) {
+      _0_1 = 1;
+      bVar2 = FUN_CODE_ab05();
+      *pbVar3 = bVar2 | 8;
+    }
+    else {
+      _0_1 = 0;
+      bVar2 = FUN_CODE_ab05();
+      *pbVar3 = bVar2 & 0xf7;
+    }
+    if ((DAT_EXTMEM_02cc & 0x20) == 0x20) {
+      pbVar3 = &DAT_EXTMEM_e373;
+      DAT_EXTMEM_e373 = 0x44;
+      FUN_CODE_ab0f(0xbb);
+      _0_1 = 1;
+      bVar2 = FUN_CODE_ab19();
+      *pbVar3 = bVar2 | 4;
+    }
+    else {
+      pcVar4 = (code *)0xe373;
+      DAT_EXTMEM_e373 = 0;
+      FUN_CODE_ab0f(0x83);
+      FUN_CODE_c6d9();
+      FUN_CODE_0775();
+      FUN_CODE_074b(0,0x14);
+      _0_1 = 0;
+      bVar2 = FUN_CODE_ab19();
+      *pcVar4 = (code)(bVar2 & 0xfb);
+    }
+    DAT_EXTMEM_02cc = DAT_EXTMEM_02cc & 0x9f | 0x60;
+    DAT_EXTMEM_e373 = 0x80;
+    FUN_CODE_0775(0x3f,0,2,0xc9);
+    DAT_EXTMEM_e661 = DAT_EXTMEM_e661 | 2;
+    FUN_CODE_054d(0x24,0,0x82);
+    return;
+  }
+  _0_4 = 1;
+  FUN_CODE_080b(0x60,2,0xcc,0,0x82);
+  if (in_PSW < '\0') {
+    cVar1 = FUN_CODE_c712();
+    if (cVar1 == '`') {
+      DAT_EXTMEM_e661 = DAT_EXTMEM_e661 | 8;
+    }
+    else {
+      cVar1 = FUN_CODE_c712();
+      if (cVar1 == ' ') {
+        DAT_EXTMEM_e661 = DAT_EXTMEM_e661 | 4;
+        _0_4 = 1;
+        FUN_CODE_aaf9(0x40);
+        if (in_PSW < '\0') {
+          DAT_EXTMEM_e661 = DAT_EXTMEM_e661 | 8;
+        }
+        else {
+          DAT_EXTMEM_e661 = DAT_EXTMEM_e661 & 0xf7;
+        }
+        goto LAB_CODE_aa5f;
+      }
+      cVar1 = FUN_CODE_c712();
+      if (cVar1 != '@') goto LAB_CODE_aa5f;
+      DAT_EXTMEM_e661 = DAT_EXTMEM_e661 | 8;
+      _0_4 = 1;
+      FUN_CODE_aaf9(0x20);
+      if (-1 < in_PSW) goto LAB_CODE_aa5c;
+    }
+    DAT_EXTMEM_e661 = DAT_EXTMEM_e661 | 4;
+  }
+  else {
+    DAT_EXTMEM_e661 = DAT_EXTMEM_e661 & 0xf7;
+LAB_CODE_aa5c:
+    DAT_EXTMEM_e661 = DAT_EXTMEM_e661 & 0xfb;
+  }
+LAB_CODE_aa5f:
+  FUN_CODE_074b(0,0x82);
+  DAT_EXTMEM_e661 = DAT_EXTMEM_e661 & 0xfd;
+  return;
+}
+

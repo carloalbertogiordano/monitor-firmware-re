@@ -1,0 +1,10 @@
+=== 0x2290 ===
+
+undefined1 FUN_CODE_2290(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 9;
+  uEXTMEMffff = 9;
+  return param_1;
+}
+

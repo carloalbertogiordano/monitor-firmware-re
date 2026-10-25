@@ -1,0 +1,8 @@
+=== 0x9134 ===
+
+char FUN_CODE_9134(char param_1)
+
+{
+  return param_1 + '\x01';
+}
+

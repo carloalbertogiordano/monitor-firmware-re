@@ -1,0 +1,8 @@
+=== 0xf255 ===
+
+void FUN_CODE_f255(void)
+
+{
+  return;
+}
+

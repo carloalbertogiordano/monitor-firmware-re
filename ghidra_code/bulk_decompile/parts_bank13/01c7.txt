@@ -1,0 +1,21 @@
+=== 0x01c7 ===
+
+void FUN_CODE_01c7(byte param_1,short param_2,undefined1 *param_3,byte param_4)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  
+  bVar3 = param_1 << 1 | param_1 >> 7;
+  *(byte *)ZEXT12(param_3) = bVar3;
+  DAT_INTMEM_24 = DAT_INTMEM_24 | 0x72;
+  bVar3 = (bVar3 | param_4) - 0xe;
+  DAT_INTMEM_25 = DAT_INTMEM_25 & bVar3;
+  DAT_INTMEM_5a = DAT_INTMEM_5a ^ bVar3;
+  uVar1 = RXSTAT;
+  cVar2 = RXSTAT;
+  FUN_CODE_0326(bVar3 + cVar2,param_2,param_3);
+  return;
+}
+

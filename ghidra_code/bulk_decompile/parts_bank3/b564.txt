@@ -1,0 +1,8 @@
+=== 0xb564 ===
+
+undefined1 FUN_CODE_b564(void)
+
+{
+  return 0;
+}
+

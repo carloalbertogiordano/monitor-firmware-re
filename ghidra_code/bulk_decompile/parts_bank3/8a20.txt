@@ -1,0 +1,12 @@
+=== 0x8a20 ===
+
+void FUN_CODE_8a20(void)
+
+{
+  DAT_EXTMEM_1da4 = 0x12;
+  DAT_EXTMEM_1db4 = 0x12;
+  DAT_EXTMEM_1dc4 = 0x12;
+  DAT_EXTMEM_1dd4 = 0x12;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xc1b3 ===
+
+undefined1 FUN_CODE_c1b3(void)
+
+{
+  return DAT_EXTMEM_4007;
+}
+

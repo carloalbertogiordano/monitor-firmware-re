@@ -1,0 +1,8 @@
+=== 0x9d17 ===
+
+byte FUN_CODE_9d17(byte param_1)
+
+{
+  return DAT_EXTMEM_e404 & 3 ^ param_1;
+}
+

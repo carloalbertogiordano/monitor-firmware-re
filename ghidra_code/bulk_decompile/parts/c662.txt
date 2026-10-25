@@ -1,0 +1,11 @@
+=== 0xc662 ===
+
+void FUN_CODE_c662(undefined1 param_1,short param_2)
+
+{
+  FUN_CODE_152f(0,0,0,param_1,*(undefined1 *)(param_2 + 1),*(undefined1 *)(param_2 + 2),
+                *(undefined1 *)(param_2 + 3),*(undefined1 *)(param_2 + 4));
+  FUN_CODE_15d7(0,0,0x36,0xb0);
+  return;
+}
+

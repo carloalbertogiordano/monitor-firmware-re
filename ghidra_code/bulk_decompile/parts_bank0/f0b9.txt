@@ -1,0 +1,23 @@
+=== 0xf0b9 ===
+
+void FUN_CODE_f0b9(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  bVar3 = BANK0_R7;
+  DAT_EXTMEM_feb9 = 0;
+  DAT_EXTMEM_feba = DAT_EXTMEM_feba & 0xe3;
+  bVar2 = 0xe0;
+  FUN_CODE_f0ef(DAT_EXTMEM_feba,0x80);
+  bVar1 = BANK0_R7;
+  DAT_EXTMEM_feba = bVar3 | bVar2;
+  DAT_EXTMEM_fec5 = DAT_EXTMEM_fec5 & 0xe3;
+  bVar3 = 0xe2;
+  FUN_CODE_f0ef(DAT_EXTMEM_fec5,0);
+  DAT_EXTMEM_fec5 = bVar1 | bVar3;
+  return;
+}
+

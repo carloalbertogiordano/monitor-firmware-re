@@ -1,0 +1,16 @@
+=== 0xb43b ===
+
+void FUN_CODE_b43b(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  param_2[1] = 0;
+  param_2[2] = 0;
+  param_2[3] = 0;
+  param_2[4] = 0;
+  param_2[5] = 0;
+  param_2[6] = 0;
+  param_2[7] = 0;
+  return;
+}
+

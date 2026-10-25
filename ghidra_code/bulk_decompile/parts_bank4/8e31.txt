@@ -1,0 +1,8 @@
+=== 0x8e31 ===
+
+byte FUN_CODE_8e31(byte param_1)
+
+{
+  return DAT_EXTMEM_e683 & 0xfe | param_1 & 1;
+}
+

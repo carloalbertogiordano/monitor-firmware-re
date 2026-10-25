@@ -1,0 +1,8 @@
+=== 0xd581 ===
+
+undefined1 FUN_CODE_d581(void)
+
+{
+  return DAT_EXTMEM_e330;
+}
+

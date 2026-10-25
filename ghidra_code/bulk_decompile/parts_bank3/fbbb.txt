@@ -1,0 +1,8 @@
+=== 0xfbbb ===
+
+byte FUN_CODE_fbbb(byte param_1)
+
+{
+  return (param_1 >> 2 & 1) << 5 | param_1 >> 1 & 1;
+}
+

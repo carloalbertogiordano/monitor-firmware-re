@@ -1,0 +1,11 @@
+=== 0x05ff ===
+
+void FUN_CODE_05ff(byte param_1,short param_2,undefined1 *param_3)
+
+{
+  nop();
+  nop();
+  FUN_CODE_0000(param_1,param_2,param_3,param_1);
+  return;
+}
+

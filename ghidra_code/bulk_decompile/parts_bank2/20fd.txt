@@ -1,0 +1,87 @@
+=== 0x20fd ===
+
+/* WARNING: Instruction at (CODE,0x2008) overlaps instruction at (CODE,0x2007)
+    */
+
+void FUN_CODE_20fd(short param_1,char param_2,byte param_3,undefined1 param_4,byte param_5)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  char in_PSW;
+  byte *pbVar4;
+  
+  *(byte *)(param_1 + 1) = param_5;
+  *(byte *)CONCAT11(param_4,param_5) = DAT_EXTMEM_e1dc;
+  do {
+    _7_6 = '\0';
+    DAT_EXTMEM_e1d9 = 0;
+    FUN_CODE_26b2();
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    do {
+      if (DAT_EXTMEM_e335 == '\0') {
+        return;
+      }
+    } while (_7_6 != '\x01');
+    DAT_EXTMEM_e336 = 0;
+    pbVar4 = &DAT_EXTMEM_e1db;
+    bVar2 = FUN_CODE_1761(DAT_EXTMEM_e1db);
+    cVar3 = ET2;
+    if (cVar3 == '\x01') {
+      *(byte *)(ushort)param_3 = bVar2;
+      *pbVar4 = *pbVar4 | 0x20;
+      pbVar4 = &DAT_EXTMEM_fff4;
+      bVar2 = DAT_EXTMEM_e1dc;
+code_c0x2004:
+      *pbVar4 = bVar2;
+      bVar2 = DAT_EXTMEM_fff5;
+      bVar1 = DAT_EXTMEM_fff5;
+    }
+    else {
+      if (_c_2 == '\x01') {
+        bVar2 = ~bVar2;
+        goto code_c0x2004;
+      }
+      bVar1 = bVar2;
+      if (_f_0 != '\x01') {
+        *(undefined1 *)(ushort)(param_2 + 1) = param_4;
+        *(byte *)(ushort)(param_2 + 2) = param_5 - 1;
+        return;
+      }
+    }
+    do {
+      DAT_EXTMEM_e337 = bVar1;
+      cVar3 = FUN_CODE_2644();
+      param_5 = bVar2;
+      if (cVar3 == '\0') break;
+      FUN_CODE_2688();
+      param_5 = bVar2;
+      bVar1 = DAT_EXTMEM_e337;
+    } while (in_PSW < '\0');
+  } while( true );
+}
+

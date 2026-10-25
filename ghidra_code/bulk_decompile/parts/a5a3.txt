@@ -1,0 +1,11 @@
+=== 0xa5a3 ===
+
+void FUN_CODE_a5a3(undefined1 param_1,byte param_2)
+
+{
+  FUN_CODE_152f();
+  DAT_INTMEM_29 = param_1;
+  DAT_INTMEM_2a = param_2 & 0xfc;
+  return;
+}
+

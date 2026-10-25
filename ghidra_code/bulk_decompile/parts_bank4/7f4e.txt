@@ -1,0 +1,8 @@
+=== 0x7f4e ===
+
+char FUN_CODE_7f4e(char *param_1,char param_2,byte param_3)
+
+{
+  return *param_1 - (param_2 - ((((byte)param_1[1] < param_3) << 7) >> 7));
+}
+

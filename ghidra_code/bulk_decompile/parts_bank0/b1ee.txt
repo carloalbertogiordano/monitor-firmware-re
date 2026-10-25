@@ -1,0 +1,10 @@
+=== 0xb1ee ===
+
+void FUN_CODE_b1ee(char param_1)
+
+{
+  DAT_INTMEM_2c = param_1;
+  DAT_INTMEM_2e = DAT_INTMEM_2e - param_1;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x88a7 ===
+
+byte FUN_CODE_88a7(char param_1)
+
+{
+  return DAT_EXTMEM_02ad & 0x8f | param_1 << 5 | 0x10U;
+}
+

@@ -1,0 +1,8 @@
+=== 0xd097 ===
+
+char FUN_CODE_d097(void)
+
+{
+  return DAT_EXTMEM_e42f + -0x65;
+}
+

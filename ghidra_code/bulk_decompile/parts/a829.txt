@@ -1,0 +1,8 @@
+=== 0xa829 ===
+
+undefined1 FUN_CODE_a829(void)
+
+{
+  return DAT_EXTMEM_e5b4;
+}
+

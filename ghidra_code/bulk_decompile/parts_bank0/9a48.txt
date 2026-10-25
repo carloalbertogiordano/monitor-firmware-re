@@ -1,0 +1,8 @@
+=== 0x9a48 ===
+
+undefined1 FUN_CODE_9a48(void)
+
+{
+  return DAT_INTMEM_4a;
+}
+

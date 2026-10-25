@@ -1,0 +1,11 @@
+=== 0xb44c ===
+
+void FUN_CODE_b44c(void)
+
+{
+  FUN_CODE_152f(0x10,0x17,0xdf,0x80);
+  FUN_CODE_17ba(0,0x41);
+  FUN_CODE_152f(0,0,0,100);
+  return;
+}
+

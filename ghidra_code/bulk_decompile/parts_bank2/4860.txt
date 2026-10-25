@@ -1,0 +1,8 @@
+=== 0x4860 ===
+
+byte FUN_CODE_4860(void)
+
+{
+  return DAT_EXTMEM_e4e0 >> 4 & 3;
+}
+

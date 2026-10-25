@@ -1,0 +1,11 @@
+=== 0xf9a8 ===
+
+void FUN_CODE_f9a8(void)
+
+{
+  DAT_EXTMEM_08a5 = DAT_EXTMEM_08a5 & 0xc0 | BANK0_R6;
+  DAT_EXTMEM_08a6 = BANK0_R7;
+  FUN_CODE_bf16(0x8a7);
+  return;
+}
+

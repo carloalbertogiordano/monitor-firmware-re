@@ -1,0 +1,33 @@
+=== 0xd983 ===
+
+void FUN_CODE_d983(char param_1,byte param_2)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  byte *pbVar4;
+  
+  bVar1 = BANK1_R3;
+  DAT_EXTMEM_e3fe = param_1;
+  DAT_EXTMEM_e3ff = param_2;
+  uVar2 = FUN_CODE_f5cf(BANK1_R3,0,BANK1_R5);
+  DAT_EXTMEM_e403 = *(undefined1 *)CONCAT11(param_1,uVar2);
+  FUN_CODE_fd7e();
+  uVar2 = BANK1_R7;
+  uVar3 = FUN_CODE_f5cf();
+  *(undefined1 *)CONCAT11(param_1,uVar3) = uVar2;
+  FUN_CODE_fd7e(DAT_EXTMEM_e402 |
+                *(byte *)CONCAT11(param_1 - (((0xfe < param_2) << 7) >> 7),param_2 + 1) & bVar1,
+                BANK1_R4);
+  pbVar4 = &DAT_EXTMEM_e3fe;
+  FUN_CODE_f5c3();
+  bVar1 = BANK1_R3;
+  FUN_CODE_f5d8();
+  *pbVar4 = bVar1;
+  FUN_CODE_f5cf();
+  FUN_CODE_feef();
+  FUN_CODE_f5c8(DAT_EXTMEM_e3ff,DAT_EXTMEM_e3fe,DAT_EXTMEM_e403);
+  return;
+}
+

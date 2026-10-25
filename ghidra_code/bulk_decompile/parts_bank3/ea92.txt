@@ -1,0 +1,67 @@
+=== 0xea92 ===
+
+void FUN_CODE_ea92(char param_1,char param_2)
+
+{
+  byte bVar1;
+  byte bVar2;
+  undefined1 uVar3;
+  char cVar4;
+  undefined1 *puVar5;
+  byte *pbVar6;
+  
+  bVar1 = DAT_EXTMEM_0bb3 & 0xf;
+  puVar5 = &DAT_EXTMEM_0bb4;
+  bVar2 = DAT_EXTMEM_0bb4 & 0xf;
+  uVar3 = FUN_CODE_8811();
+  *puVar5 = uVar3;
+  DAT_EXTMEM_0bb3 = DAT_EXTMEM_0bb3 & 0xf0 | bVar1;
+  pbVar6 = (byte *)0xbb4;
+  DAT_EXTMEM_0bb4 = DAT_EXTMEM_0bb4 & 0xf0 | bVar2;
+  cVar4 = FUN_CODE_88c8();
+  bVar2 = cVar4 << 4;
+  bVar1 = FUN_CODE_8a8b(bVar2);
+  FUN_CODE_874d(bVar1 | bVar2);
+  *pbVar6 = 0xff;
+  if (param_2 == '\n') {
+    FUN_CODE_8899();
+    if (param_1 != '\x02') {
+      uVar3 = 0x11;
+      goto LAB_CODE_eae2;
+    }
+  }
+  else {
+    bVar2 = FUN_CODE_89cb();
+    *pbVar6 = bVar2 | 0x60;
+  }
+  uVar3 = 0xc;
+LAB_CODE_eae2:
+  FUN_CODE_8bfc(uVar3,0x1da2);
+  FUN_CODE_8a20();
+  DAT_INTMEM_53 = '\x15';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+  FUN_CODE_8beb();
+  FUN_CODE_864b();
+  FUN_CODE_8648();
+  DAT_INTMEM_29 = '\0';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    cVar4 = FUN_CODE_8c51();
+  } while ((((((cVar4 != '\0') && (cVar4 = FUN_CODE_8b18(), cVar4 != '\0')) ||
+             ((cVar4 = FUN_CODE_8c58(), cVar4 != '\0' && (cVar4 = FUN_CODE_8b21(), cVar4 != '\0'))))
+            || ((cVar4 = FUN_CODE_8c5f(), cVar4 != '\0' && (cVar4 = FUN_CODE_8b2a(), cVar4 != '\0'))
+               )) || ((cVar4 = FUN_CODE_8c66(), cVar4 != '\0' &&
+                      (cVar4 = FUN_CODE_8b33(), cVar4 != '\0')))) &&
+          (DAT_INTMEM_29 = DAT_INTMEM_29 + '\x01', DAT_INTMEM_29 != '\x15'));
+  return;
+}
+

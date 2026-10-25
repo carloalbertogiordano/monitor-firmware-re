@@ -1,0 +1,14 @@
+=== 0xf41e ===
+
+void FUN_CODE_f41e(void)
+
+{
+  DAT_EXTMEM_02e6 = DAT_EXTMEM_02e6 & 0xfd;
+  DAT_EXTMEM_02ef = DAT_EXTMEM_02ef & 0x7f;
+  DAT_EXTMEM_e665 = 0;
+  DAT_EXTMEM_e666 = 0;
+  DAT_EXTMEM_e661 = DAT_EXTMEM_e661 & 0xbf;
+  DAT_EXTMEM_02a7 = DAT_EXTMEM_02a7 & 0xe0;
+  return;
+}
+

@@ -1,0 +1,16 @@
+=== 0xf4be ===
+
+void FUN_CODE_f4be(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e330 = param_1;
+  FUN_CODE_f543();
+  _0_0 = 0;
+  DAT_EXTMEM_e331 = DAT_EXTMEM_e330;
+  FUN_CODE_fa7a();
+  _0_0 = 0;
+  DAT_EXTMEM_e331 = DAT_EXTMEM_e330;
+  FUN_CODE_f8f4();
+  return;
+}
+

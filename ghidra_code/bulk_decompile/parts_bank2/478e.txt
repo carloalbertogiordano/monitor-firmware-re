@@ -1,0 +1,9 @@
+=== 0x478e ===
+
+void FUN_CODE_478e(byte param_1)
+
+{
+  DAT_EXTMEM_e5a7 = DAT_EXTMEM_e5a7 & 0xe1 | (param_1 & 0xf) * '\x02';
+  return;
+}
+

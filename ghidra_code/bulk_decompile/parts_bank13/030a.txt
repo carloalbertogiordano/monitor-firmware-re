@@ -1,0 +1,23 @@
+=== 0x030a ===
+
+void FUN_CODE_030a(byte param_1,byte *param_2,byte param_3,byte *param_4,char param_5,byte param_6,
+                  char param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  char *pcVar1;
+  byte *pbVar2;
+  char cVar3;
+  byte bVar4;
+  
+  pcVar1 = (char *)(param_5 + -1);
+  FUN_CODE_0299(param_1,param_2,param_3,param_4,pcVar1,param_6,param_7,param_8,param_9,param_10,
+                param_11);
+  pbVar2 = (byte *)(pcVar1 + -1);
+  FUN_CODE_06a1(param_2,param_3,param_4,pbVar2,param_6,param_7,param_8,param_9,param_10,param_11);
+  cVar3 = param_6 - 1;
+  bVar4 = func_0x02a9();
+  FUN_CODE_06b0(bVar4,param_2,param_3,param_4,(char *)pbVar2,cVar3 + -1,param_7,param_8,param_9,
+                param_10,param_11);
+  return;
+}
+

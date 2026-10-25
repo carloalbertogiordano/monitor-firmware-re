@@ -1,0 +1,8 @@
+=== 0xd128 ===
+
+char FUN_CODE_d128(char param_1,byte param_2)
+
+{
+  return param_1 - (DAT_EXTMEM_e38f - (((param_2 < DAT_EXTMEM_e390) << 7) >> 7));
+}
+

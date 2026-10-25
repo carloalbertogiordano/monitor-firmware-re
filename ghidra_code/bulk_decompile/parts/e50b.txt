@@ -1,0 +1,22 @@
+=== 0xe50b ===
+
+void FUN_CODE_e50b(void)
+
+{
+  byte bVar1;
+  
+  FUN_CODE_1259(0x14,0x43,0xe5,1,0xe5,1,0,0x17);
+  FUN_CODE_0685();
+  bVar1 = DAT_EXTMEM_e521 - (DAT_EXTMEM_e525 - (((DAT_EXTMEM_e522 < DAT_EXTMEM_e526) << 7) >> 7));
+  if (bVar1 - (((DAT_EXTMEM_e528 < (DAT_EXTMEM_e522 - DAT_EXTMEM_e526) + 1) << 7) >> 7) <=
+      DAT_EXTMEM_e527) {
+    DAT_EXTMEM_e527 = bVar1;
+    DAT_EXTMEM_e528 = DAT_EXTMEM_e522 - DAT_EXTMEM_e526;
+  }
+  if (((DAT_EXTMEM_e51a & 1) != 0) && (DAT_EXTMEM_e51a = DAT_EXTMEM_e51a + 1, DAT_EXTMEM_e51a == 0))
+  {
+    DAT_EXTMEM_e519 = DAT_EXTMEM_e519 + '\x01';
+  }
+  return;
+}
+

@@ -1,0 +1,34 @@
+=== 0xbd32 ===
+
+void FUN_CODE_bd32(byte param_1,byte *param_2,byte param_3)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  param_3 = param_1 << 7 | param_3;
+  bVar1 = FUN_CODE_fbbb((*param_2 >> 4 | *param_2 << 4) >> 1 | ((param_1 & 3) >> 1) << 7);
+  DAT_EXTMEM_e36b =
+       DAT_EXTMEM_e69c >> 4 & 1 |
+       (DAT_EXTMEM_e69c & 7) * '\x02' | (param_2[1] >> 5 & 1) << 4 | bVar1 & 0xe0 | param_3;
+  if ((DAT_EXTMEM_e69d >> 6 & 1) != 0) {
+    FUN_CODE_082f(DAT_EXTMEM_e69c,0x20);
+  }
+  DAT_EXTMEM_e3da = uEXTMEMffff;
+  DAT_EXTMEM_e3db = 3;
+  _0_5 = 1;
+  FUN_CODE_fd37(0x60,0xe3,1,0,0xc);
+  bVar2 = FUN_CODE_fbc2();
+  bVar3 = (byte)((ushort)bVar2 * 7);
+  bVar1 = bVar3 + 0x77;
+  DAT_EXTMEM_e36c = (char)((ushort)bVar2 * 7 >> 8) + ('\x01' - (((0x88 < bVar3) << 7) >> 7));
+  DAT_EXTMEM_e36d = bVar1;
+  FUN_CODE_fd55(0x20,DAT_EXTMEM_e36c);
+  DAT_EXTMEM_e360 = DAT_EXTMEM_e69c >> 3 & 1 | bVar1 & 0xfe;
+  DAT_EXTMEM_e3b7 = DAT_EXTMEM_e360;
+  FUN_CODE_116b(DAT_EXTMEM_e36c,DAT_EXTMEM_e36d,0,DAT_EXTMEM_e69c,0x20);
+  FUN_CODE_1991(0x97,0xe6,1,0,0,7);
+  return;
+}
+

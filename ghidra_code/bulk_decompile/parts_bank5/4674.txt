@@ -1,0 +1,8 @@
+=== 0x4674 ===
+
+undefined1 FUN_CODE_4674(void)
+
+{
+  return DAT_EXTMEM_07da;
+}
+

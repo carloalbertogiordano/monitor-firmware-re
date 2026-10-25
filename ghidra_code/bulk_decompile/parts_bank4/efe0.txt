@@ -1,0 +1,23 @@
+=== 0xefe0 ===
+
+void FUN_CODE_efe0(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  bVar2 = DAT_EXTMEM_3902 & 0xf0;
+  cVar1 = '\x05';
+  while (cVar1 = cVar1 + -1, cVar1 != '\0') {
+    bVar2 = bVar2 >> 1;
+  }
+  bVar3 = DAT_EXTMEM_3902 & 0xf;
+  cVar1 = BANK0_R5 + '\x01';
+  while (cVar1 = cVar1 + -1, cVar1 != '\0') {
+    bVar3 = bVar3 << 1;
+  }
+  DAT_EXTMEM_3902 = bVar3 | bVar2;
+  return;
+}
+

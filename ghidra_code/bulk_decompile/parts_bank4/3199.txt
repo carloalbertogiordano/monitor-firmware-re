@@ -1,0 +1,69 @@
+=== 0x3199 ===
+
+byte FUN_CODE_3199(byte param_1,byte *param_2,byte *param_3,char param_4,char param_5,byte param_6)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bStackX_0;
+  
+  DAT_INTMEM_24 = bStackX_0;
+  DAT_INTMEM_32 = DAT_INTMEM_32 | param_6;
+  bVar2 = DAT_SFR_95;
+  DAT_SFR_95 = bVar2 & ((byte)(param_3 + param_6) | (byte)param_3);
+  bVar4 = ((byte)(param_3 + param_6) | (byte)param_3) + 0x55 | (byte)param_3;
+  bVar2 = DAT_SFR_95;
+  DAT_SFR_95 = bVar2 & bVar4;
+  bVar5 = bVar4 + 0x55 | (byte)param_3;
+  nop();
+  bVar2 = 0;
+  bVar4 = bVar5;
+  if (param_1 != 0) {
+    bVar4 = bVar5 / param_1;
+    bVar2 = bVar5 % param_1;
+  }
+  P2_4 = 0;
+  bVar5 = DAT_SFR_92;
+  bVar3 = (byte)((ushort)((bVar4 ^ 0x52) + param_4 | (byte)param_3) * (ushort)bVar2 >> 8);
+  bVar6 = (bVar5 * '\x02' + -0x57) - (((0x56 < bVar5) << 7) >> 7);
+  bVar2 = *param_3;
+  bVar7 = bVar6 + *param_3 | (byte)param_3;
+  bVar4 = *param_2;
+  *param_2 = *param_2 & 0xf0 | bVar7 & 0xf;
+  T1 = CARRY1(bVar6,bVar2);
+  _c_4 = CARRY1(bVar6,bVar2);
+  bVar4 = ((bVar7 & 0xf0 | bVar4 & 0xf | bVar5) & (byte)param_3) + param_5 | (byte)param_3;
+  bVar2 = DAT_SFR_9c;
+  _4_4 = false;
+  if (bVar3 != 0) {
+    bVar4 = bVar4 / bVar3;
+  }
+  bVar4 = bVar4 | (byte)param_2;
+  TCLK = 0;
+  do {
+    bVar3 = bVar4 & bVar5 | (byte)param_3;
+    _a_6 = _a_6 ^ 1;
+    ES = _4_4;
+    bVar4 = DAT_INTMEM_24 - _4_4;
+    _4_4 = bVar3 < bVar4;
+    bVar4 = bVar3 - bVar4 & param_2[-1] | param_6;
+    DAT_INTMEM_24 = DAT_INTMEM_24 | bVar4;
+    nop();
+    bVar4 = bVar4 ^ bVar2 | (byte)(param_2 + -1) | (byte)param_3 | (byte)param_3 | (byte)param_3 |
+            (byte)param_3 | (byte)param_3;
+    nop();
+    cVar1 = CT2;
+  } while (cVar1 == '\x01');
+  bVar2 = DAT_SFR_c5;
+  DAT_SFR_c5 = bVar2 ^ (bVar4 | (byte)param_3);
+  bVar4 = bVar4 | (byte)param_3 | bVar5;
+  bVar2 = *param_3;
+  *param_3 = *param_3 & 0xf0 | bVar4 & 0xf;
+  return (bVar4 & 0xf0 | bVar2 & 0xf) ^ bVar5;
+}
+

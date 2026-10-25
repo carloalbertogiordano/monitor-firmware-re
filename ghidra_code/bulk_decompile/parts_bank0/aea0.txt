@@ -1,0 +1,9 @@
+=== 0xaea0 ===
+
+void FUN_CODE_aea0(byte param_1,byte param_2,char param_3,char param_4)
+
+{
+  FUN_CODE_1298((ushort)param_1,param_2,param_3,param_4);
+  return;
+}
+

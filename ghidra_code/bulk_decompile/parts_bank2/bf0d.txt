@@ -1,0 +1,22 @@
+=== 0xbf0d ===
+
+void FUN_CODE_bf0d(void)
+
+{
+  bool bVar1;
+  byte bVar2;
+  
+  FUN_CODE_15e8();
+  bVar1 = 0x1f < DAT_INTMEM_2c;
+  DAT_INTMEM_2c = DAT_INTMEM_2c - 0x20;
+  bVar2 = 0xff - ((bVar1 << 7) >> 7);
+  bVar1 = CARRY1(DAT_INTMEM_2b,bVar2);
+  DAT_INTMEM_2b = DAT_INTMEM_2b + bVar2;
+  bVar2 = 0xff - ((bVar1 << 7) >> 7);
+  bVar1 = CARRY1(DAT_INTMEM_2a,bVar2);
+  DAT_INTMEM_2a = DAT_INTMEM_2a + bVar2;
+  DAT_INTMEM_29 = DAT_INTMEM_29 + (-1 - ((bVar1 << 7) >> 7));
+  FUN_CODE_15d7(DAT_INTMEM_29,DAT_INTMEM_2a,DAT_INTMEM_2b,DAT_INTMEM_2c,0,0,0,0x3f);
+  return;
+}
+

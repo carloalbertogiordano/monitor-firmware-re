@@ -1,0 +1,8 @@
+=== 0xb629 ===
+
+byte FUN_CODE_b629(void)
+
+{
+  return DAT_EXTMEM_b520 & 0xe7;
+}
+

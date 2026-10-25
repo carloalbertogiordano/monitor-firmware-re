@@ -1,0 +1,20 @@
+=== 0x1724 ===
+
+void FUN_CODE_1724(undefined2 param_1)
+
+{
+  code *UNRECOVERED_JUMPTABLE;
+  undefined1 uStackX_0;
+  undefined1 in_stack_000000ff;
+  
+  UNRECOVERED_JUMPTABLE = (code *)CONCAT11(uStackX_0,in_stack_000000ff);
+  FUN_CODE_173b((char)((ushort)param_1 >> 8),(char)param_1);
+  FUN_CODE_173b();
+  FUN_CODE_173b();
+  FUN_CODE_173b();
+                    /* WARNING: Could not recover jumptable at 0x173a. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*UNRECOVERED_JUMPTABLE)();
+  return;
+}
+

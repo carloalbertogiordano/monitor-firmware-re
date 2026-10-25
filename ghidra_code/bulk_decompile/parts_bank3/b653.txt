@@ -1,0 +1,8 @@
+=== 0xb653 ===
+
+char FUN_CODE_b653(byte param_1)
+
+{
+  return (param_1 & 3) << 3;
+}
+

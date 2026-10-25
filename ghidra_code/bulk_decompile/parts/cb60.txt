@@ -1,0 +1,8 @@
+=== 0xcb60 ===
+
+undefined1 FUN_CODE_cb60(void)
+
+{
+  return DAT_EXTMEM_e3b2;
+}
+

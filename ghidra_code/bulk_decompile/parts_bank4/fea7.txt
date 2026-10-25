@@ -1,0 +1,8 @@
+=== 0xfea7 ===
+
+void FUN_CODE_fea7(void)
+
+{
+  return;
+}
+

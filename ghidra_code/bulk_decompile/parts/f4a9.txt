@@ -1,0 +1,16 @@
+=== 0xf4a9 ===
+
+void FUN_CODE_f4a9(void)
+
+{
+  FUN_CODE_eb8a(3);
+  _0_5 = 0;
+  FUN_CODE_ebc2(3);
+  FUN_CODE_e415(3);
+  FUN_CODE_eb8a(4);
+  _0_5 = 0;
+  FUN_CODE_ebc2(4);
+  FUN_CODE_e415(4);
+  return;
+}
+

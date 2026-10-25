@@ -1,0 +1,10 @@
+=== 0x8460 ===
+
+void FUN_CODE_8460(char param_1)
+
+{
+  nop();
+  FUN_CODE_00ee(param_1 + '\x01');
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xfe09 ===
+
+byte FUN_CODE_fe09(void)
+
+{
+  FUN_CODE_d567();
+  return DAT_EXTMEM_b7c4 & DAT_EXTMEM_e412;
+}
+

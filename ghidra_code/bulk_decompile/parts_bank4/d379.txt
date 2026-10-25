@@ -1,0 +1,8 @@
+=== 0xd379 ===
+
+char FUN_CODE_d379(char param_1,char *param_2,byte param_3)
+
+{
+  return param_1 - (*param_2 - (((param_3 < (byte)param_2[1]) << 7) >> 7));
+}
+

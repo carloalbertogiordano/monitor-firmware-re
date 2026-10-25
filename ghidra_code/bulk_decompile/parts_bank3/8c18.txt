@@ -1,0 +1,8 @@
+=== 0x8c18 ===
+
+void FUN_CODE_8c18(void)
+
+{
+  return;
+}
+

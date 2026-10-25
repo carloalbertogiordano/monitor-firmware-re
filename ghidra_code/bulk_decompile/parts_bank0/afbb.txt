@@ -1,0 +1,8 @@
+=== 0xafbb ===
+
+char FUN_CODE_afbb(void)
+
+{
+  return DAT_INTMEM_29 * '\x03';
+}
+

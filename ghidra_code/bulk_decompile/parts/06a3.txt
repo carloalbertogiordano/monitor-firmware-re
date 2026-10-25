@@ -1,0 +1,9 @@
+=== 0x06a3 ===
+
+void FUN_CODE_06a3(void)
+
+{
+  FUN_CODE_043f(thunk_FUN_CODE_0931);
+  return;
+}
+

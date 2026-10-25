@@ -1,0 +1,11 @@
+=== 0xfa02 ===
+
+void FUN_CODE_fa02(void)
+
+{
+  FUN_CODE_faeb(0);
+  FUN_CODE_f826(BANK0_R3);
+  FUN_CODE_faeb(BANK0_R7,BANK0_R5);
+  return;
+}
+

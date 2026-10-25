@@ -1,0 +1,17 @@
+=== 0x0049 ===
+
+void FUN_CODE_0049(undefined1 *param_1,char *param_2,char param_3)
+
+{
+  char in_PSW;
+  
+  BANK3_R7 = BANK3_R7 + -1;
+  nop();
+  nop();
+  *param_2 = *param_2 + '\x01';
+  nop();
+  *param_1 = param_2 + (param_3 * '\a' - (in_PSW >> 7)) + param_3;
+  FUN_CODE_4032(param_2 + -1,param_2 + (param_3 * '\a' - (in_PSW >> 7)));
+  return;
+}
+

@@ -1,0 +1,19 @@
+=== 0xbd62 ===
+
+char FUN_CODE_bd62(undefined1 *param_1,undefined1 param_2,byte param_3)
+
+{
+  byte bVar1;
+  char cVar2;
+  char cVar3;
+  
+  *param_1 = param_2;
+  cVar3 = '\0';
+  cVar2 = '\0';
+  bVar1 = BANK0_R5;
+  FUN_CODE_132c('\0',DAT_EXTMEM_e65c,'\0',param_3);
+  return DAT_EXTMEM_e658 +
+         ((cVar2 + (cVar3 - ((CARRY1(param_3,bVar1) << 7) >> 7))) -
+         ((CARRY1(DAT_EXTMEM_e659,param_3 + bVar1) << 7) >> 7));
+}
+

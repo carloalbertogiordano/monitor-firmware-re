@@ -1,0 +1,20 @@
+=== 0xb723 ===
+
+void FUN_CODE_b723(void)
+
+{
+  FUN_CODE_10c3(7);
+  FUN_CODE_10c9(0x70,3,0,7);
+  DAT_EXTMEM_e35c = 7;
+  DAT_EXTMEM_e35d = 0;
+  DAT_EXTMEM_e35e = 0x12;
+  FUN_CODE_10cf(0x5e,3,0,3);
+  FUN_CODE_082f(0x20);
+  FUN_CODE_0b71(1);
+  FUN_CODE_0b77(1);
+  FUN_CODE_0b7d(1);
+  FUN_CODE_c5d2(100);
+  FUN_CODE_d1fd(0);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xaf47 ===
+
+char FUN_CODE_af47(void)
+
+{
+  return (DAT_INTMEM_35 - ((CARRY1(DAT_INTMEM_36,DAT_INTMEM_2b) << 7) >> 7)) +
+         (-1 - (((0x56 < DAT_INTMEM_36 + DAT_INTMEM_2b) << 7) >> 7));
+}
+

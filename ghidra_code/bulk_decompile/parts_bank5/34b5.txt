@@ -1,0 +1,10 @@
+=== 0x34b5 ===
+
+void FUN_CODE_34b5(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e3b7 = 0;
+  FUN_CODE_3fa7(param_1,0,0x80);
+  return;
+}
+

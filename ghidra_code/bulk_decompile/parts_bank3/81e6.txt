@@ -1,0 +1,10 @@
+=== 0x81e6 ===
+
+char FUN_CODE_81e6(char param_1,byte param_2)
+
+{
+  byte in_PSW;
+  
+  return ((param_1 << 1 | in_PSW >> 7) - 0x2e ^ param_2) + param_2;
+}
+

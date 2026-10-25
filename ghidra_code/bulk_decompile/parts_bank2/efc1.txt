@@ -1,0 +1,23 @@
+=== 0xefc1 ===
+
+void FUN_CODE_efc1(byte param_1,byte param_2)
+
+{
+  char in_PSW;
+  
+  DAT_EXTMEM_e33b = param_1;
+  DAT_EXTMEM_e33c = param_2;
+  FUN_CODE_fd89();
+  if (-1 < in_PSW) {
+    if (2 < DAT_EXTMEM_e33b) {
+      FUN_CODE_0ad5(DAT_EXTMEM_e33b + (-4 - (((0xfe < DAT_EXTMEM_e33c) << 7) >> 7)),
+                    DAT_EXTMEM_e33c + 1);
+      DAT_EXTMEM_e33b = 3;
+      DAT_EXTMEM_e33c = 0xff;
+    }
+    DAT_EXTMEM_001e = DAT_EXTMEM_001e & 0xfa | DAT_EXTMEM_e33b & 1 | (DAT_EXTMEM_e33b & 2) * '\x02';
+    DAT_EXTMEM_001d = DAT_EXTMEM_e33c;
+  }
+  return;
+}
+

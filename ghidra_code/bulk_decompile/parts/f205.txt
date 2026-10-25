@@ -1,0 +1,10 @@
+=== 0xf205 ===
+
+undefined1 FUN_CODE_f205(void)
+
+{
+  return *(undefined1 *)
+          CONCAT11(-0x1b - (((0x51U < (byte)(DAT_EXTMEM_e5d9 * '\x02')) << 7) >> 7),
+                   DAT_EXTMEM_e5d9 * '\x02' + 0xae);
+}
+

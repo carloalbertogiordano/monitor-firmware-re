@@ -1,0 +1,9 @@
+=== 0xd3d1 ===
+
+void FUN_CODE_d3d1(void)
+
+{
+  DAT_EXTMEM_e527 = 0;
+  return;
+}
+

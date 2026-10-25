@@ -1,0 +1,9 @@
+=== 0x6e8a ===
+
+void FUN_CODE_6e8a(void)
+
+{
+  DAT_EXTMEM_e348 = 1;
+  return;
+}
+

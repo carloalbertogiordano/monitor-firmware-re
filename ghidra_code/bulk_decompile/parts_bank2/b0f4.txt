@@ -1,0 +1,9 @@
+=== 0xb0f4 ===
+
+void FUN_CODE_b0f4(void)
+
+{
+  FUN_CODE_1755(DAT_INTMEM_2a,DAT_INTMEM_29 * '\x06' + 's',2);
+  return;
+}
+

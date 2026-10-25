@@ -1,0 +1,22 @@
+=== 0x84b1 ===
+
+void FUN_CODE_84b1(byte param_1,short param_2,char *param_3,char *param_4,undefined1 param_5,
+                  char param_6)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  
+  BANK1_R6 = BANK1_R6 & 0x32;
+  DAT_INTMEM_35 = DAT_INTMEM_35 | *(byte *)((ushort)param_1 + 0x84b5);
+  *param_4 = '9';
+  uVar2 = DAT_INTMEM_3c;
+  cVar1 = *param_4;
+  nop();
+  nop();
+  *param_3 = *param_3 + '\x01';
+  FUN_CODE_8070(cVar1 + (param_6 - ((char)*(byte *)((ushort)param_1 + 0x84b5) >> 7)),param_2 + 1,
+                param_5,uVar2);
+  return;
+}
+

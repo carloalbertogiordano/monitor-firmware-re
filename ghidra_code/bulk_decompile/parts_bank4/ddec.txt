@@ -1,0 +1,40 @@
+=== 0xddec ===
+
+/* WARNING: Removing unreachable block (CODE,0xde26) */
+/* WARNING: Removing unreachable block (CODE,0xde2e) */
+/* WARNING: Removing unreachable block (CODE,0xde34) */
+
+char FUN_CODE_ddec(undefined1 param_1,undefined1 param_2,char param_3,char param_4)
+
+{
+  bool bVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  byte bVar4;
+  
+  DAT_EXTMEM_e3a1 = param_3;
+  DAT_EXTMEM_e3a2 = param_4;
+  DAT_EXTMEM_e3a3 = param_1;
+  DAT_EXTMEM_e3a4 = param_2;
+  DAT_EXTMEM_e3a5 = 0;
+  uVar2 = DAT_EXTMEM_e3a5;
+  DAT_EXTMEM_e3a6 = 0;
+  uVar3 = DAT_EXTMEM_e3a6;
+  while( true ) {
+    bVar4 = *(byte *)CONCAT11(param_1,param_2) & BANK0_R3;
+    bVar1 = bVar4 != 0;
+    if (_0_4 != '\0') {
+      bVar1 = !bVar1;
+    }
+    if (!bVar1) break;
+    DAT_EXTMEM_e3a6 = 0;
+    DAT_EXTMEM_e3a5 = 0;
+    if (param_3 == ((param_4 != -1) << 7) >> 7) {
+      return '\0';
+    }
+  }
+  DAT_EXTMEM_e3a5 = uVar2;
+  DAT_EXTMEM_e3a6 = uVar3;
+  return bVar4 - 1;
+}
+

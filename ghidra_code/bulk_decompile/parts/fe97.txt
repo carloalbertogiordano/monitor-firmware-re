@@ -1,0 +1,9 @@
+=== 0xfe97 ===
+
+void FUN_CODE_fe97(void)
+
+{
+  FUN_CODE_09a9();
+  return;
+}
+

@@ -1,0 +1,37 @@
+=== 0xef16 ===
+
+void FUN_CODE_ef16(char param_1,char param_2,char param_3,char param_4)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  char cVar4;
+  
+  DAT_EXTMEM_e709 = FUN_CODE_755c(0,0xe509);
+  cVar4 = FUN_CODE_7769();
+  if (cVar4 == '\x01') {
+    FUN_CODE_74fd(0xe636);
+    uVar2 = BANK0_R7;
+    cVar4 = -param_4;
+    bVar1 = param_3 - (((param_4 != '\0') << 7) >> 7);
+    param_2 = param_2 - (((8 < bVar1) << 7) >> 7);
+    uVar3 = FUN_CODE_7773(0xe640,-(param_1 - (((param_2 != '\0') << 7) >> 7)),-param_2,'\b' - bVar1)
+    ;
+    BANK0_R7 = uVar2;
+    DAT_EXTMEM_e33d = cVar4;
+    DAT_EXTMEM_e33e = uVar3;
+  }
+  else {
+    if (cVar4 != '\0') {
+      return;
+    }
+    DAT_EXTMEM_e33d = '\x06';
+    DAT_EXTMEM_e33e = 0x92;
+    uVar3 = 0;
+  }
+  FUN_CODE_cd8b();
+  DAT_EXTMEM_e709 = uVar3;
+  return;
+}
+

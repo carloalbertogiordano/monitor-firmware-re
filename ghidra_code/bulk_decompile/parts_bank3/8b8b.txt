@@ -1,0 +1,8 @@
+=== 0x8b8b ===
+
+undefined1 FUN_CODE_8b8b(undefined1 param_1)
+
+{
+  return param_1;
+}
+

@@ -1,0 +1,13 @@
+=== 0x7498 ===
+
+void FUN_CODE_7498(undefined1 param_1,char param_2,undefined1 param_3)
+
+{
+  char in_PSW;
+  
+  DAT_EXTMEM_e377 = param_3;
+  DAT_EXTMEM_e378 = param_2 - (in_PSW >> 7);
+  DAT_EXTMEM_e379 = param_1;
+  return;
+}
+

@@ -1,0 +1,34 @@
+=== 0xdf06 ===
+
+void FUN_CODE_df06(byte param_1,undefined1 param_2,byte param_3,undefined1 param_4)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  byte *pbVar3;
+  
+  DAT_EXTMEM_e336 = param_3;
+  DAT_EXTMEM_e337 = param_4;
+  DAT_EXTMEM_e338 = param_1;
+  DAT_EXTMEM_e339 = param_2;
+  FUN_CODE_0865(param_1 & 0xf | param_3 << 4,0,0,0x30);
+  pbVar3 = &DAT_EXTMEM_e336;
+  FUN_CODE_df96(1);
+  FUN_CODE_df96(2);
+  DAT_EXTMEM_e373 = DAT_EXTMEM_e336 & 0x10 | (*pbVar3 & 0x10) >> 4;
+  uVar2 = 0x30;
+  uVar1 = 0;
+  FUN_CODE_0775(0xee,3);
+  DAT_EXTMEM_05a6 = 0;
+  DAT_EXTMEM_05a7 = 0;
+  FUN_CODE_de53(DAT_EXTMEM_e337,0x51f,DAT_EXTMEM_e336);
+  DAT_EXTMEM_05a2 = uVar2;
+  DAT_EXTMEM_05a3 = uVar1;
+  FUN_CODE_de53(DAT_EXTMEM_e339,0x521,DAT_EXTMEM_e338);
+  DAT_EXTMEM_05a4 = uVar2;
+  DAT_EXTMEM_05a5 = uVar1;
+  FUN_CODE_fb5b();
+  DAT_EXTMEM_05ad = DAT_EXTMEM_05ad & 0xef | 0x10;
+  return;
+}
+

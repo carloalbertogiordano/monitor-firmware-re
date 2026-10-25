@@ -1,0 +1,8 @@
+=== 0x6ed9 ===
+
+undefined1 FUN_CODE_6ed9(void)
+
+{
+  return 0;
+}
+

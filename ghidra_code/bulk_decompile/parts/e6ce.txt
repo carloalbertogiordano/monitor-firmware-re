@@ -1,0 +1,9 @@
+=== 0xe6ce ===
+
+char FUN_CODE_e6ce(char param_1,byte param_2)
+
+{
+  FUN_CODE_fdad();
+  return param_1 - ('\t' - (((param_2 < 0xc4) << 7) >> 7));
+}
+

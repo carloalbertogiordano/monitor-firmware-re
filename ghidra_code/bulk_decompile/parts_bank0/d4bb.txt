@@ -1,0 +1,13 @@
+=== 0xd4bb ===
+
+char FUN_CODE_d4bb(undefined1 param_1,undefined1 param_2,char param_3)
+
+{
+  DAT_EXTMEM_ff5f = *(undefined1 *)CONCAT11(param_1,param_2);
+  DAT_EXTMEM_ff5a =
+       *(char *)CONCAT11('x' - (((0xd7U < (byte)(param_3 * '\t')) << 7) >> 7),param_3 * '\t' + 0x28)
+  ;
+  DAT_EXTMEM_ffd8 = DAT_EXTMEM_ff5a + '\x02';
+  return DAT_EXTMEM_e418 * '\t';
+}
+

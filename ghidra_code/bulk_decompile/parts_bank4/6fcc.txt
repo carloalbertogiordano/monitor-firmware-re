@@ -1,0 +1,8 @@
+=== 0x6fcc ===
+
+char FUN_CODE_6fcc(void)
+
+{
+  return DAT_EXTMEM_e376 + '\x04';
+}
+

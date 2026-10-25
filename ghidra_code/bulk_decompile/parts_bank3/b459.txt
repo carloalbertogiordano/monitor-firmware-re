@@ -1,0 +1,10 @@
+=== 0xb459 ===
+
+void FUN_CODE_b459(void)
+
+{
+  FUN_CODE_17ba(0);
+  FUN_CODE_152f(0,0,0,100);
+  return;
+}
+

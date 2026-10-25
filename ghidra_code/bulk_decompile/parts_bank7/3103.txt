@@ -1,0 +1,30 @@
+=== 0x3103 ===
+
+void FUN_CODE_3103(char param_1,short param_2,byte param_3,byte param_4,char param_5,byte param_6,
+                  undefined1 param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte in_PSW;
+  
+  DAT_INTMEM_37 = DAT_INTMEM_37 & 0x33;
+  bVar2 = *(byte *)(ushort)param_3;
+  if (-1 < *(char *)(param_2 + (ushort)(param_1 << 1 | in_PSW >> 7)) + (param_5 - (param_1 >> 7))) {
+                    /* WARNING: Could not recover jumptable at 0x3112. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)(param_2 + (ushort)(bVar2 << 1 | bVar2 >> 7 | 0x34)))();
+    return;
+  }
+  _7_1 = 0;
+  bVar1 = DAT_SFR_96;
+  DAT_SFR_96 = bVar1 | 0x39;
+  bVar2 = *(byte *)((ushort)(bVar2 >> 1 | bVar2 << 7) + 0x314f);
+  bVar2 = (bVar2 - param_4) + (param_3 - (((bVar2 < param_4) << 7) >> 7));
+  *(byte *)(ushort)param_3 = (bVar2 - param_6) + (param_3 - (((bVar2 < param_6) << 7) >> 7));
+  DAT_INTMEM_38 = param_4;
+  DAT_INTMEM_39 = param_7;
+  FUN_CODE_353a();
+  return;
+}
+

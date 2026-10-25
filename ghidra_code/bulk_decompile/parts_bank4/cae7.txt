@@ -1,0 +1,8 @@
+=== 0xcae7 ===
+
+byte FUN_CODE_cae7(byte *param_1)
+
+{
+  return *param_1 >> 3 & 7;
+}
+

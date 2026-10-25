@@ -1,0 +1,138 @@
+=== 0x1b1f ===
+
+byte FUN_CODE_1b1f(byte param_1,byte param_2,byte param_3,byte param_4,byte param_5,byte param_6,
+                  byte param_7,byte param_8)
+
+{
+  bool bVar1;
+  short sVar2;
+  undefined1 uVar3;
+  char cVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  byte bVar9;
+  byte bVar10;
+  byte bVar11;
+  byte bVar12;
+  byte bVar13;
+  
+  if (param_5 == 0 && param_6 == 0) {
+    bVar6 = (param_1 << 1 | param_2 >> 7) + 1;
+    if (bVar6 != 0) {
+      return bVar6;
+    }
+LAB_CODE_1b3b:
+    bVar6 = FUN_CODE_1d6f();
+    return bVar6;
+  }
+  if (param_1 == 0 && param_2 == 0) {
+    if ((param_5 << 1 | param_6 >> 7) != 0xff) {
+      return 0;
+    }
+    goto LAB_CODE_1b3b;
+  }
+  bVar6 = FUN_CODE_1d3a(param_1,param_5,param_6);
+  if ((bVar6 & param_1) == 0xff) {
+LAB_CODE_1b4e:
+    bVar6 = FUN_CODE_1d79();
+    return bVar6;
+  }
+  bVar6 = 0;
+  bVar7 = param_5 + 0x81;
+  if (param_5 < 0x7f) {
+    if (!CARRY1(bVar7,param_1)) {
+      bVar6 = FUN_CODE_1d76();
+      return bVar6;
+    }
+  }
+  else if (CARRY1(bVar7,param_1)) goto LAB_CODE_1b4e;
+  cVar4 = bVar7 + param_1;
+  if (param_4 == 0 && param_3 == 0) {
+    bVar9 = param_6;
+    if (param_2 == 0x80) {
+LAB_CODE_1b60:
+      uVar3 = F0;
+      return bVar9 & 0x7f | cVar4 * -0x80;
+    }
+    bVar7 = param_2;
+    param_3 = param_7;
+    param_4 = param_8;
+    if (param_8 == 0 && param_7 == 0) {
+      bVar9 = param_2;
+      if (param_6 != 0x80) {
+        sVar2 = (ushort)param_2 * (ushort)param_6;
+        goto LAB_CODE_1c08;
+      }
+      goto LAB_CODE_1b60;
+    }
+  }
+  else {
+    if (param_8 != 0 || param_7 != 0) {
+      bVar6 = (byte)((ushort)param_8 * (ushort)param_4 >> 8);
+      bVar9 = (byte)((ushort)param_7 * (ushort)param_4);
+      bVar7 = (byte)((ushort)param_8 * (ushort)param_3 >> 8);
+      bVar6 = ((char)((ushort)param_7 * (ushort)param_4 >> 8) - ((CARRY1(bVar9,bVar6) << 7) >> 7)) -
+              ((CARRY1((byte)((ushort)param_8 * (ushort)param_3),bVar9 + bVar6) << 7) >> 7);
+      bVar9 = bVar7 + bVar6;
+      bVar8 = (byte)((ushort)param_4 * (ushort)param_6);
+      bVar10 = bVar8 + bVar9;
+      bVar11 = (byte)((ushort)param_7 * (ushort)param_3);
+      bVar5 = (byte)((ushort)param_7 * (ushort)param_3 >> 8);
+      bVar12 = bVar11 + bVar10;
+      bVar7 = ((char)((ushort)param_4 * (ushort)param_6 >> 8) +
+              (-((CARRY1(bVar8,bVar9) << 7) >> 7) - ((CARRY1(bVar7,bVar6) << 7) >> 7))) -
+              ((CARRY1(bVar11,bVar10) << 7) >> 7);
+      bVar9 = (byte)((ushort)param_8 * (ushort)param_2);
+      bVar8 = (byte)((ushort)param_8 * (ushort)param_2 >> 8);
+      bVar6 = bVar9 + bVar12;
+      bVar9 = (bVar5 + bVar7) - ((CARRY1(bVar9,bVar12) << 7) >> 7);
+      bVar11 = bVar8 + bVar9;
+      bVar12 = (byte)((ushort)param_7 * (ushort)param_2);
+      bVar10 = (byte)((ushort)param_7 * (ushort)param_2 >> 8);
+      bVar13 = bVar12 + bVar11;
+      bVar7 = (-((CARRY1(bVar8,bVar9) << 7) >> 7) - ((CARRY1(bVar5,bVar7) << 7) >> 7)) -
+              ((CARRY1(bVar12,bVar11) << 7) >> 7);
+      bVar8 = bVar10 + bVar7;
+      bVar11 = (byte)((ushort)param_2 * (ushort)param_6);
+      bVar9 = (byte)((ushort)param_6 * (ushort)param_3);
+      bVar5 = (byte)((ushort)param_6 * (ushort)param_3 >> 8);
+      param_8 = bVar9 + bVar13;
+      bVar9 = (bVar11 + bVar8) - ((CARRY1(bVar9,bVar13) << 7) >> 7);
+      sVar2 = CONCAT11(((char)((ushort)param_2 * (ushort)param_6 >> 8) +
+                       (-((CARRY1(bVar11,bVar8) << 7) >> 7) - ((CARRY1(bVar10,bVar7) << 7) >> 7))) -
+                       ((CARRY1(bVar5,bVar9) << 7) >> 7),bVar5 + bVar9);
+      goto LAB_CODE_1c08;
+    }
+    bVar7 = param_6;
+    bVar9 = param_2;
+    if (param_6 == 0x80) goto LAB_CODE_1b60;
+  }
+  bVar6 = (byte)((ushort)param_4 * (ushort)bVar7);
+  bVar5 = (byte)((ushort)param_4 * (ushort)bVar7 >> 8);
+  bVar8 = (byte)((ushort)param_3 * (ushort)bVar7);
+  param_8 = bVar8 + bVar5;
+  bVar5 = (char)((ushort)param_3 * (ushort)bVar7 >> 8) - ((CARRY1(bVar8,bVar5) << 7) >> 7);
+  bVar8 = (byte)((ushort)bVar9 * (ushort)bVar7);
+  sVar2 = CONCAT11((char)((ushort)bVar9 * (ushort)bVar7 >> 8) - ((CARRY1(bVar8,bVar5) << 7) >> 7),
+                   bVar8 + bVar5);
+LAB_CODE_1c08:
+  if (sVar2 < 0) {
+    cVar4 = cVar4 + '\x01';
+    bVar7 = param_8;
+    if (cVar4 == '\0') {
+      bVar6 = FUN_CODE_1d79();
+      return bVar6;
+    }
+  }
+  else {
+    bVar1 = CARRY1(bVar6,bVar6);
+    bVar6 = bVar6 * '\x02';
+    bVar7 = param_8 << 1 | bVar1;
+    sVar2 = CONCAT11((char)((ushort)(sVar2 << 1) >> 8),(byte)(sVar2 << 1) | param_8 >> 7);
+  }
+  bVar6 = FUN_CODE_1d51(cVar4,bVar6,(byte)((ushort)sVar2 >> 8),(char)sVar2,bVar7);
+  return bVar6;
+}
+

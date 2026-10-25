@@ -1,0 +1,8 @@
+=== 0xb600 ===
+
+char FUN_CODE_b600(char param_1,byte param_2)
+
+{
+  return param_1 - (DAT_EXTMEM_e346 - (((param_2 < DAT_EXTMEM_e347) << 7) >> 7));
+}
+

@@ -1,0 +1,15 @@
+=== 0xf49c ===
+
+void FUN_CODE_f49c(void)
+
+{
+  DAT_EXTMEM_08a0 = DAT_EXTMEM_08a0 & 0x3f | 0x80;
+  DAT_EXTMEM_08a3 = DAT_EXTMEM_08a3 & 0xf0;
+  DAT_EXTMEM_08a4 = 0x30;
+  _0_6 = 0;
+  FUN_CODE_f3c1();
+  FUN_CODE_f9a8(0,0);
+  _7_4 = 1;
+  return;
+}
+

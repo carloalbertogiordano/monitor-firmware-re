@@ -1,0 +1,8 @@
+=== 0x8d63 ===
+
+char FUN_CODE_8d63(void)
+
+{
+  return DAT_EXTMEM_e3ec - DAT_EXTMEM_e3ed;
+}
+

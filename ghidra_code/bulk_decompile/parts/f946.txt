@@ -1,0 +1,20 @@
+=== 0xf946 ===
+
+void FUN_CODE_f946(char param_1)
+
+{
+  byte *pbVar1;
+  
+  if (param_1 == '\x04') {
+    pbVar1 = &DAT_EXTMEM_e580;
+  }
+  else {
+    if (param_1 != '\x03') {
+      return;
+    }
+    pbVar1 = &DAT_EXTMEM_e581;
+  }
+  *pbVar1 = *pbVar1 & 0xfd;
+  return;
+}
+

@@ -1,0 +1,13 @@
+=== 0xb13c ===
+
+void FUN_CODE_b13c(void)
+
+{
+  DAT_EXTMEM_e3a0 = 1;
+  DAT_EXTMEM_e3a1 = 0xe3;
+  DAT_EXTMEM_e3a2 = 0x73;
+  DAT_EXTMEM_e3a3 = 1;
+  DAT_EXTMEM_e3a4 = 0xe3;
+  return;
+}
+

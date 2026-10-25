@@ -1,0 +1,116 @@
+=== 0x5ec8 ===
+
+void FUN_CODE_5ec8(byte param_1,byte *param_2,byte param_3,byte param_4,byte *param_5,
+                  undefined1 param_6,byte param_7,byte param_8,char param_9)
+
+{
+  byte bVar1;
+  byte bVar2;
+  undefined1 *puVar3;
+  
+  puVar3 = (undefined1 *)0x0;
+  nop();
+  *(byte *)(ushort)param_4 = param_1;
+  if (param_1 == 0x88) {
+    bVar1 = 0x88 - *param_5;
+    HADDR = bVar1;
+    bVar1 = bVar1 | param_8;
+    BANK2_R7 = 0x4c;
+    BANK2_R1 = 0x40;
+    if (0x88 < *param_5) {
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      *param_5 = *param_5 + 1;
+      bVar2 = param_4 | *param_5 | param_7 + 2 | *param_5 | param_7 + 2;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      while( true ) {
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        if (bVar2 == 0) break;
+        bVar2 = *param_2;
+        nop();
+        nop();
+        nop();
+      }
+      *param_2 = 0;
+      FUN_CODE_58a2(*param_2,bVar1 + 1,0,param_8 + 1,param_9 + '\x01');
+      return;
+    }
+    bVar1 = bVar1 | (byte)param_5;
+    param_1 = bVar1;
+    if (param_3 != 0) {
+      param_1 = bVar1 / param_3;
+      param_3 = bVar1 % param_3;
+    }
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    puVar3 = &BANK0_R3;
+    nop();
+    param_7 = param_7 + 4;
+    param_6 = DAT_INTMEM_44;
+  }
+  nop();
+  nop();
+  puVar3['\x01'] = BANK0_R0;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_7;
+  FUN_CODE_5ec8(param_1 >> 1 | param_1 << 7 | param_7,param_3,param_6);
+  return;
+}
+

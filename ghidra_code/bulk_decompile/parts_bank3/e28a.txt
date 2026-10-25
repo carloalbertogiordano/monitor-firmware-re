@@ -1,0 +1,9 @@
+=== 0xe28a ===
+
+void FUN_CODE_e28a(undefined1 param_1)
+
+{
+  FUN_CODE_febf(2,param_1);
+  return;
+}
+

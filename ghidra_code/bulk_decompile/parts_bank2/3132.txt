@@ -1,0 +1,64 @@
+=== 0x3132 ===
+
+char FUN_CODE_3132(undefined1 param_1,byte param_2,byte param_3,char param_4,char param_5,
+                  byte param_6)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (-1 < (char)((param_3 < 0x32 | _8_3) << 7)) {
+    param_4 = param_4 + '\x01';
+    param_3 = param_3 + 1;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar1 = P2_0;
+  nop();
+  nop();
+  nop();
+  cVar2 = P1_2;
+  if (cVar2 != '\0') {
+    P1_2 = 0;
+    nop();
+    nop();
+    cVar2 = thunk_FUN_CODE_3186(param_4,param_1);
+    return cVar2;
+  }
+  bVar3 = (param_6 >> 1 | param_6 << 7 | param_5 + 1U) + 0x90;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (param_2 != 0) {
+    bVar3 = bVar3 / param_2;
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_SFR_ff = param_1;
+  DAT_EXTMEM_e6c6 = DAT_EXTMEM_fff4;
+  return bVar3 + param_3;
+}
+

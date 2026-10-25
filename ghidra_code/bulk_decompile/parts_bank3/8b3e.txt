@@ -1,0 +1,8 @@
+=== 0x8b3e ===
+
+char FUN_CODE_8b3e(char param_1)
+
+{
+  return param_1 + -8;
+}
+

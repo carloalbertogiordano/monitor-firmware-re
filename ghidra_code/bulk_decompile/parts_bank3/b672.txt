@@ -1,0 +1,8 @@
+=== 0xb672 ===
+
+byte FUN_CODE_b672(void)
+
+{
+  return DAT_EXTMEM_e37b >> 1 | DAT_EXTMEM_e37a << 7;
+}
+

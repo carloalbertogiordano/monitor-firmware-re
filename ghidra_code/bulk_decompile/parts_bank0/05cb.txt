@@ -1,0 +1,9 @@
+=== 0x05cb ===
+
+void FUN_CODE_05cb(void)
+
+{
+  state_dispatch_arg22_case1();
+  return;
+}
+

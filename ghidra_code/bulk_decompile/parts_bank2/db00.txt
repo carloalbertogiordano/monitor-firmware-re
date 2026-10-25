@@ -1,0 +1,8 @@
+=== 0xdb00 ===
+
+char FUN_CODE_db00(void)
+
+{
+  return DAT_EXTMEM_e527 - ((CARRY1(DAT_EXTMEM_e528,DAT_EXTMEM_e33f) << 7) >> 7);
+}
+

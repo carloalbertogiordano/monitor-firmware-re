@@ -1,0 +1,8 @@
+=== 0xd68b ===
+
+undefined1 FUN_CODE_d68b(void)
+
+{
+  return DAT_EXTMEM_e4f4;
+}
+

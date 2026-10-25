@@ -1,0 +1,10 @@
+=== 0x9b73 ===
+
+void FUN_CODE_9b73(void)
+
+{
+  DAT_EXTMEM_0bd0 = DAT_EXTMEM_0bd0 & 0xfb;
+  DAT_INTMEM_55 = DAT_INTMEM_54;
+  return;
+}
+

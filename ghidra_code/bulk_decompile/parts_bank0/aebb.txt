@@ -1,0 +1,8 @@
+=== 0xaebb ===
+
+char FUN_CODE_aebb(char *param_1)
+
+{
+  return *param_1 + '\x01';
+}
+

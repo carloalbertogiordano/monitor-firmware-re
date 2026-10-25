@@ -1,0 +1,50 @@
+=== 0x4c11 ===
+
+void FUN_CODE_4c11(byte param_1,undefined1 param_2,char param_3,char param_4,char param_5)
+
+{
+  undefined1 uVar1;
+  char in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_SFR_ab = param_3;
+  uVar1 = DAT_SFR_aa;
+  uVar1 = FADDR;
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_2;
+  FUN_CODE_0007((~((param_1 | 0x10) + (param_3 - (in_PSW >> 7))) | param_5 + 3U | 0xaa) + param_4,
+                uVar1,DAT_INTMEM_4f,param_5 + '\x04');
+  return;
+}
+

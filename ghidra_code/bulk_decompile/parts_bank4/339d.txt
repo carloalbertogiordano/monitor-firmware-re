@@ -1,0 +1,141 @@
+=== 0x339d ===
+
+/* WARNING: Instruction at (CODE,0x3449) overlaps instruction at (CODE,0x3448)
+    */
+
+char FUN_CODE_339d(byte param_1,undefined1 *param_2,byte *param_3,byte param_4,char param_5,
+                  undefined1 param_6,char param_7)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  undefined1 *puVar4;
+  undefined1 *puVar5;
+  undefined1 *puVar6;
+  byte in_PSW;
+  undefined1 *puVar7;
+  
+  nop();
+  if (_2_2 == '\x01') {
+    cVar1 = FUN_CODE_3000();
+    return cVar1;
+  }
+  DAT_INTMEM_37 = DAT_INTMEM_37 | 0x74;
+  cVar1 = (param_1 | param_4) + 1;
+  nop();
+  nop();
+  if (_0_3 == '\0') {
+    nop();
+    return cVar1;
+  }
+  if (_0_3 != '\0') {
+    nop();
+    return cVar1;
+  }
+  _d_6 = in_PSW >> 7;
+  _9_6 = in_PSW >> 7;
+  bVar2 = (param_1 | param_4) + 2;
+  nop();
+  nop();
+  DAT_INTMEM_64 = *param_2;
+  puVar4 = (undefined1 *)0x0;
+LAB_CODE_33fd:
+  nop();
+  nop();
+  cVar1 = P1_2;
+  if (cVar1 != '\x01') {
+    cVar1 = FUN_CODE_3199(bVar2 - ((char)param_3 - ((char)in_PSW >> 7)),param_6,param_7);
+    return cVar1;
+  }
+  _8_4 = in_PSW >> 7;
+  nop();
+  while( true ) {
+    nop();
+    puVar5 = puVar4;
+    if (_a_5 == '\x01') goto LAB_CODE_3473;
+    bVar3 = DAT_SFR_95;
+    DAT_SFR_95 = bVar3 & bVar2;
+    bVar3 = bVar2 + 0x55 | (byte)param_3;
+    bVar2 = DAT_SFR_95;
+    DAT_SFR_95 = bVar2 & bVar3;
+    bVar3 = bVar3 + 0x55 | (byte)param_3;
+    nop();
+    nop();
+    cVar1 = P1_2;
+    if (cVar1 != '\x01') break;
+    while( true ) {
+      *param_3 = bVar3;
+      puVar6 = puVar5 + '\x01';
+      puVar4 = puVar5 + '\x01';
+      puVar7 = puVar5 + '\x01';
+      puVar5 = puVar5 + '\x01';
+      *puVar6 = DAT_INTMEM_7d;
+      in_PSW = 0;
+      param_5 = param_5 + -1;
+      if (param_5 != '\0') break;
+      param_7 = bVar3 + 1;
+      param_2 = param_2 + -1;
+      param_6 = 0x62;
+      bVar3 = bVar3 | (byte)param_3;
+      if (param_4 != 1) {
+        bVar3 = bVar3 + 0x3d;
+        goto LAB_CODE_3440;
+      }
+      param_3 = param_3 + '\x01';
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      in_PSW = (0x67 < bVar3) << 7;
+      bVar2 = bVar3 + 0x98;
+      BANK0_R0 = param_5;
+      *param_3 = 0x92;
+      nop();
+      param_4 = 0;
+      puVar4 = puVar7;
+      if (_9_1 == '\x01') goto LAB_CODE_33fd;
+      _4_4 = 0xb6 < bVar2;
+      in_PSW = _4_4 << 7;
+      bVar2 = bVar3 - 0x1f | (byte)param_3 | (byte)param_3;
+LAB_CODE_3473:
+      puVar5['\x01'] = 0x76;
+      puVar5['\x02'] = 0x34;
+      bVar2 = thunk_FUN_CODE_26eb(bVar2);
+      _4_4 = in_PSW >> 7;
+      bVar3 = bVar2 | (byte)param_3 | (byte)param_3 | (byte)param_3 | (byte)param_3;
+      _8_4 = in_PSW >> 7;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      DAT_INTMEM_24 = param_2;
+    }
+    bVar2 = DAT_SFR_92;
+    DAT_SFR_92 = bVar2 | bVar3;
+    param_3 = param_3 + '\x01';
+    bVar2 = bVar3 | (byte)param_3;
+    bVar3 = DAT_SFR_92;
+    DAT_SFR_92 = bVar3 | bVar2;
+  }
+  bVar2 = DAT_SFR_92;
+  bVar3 = bVar3 + DAT_INTMEM_49 & bVar2 & 0x25 | (byte)param_3;
+LAB_CODE_3440:
+  bVar2 = DAT_SFR_92;
+  nop();
+  nop();
+  SM2 = 1;
+  SM2 = 1;
+  SM2 = 1;
+  nop();
+  nop();
+  return (((bVar3 & bVar2 & 0x25 | (byte)param_3) - 0x22 | (byte)param_3) - 0x23 | (byte)param_3) +
+         1;
+}
+

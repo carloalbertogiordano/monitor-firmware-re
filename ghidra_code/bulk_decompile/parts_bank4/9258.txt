@@ -1,0 +1,32 @@
+=== 0x9258 ===
+
+void FUN_CODE_9258(char *param_1,char param_2,byte param_3,char param_4,byte param_5)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  char cVar4;
+  byte bVar5;
+  
+  cVar4 = *param_1;
+  bVar1 = param_5 - param_1[1];
+  bVar2 = param_4 - (cVar4 - (((param_5 < (byte)param_1[1]) << 7) >> 7));
+  bVar5 = bVar2 >> 1;
+  bVar2 = bVar1 >> 1 | bVar2 * -0x80;
+  FUN_CODE_a7d4();
+  bVar3 = 7 - (cVar4 - (((0x80 < bVar1) << 7) >> 7));
+  bVar1 = 0x80 - bVar1 >> 1 | bVar3 * -0x80;
+  cVar4 = bVar1 + bVar2;
+  DAT_EXTMEM_e679 = cVar4 + -1;
+  DAT_EXTMEM_e678 =
+       bVar5 + ((bVar3 >> 1) - ((CARRY1(bVar1,bVar2) << 7) >> 7)) +
+       (-1 - (((cVar4 != '\0') << 7) >> 7));
+  bVar5 = param_2 - (DAT_EXTMEM_e674 - (((param_3 < DAT_EXTMEM_e675) << 7) >> 7));
+  bVar2 = param_3 - DAT_EXTMEM_e675 >> 1 | bVar5 * -0x80;
+  DAT_EXTMEM_e673 = bVar2 - 1;
+  DAT_EXTMEM_e672 = (bVar5 >> 1) + (-1 - (((bVar2 != 0) << 7) >> 7));
+  FUN_CODE_92e0();
+  return;
+}
+

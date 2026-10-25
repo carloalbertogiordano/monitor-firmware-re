@@ -1,0 +1,10 @@
+=== 0xdb8d ===
+
+void FUN_CODE_db8d(void)
+
+{
+  DAT_EXTMEM_ff61 = DAT_EXTMEM_e6b1;
+  DAT_EXTMEM_ff64 = 0;
+  return;
+}
+

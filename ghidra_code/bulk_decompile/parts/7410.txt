@@ -1,0 +1,12 @@
+=== 0x7410 ===
+
+char FUN_CODE_7410(void)
+
+{
+  char cVar1;
+  
+  cVar1 = '`';
+  FUN_CODE_085f(0xc,0,0x60);
+  return cVar1 + -1;
+}
+

@@ -1,0 +1,9 @@
+=== 0xfea3 ===
+
+void FUN_CODE_fea3(void)
+
+{
+  FUN_CODE_09d3();
+  return;
+}
+

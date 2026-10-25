@@ -1,0 +1,12 @@
+=== 0x0804 ===
+
+void FUN_CODE_0804(char param_1,byte *param_2,byte param_3,byte *param_4,byte *param_5,byte param_6,
+                  byte param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  *param_4 = *param_4 - 1;
+  FUN_CODE_0864(param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,param_10,
+                param_11);
+  return;
+}
+

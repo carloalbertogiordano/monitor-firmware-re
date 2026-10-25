@@ -1,0 +1,8 @@
+=== 0x9637 ===
+
+undefined1 FUN_CODE_9637(void)
+
+{
+  return 0;
+}
+

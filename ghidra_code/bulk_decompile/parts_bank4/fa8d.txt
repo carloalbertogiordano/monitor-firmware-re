@@ -1,0 +1,12 @@
+=== 0xfa8d ===
+
+void FUN_CODE_fa8d(void)
+
+{
+  if ((DAT_EXTMEM_e32e == '\x04') || (DAT_EXTMEM_e32e == '\x03')) {
+    _0_2 = _0_1 & 1;
+    FUN_CODE_fb93();
+  }
+  return;
+}
+

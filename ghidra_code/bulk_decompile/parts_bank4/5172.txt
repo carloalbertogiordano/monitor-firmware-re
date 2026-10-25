@@ -1,0 +1,10 @@
+=== 0x5172 ===
+
+void FUN_CODE_5172(void)
+
+{
+  nop();
+  nop();
+  return;
+}
+

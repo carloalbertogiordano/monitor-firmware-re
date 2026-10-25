@@ -1,0 +1,9 @@
+=== 0x0fd3 ===
+
+void FUN_CODE_0fd3(void)
+
+{
+  state_dispatch_arg22_case1();
+  return;
+}
+

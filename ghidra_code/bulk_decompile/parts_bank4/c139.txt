@@ -1,0 +1,15 @@
+=== 0xc139 ===
+
+void FUN_CODE_c139(byte param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e335 = param_2;
+  if (8 < param_1) {
+    return;
+  }
+                    /* WARNING: Could not recover jumptable at 0xc14d. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)(param_1 * '\x03') + 0xc14e))();
+  return;
+}
+

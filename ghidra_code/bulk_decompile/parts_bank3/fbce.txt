@@ -1,0 +1,8 @@
+=== 0xfbce ===
+
+char FUN_CODE_fbce(byte param_1)
+
+{
+  return (param_1 >> 2 & 1) * '\x02';
+}
+

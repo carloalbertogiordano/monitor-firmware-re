@@ -1,0 +1,9 @@
+=== 0x74b8 ===
+
+void FUN_CODE_74b8(byte param_1,byte *param_2)
+
+{
+  *param_2 = *param_2 & 0xfe | param_1 & 1;
+  return;
+}
+

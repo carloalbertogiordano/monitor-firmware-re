@@ -1,0 +1,10 @@
+=== 0xb1d0 ===
+
+char FUN_CODE_b1d0(void)
+
+{
+  char in_PSW;
+  
+  return -0x1d - (in_PSW >> 7);
+}
+

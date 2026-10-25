@@ -1,0 +1,9 @@
+=== 0x8ba4 ===
+
+void FUN_CODE_8ba4(void)
+
+{
+  DAT_EXTMEM_0b50 = DAT_EXTMEM_0b50 & 0xde | 0x20;
+  return;
+}
+

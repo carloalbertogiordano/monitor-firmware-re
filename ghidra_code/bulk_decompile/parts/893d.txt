@@ -1,0 +1,12 @@
+=== 0x893d ===
+
+byte FUN_CODE_893d(byte *param_1,undefined1 param_2,undefined1 param_3)
+
+{
+  FUN_CODE_1761(param_3);
+  DPXL = param_2;
+  nop();
+  DAT_SFR_9a = param_2;
+  return *param_1 & 7;
+}
+

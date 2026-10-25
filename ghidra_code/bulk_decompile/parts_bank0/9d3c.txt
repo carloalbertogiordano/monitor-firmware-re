@@ -1,0 +1,8 @@
+=== 0x9d3c ===
+
+char FUN_CODE_9d3c(void)
+
+{
+  return DAT_EXTMEM_e619 + -10;
+}
+

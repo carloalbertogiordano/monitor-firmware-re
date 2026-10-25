@@ -1,0 +1,10 @@
+=== 0xaf6f ===
+
+void FUN_CODE_af6f(char param_1,char param_2,char param_3,byte param_4)
+
+{
+  FUN_CODE_152f(param_1,param_2,param_3,param_4,DAT_EXTMEM_e371,DAT_EXTMEM_e372,DAT_EXTMEM_e373,
+                DAT_EXTMEM_e374);
+  return;
+}
+

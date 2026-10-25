@@ -1,0 +1,8 @@
+=== 0xd08f ===
+
+undefined1 FUN_CODE_d08f(void)
+
+{
+  return 0;
+}
+

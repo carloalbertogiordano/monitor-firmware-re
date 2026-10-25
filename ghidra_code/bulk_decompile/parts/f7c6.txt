@@ -1,0 +1,17 @@
+=== 0xf7c6 ===
+
+void FUN_CODE_f7c6(void)
+
+{
+  byte bVar1;
+  
+  if ((char)DAT_EXTMEM_e07f < '\0') {
+    bVar1 = DAT_EXTMEM_e07f;
+    FUN_CODE_0553((DAT_EXTMEM_e07f >> 6) << 7);
+    if (bVar1 == 1) {
+      return;
+    }
+  }
+  return;
+}
+

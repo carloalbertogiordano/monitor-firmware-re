@@ -1,0 +1,10 @@
+=== 0x5f99 ===
+
+void FUN_CODE_5f99(void)
+
+{
+  FUN_CODE_f326();
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe34a);
+}
+

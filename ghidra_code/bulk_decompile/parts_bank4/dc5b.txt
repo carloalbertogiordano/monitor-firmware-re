@@ -1,0 +1,30 @@
+=== 0xdc5b ===
+
+void FUN_CODE_dc5b(byte *param_1)
+
+{
+  byte bVar1;
+  char cVar2;
+  undefined1 uVar3;
+  
+  bVar1 = FUN_CODE_8e57();
+  *param_1 = bVar1 | 1;
+  cVar2 = FUN_CODE_8d30();
+  if (cVar2 == '\0') {
+    DAT_EXTMEM_02ab = DAT_EXTMEM_02ab & 0xfe | 1;
+  }
+  else {
+    DAT_EXTMEM_02ab = DAT_EXTMEM_02ab & 0xfe;
+  }
+  DAT_EXTMEM_0281 = DAT_EXTMEM_0281 & 0x3f;
+  DAT_EXTMEM_0286 = DAT_EXTMEM_0286 & 0x8f | 0x10;
+  DAT_EXTMEM_0288 = DAT_EXTMEM_0288 & 0x9f | 0x20;
+  DAT_EXTMEM_0289 = DAT_EXTMEM_0289 & 0x18 | 0x24;
+  DAT_EXTMEM_0287 = DAT_EXTMEM_0287 & 3 | 200;
+  FUN_CODE_8d0a(DAT_EXTMEM_028b & 0xe7 | 8);
+  FUN_CODE_0775();
+  uVar3 = FUN_CODE_8e6c();
+  FUN_CODE_0775(0xf5,0x2d,uVar3,0xc9);
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x5722 ===
+
+void FUN_CODE_5722(void)
+
+{
+  return;
+}
+

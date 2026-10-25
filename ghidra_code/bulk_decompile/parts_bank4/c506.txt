@@ -1,0 +1,10 @@
+=== 0xc506 ===
+
+undefined1 FUN_CODE_c506(byte param_1,short param_2,byte param_3,char param_4)
+
+{
+  *(byte *)(param_2 + 1) = *(byte *)(param_2 + 1) & 0xf0 | param_1;
+  *(byte *)(param_2 + 2) = param_4 << 4 | param_3 >> 4;
+  return 0;
+}
+

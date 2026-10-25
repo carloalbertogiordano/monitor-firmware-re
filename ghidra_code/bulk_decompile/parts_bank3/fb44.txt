@@ -1,0 +1,20 @@
+=== 0xfb44 ===
+
+void FUN_CODE_fb44(void)
+
+{
+  undefined1 uVar1;
+  undefined1 *puVar2;
+  
+  puVar2 = &DAT_EXTMEM_b7fb;
+  DAT_EXTMEM_b7fb = DAT_EXTMEM_b7fb & 0x54;
+  uVar1 = FUN_CODE_e937();
+  *puVar2 = uVar1;
+  DAT_EXTMEM_b7c1 = 0;
+  DAT_EXTMEM_b7c2 = 2;
+  DAT_EXTMEM_b7c3 = 0x10;
+  DAT_EXTMEM_b7c4 = 0;
+  DAT_EXTMEM_b7c0 = DAT_EXTMEM_b7c0 & 0xfe;
+  return;
+}
+

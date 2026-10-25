@@ -1,0 +1,13 @@
+=== 0xc59e ===
+
+char FUN_CODE_c59e(byte param_1,char param_2)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  cVar1 = param_2;
+  bVar2 = FUN_CODE_1420(param_2,param_1);
+  return cVar1 - (param_2 - (((bVar2 < param_1) << 7) >> 7));
+}
+

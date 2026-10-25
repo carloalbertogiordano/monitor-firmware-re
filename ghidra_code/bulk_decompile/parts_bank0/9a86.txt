@@ -1,0 +1,8 @@
+=== 0x9a86 ===
+
+char FUN_CODE_9a86(byte param_1)
+
+{
+  return (((param_1 & 3) < 3) << 7) >> 7;
+}
+

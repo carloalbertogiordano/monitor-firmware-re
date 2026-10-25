@@ -1,0 +1,8 @@
+=== 0x7f2f ===
+
+undefined1 FUN_CODE_7f2f(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,10 @@
+=== 0xd586 ===
+
+void FUN_CODE_d586(undefined1 *param_1)
+
+{
+  *param_1 = 2;
+  param_1[1] = 0x58;
+  return;
+}
+

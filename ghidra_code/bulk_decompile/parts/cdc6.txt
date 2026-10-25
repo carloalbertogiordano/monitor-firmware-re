@@ -1,0 +1,9 @@
+=== 0xcdc6 ===
+
+void FUN_CODE_cdc6(void)
+
+{
+  FUN_CODE_1298((ushort)DAT_EXTMEM_e331 * 2);
+  return;
+}
+

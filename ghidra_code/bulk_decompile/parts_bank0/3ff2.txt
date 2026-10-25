@@ -1,0 +1,150 @@
+=== 0x3ff2 ===
+
+/* WARNING: Instruction at (CODE,0x403f) overlaps instruction at (CODE,0x403e)
+    */
+
+void FUN_CODE_3ff2(char param_1,byte *param_2,byte *param_3,char param_4,byte param_5,char param_6,
+                  char param_7)
+
+{
+  byte *pbVar1;
+  byte *pbVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  char cVar8;
+  byte bVar9;
+  byte in_PSW;
+  byte bVar10;
+  
+  DAT_INTMEM_75 = DAT_INTMEM_75 ^ 0x6b;
+  pbVar1 = &DAT_INTMEM_74;
+  DAT_INTMEM_6b = 0x6c;
+  bVar10 = (in_PSW >> 7 | _d_6) << 7;
+  bVar5 = param_1 - 2;
+  bVar3 = param_6 + 1;
+  bVar4 = param_7 + 1;
+  PCON = DAT_INTMEM_74;
+  cVar8 = F8_7;
+  bVar6 = bVar5;
+  if (cVar8 == '\0') {
+LAB_CODE_4070:
+    bVar7 = bVar6 | *param_3 | (byte)param_3;
+    bVar6 = bVar5 - ((char)bVar10 >> 7);
+    bVar10 = CARRY1(bVar7,bVar6) << 7;
+    bVar9 = bVar7 + bVar6;
+    if (!CARRY1(bVar7,bVar6)) goto LAB_CODE_4075;
+    bVar10 = *param_3 - ((char)bVar10 >> 7);
+    bVar6 = bVar9 + bVar10;
+    bVar10 = (char)param_3 - ((CARRY1(bVar9,bVar10) << 7) >> 7);
+    bVar7 = bVar6 + bVar10;
+    bVar10 = bVar5 - ((CARRY1(bVar6,bVar10) << 7) >> 7);
+    bVar6 = bVar7 + bVar10;
+    bVar7 = (char)param_3 - ((CARRY1(bVar7,bVar10) << 7) >> 7);
+    bVar10 = CARRY1(bVar6,bVar7) << 7;
+    bVar6 = bVar6 + bVar7;
+  }
+  else {
+    param_4 = 'x';
+    if (bVar5 != 0) {
+LAB_CODE_4085:
+      FUN_CODE_4240(bVar6 + (bVar5 - ((char)bVar10 >> 7)),pbVar1,param_3,param_4,bVar5,bVar3,bVar4,
+                    bVar6);
+      return;
+    }
+    pbVar2 = &DAT_INTMEM_6c;
+    bVar6 = FUN_CODE_437c('\0',param_2,&DAT_INTMEM_6c,param_3,'x',0,param_5,bVar3,bVar4);
+    bVar6 = FUN_CODE_4314(bVar6,pbVar2,param_3,param_4,bVar5,bVar3,bVar4);
+    pbVar1 = pbVar2 + -1;
+    bVar10 = *pbVar1 - ((char)bVar10 >> 7);
+    bVar7 = bVar6 + bVar10 | (byte)pbVar1;
+    bVar10 = *param_3 - ((CARRY1(bVar6,bVar10) << 7) >> 7);
+    bVar6 = bVar7 + bVar10 | 0x46;
+    bVar10 = *param_3 - ((CARRY1(bVar7,bVar10) << 7) >> 7);
+    cVar8 = CARRY1(bVar6,bVar10) << 7;
+    bVar6 = bVar6 + bVar10;
+    if (cVar8 < '\0') {
+      bVar7 = bVar6 + *pbVar1 | DAT_INTMEM_46 | 0x4c;
+      bVar10 = *param_3 - ((CARRY1(bVar6,*pbVar1) << 7) >> 7);
+      bVar9 = bVar7 + bVar10 & bVar5;
+      bVar7 = *param_3 - ((CARRY1(bVar7,bVar10) << 7) >> 7);
+      bVar10 = CARRY1(bVar9,bVar7) << 7;
+      bVar6 = bVar9 + bVar7;
+      if (!CARRY1(bVar9,bVar7)) {
+        bVar6 = (bVar6 + (*param_3 - ((char)bVar10 >> 7))) - 1;
+        bVar7 = bVar6 + bVar4 + bVar6;
+        bVar10 = bVar7 * '\x02';
+        bVar6 = (bVar10 | CARRY1(bVar6 + bVar4,bVar6)) << 1 | bVar7 >> 7 | 0x45;
+        bVar7 = DAT_INTMEM_3a - ((char)bVar10 >> 7);
+        bVar10 = CARRY1(bVar6,bVar7) << 7;
+        bVar6 = bVar6 + bVar7;
+        goto LAB_CODE_4070;
+      }
+      if ((char)bVar10 < '\0') goto LAB_CODE_407c;
+      bVar6 = bVar6 | 0x39 | bVar5;
+      pbVar1 = pbVar2 + -2;
+      if ((char)bVar10 < '\0') goto LAB_CODE_4085;
+    }
+    else {
+      bVar10 = bVar5 - (cVar8 >> 7);
+      cVar8 = bVar6 + bVar10;
+      bVar7 = (cVar8 * '\x02' | CARRY1(bVar6,bVar10)) - 1;
+      pbVar1 = pbVar2 + -2;
+      bVar6 = bVar7 | (byte)pbVar1;
+      bVar10 = *param_3 - (cVar8 >> 7);
+      bVar9 = bVar6 + bVar10 | 0x46;
+      bVar10 = bVar5 - ((CARRY1(bVar6,bVar10) << 7) >> 7);
+      bVar6 = bVar9 + bVar10 | DAT_INTMEM_45;
+      bVar10 = *param_3 - ((CARRY1(bVar9,bVar10) << 7) >> 7);
+      bVar9 = bVar6 + bVar10;
+      bVar7 = bVar7 - ((CARRY1(bVar6,bVar10) << 7) >> 7);
+      bVar6 = bVar9 + bVar7;
+      bVar7 = *param_3 - ((CARRY1(bVar9,bVar7) << 7) >> 7);
+      bVar10 = CARRY1(bVar6,bVar7) << 7;
+      bVar6 = bVar6 + bVar7;
+      if ((char)bVar10 < '\0') goto LAB_CODE_407c;
+      bVar6 = bVar6 - 1;
+      bVar7 = bVar6 + bVar4 + bVar6;
+      bVar10 = bVar7 & 0x80;
+      bVar6 = bVar7 * '\x02' | CARRY1(bVar6 + bVar4,bVar6) | 0x40 | *param_3;
+    }
+    pbVar1 = pbVar2 + -2;
+    if ((char)bVar10 < '\0') {
+      while( true ) {
+        bVar7 = *param_3 - ((char)bVar10 >> 7);
+        bVar10 = CARRY1(bVar6 | 0x44,bVar7) << 7;
+        bVar6 = (bVar6 | 0x44) + bVar7;
+LAB_CODE_407c:
+        bVar7 = bVar6;
+        if (-1 < (char)bVar10) break;
+        bVar10 = *param_3 - ((char)bVar10 >> 7);
+        bVar10 = CARRY1((bVar6 + bVar10 | 0x3f) & bVar3,bVar3 - ((CARRY1(bVar6,bVar10) << 7) >> 7))
+                 << 7;
+        pbVar1 = &DAT_INTMEM_7c;
+        bVar9 = DAT_INTMEM_6b ^ DAT_INTMEM_7c;
+        *param_3 = 0x66;
+LAB_CODE_4075:
+        param_4 = param_4 + -1;
+        bVar6 = bVar9 - 1 | *param_3;
+      }
+      goto LAB_CODE_4042;
+    }
+  }
+  bVar6 = bVar6 - 1;
+  bVar7 = bVar6;
+LAB_CODE_4042:
+  while( true ) {
+    pbVar1 = pbVar1 + -1;
+    bVar9 = bVar6 | *pbVar1 | *pbVar1;
+    bVar6 = *param_3 - ((char)bVar10 >> 7);
+    bVar10 = CARRY1(bVar9,bVar6) << 7;
+    if (!CARRY1(bVar9,bVar6)) break;
+    bVar6 = bVar9 + bVar6 | DAT_INTMEM_37;
+  }
+  FUN_CODE_4240(bVar9 + bVar6 + (bVar5 - ((char)bVar10 >> 7)),pbVar1,param_3,param_4,bVar5,bVar3,
+                bVar4,bVar7);
+  return;
+}
+

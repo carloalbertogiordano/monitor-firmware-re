@@ -1,0 +1,30 @@
+=== 0xed75 ===
+
+void FUN_CODE_ed75(undefined1 param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  
+  FUN_CODE_bce1(param_1,0xe6ef);
+  FUN_CODE_bc0f(0xe6ef);
+  bVar2 = FUN_CODE_be9d();
+  bVar3 = BANK0_R3;
+  FUN_CODE_133e('\x03',0xe8,bVar2,BANK0_R3);
+  DAT_INTMEM_29 = bVar3 + 1;
+  cVar1 = 'd';
+  FUN_CODE_bd99();
+  FUN_CODE_be11();
+  DAT_INTMEM_2a = cVar1 + '\x01';
+  bVar3 = FUN_CODE_be9d(DAT_EXTMEM_e6f0,DAT_EXTMEM_e6ef);
+  cVar1 = '\n';
+  FUN_CODE_133e('\0',10,bVar3,BANK0_R3);
+  FUN_CODE_be11();
+  DAT_INTMEM_2b = cVar1 + '\x01';
+  FUN_CODE_bd97();
+  DAT_INTMEM_2c = cVar1 + '\x01';
+  DAT_INTMEM_2d = 0xff;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xc5e7 ===
+
+byte FUN_CODE_c5e7(void)
+
+{
+  return DAT_EXTMEM_3001 & 0x27;
+}
+

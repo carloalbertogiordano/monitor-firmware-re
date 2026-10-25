@@ -1,0 +1,11 @@
+=== 0x9b7e ===
+
+void FUN_CODE_9b7e(short param_1)
+
+{
+  *(byte *)(param_1 + 1) = *(byte *)(param_1 + 1) & 0xf9;
+  DAT_EXTMEM_0bd3 = DAT_EXTMEM_0bd3 & 0x3f | 0xc0;
+  DAT_EXTMEM_e618 = 0;
+  return;
+}
+

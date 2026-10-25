@@ -1,0 +1,9 @@
+=== 0xd09f ===
+
+byte FUN_CODE_d09f(byte param_1)
+
+{
+  DAT_EXTMEM_e32e = param_1;
+  return param_1 ^ 5;
+}
+

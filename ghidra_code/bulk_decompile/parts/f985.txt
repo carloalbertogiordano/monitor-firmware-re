@@ -1,0 +1,16 @@
+=== 0xf985 ===
+
+void FUN_CODE_f985(void)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e38a = 1;
+  cVar1 = '\0';
+  FUN_CODE_0907(0x11,1);
+  if (cVar1 == '\x01') {
+    return;
+  }
+  return;
+}
+

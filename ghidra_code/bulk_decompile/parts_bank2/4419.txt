@@ -1,0 +1,14 @@
+=== 0x4419 ===
+
+char FUN_CODE_4419(byte param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = param_1 - 0x31;
+  cVar1 = -1 - (((0x30 < param_1) << 7) >> 7);
+  FUN_CODE_1393(0,8,cVar1,bVar2);
+  return (cVar1 - (((0x7d < bVar2) << 7) >> 7)) + -0x1f;
+}
+

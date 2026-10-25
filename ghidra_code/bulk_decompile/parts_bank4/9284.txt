@@ -1,0 +1,17 @@
+=== 0x9284 ===
+
+void FUN_CODE_9284(short param_1,char param_2,byte param_3,undefined1 param_4)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  *(undefined1 *)(param_1 + 1) = param_4;
+  bVar1 = param_2 - (DAT_EXTMEM_e674 - (((param_3 < DAT_EXTMEM_e675) << 7) >> 7));
+  bVar2 = param_3 - DAT_EXTMEM_e675 >> 1 | bVar1 * -0x80;
+  DAT_EXTMEM_e673 = bVar2 - 1;
+  DAT_EXTMEM_e672 = (bVar1 >> 1) + (-1 - (((bVar2 != 0) << 7) >> 7));
+  FUN_CODE_92e0(0xf0);
+  return;
+}
+

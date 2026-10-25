@@ -1,0 +1,13 @@
+=== 0xf848 ===
+
+void FUN_CODE_f848(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = (_0_1 & 1) << 4;
+  DAT_EXTMEM_06ca = DAT_EXTMEM_06ca & 0xef | bVar1;
+  DAT_EXTMEM_06c8 = DAT_EXTMEM_06c8 & 0xef | bVar1;
+  return;
+}
+

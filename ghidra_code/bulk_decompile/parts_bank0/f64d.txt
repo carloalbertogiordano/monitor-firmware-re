@@ -1,0 +1,11 @@
+=== 0xf64d ===
+
+void FUN_CODE_f64d(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e418 = param_1;
+  FUN_CODE_e6e1();
+  FUN_CODE_ef01((DAT_EXTMEM_0009 & 8) != 0);
+  return;
+}
+

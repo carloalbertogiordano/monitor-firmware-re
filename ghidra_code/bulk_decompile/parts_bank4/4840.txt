@@ -1,0 +1,8 @@
+=== 0x4840 ===
+
+void FUN_CODE_4840(void)
+
+{
+  return;
+}
+

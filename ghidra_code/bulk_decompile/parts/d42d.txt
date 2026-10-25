@@ -1,0 +1,10 @@
+=== 0xd42d ===
+
+char FUN_CODE_d42d(byte param_1,char *param_2,char param_3,byte param_4,char param_5)
+
+{
+  return *param_2 -
+         ((param_3 + (param_5 - ((CARRY1(param_1,param_4) << 7) >> 7))) -
+         ((((byte)param_2[1] < param_1 + param_4 + 1) << 7) >> 7));
+}
+

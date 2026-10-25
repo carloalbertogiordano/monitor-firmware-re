@@ -1,0 +1,9 @@
+=== 0x6929 ===
+
+void FUN_CODE_6929(void)
+
+{
+  nop();
+  return;
+}
+

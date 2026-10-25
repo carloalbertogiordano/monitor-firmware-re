@@ -1,0 +1,36 @@
+=== 0x1c00 ===
+
+void FUN_CODE_1c00(byte param_1,byte param_2,byte param_3,char param_4,char param_5,byte param_6)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  undefined1 uStackX_0;
+  
+  bVar2 = param_1 + param_6;
+  bVar6 = param_5 - ((CARRY1(param_1,param_6) << 7) >> 7);
+  bVar3 = param_2 + bVar6;
+  bVar6 = param_4 - ((CARRY1(param_2,bVar6) << 7) >> 7);
+  if ((char)bVar6 < '\0') {
+    bVar5 = bVar3;
+    bVar4 = bVar2;
+    if (uStackX_0 == -1) {
+      FUN_CODE_1d79();
+      return;
+    }
+  }
+  else {
+    bVar1 = CARRY1(param_3,param_3);
+    param_3 = param_3 * '\x02';
+    bVar4 = bVar2 * '\x02' | bVar1;
+    bVar5 = bVar3 * '\x02' | bVar2 >> 7;
+    bVar6 = bVar6 * '\x02' | bVar3 >> 7;
+  }
+  FUN_CODE_1d51(param_3,bVar6,bVar5,bVar4);
+  return;
+}
+

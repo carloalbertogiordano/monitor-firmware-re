@@ -1,0 +1,27 @@
+=== 0x2d08 ===
+
+void FUN_CODE_2d08(byte param_1,byte *param_2,byte *param_3,byte param_4)
+
+{
+  byte bVar1;
+  
+  *param_2 = param_1;
+  nop();
+  bVar1 = *param_3;
+  DAT_INTMEM_76 = param_3;
+  *param_3 = param_4 ^ param_1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_2888(param_1,param_3 + '\x01',bVar1,bVar1);
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

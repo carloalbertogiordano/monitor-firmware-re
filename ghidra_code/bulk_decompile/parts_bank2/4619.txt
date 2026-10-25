@@ -1,0 +1,12 @@
+=== 0x4619 ===
+
+undefined1 FUN_CODE_4619(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e336 = param_1;
+  DAT_EXTMEM_e337 = 0;
+  DAT_EXTMEM_e338 = 5;
+  DAT_EXTMEM_e339 = 1;
+  return 0;
+}
+

@@ -1,0 +1,8 @@
+=== 0xb05e ===
+
+undefined1 FUN_CODE_b05e(void)
+
+{
+  return 0;
+}
+

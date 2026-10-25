@@ -1,0 +1,8 @@
+=== 0xd671 ===
+
+undefined1 FUN_CODE_d671(void)
+
+{
+  return DAT_EXTMEM_e4f0;
+}
+

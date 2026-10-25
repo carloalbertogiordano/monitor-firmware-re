@@ -1,0 +1,37 @@
+=== 0xe956 ===
+
+void FUN_CODE_e956(void)
+
+{
+  bool bVar1;
+  char cVar2;
+  char cVar3;
+  char cVar4;
+  
+  FUN_CODE_f622();
+  FUN_CODE_0f01();
+  cVar4 = '\x01';
+  FUN_CODE_ae9d();
+  cVar2 = BANK0_R7;
+  FUN_CODE_fd6e();
+  cVar3 = BANK0_R7;
+  BANK0_R7 = cVar2;
+  if (cVar4 == BANK0_R6) {
+    cVar4 = '\x02';
+    FUN_CODE_ae9d(cVar3);
+    cVar2 = BANK0_R7;
+    FUN_CODE_fe76();
+    bVar1 = cVar4 == BANK0_R7;
+    BANK0_R7 = cVar2;
+    if (bVar1) goto LAB_CODE_e997;
+  }
+  FUN_CODE_fd6e();
+  FUN_CODE_893d(BANK0_R7,1);
+  FUN_CODE_fe76();
+  FUN_CODE_893d(BANK0_R7,2);
+  FUN_CODE_fb44();
+LAB_CODE_e997:
+  FUN_CODE_eb50();
+  return;
+}
+

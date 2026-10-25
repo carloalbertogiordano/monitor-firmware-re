@@ -1,0 +1,48 @@
+=== 0xda1a ===
+
+void FUN_CODE_da1a(byte *param_1,char param_2)
+
+{
+  byte bVar1;
+  char cVar2;
+  char cVar3;
+  byte in_PSW;
+  
+  bVar1 = FUN_CODE_a86d(0);
+  *param_1 = bVar1 | 4;
+  *param_1 = bVar1 | 5;
+  in_PSW = in_PSW & 0xdd;
+  cVar2 = FUN_CODE_a79f();
+  if ((cVar2 != '\a') && (param_2 != '\b')) {
+    cVar2 = FUN_CODE_a783();
+    if ((cVar2 == '\x02') || (cVar2 == '\x03')) goto LAB_CODE_da49;
+  }
+  bVar1 = FUN_CODE_a7fb();
+  *param_1 = bVar1 | 0x40;
+  *param_1 = bVar1 | 0x50;
+LAB_CODE_da49:
+  FUN_CODE_059b(0x19);
+  cVar2 = '\0';
+  while( true ) {
+    FUN_CODE_a7af(cVar2);
+    if (-1 < (char)in_PSW) break;
+    cVar3 = FUN_CODE_a78d();
+    if ((((cVar3 != '\x03') && (cVar3 != '\n')) && (cVar3 != '\v')) && (cVar3 != '\x06')) {
+      FUN_CODE_a72c(cVar2);
+      in_PSW = in_PSW & 0xdd;
+      *param_1 = *param_1 & 0xf8 | 5;
+    }
+    FUN_CODE_a72c(cVar2);
+    in_PSW = in_PSW & 0xdd;
+    *param_1 = *param_1 & 0xe7;
+    FUN_CODE_a72c(cVar2);
+    in_PSW = in_PSW & 0xdd;
+    *param_1 = *param_1 & 0x7f;
+    bVar1 = FUN_CODE_a776(cVar2);
+    in_PSW = in_PSW & 0xdd;
+    *param_1 = bVar1 & 0xfe;
+    cVar2 = cVar2 + '\x01';
+  }
+  return;
+}
+

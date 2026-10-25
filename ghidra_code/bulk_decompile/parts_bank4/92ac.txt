@@ -1,0 +1,28 @@
+=== 0x92ac ===
+
+void FUN_CODE_92ac(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  short sVar5;
+  
+  cVar1 = DAT_EXTMEM_e52f;
+  bVar2 = DAT_EXTMEM_e530;
+  cVar3 = BANK0_R2;
+  bVar4 = DAT_EXTMEM_e530;
+  FUN_CODE_133e(DAT_EXTMEM_e52f,DAT_EXTMEM_e530,0,6);
+  DAT_EXTMEM_e676 = cVar3;
+  DAT_EXTMEM_e677 = bVar4;
+  FUN_CODE_a796(cVar3,bVar4);
+  sVar5 = -0x1988;
+  FUN_CODE_a7f8(cVar1 - (cVar3 - (((bVar2 < bVar4) << 7) >> 7)),59000,bVar2 - bVar4);
+  FUN_CODE_cb1e(0xe,0,10);
+  FUN_CODE_a76e();
+  FUN_CODE_a821(0,sVar5 + 1);
+  FUN_CODE_0d8d();
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x433b ===
+
+void FUN_CODE_433b(void)
+
+{
+  DAT_EXTMEM_006f = DAT_EXTMEM_e339;
+  DAT_EXTMEM_006e = 0;
+  return;
+}
+

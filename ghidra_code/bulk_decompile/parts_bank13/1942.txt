@@ -1,0 +1,10 @@
+=== 0x1942 ===
+
+char FUN_CODE_1942(char param_1,char *param_2)
+
+{
+  byte in_PSW;
+  
+  return (param_1 << 1 | in_PSW >> 7) + *param_2;
+}
+

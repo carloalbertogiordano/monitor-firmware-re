@@ -1,0 +1,9 @@
+=== 0xb07d ===
+
+byte FUN_CODE_b07d(char param_1)
+
+{
+  DAT_INTMEM_29 = DAT_INTMEM_2a / 0xc + param_1;
+  return DAT_EXTMEM_e1a2 & 3;
+}
+

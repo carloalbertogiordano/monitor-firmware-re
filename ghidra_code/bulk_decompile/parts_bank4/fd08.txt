@@ -1,0 +1,11 @@
+=== 0xfd08 ===
+
+void FUN_CODE_fd08(void)
+
+{
+  if (DAT_EXTMEM_e5a8 == '\t') {
+    return;
+  }
+  return;
+}
+

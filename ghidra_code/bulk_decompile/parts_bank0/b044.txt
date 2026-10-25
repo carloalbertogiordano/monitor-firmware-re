@@ -1,0 +1,10 @@
+=== 0xb044 ===
+
+void FUN_CODE_b044(void)
+
+{
+  DAT_EXTMEM_ff03 = DAT_EXTMEM_ff03 & 0xfb | 8;
+  DAT_EXTMEM_ff04 = (DAT_INTMEM_2c - DAT_INTMEM_2f) * '\x10' | DAT_INTMEM_2f;
+  return;
+}
+

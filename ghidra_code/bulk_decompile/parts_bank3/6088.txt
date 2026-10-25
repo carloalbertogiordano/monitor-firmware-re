@@ -1,0 +1,36 @@
+=== 0x6088 ===
+
+char FUN_CODE_6088(undefined1 param_1,char param_2)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = FIFLG_0;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_INTMEM_22 = param_1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_EXTMEM_e6c5 = DAT_EXTMEM_fff4;
+  return param_2 + '\x01';
+}
+

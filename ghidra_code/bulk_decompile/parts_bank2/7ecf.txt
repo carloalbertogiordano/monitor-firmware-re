@@ -1,0 +1,13 @@
+=== 0x7ecf ===
+
+void FUN_CODE_7ecf(void)
+
+{
+  DAT_EXTMEM_e3a2 = 6;
+  DAT_EXTMEM_e3a3 = 0;
+  DAT_EXTMEM_e3a4 = 7;
+  DAT_EXTMEM_e3a5 = DAT_EXTMEM_e378;
+  FUN_CODE_e5ef();
+  return;
+}
+

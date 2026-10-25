@@ -1,0 +1,101 @@
+=== 0xbfcb ===
+
+void FUN_CODE_bfcb(char param_1,byte param_2,char param_3)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  char cVar3;
+  byte *pbVar4;
+  undefined1 *puVar5;
+  undefined1 *puVar6;
+  
+  DAT_EXTMEM_e32e = param_3 + 0x31;
+  if (0x56 < DAT_EXTMEM_e32e) {
+    FUN_CODE_c5f5();
+    pbVar4 = &DAT_EXTMEM_e32e;
+    bVar2 = DAT_EXTMEM_e32e;
+    FUN_CODE_472c();
+    *pbVar4 = bVar2;
+    goto LAB_CODE_c0cc;
+  }
+  FUN_CODE_e672(param_3 + -0x26,DAT_EXTMEM_e32e);
+  FUN_CODE_ee07();
+  FUN_CODE_4dcb();
+  bVar2 = DAT_EXTMEM_e32e;
+  FUN_CODE_0f49();
+  if (bVar2 == 0) {
+    FUN_CODE_4414();
+    bVar2 = FUN_CODE_44eb();
+    while (param_1 = param_1 + -1, param_1 != '\0') {
+      param_2 = param_2 << 1 | bVar2 >> 7;
+      bVar2 = bVar2 << 1;
+    }
+    cVar3 = FUN_CODE_45e3();
+    if (cVar3 == '\0' && param_2 == 0) {
+      uVar1 = 1;
+    }
+    else {
+      uVar1 = 9;
+    }
+    FUN_CODE_466a(uVar1);
+    FUN_CODE_439a();
+    FUN_CODE_0f8b(0x1d,0,4);
+  }
+  else {
+    if (DAT_EXTMEM_e32e == 0x31) {
+      FUN_CODE_fed7();
+      if (bVar2 != 0) goto LAB_CODE_c04d;
+      FUN_CODE_47ae();
+      FUN_CODE_4396(0x20);
+      FUN_CODE_0f8b(0x1b,2,5);
+    }
+    else {
+LAB_CODE_c04d:
+      FUN_CODE_fed7();
+    }
+    FUN_CODE_4414();
+    bVar2 = FUN_CODE_44eb();
+    while (param_1 = param_1 + -1, param_1 != '\0') {
+      param_2 = param_2 << 1 | bVar2 >> 7;
+      bVar2 = bVar2 << 1;
+    }
+    cVar3 = FUN_CODE_45e3();
+    if (cVar3 == '\0' && param_2 == 0) {
+      uVar1 = 1;
+    }
+    else {
+      uVar1 = 9;
+    }
+    FUN_CODE_466a(uVar1);
+    FUN_CODE_439a();
+    FUN_CODE_0f8b(0x1b,0,2);
+    bVar2 = DAT_EXTMEM_e32e;
+    FUN_CODE_0f85(DAT_EXTMEM_e32e);
+    FUN_CODE_5297(0,bVar2,DAT_EXTMEM_e32e,4);
+  }
+  FUN_CODE_0f85(DAT_EXTMEM_e32e);
+  FUN_CODE_4722();
+  puVar5 = &DAT_EXTMEM_e191;
+  DAT_EXTMEM_e191 = DAT_EXTMEM_e32e;
+  FUN_CODE_4419();
+  puVar6 = (undefined1 *)0xe32e;
+  bVar2 = FUN_CODE_44f1(*puVar5);
+  while (param_1 = param_1 + -1, param_1 != '\0') {
+    param_2 = param_2 << 1 | bVar2 >> 7;
+    bVar2 = bVar2 << 1;
+  }
+  cVar3 = FUN_CODE_45e3();
+  if (cVar3 != '\0' || param_2 != 0) {
+    puVar6 = &DAT_EXTMEM_e191;
+    DAT_EXTMEM_e191 = 0xff;
+  }
+  FUN_CODE_472c();
+  *puVar6 = 0x5a;
+LAB_CODE_c0cc:
+  FUN_CODE_4608();
+  FUN_CODE_c3eb();
+  FUN_CODE_0ef5();
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xf00a ===
+
+char FUN_CODE_f00a(void)
+
+{
+  FUN_CODE_074b(0);
+  return (DAT_EXTMEM_e6cc & 0x30) - 0x10;
+}
+

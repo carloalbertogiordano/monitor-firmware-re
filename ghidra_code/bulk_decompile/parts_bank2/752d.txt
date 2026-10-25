@@ -1,0 +1,9 @@
+=== 0x752d ===
+
+void FUN_CODE_752d(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,0,10);
+}
+

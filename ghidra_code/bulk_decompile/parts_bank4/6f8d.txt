@@ -1,0 +1,9 @@
+=== 0x6f8d ===
+
+char FUN_CODE_6f8d(void)
+
+{
+  return ((char)((ushort)DAT_EXTMEM_e33e * 6 >> 8) -
+         (((0x9f < (byte)((ushort)DAT_EXTMEM_e33e * 6)) << 7) >> 7)) + ']';
+}
+

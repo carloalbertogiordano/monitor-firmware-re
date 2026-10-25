@@ -1,0 +1,8 @@
+=== 0x06f1 ===
+
+void FUN_CODE_06f1(void)
+
+{
+  return;
+}
+

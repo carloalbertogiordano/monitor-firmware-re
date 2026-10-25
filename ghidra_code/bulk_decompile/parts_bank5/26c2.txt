@@ -1,0 +1,8 @@
+=== 0x26c2 ===
+
+undefined1 FUN_CODE_26c2(void)
+
+{
+  return DAT_EXTMEM_e1dc;
+}
+

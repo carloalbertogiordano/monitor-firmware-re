@@ -1,0 +1,10 @@
+=== 0x22a0 ===
+
+undefined1 FUN_CODE_22a0(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 10;
+  uEXTMEMffff = 10;
+  return param_1;
+}
+

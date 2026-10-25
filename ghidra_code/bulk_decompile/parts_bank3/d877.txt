@@ -1,0 +1,94 @@
+=== 0xd877 ===
+
+void FUN_CODE_d877(void)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  byte bVar9;
+  byte bVar10;
+  byte bVar11;
+  byte bVar12;
+  char cVar13;
+  char cVar14;
+  byte in_PSW;
+  byte *pbVar15;
+  
+  _0_1 = 0;
+  do {
+    if (_0_0 == '\0') {
+      bVar12 = 0;
+    }
+    else {
+      bVar12 = 0x80;
+    }
+    pbVar15 = &DAT_EXTMEM_0b0e;
+    bVar5 = in_PSW & 0xdd;
+    DAT_EXTMEM_0b0e = DAT_EXTMEM_0b0e & 0x3f | bVar12 | 0x40;
+    bVar12 = FUN_CODE_b67d();
+    *pbVar15 = bVar12 | 2;
+    *pbVar15 = *pbVar15 & 0xfd;
+    DAT_EXTMEM_b500 = DAT_EXTMEM_b500 & 0xef;
+    bVar5 = bVar5 & 0xdd;
+    FUN_CODE_074b(0,0x5a);
+    in_PSW = bVar5 & 0xdd;
+    DAT_EXTMEM_b600 = DAT_EXTMEM_b600 & 0x13 | 0xe8;
+    _0_2 = 0;
+    bVar10 = 3;
+    bVar9 = 0;
+    FUN_CODE_07f3(0x29,0,0,0,3,0xb6,0x1d);
+    FUN_CODE_b501(0x2d,0);
+    FUN_CODE_07f3(0xb6,0xc);
+    FUN_CODE_b501(0x2f,0);
+    FUN_CODE_07f3(0xb6,0x16);
+    FUN_CODE_b503(0x31,0,0);
+    FUN_CODE_07f3(0xb6,10);
+    bVar8 = 0;
+    bVar7 = 0;
+    bVar6 = 0x33;
+    FUN_CODE_b503(0x33,0,0);
+    bVar11 = 0xb6;
+    FUN_CODE_07f3(0xb6,0x14);
+    FUN_CODE_b4f8(DAT_INTMEM_2a);
+    uVar4 = BANK0_R7;
+    uVar3 = BANK0_R6;
+    uVar2 = BANK0_R5;
+    uVar1 = BANK0_R4;
+    bVar5 = 0x10;
+    bVar12 = DAT_INTMEM_29;
+    FUN_CODE_b4fa(0x10,DAT_INTMEM_29);
+    BANK0_R3 = uVar4;
+    BANK0_R2 = uVar3;
+    BANK0_R1 = uVar2;
+    BANK0_R0 = uVar1;
+    cVar13 = FUN_CODE_b5a2(bVar9 | bVar5,bVar10 | bVar6,bVar11 | bVar7,
+                           DAT_INTMEM_2b | bVar12 | bVar8);
+    cVar14 = '\0';
+    if ((((cVar13 != '\0') && (cVar14 = '\0', DAT_INTMEM_2e != 0 || DAT_INTMEM_2d != 0)) &&
+        (cVar14 = '\0', DAT_INTMEM_30 != 0 || DAT_INTMEM_2f != 0)) &&
+       ((cVar14 = '\0', DAT_INTMEM_32 != '\0' || DAT_INTMEM_31 != '\0' &&
+        (cVar14 = '\0', DAT_INTMEM_34 != '\0' || DAT_INTMEM_33 != '\0')))) {
+      bVar12 = DAT_INTMEM_31 - (((DAT_INTMEM_2e < DAT_INTMEM_32 + 1U) << 7) >> 7);
+      in_PSW = (DAT_INTMEM_2d < bVar12) << 7;
+      cVar14 = DAT_INTMEM_2d - bVar12;
+      if (DAT_INTMEM_2d >= bVar12) {
+        bVar12 = DAT_INTMEM_33 - (((DAT_INTMEM_30 < DAT_INTMEM_34 + 1U) << 7) >> 7);
+        in_PSW = (DAT_INTMEM_2f < bVar12) << 7;
+        cVar14 = DAT_INTMEM_2f - bVar12;
+        if (DAT_INTMEM_2f >= bVar12) {
+          _0_1 = 1;
+          return;
+        }
+      }
+    }
+    FUN_CODE_fefd(cVar14);
+  } while ((char)in_PSW < '\0');
+  return;
+}
+

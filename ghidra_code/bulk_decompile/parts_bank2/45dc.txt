@@ -1,0 +1,9 @@
+=== 0x45dc ===
+
+void FUN_CODE_45dc(void)
+
+{
+  DAT_EXTMEM_e36b = 0;
+  return;
+}
+

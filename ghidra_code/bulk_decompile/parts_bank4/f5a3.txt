@@ -1,0 +1,21 @@
+=== 0xf5a3 ===
+
+void FUN_CODE_f5a3(undefined1 *param_1)
+
+{
+  undefined1 uVar1;
+  char in_PSW;
+  
+  FUN_CODE_6eeb();
+  FUN_CODE_70d9();
+  FUN_CODE_0f13(0xf);
+  if (in_PSW < '\0') {
+    FUN_CODE_6ee9(0xbe,0xe4);
+    FUN_CODE_1259(0,6);
+    return;
+  }
+  uVar1 = FUN_CODE_6f30();
+  *param_1 = uVar1;
+  return;
+}
+

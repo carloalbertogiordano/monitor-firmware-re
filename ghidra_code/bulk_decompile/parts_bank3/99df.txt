@@ -1,0 +1,13 @@
+=== 0x99df ===
+
+undefined1 FUN_CODE_99df(void)
+
+{
+  undefined1 uVar1;
+  
+  DAT_EXTMEM_e38a = 0x30;
+  uVar1 = 0;
+  FUN_CODE_fe61(0x70,2,0);
+  return uVar1;
+}
+

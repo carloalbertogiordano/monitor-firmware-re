@@ -1,0 +1,14 @@
+=== 0xd81b ===
+
+void FUN_CODE_d81b(void)
+
+{
+  FUN_CODE_f186(0xe4ae);
+  FUN_CODE_132c(DAT_EXTMEM_e54e,DAT_EXTMEM_e54f,BANK0_R2,DAT_EXTMEM_e54f);
+  FUN_CODE_f186(0xe4b0);
+  FUN_CODE_f3e6();
+  FUN_CODE_f166(0xe4b2);
+  FUN_CODE_0ba1();
+  return;
+}
+

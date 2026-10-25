@@ -1,0 +1,24 @@
+=== 0x6a6c ===
+
+void FUN_CODE_6a6c(void)
+
+{
+  FUN_CODE_0865(0xc5,2,0xc9);
+  FUN_CODE_8e65();
+  FUN_CODE_8e08(0xc6);
+  FUN_CODE_0775();
+  FUN_CODE_6b3e(199);
+  FUN_CODE_6b52(200);
+  FUN_CODE_8e4e();
+  FUN_CODE_8d13();
+  FUN_CODE_0775();
+  FUN_CODE_8d0b();
+  FUN_CODE_0775();
+  FUN_CODE_aa23(1);
+  DAT_EXTMEM_e373 = 0x80;
+  FUN_CODE_0775(0x74,0x8a,2,0xc9);
+  FUN_CODE_0865(0xff,0x62,2,0xc9);
+  FUN_CODE_8e3d();
+  return;
+}
+

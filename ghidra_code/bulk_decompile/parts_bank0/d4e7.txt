@@ -1,0 +1,8 @@
+=== 0xd4e7 ===
+
+undefined1 FUN_CODE_d4e7(void)
+
+{
+  return uEXTMEMe415;
+}
+

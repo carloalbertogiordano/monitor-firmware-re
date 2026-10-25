@@ -1,0 +1,8 @@
+=== 0x8776 ===
+
+undefined1 FUN_CODE_8776(void)
+
+{
+  return 0;
+}
+

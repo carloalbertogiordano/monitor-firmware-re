@@ -1,0 +1,54 @@
+=== 0x2d24 ===
+
+/* WARNING: Control flow encountered bad instruction data */
+
+byte FUN_CODE_2d24(byte param_1,undefined1 *param_2,byte *param_3,byte *param_4,byte param_5)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  undefined1 uVar5;
+  byte bVar6;
+  
+  nop();
+  nop();
+  bVar6 = (param_1 & *param_4) >> 1 & 0x20;
+  param_4 = param_4 + '\x01';
+  _4_4 = CARRY1(bVar6,param_5);
+  bVar6 = (bVar6 + param_5 | (byte)param_4) & *param_3 | (byte)param_4 | (byte)param_4 |
+          (byte)param_4;
+  nop();
+  if (bVar6 != 0) {
+    *param_3 = BANK3_R4;
+    *param_3 = *param_3 + 1;
+    nop();
+    nop();
+    nop();
+    nop();
+    uVar5 = RCAP2L;
+    uVar5 = DAT_SFR_b5;
+    uVar5 = HSTAT;
+    bVar3 = DAT_SFR_d3;
+    cVar1 = DAT_SFR_ab;
+    bVar4 = HPSC;
+    bVar2 = DAT_SFR_b5;
+    nop();
+    return ((bVar3 & DAT_INTMEM_7c) - (cVar1 - (((0x19 < (~bVar6 ^ (byte)param_4)) << 7) >> 7)) &
+            bVar4 ^ 0xd5) & bVar2;
+  }
+  nop();
+  nop();
+  uVar5 = decimal_adjust(0);
+  *param_2 = uVar5;
+  nop();
+  nop();
+  *param_3 = *param_3 + 1;
+  nop();
+  nop();
+  nop();
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+

@@ -1,0 +1,18 @@
+=== 0xfd8f ===
+
+void FUN_CODE_fd8f(void)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_b636 = DAT_EXTMEM_b636 & 1 | 0x40;
+  if (_0_0 == '\0') {
+    bVar1 = 0;
+  }
+  else {
+    bVar1 = 0x10;
+  }
+  DAT_EXTMEM_b63b = DAT_EXTMEM_b63b & 0xef | bVar1;
+  return;
+}
+

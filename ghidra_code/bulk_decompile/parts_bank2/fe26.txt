@@ -1,0 +1,11 @@
+=== 0xfe26 ===
+
+void FUN_CODE_fe26(void)
+
+{
+  if ((DAT_EXTMEM_0028 & 0x20) != 0) {
+    return;
+  }
+  return;
+}
+

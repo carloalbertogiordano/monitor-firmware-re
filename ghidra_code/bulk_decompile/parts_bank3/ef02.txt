@@ -1,0 +1,11 @@
+=== 0xef02 ===
+
+void FUN_CODE_ef02(void)
+
+{
+  FUN_CODE_fd19(2,0);
+  DAT_EXTMEM_e407 = 0x7f;
+  DAT_EXTMEM_e408 = 0x80;
+  return;
+}
+

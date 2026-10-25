@@ -1,0 +1,67 @@
+=== 0xde67 ===
+
+void FUN_CODE_de67(void)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  undefined1 uVar3;
+  byte in_PSW;
+  byte *pbVar4;
+  
+  cVar2 = BANK0_R7;
+  FUN_CODE_1724(0xe339);
+  nop();
+  nop();
+  nop();
+  nop();
+  pbVar4 = &DAT_EXTMEM_e339;
+  if (cVar2 != '\0') {
+    FUN_CODE_1724();
+    nop();
+    nop();
+    in_PSW = in_PSW & 0xdd;
+    *pbVar4 = *pbVar4 & 0xf0;
+    cVar2 = FUN_CODE_c170();
+    if (cVar2 == '\0') {
+      FUN_CODE_c1b3();
+      if ((char)in_PSW < '\0') {
+        FUN_CODE_c0e3();
+      }
+      else {
+        FUN_CODE_c12b();
+      }
+    }
+    else {
+      FUN_CODE_c12c();
+    }
+                    /* WARNING: Subroutine does not return */
+    FUN_CODE_152f(0,0,6,0x66);
+  }
+  uVar3 = FUN_CODE_1724();
+  FUN_CODE_6e53(0xe339);
+  FUN_CODE_6f1a();
+  FUN_CODE_6ea1(0x510);
+  FUN_CODE_6e53(0xe339);
+  FUN_CODE_15e8(0x10);
+  DAT_EXTMEM_0511 = uVar3;
+  FUN_CODE_6e53(0xe339);
+  FUN_CODE_15e8(8);
+  DAT_EXTMEM_0513 = DAT_EXTMEM_e33c;
+  uVar1 = DAT_EXTMEM_e33c;
+  DAT_EXTMEM_0512 = uVar3;
+  FUN_CODE_6e53(0xe339);
+  FUN_CODE_6f1a();
+  FUN_CODE_6ea1(0x590);
+  FUN_CODE_6e53(0xe339);
+  FUN_CODE_15e8(0x10);
+  DAT_EXTMEM_0591 = uVar1;
+  FUN_CODE_6e53(0xe339);
+  FUN_CODE_15e8(8);
+  DAT_EXTMEM_0592 = uVar1;
+  FUN_CODE_6e53(0xe339);
+  FUN_CODE_6ef2(uVar1,0x593);
+  FUN_CODE_082f(8);
+  return;
+}
+

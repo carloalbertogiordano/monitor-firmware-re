@@ -1,0 +1,15 @@
+=== 0xfac5 ===
+
+void FUN_CODE_fac5(void)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_0697(4);
+  uVar1 = BANK0_R7;
+  FUN_CODE_0d0f();
+  BANK0_R5 = uVar1;
+  thunk_FUN_CODE_f6fc(BANK0_R7,4);
+  return;
+}
+

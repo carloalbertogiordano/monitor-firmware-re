@@ -1,0 +1,14 @@
+# Vendor firmware — NOT redistributed (OEM/Realtek copyright)
+*.bin
+dumps/
+bank0.bin
+reconstructed_firmware/
+patches/
+ghidra_code/*.bin
+ghidra_code/firmware_dump_*.bin
+
+# Ghidra project / tooling state
+ghidra_project/
+*.gpr
+*.rep/
+.claude/

@@ -1,0 +1,36 @@
+=== 0x8a04 ===
+
+void FUN_CODE_8a04(void)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  DAT_EXTMEM_e34f = 0;
+  FUN_CODE_9691(100);
+  FUN_CODE_9695();
+  FUN_CODE_1724();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1991(0x61,0xe3,1,0,0,1);
+  DAT_EXTMEM_e377 = 1;
+  DAT_EXTMEM_e378 = 0xe3;
+  DAT_EXTMEM_e379 = 0x61;
+  _0_3 = 1;
+  FUN_CODE_076f(0,1,0x11,0,0x33);
+  FUN_CODE_97db(0,0,0,DAT_EXTMEM_e361);
+  uVar2 = FUN_CODE_9666(0xe35d);
+  FUN_CODE_97d8(1,uVar2);
+  FUN_CODE_96e3();
+  FUN_CODE_160f(0xd);
+  uVar1 = BANK0_R7;
+  uVar2 = BANK0_R6;
+  FUN_CODE_963a(0xe539);
+  BANK0_R6 = uVar2;
+  BANK0_R7 = uVar1;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f();
+}
+

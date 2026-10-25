@@ -1,0 +1,10 @@
+=== 0x7e11 ===
+
+void FUN_CODE_7e11(void)
+
+{
+  DAT_EXTMEM_e407 = DAT_EXTMEM_ffac;
+  DAT_EXTMEM_e408 = DAT_EXTMEM_ffab;
+  return;
+}
+

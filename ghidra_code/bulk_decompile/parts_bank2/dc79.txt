@@ -1,0 +1,21 @@
+=== 0xdc79 ===
+
+void FUN_CODE_dc79(void)
+
+{
+  FUN_CODE_1724(0xe348);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe34c);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_c195(DAT_EXTMEM_e549,0xe554,DAT_EXTMEM_e548);
+  FUN_CODE_f511(DAT_EXTMEM_e546,DAT_EXTMEM_e547);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe348);
+}
+

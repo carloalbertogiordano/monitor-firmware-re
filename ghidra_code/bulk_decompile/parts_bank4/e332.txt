@@ -1,0 +1,8 @@
+=== 0xe332 ===
+
+char FUN_CODE_e332(short param_1,char param_2)
+
+{
+  return param_2 - *(char *)(param_1 + 1);
+}
+

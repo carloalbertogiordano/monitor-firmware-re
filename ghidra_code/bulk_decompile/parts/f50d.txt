@@ -1,0 +1,17 @@
+=== 0xf50d ===
+
+void FUN_CODE_f50d(void)
+
+{
+  char in_PSW;
+  
+  _0_4 = 1;
+  FUN_CODE_080b(1,2,0xcb,0,0x82);
+  if (in_PSW < '\0') {
+    DAT_EXTMEM_02af = DAT_EXTMEM_02af & 0xfe;
+    return;
+  }
+  DAT_EXTMEM_02af = DAT_EXTMEM_02af & 0xfe | 1;
+  return;
+}
+

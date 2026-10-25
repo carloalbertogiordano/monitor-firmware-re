@@ -1,0 +1,8 @@
+=== 0x437e ===
+
+undefined1 FUN_CODE_437e(void)
+
+{
+  return 1;
+}
+

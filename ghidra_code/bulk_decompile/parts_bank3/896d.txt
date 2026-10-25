@@ -1,0 +1,10 @@
+=== 0x896d ===
+
+undefined1 FUN_CODE_896d(undefined1 param_1,undefined1 param_2)
+
+{
+  DAT_EXTMEM_e60b = param_1;
+  DAT_EXTMEM_e60c = param_2;
+  return param_2;
+}
+

@@ -1,0 +1,12 @@
+=== 0xf4ec ===
+
+void FUN_CODE_f4ec(void)
+
+{
+  DAT_EXTMEM_01af = DAT_EXTMEM_01af & 0xfe | 1;
+  DAT_EXTMEM_01f2 = DAT_EXTMEM_01f2 & 0x7f | 0x80;
+  DAT_EXTMEM_01f0 = DAT_EXTMEM_01f0 & 0xef;
+  DAT_EXTMEM_00c6 = DAT_EXTMEM_00c6 & 0x18;
+  return;
+}
+

@@ -1,0 +1,82 @@
+=== 0xe4eb ===
+
+char FUN_CODE_e4eb(byte param_1,char param_2)
+
+{
+  bool bVar1;
+  byte bVar2;
+  byte bVar3;
+  char cVar4;
+  byte bVar5;
+  short sVar6;
+  
+  DAT_EXTMEM_e332 = param_1;
+  FUN_CODE_875d(0);
+  if (param_2 == '\n') {
+    bVar2 = DAT_EXTMEM_e60f + 0x78;
+    sVar6 = -0x19f2;
+    bVar3 = DAT_EXTMEM_e60e + (-0x14 - (((0x87 < DAT_EXTMEM_e60f) << 7) >> 7));
+    FUN_CODE_002e();
+    bVar2 = 0x81 - (((bVar2 < 0x39) << 7) >> 7);
+    bVar1 = (bVar3 ^ 0x80) < bVar2;
+    cVar4 = (bVar3 ^ 0x80) - bVar2;
+    if (!bVar1) {
+      return cVar4;
+    }
+  }
+  else {
+    bVar2 = DAT_EXTMEM_e60f + 0x48;
+    sVar6 = -0x19f2;
+    bVar3 = DAT_EXTMEM_e60e + (-0xc - (((0xb7 < DAT_EXTMEM_e60f) << 7) >> 7));
+    FUN_CODE_002e();
+    bVar2 = 0x80 - (((bVar2 < 0xbc) << 7) >> 7);
+    bVar1 = (bVar3 ^ 0x80) < bVar2;
+    cVar4 = (bVar3 ^ 0x80) - bVar2;
+    if (!bVar1) {
+      return cVar4;
+    }
+  }
+  bVar2 = bVar1 << 7;
+  FUN_CODE_8ba4(cVar4);
+  bVar5 = *(byte *)(sVar6 + 1) & 0xfc;
+  bVar2 = bVar2 & 0xdd;
+  FUN_CODE_863f(DAT_EXTMEM_e332 | bVar5,0xb51);
+  DAT_EXTMEM_e335 = 0;
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_54;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    cVar4 = FUN_CODE_8890();
+    if (cVar4 == '\0') break;
+    DAT_EXTMEM_e335 = DAT_EXTMEM_e335 + 1;
+    bVar2 = (DAT_EXTMEM_e335 < 0x1f) << 7;
+  } while (DAT_EXTMEM_e335 != 0x1f);
+  bVar2 = bVar2 & 0xdd;
+  if ((DAT_EXTMEM_0b50 & 0x40) == 0) {
+    return '\0';
+  }
+  FUN_CODE_8a15();
+  DAT_EXTMEM_e333 = bVar3;
+  DAT_EXTMEM_e334 = bVar5;
+  FUN_CODE_8978(0xe333);
+  bVar5 = bVar5 - ((char)bVar2 >> 7);
+  FUN_CODE_002e(DAT_EXTMEM_e60e - (bVar3 - (((DAT_EXTMEM_e60f < bVar5) << 7) >> 7)),
+                DAT_EXTMEM_e60f - bVar5);
+  cVar4 = '\a';
+  bVar2 = DAT_EXTMEM_e60e;
+  bVar3 = DAT_EXTMEM_e60f;
+  do {
+    bVar5 = bVar2 >> 1;
+    bVar3 = bVar3 >> 1 | bVar2 << 7;
+    cVar4 = cVar4 + -1;
+    bVar2 = bVar5;
+  } while (cVar4 != '\0');
+  bVar5 = bVar5 - (((BANK0_R7 < bVar3 + 1) << 7) >> 7);
+  cVar4 = BANK0_R6 - bVar5;
+  if (bVar5 <= BANK0_R6) {
+    return cVar4;
+  }
+  return cVar4;
+}
+

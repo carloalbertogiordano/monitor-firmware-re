@@ -1,0 +1,10 @@
+=== 0xaa4d ===
+
+void FUN_CODE_aa4d(undefined1 param_1)
+
+{
+  FUN_CODE_0793(2,param_1);
+  DAT_EXTMEM_e412 = 0;
+  return;
+}
+

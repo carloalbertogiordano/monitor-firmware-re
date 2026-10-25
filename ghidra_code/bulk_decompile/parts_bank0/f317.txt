@@ -1,0 +1,20 @@
+=== 0xf317 ===
+
+void FUN_CODE_f317(char param_1)
+
+{
+  if (param_1 == '\x02') {
+    DAT_INTMEM_54 = 0x1c;
+    DAT_INTMEM_51 = 0x16;
+    return;
+  }
+  if (param_1 == '\x01') {
+    DAT_INTMEM_54 = 3;
+    DAT_INTMEM_51 = 6;
+    return;
+  }
+  DAT_INTMEM_54 = 2;
+  DAT_INTMEM_51 = 2;
+  return;
+}
+

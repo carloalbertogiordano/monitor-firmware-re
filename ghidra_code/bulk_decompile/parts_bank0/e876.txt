@@ -1,0 +1,43 @@
+=== 0xe876 ===
+
+char FUN_CODE_e876(char param_1,char param_2,char param_3,byte param_4,byte param_5,byte param_6)
+
+{
+  byte bVar1;
+  undefined1 *puVar2;
+  
+  DAT_EXTMEM_e32f = param_5;
+  DAT_EXTMEM_e330 = param_6;
+  DAT_EXTMEM_e331 = param_3;
+  DAT_EXTMEM_e332 = param_4;
+  if (DAT_EXTMEM_e19c == '\x02') {
+    bVar1 = param_1 - (((param_6 < param_2 + 1U) << 7) >> 7);
+    if (param_5 < bVar1) {
+      if (_0_0 == '\0') {
+        return param_5 - bVar1;
+      }
+LAB_CODE_e8cc:
+      puVar2 = &DAT_EXTMEM_e331;
+      goto LAB_CODE_e8e7;
+    }
+    DAT_EXTMEM_e330 = param_6 - 1;
+    DAT_EXTMEM_e32f = param_5 + (-1 - (((param_6 != 0) << 7) >> 7));
+  }
+  else if (DAT_EXTMEM_e19c == '\x01') {
+    bVar1 = param_3 - (((param_6 < param_4) << 7) >> 7);
+    if (bVar1 <= param_5) {
+      if (_0_0 != '\0') {
+        return param_5 - bVar1;
+      }
+      goto LAB_CODE_e8cc;
+    }
+    DAT_EXTMEM_e330 = param_6 + 1;
+    if (DAT_EXTMEM_e330 == 0) {
+      DAT_EXTMEM_e32f = param_5 + 1;
+    }
+  }
+  puVar2 = &DAT_EXTMEM_e32f;
+LAB_CODE_e8e7:
+  return puVar2[1];
+}
+

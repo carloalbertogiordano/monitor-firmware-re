@@ -1,0 +1,9 @@
+=== 0x8b92 ===
+
+void FUN_CODE_8b92(void)
+
+{
+  FUN_CODE_14a4(0,0,DAT_INTMEM_29,DAT_INTMEM_2a);
+  return;
+}
+

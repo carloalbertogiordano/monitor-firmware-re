@@ -1,0 +1,11 @@
+=== 0xfe94 ===
+
+byte FUN_CODE_fe94(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_708d();
+  return bVar1 & 0x1f;
+}
+

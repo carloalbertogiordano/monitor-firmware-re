@@ -1,0 +1,18 @@
+=== 0x28c8 ===
+
+void FUN_CODE_28c8(void)
+
+{
+  FUN_CODE_1259(0x3a,-1,'\x01','\0','\x02');
+  DAT_EXTMEM_e33a = 0x11;
+  if (DAT_EXTMEM_e1dc == '\x01') {
+    FUN_CODE_08f5();
+    DAT_EXTMEM_e33b = 0;
+  }
+  else {
+    DAT_EXTMEM_e33b = 0xee;
+  }
+  FUN_CODE_2785(0x3a,-0x1d,'\x01',2);
+  return;
+}
+

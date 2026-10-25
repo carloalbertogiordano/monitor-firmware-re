@@ -1,0 +1,10 @@
+=== 0x8641 ===
+
+void FUN_CODE_8641(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xbf;
+  DAT_EXTMEM_0b50 = DAT_EXTMEM_0b50 & 0x7f | 0x80;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xd115 ===
+
+char FUN_CODE_d115(char param_1,byte param_2)
+
+{
+  return DAT_EXTMEM_e396 -
+         ((param_1 + (-1 - (((param_2 != 0) << 7) >> 7))) -
+         (((DAT_EXTMEM_e397 < param_2) << 7) >> 7));
+}
+

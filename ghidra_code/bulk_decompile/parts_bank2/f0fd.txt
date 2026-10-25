@@ -1,0 +1,26 @@
+=== 0xf0fd ===
+
+void FUN_CODE_f0fd(undefined1 *param_1,char param_2)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = FUN_CODE_c1d7();
+  *param_1 = uVar1;
+  DAT_EXTMEM_001e = DAT_EXTMEM_001e & 0xcf;
+  if (param_2 == '\0') {
+    DAT_EXTMEM_007a = 0x80;
+  }
+  else if (param_2 == '\x01') {
+    DAT_EXTMEM_007a = 0xc0;
+  }
+  else {
+    DAT_EXTMEM_007a = 0;
+  }
+  DAT_EXTMEM_007b = 0xf8;
+  FUN_CODE_f2a4(0xf,0xff,0,2);
+  FUN_CODE_f8e7(0xf,0xff,0,0);
+  DAT_EXTMEM_007d = DAT_EXTMEM_007d & 0x3c | 0xc1;
+  return;
+}
+

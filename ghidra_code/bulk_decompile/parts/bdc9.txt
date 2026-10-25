@@ -1,0 +1,55 @@
+=== 0xbdc9 ===
+
+byte FUN_CODE_bdc9(void)
+
+{
+  bool bVar1;
+  byte bVar2;
+  char cVar3;
+  short sVar4;
+  
+  sVar4 = -0x1ccb;
+  DAT_EXTMEM_e335 = 0;
+  DAT_EXTMEM_e667 = FUN_CODE_88dd();
+  *(byte *)(sVar4 + 1) = DAT_EXTMEM_e667;
+  *(byte *)(sVar4 + 2) = DAT_EXTMEM_e667;
+  if ((DAT_EXTMEM_e661 >> 6 & 1) != 1) {
+    return DAT_EXTMEM_e661;
+  }
+  bVar2 = 8 - (((DAT_EXTMEM_e596 < 0xcb) << 7) >> 7);
+  if (DAT_EXTMEM_e595 < bVar2) {
+    return DAT_EXTMEM_e595 - bVar2;
+  }
+  DAT_EXTMEM_e33a = 0;
+  bVar1 = false;
+  while (cVar3 = bVar1 << 7, DAT_EXTMEM_e667 != 1) {
+    FUN_CODE_879d();
+    FUN_CODE_080b(0,0x32);
+    if (-1 < cVar3) break;
+    DAT_EXTMEM_e338 = FUN_CODE_be95();
+    cVar3 = (DAT_EXTMEM_e338 == '\0') << 7;
+    if (DAT_EXTMEM_e338 != '\0') {
+      DAT_EXTMEM_e335 = DAT_EXTMEM_1da2 & 0x1f;
+      DAT_EXTMEM_e336 = DAT_EXTMEM_1db2 & 0x1f;
+      DAT_EXTMEM_e337 = DAT_EXTMEM_1dc2 & 0x1f;
+      FUN_CODE_891e(6,0x1da2);
+      FUN_CODE_879d();
+      FUN_CODE_080b(0,0x32);
+      if ((-1 < cVar3) ||
+         (DAT_EXTMEM_e339 = FUN_CODE_be95(), DAT_EXTMEM_e338 + 1U <= DAT_EXTMEM_e339)) {
+        DAT_EXTMEM_1da2 = DAT_EXTMEM_e335;
+        DAT_EXTMEM_1db2 = DAT_EXTMEM_e336;
+        DAT_EXTMEM_1dc2 = DAT_EXTMEM_e337;
+      }
+      break;
+    }
+    DAT_EXTMEM_e33a = DAT_EXTMEM_e33a + 1;
+    bVar1 = DAT_EXTMEM_e33a < 0xc;
+    if (!bVar1) break;
+  }
+  if (DAT_EXTMEM_e667 != 1) {
+    return DAT_EXTMEM_e667;
+  }
+  return DAT_EXTMEM_e667;
+}
+

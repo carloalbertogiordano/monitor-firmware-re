@@ -1,0 +1,53 @@
+=== 0x57a5 ===
+
+char FUN_CODE_57a5(char param_1,char param_2,char param_3,char param_4,byte param_5,char param_6)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  char cVar3;
+  byte in_PSW;
+  
+  uVar1 = DAT_SFR_a5;
+  nop();
+  nop();
+  nop();
+  uVar1 = DAT_SFR_c4;
+  bVar2 = HIFLG_2;
+  cVar3 = (in_PSW >> 7 | bVar2 ^ 1) << 7;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  nop();
+  nop();
+  if (_1_3 != '\0') {
+    _1_3 = 0;
+    return param_1;
+  }
+  BANK1_R3 = BANK1_R3 + '\x01';
+  if (-1 < cVar3) {
+    BANK1_R2 = BANK1_R2 + '\x01';
+    BANK0_R0 = BANK0_R0 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  nop();
+  cVar3 = FUN_CODE_d102(param_4 + '\x01',param_2 + '\x02',param_3 + '\x01',
+                        param_1 - ((param_6 + '\x01') - (cVar3 >> 7)) | param_5);
+  return cVar3;
+}
+

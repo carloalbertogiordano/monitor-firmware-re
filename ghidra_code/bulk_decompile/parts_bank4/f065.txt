@@ -1,0 +1,17 @@
+=== 0xf065 ===
+
+void FUN_CODE_f065(char param_1)
+
+{
+  _0_3 = _0_3 != '\0';
+  FUN_CODE_fecb();
+  if ((param_1 == '\x03') || (FUN_CODE_fecb(), param_1 == '\x01')) {
+    DAT_EXTMEM_fe0b = _0_3 & 1;
+  }
+  else {
+    DAT_EXTMEM_fe0b = 1;
+  }
+  DAT_EXTMEM_fe0d = 0;
+  return;
+}
+

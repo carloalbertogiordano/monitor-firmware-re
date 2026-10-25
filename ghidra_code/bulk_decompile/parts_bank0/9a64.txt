@@ -1,0 +1,9 @@
+=== 0x9a64 ===
+
+void FUN_CODE_9a64(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xfb | 4;
+  return;
+}
+

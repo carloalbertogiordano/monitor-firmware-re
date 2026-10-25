@@ -1,0 +1,12 @@
+=== 0x7f47 ===
+
+void FUN_CODE_7f47(byte param_1,byte *param_2,byte param_3)
+
+{
+  param_1 = param_1 | param_3;
+  *param_2 = param_1;
+  *param_2 = param_1;
+  *param_2 = param_1;
+  return;
+}
+

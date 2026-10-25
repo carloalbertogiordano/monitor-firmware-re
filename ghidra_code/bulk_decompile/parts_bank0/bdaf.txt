@@ -1,0 +1,15 @@
+=== 0xbdaf ===
+
+void FUN_CODE_bdaf(byte *param_1,byte param_2,byte param_3)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = *param_1;
+  bVar2 = param_1[1];
+  FUN_CODE_17ba();
+  FUN_CODE_152f('\0','\0','\0',100,param_2,param_3,bVar1,bVar2);
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xc522 ===
+
+void FUN_CODE_c522(void)
+
+{
+  DAT_EXTMEM_5527 = 0;
+  DAT_EXTMEM_5528 = 0;
+  return;
+}
+

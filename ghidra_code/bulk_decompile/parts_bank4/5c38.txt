@@ -1,0 +1,51 @@
+=== 0x5c38 ===
+
+char FUN_CODE_5c38(byte param_1,char param_2,char param_3,char param_4,char param_5,char param_6,
+                  char param_7,char param_8,char param_9)
+
+{
+  byte bVar1;
+  char *pcVar2;
+  char *pcVar3;
+  char cVar4;
+  byte bVar5;
+  byte bVar6;
+  byte in_PSW;
+  
+  param_9 = param_9 + '\x01';
+  pcVar3 = (char *)(param_3 + -1);
+  cVar4 = param_6 + '\x03';
+  param_5 = param_5 + -1;
+  bVar5 = (param_1 >> 1 | in_PSW & 0x80) - 1;
+  pcVar2 = (char *)(param_2 + '\x01');
+  bVar1 = bVar5 >> 1;
+  nop();
+  bVar5 = (bVar1 | bVar5 * -0x80) >> 1;
+  bVar6 = bVar5 | bVar1 << 7;
+  *pcVar2 = *pcVar2 + '\x01';
+  param_7 = param_7 + '\x04';
+  if (_2_2 == '\0') {
+    param_6 = param_6 + '\x02';
+    BANK3_R0 = BANK3_R0 + -1;
+    cVar4 = func_0x0d08((bVar5 << 1 | bVar1 & 1) + *pcVar2,param_5,param_6);
+    nop();
+    pcVar2 = pcVar2 + '\x01';
+    param_7 = param_7 + '\x01';
+    param_9 = param_9 + '\x01';
+    cVar4 = FUN_CODE_171b(cVar4 + 1U >> 1 | (cVar4 + 1U) * -0x80,pcVar2,param_7,param_9);
+    param_8 = param_8 + -1;
+    bVar6 = cVar4 + param_4 + param_6;
+    *pcVar3 = *pcVar3 + -1;
+    cVar4 = param_6 + -1;
+    param_5 = param_5 + -1;
+  }
+  else {
+    _2_2 = '\0';
+  }
+  param_4 = param_4 + '\x01';
+  BANK0_R0 = BANK0_R0 + '\x01';
+  cVar4 = FUN_CODE_5817(bVar6,pcVar2 + '\x01',param_4,param_5,cVar4,param_7 + '\x01',param_8,
+                        param_9 + '\x01');
+  return cVar4 + param_4;
+}
+

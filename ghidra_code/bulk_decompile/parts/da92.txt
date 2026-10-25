@@ -1,0 +1,25 @@
+=== 0xda92 ===
+
+void FUN_CODE_da92(void)
+
+{
+  if (_0_0 == '\0') {
+    DAT_EXTMEM_02c0 = DAT_EXTMEM_02c0 & 0x7d | 0x80;
+    DAT_EXTMEM_02a9 = DAT_EXTMEM_02a9 & 0xb | 0x90;
+    _0_1 = 1;
+    FUN_CODE_fbd2();
+    EX0 = 1;
+    DAT_EXTMEM_02aa = DAT_EXTMEM_02aa & 0xef | 0x10;
+    return;
+  }
+  DAT_EXTMEM_e373 = 0;
+  FUN_CODE_0775(0xbf,0x40,2,0xc3);
+  DAT_EXTMEM_02ae = DAT_EXTMEM_02ae & 0xfc | 1;
+  DAT_EXTMEM_02a9 = DAT_EXTMEM_02a9 & 0xef;
+  DAT_EXTMEM_0b00 = DAT_EXTMEM_0b00 & 0xfe | 1;
+  DAT_EXTMEM_02c0 = DAT_EXTMEM_02c0 & 0x7c | 0x83;
+  DAT_EXTMEM_02ac = DAT_EXTMEM_02ac & 0xef;
+  DAT_EXTMEM_02c2 = DAT_EXTMEM_02c2 & 0x3f | 0xc0;
+  return;
+}
+

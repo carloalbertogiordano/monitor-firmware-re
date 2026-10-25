@@ -1,0 +1,16 @@
+=== 0xfbd5 ===
+
+void FUN_CODE_fbd5(void)
+
+{
+  if ((DAT_EXTMEM_b63a & 3) == 3) {
+    DAT_EXTMEM_0028 = DAT_EXTMEM_0028 & 0xd7 | 0x20;
+  }
+  DAT_EXTMEM_b63a = DAT_EXTMEM_b63a & 0xfc;
+  DAT_EXTMEM_b531 = DAT_EXTMEM_b531 & 0xf8;
+  _0_0 = 0;
+  DAT_EXTMEM_e36e = 3;
+  FUN_CODE_0811();
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xb0b8 ===
+
+undefined1 FUN_CODE_b0b8(void)
+
+{
+  return 0;
+}
+

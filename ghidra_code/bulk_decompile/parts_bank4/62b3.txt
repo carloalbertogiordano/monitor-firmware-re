@@ -1,0 +1,10 @@
+=== 0x62b3 ===
+
+void FUN_CODE_62b3(void)
+
+{
+  _0_2 = 1;
+  FUN_CODE_10ab(0,0,0,1);
+  return;
+}
+

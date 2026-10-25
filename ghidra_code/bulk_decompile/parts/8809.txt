@@ -1,0 +1,9 @@
+=== 0x8809 ===
+
+void FUN_CODE_8809(void)
+
+{
+  bEXTMEM0bd7 = bEXTMEM0bd7 & 0x3f | 0x40;
+  return;
+}
+

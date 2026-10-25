@@ -1,0 +1,8 @@
+=== 0x7571 ===
+
+byte FUN_CODE_7571(void)
+
+{
+  return DAT_EXTMEM_e4e0 >> 2 & 3;
+}
+

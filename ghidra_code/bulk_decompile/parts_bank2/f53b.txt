@@ -1,0 +1,30 @@
+=== 0xf53b ===
+
+void FUN_CODE_f53b(char param_1,byte param_2)
+
+{
+  bool bVar1;
+  byte bVar2;
+  char cVar3;
+  char cVar4;
+  char in_PSW;
+  char *pcVar5;
+  
+  bVar2 = DAT_EXTMEM_e34e - (in_PSW >> 7);
+  DAT_EXTMEM_e354 = param_2 - bVar2;
+  DAT_EXTMEM_e353 = param_1 - (DAT_EXTMEM_e34d - (((param_2 < bVar2) << 7) >> 7));
+  bVar1 = CARRY1(DAT_EXTMEM_e34a,DAT_EXTMEM_e34e);
+  DAT_EXTMEM_e34a = DAT_EXTMEM_e34a + DAT_EXTMEM_e34e;
+  DAT_EXTMEM_e349 = DAT_EXTMEM_e349 + (DAT_EXTMEM_e34d - ((bVar1 << 7) >> 7));
+  pcVar5 = &DAT_EXTMEM_e34a;
+  cVar3 = BANK0_R6;
+  cVar4 = BANK0_R7;
+  if (BANK0_R7 == '\0' && BANK0_R6 == '\0') {
+    cVar4 = '\x01';
+    cVar3 = '\0';
+  }
+  FUN_CODE_980e(cVar3,DAT_EXTMEM_e349,DAT_EXTMEM_e34a);
+  *pcVar5 = cVar4;
+  return;
+}
+

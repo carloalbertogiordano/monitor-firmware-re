@@ -1,0 +1,8 @@
+=== 0x7119 ===
+
+byte FUN_CODE_7119(void)
+
+{
+  return DAT_EXTMEM_0028 & 0x74;
+}
+

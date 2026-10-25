@@ -1,0 +1,25 @@
+=== 0x143c ===
+
+void FUN_CODE_143c(byte param_1,short param_2,char *param_3,undefined1 *param_4,byte param_5,
+                  char param_6)
+
+{
+  char in_R2;
+  char in_R3;
+  char in_R4;
+  byte in_R6;
+  byte in_B;
+  char cVar1;
+  
+  cVar1 = FUN_CODE_1235((byte *)param_2,in_B,param_3,param_4,in_R2,in_R3,in_R4,in_R6,param_6);
+  DAT_INTMEM_5a = DAT_INTMEM_5a ^ 0x35;
+  *(char *)ZEXT12(param_4) = cVar1;
+  DAT_INTMEM_36 = DAT_INTMEM_36 ^ 0x83;
+  *param_3 = '7';
+  DAT_INTMEM_38 = *param_4;
+                    /* WARNING: Could not emulate address calculation at 0x1466 */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)((ushort)*(byte *)ZEXT12(param_4) + 0x3953))(0x38);
+  return;
+}
+

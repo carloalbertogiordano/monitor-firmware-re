@@ -1,0 +1,178 @@
+=== 0x2c64 ===
+
+/* WARNING: Instruction at (CODE,0x2c7c) overlaps instruction at (CODE,0x2c7b)
+    */
+/* WARNING: Control flow encountered bad instruction data */
+
+char FUN_CODE_2c64(char *param_1,char *param_2,byte *param_3,byte param_4,byte *param_5,byte param_6
+                  ,byte param_7,byte param_8)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte *pbVar3;
+  byte *pbVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  char cVar9;
+  byte bVar10;
+  char *pcVar11;
+  byte *pbVar12;
+  undefined1 *puVar13;
+  char in_PSW;
+  
+  puVar13 = (undefined1 *)0x0;
+  while( true ) {
+    bVar6 = param_8;
+    BANK0_R5 = BANK0_R5 & (byte)param_1 & 0xa5;
+    nop();
+    nop();
+    *param_3 = *param_3 + 1;
+    nop();
+    nop();
+    nop();
+    bVar5 = (char)param_3 - (in_PSW >> 7);
+    bVar7 = bVar5 + 2;
+    *param_1 = *param_1 + -1;
+    cVar9 = TL2;
+    bVar10 = cVar9 - (((0xfd < bVar5) << 7) >> 7);
+    bVar8 = bVar7 + bVar10;
+    cVar9 = (CARRY1(bVar7,bVar10) | _c_6 ^ 1) << 7;
+    if (-1 < cVar9) {
+      bVar8 = bVar8 ^ *param_3;
+      if (param_7 - 1 == '\0') {
+        if (param_6 == 0xe1) {
+          DAT_SFR_aa = *param_1;
+                    /* WARNING: Could not recover jumptable at 0x2d21. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+          cVar9 = (*(code *)(param_2 + bVar8))();
+          return cVar9;
+        }
+        P0_7 = 1;
+        bVar7 = 0x7f;
+        bVar8 = *param_2 +
+                (bVar8 - ((CARRY1(param_4,(char)param_1 - (((param_6 < 0xe1) << 7) >> 7)) << 7) >> 7
+                         ));
+      }
+      *param_1 = *param_1 + '\x01';
+      cVar9 = FUN_CODE_2f72(param_7 - 1,bVar7,bVar8);
+      return cVar9;
+    }
+    bVar8 = bVar8 & DAT_INTMEM_45;
+    if (param_1 != &BANK0_R1) {
+      cVar9 = (char)param_3 -
+              (((param_1 + -1 !=
+                (char *)(((param_4 != ((param_5 != (byte *)0x0) << 7) >> 7) << 7) >> 7)) << 7) >> 7)
+      ;
+      cVar2 = F0;
+      if (cVar2 != '\0') {
+        cVar9 = bVar7 - (((param_6 != ((param_7 != ((bVar6 != 0) << 7) >> 7) << 7) >> 7) << 7) >> 7)
+        ;
+      }
+      return -cVar9;
+    }
+    DAT_INTMEM_22 = *param_3;
+    bVar8 = bVar8 << 1 | bVar8 >> 7;
+    cVar2 = DAT_SFR_b5;
+    bVar10 = cVar2 - (cVar9 >> 7);
+    bVar1 = CARRY1(bVar8,bVar10);
+    bVar8 = bVar8 + bVar10;
+    *param_3 = bVar8;
+    if (!bVar1) {
+      bVar5 = CMOD;
+      bVar8 = bVar8 | bVar5;
+      pbVar3 = (byte *)0x0;
+      _4_4 = bVar1;
+      while( true ) {
+        bVar5 = BANK0_R2;
+        pcVar11 = (char *)(bVar8 | (byte)pbVar3 | (byte)pbVar3 | (byte)pbVar3 | (byte)pbVar3 |
+                           (byte)pbVar3 | (byte)pbVar3);
+        EPCON = bVar7;
+        pbVar12 = pbVar3 + (*pcVar11 - _4_4);
+        DAT_INTMEM_49 = DAT_INTMEM_49 ^ (byte)pbVar12;
+        if (param_6 == 0xa5) {
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+        }
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        pbVar4 = (byte *)(pcVar11 + '\x01');
+        param_5 = param_5 + (param_4 - (((param_6 < 0xa5) << 7) >> 7));
+        nop();
+        nop();
+        nop();
+        puVar13['\x01'] = DAT_INTMEM_5e;
+        bVar10 = (((byte *)0xd3 < param_5) << 7) >> 7;
+        if (param_5 + ',' != (byte *)0x0) break;
+        bVar7 = *pbVar4;
+        if (bVar5 == bVar10) {
+          DAT_INTMEM_5f = 0xed;
+                    /* WARNING: Bad instruction - Truncating control flow here */
+          halt_baddata();
+        }
+        _4_4 = 0xb6 < bVar7;
+        puVar13['\x02'] = 0x71;
+        puVar13['\x03'] = 0x2d;
+        _b_4 = _4_4;
+        bVar10 = FUN_CODE_7792(bVar7 + 0x49 | (byte)pbVar4 | (byte)pbVar4 | (byte)pbVar4 |
+                               (byte)pbVar4 | (byte)pbVar4 | (byte)pbVar4 | (byte)pbVar4 |
+                               (byte)pbVar4 | (byte)pbVar4);
+        puVar13 = puVar13 + '\x01';
+        bVar7 = bVar10 + 0x49 | (byte)pbVar4 | (byte)pbVar4 | (byte)pbVar4 | (byte)pbVar4;
+        HIFLG_4 = 0xb6 < bVar10;
+        _4_4 = 0x76 < bVar7;
+        bVar8 = bVar7 + 0x89 | param_7;
+        pbVar3 = pbVar4;
+        param_5 = pbVar12;
+        bVar7 = bVar5;
+      }
+      bVar5 = DAT_SFR_92;
+      bVar7 = DAT_SFR_92;
+      puVar13['\x02'] = 4;
+      puVar13['\x03'] = 0x28;
+      cVar9 = FUN_CODE_26b2(((((byte)(param_5 + ',') | (byte)pbVar4) & bVar5 & 0x25 | (byte)pbVar4)
+                             & bVar7 & 0x25) - (char)(pbVar3 + ('\x01' - bVar10)));
+      return cVar9;
+    }
+    if (bVar5 == 0xff) break;
+    param_3 = (byte *)DAT_SFR_aa;
+    in_PSW = '\0';
+    bVar5 = TXFLG;
+    param_1 = (char *)(BANK0_R0 & bVar5);
+    param_8 = param_6;
+    bEXTMEM0000 = bVar6;
+  }
+  bEXTMEM0000 = param_6 & 0xf0 | *param_3 & 0xf;
+  *param_3 = *param_3 & 0xf0 | param_6 & 0xf;
+  cVar9 = -0x15 - ((CARRY1(bVar6 - (param_6 - bVar1),-(((bVar6 < param_6 - bVar1) << 7) >> 7)) << 7)
+                  >> 7);
+  BANK0_R0 = BANK0_R0 + 1;
+  nop();
+  nop();
+  nop();
+  cVar9 = FUN_CODE_2c19(-((char)param_3 - (((cVar9 != '\0') << 7) >> 7)) - cVar9,param_6,
+                        bEXTMEM0000 + 1,0xf4);
+  return cVar9;
+}
+

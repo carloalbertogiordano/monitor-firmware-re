@@ -1,0 +1,8 @@
+=== 0x8770 ===
+
+undefined1 FUN_CODE_8770(void)
+
+{
+  return DAT_EXTMEM_e391;
+}
+

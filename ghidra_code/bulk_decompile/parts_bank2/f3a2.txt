@@ -1,0 +1,23 @@
+=== 0xf3a2 ===
+
+undefined1 FUN_CODE_f3a2(void)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_fc67(0,0xe33a);
+  if (cVar1 == '\0') {
+    cVar1 = FUN_CODE_fc73();
+    if (cVar1 == '\x04') {
+      FUN_CODE_082f(8);
+      DAT_EXTMEM_e377 = 1;
+      DAT_EXTMEM_e378 = 0xe3;
+      DAT_EXTMEM_e379 = 0x3a;
+      _0_3 = 1;
+      FUN_CODE_076f(0,1,0x28,0,0x2a);
+    }
+    FUN_CODE_082f(4);
+  }
+  return DAT_EXTMEM_e33a;
+}
+

@@ -1,0 +1,9 @@
+=== 0xfebe ===
+
+void FUN_CODE_febe(void)
+
+{
+  FUN_CODE_f6ca(0x18);
+  return;
+}
+

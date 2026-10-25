@@ -1,0 +1,11 @@
+=== 0xce89 ===
+
+byte FUN_CODE_ce89(char param_1,byte param_2)
+
+{
+  FUN_CODE_e36d();
+  FUN_CODE_002e(DAT_EXTMEM_e403 - (param_1 - (((DAT_EXTMEM_e404 < param_2) << 7) >> 7)),
+                DAT_EXTMEM_e404 - param_2);
+  return DAT_EXTMEM_e404;
+}
+

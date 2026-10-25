@@ -1,0 +1,8 @@
+=== 0x9c4d ===
+
+byte FUN_CODE_9c4d(undefined1 param_1,undefined1 param_2,byte param_3)
+
+{
+  return param_3 ^ *(byte *)(CONCAT11(param_1,param_2) + 1);
+}
+

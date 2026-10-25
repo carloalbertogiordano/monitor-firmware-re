@@ -1,0 +1,8 @@
+=== 0xe32d ===
+
+char FUN_CODE_e32d(char param_1,short param_2)
+
+{
+  return param_1 * '\f' - *(char *)(param_2 + 1);
+}
+

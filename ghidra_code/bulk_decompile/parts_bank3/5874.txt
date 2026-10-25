@@ -1,0 +1,26 @@
+=== 0x5874 ===
+
+void FUN_CODE_5874(void)
+
+{
+  undefined1 uVar1;
+  undefined1 *puVar2;
+  
+  puVar2 = (undefined1 *)0x0;
+  nop();
+  do {
+    puVar2['\x01'] = 0x7d;
+    puVar2['\x02'] = 0x58;
+    FUN_CODE_5bf1(0xf);
+    uVar1 = DAT_SFR_95;
+    puVar2['\x01'] = uVar1;
+    puVar2['\x02'] = 0x81;
+    puVar2['\x03'] = 0x58;
+    FUN_CODE_5824();
+    puVar2['\x02'] = 0x83;
+    puVar2['\x03'] = 0x58;
+    FUN_CODE_5911();
+    puVar2 = puVar2 + '\x01';
+  } while( true );
+}
+

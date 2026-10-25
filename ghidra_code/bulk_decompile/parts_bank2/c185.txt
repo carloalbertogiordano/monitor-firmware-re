@@ -1,0 +1,8 @@
+=== 0xc185 ===
+
+undefined1 FUN_CODE_c185(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 1);
+}
+

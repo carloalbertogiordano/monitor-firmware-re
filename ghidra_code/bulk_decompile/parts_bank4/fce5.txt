@@ -1,0 +1,10 @@
+=== 0xfce5 ===
+
+void FUN_CODE_fce5(void)
+
+{
+  FUN_CODE_7042(0xbe,0xe4);
+  FUN_CODE_0f25(0xf);
+  return;
+}
+

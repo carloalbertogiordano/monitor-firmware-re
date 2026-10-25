@@ -1,0 +1,8 @@
+=== 0x76e1 ===
+
+undefined1 FUN_CODE_76e1(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,12 @@
+=== 0x9a37 ===
+
+undefined1 FUN_CODE_9a37(byte param_1)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 0;
+  FUN_CODE_fee1((param_1 >> 4) + 0xb,1,0);
+  return uVar1;
+}
+

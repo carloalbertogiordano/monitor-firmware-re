@@ -1,0 +1,11 @@
+=== 0x8cbd ===
+
+void FUN_CODE_8cbd(undefined1 param_1)
+
+{
+  FUN_CODE_12f8(DAT_EXTMEM_e3fb);
+  FUN_CODE_130a(DAT_EXTMEM_e3fc,1);
+  FUN_CODE_130a(param_1,2);
+  return;
+}
+

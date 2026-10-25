@@ -1,0 +1,172 @@
+=== 0x2def ===
+
+/* WARNING: Instruction at (CODE,0x2bb2) overlaps instruction at (CODE,0x2bb1)
+    */
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Removing unreachable block (CODE,0x2b89) */
+/* WARNING: Removing unreachable block (CODE,0x2b8b) */
+/* WARNING: Removing unreachable block (CODE,0x2b8e) */
+/* WARNING: Removing unreachable block (CODE,0x2b50) */
+/* WARNING: Removing unreachable block (CODE,0x2adc) */
+/* WARNING: Removing unreachable block (CODE,0x2adf) */
+/* WARNING: Removing unreachable block (CODE,0x2ae3) */
+/* WARNING: Removing unreachable block (CODE,0x2a98) */
+/* WARNING: Removing unreachable block (CODE,0x2a56) */
+/* WARNING: Removing unreachable block (CODE,0x2aac) */
+/* WARNING: Removing unreachable block (CODE,0x2a5a) */
+/* WARNING: Removing unreachable block (CODE,0x2aaf) */
+/* WARNING: Removing unreachable block (CODE,0x2ab7) */
+/* WARNING: Removing unreachable block (CODE,0x2b22) */
+/* WARNING: Removing unreachable block (CODE,0x2ac3) */
+/* WARNING: Removing unreachable block (CODE,0x2ad1) */
+/* WARNING: Removing unreachable block (CODE,0x2b26) */
+/* WARNING: Removing unreachable block (CODE,0x2b29) */
+/* WARNING: Removing unreachable block (CODE,0x2b2a) */
+/* WARNING: Removing unreachable block (CODE,0x2ae0) */
+/* WARNING: Removing unreachable block (CODE,0x2ab5) */
+/* WARNING: Removing unreachable block (CODE,0x2b36) */
+/* WARNING: Removing unreachable block (CODE,0x2b33) */
+/* WARNING: Removing unreachable block (CODE,0x2ae5) */
+/* WARNING: Removing unreachable block (CODE,0x2aea) */
+/* WARNING: Removing unreachable block (CODE,0x2b3b) */
+/* WARNING: Removing unreachable block (CODE,0x2b55) */
+/* WARNING: Removing unreachable block (CODE,0x2b58) */
+/* WARNING: Removing unreachable block (CODE,0x2b5d) */
+/* WARNING: Removing unreachable block (CODE,0x2bb2) */
+/* WARNING: Removing unreachable block (CODE,0x2c0a) */
+/* WARNING: Removing unreachable block (CODE,0x2bb5) */
+/* WARNING: Removing unreachable block (CODE,0x2c0d) */
+/* WARNING: Removing unreachable block (CODE,0x2b48) */
+/* WARNING: Removing unreachable block (CODE,0x2afd) */
+/* WARNING: Removing unreachable block (CODE,0x2b02) */
+/* WARNING: Removing unreachable block (CODE,0x2b08) */
+/* WARNING: Removing unreachable block (CODE,0x2a8f) */
+/* WARNING: Removing unreachable block (CODE,0x2b91) */
+/* WARNING: Removing unreachable block (CODE,0x2b9c) */
+/* WARNING: Removing unreachable block (CODE,0x2bab) */
+/* WARNING: Removing unreachable block (CODE,0x2b60) */
+/* WARNING: Removing unreachable block (CODE,0x2b61) */
+/* WARNING: Removing unreachable block (CODE,0x2b67) */
+
+undefined1
+FUN_CODE_2def(byte *param_1,byte param_2,byte *param_3,byte *param_4,byte param_5,byte param_6,
+             byte param_7,byte param_8)
+
+{
+  ushort uVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  undefined1 uVar5;
+  char cVar6;
+  byte bVar7;
+  
+  *param_4 = *param_4 - 1;
+  while( true ) {
+    uVar1 = (ushort)param_2;
+    param_2 = (byte)(ZEXT12(param_4) * uVar1 >> 8);
+    bVar3 = T2MOD;
+    bVar3 = CARRY1((byte)(ZEXT12(param_4) * uVar1),bVar3) << 7;
+    uVar5 = T2MOD;
+    bVar7 = thunk_FUN_CODE_26eb();
+    if ((char)bVar3 < '\0') break;
+    _4_4 = bVar3 >> 7;
+    cVar6 = FUN_CODE_a7a1(bVar7 | (byte)param_1 | (byte)param_1 | (byte)param_1);
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    DAT_INTMEM_2e = DAT_INTMEM_2e | 0x43;
+    _2_7 = 1;
+    param_4 = param_1;
+    param_1 = (byte *)(cVar6 + (*param_3 - ((char)bVar3 >> 7)) | param_7);
+  }
+  while( true ) {
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    bVar3 = *param_3;
+    *param_3 = *param_3 & 0xf0 | bVar7 + param_6 & 0xf;
+    bVar2 = ((bVar7 + param_6 & 0xf0 | bVar3 & 0xf | param_5) & (byte)param_3) + param_6 ^ param_8;
+    bVar7 = HPSC;
+    bVar3 = DAT_SFR_b5;
+    param_8 = 0xaf;
+    bVar3 = bVar2 & DAT_INTMEM_55 & param_6 & bVar7 & *param_3 & bVar3 & DAT_INTMEM_55 & 0xaf;
+    cVar6 = TXCNTH;
+    TXCNTH = cVar6 + -1;
+    cVar6 = TXCNTH;
+    if (cVar6 == '\0') break;
+    bVar7 = ((((((bVar3 | (byte)param_3) ^ *param_3 | (byte)param_3) ^ *param_3 | (byte)param_3) ^
+               *param_3 | (byte)param_3) ^ *param_3 | (byte)param_3) ^ *param_3 | (byte)param_3) ^
+            *param_3 | (byte)param_3;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+  }
+  bVar3 = bVar3 & DAT_INTMEM_7d;
+  param_6 = DAT_INTMEM_42 & param_6;
+  bVar7 = DAT_INTMEM_53 - 1;
+  DAT_INTMEM_42 = bVar3;
+  if (bVar7 == 0) {
+    if (*param_3 != 0xaa) goto LAB_CODE_2b74;
+    uVar5 = DAT_SFR_aa;
+    param_6 = param_6 ^ param_5;
+    bVar3 = DAT_SFR_aa;
+    param_5 = param_5 - 1;
+    if (param_5 == 0) {
+      uVar5 = DAT_SFR_b6;
+      param_5 = DAT_SFR_aa;
+      uVar5 = DAT_SFR_bb;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      bVar7 = param_6;
+      DAT_INTMEM_6a = param_5;
+      goto LAB_CODE_2bde;
+    }
+  }
+  else {
+    uVar5 = IE;
+    param_6 = param_6 & *param_3;
+LAB_CODE_2b74:
+    bVar3 = HPSC;
+    *param_1 = param_6 & bVar3;
+    param_6 = bVar7;
+  }
+  bVar3 = PCON1;
+  bVar3 = (param_6 ^ bVar7) & bVar3;
+  param_1 = (byte *)IPH0;
+  uVar5 = 0xee;
+LAB_CODE_2bde:
+  bVar7 = bVar7 | (byte)param_3;
+  if (param_2 != 0) {
+    bVar7 = bVar7 / param_2;
+  }
+  _4_4 = 0xb6 < bVar7;
+  TCLK = _4_4;
+  bVar2 = ((byte)param_1 | param_7) - 0x37 | param_7;
+  TCLK = 0x36 < ((byte)param_1 | param_7);
+  bVar4 = bVar2 - 0x37 | param_7;
+  TCLK = 0x36 < bVar2;
+  TCLK = 0x36 < bVar4;
+  BANK0_R1 = 6;
+  BANK0_R2 = 0x2c;
+  bVar7 = FUN_CODE_6bc1((bVar4 - 0x37 | param_7) - 0x37 | param_7,
+                        bVar7 + 0x49 | (byte)param_1 | (byte)param_1 | (byte)param_1,bVar3,uVar5);
+  uVar5 = FUN_CODE_2e5a(bVar7 & param_5 ^ bVar3);
+  return uVar5;
+}
+

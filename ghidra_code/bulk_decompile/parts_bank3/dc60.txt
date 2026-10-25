@@ -1,0 +1,13 @@
+=== 0xdc60 ===
+
+void FUN_CODE_dc60(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e38a = param_1;
+  FUN_CODE_febf(0,0,0);
+  DAT_EXTMEM_e38a = 0x7f;
+  DAT_EXTMEM_e38b = 0;
+  FUN_CODE_fdaa(0xe,0,0);
+  return;
+}
+

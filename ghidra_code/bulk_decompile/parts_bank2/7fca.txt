@@ -1,0 +1,8 @@
+=== 0x7fca ===
+
+undefined1 FUN_CODE_7fca(void)
+
+{
+  return DAT_EXTMEM_e52c;
+}
+

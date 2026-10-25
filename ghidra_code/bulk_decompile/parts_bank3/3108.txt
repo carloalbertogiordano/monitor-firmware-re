@@ -1,0 +1,79 @@
+=== 0x3108 ===
+
+void FUN_CODE_3108(char param_1,short param_2,byte *param_3,byte *param_4,byte param_5,char param_6)
+
+{
+  char cVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_4 = param_5;
+  *(byte *)ZEXT12(param_4) = param_5;
+  bVar2 = param_1 + 1U ^ *param_3;
+  param_5 = param_5 ^ *param_3;
+  bVar3 = (bVar2 << 1 | in_PSW >> 7) ^ *param_3;
+  bVar4 = bVar3 << 1 | param_5 >> 7;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *(byte *)ZEXT12(param_4) = bVar4;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  cVar1 = (bVar4 << 1 | (param_5 & 0x7f) >> 6) + 1;
+  nop();
+  nop();
+  nop();
+  nop();
+                    /* WARNING: Could not recover jumptable at 0x3160. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)((*param_4 - (cVar1 >> 7)) - 0x19)))
+            ((param_5 << 1 & 0x3f | bVar2 >> 7) << 1 | bVar3 >> 7 | ((bVar3 & 0x7f) >> 6) << 7,
+             param_6 + '\x02',cVar1 * '\x02' | (param_5 << 1 & 0x40) >> 6);
+  return;
+}
+

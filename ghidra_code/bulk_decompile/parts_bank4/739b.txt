@@ -1,0 +1,13 @@
+=== 0x739b ===
+
+undefined1 FUN_CODE_739b(void)
+
+{
+  undefined1 uVar1;
+  
+  FUN_CODE_133e(0,5,BANK0_R2,BANK0_R3);
+  uVar1 = 0x24;
+  FUN_CODE_132c(0,0x24);
+  return uVar1;
+}
+

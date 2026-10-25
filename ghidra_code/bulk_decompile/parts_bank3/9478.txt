@@ -1,0 +1,11 @@
+=== 0x9478 ===
+
+void FUN_CODE_9478(char param_1)
+
+{
+  FUN_CODE_fecb();
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e60d;
+  FUN_CODE_fecb(param_1 + '\x01');
+  return;
+}
+

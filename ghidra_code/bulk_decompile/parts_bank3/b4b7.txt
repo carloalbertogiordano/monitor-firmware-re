@@ -1,0 +1,10 @@
+=== 0xb4b7 ===
+
+void FUN_CODE_b4b7(void)
+
+{
+  FUN_CODE_1642(0x2b);
+  FUN_CODE_16dc(0x27);
+  return;
+}
+

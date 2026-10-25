@@ -1,0 +1,10 @@
+=== 0xa76e ===
+
+void FUN_CODE_a76e(void)
+
+{
+  DAT_EXTMEM_e339 = DAT_EXTMEM_e674;
+  DAT_EXTMEM_e33a = DAT_EXTMEM_e675;
+  return;
+}
+

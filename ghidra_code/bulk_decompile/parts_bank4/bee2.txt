@@ -1,0 +1,14 @@
+=== 0xbee2 ===
+
+void FUN_CODE_bee2(undefined1 param_1,undefined1 param_2,undefined1 param_3,undefined1 param_4)
+
+{
+  FUN_CODE_152f();
+  DAT_INTMEM_2d = param_1;
+  DAT_INTMEM_2e = param_2;
+  DAT_INTMEM_2f = param_3;
+  DAT_INTMEM_30 = param_4;
+  FUN_CODE_15d7(param_1,param_2,param_3,param_4,0,0,0xf,0xff);
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xa4d4 ===
+
+byte FUN_CODE_a4d4(char param_1,byte param_2)
+
+{
+  return param_2 >> 1 | param_1 << 7;
+}
+

@@ -1,0 +1,375 @@
+=== 0x2c24 ===
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Instruction at (CODE,0x2ad5) overlaps instruction at (CODE,0x2ad3)
+    */
+/* WARNING: Removing unreachable block (CODE,0x2ade) */
+/* WARNING: Removing unreachable block (CODE,0x2adf) */
+/* WARNING: Removing unreachable block (CODE,0x2ad3) */
+
+byte FUN_CODE_2c24(byte param_1,short param_2,byte param_3,byte *param_4,byte *param_5,char param_6,
+                  byte param_7,byte param_8,char param_9,byte *param_10,byte param_11)
+
+{
+  bool bVar1;
+  undefined1 uVar2;
+  byte *pbVar3;
+  char cVar4;
+  char cVar5;
+  byte bVar6;
+  byte *pbVar7;
+  byte bVar8;
+  char *pcVar9;
+  byte *pbVar10;
+  byte *pbVar11;
+  undefined1 *puVar12;
+  undefined1 *puVar13;
+  byte in_PSW;
+  byte bVar14;
+  undefined1 uStackX_0;
+  undefined1 in_stack_000000ff;
+  
+  BANK1_R5 = uStackX_0;
+  puVar13 = (undefined1 *)0xff;
+  bVar6 = param_9 - 1;
+  if (bVar6 != 0) {
+    bVar8 = func_0x2fbd();
+    *param_4 = bVar8;
+    goto code_c0x2bc4;
+  }
+  BANK1_R5 = in_stack_000000ff;
+  puVar13 = (undefined1 *)0xfe;
+  bVar6 = param_1 | (byte)param_10;
+  if (param_9 == '\x02') {
+    _0_0 = 1;
+    nop();
+    nop();
+    _4_4 = in_PSW >> 7;
+    P0_4 = in_PSW >> 7;
+    bVar8 = param_1 | (byte)param_10 | (byte)param_5 | (byte)param_4;
+    nop();
+    bVar6 = 0;
+    if (_9_1 == '\x01') goto LAB_CODE_2bcd;
+    bVar1 = 0xb6 < bVar8;
+    bVar8 = bVar8 + 0x49;
+    nop();
+    puVar13 = (undefined1 *)0xfe;
+    BANK0_R4 = param_4;
+LAB_CODE_2c40:
+    bVar14 = bVar1 << 7;
+    nop();
+    nop();
+    nop();
+    nop();
+    if (-1 < (char)bVar14) {
+      *param_5 = bVar8;
+      DAT_INTMEM_34 = *param_4;
+      bVar6 = FUN_CODE_2e5a(bVar8 ^ param_7,BANK0_R5);
+      return bVar6;
+    }
+LAB_CODE_2bc7:
+    param_2 = param_2 + 1;
+    DAT_INTMEM_37 = *param_4;
+    bVar8 = *param_4 << 1 | bVar14 >> 7;
+LAB_CODE_2bcd:
+    puVar13['\x01'] = 0xcf;
+    puVar13['\x02'] = 0x2b;
+    bVar14 = FUN_CODE_2a0b(bVar8);
+    bVar8 = bVar14 & 0xf0 | *param_4 & 0xf;
+    *param_4 = *param_4 & 0xf0 | bVar14 & 0xf;
+    bVar14 = CCAP3L;
+    CCAP3L = bVar14 ^ bVar8;
+    bVar1 = bVar8 < DAT_INTMEM_58;
+    if (bVar8 == DAT_INTMEM_58) {
+      bVar1 = param_10 < BANK2_R4;
+      pbVar7 = param_10;
+      if (param_10 != BANK2_R4) {
+LAB_CODE_2bae:
+        if (param_7 == 0xa0) {
+          param_8 = param_8 - 1;
+          if (param_8 == 0) {
+            bVar1 = false;
+            pbVar11 = (byte *)0xa0;
+            cVar5 = '\0';
+            while( true ) {
+              cVar4 = BANK0_R2;
+              HIFLG_4 = bVar1;
+              _4_4 = 0x76 < ((byte)pbVar7 | (byte)param_5);
+              pcVar9 = (char *)(((byte)pbVar7 | (byte)param_5) + 0x89 | (byte)param_10 |
+                                (byte)param_5 | (byte)param_5 | (byte)param_5 | (byte)param_5 |
+                                (byte)param_5 | (byte)param_5);
+              EPCON = cVar5;
+              pbVar10 = param_5 + (*pcVar9 - ((char)(_4_4 << 7) >> 7));
+              DAT_INTMEM_49 = DAT_INTMEM_49 ^ (byte)pbVar10;
+              if (bVar6 == 0xa5) {
+                nop();
+                nop();
+                nop();
+                nop();
+                nop();
+              }
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              nop();
+              pbVar3 = (byte *)(pcVar9 + '\x01');
+              pbVar11 = pbVar11 + (param_6 - (((bVar6 < 0xa5) << 7) >> 7));
+              nop();
+              nop();
+              nop();
+              puVar13['\x01'] = DAT_INTMEM_5e;
+              cVar5 = (((byte *)0xd3 < pbVar11) << 7) >> 7;
+              if (pbVar11 + ',' != (byte *)0x0) break;
+              bVar8 = *pbVar3;
+              if (cVar4 == cVar5) {
+                DAT_INTMEM_5f = 0xed;
+                    /* WARNING: Bad instruction - Truncating control flow here */
+                halt_baddata();
+              }
+              _4_4 = 0xb6 < bVar8;
+              puVar13['\x02'] = 0x71;
+              puVar13['\x03'] = 0x2d;
+              _b_4 = _4_4;
+              bVar8 = FUN_CODE_7792(bVar8 + 0x49 | (byte)pbVar3 | (byte)pbVar3 | (byte)pbVar3 |
+                                    (byte)pbVar3 | (byte)pbVar3 | (byte)pbVar3 | (byte)pbVar3 |
+                                    (byte)pbVar3 | (byte)pbVar3);
+              puVar13 = puVar13 + '\x01';
+              bVar1 = 0xb6 < bVar8;
+              pbVar7 = (byte *)(bVar8 + 0x49 | (byte)pbVar3 | (byte)pbVar3 | (byte)pbVar3);
+              param_5 = pbVar3;
+              pbVar11 = pbVar10;
+              cVar5 = cVar4;
+            }
+            bVar6 = DAT_SFR_92;
+            bVar8 = DAT_SFR_92;
+            puVar13['\x02'] = 4;
+            puVar13['\x03'] = 0x28;
+            bVar6 = FUN_CODE_26b2(((((byte)(pbVar11 + ',') | (byte)pbVar3) & bVar6 & 0x25 |
+                                   (byte)pbVar3) & bVar8 & 0x25) -
+                                  (char)(param_5 + ('\x01' - cVar5)));
+            return bVar6;
+          }
+          do {
+            nop();
+            param_5 = param_5 + -1;
+            if (param_5 == (byte *)0x0) {
+              if (param_6 == -0x7e) goto code_c0x2ba0;
+              nop();
+            }
+            nop();
+            nop();
+          } while( true );
+        }
+        goto LAB_CODE_2867_2;
+      }
+      *param_5 = DAT_INTMEM_70;
+      pbVar7 = (byte *)(param_11 - 1);
+      *param_4 = *param_4 & 0xf0 | (char)param_10 * '\x02' - ((bVar1 << 7) >> 7) & 0xfU;
+      bVar8 = TL0;
+      *param_5 = bVar8;
+      bVar8 = DAT_SFR_c5;
+      DAT_SFR_c5 = bVar8 & 0xf3;
+      param_11 = (byte)pbVar7 & 0xf1;
+      param_8 = 0x14;
+      if (param_6 != -0x7a) {
+LAB_CODE_2867_2:
+        *param_4 = 0x1b;
+        puVar13['\x01'] = 0x17;
+        puVar13['\x02'] = 0x2c;
+        bVar8 = FUN_CODE_9ba4(((byte)pbVar7 >> 1 | (char)pbVar7 << 7) >> 1 |
+                              ((byte)pbVar7 >> 1) << 7);
+        _d_4 = bVar8 >> 7;
+        _1_4 = bVar8 >> 7;
+        BANK0_R7 = BANK0_R7 ^ 0xa6;
+        cVar5 = (char)param_4 -
+                (((param_5 != (byte *)(((param_6 != ((param_7 != 0) << 7) >> 7) << 7) >> 7)) << 7)
+                >> 7);
+        cVar4 = F0;
+        if (cVar4 != '\0') {
+          cVar5 = param_8 - (((bVar6 != ((param_10 != (byte *)(((param_11 != 0) << 7) >> 7)) << 7)
+                                        >> 7) << 7) >> 7);
+        }
+        return -cVar5;
+      }
+      nop();
+      bVar6 = *param_5;
+      DAT_SFR_b5 = *param_5;
+      bVar8 = *param_4;
+      puVar13['\x01'] = 0xf5;
+      puVar13['\x02'] = 0x2b;
+      FUN_CODE_2a75((byte)(pbVar7 + (char)param_4 +
+                          (bVar6 - ((CARRY1((byte)pbVar7,(byte)param_4) << 7) >> 7))) ^ bVar8,
+                    param_11);
+      param_4 = &BANK2_R6;
+      bVar6 = param_8;
+      goto LAB_CODE_2bff;
+    }
+    goto LAB_CODE_2c40;
+  }
+LAB_CODE_2bff:
+  bVar8 = FIFLG_0;
+  FIE1 = 0x12;
+  bVar6 = bVar6 & param_8;
+  param_5['\x01'] = 0x92;
+  _5_3 = bVar8 & 1;
+  goto LAB_CODE_2995;
+code_c0x2ba0:
+  uVar2 = TXCNTH;
+  DAT_SFR_95 = uVar2;
+  *param_4 = 0xbd;
+  param_6 = -0x7e;
+  in_PSW = 0;
+  pbVar11 = param_10;
+  while( true ) {
+    param_6 = param_6 + '\x01';
+    param_10 = pbVar11 + -1;
+    BANK0_R0 = param_4;
+    if (param_10 == (byte *)0x0) break;
+    in_PSW = (bVar6 < 0xf6) << 7;
+    pbVar11 = param_10;
+    if (bVar6 == 0xf6) goto code_c0x2bc4;
+  }
+  param_10 = pbVar11 + -2;
+  if (param_10 != (byte *)0x0) goto code_c0x2bc4;
+  pbVar11 = pbVar11 + -3;
+  param_10 = (byte *)0x0;
+  pbVar7 = param_4;
+  if (pbVar11 != (byte *)0x0) {
+    puVar13['\x01'] = 0x47;
+    puVar13['\x02'] = 0x2b;
+    bVar6 = FUN_CODE_2c24();
+    _4_4 = in_PSW >> 7;
+    bVar8 = bVar6 | (byte)param_5 | (byte)param_5 | (byte)param_5 | (byte)param_5;
+    _1_0 = in_PSW >> 7;
+    nop();
+    goto LAB_CODE_2b0b;
+  }
+  goto LAB_CODE_2bae;
+LAB_CODE_2b0b:
+  *param_4 = bVar8;
+  cVar5 = CARRY1(bVar8,*param_4) << 7;
+  pbVar7 = param_5 + -1;
+  pbVar10 = pbVar11;
+  pbVar11 = (byte *)(bVar8 + *param_4);
+  puVar12 = puVar13;
+  if (pbVar7 != (byte *)0x0) {
+    do {
+      if (cVar5 < '\0') {
+LAB_CODE_2ae2:
+        DAT_SFR_bd = *param_4;
+        goto LAB_CODE_2ae4;
+      }
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      cVar5 = RXCNTH;
+      RXCNTH = cVar5 + '\x01';
+      puVar13 = puVar12 + '\x01';
+      puVar12['\x01'] = DAT_INTMEM_39;
+      if (pbVar10 == (byte *)0x0) {
+        bVar6 = *pbVar7;
+        puVar13 = puVar12 + '\x02';
+        puVar12['\x02'] = DAT_INTMEM_75;
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        pbVar10 = (byte *)((bVar6 | 2) + 2);
+      }
+      nop();
+      if (_1_1 != '\0') {
+        _1_1 = 0;
+        return (byte)pbVar10 | (byte)pbVar7;
+      }
+      if ((pbVar10 == (byte *)0x0) || (pbVar10 != (byte *)*param_4)) {
+        nop();
+        bVar6 = FUN_CODE_2d1b();
+        return bVar6;
+      }
+      if (param_6 == -0x5f) {
+        *param_4 = 0;
+        pbVar7 = param_5;
+        goto LAB_CODE_2ae2;
+      }
+      bVar6 = ((byte *)0xfd < param_4) << 7;
+      nop();
+      if (_9_1 == '\0') goto code_c0x2afa;
+      _4_4 = (byte *)0xb6 < param_4 + '\x02';
+      _9_1 = '\0';
+      pbVar3 = pbVar11 + param_7;
+      pbVar10 = pbVar3;
+      if (param_3 != 0) {
+        pbVar10 = (byte *)((byte)pbVar3 / param_3);
+        param_3 = (byte)pbVar3 % param_3;
+      }
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      DAT_INTMEM_7a = DAT_INTMEM_7a | (byte)pbVar10 ^ param_8;
+      _c_4 = 0;
+      bVar6 = param_7 - (((0x26 < param_11) << 7) >> 7);
+      cVar5 = CARRY1(param_11 - 0x27,bVar6) << 7;
+      bVar8 = DPX;
+      *param_4 = bVar8;
+      pbVar10 = pbVar11;
+      pbVar11 = (byte *)((param_11 - 0x27) + bVar6 | (byte)pbVar7);
+      puVar12 = puVar13;
+    } while( true );
+  }
+  goto code_c0x2b0f;
+code_c0x2afa:
+  nop();
+  nop();
+  puVar13['\x01'] = 8;
+  puVar13['\x02'] = 0x2b;
+  bVar8 = FUN_CODE_2c6c(0x22);
+  PT2 = bVar6 >> 7;
+  bVar8 = bVar8 | (byte)pbVar7;
+  param_5 = pbVar7;
+  goto LAB_CODE_2b0b;
+code_c0x2bc4:
+  bVar14 = (in_PSW >> 7 | _0_7 ^ 1) << 7;
+  goto LAB_CODE_2bc7;
+code_c0x2b0f:
+  bVar6 = bVar8 + *param_4 ^ 0x6f;
+  SM2 = CARRY1(bVar8,*param_4);
+  param_4 = param_4 + '\x01';
+  nop();
+  if (cVar5 < '\0') {
+    if (param_6 == -0x6d) {
+      return bVar6 + (param_7 * '\x02' - (cVar5 >> 7));
+    }
+LAB_CODE_2ae4:
+    bVar6 = FUN_CODE_2b6f(pbVar7);
+    return bVar6;
+  }
+LAB_CODE_2995:
+                    /* WARNING: Could not recover jumptable at 0x2a77. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  bVar6 = (*(code *)(param_2 + (ushort)bVar6))(param_4,param_8 - 1,bVar6 + 1);
+  return bVar6;
+}
+

@@ -1,0 +1,10 @@
+=== 0xbebf ===
+
+void FUN_CODE_bebf(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe396,0,0,BANK0_R2,BANK0_R3);
+}
+

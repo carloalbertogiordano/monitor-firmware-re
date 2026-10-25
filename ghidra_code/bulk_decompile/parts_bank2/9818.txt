@@ -1,0 +1,9 @@
+=== 0x9818 ===
+
+void FUN_CODE_9818(void)
+
+{
+  DAT_EXTMEM_e355 = DAT_EXTMEM_e355 + -1;
+  return;
+}
+

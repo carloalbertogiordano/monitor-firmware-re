@@ -1,0 +1,11 @@
+=== 0x4536 ===
+
+void FUN_CODE_4536(void)
+
+{
+  DAT_EXTMEM_e65d = 0;
+  DAT_EXTMEM_e65e = 0x17;
+  DAT_EXTMEM_e65f = 0x91;
+  return;
+}
+

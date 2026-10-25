@@ -1,0 +1,10 @@
+=== 0xd514 ===
+
+void FUN_CODE_d514(void)
+
+{
+  DAT_EXTMEM_e38a = 0x20;
+  FUN_CODE_fe61(2,1,0);
+  return;
+}
+

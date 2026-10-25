@@ -1,0 +1,8 @@
+=== 0x8936 ===
+
+byte FUN_CODE_8936(void)
+
+{
+  return DAT_EXTMEM_0bb3 & 0xf0;
+}
+

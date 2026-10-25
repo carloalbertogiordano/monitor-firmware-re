@@ -1,0 +1,8 @@
+=== 0x74fa ===
+
+undefined1 FUN_CODE_74fa(void)
+
+{
+  return DAT_EXTMEM_e350;
+}
+

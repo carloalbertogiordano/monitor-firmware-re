@@ -1,0 +1,11 @@
+=== 0x1d79 ===
+
+undefined1 FUN_CODE_1d79(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = F0;
+  return 0;
+}
+

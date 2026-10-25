@@ -1,0 +1,9 @@
+=== 0xfeab ===
+
+void FUN_CODE_feab(void)
+
+{
+  FUN_CODE_fea3();
+  return;
+}
+

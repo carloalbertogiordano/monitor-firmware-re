@@ -1,0 +1,8 @@
+=== 0xe8fc ===
+
+char FUN_CODE_e8fc(char param_1,byte param_2)
+
+{
+  return param_1 + (((param_2 < 0x65) << 7) >> 7);
+}
+

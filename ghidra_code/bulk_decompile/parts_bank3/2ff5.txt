@@ -1,0 +1,40 @@
+=== 0x2ff5 ===
+
+void FUN_CODE_2ff5(short param_1,char *param_2,byte *param_3,char param_4,char param_5)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  nop();
+  bVar1 = *param_3;
+  nop();
+  nop();
+  bVar2 = *param_3;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_2 = *param_2 + '\x01';
+  nop();
+                    /* WARNING: Could not recover jumptable at 0x301c. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_1 + 0xe6))
+            (bVar1 >> 1 | bVar1 << 7,param_5 + (bVar2 - (param_4 + '\x01' >> 7)),bVar1 + 1);
+  return;
+}
+

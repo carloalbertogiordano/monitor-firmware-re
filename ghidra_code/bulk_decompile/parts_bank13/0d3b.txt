@@ -1,0 +1,41 @@
+=== 0x0d3b ===
+
+void FUN_CODE_0d3b(byte param_1,byte *param_2,byte param_3,byte *param_4,byte *param_5,byte param_6,
+                  byte param_7,byte param_8,char param_9,byte param_10,byte param_11)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  
+  bVar3 = FUN_CODE_0ccd(param_1,param_2,(char *)param_4,(char *)param_5,param_6,param_9,param_10,
+                        param_11);
+  bVar1 = param_9 - 1;
+  FUN_CODE_08d5(bVar3,param_2,param_3,param_4,param_5,param_6,param_7,param_8,bVar1,param_10,
+                param_11);
+  bVar1 = bVar1 - 1;
+  FUN_CODE_0cdd(param_2,param_4,(byte)param_5,param_6,param_11);
+  cVar2 = param_10 - 1;
+  bVar4 = func_0x08e5();
+  bVar3 = cVar2 - 1;
+  bVar5 = FUN_CODE_0ced(bVar4,param_2,param_3,param_4,param_5,param_6,param_7,param_8,bVar1,bVar3,
+                        param_11);
+  bVar4 = param_11 - 1;
+  FUN_CODE_08f5(bVar5,param_2,param_3,param_4,param_5,param_6,param_7,param_8,bVar1,bVar3,bVar4);
+  bVar4 = bVar4 - 1;
+  bVar5 = func_0x0cfd();
+  if (_2_2 == '\x01') {
+    *param_4 = *param_4 - 1;
+    FUN_CODE_09a2(param_2,(char *)param_4,(byte)param_5,param_6,param_7,bVar4);
+    return;
+  }
+  cVar2 = P1_2;
+  if (cVar2 != '\x01') {
+    FUN_CODE_0922(bVar5,param_2,param_3,param_4,param_5,param_6,param_7,param_8,bVar1,bVar3,bVar4);
+    return;
+  }
+  return;
+}
+

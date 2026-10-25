@@ -1,0 +1,22 @@
+=== 0xf935 ===
+
+void FUN_CODE_f935(void)
+
+{
+  undefined1 uVar1;
+  char in_PSW;
+  
+  uVar1 = FUN_CODE_e3f6();
+  FUN_CODE_08ef(uVar1,uVar1,1,0xa0);
+  if (in_PSW < '\0') {
+    FUN_CODE_e3cf();
+    if ((in_PSW < '\0') && (_5_5 == '\0')) {
+      DAT_EXTMEM_e18d = 0;
+    }
+    else {
+      DAT_EXTMEM_e18d = 1;
+    }
+  }
+  return;
+}
+

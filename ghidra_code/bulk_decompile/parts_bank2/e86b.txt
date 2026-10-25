@@ -1,0 +1,35 @@
+=== 0xe86b ===
+
+void FUN_CODE_e86b(undefined1 param_1,undefined1 param_2,undefined1 param_3,byte param_4)
+
+{
+  byte bVar1;
+  
+  DAT_EXTMEM_e709 = 0;
+  DAT_EXTMEM_e336 = param_3;
+  DAT_EXTMEM_e337 = param_2;
+  DAT_EXTMEM_e338 = param_1;
+  FUN_CODE_067f();
+  bVar1 = (param_4 & 7) << 3;
+  DAT_EXTMEM_e511 = DAT_EXTMEM_e511 & 199 | bVar1;
+  FUN_CODE_0a93();
+  FUN_CODE_f818();
+  FUN_CODE_fbf3();
+  FUN_CODE_ecf2();
+  bVar1 = bVar1 << 6;
+  DAT_EXTMEM_e511 = DAT_EXTMEM_e511 & 0x3f | bVar1;
+  FUN_CODE_f70c();
+  DAT_EXTMEM_e511 = DAT_EXTMEM_e511 & 0xf8 | bVar1 & 7;
+  FUN_CODE_9044(bVar1 & 7);
+  FUN_CODE_9249(0,0);
+  FUN_CODE_75e3();
+  FUN_CODE_d41f();
+  FUN_CODE_75e3();
+  FUN_CODE_1420(4);
+  FUN_CODE_7726(0xe50d);
+  FUN_CODE_fb23();
+  thunk_FUN_CODE_f456(2);
+  FUN_CODE_ef16();
+  return;
+}
+

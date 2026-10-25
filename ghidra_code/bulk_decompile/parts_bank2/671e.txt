@@ -1,0 +1,81 @@
+=== 0x671e ===
+
+void FUN_CODE_671e(undefined1 param_1,undefined1 param_2,byte param_3,char param_4,byte param_5)
+
+{
+  bool bVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  char cVar5;
+  undefined1 *puVar6;
+  
+  puVar6 = &DAT_EXTMEM_e349;
+  FUN_CODE_97cb();
+  *puVar6 = param_1;
+  FUN_CODE_9691(param_2);
+  *puVar6 = 0xff;
+  DAT_EXTMEM_0041 = 0;
+  DAT_EXTMEM_003f = DAT_EXTMEM_003f & 0xee;
+  DAT_EXTMEM_0042 = 0;
+  if ((DAT_EXTMEM_0010 & 2) == 2) {
+    FUN_CODE_febe();
+    bVar1 = CARRY1(DAT_EXTMEM_e557,param_5);
+    param_5 = DAT_EXTMEM_e557 + param_5;
+    cVar3 = DAT_EXTMEM_e556;
+  }
+  else {
+    FUN_CODE_febe();
+    bVar2 = BANK0_R7;
+    cVar3 = BANK0_R6;
+    FUN_CODE_fd5b();
+    bVar1 = CARRY1(bVar2,param_5);
+    param_5 = bVar2 + param_5;
+  }
+  bVar4 = cVar3 + (param_4 - ((bVar1 << 7) >> 7));
+  DAT_INTMEM_2a = DAT_EXTMEM_e526 + param_5;
+  DAT_INTMEM_29 = DAT_EXTMEM_e525 + (bVar4 - ((CARRY1(DAT_EXTMEM_e526,param_5) << 7) >> 7));
+  bVar2 = DAT_INTMEM_29 - (((DAT_EXTMEM_e522 < DAT_INTMEM_2a) << 7) >> 7);
+  if (DAT_EXTMEM_e521 < bVar2) {
+    FUN_CODE_6a27();
+    return;
+  }
+  cVar5 = FUN_CODE_6a2e(DAT_EXTMEM_e521 - bVar2);
+  bVar2 = cVar5 - (((param_5 < param_3) << 7) >> 7);
+  cVar3 = (bVar4 < bVar2) << 7;
+  if (bVar4 >= bVar2) {
+    FUN_CODE_6a51(bVar4 - bVar2);
+    bVar2 = cVar5 - (((param_5 < param_3 + 1) << 7) >> 7);
+    if (bVar4 < bVar2) {
+      return;
+    }
+    FUN_CODE_978d(bVar4 - bVar2);
+    cVar3 = '\b';
+    FUN_CODE_0a63();
+    DAT_EXTMEM_e34f = FUN_CODE_96a2();
+    cVar5 = '\b';
+    DAT_EXTMEM_e350 = cVar3;
+    FUN_CODE_0a69();
+    if (cVar5 == '\b') {
+      DAT_EXTMEM_e34f = FUN_CODE_96a2();
+      DAT_EXTMEM_e350 = cVar5;
+    }
+    FUN_CODE_6a51();
+    FUN_CODE_9751(0xe353);
+                    /* WARNING: Subroutine does not return */
+    FUN_CODE_979c(DAT_EXTMEM_e354,0xe53d,DAT_EXTMEM_e353);
+  }
+  FUN_CODE_6a2e();
+  FUN_CODE_97bd();
+  while( true ) {
+    FUN_CODE_96b2();
+    if (cVar3 < '\0') break;
+    FUN_CODE_f53b();
+    cVar5 = FUN_CODE_6ab9();
+    if (cVar5 == '\0') break;
+    FUN_CODE_9818();
+  }
+  FUN_CODE_6a27();
+  return;
+}
+

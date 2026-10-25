@@ -1,0 +1,12 @@
+=== 0x845b ===
+
+void FUN_CODE_845b(char param_1)
+
+{
+  FUN_CODE_8022();
+  nop();
+  nop();
+  FUN_CODE_00ee(param_1 + '\x01');
+  return;
+}
+

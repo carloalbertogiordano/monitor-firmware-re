@@ -1,0 +1,8 @@
+=== 0x8774 ===
+
+undefined1 FUN_CODE_8774(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 3);
+}
+

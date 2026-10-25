@@ -1,0 +1,58 @@
+=== 0x4f4f ===
+
+void FUN_CODE_4f4f(byte param_1,byte param_2,byte param_3,char param_4,char param_5)
+
+{
+  char cVar1;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  do {
+    cVar1 = param_4;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    DAT_INTMEM_71 = DAT_INTMEM_71 | param_1;
+    nop();
+    param_4 = cVar1 + '\x01';
+  } while ((param_2 >> 3 & 1) == 1);
+  param_1 = param_1 & param_3;
+  while( true ) {
+    nop();
+    nop();
+    nop();
+    nop();
+    param_1 = param_1 + param_5 + '\x02';
+    param_5 = param_5 + '\x02';
+    nop();
+    if ((param_2 >> 2 & 1) != 0) break;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+  }
+  FUN_CODE_2200(param_1,cVar1 + '\x02');
+  return;
+}
+

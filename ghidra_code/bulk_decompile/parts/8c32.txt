@@ -1,0 +1,8 @@
+=== 0x8c32 ===
+
+undefined1 FUN_CODE_8c32(void)
+
+{
+  return DAT_EXTMEM_e700;
+}
+

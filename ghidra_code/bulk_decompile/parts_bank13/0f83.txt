@@ -1,0 +1,11 @@
+=== 0x0f83 ===
+
+void FUN_CODE_0f83(void)
+
+{
+  do {
+    nop();
+    nop();
+  } while( true );
+}
+

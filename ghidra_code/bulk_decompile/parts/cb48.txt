@@ -1,0 +1,13 @@
+=== 0xcb48 ===
+
+byte FUN_CODE_cb48(undefined1 param_1,undefined1 *param_2)
+
+{
+  byte bVar1;
+  
+  *param_2 = param_1;
+  param_2[1] = param_1;
+  bVar1 = FUN_CODE_1298(0x84);
+  return bVar1 & 0xe0;
+}
+

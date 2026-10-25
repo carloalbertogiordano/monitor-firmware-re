@@ -1,0 +1,33 @@
+=== 0x3f00 ===
+
+void FUN_CODE_3f00(char param_1,byte param_2)
+
+{
+  byte bVar1;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  if (param_1 != -1) {
+    nop();
+    FUN_CODE_3800();
+    return;
+  }
+  bVar1 = func_0x3883(0xf,0xc4);
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_3800((bVar1 | param_2) ^ param_2);
+  return;
+}
+

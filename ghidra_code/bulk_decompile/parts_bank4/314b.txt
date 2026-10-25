@@ -1,0 +1,64 @@
+=== 0x314b ===
+
+byte FUN_CODE_314b(byte param_1,byte param_2,byte *param_3,byte *param_4,byte param_5,char param_6,
+                  byte param_7)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte in_stack_000000ff;
+  
+  cVar2 = DAT_SFR_95;
+  bVar1 = param_1 < 0xb5;
+  bVar5 = bVar1 << 7;
+  if (param_1 == 0xb5) {
+    if (cVar2 != '\x01') {
+      bVar5 = *param_3;
+      *param_3 = *param_3 & 0xf0 | 5;
+      T1 = 0;
+      _c_4 = bVar1;
+      bVar3 = ((bVar5 & 0xf | 0xb0 | param_5) & (byte)param_4) + param_6 | (byte)param_4;
+      bVar5 = DAT_SFR_9c;
+      _4_4 = false;
+      if (param_2 != 0) {
+        bVar3 = bVar3 / param_2;
+      }
+      bVar3 = bVar3 | (byte)param_3;
+      TCLK = 0;
+      do {
+        bVar4 = bVar3 & param_5 | (byte)param_4;
+        _a_6 = _a_6 ^ 1;
+        ES = _4_4;
+        bVar3 = DAT_INTMEM_24 - _4_4;
+        _4_4 = bVar4 < bVar3;
+        bVar3 = bVar4 - bVar3 & param_3[-1] | param_7;
+        DAT_INTMEM_24 = DAT_INTMEM_24 | bVar3;
+        nop();
+        bVar3 = bVar3 ^ bVar5 | (byte)(param_3 + -1) | (byte)param_4 | (byte)param_4 | (byte)param_4
+                | (byte)param_4 | (byte)param_4;
+        nop();
+        cVar2 = CT2;
+      } while (cVar2 == '\x01');
+      bVar5 = DAT_SFR_c5;
+      DAT_SFR_c5 = bVar5 ^ (bVar3 | (byte)param_4);
+      bVar3 = bVar3 | (byte)param_4 | param_5;
+      bVar5 = *param_4;
+      *param_4 = *param_4 & 0xf0 | bVar3 & 0xf;
+      return (bVar3 & 0xf0 | bVar5 & 0xf) ^ param_5;
+    }
+    BANK0_R0 = BANK0_R0 + '\x01';
+    _4_4 = bVar1;
+    bVar3 = FUN_CODE_0048((byte)param_4 | 0xb5 | (byte)param_4 | (byte)param_4 | (byte)param_4 |
+                          (byte)param_4);
+    _9_4 = bVar5 >> 7;
+    _4_4 = bVar5 >> 7;
+    _e_3 = CARRY1(bVar3 | (byte)param_4,(char)param_4 - ((char)bVar5 >> 7));
+    T1 = _e_3;
+  }
+  DAT_EXTMEM_e6c5 = DAT_EXTMEM_fff4;
+  return in_stack_000000ff;
+}
+

@@ -1,0 +1,21 @@
+=== 0x86ca ===
+
+void FUN_CODE_86ca(void)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  uVar1 = 0;
+  FUN_CODE_078d(3,1);
+  uVar2 = 0;
+  DAT_EXTMEM_e404 = uVar1;
+  FUN_CODE_078d(4,1);
+  uVar1 = 0;
+  DAT_EXTMEM_e405 = uVar2;
+  FUN_CODE_078d(5,1);
+  DAT_EXTMEM_e406 = uVar1;
+  FUN_CODE_078d(6,1,0);
+  return;
+}
+

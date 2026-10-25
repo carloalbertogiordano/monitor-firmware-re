@@ -1,0 +1,12 @@
+=== 0xd3dc ===
+
+void FUN_CODE_d3dc(void)
+
+{
+  DAT_EXTMEM_e377 = 0;
+  DAT_EXTMEM_e378 = 0;
+  DAT_EXTMEM_e379 = 0x29;
+  _0_3 = 0;
+  return;
+}
+

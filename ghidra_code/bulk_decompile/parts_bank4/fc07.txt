@@ -1,0 +1,10 @@
+=== 0xfc07 ===
+
+void FUN_CODE_fc07(void)
+
+{
+  FUN_CODE_70c8(0xc,0xf5,0xe4);
+  FUN_CODE_0f25(0xe);
+  return;
+}
+

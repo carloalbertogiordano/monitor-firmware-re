@@ -1,0 +1,9 @@
+=== 0x06f7 ===
+
+void FUN_CODE_06f7(void)
+
+{
+  FUN_CODE_041b(0xf572);
+  return;
+}
+

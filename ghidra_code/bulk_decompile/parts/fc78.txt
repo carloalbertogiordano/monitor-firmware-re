@@ -1,0 +1,10 @@
+=== 0xfc78 ===
+
+void FUN_CODE_fc78(void)
+
+{
+  DAT_EXTMEM_3a0b = DAT_EXTMEM_3a0b & 0x30;
+  DAT_EXTMEM_3a41 = 0;
+  return;
+}
+

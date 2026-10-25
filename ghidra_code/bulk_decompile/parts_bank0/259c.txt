@@ -1,0 +1,79 @@
+=== 0x259c ===
+
+byte FUN_CODE_259c(char param_1,byte param_2,undefined1 param_3,undefined1 param_4)
+
+{
+  short sVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  byte bVar9;
+  byte bVar10;
+  byte bVar11;
+  byte bVar12;
+  byte bVar13;
+  byte bVar14;
+  char cVar15;
+  
+  bVar11 = param_2 | 0x80;
+  bVar12 = param_1 << 1 | param_2 >> 7;
+  if (-1 < param_1) {
+    if (bVar12 == 0) {
+      return 0;
+    }
+    if (bVar12 != 0xff) {
+      bVar13 = ~(bVar12 + 0x81 & 0xfe) + 1 + bVar12;
+      FUN_CODE_1718((undefined1 *)0xe6d9,bVar13 >> 1,param_2 & 0x7f | bVar13 * -0x80,param_3,param_4
+                   );
+      bVar14 = bVar11;
+      bVar9 = bVar13 < 0x7f;
+      if (bVar13 == 0x7f) {
+        bVar14 = bVar11 >> 1;
+        bVar9 = bVar11;
+      }
+      bVar11 = -((char)(bVar9 << 7) >> 7);
+      bVar14 = bVar14 + bVar11 + ((CARRY1(bVar14,bVar11) << 7) >> 7);
+      bVar11 = (byte)((ushort)bVar14 * 0x91 >> 8);
+      sVar1 = (ushort)(~(bVar11 >> 1) - (-2 - ((char)(bVar11 << 7) >> 7))) * (ushort)bVar14;
+      bVar11 = (byte)sVar1 >> 7;
+      bVar13 = ((char)((ushort)sVar1 >> 8) << 1 | bVar11) + 0x8c >> 1 | 0x80;
+      cVar15 = '\x02';
+      bVar14 = 0x3f;
+      bVar11 = bVar11 << 7;
+      bVar9 = 0;
+      do {
+        bVar2 = bVar14;
+        bVar3 = bVar13;
+        bVar4 = bVar11;
+        bVar5 = bVar9;
+        bVar6 = bVar14;
+        bVar7 = bVar13;
+        bVar8 = bVar11;
+        bVar10 = bVar9;
+        FUN_CODE_19bd(-0x1927);
+        FUN_CODE_1c28(bVar2,bVar3,bVar4,bVar5,bVar6,bVar7,bVar8,bVar10);
+        FUN_CODE_1a2e(bVar14,bVar13,bVar11,bVar9,bVar6,bVar7,bVar8,bVar10);
+        bVar13 = bVar7 ^ 0x80;
+        if ((char)bVar13 < '\0') {
+          bVar6 = bVar6 - 1;
+        }
+        cVar15 = cVar15 + -1;
+        bVar14 = bVar6;
+        bVar11 = bVar8;
+        bVar9 = bVar10;
+      } while (cVar15 != '\0');
+      return bVar7 & 0x7f | ((bVar12 + 0x81 >> 1) - ((char)bVar13 >> 7)) * -0x80;
+    }
+    if ((param_2 & 0x7f) == 0) {
+      bVar11 = FUN_CODE_1d79();
+      return bVar11;
+    }
+  }
+  bVar11 = FUN_CODE_1d6f();
+  return bVar11;
+}
+

@@ -1,0 +1,15 @@
+=== 0x7f7a ===
+
+void FUN_CODE_7f7a(byte param_1,byte param_2,undefined1 param_3)
+
+{
+  undefined1 uVar1;
+  
+  *(byte *)(ushort)param_2 = param_1;
+  DAT_INTMEM_48 = DAT_INTMEM_48 | param_1;
+  uVar1 = EX1;
+  DAT_INTMEM_56 = param_3;
+  FUN_CODE_7c48(0xe9,DAT_INTMEM_47);
+  return;
+}
+

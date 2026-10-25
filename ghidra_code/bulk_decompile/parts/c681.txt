@@ -1,0 +1,9 @@
+=== 0xc681 ===
+
+void FUN_CODE_c681(void)
+
+{
+  FUN_CODE_127f(DAT_EXTMEM_e6b5,DAT_EXTMEM_e6b4,DAT_EXTMEM_e6b3);
+  return;
+}
+

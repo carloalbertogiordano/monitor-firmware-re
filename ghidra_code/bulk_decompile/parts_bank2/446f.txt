@@ -1,0 +1,12 @@
+=== 0x446f ===
+
+undefined1 FUN_CODE_446f(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e336 = param_1;
+  DAT_EXTMEM_e337 = 1;
+  DAT_EXTMEM_e338 = 0;
+  DAT_EXTMEM_e339 = 4;
+  return 0;
+}
+

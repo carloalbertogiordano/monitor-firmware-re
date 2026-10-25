@@ -1,0 +1,13 @@
+=== 0xaa8c ===
+
+undefined1 FUN_CODE_aa8c(void)
+
+{
+  undefined1 uVar1;
+  
+  DAT_EXTMEM_e412 = 7;
+  uVar1 = 0;
+  FUN_CODE_0823(0,6,0);
+  return uVar1;
+}
+

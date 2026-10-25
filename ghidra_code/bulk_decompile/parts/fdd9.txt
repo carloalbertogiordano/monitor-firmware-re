@@ -1,0 +1,14 @@
+=== 0xfdd9 ===
+
+void FUN_CODE_fdd9(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_0667();
+  if (-1 < in_PSW) {
+    return;
+  }
+  return;
+}
+

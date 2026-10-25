@@ -1,0 +1,8 @@
+=== 0xb684 ===
+
+undefined1 FUN_CODE_b684(void)
+
+{
+  return DAT_EXTMEM_e380;
+}
+

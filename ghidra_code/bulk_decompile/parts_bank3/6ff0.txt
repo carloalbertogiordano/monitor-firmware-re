@@ -1,0 +1,45 @@
+=== 0x6ff0 ===
+
+byte FUN_CODE_6ff0(byte param_1,byte *param_2,char param_3,char param_4)
+
+{
+  char cVar1;
+  
+  *param_2 = param_1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  do {
+    param_3 = param_3 + '\x01';
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    param_1 = param_1 + param_4 + '\x02';
+    param_4 = param_4 + '\x02';
+    BANK1_R0 = param_3;
+    cVar1 = F8_0;
+  } while (cVar1 == '\0');
+  return param_1 >> 1 | param_1 * -0x80;
+}
+

@@ -1,0 +1,8 @@
+=== 0xbf71 ===
+
+undefined1 FUN_CODE_bf71(void)
+
+{
+  return 0;
+}
+

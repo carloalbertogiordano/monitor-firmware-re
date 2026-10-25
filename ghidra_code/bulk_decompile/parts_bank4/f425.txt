@@ -1,0 +1,9 @@
+=== 0xf425 ===
+
+undefined1 FUN_CODE_f425(void)
+
+{
+  FUN_CODE_0e29();
+  return DAT_EXTMEM_e332;
+}
+

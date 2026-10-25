@@ -1,0 +1,16 @@
+=== 0x12e9 ===
+
+void FUN_CODE_12e9(byte param_1,short param_2)
+
+{
+  byte bVar1;
+  
+  bVar1 = SADEN;
+  SADEN = bVar1 | 0x3b;
+  _7_4 = 0;
+                    /* WARNING: Could not recover jumptable at 0x12f2. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)param_1))(DAT_INTMEM_3b);
+  return;
+}
+

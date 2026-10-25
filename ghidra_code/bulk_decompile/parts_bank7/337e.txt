@@ -1,0 +1,10 @@
+=== 0x337e ===
+
+void FUN_CODE_337e(char param_1,char param_2)
+
+{
+  FUN_CODE_35a1(param_1 + -1);
+  FUN_CODE_33ac(param_2 + -1);
+  return;
+}
+

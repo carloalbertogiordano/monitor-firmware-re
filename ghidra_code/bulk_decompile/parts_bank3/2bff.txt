@@ -1,0 +1,34 @@
+=== 0x2bff ===
+
+void FUN_CODE_2bff(byte param_1,short param_2,byte *param_3,char *param_4,byte param_5)
+
+{
+  byte bVar1;
+  char in_PSW;
+  
+  nop();
+  bVar1 = *param_3;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_4 = -0x12;
+  nop();
+  bVar1 = param_1 ^ bVar1 ^ param_5;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+                    /* WARNING: Could not recover jumptable at 0x2c1a. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)(bVar1 + (*param_4 - (in_PSW >> 7)))))(param_5,bVar1);
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0xe4de ===
+
+byte FUN_CODE_e4de(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_1298(0xffff);
+  return bVar1 ^ 0xfc;
+}
+

@@ -1,0 +1,124 @@
+=== 0xc81f ===
+
+void FUN_CODE_c81f(byte param_1,byte param_2)
+
+{
+  char cVar1;
+  byte bVar2;
+  undefined1 uVar3;
+  byte bVar4;
+  char cVar5;
+  char cVar6;
+  undefined1 *puVar7;
+  char *pcVar8;
+  short sVar9;
+  
+  DAT_EXTMEM_e337 = 0;
+  DAT_EXTMEM_e338 = 0;
+  DAT_EXTMEM_e339 = 0;
+  bVar2 = 0xe3;
+  bVar4 = 0;
+  DAT_EXTMEM_e32f = param_2;
+  DAT_EXTMEM_e330 = param_1;
+  FUN_CODE_be6f(0x3a,0x55,0x75);
+  FUN_CODE_bce9();
+  DAT_EXTMEM_e33f = param_2 + 1;
+  FUN_CODE_bce9();
+  FUN_CODE_be21();
+  FUN_CODE_152f('\0','\0','\'',0x10,bVar2,param_1,bVar4,param_2);
+  DAT_EXTMEM_e33e = param_2 + 1;
+  FUN_CODE_bcf1(0,0,0x27,0x10);
+  FUN_CODE_be21();
+  FUN_CODE_152f('\0','\0','\x03',0xe8,bVar2,param_1,bVar4,param_2);
+  DAT_EXTMEM_e33d = param_2 + 1;
+  FUN_CODE_bcf1(0,0,3,0xe8);
+  FUN_CODE_be21();
+  FUN_CODE_bdb7();
+  DAT_EXTMEM_e33c = param_2 + 1;
+  FUN_CODE_bcf1(0,0,0,100);
+  FUN_CODE_be21();
+  FUN_CODE_bdb9(10);
+  DAT_EXTMEM_e33b = param_2 + 1;
+  cVar1 = '\n';
+  FUN_CODE_bcf1(0,0,0);
+  DAT_EXTMEM_e33a = cVar1 + '\x01';
+  DAT_EXTMEM_e337 = 0;
+  do {
+    if (5 < DAT_EXTMEM_e337) {
+LAB_CODE_c8f1:
+      cVar6 = '\0';
+      cVar1 = FUN_CODE_15d7(DAT_EXTMEM_e331,DAT_EXTMEM_e332,DAT_EXTMEM_e333,DAT_EXTMEM_e334,0,0,0,0)
+      ;
+      if ((cVar1 == '\0') && (FUN_CODE_bee6(), -1 < cVar6)) {
+        DAT_EXTMEM_e337 = 0;
+      }
+      bVar2 = FUN_CODE_bee6();
+      if (cVar6 < '\0') {
+        DAT_EXTMEM_e337 = (bVar2 & 0x70) >> 4;
+        DAT_EXTMEM_e338 = DAT_EXTMEM_e337;
+      }
+      else {
+        DAT_EXTMEM_e338 = (DAT_EXTMEM_e335 & 0x70) >> 4;
+        if (DAT_EXTMEM_e338 < DAT_EXTMEM_e337) {
+          DAT_EXTMEM_e338 = DAT_EXTMEM_e337;
+        }
+      }
+      for (DAT_EXTMEM_e339 = 0; bVar2 = DAT_EXTMEM_e338, DAT_EXTMEM_e339 < DAT_EXTMEM_e338 + 1;
+          DAT_EXTMEM_e339 = DAT_EXTMEM_e339 + 1) {
+        cVar1 = (DAT_EXTMEM_e337 < DAT_EXTMEM_e338) << 7;
+        if (cVar1 < '\0') {
+          if (DAT_EXTMEM_e339 < DAT_EXTMEM_e338 - DAT_EXTMEM_e337) {
+            puVar7 = &DAT_EXTMEM_e339;
+            FUN_CODE_becd();
+            *puVar7 = 0;
+          }
+          else {
+            pcVar8 = &DAT_EXTMEM_e339;
+            bVar2 = DAT_EXTMEM_e339 - (DAT_EXTMEM_e338 - DAT_EXTMEM_e337);
+            cVar1 = DAT_EXTMEM_e337 - bVar2;
+            FUN_CODE_be8f(-(-(((DAT_EXTMEM_e337 < bVar2) << 7) >> 7) -
+                           ((((DAT_EXTMEM_e338 < DAT_EXTMEM_e337) << 7) >> 7) -
+                           (((DAT_EXTMEM_e339 < DAT_EXTMEM_e338 - DAT_EXTMEM_e337) << 7) >> 7))));
+            FUN_CODE_becd();
+            *pcVar8 = cVar1;
+          }
+        }
+        else {
+          bVar2 = DAT_EXTMEM_e339 - (cVar1 >> 7);
+          bVar4 = DAT_EXTMEM_e337 - bVar2;
+          puVar7 = (undefined1 *)
+                   CONCAT11(((((DAT_EXTMEM_e337 < bVar2) << 7) >> 7) - (((0xc5 < bVar4) << 7) >> 7))
+                            + -0x1d,bVar4 + 0x3a);
+          uVar3 = *puVar7;
+          FUN_CODE_becd();
+          *puVar7 = uVar3;
+        }
+      }
+      *(undefined1 *)CONCAT11(-0x1d - (((0xbc < DAT_EXTMEM_e338) << 7) >> 7),DAT_EXTMEM_e338 + 0x43)
+           = 0xff;
+      sVar9 = -0x1cd0;
+      bVar4 = DAT_EXTMEM_e330;
+      if ((char)(DAT_EXTMEM_e335 << 7) < '\0') {
+        bVar4 = DAT_EXTMEM_e330 - bVar2;
+      }
+      FUN_CODE_bd02(bVar4,DAT_EXTMEM_e32f);
+      *(undefined1 *)(sVar9 + 1) = 1;
+      *(undefined1 *)(sVar9 + 2) = 0xe3;
+      *(undefined1 *)(sVar9 + 3) = 0x42;
+      *(undefined1 *)(sVar9 + 4) = 0;
+      FUN_CODE_b224(DAT_EXTMEM_e336);
+      return;
+    }
+    cVar1 = (5 < DAT_EXTMEM_e337) << 7;
+    cVar5 = '\x05' - DAT_EXTMEM_e337;
+    cVar6 = (cVar1 < '\0') << 7;
+    FUN_CODE_be8f(cVar1 >> 7);
+    FUN_CODE_bee6();
+    if (-1 < cVar6 != (bool)cVar5) {
+      DAT_EXTMEM_e337 = 5 - DAT_EXTMEM_e337;
+      goto LAB_CODE_c8f1;
+    }
+    DAT_EXTMEM_e337 = DAT_EXTMEM_e337 + 1;
+  } while( true );
+}
+

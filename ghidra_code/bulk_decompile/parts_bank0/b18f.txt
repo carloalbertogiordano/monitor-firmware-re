@@ -1,0 +1,9 @@
+=== 0xb18f ===
+
+void FUN_CODE_b18f(void)
+
+{
+  DAT_INTMEM_32 = DAT_INTMEM_29 * '\f' - DAT_INTMEM_2a;
+  return;
+}
+

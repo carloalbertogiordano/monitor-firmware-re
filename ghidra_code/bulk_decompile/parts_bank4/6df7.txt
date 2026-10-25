@@ -1,0 +1,11 @@
+=== 0x6df7 ===
+
+void FUN_CODE_6df7(void)
+
+{
+  _0_2 = 1;
+  FUN_CODE_10ab(0,0,0,1,DAT_EXTMEM_e18e);
+  DAT_EXTMEM_e18e = 0;
+  return;
+}
+

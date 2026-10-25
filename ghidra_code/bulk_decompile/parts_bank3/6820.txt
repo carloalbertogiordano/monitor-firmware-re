@@ -1,0 +1,51 @@
+=== 0x6820 ===
+
+undefined1
+FUN_CODE_6820(undefined1 param_1,undefined1 param_2,undefined1 param_3,undefined1 param_4)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  TCON = param_1;
+  nop();
+  TCON = param_4;
+  nop();
+  TCON = param_1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  TCON = param_2;
+  nop();
+  BANK0_R0 = param_1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return param_3;
+}
+

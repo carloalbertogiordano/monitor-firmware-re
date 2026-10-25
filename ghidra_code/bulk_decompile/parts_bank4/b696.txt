@@ -1,0 +1,13 @@
+=== 0xb696 ===
+
+void FUN_CODE_b696(void)
+
+{
+  if (DAT_EXTMEM_e33d == '\0') {
+    FUN_CODE_9cd5(0x30,0xe4,1,0);
+    FUN_CODE_9cef(1,0xe3c0);
+    FUN_CODE_0bbf();
+  }
+  return;
+}
+

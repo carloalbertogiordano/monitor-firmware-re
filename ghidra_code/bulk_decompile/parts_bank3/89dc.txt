@@ -1,0 +1,8 @@
+=== 0x89dc ===
+
+undefined1 FUN_CODE_89dc(void)
+
+{
+  return DAT_EXTMEM_0009;
+}
+

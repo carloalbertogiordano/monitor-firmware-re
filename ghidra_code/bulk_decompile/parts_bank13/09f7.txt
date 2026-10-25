@@ -1,0 +1,12 @@
+=== 0x09f7 ===
+
+char FUN_CODE_09f7(char param_1,char param_2)
+
+{
+  byte bVar1;
+  
+  bVar1 = TF1;
+  TF1 = bVar1 ^ 1;
+  return param_1 + param_2;
+}
+

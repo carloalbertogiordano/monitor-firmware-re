@@ -1,0 +1,11 @@
+=== 0xfa3e ===
+
+void FUN_CODE_fa3e(void)
+
+{
+  DAT_EXTMEM_e33a = DAT_EXTMEM_e335;
+  DAT_EXTMEM_e33b = DAT_EXTMEM_e336;
+  FUN_CODE_fc1a();
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xaccf ===
+
+undefined1 FUN_CODE_accf(void)
+
+{
+  return 0;
+}
+

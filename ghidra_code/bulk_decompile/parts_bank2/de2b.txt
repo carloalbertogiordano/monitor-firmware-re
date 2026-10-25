@@ -1,0 +1,12 @@
+=== 0xde2b ===
+
+char FUN_CODE_de2b(char param_1,byte param_2,byte param_3,char param_4,char param_5,char param_6)
+
+{
+  char in_PSW;
+  
+  return param_1 + (param_4 -
+                   ((CARRY1(param_2,param_5 - ((CARRY1(param_3,param_6 - (in_PSW >> 7)) << 7) >> 7))
+                    << 7) >> 7));
+}
+

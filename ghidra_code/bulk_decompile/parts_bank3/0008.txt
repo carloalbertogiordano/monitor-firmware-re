@@ -1,0 +1,9 @@
+=== 0x0008 ===
+
+void FUN_CODE_0008(undefined1 param_1)
+
+{
+  FUN_CODE_0046(param_1);
+  return;
+}
+

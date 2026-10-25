@@ -1,0 +1,8 @@
+=== 0x4744 ===
+
+undefined1 FUN_CODE_4744(void)
+
+{
+  return 1;
+}
+

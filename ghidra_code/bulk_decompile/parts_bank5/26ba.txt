@@ -1,0 +1,10 @@
+=== 0x26ba ===
+
+char FUN_CODE_26ba(void)
+
+{
+  char in_PSW;
+  
+  return -0x1f - (in_PSW >> 7);
+}
+

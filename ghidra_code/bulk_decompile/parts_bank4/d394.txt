@@ -1,0 +1,8 @@
+=== 0xd394 ===
+
+char FUN_CODE_d394(void)
+
+{
+  return DAT_EXTMEM_e336 + (((DAT_EXTMEM_e337 < DAT_EXTMEM_e338) << 7) >> 7);
+}
+

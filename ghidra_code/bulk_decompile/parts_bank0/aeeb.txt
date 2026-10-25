@@ -1,0 +1,10 @@
+=== 0xaeeb ===
+
+void FUN_CODE_aeeb(byte param_1,short param_2,undefined1 param_3,undefined1 param_4)
+
+{
+  FUN_CODE_1298(CONCAT11(param_3,param_4),*(byte *)(param_2 + 2),*(char *)(param_2 + 1),
+                *(char *)(param_2 + (ushort)param_1));
+  return;
+}
+

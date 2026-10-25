@@ -1,0 +1,8 @@
+=== 0xfdd1 ===
+
+byte FUN_CODE_fdd1(void)
+
+{
+  return DAT_EXTMEM_e6e2 >> 2 | DAT_EXTMEM_e6e2 << 7;
+}
+

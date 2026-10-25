@@ -1,0 +1,9 @@
+=== 0xc13d ===
+
+void FUN_CODE_c13d(void)
+
+{
+  DAT_EXTMEM_e373 = 0x60;
+  return;
+}
+

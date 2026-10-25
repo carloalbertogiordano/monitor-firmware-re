@@ -1,0 +1,10 @@
+=== 0x703b ===
+
+void FUN_CODE_703b(undefined1 param_1,short param_2)
+
+{
+  FUN_CODE_fce2(*(undefined1 *)(param_2 + 2),*(undefined1 *)(param_2 + 1),param_1);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe347);
+}
+

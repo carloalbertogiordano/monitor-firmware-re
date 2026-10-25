@@ -1,0 +1,8 @@
+=== 0x700b ===
+
+undefined1 FUN_CODE_700b(void)
+
+{
+  return 0xff;
+}
+

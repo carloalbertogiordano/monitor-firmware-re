@@ -1,0 +1,9 @@
+=== 0x7752 ===
+
+void FUN_CODE_7752(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe340);
+}
+

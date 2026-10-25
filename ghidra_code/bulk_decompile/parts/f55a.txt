@@ -1,0 +1,9 @@
+=== 0xf55a ===
+
+undefined1 FUN_CODE_f55a(void)
+
+{
+  DAT_EXTMEM_e38a = 7;
+  return 0;
+}
+

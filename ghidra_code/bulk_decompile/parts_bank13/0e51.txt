@@ -1,0 +1,122 @@
+=== 0x0e51 ===
+
+/* WARNING: Instruction at (CODE,0x0e79) overlaps instruction at (CODE,0x0e78)
+    */
+/* WARNING: Removing unreachable block (CODE,0x0e3c) */
+/* WARNING: Removing unreachable block (CODE,0x0e43) */
+/* WARNING: Removing unreachable block (CODE,0x0e53) */
+/* WARNING: Removing unreachable block (CODE,0x0e49) */
+
+void FUN_CODE_0e51(char param_1,byte *param_2,byte param_3,byte *param_4,byte *param_5,byte param_6,
+                  byte param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  char cVar5;
+  undefined1 *puVar6;
+  byte in_PSW;
+  byte bVar7;
+  
+  puVar6 = (undefined1 *)0x0;
+  do {
+    param_8 = param_8 + 1;
+    cVar5 = FIFLG_5;
+    if (cVar5 == '\0') {
+      FUN_CODE_0e23((char *)param_4,param_7);
+      return;
+    }
+    FIFLG_5 = 0;
+    while( true ) {
+      if (-1 < (char)in_PSW) {
+        bVar1 = param_10 + 1;
+        bVar7 = HIFLG_7;
+        bVar7 = (in_PSW >> 7 & ~bVar7) << 7;
+        bVar2 = param_11 + 1;
+        if ((param_3 >> 6 & 1) == 1) {
+          puVar6['\x01'] = 0x7b;
+          puVar6['\x02'] = 0xe;
+          FUN_CODE_0f22((short)param_2,param_4,(char)param_5,bVar1,bVar2);
+          puVar6['\x01'] = 0x7e;
+          puVar6['\x02'] = 0xe;
+          FUN_CODE_612a((short)param_2,param_4);
+        }
+        else {
+          param_2 = &LAB_CODE_fd10;
+          puVar6['\x01'] = 0x6f;
+          puVar6['\x02'] = 0xe;
+          FUN_CODE_0804(param_1,&LAB_CODE_fd10,param_3,param_4,param_5,param_6,param_7,param_8,
+                        param_9,bVar1,bVar2);
+          cVar5 = P0_1;
+          if (cVar5 == '\0') {
+            puVar6['\x01'] = 0x74;
+            puVar6['\x02'] = 0xe;
+            bVar3 = func_0x0801();
+            puVar6['\x01'] = 0x77;
+            puVar6['\x02'] = 0xe;
+            FUN_CODE_0871(bVar3 >> 1 | bVar7 & 0x80,param_2,param_3,param_4,param_5,param_6,param_7,
+                          param_8,param_9,bVar1,bVar2);
+            puVar6['\x01'] = 0x7a;
+            puVar6['\x02'] = 0xe;
+            func_0x08f1(param_7 - 1);
+            return;
+          }
+          P0_1 = 0;
+        }
+        puVar6['\x01'] = 0x81;
+        puVar6['\x02'] = 0xe;
+        bVar4 = FUN_CODE_e132((short)param_2,param_4);
+        bVar3 = bVar4 << 7;
+        puVar6['\x01'] = 0x84;
+        puVar6['\x02'] = 0xe;
+        bVar4 = FUN_CODE_0a39(bVar4 >> 1 | bVar7 & 0x80,(short)param_2,(char *)param_4,
+                              (char *)param_5,param_8,param_9);
+        bVar7 = bVar4 << 7;
+        puVar6['\x01'] = 0x87;
+        puVar6['\x02'] = 0xe;
+        cVar5 = FUN_CODE_0e40(bVar4 >> 1 | bVar3 & 0x80,param_2,param_3,param_4,param_5,param_6,
+                              param_7,param_8,param_9,bVar1,bVar2);
+        *(byte *)ZEXT12(param_5) = DAT_CODE_0a89;
+                    /* WARNING: Could not recover jumptable at 0x0a57. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+        (*(code *)(param_2 +
+                  ZEXT12(param_4 + (*(char *)((ushort)DAT_CODE_0a89 + 0xa56) -
+                                   ((CARRY1(*(byte *)((ushort)((cVar5 - 1U >> 1 | bVar7 & 0x80) ^
+                                                              0x36) + 0xa4c) ^ param_8,
+                                            *param_5 - ((char)((cVar5 - 1U) * -0x80) >> 7)) << 7) >>
+                                   7)))))(0x37);
+        return;
+      }
+      param_7 = param_7 + 1;
+      cVar5 = WR;
+      if (cVar5 != '\x01') break;
+      if (param_1 == '\0') {
+        *param_2 = 0;
+        bVar7 = DAT_INTMEM_23 - ((char)((in_PSW >> 7 & _1_0) << 7) >> 7);
+        bVar1 = (*param_2 | param_10) + bVar7 & *param_4;
+        cVar5 = FIE1;
+        bVar7 = cVar5 - ((CARRY1(*param_2 | param_10,bVar7) << 7) >> 7);
+        bVar2 = bVar1 + bVar7 & param_11;
+        bVar7 = *param_4 - ((CARRY1(bVar1,bVar7) << 7) >> 7);
+        cVar5 = bVar2 + bVar7;
+        if (((cVar5 * '\x02' | CARRY1(bVar2,bVar7)) ^ *param_5) + (*param_4 - (cVar5 >> 7)) != '\0')
+        {
+          BANK0_R0 = BANK0_R0 + '\x01';
+          FUN_CODE_0e1a((short)param_2,param_4);
+          return;
+        }
+        DAT_INTMEM_79 = DAT_INTMEM_79 | 0x37;
+        return;
+      }
+      param_9 = param_9 + 2;
+      EPCON = *puVar6;
+      puVar6 = puVar6 + -1;
+      param_10 = param_10 + 1;
+    }
+    bVar7 = PT2;
+    in_PSW = (in_PSW >> 7 | bVar7 ^ 1) << 7;
+  } while( true );
+}
+

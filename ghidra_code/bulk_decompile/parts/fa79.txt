@@ -1,0 +1,10 @@
+=== 0xfa79 ===
+
+byte FUN_CODE_fa79(byte *param_1,undefined1 param_2)
+
+{
+  FUN_CODE_f5ae();
+  FUN_CODE_a72c(param_2);
+  return *param_1 >> 7;
+}
+

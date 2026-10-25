@@ -1,0 +1,10 @@
+=== 0xe40e ===
+
+void FUN_CODE_e40e(void)
+
+{
+  FUN_CODE_086b(0x18,2,0xcd);
+  FUN_CODE_b3b4();
+  return;
+}
+

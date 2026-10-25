@@ -1,0 +1,29 @@
+=== 0x03ca ===
+
+char FUN_CODE_03ca(char param_1)
+
+{
+  char cVar1;
+  
+  if ((_3_7 != '\0') && (cVar1 = P1_7, cVar1 != '\x01')) {
+    P1_7 = 1;
+    _3_7 = '\0';
+  }
+  if ((_3_7 != '\0') && (cVar1 = P1_7, cVar1 != '\0')) {
+    param_1 = DAT_INTMEM_50 + -1;
+    if (DAT_INTMEM_50 != '\0') {
+      FUN_CODE_093d();
+      do {
+        DAT_INTMEM_49 = DAT_INTMEM_54;
+        do {
+          DAT_INTMEM_49 = DAT_INTMEM_49 + -1;
+        } while (DAT_INTMEM_49 != '\0');
+        DAT_INTMEM_50 = DAT_INTMEM_50 + -1;
+      } while (DAT_INTMEM_50 != '\0');
+      param_1 = FUN_CODE_093d();
+    }
+    P1_7 = 0;
+  }
+  return param_1;
+}
+

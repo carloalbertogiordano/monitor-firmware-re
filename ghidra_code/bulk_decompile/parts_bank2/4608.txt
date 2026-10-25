@@ -1,0 +1,10 @@
+=== 0x4608 ===
+
+undefined1 FUN_CODE_4608(void)
+
+{
+  DAT_EXTMEM_e335 = 0;
+  DAT_EXTMEM_e336 = 0x32;
+  return 0;
+}
+

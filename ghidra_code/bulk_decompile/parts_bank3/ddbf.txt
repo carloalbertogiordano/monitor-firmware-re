@@ -1,0 +1,9 @@
+=== 0xddbf ===
+
+undefined1 FUN_CODE_ddbf(void)
+
+{
+  DAT_EXTMEM_e38a = 7;
+  return 0;
+}
+

@@ -1,0 +1,10 @@
+=== 0xfdbe ===
+
+void FUN_CODE_fdbe(void)
+
+{
+  DAT_EXTMEM_100d = 3;
+  DAT_EXTMEM_100e = 3;
+  return;
+}
+

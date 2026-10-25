@@ -1,0 +1,10 @@
+=== 0x52ba ===
+
+void FUN_CODE_52ba(byte param_1,undefined1 param_2)
+
+{
+  nop();
+  FUN_CODE_22e0(param_2,param_1 >> 1 | param_1 << 7);
+  return;
+}
+

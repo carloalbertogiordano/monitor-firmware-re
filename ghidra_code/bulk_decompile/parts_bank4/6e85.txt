@@ -1,0 +1,10 @@
+=== 0x6e85 ===
+
+void FUN_CODE_6e85(void)
+
+{
+  FUN_CODE_1259(0);
+  DAT_EXTMEM_e348 = 1;
+  return;
+}
+

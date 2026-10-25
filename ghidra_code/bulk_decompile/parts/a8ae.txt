@@ -1,0 +1,14 @@
+=== 0xa8ae ===
+
+void FUN_CODE_a8ae(void)
+
+{
+  DAT_EXTMEM_e3e4 = 0x3a;
+  DAT_EXTMEM_e3e5 = 0x40;
+  _0_5 = 0;
+  bus_write_variant_b_ff60_61(0x40,0x3a);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

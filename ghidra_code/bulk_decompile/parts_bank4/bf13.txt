@@ -1,0 +1,9 @@
+=== 0xbf13 ===
+
+void FUN_CODE_bf13(void)
+
+{
+  DAT_EXTMEM_08a0 = DAT_EXTMEM_08a0 & 0xbf | 0x40;
+  return;
+}
+

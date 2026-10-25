@@ -1,0 +1,10 @@
+=== 0xd5f3 ===
+
+void FUN_CODE_d5f3(undefined1 *param_1)
+
+{
+  *param_1 = 0;
+  param_1[1] = 0;
+  return;
+}
+

@@ -1,0 +1,22 @@
+=== 0xf1e3 ===
+
+void FUN_CODE_f1e3(void)
+
+{
+  byte bVar1;
+  byte *pbVar2;
+  
+  _0_0 = 0;
+  FUN_CODE_ed70();
+  FUN_CODE_bf2e(0x6d4);
+  DAT_EXTMEM_06c2 = DAT_EXTMEM_06c2 & 0xfe;
+  pbVar2 = &DAT_EXTMEM_06c3;
+  FUN_CODE_bf59();
+  bVar1 = FUN_CODE_bf00(*pbVar2 & 0xfc);
+  *pbVar2 = bVar1 | 0x7e;
+  _0_0 = 1;
+  FUN_CODE_ed70();
+  FUN_CODE_fb55(3);
+  return;
+}
+

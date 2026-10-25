@@ -1,0 +1,10 @@
+=== 0xb9b6 ===
+
+char FUN_CODE_b9b6(char param_1,byte param_2)
+
+{
+  return DAT_EXTMEM_e3d4 -
+         ((DAT_EXTMEM_e3dc + (param_1 - ((CARRY1(DAT_EXTMEM_e3dd,param_2) << 7) >> 7))) -
+         (((DAT_EXTMEM_e3d5 < DAT_EXTMEM_e3dd + param_2) << 7) >> 7));
+}
+

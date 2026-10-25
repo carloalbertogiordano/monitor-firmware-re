@@ -1,0 +1,8 @@
+=== 0x756a ===
+
+byte FUN_CODE_756a(void)
+
+{
+  return DAT_EXTMEM_e4ce & 0xef;
+}
+

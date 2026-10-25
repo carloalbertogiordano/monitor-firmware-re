@@ -1,0 +1,10 @@
+=== 0xfebf ===
+
+void FUN_CODE_febf(void)
+
+{
+  FUN_CODE_e8d6();
+  DAT_EXTMEM_b7c4 = DAT_EXTMEM_e38a;
+  return;
+}
+

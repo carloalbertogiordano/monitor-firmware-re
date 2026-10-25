@@ -1,0 +1,8 @@
+=== 0x8c21 ===
+
+undefined1 FUN_CODE_8c21(void)
+
+{
+  return 0;
+}
+

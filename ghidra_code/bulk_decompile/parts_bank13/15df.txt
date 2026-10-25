@@ -1,0 +1,40 @@
+=== 0x15df ===
+
+byte FUN_CODE_15df(byte param_1,short param_2,undefined1 *param_3,char param_4,char param_5,
+                  char param_6,char param_7)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  char cVar3;
+  byte bVar4;
+  
+  _0_0 = 0;
+  if (_8_2 == '\x01') {
+    return param_1;
+  }
+  cVar3 = OV;
+  if (cVar3 == '\x01') {
+    bVar4 = param_1 + 0xb2;
+    if (param_1 < 0x4e) {
+      UD = 0;
+      bVar1 = CCAPM0;
+      CCAPM0 = bVar1 ^ (byte)(param_3 + param_5 + param_4);
+      *(undefined1 **)(ushort)bVar4 = param_3 + param_5 + param_4 + param_5;
+      HIFLG_5 = 0;
+      return param_6 + param_7;
+    }
+    DAT_INTMEM_59 = DAT_INTMEM_59 | bVar4;
+    uVar2 = RXSTAT;
+    cVar3 = RXSTAT;
+    DAT_INTMEM_26 = DAT_INTMEM_26 ^ bVar4 + cVar3;
+    *param_3 = 0x80;
+    nop();
+    nop();
+    bVar4 = FUN_CODE_0070(0,param_2 + 1);
+    return bVar4;
+  }
+  bVar4 = FUN_CODE_1162();
+  return bVar4;
+}
+

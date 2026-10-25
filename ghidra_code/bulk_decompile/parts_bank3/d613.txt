@@ -1,0 +1,10 @@
+=== 0xd613 ===
+
+void FUN_CODE_d613(void)
+
+{
+  DAT_EXTMEM_e407 = 0x88;
+  DAT_EXTMEM_e408 = 0;
+  return;
+}
+

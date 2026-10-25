@@ -1,0 +1,75 @@
+=== 0x06d1 ===
+
+/* WARNING: Instruction at (CODE,0x0727) overlaps instruction at (CODE,0x0726)
+    */
+
+byte FUN_CODE_06d1(char param_1,byte *param_2,byte *param_3,char *param_4,char param_5,char param_6,
+                  byte param_7,byte param_8,byte param_9,byte param_10)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  byte bVar3;
+  char cVar4;
+  byte bVar5;
+  char in_PSW;
+  
+  bVar3 = bINTMEM2e;
+  if (_4_3 != '\0') {
+    _8_0 = 0;
+    bVar2 = ((char)(param_3 + (param_1 - (in_PSW >> 7))) * '\x02' |
+            (byte)(param_3 + (param_1 - (in_PSW >> 7))) >> 7) + 0x42 | (byte)param_3;
+    bVar3 = bVar2 - 0x3e;
+    if (0x3d < bVar2) {
+      bINTMEM57 = bINTMEM57 | bVar3;
+      uVar1 = IPL1;
+      cVar4 = IPL1;
+      return (bVar3 + cVar4 & param_10) + *param_3;
+    }
+    if (*param_3 != 0x2b) {
+      bVar3 = FUN_CODE_03ca(bVar3,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,
+                            param_10);
+      return bVar3;
+    }
+    if (param_9 != 0x2c) {
+      _8_0 = 0;
+      return bVar3;
+    }
+  }
+  bVar2 = *param_3;
+  *param_3 = bVar3;
+  uVar1 = RCLK;
+  bVar3 = CARRY1(bVar2 + param_7,param_8) << 7;
+  bVar2 = FUN_CODE_d52d((short)param_2,param_3);
+  CCON_5 = bVar3 >> 7;
+  bVar3 = CARRY1(bVar2,param_9) << 7;
+  bVar2 = FUN_CODE_e52e((short)param_2,param_3);
+  HIFLG_5 = bVar3 >> 7;
+  bVar3 = CARRY1(bVar2,param_10) << 7;
+  bVar2 = FUN_CODE_f52f((short)param_2,param_3);
+  F8_4 = bVar3 >> 7;
+  if (_0_3 == '\0') {
+    bVar2 = bVar2 >> 1 | bVar2 << 7;
+  }
+  else {
+    cVar4 = P0_3;
+    if (cVar4 == '\0') {
+      bVar5 = bVar2 & 0x7f | bVar3 & 0x80;
+      bVar3 = 0x33 - ((char)bVar2 >> 7);
+      bVar2 = *(byte *)((ushort)(bVar5 + bVar3) + 0x737);
+      bVar3 = param_7 - ((CARRY1(bVar5,bVar3) << 7) >> 7);
+      bVar5 = bVar2 + bVar3;
+      bVar3 = 3 - ((CARRY1(bVar2,bVar3) << 7) >> 7);
+                    /* WARNING: Could not recover jumptable at 0x0742. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+      bVar3 = (*(code *)(param_2 +
+                        ((*(byte *)((ushort)(bVar5 + bVar3 | 0x34) + 0x73d) | param_7) +
+                         (BANK0_R3 - ((CARRY1(bVar5,bVar3) << 7) >> 7)) & 0x35)))();
+      return bVar3;
+    }
+  }
+  cVar4 = func_0x0103(bVar2);
+  bVar3 = FUN_CODE_0183(cVar4 + -1,(short)param_2,param_8);
+  return bVar3;
+}
+

@@ -1,0 +1,8 @@
+=== 0xd64a ===
+
+undefined1 FUN_CODE_d64a(byte param_1)
+
+{
+  return *(undefined1 *)(ushort)param_1;
+}
+

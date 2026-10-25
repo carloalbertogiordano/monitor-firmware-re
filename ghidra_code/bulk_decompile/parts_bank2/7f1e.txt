@@ -1,0 +1,8 @@
+=== 0x7f1e ===
+
+undefined1 FUN_CODE_7f1e(short param_1)
+
+{
+  return *(undefined1 *)(param_1 + 3);
+}
+

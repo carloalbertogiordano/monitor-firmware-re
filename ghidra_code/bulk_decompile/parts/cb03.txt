@@ -1,0 +1,12 @@
+=== 0xcb03 ===
+
+void FUN_CODE_cb03(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_1298();
+  DAT_EXTMEM_e3af = bVar1 & 0x1f;
+  return;
+}
+

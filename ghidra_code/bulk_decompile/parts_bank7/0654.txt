@@ -1,0 +1,43 @@
+=== 0x0654 ===
+
+/* WARNING: Instruction at (CODE,0x0665) overlaps instruction at (CODE,0x0664)
+    */
+
+void FUN_CODE_0654(char param_1,short param_2,byte param_3,char param_4,byte param_5,char param_6)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte in_PSW;
+  
+  bVar1 = param_1 + 1;
+  if (_a_3 == '\0') {
+    *(byte *)(ushort)param_5 = bVar1;
+    cVar2 = func_0x0031();
+    bVar1 = cVar2 << 1 | in_PSW >> 7;
+  }
+  else {
+    cVar2 = P1_3;
+    if (cVar2 == '\0') {
+      BANK3_R0 = BANK3_R0 ^ 0x31;
+    }
+    else {
+      cVar2 = FIFLG_3;
+      if (cVar2 == '\0') {
+        return;
+      }
+      if ((param_3 >> 3 & 1) == 0) {
+                    /* WARNING: Could not recover jumptable at 0x0674. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+        (*(code *)(param_2 + (ushort)(bVar1 + DAT_INTMEM_32)))();
+        return;
+      }
+    }
+  }
+  cVar2 = FUN_CODE_0133(bVar1);
+  func_0x0163(cVar2 + -1);
+  FUN_CODE_01a3(param_4 + -1);
+  FUN_CODE_01d2(param_6 + -1);
+  return;
+}
+

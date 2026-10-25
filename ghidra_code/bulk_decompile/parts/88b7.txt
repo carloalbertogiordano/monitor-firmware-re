@@ -1,0 +1,9 @@
+=== 0x88b7 ===
+
+undefined1 FUN_CODE_88b7(void)
+
+{
+  DAT_EXTMEM_02c9 = 0x29;
+  return DAT_EXTMEM_02ca;
+}
+

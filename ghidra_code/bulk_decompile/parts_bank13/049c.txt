@@ -1,0 +1,52 @@
+=== 0x049c ===
+
+/* WARNING: Instruction at (CODE,0x02de) overlaps instruction at (CODE,0x02dd)
+    */
+
+void FUN_CODE_049c(byte *param_1,byte param_2,byte *param_3,char param_4,byte param_5,char param_6,
+                  char param_7,byte param_8,char param_9,char param_10)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  char cVar6;
+  byte bVar7;
+  byte in_PSW;
+  
+  bVar1 = param_7 - 1;
+  bVar2 = param_9 + 1;
+  bVar7 = HIFLG_6;
+  bVar7 = (in_PSW >> 7 | bVar7 ^ 1) << 7;
+  bVar3 = param_10 + 1;
+  if ((param_2 >> 6 & 1) == 1) {
+    bVar4 = func_0x0025();
+  }
+  else {
+    param_1 = &LAB_CODE_fd10;
+    bVar4 = FUN_CODE_0005(*param_3,-0x2f0);
+    cVar6 = P1_1;
+    if (cVar6 != '\0') {
+      P1_1 = 0;
+      goto LAB_CODE_0043_1;
+    }
+  }
+  thunk_FUN_CODE_0091(bVar4,(short)param_1);
+  BANK2_R1 = BANK2_R1 + -1;
+  func_0x041d();
+  FUN_CODE_1125(bVar2,bVar3);
+  bVar5 = FUN_CODE_912d((short)param_1,param_3);
+  bVar4 = bVar5 >> 1 | bVar7 & 0x80;
+  bVar7 = bVar5 << 7;
+LAB_CODE_0043_1:
+  bVar4 = FUN_CODE_0035(bVar4,(short)param_1,bVar2);
+  cVar6 = FUN_CODE_043c(bVar4 >> 1 | bVar7 & 0x80,param_1,param_2,param_3,param_4,param_5,param_6,
+                        bVar1,param_8,bVar2,bVar3);
+  nop();
+  nop();
+  FUN_CODE_0070(cVar6 + -1,(short)(param_1 + 1));
+  return;
+}
+

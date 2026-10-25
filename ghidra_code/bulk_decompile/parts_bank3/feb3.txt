@@ -1,0 +1,11 @@
+=== 0xfeb3 ===
+
+void FUN_CODE_feb3(void)
+
+{
+  if ((DAT_EXTMEM_b601 & 8) == 0) {
+    return;
+  }
+  return;
+}
+

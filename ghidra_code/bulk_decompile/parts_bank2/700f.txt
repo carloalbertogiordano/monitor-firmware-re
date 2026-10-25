@@ -1,0 +1,8 @@
+=== 0x700f ===
+
+void FUN_CODE_700f(void)
+
+{
+  return;
+}
+

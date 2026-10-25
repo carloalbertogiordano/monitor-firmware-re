@@ -1,0 +1,12 @@
+=== 0xe93c ===
+
+char FUN_CODE_e93c(void)
+
+{
+  char cVar1;
+  
+  cVar1 = cEXTMEMe309;
+  cEXTMEMe309 = cEXTMEMe309 + '\x01';
+  return cVar1 + -0x2d;
+}
+

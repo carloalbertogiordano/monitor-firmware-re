@@ -1,0 +1,27 @@
+=== 0x7882 ===
+
+char FUN_CODE_7882(byte param_1,char param_2,byte param_3,char param_4,byte param_5,char param_6)
+
+{
+  char cVar1;
+  byte in_PSW;
+  
+  param_1 = param_1 | param_6 - 1U;
+  param_3 = (param_1 >> 1 | in_PSW & 0x80 | param_5) & param_3;
+  if ((char)(param_1 << 7) < '\0') {
+    DAT_INTMEM_59 = param_3 >> 1 | param_3 << 7;
+    nop();
+    bEXTMEMffff = DAT_INTMEM_59;
+    return param_2 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_2 + '\x01';
+  cVar1 = FUN_CODE_0008(param_4 + '\x01');
+  return cVar1;
+}
+

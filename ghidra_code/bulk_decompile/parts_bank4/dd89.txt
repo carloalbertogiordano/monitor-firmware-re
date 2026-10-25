@@ -1,0 +1,35 @@
+=== 0xdd89 ===
+
+void FUN_CODE_dd89(void)
+
+{
+  char cVar1;
+  
+  if (_0_1 == '\0') {
+    cVar1 = FUN_CODE_8d30();
+    if (cVar1 != '\0') {
+      DAT_EXTMEM_b639 = DAT_EXTMEM_b639 & 0x3f;
+      cVar1 = FUN_CODE_8e87();
+      if (cVar1 != '\0') {
+        FUN_CODE_8d82();
+        FUN_CODE_8d51(0xb674);
+        FUN_CODE_f8ac(0,3);
+      }
+      return;
+    }
+    DAT_EXTMEM_e373 = 0;
+  }
+  else {
+    cVar1 = FUN_CODE_8d30();
+    if (cVar1 != '\0') {
+      FUN_CODE_8d89();
+      DAT_EXTMEM_b639 = DAT_EXTMEM_b639 & 0x3f | 0xc0;
+      return;
+    }
+    FUN_CODE_8dee();
+    DAT_EXTMEM_e373 = 6;
+  }
+  FUN_CODE_0775(0xf9,0x31,2,0xc9);
+  return;
+}
+

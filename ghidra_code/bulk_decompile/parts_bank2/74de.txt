@@ -1,0 +1,8 @@
+=== 0x74de ===
+
+undefined1 FUN_CODE_74de(void)
+
+{
+  return 0;
+}
+

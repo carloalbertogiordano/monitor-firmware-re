@@ -1,0 +1,116 @@
+=== 0x3380 ===
+
+void FUN_CODE_3380(byte param_1,short param_2,char *param_3,byte param_4,char param_5,char param_6)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  char in_PSW;
+  char cVar3;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *(byte *)ZEXT12(param_3) = param_1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_INTMEM_66 = (param_1 ^ param_4) + 2;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  cVar3 = CARRY1(param_4,0x84 - (in_PSW >> 7)) << 7;
+  nop();
+  nop();
+  nop();
+  FUN_CODE_3088(param_6 + '\x01');
+  nop();
+  cVar1 = P0_0;
+  if (cVar1 != '\0') {
+    P0_0 = 0;
+  }
+  uVar2 = FUN_CODE_3088();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+                    /* WARNING: Could not recover jumptable at 0x3088. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(param_2 + (ushort)(byte)(param_5 + (*param_3 - (cVar3 >> 7)))))(uVar2);
+  return;
+}
+

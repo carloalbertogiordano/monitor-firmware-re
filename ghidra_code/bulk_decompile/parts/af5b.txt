@@ -1,0 +1,23 @@
+=== 0xaf5b ===
+
+void FUN_CODE_af5b(void)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  
+  cVar2 = '\a';
+  bVar3 = DAT_EXTMEM_e651;
+  bVar4 = DAT_EXTMEM_e652;
+  do {
+    bVar1 = bVar4 >> 1;
+    bVar4 = bVar1 | bVar3 << 7;
+    cVar2 = cVar2 + -1;
+    bVar3 = bVar3 >> 1;
+  } while (cVar2 != '\0');
+  FUN_CODE_afb9(bVar1 & 7);
+  return;
+}
+

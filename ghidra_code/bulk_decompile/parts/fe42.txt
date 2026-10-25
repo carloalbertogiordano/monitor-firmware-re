@@ -1,0 +1,9 @@
+=== 0xfe42 ===
+
+void FUN_CODE_fe42(void)
+
+{
+  DAT_EXTMEM_e58b = 0;
+  return;
+}
+

@@ -1,0 +1,45 @@
+=== 0x6889 ===
+
+void FUN_CODE_6889(undefined1 param_1,undefined1 param_2)
+
+{
+  TCON = param_2;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = 8;
+  nop();
+  BANK1_R0 = 8;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_EXTMEM_0008 = param_1;
+  return;
+}
+

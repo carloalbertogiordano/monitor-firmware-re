@@ -1,0 +1,14 @@
+=== 0x8662 ===
+
+void FUN_CODE_8662(undefined1 param_1,undefined1 *param_2,undefined1 param_3)
+
+{
+  *param_2 = param_1;
+  DAT_EXTMEM_1dd2 = param_3;
+  DAT_EXTMEM_1daa = 0;
+  DAT_EXTMEM_1dba = 0;
+  DAT_EXTMEM_1dca = 0;
+  DAT_EXTMEM_1dda = 0;
+  return;
+}
+

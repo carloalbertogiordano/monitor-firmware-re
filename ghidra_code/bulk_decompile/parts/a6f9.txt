@@ -1,0 +1,12 @@
+=== 0xa6f9 ===
+
+void FUN_CODE_a6f9(void)
+
+{
+  FUN_CODE_06cd();
+  FUN_CODE_c4c8(1);
+  FUN_CODE_d156(DAT_EXTMEM_e32e);
+  FUN_CODE_e5a9(DAT_EXTMEM_e32e);
+  return;
+}
+

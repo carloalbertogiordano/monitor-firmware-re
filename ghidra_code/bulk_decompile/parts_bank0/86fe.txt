@@ -1,0 +1,10 @@
+=== 0x86fe ===
+
+void FUN_CODE_86fe(void)
+
+{
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e60a;
+  FUN_CODE_0793(6,2,0);
+  return;
+}
+

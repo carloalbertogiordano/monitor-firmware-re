@@ -1,0 +1,14 @@
+=== 0x9200 ===
+
+void FUN_CODE_9200(short param_1,undefined1 param_2)
+
+{
+  byte in_PSW;
+  
+  DAT_EXTMEM_e677 = *(byte *)(param_1 + 1) >> 1 | in_PSW & 0x80;
+  DAT_EXTMEM_e676 = param_2;
+  FUN_CODE_a796();
+  FUN_CODE_92e0();
+  return;
+}
+

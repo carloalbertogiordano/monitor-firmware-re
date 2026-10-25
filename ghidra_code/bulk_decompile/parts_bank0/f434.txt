@@ -1,0 +1,10 @@
+=== 0xf434 ===
+
+void FUN_CODE_f434(undefined1 param_1,undefined1 *param_2)
+
+{
+  *param_2 = param_1;
+  DAT_EXTMEM_fff2 = DAT_EXTMEM_fff2 | 0x3f;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x479e ===
+
+undefined1 FUN_CODE_479e(void)
+
+{
+  return 0;
+}
+

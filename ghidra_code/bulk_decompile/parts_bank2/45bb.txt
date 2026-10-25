@@ -1,0 +1,11 @@
+=== 0x45bb ===
+
+void FUN_CODE_45bb(void)
+
+{
+  DAT_EXTMEM_e36b = 1;
+  DAT_EXTMEM_e36c = 9;
+  DAT_EXTMEM_e36d = 0;
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0xbce9 ===
+
+void FUN_CODE_bce9(void)
+
+{
+  FUN_CODE_152f('\0','\x01',-0x7a,0xa0,DAT_EXTMEM_e331,DAT_EXTMEM_e332,DAT_EXTMEM_e333,
+                DAT_EXTMEM_e334);
+  return;
+}
+

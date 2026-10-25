@@ -1,0 +1,28 @@
+=== 0x4ff8 ===
+
+undefined1 FUN_CODE_4ff8(byte param_1,byte *param_2,undefined1 param_3)
+
+{
+  undefined1 in_stack_000000fe;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_3;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_2 = ~param_1;
+  return in_stack_000000fe;
+}
+

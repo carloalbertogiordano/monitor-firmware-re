@@ -1,0 +1,23 @@
+=== 0xf190 ===
+
+void FUN_CODE_f190(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  undefined1 *puVar3;
+  
+  puVar3 = &DAT_EXTMEM_e3bb;
+  uVar1 = FUN_CODE_6f86(param_1);
+  *puVar3 = uVar1;
+  cVar2 = FUN_CODE_7025();
+  FUN_CODE_6f76(cVar2 + -0x10,0xe3bb);
+  FUN_CODE_6ecf();
+  FUN_CODE_0bd1();
+  cVar2 = FUN_CODE_7025();
+  FUN_CODE_6f76(cVar2 + -0xf,0xe3be);
+  FUN_CODE_6ecf();
+  FUN_CODE_0bd1();
+  return;
+}
+

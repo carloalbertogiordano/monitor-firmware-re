@@ -1,0 +1,8 @@
+=== 0x4880 ===
+
+undefined1 FUN_CODE_4880(void)
+
+{
+  return DAT_EXTMEM_e33f;
+}
+

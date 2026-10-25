@@ -1,0 +1,8 @@
+=== 0xd014 ===
+
+undefined1 FUN_CODE_d014(void)
+
+{
+  return 0;
+}
+

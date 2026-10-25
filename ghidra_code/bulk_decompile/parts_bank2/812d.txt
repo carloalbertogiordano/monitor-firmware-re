@@ -1,0 +1,9 @@
+=== 0x812d ===
+
+void FUN_CODE_812d(byte param_1)
+
+{
+  DAT_EXTMEM_01d0 = DAT_EXTMEM_01d0 & 0x8f | param_1;
+  return;
+}
+

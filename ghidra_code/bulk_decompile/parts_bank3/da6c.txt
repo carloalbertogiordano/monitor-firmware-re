@@ -1,0 +1,13 @@
+=== 0xda6c ===
+
+void FUN_CODE_da6c(undefined1 param_1,undefined1 *param_2,char param_3)
+
+{
+  *param_2 = param_1;
+  param_3 = param_3 + '\x01';
+  FUN_CODE_febf(param_3);
+  DAT_EXTMEM_e38a = 0;
+  FUN_CODE_febf(param_3 + '\x01');
+  return;
+}
+

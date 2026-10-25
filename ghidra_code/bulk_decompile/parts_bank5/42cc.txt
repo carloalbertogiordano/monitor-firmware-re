@@ -1,0 +1,23 @@
+=== 0x42cc ===
+
+void FUN_CODE_42cc(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_4674();
+  if (in_PSW < '\0') {
+    FUN_CODE_4634();
+    _7_5 = '\x01';
+    _0_0 = 0;
+    FUN_CODE_4594();
+  }
+  if (_7_5 != '\0') {
+    FUN_CODE_0769();
+  }
+  _7_5 = 0;
+  _0_0 = 1;
+  FUN_CODE_4594();
+  return;
+}
+

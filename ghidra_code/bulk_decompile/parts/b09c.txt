@@ -1,0 +1,11 @@
+=== 0xb09c ===
+
+byte FUN_CODE_b09c(undefined1 param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_127f(param_1);
+  return bVar1 & 0xf8;
+}
+

@@ -1,0 +1,8 @@
+=== 0xa786 ===
+
+byte FUN_CODE_a786(byte *param_1)
+
+{
+  return *param_1 >> 6;
+}
+

@@ -1,0 +1,9 @@
+=== 0x2d35 ===
+
+undefined1 FUN_CODE_2d35(void)
+
+{
+  FUN_CODE_076f(0,2,0,0x2a);
+  return DAT_INTMEM_2a;
+}
+

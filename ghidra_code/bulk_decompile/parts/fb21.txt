@@ -1,0 +1,10 @@
+=== 0xfb21 ===
+
+void FUN_CODE_fb21(char param_1)
+
+{
+  DAT_EXTMEM_e38a = 3;
+  FUN_CODE_0907(param_1 + '\x03',1,0);
+  return;
+}
+

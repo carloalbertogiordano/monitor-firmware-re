@@ -1,0 +1,8 @@
+=== 0xb489 ===
+
+undefined1 FUN_CODE_b489(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,13 @@
+=== 0xfd77 ===
+
+byte FUN_CODE_fd77(undefined1 param_1)
+
+{
+  byte bVar1;
+  byte in_PSW;
+  
+  FUN_CODE_f5ae();
+  bVar1 = FUN_CODE_a776(param_1);
+  return bVar1 >> 1 | in_PSW & 0x80;
+}
+

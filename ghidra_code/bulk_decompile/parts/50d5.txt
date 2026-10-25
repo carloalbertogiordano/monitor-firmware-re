@@ -1,0 +1,64 @@
+=== 0x50d5 ===
+
+void FUN_CODE_50d5(void)
+
+{
+  switch(DAT_EXTMEM_e3e2) {
+  case 0:
+    DAT_EXTMEM_e3e4 = 0x24;
+    break;
+  case 1:
+    DAT_EXTMEM_e3e4 = 0x28;
+    break;
+  case 2:
+    goto LAB_CODE_5123;
+  case 3:
+LAB_CODE_5123:
+    DAT_EXTMEM_e3e4 = 0x2c;
+    break;
+  case 4:
+    goto LAB_CODE_512a;
+  case 5:
+    goto LAB_CODE_512a;
+  case 6:
+    goto LAB_CODE_512a;
+  case 7:
+LAB_CODE_512a:
+    DAT_EXTMEM_e3e4 = 0x30;
+    break;
+  case 8:
+    goto LAB_CODE_5131;
+  case 9:
+    goto LAB_CODE_5131;
+  case 10:
+    goto LAB_CODE_5131;
+  case 0xb:
+LAB_CODE_5131:
+    DAT_EXTMEM_e3e4 = 0x10;
+    break;
+  case 0xc:
+    goto LAB_CODE_5138;
+  case 0xd:
+LAB_CODE_5138:
+    DAT_EXTMEM_e3e4 = 0xc;
+    break;
+  case 0xe:
+    DAT_EXTMEM_e3e4 = 8;
+    break;
+  case 0xf:
+    DAT_EXTMEM_e3e4 = 4;
+    break;
+  default:
+    DAT_EXTMEM_e3e4 = 0;
+    DAT_EXTMEM_e3e5 = 0;
+    goto LAB_CODE_5159;
+  }
+  DAT_EXTMEM_e3e5 = 0x40;
+LAB_CODE_5159:
+  _0_5 = 0;
+  bus_write_variant_a_ff64_65(DAT_EXTMEM_e3e5,DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x7ed4 ===
+
+byte FUN_CODE_7ed4(byte *param_1)
+
+{
+  return param_1[1] ^ *param_1;
+}
+

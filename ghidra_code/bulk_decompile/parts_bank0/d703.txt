@@ -1,0 +1,8 @@
+=== 0xd703 ===
+
+undefined1 FUN_CODE_d703(void)
+
+{
+  return DAT_EXTMEM_e4f4;
+}
+

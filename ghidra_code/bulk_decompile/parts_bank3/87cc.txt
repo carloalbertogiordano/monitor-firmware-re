@@ -1,0 +1,10 @@
+=== 0x87cc ===
+
+void FUN_CODE_87cc(undefined1 param_1,short param_2)
+
+{
+  *(undefined1 *)(param_2 + 1) = param_1;
+  DAT_EXTMEM_0bd7 = DAT_EXTMEM_0bd7 & 0xbf | 0x40;
+  return;
+}
+

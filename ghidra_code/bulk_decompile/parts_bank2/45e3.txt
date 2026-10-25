@@ -1,0 +1,8 @@
+=== 0x45e3 ===
+
+byte FUN_CODE_45e3(byte param_1,byte param_2)
+
+{
+  return param_1 & param_2;
+}
+

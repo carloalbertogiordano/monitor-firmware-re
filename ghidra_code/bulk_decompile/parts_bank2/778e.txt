@@ -1,0 +1,61 @@
+=== 0x778e ===
+
+void FUN_CODE_778e(undefined1 param_1,char param_2,byte param_3,byte param_4,undefined1 param_5,
+                  char param_6)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  char cVar3;
+  byte bVar4;
+  byte bVar5;
+  
+  DAT_EXTMEM_e339 = 1;
+  DAT_EXTMEM_e33a = 1;
+  FUN_CODE_9805();
+  FUN_CODE_085f();
+  if (param_6 == -0x80) {
+    return;
+  }
+  FUN_CODE_978d();
+  FUN_CODE_082f(1);
+  FUN_CODE_082f(1);
+  uVar1 = 1;
+  FUN_CODE_082f();
+  FUN_CODE_f73a();
+  cVar2 = '\b';
+  DAT_INTMEM_29 = param_5;
+  DAT_INTMEM_2a = uVar1;
+  DAT_EXTMEM_e339 = param_5;
+  DAT_EXTMEM_e33a = uVar1;
+  FUN_CODE_0a63();
+  DAT_INTMEM_2b = FUN_CODE_96a2();
+  cVar3 = '\b';
+  DAT_INTMEM_2c = cVar2;
+  FUN_CODE_0a69();
+  if (cVar3 == '\b') {
+    DAT_INTMEM_2b = FUN_CODE_96a2();
+    DAT_INTMEM_2c = cVar3;
+  }
+  DAT_EXTMEM_0044 = DAT_EXTMEM_0044 & 0x7f;
+  bVar4 = 8;
+  FUN_CODE_0a63();
+  DAT_INTMEM_29 = FUN_CODE_96a2();
+  bVar5 = 8;
+  DAT_INTMEM_2a = bVar4;
+  FUN_CODE_0a69();
+  if (bVar5 == 8) {
+    DAT_INTMEM_29 = FUN_CODE_96a2();
+    DAT_INTMEM_2a = bVar5;
+  }
+  FUN_CODE_9777(DAT_INTMEM_2b,DAT_INTMEM_2c);
+  FUN_CODE_97b4();
+  DAT_INTMEM_30 = param_4 + DAT_INTMEM_2a;
+  bVar4 = DAT_INTMEM_29 - ((CARRY1(param_4,DAT_INTMEM_2a) << 7) >> 7);
+  DAT_INTMEM_2f = param_3 + bVar4;
+  DAT_INTMEM_2e = param_2 - ((CARRY1(param_3,bVar4) << 7) >> 7);
+  DAT_INTMEM_2d = param_1;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(0x5a,DAT_EXTMEM_e52b,DAT_EXTMEM_e52c);
+}
+

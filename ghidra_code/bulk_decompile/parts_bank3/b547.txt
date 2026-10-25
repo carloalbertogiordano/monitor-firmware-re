@@ -1,0 +1,9 @@
+=== 0xb547 ===
+
+void FUN_CODE_b547(void)
+
+{
+  FUN_CODE_1298(0x3d);
+  return;
+}
+

@@ -1,0 +1,18 @@
+=== 0xf795 ===
+
+void FUN_CODE_f795(undefined1 param_1)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_fc67(param_1,0xe33a);
+  if (cVar1 == '\0') {
+    cVar1 = FUN_CODE_fc73();
+    if ((cVar1 != '\x04') || (2 < DAT_EXTMEM_e33a - 2U)) {
+      FUN_CODE_082f(0x10);
+    }
+    FUN_CODE_082f(0x10);
+  }
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0x4394 ===
+
+char FUN_CODE_4394(void)
+
+{
+  char in_PSW;
+  
+  return DAT_INTMEM_35 -
+         (DAT_INTMEM_33 - (((DAT_INTMEM_36 < (byte)(DAT_INTMEM_34 - (in_PSW >> 7))) << 7) >> 7));
+}
+

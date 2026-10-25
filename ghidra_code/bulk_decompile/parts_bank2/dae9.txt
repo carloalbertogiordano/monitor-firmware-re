@@ -1,0 +1,10 @@
+=== 0xdae9 ===
+
+void FUN_CODE_dae9(void)
+
+{
+  FUN_CODE_14a4(0,0,DAT_EXTMEM_e515,DAT_EXTMEM_e516);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,0,10);
+}
+

@@ -1,0 +1,12 @@
+=== 0x44a5 ===
+
+undefined1 FUN_CODE_44a5(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e336 = param_1;
+  DAT_EXTMEM_e337 = 2;
+  DAT_EXTMEM_e338 = 3;
+  DAT_EXTMEM_e339 = 4;
+  return 0;
+}
+

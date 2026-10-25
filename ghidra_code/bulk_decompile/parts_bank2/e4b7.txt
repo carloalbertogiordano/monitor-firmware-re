@@ -1,0 +1,10 @@
+=== 0xe4b7 ===
+
+void FUN_CODE_e4b7(void)
+
+{
+  DAT_EXTMEM_e347 = 0;
+  DAT_EXTMEM_e348 = DAT_EXTMEM_e330;
+  return;
+}
+

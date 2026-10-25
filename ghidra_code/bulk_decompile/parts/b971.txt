@@ -1,0 +1,8 @@
+=== 0xb971 ===
+
+undefined1 FUN_CODE_b971(void)
+
+{
+  return 0;
+}
+

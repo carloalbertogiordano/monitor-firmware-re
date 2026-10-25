@@ -1,0 +1,40 @@
+=== 0x4167 ===
+
+void FUN_CODE_4167(void)
+
+{
+  switch(DAT_EXTMEM_e3e2) {
+  case 0:
+    FUN_CODE_8c24();
+    break;
+  case 1:
+    FUN_CODE_8cb6();
+    break;
+  case 2:
+    goto LAB_CODE_4199;
+  case 3:
+LAB_CODE_4199:
+    FUN_CODE_8c2b();
+    break;
+  case 4:
+    goto LAB_CODE_419e;
+  case 5:
+LAB_CODE_419e:
+    FUN_CODE_8ce0();
+    break;
+  case 6:
+    FUN_CODE_8d20();
+    break;
+  case 7:
+    FUN_CODE_8cfc();
+    break;
+  default:
+    set_e3e4_to_const2();
+  }
+  _0_5 = 0;
+  FUN_CODE_f106(DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

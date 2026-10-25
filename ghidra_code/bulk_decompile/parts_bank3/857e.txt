@@ -1,0 +1,34 @@
+=== 0x857e ===
+
+char FUN_CODE_857e(char param_1,char *param_2,char param_3,byte param_4,char param_5)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte in_PSW;
+  
+  if (_6_4 == '\0') {
+    func_0x826b();
+    thunk_FUN_CODE_851c(param_3 + -1);
+    cVar2 = FUN_CODE_87b5(param_2 + -1);
+    return cVar2;
+  }
+  *param_2 = DAT_INTMEM_3c;
+  bVar1 = RXCON;
+  RXCON = bVar1 & 0x3f;
+  func_0x84cd(*(undefined1 *)
+               (ZEXT12(param_2 + (((param_1 << 1 | in_PSW >> 7) ^ param_4) - (param_1 >> 7))) +
+               0x8585));
+  bVar1 = FUN_CODE_80f6(param_5 + -1);
+  cVar2 = INT0;
+  if (cVar2 != '\x01') {
+    bVar1 = (bVar1 << 1 | bVar1 >> 7) + *param_2;
+    DAT_INTMEM_7b = DAT_INTMEM_7b | bVar1;
+    return bVar1 + param_3;
+  }
+  nop();
+  *param_2 = *param_2 + '\x01';
+  cVar2 = FUN_CODE_8070();
+  return cVar2;
+}
+

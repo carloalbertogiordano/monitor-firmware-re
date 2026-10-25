@@ -1,0 +1,8 @@
+=== 0xe42a ===
+
+char FUN_CODE_e42a(void)
+
+{
+  return DAT_EXTMEM_e199 + (((DAT_EXTMEM_e19a < 0x5b) << 7) >> 7);
+}
+

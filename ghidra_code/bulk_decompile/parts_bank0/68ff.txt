@@ -1,0 +1,17 @@
+=== 0x68ff ===
+
+char * FUN_CODE_68ff(char param_1,char param_2,char *param_3,byte param_4,char param_5,char param_6)
+
+{
+  byte bVar1;
+  
+  bVar1 = param_1 + param_5 + param_4;
+  nop();
+  *param_3 = *param_3 + -1;
+  nop();
+  return param_3 + ((bVar1 + param_4) * '\x02' | CARRY1(bVar1,param_4)) + param_2 +
+         (param_6 -
+         ((CARRY1((byte)(param_3 + ((bVar1 + param_4) * '\x02' | CARRY1(bVar1,param_4)) + param_2),
+                  param_5 - 2U) << 7) >> 7)) + (param_5 - 2U) + (char)param_3;
+}
+

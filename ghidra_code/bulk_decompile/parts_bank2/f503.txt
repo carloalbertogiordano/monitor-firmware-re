@@ -1,0 +1,10 @@
+=== 0xf503 ===
+
+void FUN_CODE_f503(undefined1 param_1,char *param_2,undefined1 param_3)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(CONCAT11(param_3,param_1),DAT_EXTMEM_e546,DAT_EXTMEM_e547,BANK0_R2,BANK0_R3,
+                *param_2 + (-1 - (((param_2[1] != '\0') << 7) >> 7)),param_2[1] + -1);
+}
+

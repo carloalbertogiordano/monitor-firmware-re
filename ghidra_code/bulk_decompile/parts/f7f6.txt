@@ -1,0 +1,11 @@
+=== 0xf7f6 ===
+
+void FUN_CODE_f7f6(void)
+
+{
+  bEXTMEM0001 = bEXTMEM0001 & 0xfe | 1;
+  FUN_CODE_074b(0,10);
+  bEXTMEM0001 = bEXTMEM0001 & 0xfe;
+  return;
+}
+

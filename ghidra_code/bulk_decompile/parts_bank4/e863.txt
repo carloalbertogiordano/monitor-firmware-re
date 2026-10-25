@@ -1,0 +1,34 @@
+=== 0xe863 ===
+
+void FUN_CODE_e863(void)
+
+{
+  byte in_PSW;
+  
+  if (_0_1 == '\0') {
+    _0_2 = 0;
+    FUN_CODE_fea7();
+    if (-1 < (char)in_PSW) {
+      in_PSW = 0;
+    }
+    _0_2 = in_PSW >> 7 | _0_2 & 1;
+    FUN_CODE_e894();
+    _0_3 = 0;
+    FUN_CODE_f97c();
+    _0_3 = 0;
+    FUN_CODE_f065();
+  }
+  else {
+    FUN_CODE_fea7();
+    if (-1 < (char)in_PSW) {
+      _0_3 = 1;
+      FUN_CODE_f065();
+      FUN_CODE_e894();
+      _0_3 = 1;
+      FUN_CODE_f97c();
+      return;
+    }
+  }
+  return;
+}
+

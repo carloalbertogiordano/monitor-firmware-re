@@ -1,0 +1,16 @@
+=== 0xfa66 ===
+
+void FUN_CODE_fa66(void)
+
+{
+  char cVar1;
+  
+  FUN_CODE_a762(DAT_EXTMEM_e5d9);
+  cVar1 = FUN_CODE_a85e();
+  if (cVar1 == '\x04') {
+    FUN_CODE_f7c6();
+    return;
+  }
+  return;
+}
+

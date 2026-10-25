@@ -1,0 +1,8 @@
+=== 0xaeb8 ===
+
+char FUN_CODE_aeb8(void)
+
+{
+  return DAT_EXTMEM_e342 + '\x01';
+}
+

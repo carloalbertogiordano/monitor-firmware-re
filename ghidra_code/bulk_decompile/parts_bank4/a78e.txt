@@ -1,0 +1,8 @@
+=== 0xa78e ===
+
+byte FUN_CODE_a78e(void)
+
+{
+  return DAT_EXTMEM_e4ca >> 4;
+}
+

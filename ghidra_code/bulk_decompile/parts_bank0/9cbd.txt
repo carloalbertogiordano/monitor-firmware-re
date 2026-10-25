@@ -1,0 +1,8 @@
+=== 0x9cbd ===
+
+byte FUN_CODE_9cbd(void)
+
+{
+  return DAT_EXTMEM_e6c9 >> 6;
+}
+

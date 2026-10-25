@@ -1,0 +1,9 @@
+=== 0xfc07 ===
+
+void FUN_CODE_fc07(void)
+
+{
+  DAT_EXTMEM_ffee = DAT_EXTMEM_ffee | 0x40;
+  return;
+}
+

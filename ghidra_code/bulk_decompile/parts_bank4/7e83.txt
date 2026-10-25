@@ -1,0 +1,10 @@
+=== 0x7e83 ===
+
+void FUN_CODE_7e83(void)
+
+{
+  DAT_EXTMEM_ffb0 = DAT_EXTMEM_ffb0 & 0xf;
+  DAT_EXTMEM_ffae = 1;
+  return;
+}
+

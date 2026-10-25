@@ -1,0 +1,24 @@
+=== 0x69ff ===
+
+/* WARNING: Instruction at (CODE,0x6a06) overlaps instruction at (CODE,0x6a05)
+    */
+
+void FUN_CODE_69ff(byte param_1,byte param_2,char param_3,char param_4,byte param_5)
+
+{
+  byte bVar1;
+  
+  if (param_3 != '\x01') {
+    param_5 = param_1;
+  }
+  if (param_4 != '\x01') {
+    param_5 = param_1 ^ param_2;
+  }
+  bVar1 = 0;
+  if (param_5 != 1) {
+    bVar1 = param_1;
+  }
+  FUN_CODE_6fff(param_1 ^ param_2,bVar1);
+  return;
+}
+

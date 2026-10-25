@@ -1,0 +1,38 @@
+=== 0xb477 ===
+
+void FUN_CODE_b477(byte param_1)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  byte bVar4;
+  
+  DAT_EXTMEM_e342 = 0;
+  DAT_EXTMEM_e343 = 0;
+  DAT_EXTMEM_e341 = param_1;
+  FUN_CODE_cb15(0x44,0xd9,0x53,0xe3,0);
+  FUN_CODE_cb15(0x49,0xde,0x53,0xe3,0);
+  for (DAT_EXTMEM_e342 = 0; DAT_EXTMEM_e342 < 4; DAT_EXTMEM_e342 = DAT_EXTMEM_e342 + 1) {
+    bVar2 = *(byte *)CONCAT11(-0x1d - (((0xbb < DAT_EXTMEM_e342) << 7) >> 7),DAT_EXTMEM_e342 + 0x44)
+    ;
+    if (bVar2 < DAT_EXTMEM_e341 + 1) {
+      bVar4 = DAT_EXTMEM_e341;
+      cVar3 = FUN_CODE_caf7(bVar2 - (DAT_EXTMEM_e341 + 1),0xe342);
+      if ((bVar4 < cVar3 + 1U) << 7 < '\0') break;
+    }
+  }
+  bVar2 = *(byte *)CONCAT11(-0x1d - (((0xbb < DAT_EXTMEM_e342) << 7) >> 7),DAT_EXTMEM_e342 + 0x44);
+  bVar4 = *(byte *)CONCAT11(-0x1d - (((0xb6 < DAT_EXTMEM_e342) << 7) >> 7),DAT_EXTMEM_e342 + 0x49);
+  bVar1 = *(byte *)CONCAT11(-0x1d - (((0xb5 < DAT_EXTMEM_e342) << 7) >> 7),DAT_EXTMEM_e342 + 0x4a);
+  cVar3 = bVar1 - bVar4;
+  FUN_CODE_132c(((DAT_EXTMEM_e341 < bVar2) << 7) >> 7,DAT_EXTMEM_e341 - bVar2,
+                ((bVar1 < bVar4) << 7) >> 7);
+  bVar4 = FUN_CODE_caf7(0xe342);
+  FUN_CODE_133e(((bVar4 < bVar2) << 7) >> 7,bVar4 - bVar2);
+  DAT_EXTMEM_e343 =
+       *(char *)CONCAT11(-0x1d - (((0xb6 < DAT_EXTMEM_e342) << 7) >> 7),DAT_EXTMEM_e342 + 0x49) +
+       cVar3;
+  return;
+}
+

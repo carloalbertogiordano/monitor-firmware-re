@@ -1,0 +1,8 @@
+=== 0xfd4a ===
+
+byte FUN_CODE_fd4a(void)
+
+{
+  return DAT_EXTMEM_e4d3 >> 7 | (DAT_EXTMEM_e4d3 >> 5) << 7;
+}
+

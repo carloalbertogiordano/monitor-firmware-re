@@ -1,0 +1,8 @@
+=== 0xb0aa ===
+
+byte FUN_CODE_b0aa(void)
+
+{
+  return DAT_EXTMEM_e5a6 >> 3 & 3;
+}
+

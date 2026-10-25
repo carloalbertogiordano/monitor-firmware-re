@@ -1,0 +1,17 @@
+=== 0x8032 ===
+
+char FUN_CODE_8032(byte param_1,char param_2,char param_3,char param_4,char param_5,char param_6,
+                  byte param_7,byte param_8)
+
+{
+  char in_PSW;
+  
+  return param_6 - (param_2 -
+                   (((param_7 <
+                     (byte)(param_3 -
+                           (((param_8 <
+                             (byte)(param_4 -
+                                   (((param_1 < (byte)(param_5 - (in_PSW >> 7))) << 7) >> 7))) << 7)
+                           >> 7))) << 7) >> 7));
+}
+

@@ -1,0 +1,11 @@
+=== 0xfb75 ===
+
+undefined1 FUN_CODE_fb75(void)
+
+{
+  FUN_CODE_775f();
+  FUN_CODE_75d0(0x2a);
+  FUN_CODE_076f(0xe,0,0x2a);
+  return DAT_INTMEM_2b;
+}
+

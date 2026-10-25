@@ -1,0 +1,12 @@
+=== 0xf9be ===
+
+void FUN_CODE_f9be(void)
+
+{
+  if (DAT_EXTMEM_e629 == '\x03') {
+    DAT_EXTMEM_e4e0 = DAT_EXTMEM_e4e0 | 3;
+    FUN_CODE_d44e();
+  }
+  return;
+}
+

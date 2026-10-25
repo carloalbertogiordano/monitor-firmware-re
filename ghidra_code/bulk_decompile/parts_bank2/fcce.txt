@@ -1,0 +1,13 @@
+=== 0xfcce ===
+
+void FUN_CODE_fcce(void)
+
+{
+  if (_0_3 != '\0') {
+    FUN_CODE_082f(8);
+    FUN_CODE_082f(8);
+  }
+  FUN_CODE_c525(0x3045);
+  return;
+}
+

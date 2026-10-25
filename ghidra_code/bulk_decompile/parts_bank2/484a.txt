@@ -1,0 +1,8 @@
+=== 0x484a ===
+
+char FUN_CODE_484a(void)
+
+{
+  return DAT_EXTMEM_e32e * '$';
+}
+

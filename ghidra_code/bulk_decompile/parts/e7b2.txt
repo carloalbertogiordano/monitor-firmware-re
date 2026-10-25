@@ -1,0 +1,26 @@
+=== 0xe7b2 ===
+
+char FUN_CODE_e7b2(char param_1,byte param_2)
+
+{
+  byte bVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e33b = param_2;
+  DAT_EXTMEM_e33c = 0;
+  DAT_EXTMEM_e33d = 0;
+  if (param_2 == 0) {
+    bVar1 = DAT_EXTMEM_e549;
+    FUN_CODE_e6d9(DAT_EXTMEM_e548,DAT_EXTMEM_e549);
+    cVar2 = FUN_CODE_a495();
+    return cVar2 + (param_1 - ((CARRY1(bVar1,param_2) << 7) >> 7));
+  }
+  if (param_2 == 1) {
+    FUN_CODE_e6d9(DAT_EXTMEM_e548,DAT_EXTMEM_e549);
+    FUN_CODE_a495();
+    cVar2 = FUN_CODE_a48d();
+    return cVar2;
+  }
+  return DAT_EXTMEM_e54a;
+}
+

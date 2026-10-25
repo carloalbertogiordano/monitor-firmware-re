@@ -1,0 +1,8 @@
+=== 0x96e3 ===
+
+undefined1 FUN_CODE_96e3(void)
+
+{
+  return 0;
+}
+

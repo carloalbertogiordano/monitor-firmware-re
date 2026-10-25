@@ -1,0 +1,9 @@
+=== 0xd2de ===
+
+void FUN_CODE_d2de(void)
+
+{
+  DAT_EXTMEM_e33b = DAT_EXTMEM_e33b + '\x01';
+  return;
+}
+

@@ -1,0 +1,13 @@
+=== 0x6efd ===
+
+undefined1 FUN_CODE_6efd(byte param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = (byte)((ushort)param_1 * 2);
+  return *(undefined1 *)
+          CONCAT11((char)((ushort)param_1 * 2 >> 8) + (-0x1a - (((7 < bVar1) << 7) >> 7)),bVar1 - 8)
+  ;
+}
+

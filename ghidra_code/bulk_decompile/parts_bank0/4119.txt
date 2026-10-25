@@ -1,0 +1,30 @@
+=== 0x4119 ===
+
+void FUN_CODE_4119(byte param_1,byte *param_2,byte *param_3,char param_4,byte param_5,byte param_6,
+                  char param_7)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte in_PSW;
+  
+  bVar4 = DAT_SFR_ff;
+  DAT_SFR_ff = bVar4 & 0x5d;
+  bVar4 = in_PSW & 0xdd;
+  bVar1 = *param_2;
+  bVar3 = param_1 | bVar1;
+  while( true ) {
+    param_2 = param_2 + -1;
+    bVar2 = bVar3 | *param_2 | *param_2;
+    bVar3 = *param_3 - ((char)bVar4 >> 7);
+    bVar4 = CARRY1(bVar2,bVar3) << 7;
+    if (!CARRY1(bVar2,bVar3)) break;
+    bVar3 = bVar2 + bVar3 | DAT_INTMEM_37;
+  }
+  FUN_CODE_4240(bVar2 + bVar3 + (param_5 - ((char)bVar4 >> 7)),param_2,param_3,param_4,param_5,
+                param_6,param_7,param_1 | bVar1);
+  return;
+}
+

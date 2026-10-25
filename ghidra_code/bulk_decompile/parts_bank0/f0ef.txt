@@ -1,0 +1,9 @@
+=== 0xf0ef ===
+
+char FUN_CODE_f0ef(char param_1)
+
+{
+  FUN_CODE_f6af();
+  return param_1 * '\x04';
+}
+

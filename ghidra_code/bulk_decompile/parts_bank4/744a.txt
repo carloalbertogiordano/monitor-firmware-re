@@ -1,0 +1,9 @@
+=== 0x744a ===
+
+void FUN_CODE_744a(void)
+
+{
+  DAT_EXTMEM_e4cb = DAT_EXTMEM_e4cb & 0xf0 | DAT_EXTMEM_e18f & 0xf;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x8e08 ===
+
+void FUN_CODE_8e08(void)
+
+{
+  return;
+}
+

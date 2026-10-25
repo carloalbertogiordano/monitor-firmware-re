@@ -1,0 +1,10 @@
+=== 0x7687 ===
+
+void FUN_CODE_7687(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e535 = *param_1;
+  DAT_EXTMEM_e536 = param_1[1];
+  return;
+}
+

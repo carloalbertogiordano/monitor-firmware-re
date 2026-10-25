@@ -1,0 +1,87 @@
+=== 0xb71c ===
+
+void FUN_CODE_b71c(void)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte in_PSW;
+  byte *pbVar4;
+  
+  DAT_EXTMEM_e32e = 0;
+  pbVar4 = &DAT_EXTMEM_fe20;
+  bVar1 = FUN_CODE_a817(DAT_EXTMEM_fe20 == '\0');
+  *pbVar4 = bVar1 | 0x10;
+  DAT_EXTMEM_e32e = 0;
+  do {
+    pbVar4 = &DAT_EXTMEM_e32e;
+    bVar1 = DAT_EXTMEM_e32e;
+    FUN_CODE_a7af();
+    if (-1 < (char)in_PSW) {
+      return;
+    }
+    FUN_CODE_a72c();
+    *pbVar4 = *pbVar4 & 0xbf;
+    FUN_CODE_a764();
+    bVar2 = FUN_CODE_a834();
+    in_PSW = (3 < bVar2) << 7;
+    if (bVar2 == 4) {
+      FUN_CODE_a72b(0xe32e);
+      bVar2 = FUN_CODE_a829();
+      in_PSW = in_PSW & 0xdd;
+      if ((bVar2 >> 4 & 1) != bVar1) {
+        FUN_CODE_074b(0,10);
+        DAT_EXTMEM_e5b4 = DAT_EXTMEM_e5b4 | 0x10;
+        pbVar4 = &DAT_EXTMEM_e32e;
+        bVar2 = DAT_EXTMEM_e32e;
+        FUN_CODE_a72c(DAT_EXTMEM_e32e);
+        bVar1 = *pbVar4;
+        in_PSW = (bVar1 >> 4) << 7;
+        pbVar4 = &DAT_EXTMEM_e5b4;
+        if ((DAT_EXTMEM_e5b4 >> 4 & 1) != (bVar1 >> 5 & 1)) {
+          bVar3 = DAT_EXTMEM_e5b4;
+          FUN_CODE_a86d();
+          bVar3 = bVar3 & 0x10;
+          in_PSW = CARRY1(bVar3,bVar3) << 7;
+          bVar3 = bVar3 * '\x02';
+          FUN_CODE_a72c(bVar2);
+          *pbVar4 = bVar1 & 0xdf | bVar3;
+LAB_CODE_b80c:
+          in_PSW = in_PSW & 0xdd;
+          FUN_CODE_a72c(bVar2);
+          *pbVar4 = *pbVar4 | 0x40;
+        }
+      }
+    }
+    else if (bVar2 == 3) {
+      FUN_CODE_a72c(bVar1);
+      bVar2 = FUN_CODE_a829();
+      in_PSW = (bVar2 >> 2) << 7;
+      if ((bVar2 >> 3 & 1) != bVar1) {
+        FUN_CODE_074b(0,10);
+        bVar1 = DAT_EXTMEM_fe20 == '\0';
+        FUN_CODE_a817();
+        FUN_CODE_a72b(0xe32e);
+        bVar2 = FUN_CODE_a829();
+        in_PSW = (bVar2 >> 2) << 7;
+        if ((bVar2 >> 3 & 1) != bVar1) {
+          if ((bVar2 >> 3 & 1) != 1) {
+            FUN_CODE_f442(3);
+          }
+          FUN_CODE_a86d();
+          bVar1 = (DAT_EXTMEM_e5b4 & 8) * '\x02';
+          in_PSW = CARRY1(bVar1,bVar1) << 7;
+          bVar1 = (DAT_EXTMEM_e5b4 & 8) * '\x04';
+          pbVar4 = &DAT_EXTMEM_e32e;
+          bVar2 = DAT_EXTMEM_e32e;
+          FUN_CODE_a72c(DAT_EXTMEM_e32e);
+          *pbVar4 = *pbVar4 & 0xdf | bVar1;
+          goto LAB_CODE_b80c;
+        }
+      }
+    }
+    DAT_EXTMEM_e32e = DAT_EXTMEM_e32e + 1;
+  } while( true );
+}
+

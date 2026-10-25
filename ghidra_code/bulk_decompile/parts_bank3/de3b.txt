@@ -1,0 +1,8 @@
+=== 0xde3b ===
+
+undefined1 FUN_CODE_de3b(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,8 @@
+=== 0x8d41 ===
+
+undefined1 FUN_CODE_8d41(void)
+
+{
+  return DAT_EXTMEM_0bb7;
+}
+

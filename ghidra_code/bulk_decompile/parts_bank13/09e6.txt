@@ -1,0 +1,8 @@
+=== 0x09e6 ===
+
+char FUN_CODE_09e6(byte param_1,char *param_2,byte param_3)
+
+{
+  return (param_1 & param_3) + *param_2;
+}
+

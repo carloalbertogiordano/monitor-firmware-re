@@ -1,0 +1,14 @@
+=== 0xf22d ===
+
+void FUN_CODE_f22d(void)
+
+{
+  FUN_CODE_1718(0xe330,DAT_EXTMEM_e505,DAT_EXTMEM_e506,DAT_EXTMEM_e507,DAT_EXTMEM_e508);
+  FUN_CODE_de96();
+  _0_1 = 0;
+  FUN_CODE_0643();
+  FUN_CODE_066d(4);
+  FUN_CODE_0673(0,0);
+  return;
+}
+

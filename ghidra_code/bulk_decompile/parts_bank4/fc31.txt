@@ -1,0 +1,10 @@
+=== 0xfc31 ===
+
+void FUN_CODE_fc31(void)
+
+{
+  _0_1 = _0_0 != '\x01';
+  FUN_CODE_e863();
+  return;
+}
+

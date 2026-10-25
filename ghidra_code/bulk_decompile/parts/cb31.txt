@@ -1,0 +1,9 @@
+=== 0xcb31 ===
+
+void FUN_CODE_cb31(undefined1 param_1,undefined1 param_2)
+
+{
+  FUN_CODE_1477(param_1,param_2);
+  return;
+}
+

@@ -1,0 +1,11 @@
+=== 0xb702 ===
+
+void FUN_CODE_b702(void)
+
+{
+  FUN_CODE_0c4f(10);
+  DAT_EXTMEM_fe1e = 1;
+  FUN_CODE_0c61();
+  return;
+}
+

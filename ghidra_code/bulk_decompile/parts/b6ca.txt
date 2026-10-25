@@ -1,0 +1,19 @@
+=== 0xb6ca ===
+
+void FUN_CODE_b6ca(byte *param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  cVar1 = FUN_CODE_d5a0();
+  if ((cVar1 != '\0') && (cVar1 != '\x04')) {
+    FUN_CODE_059b(0xc);
+    FUN_CODE_b711();
+    bVar2 = FUN_CODE_d5a7();
+    *param_1 = bVar2 | 4;
+  }
+  FUN_CODE_059b(9);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x3ee6 ===
+
+void FUN_CODE_3ee6(undefined1 param_1)
+
+{
+  FUN_CODE_1718(0xe350,param_1);
+  return;
+}
+

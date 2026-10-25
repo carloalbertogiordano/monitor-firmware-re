@@ -1,0 +1,9 @@
+=== 0x9ca8 ===
+
+void FUN_CODE_9ca8(void)
+
+{
+  DAT_EXTMEM_e341 = DAT_EXTMEM_e341 + '\x01';
+  return;
+}
+

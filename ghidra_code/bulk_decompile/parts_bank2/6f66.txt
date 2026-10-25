@@ -1,0 +1,8 @@
+=== 0x6f66 ===
+
+byte FUN_CODE_6f66(void)
+
+{
+  return DAT_EXTMEM_e513 >> 1 & 3;
+}
+

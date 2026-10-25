@@ -1,0 +1,9 @@
+=== 0xcaca ===
+
+void FUN_CODE_caca(byte param_1,byte param_2)
+
+{
+  FUN_CODE_cb75(param_1 & param_2);
+  return;
+}
+

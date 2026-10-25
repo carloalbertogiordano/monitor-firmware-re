@@ -1,0 +1,8 @@
+=== 0xd102 ===
+
+undefined1 FUN_CODE_d102(void)
+
+{
+  return DAT_EXTMEM_e335;
+}
+

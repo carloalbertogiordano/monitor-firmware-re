@@ -1,0 +1,10 @@
+=== 0x6001 ===
+
+void FUN_CODE_6001(void)
+
+{
+  do {
+                    /* WARNING: Do nothing block with infinite loop */
+  } while( true );
+}
+

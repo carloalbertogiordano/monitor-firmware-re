@@ -1,0 +1,14 @@
+=== 0xf777 ===
+
+void FUN_CODE_f777(void)
+
+{
+  FUN_CODE_8db7();
+  FUN_CODE_0865();
+  FUN_CODE_8e45();
+  FUN_CODE_0865();
+  FUN_CODE_0865(0x38,0xd8,2,0xc9);
+  FUN_CODE_8dc9();
+  return;
+}
+

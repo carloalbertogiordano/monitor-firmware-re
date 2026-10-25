@@ -1,0 +1,8 @@
+=== 0x9c57 ===
+
+byte FUN_CODE_9c57(byte *param_1)
+
+{
+  return *param_1 & 3;
+}
+

@@ -1,0 +1,11 @@
+=== 0xf63f ===
+
+void FUN_CODE_f63f(void)
+
+{
+  DAT_EXTMEM_e37f = DAT_EXTMEM_e37a;
+  DAT_EXTMEM_e380 = DAT_EXTMEM_e37b;
+  FUN_CODE_099d(DAT_EXTMEM_e379,BANK0_R6,BANK0_R3,BANK0_R5);
+  return;
+}
+

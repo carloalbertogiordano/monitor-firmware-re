@@ -1,0 +1,41 @@
+=== 0xd2ec ===
+
+void FUN_CODE_d2ec(char param_1)
+
+{
+  code *pcVar1;
+  
+  if (param_1 == '\x04') {
+    if (_0_0 == '\0') {
+      DAT_EXTMEM_e58f = DAT_EXTMEM_e58f & 0xef;
+      return;
+    }
+    DAT_EXTMEM_e58f = DAT_EXTMEM_e58f | 0x10;
+    pcVar1 = FUN_CODE_0bb3;
+    if ((DAT_EXTMEM_0bb4 & 8) != 0) {
+      return;
+    }
+  }
+  else {
+    if (param_1 != '\x03') {
+      return;
+    }
+    if (_0_0 == '\0') {
+      DAT_EXTMEM_ffe4 = DAT_EXTMEM_ffe4 & 0xf5;
+      DAT_EXTMEM_0bb3 = DAT_EXTMEM_0bb3 & 0xf0;
+      DAT_EXTMEM_e58f = DAT_EXTMEM_e58f & 0xdf;
+      return;
+    }
+    DAT_EXTMEM_e58f = DAT_EXTMEM_e58f | 0x20;
+    if ((DAT_EXTMEM_0bb3 & 8) != 0) {
+      return;
+    }
+    DAT_EXTMEM_02a9 = DAT_EXTMEM_02a9 & 0x1b | 0x60;
+    DAT_EXTMEM_e661 = DAT_EXTMEM_e661 & 0xdf | 0x10;
+    DAT_EXTMEM_ffe4 = DAT_EXTMEM_ffe4 | 0xc;
+    pcVar1 = FUN_CODE_0bb3;
+  }
+  FUN_CODE_ea38(pcVar1);
+  return;
+}
+

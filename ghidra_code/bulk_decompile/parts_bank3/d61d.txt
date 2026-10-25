@@ -1,0 +1,8 @@
+=== 0xd61d ===
+
+byte FUN_CODE_d61d(void)
+
+{
+  return DAT_INTMEM_4a & 4 ^ 4;
+}
+

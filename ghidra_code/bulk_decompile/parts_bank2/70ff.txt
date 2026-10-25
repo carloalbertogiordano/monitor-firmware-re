@@ -1,0 +1,11 @@
+=== 0x70ff ===
+
+void FUN_CODE_70ff(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e354 = 0;
+  DAT_EXTMEM_e355 = *param_1;
+  _0_1 = 1;
+  return;
+}
+

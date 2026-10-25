@@ -1,0 +1,15 @@
+=== 0xb802 ===
+
+void FUN_CODE_b802(byte param_1,undefined1 *param_2,byte *param_3,undefined1 param_4)
+
+{
+  FUN_CODE_9d2b(param_1 | *param_3);
+  *param_2 = 0x49;
+  param_2[1] = 0x4c;
+  FUN_CODE_f3e6();
+  DAT_EXTMEM_e4b0 = param_4;
+  FUN_CODE_0ba1(0xaa,0xe4,1);
+  EX1 = 1;
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xbf60 ===
+
+byte FUN_CODE_bf60(void)
+
+{
+  return DAT_EXTMEM_06c0 & 0x30;
+}
+

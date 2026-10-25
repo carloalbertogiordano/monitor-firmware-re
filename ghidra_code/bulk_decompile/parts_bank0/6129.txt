@@ -1,0 +1,13 @@
+=== 0x6129 ===
+
+void FUN_CODE_6129(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = DAT_SFR_ff;
+  uVar1 = DAT_SFR_ff;
+  do {
+  } while( true );
+}
+

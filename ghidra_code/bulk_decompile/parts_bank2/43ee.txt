@@ -1,0 +1,11 @@
+=== 0x43ee ===
+
+void FUN_CODE_43ee(void)
+
+{
+  DAT_EXTMEM_e335 = 0;
+  DAT_EXTMEM_e336 = 0;
+  DAT_EXTMEM_e337 = 1;
+  return;
+}
+

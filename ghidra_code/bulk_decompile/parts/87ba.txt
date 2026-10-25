@@ -1,0 +1,12 @@
+=== 0x87ba ===
+
+undefined1 FUN_CODE_87ba(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = 0x40;
+  FUN_CODE_152f(BANK0_R4,BANK0_R5,BANK0_R6,BANK0_R7,0,5,0x65,0x40);
+  return uVar1;
+}
+

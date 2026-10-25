@@ -1,0 +1,10 @@
+=== 0xd1b8 ===
+
+void FUN_CODE_d1b8(void)
+
+{
+  FUN_CODE_082f(1);
+  FUN_CODE_082f(1);
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xfec5 ===
+
+void FUN_CODE_fec5(void)
+
+{
+  DAT_INTMEM_29 = 0x1e;
+  return;
+}
+

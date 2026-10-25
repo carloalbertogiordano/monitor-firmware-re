@@ -1,0 +1,8 @@
+=== 0xde36 ===
+
+void FUN_CODE_de36(void)
+
+{
+  return;
+}
+

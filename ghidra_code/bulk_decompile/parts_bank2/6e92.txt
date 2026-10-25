@@ -1,0 +1,8 @@
+=== 0x6e92 ===
+
+undefined1 FUN_CODE_6e92(void)
+
+{
+  return DAT_EXTMEM_e358;
+}
+

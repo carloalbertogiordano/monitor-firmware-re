@@ -1,0 +1,8 @@
+=== 0xb0ad ===
+
+byte FUN_CODE_b0ad(byte *param_1)
+
+{
+  return *param_1 >> 3 & 3;
+}
+

@@ -1,0 +1,94 @@
+=== 0xbf95 ===
+
+void FUN_CODE_bf95(short param_1,byte param_2,byte param_3,char param_4,byte param_5)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  char cVar5;
+  char cVar6;
+  char in_PSW;
+  char *pcVar7;
+  
+  FUN_CODE_a53f();
+  FUN_CODE_a558(param_1 + 1);
+  FUN_CODE_a548();
+  bVar3 = FUN_CODE_a508(0xe36f);
+  bVar3 = param_4 - (((bVar3 < param_5 - (in_PSW >> 7)) << 7) >> 7);
+  cVar6 = BANK0_R4;
+  bVar4 = BANK0_R5;
+  if (bVar3 <= param_2) {
+    FUN_CODE_a548(param_2 - bVar3);
+    cVar6 = param_4;
+    bVar4 = param_5;
+  }
+  FUN_CODE_a53f();
+  bVar1 = DAT_EXTMEM_e373 < (byte)(cVar6 - (((DAT_EXTMEM_e374 < bVar4) << 7) >> 7));
+  cVar6 = bVar1 << 7;
+  if (bVar1) {
+    pcVar7 = &DAT_EXTMEM_e36f;
+  }
+  else {
+    pcVar7 = &DAT_EXTMEM_e373;
+  }
+  cVar5 = *pcVar7;
+  bVar3 = pcVar7[1];
+  FUN_CODE_a53f();
+  FUN_CODE_a551(0xe373);
+  bVar4 = cVar5 - (((DAT_EXTMEM_e372 < bVar3 - (cVar6 >> 7)) << 7) >> 7);
+  cVar6 = (DAT_EXTMEM_e371 < bVar4) << 7;
+  if ((DAT_EXTMEM_e371 >= bVar4) && (FUN_CODE_a5b8(DAT_EXTMEM_e371 - bVar4,0xe375), -1 < cVar6)) {
+    FUN_CODE_a548();
+    bVar4 = cVar5 - (((param_3 < bVar3 - (cVar6 >> 7)) << 7) >> 7);
+    cVar6 = (param_2 < bVar4) << 7;
+    if (cVar6 < '\0') {
+      FUN_CODE_a4f4(param_2 - bVar4);
+      FUN_CODE_a582();
+      if (cVar6 < '\0') {
+        FUN_CODE_a4f7(0xe373);
+        FUN_CODE_a50f();
+        bVar3 = BANK0_R7;
+        cVar6 = BANK0_R6;
+        FUN_CODE_a4f7(0xe373);
+        FUN_CODE_a58d(DAT_EXTMEM_e376,0xe375);
+        BANK0_R6 = cVar6;
+        BANK0_R7 = bVar3;
+        FUN_CODE_a533();
+        cVar5 = BANK0_R6;
+        bVar4 = BANK0_R7;
+      }
+      else {
+        FUN_CODE_a551(0xe375);
+        FUN_CODE_a582();
+        if (cVar6 < '\0') {
+          return;
+        }
+        FUN_CODE_a50f();
+        bVar4 = BANK0_R7;
+        cVar6 = BANK0_R6;
+        FUN_CODE_a4f4();
+        FUN_CODE_a58d(DAT_EXTMEM_e372,0xe371);
+        BANK0_R6 = cVar6;
+        BANK0_R7 = bVar4;
+        FUN_CODE_a533();
+        bVar4 = bVar3 + 0x88;
+        cVar5 = cVar5 + ('\x13' - (((0x77 < bVar3) << 7) >> 7));
+      }
+      goto LAB_CODE_c063;
+    }
+  }
+  cVar5 = '\0';
+  bVar4 = 0;
+LAB_CODE_c063:
+  FUN_CODE_a564(cVar5,bVar4);
+  cVar2 = ((param_3 < 0x32) << 7) >> 7;
+  cVar6 = param_2 + cVar2;
+  if ((byte)-cVar2 <= param_2) {
+    cVar6 = cVar5 - (((0x9b < bVar4) << 7) >> 7);
+  }
+  FUN_CODE_a564(cVar6);
+  return;
+}
+

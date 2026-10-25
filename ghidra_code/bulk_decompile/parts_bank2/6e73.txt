@@ -1,0 +1,10 @@
+=== 0x6e73 ===
+
+void FUN_CODE_6e73(void)
+
+{
+  FUN_CODE_14a4();
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f(0,0,0,0x10);
+}
+

@@ -1,0 +1,8 @@
+=== 0xc170 ===
+
+byte FUN_CODE_c170(void)
+
+{
+  return DAT_EXTMEM_8837 & 1 ^ 1;
+}
+

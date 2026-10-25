@@ -1,0 +1,8 @@
+=== 0x8bd3 ===
+
+void FUN_CODE_8bd3(void)
+
+{
+  return;
+}
+

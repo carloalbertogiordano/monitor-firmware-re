@@ -1,0 +1,15 @@
+=== 0x942d ===
+
+undefined1 FUN_CODE_942d(void)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e412 = DAT_EXTMEM_e60a;
+  cVar1 = '\x06';
+  FUN_CODE_fecb(6,2,0);
+  DAT_EXTMEM_e412 = 0;
+  FUN_CODE_fecb(cVar1 + '\x01');
+  return DAT_INTMEM_4a;
+}
+

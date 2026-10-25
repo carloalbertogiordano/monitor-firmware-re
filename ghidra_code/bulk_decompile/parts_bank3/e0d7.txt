@@ -1,0 +1,10 @@
+=== 0xe0d7 ===
+
+void FUN_CODE_e0d7(void)
+
+{
+  FUN_CODE_08b9(0,0x18);
+  _0_0 = 0;
+  return;
+}
+

@@ -1,0 +1,39 @@
+=== 0xf63b ===
+
+void FUN_CODE_f63b(char param_1)
+
+{
+  undefined1 uVar1;
+  char in_PSW;
+  
+  DAT_EXTMEM_e33d = param_1;
+  FUN_CODE_892b();
+  FUN_CODE_fe61();
+  if (param_1 != -0x80) {
+    FUN_CODE_8d41();
+    if (-1 < in_PSW) {
+      uVar1 = 0xc;
+      goto LAB_CODE_f667;
+    }
+  }
+  if (DAT_EXTMEM_e33d == '\x06') {
+    uVar1 = 0xd;
+  }
+  else {
+    uVar1 = 7;
+  }
+LAB_CODE_f667:
+  FUN_CODE_8bfc(uVar1,0x1da2);
+  FUN_CODE_8a20();
+  DAT_EXTMEM_1da5 = 0;
+  DAT_EXTMEM_1db5 = 0;
+  DAT_EXTMEM_1dc5 = 0;
+  DAT_EXTMEM_1dd5 = 0;
+  DAT_EXTMEM_1da6 = 0;
+  DAT_EXTMEM_1db6 = 0;
+  DAT_EXTMEM_1dc6 = 0;
+  DAT_EXTMEM_1dd6 = 0;
+  FUN_CODE_866d(0xff,0x1daa);
+  return;
+}
+

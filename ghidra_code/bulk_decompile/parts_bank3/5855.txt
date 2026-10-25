@@ -1,0 +1,13 @@
+=== 0x5855 ===
+
+void FUN_CODE_5855(undefined1 param_1,char param_2,char param_3,char param_4)
+
+{
+  nop();
+  nop();
+  BANK1_R7 = param_2 + '\x01';
+  DAT_INTMEM_23 = BANK1_R7;
+  FUN_CODE_470c(param_1,param_3 + '\x01',param_4 + '\x04');
+  return;
+}
+

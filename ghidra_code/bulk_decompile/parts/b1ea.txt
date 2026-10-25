@@ -1,0 +1,55 @@
+=== 0xb1ea ===
+
+byte FUN_CODE_b1ea(byte param_1)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  
+  DAT_EXTMEM_e344 = param_1;
+  FUN_CODE_d873(0xe345);
+  DAT_EXTMEM_e349 = 0;
+  DAT_EXTMEM_e34a = 0;
+  DAT_EXTMEM_e34b = 0;
+  DAT_EXTMEM_e34c = 0;
+  DAT_EXTMEM_e34d = 0;
+  DAT_EXTMEM_e34e = 0;
+  DAT_EXTMEM_e34f = 0;
+  FUN_CODE_d8a1(0x50,0xfd,0x37,0xe3,0,0x10);
+  if (0xe < DAT_EXTMEM_e348) {
+    return DAT_EXTMEM_e348 - 0xf;
+  }
+  DAT_EXTMEM_e34c = cEXTMEMe4bd << 4;
+  DAT_EXTMEM_e34d = 0;
+  DAT_EXTMEM_e34a = bEXTMEMe4e9;
+  DAT_EXTMEM_e34b = cEXTMEMe4ea;
+  while( true ) {
+    cVar2 = ((DAT_EXTMEM_e34b == '\0') << 7) >> 7;
+    if (DAT_EXTMEM_e34a < (byte)-cVar2) {
+      return DAT_EXTMEM_e34a + cVar2;
+    }
+    bVar3 = DAT_EXTMEM_e34b - 1U >> 4;
+    DAT_EXTMEM_e34f = (bVar3 | (DAT_EXTMEM_e34b - 1U) * '\x10') ^ bVar3;
+    DAT_EXTMEM_e34e =
+         (DAT_EXTMEM_e34a + (-1 - (((DAT_EXTMEM_e34b != '\0') << 7) >> 7))) * '\x10' | bVar3;
+    FUN_CODE_d828(DAT_EXTMEM_e34e);
+    FUN_CODE_f7ad(0,1,7);
+    if ((DAT_EXTMEM_e350 ^ DAT_EXTMEM_e344) == 0) break;
+    bVar1 = DAT_EXTMEM_e34b != '\0';
+    DAT_EXTMEM_e34b = DAT_EXTMEM_e34b + -1;
+    DAT_EXTMEM_e34a = DAT_EXTMEM_e34a + (-1 - ((bVar1 << 7) >> 7));
+  }
+  DAT_EXTMEM_e349 = DAT_EXTMEM_e350 ^ DAT_EXTMEM_e344;
+  FUN_CODE_d828(DAT_EXTMEM_e34e,DAT_EXTMEM_e34f);
+  bVar3 = 7;
+  FUN_CODE_f7ad(0,0x10);
+  FUN_CODE_980e(0x50,0xe3,1,0xf);
+  DAT_EXTMEM_e349 = bVar3 & 0x7f;
+  if ((DAT_EXTMEM_e35f ^ DAT_EXTMEM_e349) != 0) {
+    return DAT_EXTMEM_e35f ^ DAT_EXTMEM_e349;
+  }
+  bVar3 = FUN_CODE_1259(DAT_EXTMEM_e347,0x51,0xe3,1,BANK0_R2,BANK0_R3,0,DAT_EXTMEM_e348);
+  return bVar3;
+}
+

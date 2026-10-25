@@ -1,0 +1,9 @@
+=== 0xd280 ===
+
+undefined1 FUN_CODE_d280(void)
+
+{
+  FUN_CODE_e20a();
+  return DAT_EXTMEM_e556;
+}
+

@@ -1,0 +1,8 @@
+=== 0xbf96 ===
+
+char FUN_CODE_bf96(char param_1,char *param_2,char param_3)
+
+{
+  return *param_2 - (param_3 - ((((byte)param_2[1] < param_1 + 1U) << 7) >> 7));
+}
+

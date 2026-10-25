@@ -1,0 +1,34 @@
+=== 0xeab7 ===
+
+void FUN_CODE_eab7(void)
+
+{
+  bool bVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_ffed = DAT_EXTMEM_ffed | 0x80;
+  DAT_EXTMEM_fe60 = 0xff;
+  DAT_EXTMEM_fe23 = 0;
+  P1_7 = 0;
+  DAT_EXTMEM_fe1d = 0;
+  P1_2 = 1;
+  DAT_EXTMEM_e32e = '\x14';
+  DAT_EXTMEM_3900 = '\x01';
+  while ((DAT_EXTMEM_3900 != '\x01' &&
+         (cVar2 = DAT_EXTMEM_e32e + -1, bVar1 = DAT_EXTMEM_e32e != '\0', DAT_EXTMEM_e32e = cVar2,
+         bVar1))) {
+    DAT_EXTMEM_3900 = '\x01';
+    FUN_CODE_074b();
+  }
+  FUN_CODE_074b();
+  DAT_EXTMEM_fe0b = 1;
+  DAT_EXTMEM_fe0d = 0;
+  DAT_EXTMEM_fe1e = 0;
+  P1_2 = 1;
+  DAT_EXTMEM_fe29 = 0;
+  DAT_EXTMEM_fe2a = 0;
+  DAT_EXTMEM_fe18 = 0;
+  P1_4 = 1;
+  return;
+}
+

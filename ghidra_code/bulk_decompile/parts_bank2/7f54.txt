@@ -1,0 +1,8 @@
+=== 0x7f54 ===
+
+undefined1 FUN_CODE_7f54(void)
+
+{
+  return BANK0_R4;
+}
+

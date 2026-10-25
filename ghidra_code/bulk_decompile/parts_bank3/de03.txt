@@ -1,0 +1,9 @@
+=== 0xde03 ===
+
+void FUN_CODE_de03(void)
+
+{
+  DAT_EXTMEM_b760 = DAT_EXTMEM_e612 | DAT_EXTMEM_b760 & 0xfc;
+  return;
+}
+

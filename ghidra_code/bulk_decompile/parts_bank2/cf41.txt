@@ -1,0 +1,88 @@
+=== 0xcf41 ===
+
+void FUN_CODE_cf41(undefined1 param_1,undefined1 param_2,undefined1 param_3,undefined1 param_4,
+                  undefined1 param_5)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  char cVar3;
+  char *pcVar4;
+  undefined1 *puVar5;
+  
+  DAT_EXTMEM_e331 = param_5;
+  DAT_EXTMEM_e332 = param_4;
+  DAT_EXTMEM_e333 = param_3;
+  DAT_EXTMEM_e334 = param_2;
+  DAT_EXTMEM_e335 = param_1;
+  DAT_EXTMEM_e338 = FUN_CODE_e4d2(0xe338);
+  pcVar4 = (char *)0xe338;
+  do {
+    FUN_CODE_e45d();
+    cVar2 = FUN_CODE_127f();
+    if (cVar2 == -1) {
+      return;
+    }
+    if (cVar2 == -2) {
+      cVar2 = FUN_CODE_e499();
+LAB_CODE_cf82:
+      *pcVar4 = cVar2;
+LAB_CODE_cff8:
+      uVar1 = 1;
+    }
+    else {
+      cVar2 = FUN_CODE_127f();
+      if (cVar2 == -4) {
+        pcVar4 = &DAT_EXTMEM_e33a;
+        cVar2 = DAT_EXTMEM_e33a + '\x01';
+        goto LAB_CODE_cf82;
+      }
+      if (cVar2 != -3) {
+        puVar5 = (undefined1 *)0xe331;
+        uVar1 = FUN_CODE_e482();
+        FUN_CODE_e45d(uVar1);
+        uVar1 = FUN_CODE_127f();
+        FUN_CODE_d006(uVar1);
+        cVar2 = FUN_CODE_e479();
+        if (cVar2 == BANK0_R7) {
+          FUN_CODE_e45d();
+          cVar2 = FUN_CODE_e4b1();
+          if (cVar2 != -2) {
+            uVar1 = FUN_CODE_e499();
+            *puVar5 = uVar1;
+          }
+        }
+        goto LAB_CODE_cff8;
+      }
+      cVar2 = FUN_CODE_e4b1();
+      while( true ) {
+        DAT_EXTMEM_e339 = cVar2 + -1;
+        puVar5 = (undefined1 *)0xe339;
+        if ((DAT_EXTMEM_e339 == '\0') << 7 < '\0') break;
+        FUN_CODE_e45d(cVar2 + -2);
+        cVar2 = FUN_CODE_e4de();
+        if (cVar2 != '\0') {
+          puVar5 = (undefined1 *)0xe331;
+          uVar1 = FUN_CODE_e482();
+          FUN_CODE_d006(uVar1);
+        }
+        cVar3 = FUN_CODE_e479();
+        cVar2 = DAT_EXTMEM_e339;
+        if (cVar3 == BANK0_R7) {
+          FUN_CODE_e45d();
+          cVar3 = FUN_CODE_e4b1();
+          cVar2 = DAT_EXTMEM_e339;
+          if (cVar3 != -2) {
+            uVar1 = FUN_CODE_e499();
+            *puVar5 = uVar1;
+            cVar2 = DAT_EXTMEM_e339;
+          }
+        }
+      }
+      uVar1 = 2;
+    }
+    pcVar4 = (char *)0xe334;
+    FUN_CODE_13c9(0,uVar1);
+  } while( true );
+}
+

@@ -1,0 +1,8 @@
+=== 0xb617 ===
+
+byte FUN_CODE_b617(void)
+
+{
+  return DAT_EXTMEM_e32e & 8;
+}
+

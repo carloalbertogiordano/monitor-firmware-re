@@ -1,0 +1,40 @@
+=== 0xe3c2 ===
+
+void FUN_CODE_e3c2(char param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  char in_PSW;
+  
+  DAT_EXTMEM_e36f = param_1;
+  FUN_CODE_0b4d();
+  if (param_1 == '\0') {
+    FUN_CODE_0b53();
+    if ((in_PSW < '\0') || (FUN_CODE_0b59(), in_PSW < '\0')) {
+      uVar5 = 2;
+    }
+    else {
+      uVar5 = 0;
+    }
+    FUN_CODE_0b5f(DAT_EXTMEM_e36f,uVar5);
+    uVar3 = BANK0_R7;
+    uVar2 = BANK0_R6;
+    FUN_CODE_0b5f(DAT_EXTMEM_e36f,BANK0_R2,0);
+    uVar1 = BANK0_R5;
+    uVar5 = BANK0_R4;
+    FUN_CODE_0b65(BANK0_R2,BANK0_R1);
+    uVar4 = BANK0_R7;
+    BANK0_R4 = uVar5;
+    BANK0_R5 = uVar1;
+    BANK0_R6 = uVar2;
+    BANK0_R7 = uVar3;
+    FUN_CODE_0b6b(uVar4);
+    return;
+  }
+  return;
+}
+

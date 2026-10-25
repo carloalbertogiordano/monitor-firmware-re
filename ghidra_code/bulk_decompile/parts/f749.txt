@@ -1,0 +1,19 @@
+=== 0xf749 ===
+
+byte FUN_CODE_f749(char param_1)
+
+{
+  byte *pbVar1;
+  
+  if (param_1 == '\x04') {
+    pbVar1 = &DAT_EXTMEM_e580;
+  }
+  else {
+    if (param_1 - 3U != 0) {
+      return param_1 - 3U;
+    }
+    pbVar1 = &DAT_EXTMEM_e581;
+  }
+  return *pbVar1 >> 3 | (*pbVar1 >> 1) << 7;
+}
+

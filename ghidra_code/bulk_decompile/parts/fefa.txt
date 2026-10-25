@@ -1,0 +1,8 @@
+=== 0xfefa ===
+
+void FUN_CODE_fefa(void)
+
+{
+  return;
+}
+

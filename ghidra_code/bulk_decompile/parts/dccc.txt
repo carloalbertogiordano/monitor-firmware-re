@@ -1,0 +1,11 @@
+=== 0xdccc ===
+
+void FUN_CODE_dccc(void)
+
+{
+  DAT_EXTMEM_e332 = 0;
+  DAT_EXTMEM_e333 = 0;
+  FUN_CODE_f83d();
+  return;
+}
+

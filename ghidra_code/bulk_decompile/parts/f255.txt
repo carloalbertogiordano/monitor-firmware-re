@@ -1,0 +1,27 @@
+=== 0xf255 ===
+
+void FUN_CODE_f255(byte *param_1)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  char cVar3;
+  
+  bVar2 = FUN_CODE_a78d();
+  if (bVar2 == 9) {
+    bVar2 = FUN_CODE_a875();
+    *param_1 = bVar2;
+  }
+  else {
+    cVar3 = FUN_CODE_a802();
+    if (cVar3 == '\b') {
+      *param_1 = bVar2 & 0xe1 | 2;
+    }
+  }
+  uVar1 = 1;
+  FUN_CODE_ae9d();
+  FUN_CODE_f5ae();
+  DAT_EXTMEM_e5d9 = uVar1;
+  return;
+}
+

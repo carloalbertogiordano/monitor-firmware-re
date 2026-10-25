@@ -1,0 +1,10 @@
+=== 0x2270 ===
+
+undefined1 FUN_CODE_2270(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 7;
+  uEXTMEMffff = 7;
+  return param_1;
+}
+

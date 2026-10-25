@@ -1,0 +1,9 @@
+=== 0xbc9e ===
+
+char FUN_CODE_bc9e(char param_1,byte param_2,byte param_3,byte param_4)
+
+{
+  FUN_CODE_133e(param_1,param_2,param_3,param_4);
+  return param_4 + 10;
+}
+

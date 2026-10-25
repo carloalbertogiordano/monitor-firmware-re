@@ -1,0 +1,11 @@
+=== 0x8e24 ===
+
+void FUN_CODE_8e24(short param_1)
+
+{
+  *(undefined1 *)(param_1 + 1) = 0x12;
+  *(undefined1 *)(param_1 + 2) = 0xfb;
+  *(undefined1 *)(param_1 + 3) = 0xb9;
+  return;
+}
+

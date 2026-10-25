@@ -1,0 +1,8 @@
+=== 0x457a ===
+
+undefined1 FUN_CODE_457a(void)
+
+{
+  return 1;
+}
+

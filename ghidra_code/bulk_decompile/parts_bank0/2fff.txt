@@ -1,0 +1,8 @@
+=== 0x2fff ===
+
+char FUN_CODE_2fff(byte param_1,char param_2)
+
+{
+  return (param_1 | DAT_INTMEM_46) + param_2;
+}
+

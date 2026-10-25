@@ -1,0 +1,80 @@
+=== 0x22fb ===
+
+void FUN_CODE_22fb(char param_1,char param_2)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  code cVar3;
+  char cVar4;
+  byte bVar5;
+  char cVar6;
+  code *pcVar7;
+  char *pcVar8;
+  undefined1 *puVar9;
+  
+  DAT_EXTMEM_e33a = 0;
+  DAT_EXTMEM_e33b = 0;
+  _0_0 = 0;
+  FUN_CODE_2694();
+  DAT_EXTMEM_e33a = DAT_EXTMEM_e1de;
+  _0_0 = DAT_EXTMEM_e1df != '\0';
+  DAT_EXTMEM_e33c = FUN_CODE_2679();
+  DAT_EXTMEM_e33d = param_2;
+  FUN_CODE_269b(0x3f,0xe3);
+  pcVar7 = FUN_CODE_e33a;
+  if ((DAT_EXTMEM_e33a < 0x19) << 7 < '\0') {
+    DAT_EXTMEM_e33b = 0;
+    DAT_EXTMEM_e33e = 1;
+    while( true ) {
+      pcVar8 = &DAT_EXTMEM_e33e;
+      if (4 < DAT_EXTMEM_e33e) break;
+      bVar1 = DAT_EXTMEM_e33e;
+      FUN_CODE_26ba();
+      cVar4 = FUN_CODE_26d3();
+      *pcVar8 = cVar4 + bVar1;
+      DAT_EXTMEM_e33e = DAT_EXTMEM_e33e + 1;
+    }
+    pcVar7 = (code *)0xe1e0;
+    bVar1 = DAT_EXTMEM_e33e;
+    bVar5 = FUN_CODE_26d3(DAT_EXTMEM_e33e - 5);
+    if (bVar5 == bVar1) {
+      DAT_EXTMEM_e33b = 0;
+      FUN_CODE_26cc();
+      DAT_EXTMEM_e340 = DAT_EXTMEM_e33a;
+      for (DAT_EXTMEM_e33e = 0; DAT_EXTMEM_e33e < DAT_EXTMEM_e33a;
+          DAT_EXTMEM_e33e = DAT_EXTMEM_e33e + 1) {
+        cVar4 = *(char *)CONCAT11(DAT_EXTMEM_e33c,DAT_EXTMEM_e33d);
+        pcVar8 = &DAT_EXTMEM_e33e;
+        param_1 = DAT_EXTMEM_e33c;
+        FUN_CODE_26a6();
+        *pcVar8 = cVar4;
+        FUN_CODE_26aa();
+        cVar6 = FUN_CODE_26d3();
+        *pcVar8 = cVar6 + cVar4;
+        if ((_0_0 != '\0') && (DAT_EXTMEM_e33d = DAT_EXTMEM_e33d + '\x01', DAT_EXTMEM_e33d == '\0'))
+        {
+          DAT_EXTMEM_e33c = DAT_EXTMEM_e33c + '\x01';
+        }
+      }
+      puVar9 = &DAT_EXTMEM_e33a;
+      uVar2 = DAT_EXTMEM_e33b;
+      FUN_CODE_26a6();
+      *puVar9 = uVar2;
+      param_1 = param_1 + '\x03';
+      goto LAB_CODE_23ed;
+    }
+    FUN_CODE_26cc();
+    cVar3 = (code)0xe2;
+  }
+  else {
+    FUN_CODE_26cc(DAT_EXTMEM_e33a - 0x19);
+    cVar3 = (code)0xe1;
+  }
+  pcVar7[1] = cVar3;
+  param_1 = '\x02';
+LAB_CODE_23ed:
+  FUN_CODE_2785(0x3f,0xe3,1,param_1);
+  return;
+}
+

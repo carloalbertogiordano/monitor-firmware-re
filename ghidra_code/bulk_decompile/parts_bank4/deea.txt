@@ -1,0 +1,8 @@
+=== 0xdeea ===
+
+void FUN_CODE_deea(void)
+
+{
+  return;
+}
+

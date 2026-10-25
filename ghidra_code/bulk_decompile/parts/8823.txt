@@ -1,0 +1,8 @@
+=== 0x8823 ===
+
+byte FUN_CODE_8823(void)
+
+{
+  return DAT_EXTMEM_02c8 & 0xfe;
+}
+

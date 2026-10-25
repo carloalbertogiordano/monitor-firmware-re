@@ -1,0 +1,9 @@
+=== 0xfa2d ===
+
+void FUN_CODE_fa2d(undefined1 *param_1)
+
+{
+  FUN_CODE_1298(DAT_INTMEM_29,param_1[2],param_1[1],*param_1);
+  return;
+}
+

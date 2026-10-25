@@ -1,0 +1,10 @@
+=== 0xf1c4 ===
+
+void FUN_CODE_f1c4(byte param_1)
+
+{
+  _0_4 = param_1 >> 6 & 1;
+  FUN_CODE_080b(0x40,5,0x2a,0,0x32);
+  return;
+}
+

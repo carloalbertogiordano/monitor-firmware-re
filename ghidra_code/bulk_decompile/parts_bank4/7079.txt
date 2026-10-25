@@ -1,0 +1,8 @@
+=== 0x7079 ===
+
+undefined1 FUN_CODE_7079(void)
+
+{
+  return DAT_EXTMEM_e3b1;
+}
+

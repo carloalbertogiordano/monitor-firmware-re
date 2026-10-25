@@ -1,0 +1,9 @@
+=== 0xcdc9 ===
+
+void FUN_CODE_cdc9(byte *param_1)
+
+{
+  FUN_CODE_1298((ushort)*param_1 * 2);
+  return;
+}
+

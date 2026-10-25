@@ -1,0 +1,40 @@
+=== 0xd925 ===
+
+void FUN_CODE_d925(byte param_1)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  undefined1 *puVar3;
+  
+  cVar1 = (3 < param_1) << 7;
+  if (param_1 == 4) {
+    FUN_CODE_092b(4);
+    if (cVar1 < '\0') {
+      cVar1 = '\x04';
+      FUN_CODE_07e7();
+      if (cVar1 == '\x01') {
+        puVar3 = &DAT_EXTMEM_e38a;
+        DAT_EXTMEM_e38a = 1;
+        FUN_CODE_d998(4);
+        *puVar3 = 6;
+        FUN_CODE_d998(10);
+        *puVar3 = 1;
+        FUN_CODE_0925(4,0x22,0);
+        DAT_EXTMEM_e38a = 6;
+        uVar2 = 0;
+      }
+      else {
+        DAT_EXTMEM_e38a = 0;
+        uVar2 = FUN_CODE_d98c(0);
+        FUN_CODE_0925(10,uVar2,uVar2);
+        DAT_EXTMEM_e38a = 0;
+        uVar2 = FUN_CODE_d98c(0x22);
+      }
+      FUN_CODE_0925(10,0x22,uVar2);
+      return;
+    }
+  }
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0xaefc ===
+
+undefined1 FUN_CODE_aefc(void)
+
+{
+  DAT_EXTMEM_e3b0 = DAT_EXTMEM_e3b0 + '\x01';
+  return DAT_EXTMEM_e394;
+}
+

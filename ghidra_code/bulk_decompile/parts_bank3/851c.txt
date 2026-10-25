@@ -1,0 +1,12 @@
+=== 0x851c ===
+
+void FUN_CODE_851c(undefined1 param_1)
+
+{
+  DAT_INTMEM_71 = DAT_INTMEM_71 | 0x38;
+  nop();
+  nop();
+  FUN_CODE_8000(DAT_INTMEM_3f + '\x01',DAT_INTMEM_3c,param_1);
+  return;
+}
+

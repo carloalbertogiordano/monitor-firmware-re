@@ -1,0 +1,14 @@
+=== 0xfd18 ===
+
+void FUN_CODE_fd18(void)
+
+{
+  FUN_CODE_48e8();
+  FUN_CODE_0625();
+  FUN_CODE_478e();
+  FUN_CODE_1051();
+  FUN_CODE_105d();
+  FUN_CODE_1063();
+  return;
+}
+

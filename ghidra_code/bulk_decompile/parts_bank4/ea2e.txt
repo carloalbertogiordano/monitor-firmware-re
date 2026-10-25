@@ -1,0 +1,9 @@
+=== 0xea2e ===
+
+void FUN_CODE_ea2e(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xf | 0x80;
+  return;
+}
+

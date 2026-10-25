@@ -1,0 +1,8 @@
+=== 0xbd28 ===
+
+undefined1 FUN_CODE_bd28(void)
+
+{
+  return DAT_EXTMEM_e659;
+}
+

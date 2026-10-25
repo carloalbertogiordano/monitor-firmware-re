@@ -1,0 +1,20 @@
+=== 0xe2db ===
+
+void FUN_CODE_e2db(undefined1 param_1)
+
+{
+  char cVar1;
+  
+  FUN_CODE_74a0(param_1,0xe358);
+  FUN_CODE_749d(DAT_EXTMEM_e358,DAT_EXTMEM_e35a,DAT_EXTMEM_e359);
+  _0_3 = 0;
+  cVar1 = FUN_CODE_e317(0xac);
+  FUN_CODE_7498(cVar1 + '\x02');
+  _0_3 = 0;
+  cVar1 = FUN_CODE_e317(0xaf);
+  FUN_CODE_7498(cVar1 + '\x04');
+  _0_3 = 0;
+  FUN_CODE_076f(0,0x18,0xb1,2,0xcd);
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0xcac7 ===
+
+byte FUN_CODE_cac7(void)
+
+{
+  return DAT_EXTMEM_e4ce >> 3 & 1;
+}
+

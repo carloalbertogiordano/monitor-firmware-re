@@ -1,0 +1,8 @@
+=== 0x19fe ===
+
+undefined1 FUN_CODE_19fe(byte param_1)
+
+{
+  return *(undefined1 *)(ushort)param_1;
+}
+

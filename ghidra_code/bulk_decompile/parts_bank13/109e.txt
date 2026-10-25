@@ -1,0 +1,10 @@
+=== 0x109e ===
+
+void FUN_CODE_109e(byte param_1,char *param_2,byte param_3)
+
+{
+  *param_2 = *param_2 + -1;
+  FUN_CODE_1771(param_1 ^ param_3);
+  return;
+}
+

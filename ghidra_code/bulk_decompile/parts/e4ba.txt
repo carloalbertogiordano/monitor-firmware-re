@@ -1,0 +1,43 @@
+=== 0xe4ba ===
+
+byte FUN_CODE_e4ba(byte *param_1,byte param_2)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  char in_PSW;
+  byte *pbVar4;
+  
+  FUN_CODE_ee60();
+  if (in_PSW < '\0') {
+    *param_1 = param_2 & 0xfe;
+    thunk_FUN_CODE_fd08();
+  }
+  pbVar4 = (byte *)0xe6f3;
+  bVar1 = DAT_EXTMEM_e6f3 >> 2 | DAT_EXTMEM_e6f3 << 7;
+  bVar3 = DAT_EXTMEM_e6f3;
+  if ((char)((DAT_EXTMEM_e6f3 >> 1) << 7) < '\0') {
+    DAT_EXTMEM_e6f3 = DAT_EXTMEM_e6f3 & 0xfd;
+    bVar1 = thunk_FUN_CODE_fefa();
+  }
+  bVar1 = FUN_CODE_ee60(bVar1);
+  bVar2 = (bVar1 >> 1 & 0x3f) >> 1 | bVar1 << 7;
+  if ((char)((bVar1 >> 1) << 7) < '\0') {
+    *pbVar4 = bVar3 & 0xfb;
+    bVar2 = FUN_CODE_fef8();
+  }
+  bVar1 = FUN_CODE_ee60(bVar2);
+  bVar1 = (bVar1 >> 2) << 7;
+  if ((char)bVar1 < '\0') {
+    *pbVar4 = bVar3 & 0xf7;
+    thunk_FUN_CODE_ee6e();
+  }
+  bVar3 = DAT_EXTMEM_e6f3 >> 5 | bVar1 & 0x80;
+  if ((char)((DAT_EXTMEM_e6f3 >> 4) << 7) < '\0') {
+    DAT_EXTMEM_e6f3 = DAT_EXTMEM_e6f3 & 0xef;
+    bVar3 = FUN_CODE_fef9();
+  }
+  return bVar3;
+}
+

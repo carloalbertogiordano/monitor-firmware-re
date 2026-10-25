@@ -1,0 +1,9 @@
+=== 0xf420 ===
+
+byte FUN_CODE_f420(void)
+
+{
+  DAT_EXTMEM_ffed = DAT_EXTMEM_ffed & 0xc1 | 4;
+  return DAT_EXTMEM_ffe9 & 0xf0;
+}
+

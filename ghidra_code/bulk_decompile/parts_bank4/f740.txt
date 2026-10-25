@@ -1,0 +1,15 @@
+=== 0xf740 ===
+
+void FUN_CODE_f740(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_6e85(0xf5,0x84,0x5d,0xff,0xe4,1,0xc);
+  FUN_CODE_0f13(0xe);
+  if (in_PSW < '\0') {
+    FUN_CODE_fc07();
+  }
+  return;
+}
+

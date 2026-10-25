@@ -1,0 +1,9 @@
+=== 0x8d0e ===
+
+void FUN_CODE_8d0e(byte *param_1)
+
+{
+  *param_1 = *param_1 & 0xcf | 0x10;
+  return;
+}
+

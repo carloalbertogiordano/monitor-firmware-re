@@ -1,0 +1,9 @@
+=== 0x3d37 ===
+
+undefined1 FUN_CODE_3d37(undefined1 param_1)
+
+{
+  FUN_CODE_0f85(param_1);
+  return DAT_EXTMEM_e191;
+}
+

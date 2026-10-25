@@ -1,0 +1,15 @@
+=== 0x3a1e ===
+
+void FUN_CODE_3a1e(void)
+
+{
+  if (DAT_EXTMEM_e3e2 < 0x40) {
+                    /* WARNING: Could not recover jumptable at 0x3a30. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+    (*(code *)((ushort)(DAT_EXTMEM_e3e2 * '\x03') + 0x3a31))();
+    return;
+  }
+  FUN_CODE_3bd2();
+  return;
+}
+

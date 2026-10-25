@@ -1,0 +1,18 @@
+=== 0x291b ===
+
+undefined1 FUN_CODE_291b(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  return DAT_EXTMEM_e1da;
+}
+

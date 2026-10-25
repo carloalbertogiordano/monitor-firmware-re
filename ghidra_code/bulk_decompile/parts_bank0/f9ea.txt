@@ -1,0 +1,10 @@
+=== 0xf9ea ===
+
+void FUN_CODE_f9ea(void)
+
+{
+  DAT_EXTMEM_fda1 = DAT_EXTMEM_fda1 & 0xfc;
+  DAT_EXTMEM_fda0 = DAT_EXTMEM_fda0 | 1;
+  return;
+}
+

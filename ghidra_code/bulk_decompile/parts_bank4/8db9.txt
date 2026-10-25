@@ -1,0 +1,8 @@
+=== 0x8db9 ===
+
+undefined1 FUN_CODE_8db9(void)
+
+{
+  return 0;
+}
+

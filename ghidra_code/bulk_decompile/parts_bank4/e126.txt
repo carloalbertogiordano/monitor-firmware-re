@@ -1,0 +1,9 @@
+=== 0xe126 ===
+
+byte FUN_CODE_e126(void)
+
+{
+  FUN_CODE_f696();
+  return DAT_EXTMEM_b650 & 0xc;
+}
+

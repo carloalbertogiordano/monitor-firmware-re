@@ -1,0 +1,12 @@
+=== 0x43a6 ===
+
+void FUN_CODE_43a6(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e340 = param_1;
+  DAT_EXTMEM_e33f = 1;
+  DAT_EXTMEM_e341 = 0x10;
+  DAT_EXTMEM_e342 = DAT_EXTMEM_e4ca & 0xf;
+  return;
+}
+

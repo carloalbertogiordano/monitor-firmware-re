@@ -1,0 +1,40 @@
+=== 0x8e35 ===
+
+void FUN_CODE_8e35(undefined1 param_1)
+
+{
+  undefined1 *puVar1;
+  short sVar2;
+  
+  puVar1 = &DAT_EXTMEM_e339;
+  FUN_CODE_6fee();
+  puVar1[1] = param_1;
+  FUN_CODE_1724(0xe345);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe349);
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_EXTMEM_e34d = 0;
+  FUN_CODE_1991(0x3d,0xe3,1,0,0,8);
+  FUN_CODE_fe69();
+  FUN_CODE_709e(0xe339);
+  sVar2 = -0x1aee;
+  FUN_CODE_fce2(DAT_EXTMEM_e512 & 0x1f);
+  FUN_CODE_7166();
+  if ((*(byte *)(sVar2 + 3) & 0x3f) != 0) {
+    FUN_CODE_70f8();
+    FUN_CODE_6e53(0xe349);
+                    /* WARNING: Subroutine does not return */
+    thunk_FUN_CODE_152f();
+  }
+  FUN_CODE_70f8();
+  FUN_CODE_6e53(0xe349);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f();
+}
+

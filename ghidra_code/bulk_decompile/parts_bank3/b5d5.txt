@@ -1,0 +1,11 @@
+=== 0xb5d5 ===
+
+byte FUN_CODE_b5d5(undefined1 param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_127f(param_1);
+  return bVar1 & 0xf8;
+}
+

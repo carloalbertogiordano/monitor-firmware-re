@@ -1,0 +1,46 @@
+=== 0x8099 ===
+
+undefined1 FUN_CODE_8099(byte param_1,undefined1 param_2,char *param_3,char param_4)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_3 = *param_3 + '\x01';
+  DAT_INTMEM_70 = DAT_INTMEM_70 | param_1;
+  DAT_INTMEM_20 = param_2;
+  BANK1_R6 = param_4 + '\x01';
+  nop();
+  DAT_INTMEM_22 = param_2;
+  return 0xf1;
+}
+

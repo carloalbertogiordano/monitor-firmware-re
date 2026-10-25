@@ -1,0 +1,21 @@
+=== 0x68cc ===
+
+void FUN_CODE_68cc(byte param_1,undefined1 param_2)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  TCON = param_2;
+  nop();
+  nop();
+  BANK0_R0 = BANK0_R0 & param_1 & BANK0_R0;
+  nop();
+  return;
+}
+

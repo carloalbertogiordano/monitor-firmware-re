@@ -1,0 +1,10 @@
+=== 0x8984 ===
+
+undefined1 FUN_CODE_8984(byte param_1,undefined1 param_2,byte param_3)
+
+{
+  P0 = param_2;
+  FUN_CODE_fcc0(param_1 & param_3);
+  return DAT_EXTMEM_e32e;
+}
+

@@ -1,0 +1,12 @@
+=== 0xf6ad ===
+
+void FUN_CODE_f6ad(void)
+
+{
+  DAT_EXTMEM_e33b = DAT_EXTMEM_e335;
+  DAT_EXTMEM_e33c = DAT_EXTMEM_e336;
+  DAT_EXTMEM_e33d = DAT_EXTMEM_e337;
+  FUN_CODE_f677();
+  return;
+}
+

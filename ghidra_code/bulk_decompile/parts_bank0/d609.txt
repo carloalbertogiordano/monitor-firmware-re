@@ -1,0 +1,8 @@
+=== 0xd609 ===
+
+undefined1 FUN_CODE_d609(void)
+
+{
+  return DAT_EXTMEM_e188;
+}
+

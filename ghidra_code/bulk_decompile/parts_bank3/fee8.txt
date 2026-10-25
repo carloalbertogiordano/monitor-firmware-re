@@ -1,0 +1,8 @@
+=== 0xfee8 ===
+
+undefined1 FUN_CODE_fee8(void)
+
+{
+  return uEXTMEMffff;
+}
+

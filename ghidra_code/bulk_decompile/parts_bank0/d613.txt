@@ -1,0 +1,8 @@
+=== 0xd613 ===
+
+undefined1 FUN_CODE_d613(void)
+
+{
+  return DAT_EXTMEM_e4f0;
+}
+

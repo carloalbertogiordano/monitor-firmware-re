@@ -1,0 +1,12 @@
+=== 0xf7a7 ===
+
+void FUN_CODE_f7a7(void)
+
+{
+  DAT_EXTMEM_fd32 = DAT_EXTMEM_fd32 | 3;
+  DAT_EXTMEM_ff1b = DAT_EXTMEM_ff1b | 3;
+  DAT_EXTMEM_ff1e = DAT_EXTMEM_ff1e | 3;
+  DAT_EXTMEM_ff2c = DAT_EXTMEM_ff2c | 3;
+  return;
+}
+

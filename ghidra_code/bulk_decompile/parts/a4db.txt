@@ -1,0 +1,10 @@
+=== 0xa4db ===
+
+void FUN_CODE_a4db(void)
+
+{
+  FUN_CODE_17ba(3,0xff,DAT_EXTMEM_e332,DAT_EXTMEM_e333);
+  FUN_CODE_152f(0,0,3,0xfc);
+  return;
+}
+

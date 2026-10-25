@@ -1,0 +1,14 @@
+=== 0x4414 ===
+
+char FUN_CODE_4414(void)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = DAT_EXTMEM_e32e - 0x31;
+  cVar1 = -1 - (((0x30 < DAT_EXTMEM_e32e) << 7) >> 7);
+  FUN_CODE_1393(DAT_EXTMEM_e32e,0,8,cVar1,bVar2);
+  return (cVar1 - (((0x7d < bVar2) << 7) >> 7)) + -0x1f;
+}
+

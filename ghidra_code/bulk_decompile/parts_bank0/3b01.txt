@@ -1,0 +1,9 @@
+=== 0x3b01 ===
+
+char FUN_CODE_3b01(char param_1,char *param_2,char param_3)
+
+{
+  return param_1 + param_3 * '\x02' + (char)param_2 * '\x04' + DAT_INTMEM_2a * '\x02' + *param_2 +
+         BANK3_R2 * '\x02' + *param_2;
+}
+

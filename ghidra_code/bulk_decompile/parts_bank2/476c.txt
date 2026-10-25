@@ -1,0 +1,9 @@
+=== 0x476c ===
+
+void FUN_CODE_476c(void)
+
+{
+  DAT_EXTMEM_e32f = DAT_EXTMEM_e32f + '\x01';
+  return;
+}
+

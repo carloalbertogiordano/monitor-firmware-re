@@ -1,0 +1,16 @@
+=== 0xfb33 ===
+
+void FUN_CODE_fb33(void)
+
+{
+  byte in_PSW;
+  
+  FUN_CODE_0b23();
+  _0_0 = 0;
+  FUN_CODE_fd5b();
+  _0_0 = in_PSW >> 7;
+  _0_1 = _0_0;
+  FUN_CODE_0b29();
+  return;
+}
+

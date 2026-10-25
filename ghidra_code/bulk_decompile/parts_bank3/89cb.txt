@@ -1,0 +1,10 @@
+=== 0x89cb ===
+
+byte FUN_CODE_89cb(void)
+
+{
+  DAT_EXTMEM_0bcc = DAT_EXTMEM_0bcc & 0x1f;
+  DAT_EXTMEM_0bcd = DAT_EXTMEM_0bcd & 0x1f;
+  return DAT_EXTMEM_0bce & 0x1f;
+}
+

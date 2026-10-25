@@ -1,0 +1,15 @@
+=== 0xfd73 ===
+
+void FUN_CODE_fd73(void)
+
+{
+  byte bVar1;
+  
+  FUN_CODE_e291();
+  bVar1 = 0;
+  FUN_CODE_fee1(1,2);
+  DAT_EXTMEM_e38a = bVar1 & 0xfb;
+  FUN_CODE_febf(1,2,0);
+  return;
+}
+

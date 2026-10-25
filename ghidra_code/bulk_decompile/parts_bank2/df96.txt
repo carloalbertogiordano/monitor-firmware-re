@@ -1,0 +1,9 @@
+=== 0xdf96 ===
+
+void FUN_CODE_df96(short param_1)
+
+{
+  FUN_CODE_0865(*(undefined1 *)(param_1 + 1),0,0x30);
+  return;
+}
+

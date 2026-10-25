@@ -1,0 +1,15 @@
+=== 0x73af ===
+
+char FUN_CODE_73af(undefined1 *param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  bVar2 = param_1[1];
+  cVar1 = BANK0_R2;
+  FUN_CODE_133e(*param_1,bVar2,0,5,BANK0_R2,bVar2);
+  FUN_CODE_132c(0,0x78);
+  return cVar1 - (((0xab < bVar2) << 7) >> 7);
+}
+

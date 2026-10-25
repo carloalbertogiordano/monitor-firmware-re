@@ -1,0 +1,9 @@
+=== 0xf14f ===
+
+undefined1 FUN_CODE_f14f(undefined1 param_1)
+
+{
+  FUN_CODE_152f();
+  return param_1;
+}
+

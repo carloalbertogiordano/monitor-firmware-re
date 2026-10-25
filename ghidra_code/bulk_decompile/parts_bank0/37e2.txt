@@ -1,0 +1,19 @@
+=== 0x37e2 ===
+
+char FUN_CODE_37e2(byte param_1,char param_2,char param_3)
+
+{
+  char cVar1;
+  char cVar2;
+  byte bVar3;
+  
+  cVar2 = param_3 + -1;
+  bVar3 = (param_1 << 1 | param_1 >> 7) + cVar2;
+  bVar3 = (bVar3 * '\x02' | bVar3 >> 7) + cVar2;
+  cVar1 = CCAP1H;
+  CCAP1H = cVar1 + '\x01';
+  *(char *)(param_2 + -1) = *(char *)(param_2 + -1) + '\x01';
+  bVar3 = (bVar3 >> 1 | bVar3 * -0x80) + 1;
+  return (bVar3 * '\x02' | bVar3 >> 7) + cVar2;
+}
+

@@ -1,0 +1,14 @@
+=== 0x3bd2 ===
+
+void FUN_CODE_3bd2(short param_1)
+
+{
+  set_e3e4_to_const2();
+  *(undefined1 *)(param_1 + 1) = 0;
+  _0_5 = 0;
+  bus_write_variant_a_ff64_65(DAT_EXTMEM_e3e5,DAT_EXTMEM_e3e4);
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

@@ -1,0 +1,9 @@
+=== 0x6ab9 ===
+
+undefined1 FUN_CODE_6ab9(void)
+
+{
+  thunk_FUN_CODE_f456(2);
+  return DAT_EXTMEM_e355;
+}
+

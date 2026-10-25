@@ -1,0 +1,53 @@
+=== 0xec24 ===
+
+void FUN_CODE_ec24(void)
+
+{
+  char cVar1;
+  char cVar2;
+  undefined1 uVar3;
+  char in_PSW;
+  undefined1 *puVar4;
+  
+  cVar2 = T0;
+  if ((cVar2 == '\x01') || (_5_0 == '\x01')) {
+    cVar2 = T0;
+    if (cVar2 != '\0') {
+      if (_5_0 != '\0') {
+        _5_0 = '\0';
+      }
+      return;
+    }
+    return;
+  }
+  cVar2 = FUN_CODE_e3f6();
+  FUN_CODE_08ef(cVar2,cVar2,1,0xa0);
+  if (-1 < in_PSW) {
+    return;
+  }
+  _5_0 = 1;
+  FUN_CODE_e3cf();
+  if ((in_PSW < '\0') && (_5_5 == '\0')) {
+    DAT_EXTMEM_e18d = 0;
+  }
+  else {
+    DAT_EXTMEM_e18d = 1;
+  }
+  DAT_EXTMEM_e32e = 0x18;
+  puVar4 = &DAT_EXTMEM_e32f;
+  DAT_EXTMEM_e32f = DAT_INTMEM_31;
+  FUN_CODE_e450();
+  *puVar4 = 0xe3;
+  uVar3 = FUN_CODE_e406(0x2e,puVar4 + 1);
+  cVar1 = -0x60;
+  FUN_CODE_0134(uVar3,cVar2 + -1,uVar3);
+  if (in_PSW < '\0') {
+    FUN_CODE_0ded();
+    if (cVar1 == '\x03') {
+      FUN_CODE_059b(0x16);
+    }
+    return;
+  }
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x74e6 ===
+
+undefined1 FUN_CODE_74e6(void)
+
+{
+  return DAT_EXTMEM_e502;
+}
+

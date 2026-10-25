@@ -1,0 +1,11 @@
+=== 0xfa51 ===
+
+void FUN_CODE_fa51(char param_1)
+
+{
+  if (param_1 == '\x03') {
+    DAT_EXTMEM_e584 = DAT_EXTMEM_e584 | 1;
+  }
+  return;
+}
+

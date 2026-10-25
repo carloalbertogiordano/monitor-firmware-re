@@ -1,0 +1,10 @@
+=== 0xb4cf ===
+
+undefined1 FUN_CODE_b4cf(void)
+
+{
+  DAT_EXTMEM_b7d0 = DAT_EXTMEM_b7d0 & 0xfd;
+  EX0 = 1;
+  return DAT_EXTMEM_e5a8;
+}
+

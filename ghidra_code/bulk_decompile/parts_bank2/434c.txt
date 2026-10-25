@@ -1,0 +1,8 @@
+=== 0x434c ===
+
+char FUN_CODE_434c(byte *param_1)
+
+{
+  return -0x1f - (((0x32 < *param_1 >> 4) << 7) >> 7);
+}
+

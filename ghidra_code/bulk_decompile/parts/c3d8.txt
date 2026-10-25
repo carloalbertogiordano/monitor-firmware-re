@@ -1,0 +1,13 @@
+=== 0xc3d8 ===
+
+byte FUN_CODE_c3d8(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = 2;
+  FUN_CODE_ca0e();
+  DAT_EXTMEM_e5a5 = DAT_EXTMEM_e5a5 & 0xf | bVar1 << 4;
+  return bVar1 & 0xf;
+}
+

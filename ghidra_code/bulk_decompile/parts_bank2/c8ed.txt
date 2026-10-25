@@ -1,0 +1,76 @@
+=== 0xc8ed ===
+
+void FUN_CODE_c8ed(char param_1,byte param_2,byte param_3,byte param_4)
+
+{
+  bool bVar1;
+  char cVar2;
+  byte bVar3;
+  char in_PSW;
+  char cVar4;
+  
+  bVar3 = DAT_EXTMEM_e56e ^ param_4;
+  if (bVar3 == 0) {
+    bVar3 = DAT_EXTMEM_e56d ^ param_3;
+  }
+  DAT_EXTMEM_e334 = param_3;
+  DAT_EXTMEM_e335 = param_4;
+  if (bVar3 == 0) {
+    bVar3 = param_1 - (param_3 - (((param_2 < param_4) << 7) >> 7));
+    if (((param_2 - param_4 == BANK0_R7) && (bVar3 == BANK0_R6)) ||
+       (cVar4 = ((param_2 - param_4 < 0xfa) << 7) >> 7, bVar1 = bVar3 < (byte)-cVar4,
+       bVar3 = bVar3 + cVar4, bVar1)) {
+      FUN_CODE_c1a5(bVar3,DAT_EXTMEM_e56f -
+                          (DAT_EXTMEM_e56d - (((DAT_EXTMEM_e570 < DAT_EXTMEM_e56e) << 7) >> 7)),
+                    DAT_EXTMEM_e570 - DAT_EXTMEM_e56e);
+    }
+  }
+  else {
+    FUN_CODE_c182();
+    param_4 = param_4 - (in_PSW >> 7);
+    bVar3 = DAT_EXTMEM_e335 - param_4;
+    param_3 = param_3 - (((DAT_EXTMEM_e335 < param_4) << 7) >> 7);
+    cVar4 = (DAT_EXTMEM_e334 < param_3) << 7;
+    param_3 = DAT_EXTMEM_e334 - param_3;
+    FUN_CODE_002e();
+    param_3 = bVar3 ^ 1 | param_3;
+    if (param_3 == 0) {
+      cVar2 = '\t';
+      FUN_CODE_1991(0x36,0xe3,1,0);
+      FUN_CODE_c182();
+      bVar1 = false;
+      if (DAT_EXTMEM_e334 < param_3 - (((DAT_EXTMEM_e335 < (byte)(cVar2 - (cVar4 >> 7))) << 7) >> 7)
+         ) {
+        bVar1 = DAT_EXTMEM_e56e != 0;
+        DAT_EXTMEM_e56e = DAT_EXTMEM_e56e - 1;
+        DAT_EXTMEM_e56d = DAT_EXTMEM_e56d + (-1 - ((bVar1 << 7) >> 7));
+        bVar1 = DAT_EXTMEM_e570 != 0;
+        DAT_EXTMEM_e570 = DAT_EXTMEM_e570 - 1;
+        bVar3 = 0xff - ((bVar1 << 7) >> 7);
+        bVar1 = CARRY1(DAT_EXTMEM_e56f,bVar3);
+        DAT_EXTMEM_e56f = DAT_EXTMEM_e56f + bVar3;
+      }
+      cVar4 = bVar1 << 7;
+      DAT_EXTMEM_0013 = DAT_EXTMEM_0013 & 0x3f | 0x40;
+      FUN_CODE_c1a5();
+      FUN_CODE_082f(1);
+      if (((-1 < cVar4) || (FUN_CODE_082f(1), -1 < cVar4)) || (FUN_CODE_082f(1), -1 < cVar4)) {
+        return;
+      }
+      _0_0 = 0;
+      FUN_CODE_e33c(0x36,0xe3,1);
+      if (-1 < cVar4) {
+        return;
+      }
+      bVar3 = DAT_EXTMEM_e336 ^ DAT_EXTMEM_e56d;
+      if (bVar3 == 0) {
+        bVar3 = DAT_EXTMEM_e337 ^ DAT_EXTMEM_e56e;
+      }
+      if (bVar3 != 0) {
+        DAT_EXTMEM_0013 = DAT_EXTMEM_0013 & 0x7f | ~DAT_EXTMEM_0013 & 0x80;
+      }
+    }
+  }
+  return;
+}
+

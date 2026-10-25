@@ -1,0 +1,343 @@
+=== 0x0ced ===
+
+/* WARNING: Instruction at (CODE,0x0b4b) overlaps instruction at (CODE,0x0b4a)
+    */
+/* WARNING: Possible PIC construction at 0x0973: Changing call to branch */
+/* WARNING: Removing unreachable block (CODE,0x0975) */
+/* WARNING: Removing unreachable block (CODE,0x0916) */
+
+byte FUN_CODE_0ced(byte param_1,byte *param_2,byte param_3,byte *param_4,byte *param_5,byte param_6,
+                  byte param_7,byte param_8,byte param_9,byte param_10,byte param_11)
+
+{
+  short sVar1;
+  undefined1 uVar2;
+  undefined1 *puVar3;
+  char cVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  byte bVar8;
+  byte bVar9;
+  code cVar10;
+  byte bVar11;
+  byte bVar12;
+  char cVar13;
+  undefined1 *puVar14;
+  undefined1 *puVar15;
+  undefined1 *puVar16;
+  byte in_PSW;
+  char cVar17;
+  
+  puVar14 = (undefined1 *)0x0;
+  bVar11 = thunk_FUN_CODE_0800(param_1,(short)param_2,(byte)param_5,param_6);
+  cVar13 = TXD;
+  if (cVar13 == '\0') {
+    bVar11 = FUN_CODE_0821(param_7);
+    *param_4 = *param_4 - 1;
+    FUN_CODE_08a1(bVar11,param_2,param_3,param_4,param_5,param_6,param_7,param_8,param_9,param_10,
+                  param_11);
+    cVar13 = param_9 - 1;
+    FUN_CODE_1125(param_10,param_11);
+    bVar11 = FUN_CODE_812c((short)param_2,param_4);
+    bVar12 = bVar11 >> 1 | in_PSW & 0x80;
+code_c0x0834:
+    cVar17 = bVar11 << 7;
+    bVar11 = cVar13 - 1;
+    puVar14['\x01'] = 0x37;
+    puVar14['\x02'] = 8;
+    cVar4 = FUN_CODE_0ddf(bVar12,(short)param_2,(char)param_5);
+    cVar13 = param_10 - 1;
+    puVar14['\x01'] = 0x3a;
+    puVar14['\x02'] = 8;
+    bVar5 = FUN_CODE_09e7(cVar4,(char *)param_4);
+    bVar12 = cVar13 - 1;
+    puVar14['\x01'] = 0x3d;
+    puVar14['\x02'] = 8;
+    cVar4 = FUN_CODE_0def(bVar5,(short)param_2,(byte)param_4,param_5,param_6,bVar12,param_11);
+    cVar13 = param_11 - 1;
+    puVar14['\x01'] = 0x40;
+    puVar14['\x02'] = 8;
+    bVar6 = FUN_CODE_09f7(cVar4,(char)param_5);
+    bVar5 = cVar13 - 1;
+    puVar14['\x01'] = 0x43;
+    puVar14['\x02'] = 8;
+    bVar6 = FUN_CODE_0dfe(bVar6,(short)param_2,(byte)param_5,param_6,bVar5);
+    if (_4_2 == '\x01') {
+      bVar11 = FUN_CODE_09a2(param_2,(char *)param_4,(byte)param_5,param_6,param_7,bVar5);
+      return bVar11;
+    }
+    cVar13 = P2_2;
+    if (cVar13 != '\x01') {
+      bVar11 = FUN_CODE_0922(bVar6,param_2,param_3,param_4,param_5,param_6,param_7,param_8,bVar11,
+                             bVar12,bVar5);
+      return bVar11;
+    }
+    bVar7 = DAT_INTMEM_23 - (cVar17 >> 7);
+    _7_5 = CARRY1(bVar6,bVar7);
+    bVar6 = bVar6 + bVar7;
+    _9_5 = 0xed < bVar6;
+    bVar6 = bVar6 + 0x12 | DAT_INTMEM_24;
+    _b_5 = CARRY1(bVar6,BANK2_R2);
+    bVar6 = CARRY1(bVar6 + BANK2_R2 & DAT_INTMEM_25,*param_4) << 7;
+    puVar14['\x01'] = 0x6b;
+    puVar14['\x02'] = 8;
+    bVar7 = FUN_CODE_6526((short)param_2,param_4);
+    _d_5 = bVar6 >> 7;
+    do {
+      bVar6 = CARRY1(bVar7,*param_5) << 7;
+      puVar14['\x01'] = 0x71;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_7527((short)param_2,param_4);
+      _f_5 = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,(byte)param_4) << 7;
+      puVar14['\x01'] = 0x77;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_8528((short)param_2,param_4);
+      TF0 = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,(byte)param_5) << 7;
+      puVar14['\x01'] = 0x7d;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_9529((short)param_2,param_4);
+      SM2 = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,param_6) << 7;
+      puVar14['\x01'] = 0x83;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_a52a((short)param_2,param_4);
+      ET2 = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,param_7) << 7;
+      puVar14['\x01'] = 0x89;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_b52b((short)param_2,param_4);
+      PT2 = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,param_8) << 7;
+      puVar14['\x01'] = 0x8f;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_c52c((short)param_2,param_4);
+      RCLK = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,bVar11) << 7;
+      puVar14['\x01'] = 0x95;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_d52d((short)param_2,param_4);
+      CCON_5 = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,bVar12) << 7;
+      puVar14['\x01'] = 0x9b;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_e52e((short)param_2,param_4);
+      HIFLG_5 = bVar6 >> 7;
+      bVar6 = CARRY1(bVar7,bVar5) << 7;
+      puVar14['\x01'] = 0xa1;
+      puVar14['\x02'] = 8;
+      bVar7 = FUN_CODE_f52f((short)param_2,param_4);
+      F8_5 = bVar6 >> 7;
+      if (_2_3 == '\0') {
+LAB_CODE_08ab:
+        DAT_INTMEM_31 = DAT_INTMEM_31 + -1;
+        return param_2[bVar7];
+      }
+      cVar13 = P1_3;
+      cVar10 = cCODE0909;
+      if (cVar13 != '\0') {
+        puVar14['\x01'] = 0xab;
+        puVar14['\x02'] = 8;
+        bVar7 = FUN_CODE_0913(bVar7,param_2,param_3,param_4,param_5,param_6,param_7,param_8,bVar11,
+                              bVar12,bVar5);
+        goto LAB_CODE_08ab;
+      }
+      while( true ) {
+        bVar8 = (byte)cVar10 >> 1 | (char)cVar10 << 7;
+        bVar6 = 0;
+        bVar7 = bVar8;
+        if (param_3 != 0) {
+          bVar7 = bVar8 / param_3;
+          bVar6 = bVar8 % param_3;
+        }
+        DAT_INTMEM_39 = 0x38;
+        bVar8 = (byte)FUN_CODE_08d5[ZEXT12(param_4 + bVar7) + 3] >> 1 |
+                (char)FUN_CODE_08d5[ZEXT12(param_4 + bVar7) + 3] << 7;
+        bVar7 = 0x39 - ((CARRY1(bVar7,(byte)param_4) << 7) >> 7);
+        bVar9 = *(byte *)((ushort)(bVar8 - bVar7) + 0x8de);
+        bVar7 = 0x38 - (((bVar8 < bVar7) << 7) >> 7);
+        bVar7 = (bVar9 - bVar7) + (param_6 - (((bVar9 < bVar7) << 7) >> 7));
+        sVar1 = (ushort)(bVar7 >> 1 | bVar7 * -0x80) * (ushort)bVar6;
+        param_3 = (byte)((ushort)sVar1 >> 8);
+        bVar6 = *(byte *)((ushort)((char)sVar1 + param_6) + 0x8e4);
+        bVar7 = bVar6 >> 1 | bVar6 << 7;
+        bVar6 = param_6;
+        bVar8 = param_7;
+        param_8 = DAT_INTMEM_3b;
+        puVar3 = puVar14;
+        if (bVar7 != 0x3b) break;
+code_c0x08ea:
+        puVar14 = puVar3;
+        param_7 = bVar7;
+        param_6 = bVar6;
+        if (param_8 == 0x3c) {
+                    /* WARNING: Could not recover jumptable at 0x08ef. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+          bVar11 = (*(code *)(param_2 + (param_7 + 0x3c)))();
+          return bVar11;
+        }
+        bVar6 = param_8 - (((param_8 < 0x3c) << 7) >> 7);
+        cVar13 = bVar8 + bVar6;
+        *(char *)ZEXT12(param_5) = cVar13;
+        bVar7 = decimal_adjust(cVar13);
+        bVar6 = bVar11 - ((CARRY1(bVar8,bVar6) << 7) >> 7);
+        bVar9 = CARRY1(bVar7,bVar6) << 7;
+        cVar10 = FUN_CODE_08f5[(ushort)(bVar7 + bVar6) + 1];
+        param_8 = param_8 - 1;
+        if (param_8 == 0) {
+          bVar6 = 0;
+          bVar7 = ~(bVar5 >> 1 | bVar5 * -0x80);
+          puVar15 = puVar14;
+LAB_CODE_0900:
+          bVar11 = bVar5 - ((char)(bVar6 << 7) >> 7);
+          puVar15['\x01'] = BANK0_R0;
+          nop();
+          nop();
+          bVar11 = FUN_CODE_0800(*(char *)((ushort)(bVar7 + bVar11) + 0x902) +
+                                 (bVar5 - ((CARRY1(bVar7,bVar11) << 7) >> 7)),(short)param_2,
+                                 (byte)param_5,param_6);
+          return bVar11;
+        }
+LAB_CODE_0936:
+        param_5 = param_5 + '\x01';
+        if (-1 < (char)bVar9) {
+          do {
+            param_5 = param_5 + '\x01';
+            HIE = *puVar14;
+            puVar15 = puVar14 + -1;
+            while( true ) {
+              bVar6 = param_6 + 1;
+              bVar8 = param_7;
+              bVar7 = bCODE08ea;
+              puVar3 = puVar14 + -1;
+              if (cVar10 == (code)0x0) goto code_c0x08ea;
+              param_6 = param_6 + 2;
+              bVar7 = *param_2;
+              bVar6 = bVar9 >> 7 ^ 1;
+              if (bVar7 != 0) goto LAB_CODE_0900;
+              param_7 = param_7 + 2;
+              *param_2 = 0;
+              bVar7 = 0;
+              param_8 = param_8 + 2;
+              bVar6 = *param_2;
+              _1_5 = 1;
+              if (bVar6 != 0) {
+                bVar11 = bVar11 + 1;
+                EPCON = puVar14[-1];
+                param_10 = bVar12 + 2;
+                uVar2 = DAT_SFR_ef;
+                puVar14[-1] = uVar2;
+                param_11 = bVar5 + 1;
+                if (sVar1 < 0) {
+                  uVar2 = F8_6;
+                  bVar7 = 0;
+                  if (_4_1 == '\0') {
+                    cVar13 = P2_1;
+                    if (cVar13 != '\0') {
+                      P2_1 = 0;
+                      bVar11 = FUN_CODE_0c3c(bVar6 + 0x13,(short)param_2,param_4,param_5,param_8,
+                                             bVar11,param_10,param_11);
+                      return bVar11;
+                    }
+                    *puVar14 = 0x68;
+                    puVar14['\x01'] = 9;
+                    bVar6 = FUN_CODE_0821(param_7);
+                    *param_4 = *param_4 - 1;
+                  }
+                  else {
+                    _4_1 = '\0';
+                  }
+                }
+                else {
+                  *puVar14 = 0x6f;
+                  puVar14['\x01'] = 9;
+                  bVar6 = FUN_CODE_0825(bVar6,param_2,(char *)param_4,(byte)param_5,param_6,param_11
+                                       );
+                }
+                *puVar14 = 0x6b;
+                puVar14['\x01'] = 9;
+                FUN_CODE_08a1(bVar6,param_2,param_3,param_4,param_5,param_6,param_7,param_8,bVar11,
+                              param_10,param_11);
+                cVar13 = bVar11 - 1;
+                *puVar14 = 0x6f;
+                puVar14['\x01'] = 9;
+                FUN_CODE_1125(param_10,param_11);
+                *puVar14 = 0x72;
+                puVar14['\x01'] = 9;
+                bVar11 = FUN_CODE_912d((short)param_2,param_4);
+                bVar12 = bVar11 >> 1 | bVar7 & 0x80;
+                *puVar14 = 0x75;
+                puVar16 = puVar14 + '\x01';
+                puVar14 = puVar14 + '\x01';
+                *puVar16 = 9;
+                goto code_c0x0834;
+              }
+              *param_5 = *param_5 + 1;
+              if (_e_5 != '\0') break;
+              bVar9 = (_f_7 ^ 1) << 7;
+              param_4 = param_4 + '\x01';
+              cVar13 = P0_7;
+              cVar10 = (code)0x0;
+              if (cVar13 != '\0') {
+                uVar2 = P1;
+                *puVar14 = uVar2;
+                goto LAB_CODE_0936;
+              }
+            }
+            _e_5 = '\0';
+            param_2 = (byte *)0x940;
+            bVar9 = (param_5 != (byte *)0x0) << 7;
+            cVar10 = (code)-(char)param_5;
+            puVar14 = puVar14 + -1;
+          } while( true );
+        }
+      }
+    } while( true );
+  }
+  TXD = 0;
+  bVar5 = 0x13 - ((char)in_PSW >> 7);
+  bVar12 = CARRY1(bVar11,bVar5) << 7;
+  bVar11 = FUN_CODE_0b3b(bVar11 + bVar5,(char *)param_2,(char *)param_4,(char)param_5,param_6);
+  cVar13 = func_0x0f42(bVar11 >> 1 | bVar12 & 0x80);
+  if (param_6 != 0xb) {
+    *param_5 = *param_5 + 1;
+    if (cVar13 - 1U == 0) {
+      cVar13 = FUN_CODE_0aa8(0,(short)param_2,(byte)param_5,param_6);
+      bVar11 = thunk_FUN_CODE_0ee0(cVar13,param_2,param_3,param_4,param_5,param_6 - 1,param_7,
+                                   param_8,param_9,BANK3_R3,param_11);
+      return bVar11;
+    }
+    *param_5 = *param_5 + 1;
+    uVar2 = P0;
+    param_4 = param_4 + '\x01';
+    cVar4 = P0_6;
+    if (cVar4 != '\0') {
+      uVar2 = TF0;
+      nop();
+      bVar11 = param_2[cVar13 - 1U];
+      param_5 = param_5 + '\x02';
+      if (bVar11 != 0) goto LAB_CODE_0aef;
+    }
+    param_5 = param_5 + '\x01';
+    bVar11 = 0;
+    if (*param_2 == 0) {
+LAB_CODE_0aef:
+      nop();
+      nop();
+      bVar11 = FUN_CODE_0800(bVar11,(short)param_2,(byte)param_5,param_6);
+      return bVar11;
+    }
+    _1_3 = _1_3 ^ 1;
+    if (*param_2 == 0) {
+      *param_4 = *param_4 + 1;
+      nop();
+      bVar11 = FUN_CODE_0800(0,(short)param_2,(byte)param_5,param_6 + 1);
+      return bVar11;
+    }
+  }
+  bVar11 = thunk_FUN_CODE_0e1a((short)param_2,param_4);
+  return bVar11;
+}
+

@@ -1,0 +1,18 @@
+=== 0xeebc ===
+
+void FUN_CODE_eebc(void)
+
+{
+  if (((DAT_EXTMEM_3017 & 7) != 0) && (((DAT_EXTMEM_3016 & 0x70) >> 4 & DAT_EXTMEM_3017 & 7) != 0))
+  {
+    return;
+  }
+  if (((DAT_EXTMEM_301c & 0x80) == 0x80) && ((DAT_EXTMEM_3003 & 0x80) == 0x80)) {
+    return;
+  }
+  if (((DAT_EXTMEM_3018 & 0x33) != 0) && ((DAT_EXTMEM_3018 & 0x33 & DAT_EXTMEM_3003 & 0x33) != 0)) {
+    return;
+  }
+  return;
+}
+

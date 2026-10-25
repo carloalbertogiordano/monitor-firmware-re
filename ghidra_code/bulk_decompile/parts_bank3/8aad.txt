@@ -1,0 +1,10 @@
+=== 0x8aad ===
+
+void FUN_CODE_8aad(void)
+
+{
+  DAT_EXTMEM_0bd0 = DAT_EXTMEM_0bd0 & 0xfb;
+  DAT_INTMEM_56 = DAT_INTMEM_54;
+  return;
+}
+

@@ -1,0 +1,14 @@
+=== 0xf7e0 ===
+
+void FUN_CODE_f7e0(void)
+
+{
+  DAT_EXTMEM_e199 = 0;
+  DAT_EXTMEM_e19a = 0;
+  DAT_EXTMEM_e196 = DAT_EXTMEM_e196 & 0xf7;
+  FUN_CODE_1105();
+  FUN_CODE_1009(0x12);
+  FUN_CODE_059b(8);
+  return;
+}
+

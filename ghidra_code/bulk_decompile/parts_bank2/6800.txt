@@ -1,0 +1,16 @@
+=== 0x6800 ===
+
+void FUN_CODE_6800(char *param_1)
+
+{
+  undefined1 uStackX_0;
+  undefined1 in_stack_000000ff;
+  
+  *param_1 = *param_1 + '\x01';
+  FUN_CODE_963a(0xe525);
+  BANK0_R7 = uStackX_0;
+  BANK0_R6 = in_stack_000000ff;
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_152f();
+}
+

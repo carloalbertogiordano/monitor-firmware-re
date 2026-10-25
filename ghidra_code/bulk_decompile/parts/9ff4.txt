@@ -1,0 +1,10 @@
+=== 0x9ff4 ===
+
+void FUN_CODE_9ff4(void)
+
+{
+  FUN_CODE_059b(0x1b);
+  FUN_CODE_e644(2);
+  return;
+}
+

@@ -1,0 +1,8 @@
+=== 0x9cc7 ===
+
+undefined1 FUN_CODE_9cc7(void)
+
+{
+  return DAT_EXTMEM_e60f;
+}
+

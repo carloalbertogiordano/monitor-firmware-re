@@ -1,0 +1,23 @@
+=== 0xe886 ===
+
+char FUN_CODE_e886(void)
+
+{
+  char cVar1;
+  
+  DAT_EXTMEM_e335 = 0;
+  do {
+    DAT_EXTMEM_e373 = 0x18;
+    FUN_CODE_0775(0xe7,0x82,2,0xc9);
+    FUN_CODE_074b(0,2);
+    DAT_EXTMEM_e335 = DAT_EXTMEM_e335 + 1;
+    cVar1 = -0x37;
+    FUN_CODE_085f(2,0x82,2);
+    if (cVar1 == '\0') break;
+  } while ((DAT_EXTMEM_e335 < 0x10) << 7 < '\0');
+  if (0xf < DAT_EXTMEM_e335) {
+    return DAT_EXTMEM_e335 - 0x10;
+  }
+  return DAT_EXTMEM_e335 - 0x10;
+}
+

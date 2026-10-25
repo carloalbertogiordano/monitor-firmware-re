@@ -1,0 +1,43 @@
+=== 0x7f89 ===
+
+undefined1 FUN_CODE_7f89(byte param_1,undefined1 *param_2,byte param_3)
+
+{
+  byte bVar1;
+  undefined1 in_stack_000000fc;
+  
+  if ((param_1 & param_3) != 0) {
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    param_3 = param_3 + 1;
+    nop();
+    nop();
+    nop();
+  }
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  *param_2 = (undefined1 *)(param_3 + 1);
+  bVar1 = DAT_SFR_91;
+  DAT_SFR_91 = bVar1 & 0xef;
+  BANK0_R0 = param_3;
+  FUN_CODE_075d(*(undefined1 *)(param_3 + 1));
+  if (((DAT_EXTMEM_ffeb & 0x80) == 0x80) && (bVar1 = DAT_SFR_91, (bVar1 & 0x10) == 0)) {
+    bVar1 = DAT_SFR_91;
+    DAT_SFR_91 = bVar1 & 0xef | 0x10;
+  }
+  DAT_EXTMEM_fff4 = DAT_EXTMEM_e6c8;
+  return in_stack_000000fc;
+}
+

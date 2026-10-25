@@ -1,0 +1,13 @@
+=== 0xfbd2 ===
+
+void FUN_CODE_fbd2(void)
+
+{
+  if (_0_1 != '\0') {
+    DAT_EXTMEM_0004 = DAT_EXTMEM_0004 & 0x7f | 0x80;
+    return;
+  }
+  DAT_EXTMEM_0004 = DAT_EXTMEM_0004 & 0x7f;
+  return;
+}
+

@@ -1,0 +1,44 @@
+=== 0xd4f0 ===
+
+void FUN_CODE_d4f0(byte param_1,byte param_2)
+
+{
+  byte bVar1;
+  undefined1 uVar2;
+  char cVar3;
+  
+  cVar3 = '\0';
+  bVar1 = FUN_CODE_87b0();
+  if (param_1 < 1U - (((bVar1 < 0x77U - (cVar3 >> 7)) << 7) >> 7)) {
+    uVar2 = 4;
+  }
+  else if (param_1 < 2U - (((param_2 < 0xbc) << 7) >> 7)) {
+    uVar2 = 6;
+  }
+  else if (param_1 < 3U - (((param_2 < 0xe8) << 7) >> 7)) {
+    uVar2 = 0xb;
+  }
+  else if (param_1 < 7U - (((param_2 < 0xd0) << 7) >> 7)) {
+    uVar2 = 0xc;
+  }
+  else if (param_1 < 9U - (((param_2 < 0xc4) << 7) >> 7)) {
+    uVar2 = 9;
+  }
+  else {
+    uVar2 = 0xc;
+  }
+  FUN_CODE_891e(uVar2,0x1da2);
+  DAT_EXTMEM_1da4 = 0xf;
+  DAT_EXTMEM_1db4 = 0xf;
+  DAT_EXTMEM_1dc4 = 0xf;
+  DAT_EXTMEM_1da5 = 0;
+  DAT_EXTMEM_1db5 = 0;
+  DAT_EXTMEM_1dc5 = 0;
+  DAT_EXTMEM_1da6 = 0;
+  DAT_EXTMEM_1db6 = 0;
+  DAT_EXTMEM_1dc6 = 0;
+  FUN_CODE_88d0(0x17);
+  FUN_CODE_88d0(0);
+  return;
+}
+

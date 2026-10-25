@@ -1,0 +1,50 @@
+=== 0x4239 ===
+
+void FUN_CODE_4239(char param_1,byte *param_2,byte *param_3,char param_4,char param_5,byte param_6,
+                  char param_7,byte param_8)
+
+{
+  byte bVar1;
+  byte bVar2;
+  byte bVar3;
+  byte bVar4;
+  byte bVar5;
+  
+  bVar1 = param_1 + param_7 + param_8;
+  bVar5 = bVar1 & 0x80;
+  bVar1 = bVar1 * '\x02' | CARRY1(param_1 + param_7,param_8) | 0x40 | *param_3;
+  if ((char)bVar5 < '\0') {
+    while( true ) {
+      bVar4 = bVar1 | 0x44;
+      bVar3 = *param_3 - ((char)bVar5 >> 7);
+      bVar5 = CARRY1(bVar4,bVar3) << 7;
+      bVar1 = bVar4 + bVar3;
+      bVar2 = bVar1;
+      if (!CARRY1(bVar4,bVar3)) break;
+      bVar5 = *param_3 - ((char)bVar5 >> 7);
+      bVar5 = CARRY1((bVar1 + bVar5 | 0x3f) & param_6,param_6 - ((CARRY1(bVar1,bVar5) << 7) >> 7))
+              << 7;
+      param_2 = &DAT_INTMEM_7c;
+      bVar1 = DAT_INTMEM_6b ^ DAT_INTMEM_7c;
+      *param_3 = 0x66;
+      param_4 = param_4 + -1;
+      bVar1 = bVar1 - 1 | *param_3;
+    }
+  }
+  else {
+    bVar1 = bVar1 - 1;
+    bVar2 = bVar1;
+  }
+  while( true ) {
+    param_2 = param_2 + -1;
+    bVar3 = bVar1 | *param_2 | *param_2;
+    bVar1 = *param_3 - ((char)bVar5 >> 7);
+    bVar5 = CARRY1(bVar3,bVar1) << 7;
+    if (!CARRY1(bVar3,bVar1)) break;
+    bVar1 = bVar3 + bVar1 | DAT_INTMEM_37;
+  }
+  FUN_CODE_4240(bVar3 + bVar1 + (param_5 - ((char)bVar5 >> 7)),param_2,param_3,param_4,param_5,
+                param_6,param_7,bVar2);
+  return;
+}
+

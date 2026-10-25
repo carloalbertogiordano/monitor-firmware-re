@@ -1,0 +1,12 @@
+=== 0xcaf9 ===
+
+void FUN_CODE_caf9(short param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_1298(*(undefined2 *)(param_1 + 1),*(undefined1 *)(param_1 + 2));
+  DAT_EXTMEM_e3af = bVar1 & 0x1f;
+  return;
+}
+

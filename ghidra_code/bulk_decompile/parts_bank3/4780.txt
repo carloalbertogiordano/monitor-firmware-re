@@ -1,0 +1,21 @@
+=== 0x4780 ===
+
+void FUN_CODE_4780(undefined1 param_1)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  BANK0_R0 = param_1;
+  FUN_CODE_4001();
+  return;
+}
+

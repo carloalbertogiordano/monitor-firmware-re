@@ -1,0 +1,40 @@
+=== 0x44b0 ===
+
+void FUN_CODE_44b0(byte param_1,short param_2,byte *param_3,byte param_4,char param_5,byte param_6,
+                  byte param_7,char param_8)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char in_PSW;
+  
+  bVar1 = param_7;
+  if (-1 < in_PSW) {
+    bVar1 = param_1 + 0x49 | param_4 | 2;
+    P2_4 = 0xb6 < bVar1;
+    bVar1 = bVar1 + 0x49 + (param_6 - (0xb6 < bVar1)) | param_4;
+    if (param_5 != -0x6d) {
+      bVar1 = *(byte *)(param_2 + (ushort)bVar1);
+      nop();
+      _4_4 = 0xb6 < param_7;
+      _e_4 = _4_4;
+      FUN_CODE_6cb2((param_7 + 0x49 | param_4 | param_4 | param_4) >> 1 | _8_3 << 7,
+                    param_5 + 0x34U ^ (bVar1 >> 4 | bVar1 << 4));
+      return;
+    }
+    bVar1 = bVar1 - param_8;
+    _4_4 = 0xb6 < bVar1;
+    P0_4 = _4_4;
+    nop();
+    bVar2 = IEN1;
+    bVar2 = ((bVar1 + 0x49 | param_4 | (byte)param_3) ^ param_6) & bVar2;
+    bVar1 = bVar2 & 0xf0 | *param_3 & 0xf;
+    *param_3 = *param_3 & 0xf0 | bVar2 & 0xf;
+    in_PSW = CARRY1(bVar1,_4_4 + param_4) << 7;
+    bVar1 = bVar1 + _4_4 + param_4;
+    param_1 = param_7;
+  }
+  FUN_CODE_4404(param_4,*(undefined1 *)((ushort)(param_1 - (bVar1 - (in_PSW >> 7))) + 0x44d6));
+  return;
+}
+

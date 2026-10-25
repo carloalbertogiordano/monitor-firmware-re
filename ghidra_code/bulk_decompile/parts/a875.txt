@@ -1,0 +1,8 @@
+=== 0xa875 ===
+
+byte FUN_CODE_a875(void)
+
+{
+  return DAT_EXTMEM_e5c9 & 0xe1;
+}
+

@@ -1,0 +1,35 @@
+=== 0x56c2 ===
+
+/* WARNING: Instruction at (CODE,0x56ce) overlaps instruction at (CODE,0x56cd)
+    */
+
+char FUN_CODE_56c2(byte param_1,short param_2,char param_3,char param_4,char param_5)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  byte in_PSW;
+  
+  param_1 = param_1 >> 1;
+  bVar1 = (param_1 | in_PSW & 0x80) >> 1;
+  bVar2 = bVar1 | param_1 << 7;
+  if (_a_3 == '\0') {
+    bVar2 = bVar1 << 1 | param_1 & 1;
+  }
+  else {
+    cVar3 = P1_3;
+    if (cVar3 == '\0') goto LAB_CODE_56d5;
+    if ((param_1 & 0x10) == 0) {
+      DAT_INTMEM_27 = DAT_INTMEM_27 & 0x32;
+      return *(char *)(param_2 + (ushort)bVar2) + param_4;
+    }
+  }
+  cVar3 = FUN_CODE_5123(bVar2);
+  FUN_CODE_5163(cVar3 + -1);
+  FUN_CODE_51a3(param_3 + -1);
+LAB_CODE_56d5:
+  cVar3 = FUN_CODE_51e3(param_5 + -1);
+  return cVar3;
+}
+

@@ -1,0 +1,9 @@
+=== 0x7740 ===
+
+undefined1 FUN_CODE_7740(void)
+
+{
+  DAT_EXTMEM_002a = 0x12;
+  return DAT_EXTMEM_e539;
+}
+

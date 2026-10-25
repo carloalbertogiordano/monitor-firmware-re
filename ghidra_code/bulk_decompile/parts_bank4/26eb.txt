@@ -1,0 +1,101 @@
+=== 0x26eb ===
+
+void FUN_CODE_26eb(void)
+
+{
+  undefined1 *puVar1;
+  char cVar2;
+  byte bVar3;
+  char cVar4;
+  byte *pbVar5;
+  byte bVar6;
+  byte bVar7;
+  undefined1 *puVar8;
+  byte *pbVar9;
+  byte *pbVar10;
+  
+  puVar1 = (undefined1 *)0xff;
+  do {
+    *puVar1 = 0;
+    puVar1 = puVar1 + -1;
+  } while (puVar1 != (undefined1 *)0x0);
+  puVar8 = &DAT_EXTMEM_e000;
+  cVar4 = '\0';
+  cVar2 = '\x10';
+  do {
+    do {
+      *puVar8 = 0;
+      puVar8 = puVar8 + 1;
+      cVar4 = cVar4 + -1;
+    } while (cVar4 != '\0');
+    cVar2 = cVar2 + -1;
+  } while (cVar2 != '\0');
+  SP = 0x71;
+  pbVar9 = &DAT_CODE_1d92;
+  while( true ) {
+    bVar3 = 1;
+    bVar6 = *pbVar9;
+    if (bVar6 == 0) break;
+    bVar7 = bVar6 & 0x3f;
+    pbVar10 = pbVar9 + 1;
+    if (bVar7 >> 5 != 0) {
+      bVar3 = bVar6 & 0x1f;
+      bVar7 = pbVar9[1];
+      pbVar10 = pbVar9 + 2;
+      if (bVar7 != 0) {
+        bVar3 = bVar3 + 1;
+      }
+    }
+    pbVar9 = pbVar10;
+    cVar2 = CARRY1(bVar6 & 0xc0,bVar6 & 0xc0) << 7;
+    if ((bVar6 & 0x40) == 0) {
+      pbVar5 = (byte *)*pbVar9;
+      pbVar9 = pbVar9 + 1;
+      do {
+        bVar3 = *pbVar9;
+        pbVar9 = pbVar9 + 1;
+        if (cVar2 < '\0') {
+          *(byte *)ZEXT12(pbVar5) = bVar3;
+        }
+        else {
+          *pbVar5 = bVar3;
+        }
+        pbVar5 = pbVar5 + '\x01';
+        bVar7 = bVar7 - 1;
+      } while (bVar7 != 0);
+    }
+    else if (cVar2 < '\0') {
+      do {
+        bVar3 = *pbVar9;
+        pbVar9 = pbVar9 + 1;
+        pbVar5 = (byte *)((bVar3 & 0x7f) >> 3 | 0x20);
+        bVar6 = *(byte *)((ushort)((bVar3 & 7) + 0xc) + 0x272c);
+        if ((char)bVar3 < '\0') {
+          bVar6 = bVar6 | *pbVar5;
+        }
+        else {
+          bVar6 = ~bVar6 & *pbVar5;
+        }
+        *pbVar5 = bVar6;
+        bVar7 = bVar7 - 1;
+      } while (bVar7 != 0);
+    }
+    else {
+      pbVar10 = *(byte **)pbVar9;
+      pbVar9 = pbVar9 + 2;
+      do {
+        do {
+          bVar6 = *pbVar9;
+          pbVar9 = pbVar9 + 1;
+          *pbVar10 = bVar6;
+          pbVar10 = pbVar10 + 1;
+          bVar7 = bVar7 - 1;
+        } while (bVar7 != 0);
+        bVar3 = bVar3 - 1;
+      } while (bVar3 != 0);
+    }
+  }
+  FUN_CODE_1183();
+  return;
+}
+

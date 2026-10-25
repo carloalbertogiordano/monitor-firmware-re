@@ -1,0 +1,8 @@
+=== 0xbc0c ===
+
+undefined1 FUN_CODE_bc0c(void)
+
+{
+  return DAT_EXTMEM_e6eb;
+}
+

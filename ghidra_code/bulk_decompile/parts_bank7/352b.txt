@@ -1,0 +1,10 @@
+=== 0x352b ===
+
+void thunk_FUN_CODE_309d(void)
+
+{
+  nop();
+  FUN_CODE_309d();
+  return;
+}
+

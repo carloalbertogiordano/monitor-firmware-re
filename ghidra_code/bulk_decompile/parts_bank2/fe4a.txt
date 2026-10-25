@@ -1,0 +1,9 @@
+=== 0xfe4a ===
+
+void FUN_CODE_fe4a(void)
+
+{
+  FUN_CODE_f6bd(0x18,BANK0_R6,BANK0_R7);
+  return;
+}
+

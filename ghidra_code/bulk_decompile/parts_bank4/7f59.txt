@@ -1,0 +1,10 @@
+=== 0x7f59 ===
+
+void FUN_CODE_7f59(void)
+
+{
+  DAT_EXTMEM_e377 = DAT_INTMEM_57;
+  DAT_EXTMEM_e378 = DAT_INTMEM_58;
+  return;
+}
+

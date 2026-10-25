@@ -1,0 +1,9 @@
+=== 0xb199 ===
+
+void FUN_CODE_b199(void)
+
+{
+  FUN_CODE_1991(0x85,0xe3,1,0,0);
+  return;
+}
+

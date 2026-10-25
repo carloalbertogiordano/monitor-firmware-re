@@ -1,0 +1,8 @@
+=== 0xf15e ===
+
+undefined1 FUN_CODE_f15e(void)
+
+{
+  return DAT_EXTMEM_e6b5;
+}
+

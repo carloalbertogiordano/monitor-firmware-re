@@ -1,0 +1,9 @@
+=== 0xdb13 ===
+
+void FUN_CODE_db13(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(DAT_INTMEM_2d,DAT_INTMEM_2e,DAT_EXTMEM_e517,DAT_EXTMEM_e518);
+}
+

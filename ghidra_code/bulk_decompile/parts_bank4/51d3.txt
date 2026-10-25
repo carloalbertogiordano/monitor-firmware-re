@@ -1,0 +1,105 @@
+=== 0x51d3 ===
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Removing unreachable block (CODE,0x52fb) */
+/* WARNING: Removing unreachable block (CODE,0x5359) */
+/* WARNING: Removing unreachable block (CODE,0x535d) */
+/* WARNING: Removing unreachable block (CODE,0x5361) */
+/* WARNING: Removing unreachable block (CODE,0x53c9) */
+/* WARNING: Removing unreachable block (CODE,0x53cd) */
+/* WARNING: Removing unreachable block (CODE,0x53aa) */
+/* WARNING: Removing unreachable block (CODE,0x5378) */
+/* WARNING: Removing unreachable block (CODE,0x5387) */
+/* WARNING: Removing unreachable block (CODE,0x5406) */
+/* WARNING: Removing unreachable block (CODE,0x5409) */
+/* WARNING: Removing unreachable block (CODE,0x53db) */
+/* WARNING: Removing unreachable block (CODE,0x5395) */
+/* WARNING: Removing unreachable block (CODE,0x53e9) */
+/* WARNING: Removing unreachable block (CODE,0x53ef) */
+/* WARNING: Removing unreachable block (CODE,0x53ad) */
+/* WARNING: Removing unreachable block (CODE,0x5245) */
+/* WARNING: Removing unreachable block (CODE,0x52a3) */
+/* WARNING: Removing unreachable block (CODE,0x52a7) */
+/* WARNING: Removing unreachable block (CODE,0x52ab) */
+/* WARNING: Removing unreachable block (CODE,0x52a0) */
+/* WARNING: Removing unreachable block (CODE,0x52fe) */
+/* WARNING: Removing unreachable block (CODE,0x5302) */
+/* WARNING: Removing unreachable block (CODE,0x5306) */
+/* WARNING: Removing unreachable block (CODE,0x5356) */
+/* WARNING: Removing unreachable block (CODE,0x5399) */
+
+void FUN_CODE_51d3(char param_1,char param_2,char param_3,byte param_4,char param_5)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  char in_PSW;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  nop();
+  nop();
+  if (_1_3 != '\0') {
+    _1_3 = 0;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    uVar1 = FIFLG;
+    nop();
+    nop();
+    BANK1_R3 = BANK1_R3 + '\x01';
+    if (-1 < in_PSW) {
+      BANK1_R2 = BANK1_R2 + '\x01';
+      BANK0_R0 = BANK0_R0 + '\x01';
+    }
+    nop();
+    nop();
+    nop();
+    uVar1 = FIFLG;
+    bVar2 = param_2 - (param_5 - (in_PSW >> 7)) | param_4;
+    if (param_4 == 0) {
+      bVar2 = FUN_CODE_5602(param_3 + '\x01');
+    }
+    nop();
+    FUN_CODE_22e0(param_1,bVar2 >> 1 | bVar2 << 7);
+    return;
+  }
+  BANK1_R3 = BANK1_R3 + '\x01';
+  if (-1 < in_PSW) {
+    BANK1_R2 = BANK1_R2 + '\x01';
+    BANK0_R0 = BANK0_R0 + '\x01';
+  }
+  nop();
+  nop();
+  nop();
+  uVar1 = FIFLG;
+  FUN_CODE_d102(param_1 - (param_5 - (in_PSW >> 7)) | param_4,param_3,BANK0_R0);
+  return;
+}
+

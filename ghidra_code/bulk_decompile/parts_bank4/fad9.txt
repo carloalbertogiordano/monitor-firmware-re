@@ -1,0 +1,12 @@
+=== 0xfad9 ===
+
+void FUN_CODE_fad9(char param_1)
+
+{
+  FUN_CODE_fd3f();
+  _0_0 = param_1 == '\x01';
+  FUN_CODE_e4ff();
+  thunk_FUN_CODE_84e8();
+  return;
+}
+

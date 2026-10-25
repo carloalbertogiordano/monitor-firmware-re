@@ -1,0 +1,24 @@
+=== 0x53e2 ===
+
+char FUN_CODE_53e2(byte *param_1,byte param_2,char param_3)
+
+{
+  byte bVar1;
+  
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar1 = (*param_1 | 0xf | param_2) + 1;
+  nop();
+  return (bVar1 >> 1 | bVar1 * -0x80) + param_3 + '\x03';
+}
+

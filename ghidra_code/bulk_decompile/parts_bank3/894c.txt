@@ -1,0 +1,8 @@
+=== 0x894c ===
+
+undefined1 FUN_CODE_894c(void)
+
+{
+  return DAT_EXTMEM_8006;
+}
+

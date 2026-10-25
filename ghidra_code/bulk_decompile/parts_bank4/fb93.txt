@@ -1,0 +1,14 @@
+=== 0xfb93 ===
+
+void FUN_CODE_fb93(void)
+
+{
+  if (_0_2 == '\0') {
+    DAT_EXTMEM_b6b3 = 0;
+  }
+  else {
+    DAT_EXTMEM_b6b3 = 0xff;
+  }
+  return;
+}
+

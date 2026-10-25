@@ -1,0 +1,8 @@
+=== 0x2ce4 ===
+
+void FUN_CODE_2ce4(void)
+
+{
+  return;
+}
+

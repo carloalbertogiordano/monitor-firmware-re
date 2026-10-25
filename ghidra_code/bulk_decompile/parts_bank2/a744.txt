@@ -1,0 +1,9 @@
+=== 0xa744 ===
+
+char FUN_CODE_a744(void)
+
+{
+  FUN_CODE_87e5();
+  return DAT_EXTMEM_e4c4 + -0x29;
+}
+

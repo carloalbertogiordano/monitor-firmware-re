@@ -1,0 +1,564 @@
+=== 0x3cc6 ===
+
+/* WARNING: Instruction at (CODE,0x3d24) overlaps instruction at (CODE,0x3d23)
+    */
+/* WARNING: Removing unreachable block (CODE,0x3db4) */
+/* WARNING: Removing unreachable block (CODE,0x3dbf) */
+/* WARNING: Removing unreachable block (CODE,0x3dcd) */
+/* WARNING: Restarted to delay deadcode elimination for space: INTMEM */
+
+void FUN_CODE_3cc6(byte *param_1,char *param_2,byte param_3,byte param_4,byte *param_5,byte param_6,
+                  byte param_7,byte param_8,byte param_9)
+
+{
+  bool bVar1;
+  undefined1 uVar2;
+  byte *pbVar3;
+  char *pcVar4;
+  byte *pbVar5;
+  char cVar6;
+  byte bVar7;
+  byte bVar8;
+  byte bVar9;
+  byte bVar10;
+  byte *pbVar11;
+  byte bVar12;
+  byte in_PSW;
+  char cVar13;
+  short sVar14;
+  
+  do {
+    bVar8 = func_0x3892(param_1);
+    bVar12 = BANK0_R0;
+    nop();
+    nop();
+    nop();
+    if ((byte *)(param_4 - 1) != (byte *)0x0) {
+      FUN_CODE_e750(bVar8 & param_4 | *(byte *)(param_4 - 1));
+      return;
+    }
+    bVar8 = bVar8 & param_4 ^ param_9;
+    if (_8_7 == '\x01') {
+      bVar8 = param_7 - ((char)in_PSW >> 7);
+      bVar9 = param_6 - bVar8;
+      bVar9 = bVar9 >> 4 | bVar9 * '\x10';
+      param_8 = param_8 - 1;
+      if (param_8 == 0) {
+        bVar1 = param_7 < 0xc1;
+        if (param_7 != 0xc1) goto LAB_CODE_3c76;
+      }
+      else {
+        if (param_6 < bVar8) {
+          BANK0_R0 = DAT_INTMEM_43 - ((char)(in_PSW & 0x5d | 0x80) >> 7);
+          bVar9 = BANK0_R0 + param_8;
+          goto code_c0x3c11;
+        }
+        BANK0_R0 = BANK0_R0 + 1;
+      }
+      nop();
+      if (_4_4 == '\x01') {
+code_c0x3c11:
+        bVar8 = (bVar9 | BANK0_R0) + *param_5;
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        nop();
+        pcVar4 = (char *)(param_4 - 2);
+        if (bVar12 == 0x21) {
+          nop();
+        }
+        TR0 = bVar12 < 0x21;
+        bVar1 = 0x36 < bVar8;
+        bVar8 = bVar8 - 0x37;
+        do {
+          bVar8 = bVar8 | bVar12 | (byte)param_5 | (byte)param_5;
+          pbVar5 = param_5 + '\x01';
+          param_5 = param_5 + '\x02';
+          if (((bVar8 | (byte)pbVar5 | (byte)pbVar5 | (byte)pbVar5 | (byte)pbVar5) != 1) &&
+             (SM2 = bVar1, _0_0 != '\0')) {
+            _0_0 = '\0';
+          }
+          uVar2 = T2MOD;
+          uVar2 = T2MOD;
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          if (param_3 != 0) {
+            param_3 = (byte)pcVar4 % param_3;
+          }
+          if (param_3 != 0) {
+            param_3 = param_8 % param_3;
+          }
+          if (param_3 != 0) {
+            param_3 = param_8 % param_3;
+          }
+          if (param_3 != 0) {
+            param_3 = param_8 % param_3;
+          }
+          if (param_3 != 0) {
+            param_3 = param_8 % param_3;
+          }
+          if (param_3 != 0) {
+            param_3 = param_8 % param_3;
+          }
+          bVar1 = false;
+          bVar8 = param_8;
+          if (param_3 != 0) {
+            bVar8 = param_8 / param_3;
+            param_3 = param_8 % param_3;
+          }
+          *pcVar4 = *pcVar4 + '\x01';
+        } while( true );
+      }
+      bVar1 = 0xb6 < bVar9;
+LAB_CODE_3c76:
+      bVar8 = bVar1 << 7;
+      cVar13 = FUN_CODE_c939();
+      _0_4 = bVar8 >> 7;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      sVar14 = (ushort)(cVar13 - (bVar12 - ((char)bVar8 >> 7))) * (ushort)param_3;
+      FUN_CODE_390d((char)sVar14,(char)((ushort)sVar14 >> 8));
+      return;
+    }
+    param_1 = (byte *)(param_4 - 2);
+    _3_6 = in_PSW >> 7;
+    *param_1 = bVar8;
+    bVar8 = bVar8 - (param_8 - ((char)in_PSW >> 7));
+    in_PSW = 0;
+    if (bVar12 == 1) {
+      uVar2 = AC;
+      bVar8 = bVar8 & BANK1_R1;
+      cVar13 = DPXL;
+      pbVar5 = (byte *)(cVar13 + '\x01');
+      cVar6 = param_7 + 1;
+      bVar12 = DAT_INTMEM_4a -
+               ((CARRY1((((bVar8 + 0x49 | (byte)param_1) - (((0xb6 < bVar8) << 7) >> 7) ^ 0xcf) &
+                        param_8) + cVar13,(byte)param_1) << 7) >> 7);
+      bVar8 = DAT_INTMEM_4a - bVar12;
+      bVar9 = bVar8 >> 1 | bVar8 * -0x80;
+      nop();
+      nop();
+      nop();
+      bVar8 = 0x98 - (((DAT_INTMEM_4a < bVar12) << 7) >> 7);
+      bVar12 = CARRY1(bVar9,bVar8);
+      BANK3_R4 = *param_1;
+      sVar14 = CONCAT11(param_3,bVar9 + bVar8 | (byte)pbVar5);
+      bVar8 = 0;
+      bVar9 = param_8 + 1;
+      break;
+    }
+    param_4 = bVar8 | *param_5;
+  } while( true );
+LAB_CODE_3d03:
+  cVar13 = bVar12 << 7;
+  bVar7 = (byte)((ushort)sVar14 >> 8);
+  bVar10 = (byte)sVar14;
+  DAT_INTMEM_6f = DAT_INTMEM_6f ^ bVar10;
+  pbVar3 = param_1 + -1;
+  BANK3_R5 = param_1;
+  if (pbVar3 != (byte *)0x0) {
+    pbVar11 = pbVar5 + ((bVar10 + bVar8) - ((CARRY1(bVar10,bVar8) << 7) >> 7));
+LAB_CODE_3d1c:
+    nop();
+    uVar2 = FIFLG_0;
+    FUN_CODE_2a39((byte)pbVar3 | pbVar11[bVar8] | (byte)(pbVar11 + bVar8));
+    uVar2 = RCAP2L;
+    FUN_CODE_3bad(uVar2);
+    return;
+  }
+  nop();
+  nop();
+  nop();
+  if (-1 < cVar13) {
+    bVar9 = P1_3;
+    pbVar11 = (byte *)(*param_2 - ((char)((bVar12 & 1 & bVar9) << 7) >> 7));
+    *pbVar5 = *pbVar5 + 1;
+    nop();
+    nop();
+    nop();
+    if (pbVar11 != (byte *)0x0) {
+      nop();
+      goto LAB_CODE_3d1c;
+    }
+    goto LAB_CODE_3d88;
+  }
+  pbVar11 = (byte *)FUN_CODE_1500(bVar9);
+  nop();
+  if (pbVar11 != (byte *)0x0) goto LAB_CODE_3d1c;
+  sVar14 = (ushort)(byte)((char)pbVar5 - (cVar13 >> 7)) * (ushort)bVar7;
+  bVar12 = FUN_CODE_3c24(bVar9);
+  bVar7 = (byte)sVar14;
+  _7_2 = 1;
+  nop();
+  _4_0 = CARRY1(((bVar12 ^ *pbVar5) + *pbVar5 | (byte)pbVar5) & 0x42,DAT_INTMEM_61);
+  param_1 = pbVar3 + -1;
+  nop();
+  nop();
+  bVar12 = _4_0 | _0_7 ^ 1;
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  bVar9 = BANK3_R4;
+  if (bVar7 != 0) {
+    if (cVar6 != 'a') {
+      *param_1 = bVar7;
+      DAT_SFR_bd = *param_1;
+      FUN_CODE_3b6f();
+      return;
+    }
+    if (pbVar3 != &BANK0_R2) {
+      thunk_FUN_CODE_26eb();
+      return;
+    }
+    DAT_SFR_bd = bVar7;
+    BANK0_R0 = bVar7;
+LAB_CODE_3d88:
+    FUN_CODE_3b6f();
+    return;
+  }
+  goto LAB_CODE_3d03;
+}
+

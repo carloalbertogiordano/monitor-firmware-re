@@ -1,0 +1,9 @@
+=== 0x0451 ===
+
+void FUN_CODE_0451(void)
+
+{
+  FUN_CODE_2250(0x22);
+  return;
+}
+

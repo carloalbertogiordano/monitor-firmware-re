@@ -1,0 +1,10 @@
+=== 0x2220 ===
+
+undefined1 FUN_CODE_2220(undefined1 param_1)
+
+{
+  DAT_INTMEM_59 = 2;
+  uEXTMEMffff = 2;
+  return param_1;
+}
+

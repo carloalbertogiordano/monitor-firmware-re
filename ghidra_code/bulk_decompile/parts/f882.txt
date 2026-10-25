@@ -1,0 +1,10 @@
+=== 0xf882 ===
+
+void FUN_CODE_f882(void)
+
+{
+  DAT_EXTMEM_e335 = uEXTMEMffff;
+  FUN_CODE_0b41(0xff,0xff,0x37,0xd9,0x37,0xc1);
+  return;
+}
+

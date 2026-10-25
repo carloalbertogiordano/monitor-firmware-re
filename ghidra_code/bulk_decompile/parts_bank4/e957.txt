@@ -1,0 +1,27 @@
+=== 0xe957 ===
+
+void FUN_CODE_e957(char param_1)
+
+{
+  if (param_1 == '\x04') {
+    if ((DAT_EXTMEM_0bb1 & 0x80) == 0x80) {
+      return;
+    }
+    DAT_EXTMEM_0bb1 = DAT_EXTMEM_0bb1 & 0x7f | 0x80;
+  }
+  else {
+    if (param_1 != '\x03') {
+      return;
+    }
+    if ((DAT_EXTMEM_0bb1 & 0x80) == 0) {
+      return;
+    }
+    DAT_EXTMEM_0bb1 = DAT_EXTMEM_0bb1 & 0x7f;
+  }
+  DAT_EXTMEM_e666 = 0;
+  DAT_EXTMEM_e665 = 0;
+  DAT_EXTMEM_e661 = DAT_EXTMEM_e661 & 0xbf;
+  DAT_EXTMEM_02ae = DAT_EXTMEM_02ae & 0xfd;
+  return;
+}
+

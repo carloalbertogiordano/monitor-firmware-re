@@ -1,0 +1,8 @@
+=== 0xa4bd ===
+
+undefined1 FUN_CODE_a4bd(void)
+
+{
+  return DAT_EXTMEM_e07a;
+}
+

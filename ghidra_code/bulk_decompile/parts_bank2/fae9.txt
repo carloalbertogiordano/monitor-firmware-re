@@ -1,0 +1,17 @@
+=== 0xfae9 ===
+
+void FUN_CODE_fae9(char param_1)
+
+{
+  byte bVar1;
+  
+  bVar1 = 0;
+  if (param_1 == '\x01') {
+    bVar1 = 4;
+  }
+  DAT_EXTMEM_0532 = DAT_EXTMEM_0532 & 0xf9 | bVar1;
+  DAT_EXTMEM_05ac = DAT_EXTMEM_05ac & 0xf9 | bVar1;
+  FUN_CODE_6ef6(0x5ad);
+  return;
+}
+

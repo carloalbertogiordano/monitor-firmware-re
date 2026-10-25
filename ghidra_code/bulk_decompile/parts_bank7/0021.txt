@@ -1,0 +1,10 @@
+=== 0x0021 ===
+
+void FUN_CODE_0021(char param_1)
+
+{
+  FUN_CODE_4153();
+  FUN_CODE_04c4(param_1 + -1);
+  return;
+}
+

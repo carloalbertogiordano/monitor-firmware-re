@@ -1,0 +1,9 @@
+=== 0x87d6 ===
+
+void FUN_CODE_87d6(byte *param_1)
+
+{
+  FUN_CODE_084d(*param_1 & 0x3f,param_1[1],0,0x2a);
+  return;
+}
+

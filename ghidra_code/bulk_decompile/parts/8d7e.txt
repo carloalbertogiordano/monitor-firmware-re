@@ -1,0 +1,9 @@
+=== 0x8d7e ===
+
+void FUN_CODE_8d7e(void)
+
+{
+  DAT_EXTMEM_e3e4 = 0x14;
+  return;
+}
+

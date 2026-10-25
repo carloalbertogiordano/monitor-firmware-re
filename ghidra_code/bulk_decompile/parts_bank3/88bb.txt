@@ -1,0 +1,8 @@
+=== 0x88bb ===
+
+undefined1 FUN_CODE_88bb(void)
+
+{
+  return 0;
+}
+

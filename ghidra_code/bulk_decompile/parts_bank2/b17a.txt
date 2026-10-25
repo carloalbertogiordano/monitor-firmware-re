@@ -1,0 +1,9 @@
+=== 0xb17a ===
+
+char FUN_CODE_b17a(byte param_1,short param_2)
+
+{
+  return (DAT_EXTMEM_e39d ^ 0x80) -
+         (-0x80 - (((DAT_EXTMEM_e39e < *(char *)(param_2 + (ushort)param_1) + 1U) << 7) >> 7));
+}
+

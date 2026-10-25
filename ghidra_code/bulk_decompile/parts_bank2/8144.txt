@@ -1,0 +1,32 @@
+=== 0x8144 ===
+
+void FUN_CODE_8144(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  short sVar2;
+  
+  sVar2 = -0x1cbc;
+  uVar1 = FUN_CODE_6fee();
+  *(undefined1 *)(sVar2 + 1) = param_1;
+  _0_1 = 1;
+  *(undefined1 *)(sVar2 + 2) = 0;
+  *(undefined1 *)(sVar2 + 3) = 0;
+  *(undefined1 *)(sVar2 + 4) = uVar1;
+  *(undefined1 *)(sVar2 + 5) = param_1;
+  *(undefined1 *)(sVar2 + 6) = 0;
+  *(undefined1 *)(sVar2 + 7) = 0;
+  FUN_CODE_1724(sVar2 + 8);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe352);
+  nop();
+  nop();
+  nop();
+  nop();
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_17ba(BANK0_R2,BANK0_R3,DAT_EXTMEM_e515,DAT_EXTMEM_e516);
+}
+

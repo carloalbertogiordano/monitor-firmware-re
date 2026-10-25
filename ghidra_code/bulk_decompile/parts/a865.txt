@@ -1,0 +1,10 @@
+=== 0xa865 ===
+
+char FUN_CODE_a865(void)
+
+{
+  char in_PSW;
+  
+  return -0x1b - (in_PSW >> 7);
+}
+

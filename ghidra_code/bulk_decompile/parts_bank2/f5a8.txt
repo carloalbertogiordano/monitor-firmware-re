@@ -1,0 +1,26 @@
+=== 0xf5a8 ===
+
+void FUN_CODE_f5a8(undefined1 param_1)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_761f();
+  if (cVar1 == '\0') {
+    cVar1 = FUN_CODE_772e();
+    DAT_EXTMEM_e336 = param_1;
+    DAT_EXTMEM_e337 = cVar1;
+    FUN_CODE_7630();
+    FUN_CODE_0a63();
+    FUN_CODE_7536();
+    FUN_CODE_7758(0xe336);
+    FUN_CODE_0a69();
+    if (cVar1 == '\b') {
+      DAT_EXTMEM_e336 = FUN_CODE_7536();
+      DAT_EXTMEM_e337 = cVar1;
+    }
+    FUN_CODE_7687(0xe336);
+  }
+  return;
+}
+

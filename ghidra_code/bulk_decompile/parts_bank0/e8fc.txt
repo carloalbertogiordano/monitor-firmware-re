@@ -1,0 +1,11 @@
+=== 0xe8fc ===
+
+void FUN_CODE_e8fc(void)
+
+{
+  DAT_EXTMEM_e606 = DAT_EXTMEM_b7c1;
+  DAT_EXTMEM_e607 = DAT_EXTMEM_b7c2;
+  DAT_EXTMEM_e608 = DAT_EXTMEM_b7c3;
+  return;
+}
+

@@ -1,0 +1,27 @@
+=== 0xe6e1 ===
+
+void FUN_CODE_e6e1(void)
+
+{
+  byte bVar1;
+  
+  FUN_CODE_d54f();
+  bVar1 = FUN_CODE_d4dc();
+  DAT_EXTMEM_ff56 = *(undefined1 *)CONCAT11('x' - (((0xd6 < bVar1) << 7) >> 7),bVar1 + 0x29);
+  DAT_EXTMEM_ff57 = 0;
+  DAT_EXTMEM_ff58 = 0;
+  bVar1 = FUN_CODE_d562(0xff59);
+  DAT_EXTMEM_ffd7 = *(undefined1 *)CONCAT11('x' - (((0xd5 < bVar1) << 7) >> 7),bVar1 + 0x2a);
+  DAT_EXTMEM_ff5a =
+       *(char *)CONCAT11('x' - (((0xd7U < (byte)(DAT_EXTMEM_e418 * '\t')) << 7) >> 7),
+                         DAT_EXTMEM_e418 * '\t' + 0x28);
+  DAT_EXTMEM_ffd8 = DAT_EXTMEM_ff5a + '\x02';
+  bVar1 = FUN_CODE_d4dc(*(undefined1 *)
+                         CONCAT11('x' - (((0xdaU < (byte)(DAT_EXTMEM_e418 * '\t')) << 7) >> 7),
+                                  DAT_EXTMEM_e418 * '\t' + 0x25),0xff5b);
+  bVar1 = FUN_CODE_d562(*(undefined1 *)CONCAT11('x' - (((0xdb < bVar1) << 7) >> 7),bVar1 + 0x24),
+                        0xff5c);
+  DAT_EXTMEM_ff5f = *(undefined1 *)CONCAT11('x' - (((0xd4 < bVar1) << 7) >> 7),bVar1 + 0x2b);
+  return;
+}
+

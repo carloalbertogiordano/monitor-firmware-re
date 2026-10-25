@@ -1,0 +1,8 @@
+=== 0xc54a ===
+
+undefined1 FUN_CODE_c54a(void)
+
+{
+  return 0;
+}
+

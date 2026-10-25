@@ -1,0 +1,9 @@
+=== 0xe317 ===
+
+undefined1 FUN_CODE_e317(void)
+
+{
+  FUN_CODE_076f(0,2,2,0xcd);
+  return DAT_EXTMEM_e35a;
+}
+

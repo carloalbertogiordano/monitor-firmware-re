@@ -1,0 +1,31 @@
+=== 0xe375 ===
+
+void FUN_CODE_e375(void)
+
+{
+  DAT_EXTMEM_ffe9 = DAT_EXTMEM_ffe9 & 0x9f;
+  FUN_CODE_f0b9();
+  DAT_EXTMEM_ff1d = DAT_EXTMEM_ff1d & 0xfb;
+  DAT_EXTMEM_ff20 = DAT_EXTMEM_ff20 & 0xfb;
+  DAT_EXTMEM_ff2e = DAT_EXTMEM_ff2e & 0xfb;
+  DAT_EXTMEM_ff1b = DAT_EXTMEM_ff1b & 0x1f;
+  DAT_EXTMEM_ff1e = DAT_EXTMEM_ff1e & 0x1f;
+  DAT_EXTMEM_ff2c = DAT_EXTMEM_ff2c & 0x1f;
+  DAT_EXTMEM_ff1c = DAT_EXTMEM_ff1c | 4;
+  DAT_EXTMEM_ff1f = DAT_EXTMEM_ff1f | 4;
+  DAT_EXTMEM_ff2d = DAT_EXTMEM_ff2d | 4;
+  DAT_EXTMEM_fd34 = DAT_EXTMEM_fd34 & 0xfb;
+  DAT_EXTMEM_fd32 = DAT_EXTMEM_fd32 & 0x1f;
+  DAT_EXTMEM_fd33 = DAT_EXTMEM_fd33 | 4;
+  FUN_CODE_f0f9(0);
+  DAT_EXTMEM_ffe7 = DAT_EXTMEM_ffe7 | 0x20;
+  DAT_EXTMEM_fd37 = DAT_EXTMEM_fd37 | 0x20;
+  DAT_EXTMEM_ffe4 = DAT_EXTMEM_ffe4 | 0x20;
+  DAT_EXTMEM_ffe5 = DAT_EXTMEM_ffe5 | 0x20;
+  DAT_EXTMEM_ff2e = DAT_EXTMEM_ff2e & 0xfe;
+  DAT_EXTMEM_ff20 = DAT_EXTMEM_ff20 & 0xfe;
+  DAT_EXTMEM_ff1d = DAT_EXTMEM_ff1d & 0xfe;
+  DAT_EXTMEM_fd34 = DAT_EXTMEM_fd34 & 0xfe;
+  return;
+}
+

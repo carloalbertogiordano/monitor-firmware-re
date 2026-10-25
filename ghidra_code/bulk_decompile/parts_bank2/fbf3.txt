@@ -1,0 +1,9 @@
+=== 0xfbf3 ===
+
+void FUN_CODE_fbf3(void)
+
+{
+  DAT_EXTMEM_e512 = DAT_EXTMEM_e512 & 0xe0 | 0x18;
+  return;
+}
+

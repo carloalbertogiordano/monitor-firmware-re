@@ -1,0 +1,10 @@
+=== 0x8c17 ===
+
+char FUN_CODE_8c17(undefined1 param_1)
+
+{
+  char in_PSW;
+  
+  return *(char *)CONCAT11(-0x1d - (in_PSW >> 7),param_1) * '\x0e';
+}
+

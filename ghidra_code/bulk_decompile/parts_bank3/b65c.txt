@@ -1,0 +1,9 @@
+=== 0xb65c ===
+
+void FUN_CODE_b65c(undefined1 *param_1)
+
+{
+  FUN_CODE_160f(0x10,0,0,0,*param_1);
+  return;
+}
+

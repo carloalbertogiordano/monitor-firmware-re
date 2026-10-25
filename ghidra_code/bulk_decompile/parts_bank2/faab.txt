@@ -1,0 +1,22 @@
+=== 0xfaab ===
+
+char FUN_CODE_faab(char param_1)
+
+{
+  char cVar1;
+  
+  cVar1 = FUN_CODE_1724(0xe62e);
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(cVar1 + '\x01',0xe636);
+  nop();
+  nop();
+  nop();
+  cVar1 = FUN_CODE_1724(0xe63a,param_1 + '\x01');
+  nop();
+  nop();
+  nop();
+  return cVar1 + '\x01';
+}
+

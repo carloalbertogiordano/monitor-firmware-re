@@ -1,0 +1,10 @@
+=== 0xfb44 ===
+
+void FUN_CODE_fb44(void)
+
+{
+  DAT_EXTMEM_e37d = 1;
+  FUN_CODE_0f25(0xbb,0xe4,1,0x10);
+  return;
+}
+

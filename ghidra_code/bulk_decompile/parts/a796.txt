@@ -1,0 +1,9 @@
+=== 0xa796 ===
+
+byte FUN_CODE_a796(void)
+
+{
+  DAT_EXTMEM_e5c4 = DAT_EXTMEM_e5c4 | 3;
+  return DAT_EXTMEM_e6e0 & 0x1f;
+}
+

@@ -1,0 +1,12 @@
+=== 0x837b ===
+
+void thunk_FUN_CODE_81e2(void)
+
+{
+  byte in_PSW;
+  
+  _0_1 = in_PSW >> 7;
+  FUN_CODE_81a2();
+  return;
+}
+

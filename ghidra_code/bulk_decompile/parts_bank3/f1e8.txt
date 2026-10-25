@@ -1,0 +1,48 @@
+=== 0xf1e8 ===
+
+byte FUN_CODE_f1e8(void)
+
+{
+  byte bVar1;
+  char cVar2;
+  
+  DAT_EXTMEM_e334 = 0;
+  DAT_EXTMEM_e335 = 0;
+  do {
+    if (DAT_EXTMEM_e334 == 0) {
+      bVar1 = DAT_EXTMEM_e334;
+      FUN_CODE_fee1(1,0);
+      cVar2 = (10 < bVar1 + 1) << 7;
+      if (cVar2 < '\0') {
+        bVar1 = 0;
+        FUN_CODE_fee1(1,0);
+        DAT_EXTMEM_e334 = bVar1;
+      }
+      else {
+LAB_CODE_f224:
+        DAT_EXTMEM_e334 = 10;
+      }
+    }
+    else if (DAT_EXTMEM_e334 == 0x1e) {
+      DAT_EXTMEM_e334 = 0x14;
+      cVar2 = '\0';
+    }
+    else {
+      cVar2 = (DAT_EXTMEM_e334 < 0x14) << 7;
+      if (DAT_EXTMEM_e334 == 0x14) goto LAB_CODE_f224;
+      cVar2 = (DAT_EXTMEM_e334 < 10) << 7;
+      if (DAT_EXTMEM_e334 == 10) {
+        DAT_EXTMEM_e334 = 6;
+      }
+    }
+    FUN_CODE_d2cd(DAT_EXTMEM_e334);
+    if (cVar2 < '\0') {
+      DAT_EXTMEM_e335 = DAT_EXTMEM_e334;
+      return DAT_EXTMEM_e334;
+    }
+    if (DAT_EXTMEM_e334 == 6) {
+      return DAT_EXTMEM_e335;
+    }
+  } while( true );
+}
+

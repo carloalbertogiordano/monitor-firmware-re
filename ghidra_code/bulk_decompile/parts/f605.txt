@@ -1,0 +1,14 @@
+=== 0xf605 ===
+
+void FUN_CODE_f605(char param_1)
+
+{
+  if (param_1 == '\x04') {
+    return;
+  }
+  if (param_1 == '\x03') {
+    return;
+  }
+  return;
+}
+

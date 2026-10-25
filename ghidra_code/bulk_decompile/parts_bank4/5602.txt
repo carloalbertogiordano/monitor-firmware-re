@@ -1,0 +1,74 @@
+=== 0x5602 ===
+
+/* WARNING: Instruction at (CODE,0x5621) overlaps instruction at (CODE,0x5620)
+    */
+
+void FUN_CODE_5602(byte param_1,char *param_2,char *param_3,char param_4,char param_5,byte param_6)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  byte bVar4;
+  undefined1 *puVar5;
+  byte in_PSW;
+  undefined1 uStackX_0;
+  
+  puVar5 = (undefined1 *)0x0;
+  nop();
+  param_1 = param_1 | (byte)param_2;
+  *param_2 = *param_2 + '\x01';
+  nop();
+  if (param_1 == 0) {
+    TCON = uStackX_0;
+    puVar5 = (undefined1 *)0xff;
+    param_3 = param_3 + '\x01';
+    uVar1 = RB8;
+    nop();
+  }
+  nop();
+  bVar3 = param_4 + 1;
+  cVar2 = PT2;
+  if (cVar2 == '\x01') {
+    param_1 = param_1 | bVar3;
+  }
+  else {
+    if ((param_1 >> 4 & 1) == 0) goto LAB_CODE_5626;
+    puVar5['\x01'] = 0x19;
+    puVar5['\x02'] = 0x56;
+    param_1 = FUN_CODE_5101();
+    if ((param_1 & 2) != 0) {
+      FUN_CODE_56c2(param_1 & 0xfd,param_5 + -1);
+      return;
+    }
+  }
+  puVar5['\x01'] = 0x1f;
+  puVar5['\x02'] = 0x56;
+  bVar4 = FUN_CODE_9134(param_1);
+  puVar5['\x01'] = 0x22;
+  puVar5['\x02'] = 0x56;
+  param_1 = func_0x574a(bVar4 >> 1 | in_PSW & 0x80);
+  DAT_INTMEM_31 = DAT_INTMEM_31 + -1;
+  param_1 = param_1 & param_6;
+  *param_2 = *param_2 + -1;
+LAB_CODE_5626:
+  puVar5['\x01'] = 0x28;
+  puVar5['\x02'] = 0x56;
+  FUN_CODE_536f(param_1);
+  *param_3 = *param_3 + -1;
+  puVar5['\x01'] = 0x2b;
+  puVar5['\x02'] = 0x56;
+  FUN_CODE_537f();
+  puVar5['\x01'] = 0x2e;
+  puVar5['\x02'] = 0x56;
+  FUN_CODE_538e(param_2 + -1);
+  puVar5['\x01'] = 0x31;
+  puVar5['\x02'] = 0x56;
+  func_0x529c(param_3 + -1);
+  puVar5['\x01'] = 0x34;
+  puVar5['\x02'] = 0x56;
+  FUN_CODE_51a9(bVar3 - 1);
+  FUN_CODE_50b6(param_5 + -1);
+  return;
+}
+

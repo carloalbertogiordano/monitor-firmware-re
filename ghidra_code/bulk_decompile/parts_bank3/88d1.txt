@@ -1,0 +1,8 @@
+=== 0x88d1 ===
+
+undefined1 FUN_CODE_88d1(void)
+
+{
+  return DAT_EXTMEM_0bd6;
+}
+

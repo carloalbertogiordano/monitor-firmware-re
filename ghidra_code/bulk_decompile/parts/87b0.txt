@@ -1,0 +1,8 @@
+=== 0x87b0 ===
+
+undefined1 FUN_CODE_87b0(void)
+
+{
+  return DAT_EXTMEM_e596;
+}
+

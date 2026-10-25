@@ -1,0 +1,8 @@
+=== 0x70a6 ===
+
+undefined1 FUN_CODE_70a6(undefined1 *param_1)
+
+{
+  return *param_1;
+}
+

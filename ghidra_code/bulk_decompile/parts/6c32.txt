@@ -1,0 +1,15 @@
+=== 0x6c32 ===
+
+void FUN_CODE_6c32(byte param_1,byte *param_2)
+
+{
+  undefined1 uVar1;
+  
+  *param_2 = param_1 >> 1 | param_1 << 7;
+  uVar1 = FUN_CODE_d05c();
+  FUN_CODE_0eb3(uVar1);
+  FUN_CODE_6db6();
+  FUN_CODE_0dcf();
+  return;
+}
+

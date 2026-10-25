@@ -1,0 +1,8 @@
+=== 0xd576 ===
+
+undefined1 FUN_CODE_d576(undefined1 param_1)
+
+{
+  return param_1;
+}
+

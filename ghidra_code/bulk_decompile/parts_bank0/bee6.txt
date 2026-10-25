@@ -1,0 +1,8 @@
+=== 0xbee6 ===
+
+undefined1 FUN_CODE_bee6(void)
+
+{
+  return DAT_EXTMEM_e335;
+}
+

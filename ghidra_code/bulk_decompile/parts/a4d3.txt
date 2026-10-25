@@ -1,0 +1,10 @@
+=== 0xa4d3 ===
+
+byte FUN_CODE_a4d3(char param_1,char param_2,byte param_3)
+
+{
+  char in_PSW;
+  
+  return param_3 >> 1 | (param_1 - (param_2 - (in_PSW >> 7))) * -0x80;
+}
+

@@ -1,0 +1,11 @@
+=== 0xf08c ===
+
+void FUN_CODE_f08c(undefined1 *param_1)
+
+{
+  *param_1 = 3;
+  param_1[1] = 3;
+  param_1[2] = 1;
+  return;
+}
+

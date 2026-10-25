@@ -1,0 +1,8 @@
+=== 0xbe21 ===
+
+void FUN_CODE_be21(void)
+
+{
+  return;
+}
+

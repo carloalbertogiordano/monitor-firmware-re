@@ -1,0 +1,8 @@
+=== 0xc597 ===
+
+undefined1 FUN_CODE_c597(void)
+
+{
+  return 0;
+}
+

@@ -1,0 +1,14 @@
+=== 0xd3d0 ===
+
+void FUN_CODE_d3d0(byte *param_1)
+
+{
+  *param_1 = DAT_INTMEM_29 & 0x1f;
+  param_1[1] = DAT_INTMEM_2a;
+  DAT_EXTMEM_e377 = 0;
+  DAT_EXTMEM_e378 = 0;
+  DAT_EXTMEM_e379 = 0x29;
+  _0_3 = 0;
+  return;
+}
+

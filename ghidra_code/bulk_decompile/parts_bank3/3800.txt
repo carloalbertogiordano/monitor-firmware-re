@@ -1,0 +1,112 @@
+=== 0x3800 ===
+
+void FUN_CODE_3800(byte param_1,byte *param_2,byte param_3,byte param_4,byte param_5,byte param_6,
+                  char param_7)
+
+{
+  byte bVar1;
+  
+  do {
+    if ((param_3 & 1) == 0) goto LAB_CODE_378d;
+    nop();
+    nop();
+    nop();
+    BANK0_R0 = param_4;
+    while( true ) {
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      bVar1 = param_1 + 1;
+      if (bVar1 == 0) {
+        nop();
+        thunk_FUN_CODE_26eb(param_4 | 1,param_7);
+        return;
+      }
+      nop();
+      nop();
+      nop();
+      nop();
+      if ((param_3 & 1) != 0) break;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      param_4 = param_4 + 1;
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      nop();
+      param_1 = param_1 + 2;
+      BANK0_R0 = param_4;
+LAB_CODE_378d:
+      if (param_1 != 0) {
+        while (nop(), param_1 != 0) {
+          nop();
+          nop();
+          *param_2 = param_1 ^ param_5;
+          param_1 = *param_2;
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+          nop();
+        }
+        *param_2 = 0;
+        nop();
+        return;
+      }
+      param_1 = param_4 | 1;
+    }
+    nop();
+    nop();
+    TCON = param_4;
+    nop();
+    P0 = param_4;
+    *param_2 = bVar1;
+    *param_2 = bVar1;
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    nop();
+    param_1 = *param_2 >> 1 | *param_2 << 7;
+    param_4 = param_4 + 1;
+    nop();
+    nop();
+    param_7 = param_7 + '\x02';
+    BANK0_R0 = param_6;
+    BANK1_R7 = param_4;
+  } while( true );
+}
+

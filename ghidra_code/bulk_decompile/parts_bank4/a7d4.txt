@@ -1,0 +1,8 @@
+=== 0xa7d4 ===
+
+undefined1 FUN_CODE_a7d4(void)
+
+{
+  return DAT_EXTMEM_e530;
+}
+

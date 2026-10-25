@@ -1,0 +1,13 @@
+=== 0x4057 ===
+
+void FUN_CODE_4057(undefined1 *param_1)
+
+{
+  DAT_EXTMEM_e3e1 = *param_1;
+  DAT_EXTMEM_e3e2 = 0;
+  DAT_EXTMEM_e3e3 = 0x69;
+  DAT_EXTMEM_e3e4 = 1;
+  _0_6 = 0;
+  return;
+}
+

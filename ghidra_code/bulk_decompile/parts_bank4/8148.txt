@@ -1,0 +1,11 @@
+=== 0x8148 ===
+
+void FUN_CODE_8148(void)
+
+{
+  FUN_CODE_fe62();
+  FUN_CODE_fddf();
+  FUN_CODE_f454(0x17);
+  return;
+}
+

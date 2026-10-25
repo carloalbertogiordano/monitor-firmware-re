@@ -1,0 +1,30 @@
+=== 0xf4cb ===
+
+void FUN_CODE_f4cb(char param_1)
+
+{
+  bool bVar1;
+  char cVar2;
+  char cVar3;
+  char in_PSW;
+  
+  DAT_EXTMEM_e356 = param_1;
+  FUN_CODE_fe26();
+  if (-1 < in_PSW) {
+    FUN_CODE_fe94(DAT_EXTMEM_e644);
+    cVar2 = BANK0_R7;
+    cVar3 = DAT_EXTMEM_e356;
+    FUN_CODE_fe94();
+    bVar1 = BANK0_R7 != cVar3;
+    BANK0_R7 = cVar2;
+    if (bVar1) {
+      _0_1 = 1;
+      FUN_CODE_083b();
+    }
+  }
+  DAT_EXTMEM_e644 = DAT_EXTMEM_e356;
+  FUN_CODE_fe94(DAT_EXTMEM_e356);
+  FUN_CODE_fbf3();
+  return;
+}
+

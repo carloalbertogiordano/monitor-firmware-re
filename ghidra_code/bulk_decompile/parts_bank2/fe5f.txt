@@ -1,0 +1,9 @@
+=== 0xfe5f ===
+
+void FUN_CODE_fe5f(void)
+
+{
+  DAT_EXTMEM_0022 = DAT_EXTMEM_0022 & 0xfc | 3;
+  return;
+}
+

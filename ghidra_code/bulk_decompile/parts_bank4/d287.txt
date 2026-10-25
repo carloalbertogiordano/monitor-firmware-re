@@ -1,0 +1,12 @@
+=== 0xd287 ===
+
+char FUN_CODE_d287(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e33b;
+  FUN_CODE_1298(DAT_EXTMEM_e33b,DAT_EXTMEM_e338,DAT_EXTMEM_e337,DAT_EXTMEM_e336,DAT_EXTMEM_e33b);
+  return cVar1 + '9';
+}
+

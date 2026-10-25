@@ -1,0 +1,94 @@
+=== 0x5913 ===
+
+/* WARNING: Instruction at (CODE,0x591e) overlaps instruction at (CODE,0x591d)
+    */
+
+byte * FUN_CODE_5913(char param_1,short param_2,byte *param_3,byte *param_4,byte param_5,
+                    char param_6,char param_7,char param_8,byte param_9,char param_10)
+
+{
+  undefined1 uVar1;
+  byte bVar2;
+  char cVar3;
+  byte *pbVar4;
+  byte bVar5;
+  byte bVar6;
+  byte bVar7;
+  char cVar8;
+  byte bVar9;
+  char in_PSW;
+  
+  bVar5 = *(byte *)((ushort)(byte)(param_1 + (param_6 - (in_PSW >> 7))) + 0x5915);
+  if (param_5 != 0x3b) {
+    bVar5 = *(byte *)ZEXT12(param_4);
+    _7_1 = bVar5 & 1;
+    bVar2 = param_10 - (((0x3a < param_5) << 7) >> 7);
+    bVar9 = HADDR;
+    HADDR = bVar9 ^ 0x39;
+    bVar9 = *(byte *)(param_2 + (ushort)(bVar5 - bVar2));
+    bVar5 = param_5 - (((bVar5 < bVar2) << 7) >> 7);
+    bVar2 = bVar9 - bVar5;
+    bVar5 = (char)param_4 - (((bVar9 < bVar5) << 7) >> 7);
+    bVar9 = bVar2 + bVar5;
+    bVar5 = param_7 - ((!CARRY1(bVar2,bVar5) << 7) >> 7);
+    bVar5 = param_10 -
+            ((CARRY1((char)(param_4 +
+                           (char)(param_4 + ((bVar9 - bVar5) - (((bVar9 < bVar5) << 7) >> 7)) +
+                                 (-(((param_4 + ((bVar9 - bVar5) - (((bVar9 < bVar5) << 7) >> 7)) <
+                                     (byte *)(param_8 + '\x01')) << 7) >> 7) - (param_8 + '\x01'))))
+                     - (char)(param_9 + 1),
+                     (char)param_4 -
+                     (((param_4 + (char)(param_4 + ((bVar9 - bVar5) - (((bVar9 < bVar5) << 7) >> 7))
+                                        + (-(((param_4 + ((bVar9 - bVar5) -
+                                                         (((bVar9 < bVar5) << 7) >> 7)) <
+                                              (byte *)(param_8 + '\x01')) << 7) >> 7) -
+                                          (param_8 + '\x01'))) < (byte *)(param_9 + 1)) << 7) >> 7))
+             << 7) >> 7);
+    bVar2 = *(byte *)ZEXT12(param_4) - bVar5;
+    bVar5 = (char)param_4 - (((*(byte *)ZEXT12(param_4) < bVar5) << 7) >> 7);
+    bVar9 = bVar2 + bVar5;
+    *(byte *)ZEXT12(param_4) = bVar9;
+    bVar5 = param_10 - ((CARRY1(bVar2,bVar5) << 7) >> 7);
+    bVar5 = (bVar9 - bVar5) + (param_5 - (((bVar9 < bVar5) << 7) >> 7));
+    DAT_INTMEM_38 = param_8;
+    DAT_INTMEM_39 = param_10;
+    pbVar4 = (byte *)FUN_CODE_5d3a(bVar5 >> 1 | bVar5 * -0x80);
+    return pbVar4;
+  }
+  cVar3 = (param_9 < 0x3c) << 7;
+  if (param_9 != 0x3c) {
+    bVar2 = *param_4;
+    *param_4 = bVar5;
+    bVar5 = param_7 - (cVar3 >> 7);
+    cVar3 = CARRY1(bVar2,bVar5) << 7;
+    bVar5 = bVar2 + bVar5;
+  }
+  _7_4 = 0;
+  bVar2 = EPCONFIG;
+  EPCONFIG = bVar2 & 0x3c;
+  bVar2 = param_8 - (cVar3 >> 7);
+  bVar6 = param_9 + bVar2;
+  bVar9 = bVar6 >> 1;
+  bVar7 = bVar9 & 0xf0 | CARRY1(param_9,bVar2) << 7 | *param_3 & 0xf;
+  *param_3 = *param_3 & 0xf0 | bVar9 & 0xf;
+  bVar2 = param_8 - ((char)(bVar6 * -0x80) >> 7);
+  cVar8 = bVar7 + bVar2;
+  bVar9 = cVar8 + (param_10 - ((!CARRY1(bVar7,bVar2) << 7) >> 7));
+  uVar1 = RXDAT;
+  RXDAT = uVar1;
+  bVar2 = (bVar9 & 0x48) - 0xe;
+  DAT_INTMEM_25 = DAT_INTMEM_25 & bVar2;
+  DAT_INTMEM_59 = DAT_INTMEM_59 ^ bVar2;
+  uVar1 = SOFL;
+  cVar3 = SOFL;
+  bVar2 = bVar2 + cVar3;
+  if (bVar2 != 0) {
+    DAT_INTMEM_67 = DAT_INTMEM_67 | bVar2;
+    cVar3 = FUN_CODE_7427(bVar2 + *param_3 + *param_4);
+    P0_0 = 1;
+    return param_3 + cVar3 + *param_4;
+  }
+  pbVar4 = (byte *)FUN_CODE_b32b(param_6,param_2 + 1,cVar8,bVar5,bVar9 & 0x5a);
+  return pbVar4;
+}
+

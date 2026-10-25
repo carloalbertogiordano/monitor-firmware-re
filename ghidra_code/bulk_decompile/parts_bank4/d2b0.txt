@@ -1,0 +1,10 @@
+=== 0xd2b0 ===
+
+undefined1 FUN_CODE_d2b0(undefined1 param_1,undefined1 *param_2,undefined1 param_3)
+
+{
+  *param_2 = param_1;
+  DAT_EXTMEM_ff58 = DAT_EXTMEM_ff58 & 0xef | 8;
+  return param_3;
+}
+

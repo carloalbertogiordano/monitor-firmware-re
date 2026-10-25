@@ -1,0 +1,22 @@
+=== 0x1186 ===
+
+void FUN_CODE_1186(void)
+
+{
+  char *in_R0;
+  char *in_R1;
+  byte in_R2;
+  char in_R3;
+  char in_R4;
+  byte in_R5;
+  byte in_R6;
+  byte in_R7;
+  byte in_B;
+  byte in_ACC;
+  byte *in_DPTR;
+  
+  nop();
+  FUN_CODE_1197(in_ACC,in_DPTR,in_B,in_R0,in_R1,in_R2,in_R3,in_R4,in_R5,in_R6,in_R7);
+  return;
+}
+

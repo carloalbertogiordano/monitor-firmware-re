@@ -1,0 +1,33 @@
+=== 0xa0a7 ===
+
+void FUN_CODE_a0a7(undefined1 param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  
+  DAT_EXTMEM_059c = DAT_EXTMEM_e340;
+  DAT_EXTMEM_05a1 = 0xc2;
+  uVar1 = DAT_EXTMEM_e340;
+  DAT_EXTMEM_05a2 = FUN_CODE_70a6(0xe339);
+  DAT_EXTMEM_05a3 = param_1;
+  DAT_EXTMEM_05a4 = FUN_CODE_70a6(0xe33b);
+  DAT_EXTMEM_05a5 = param_1;
+  DAT_EXTMEM_05a6 = FUN_CODE_70a6(0xe34d);
+  DAT_EXTMEM_05a7 = param_1;
+  FUN_CODE_6e53(0xe345);
+  FUN_CODE_15e8(8);
+  DAT_EXTMEM_05a9 = DAT_EXTMEM_e348;
+  DAT_EXTMEM_05aa = DAT_EXTMEM_e34f;
+  uVar2 = DAT_EXTMEM_e348;
+  DAT_EXTMEM_05a8 = uVar1;
+  FUN_CODE_6e53(0xe345);
+  FUN_CODE_15e8(0x10);
+  DAT_EXTMEM_05ac = DAT_EXTMEM_05ac & 0x7f;
+  DAT_EXTMEM_05ab = uVar2;
+  FUN_CODE_fae9(0);
+  FUN_CODE_6ef3();
+  FUN_CODE_082f(8);
+  return;
+}
+

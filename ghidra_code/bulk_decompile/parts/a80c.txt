@@ -1,0 +1,8 @@
+=== 0xa80c ===
+
+byte FUN_CODE_a80c(byte *param_1)
+
+{
+  return *param_1 >> 3 & 3;
+}
+

@@ -1,0 +1,9 @@
+=== 0x0625 ===
+
+void FUN_CODE_0625(void)
+
+{
+  state_dispatch_arg22_case1();
+  return;
+}
+

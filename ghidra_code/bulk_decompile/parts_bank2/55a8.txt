@@ -1,0 +1,27 @@
+=== 0x55a8 ===
+
+void FUN_CODE_55a8(char param_1)
+
+{
+  char cVar1;
+  char cVar2;
+  
+  FUN_CODE_082f(0x20);
+  DAT_EXTMEM_e372 = DAT_EXTMEM_e18e;
+  DAT_EXTMEM_e373 = DAT_EXTMEM_e18f;
+  DAT_EXTMEM_e374 = 0;
+  DAT_EXTMEM_e375 = DAT_EXTMEM_e36b;
+  DAT_EXTMEM_e376 = 0;
+  DAT_EXTMEM_e377 = DAT_EXTMEM_e36c;
+  DAT_EXTMEM_e378 = DAT_EXTMEM_e36a;
+  cVar1 = DAT_EXTMEM_e368;
+  FUN_CODE_7c78(0xe,DAT_EXTMEM_e36d);
+  cVar2 = FUN_CODE_440b();
+  if ((cVar2 == '\0' && param_1 == '\0') || (cVar1 == 'Z' && param_1 == '\0')) {
+    DAT_EXTMEM_e36a = 7;
+  }
+  FUN_CODE_44e2(DAT_EXTMEM_e36d + '\x0e');
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe371,0,0);
+}
+

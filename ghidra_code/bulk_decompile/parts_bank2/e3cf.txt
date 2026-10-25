@@ -1,0 +1,13 @@
+=== 0xe3cf ===
+
+char FUN_CODE_e3cf(void)
+
+{
+  _5_1 = DAT_INTMEM_31 >> 2 & 1;
+  _5_2 = DAT_INTMEM_31 >> 1 & 1;
+  _5_4 = DAT_INTMEM_31 & 1;
+  _5_5 = DAT_INTMEM_31 >> 4 & 1;
+  DAT_EXTMEM_e192 = DAT_INTMEM_2b;
+  return DAT_INTMEM_2b + -9;
+}
+

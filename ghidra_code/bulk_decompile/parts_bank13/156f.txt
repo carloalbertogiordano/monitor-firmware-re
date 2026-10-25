@@ -1,0 +1,11 @@
+=== 0x156f ===
+
+void FUN_CODE_156f(byte *param_1,byte param_2,byte *param_3,byte *param_4,byte param_5,char param_6,
+                  byte param_7,char param_8,byte param_9,byte param_10)
+
+{
+  FUN_CODE_170e(*param_1,param_1,param_2,param_3,param_4,param_5,param_6,param_7,param_8 + 1,param_9
+                ,param_10);
+  return;
+}
+

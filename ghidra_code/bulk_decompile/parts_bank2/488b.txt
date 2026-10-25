@@ -1,0 +1,8 @@
+=== 0x488b ===
+
+undefined1 FUN_CODE_488b(void)
+
+{
+  return DAT_EXTMEM_e33e;
+}
+

@@ -1,0 +1,24 @@
+=== 0x3e4a ===
+
+void FUN_CODE_3e4a(void)
+
+{
+  _0_2 = '\0';
+  if ((DAT_EXTMEM_3a02 & 1) == 1) {
+    if (_0_1 == 1) {
+      _0_2 = 0;
+      return;
+    }
+    _0_2 = '\x01';
+  }
+  if (_0_1 != 1) {
+    DAT_EXTMEM_0094 = DAT_EXTMEM_0094 & 0x13;
+  }
+  DAT_EXTMEM_3a02 = DAT_EXTMEM_3a02 & 0xfe | _0_1 & 1;
+  if ((_0_2 != '\x01') && (_0_1 != 0)) {
+    FUN_CODE_36ba(8);
+    FUN_CODE_36ba(8);
+  }
+  return;
+}
+

@@ -1,0 +1,14 @@
+=== 0xfbc3 ===
+
+void FUN_CODE_fbc3(void)
+
+{
+  _0_0 = 1;
+  FUN_CODE_0979();
+  _0_0 = 1;
+  FUN_CODE_097f();
+  _0_0 = 1;
+  FUN_CODE_0985();
+  return;
+}
+

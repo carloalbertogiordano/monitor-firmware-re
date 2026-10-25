@@ -1,0 +1,14 @@
+=== 0xfbe1 ===
+
+void FUN_CODE_fbe1(char param_1)
+
+{
+  if (param_1 == '\x03') {
+    FUN_CODE_0ae7();
+    if (param_1 == '\x03') {
+      return;
+    }
+  }
+  return;
+}
+

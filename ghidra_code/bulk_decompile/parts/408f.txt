@@ -1,0 +1,19 @@
+=== 0x408f ===
+
+void FUN_CODE_408f(byte param_1)
+
+{
+  byte bVar1;
+  byte bVar2;
+  
+  bVar1 = FUN_CODE_8c32();
+  bVar2 = (byte)((ushort)bVar1 * (ushort)param_1);
+  _0_5 = 0;
+  FUN_CODE_f106(*(undefined1 *)
+                 CONCAT11((char)((ushort)bVar1 * (ushort)param_1 >> 8) +
+                          ('1' - (((0xf < bVar2) << 7) >> 7)),bVar2 - 0x10));
+  DAT_EXTMEM_ff6d = 2;
+  DAT_EXTMEM_ff61 = 0xff;
+  return;
+}
+

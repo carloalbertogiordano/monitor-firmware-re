@@ -1,0 +1,9 @@
+=== 0x829d ===
+
+void thunk_FUN_CODE_851c(void)
+
+{
+  FUN_CODE_851c();
+  return;
+}
+

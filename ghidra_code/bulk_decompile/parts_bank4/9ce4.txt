@@ -1,0 +1,8 @@
+=== 0x9ce4 ===
+
+undefined1 FUN_CODE_9ce4(byte param_1)
+
+{
+  return (&LAB_CODE_5e66)[param_1];
+}
+

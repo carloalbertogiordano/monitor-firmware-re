@@ -1,0 +1,8 @@
+=== 0x4658 ===
+
+byte FUN_CODE_4658(byte param_1)
+
+{
+  return bEXTMEM0003 & param_1;
+}
+

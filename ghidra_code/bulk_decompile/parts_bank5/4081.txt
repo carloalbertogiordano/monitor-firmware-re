@@ -1,0 +1,15 @@
+=== 0x4081 ===
+
+byte FUN_CODE_4081(void)
+
+{
+  char in_PSW;
+  
+  DAT_EXTMEM_e3e1 = DAT_EXTMEM_e341;
+  DAT_EXTMEM_e3e2 = 7;
+  DAT_EXTMEM_e3e3 = 0xca;
+  DAT_EXTMEM_e3e4 = 1;
+  _0_6 = DAT_EXTMEM_e342 >> 7;
+  return DAT_EXTMEM_e342 << 1 | CARRY1(DAT_EXTMEM_e33f,-(in_PSW >> 7));
+}
+

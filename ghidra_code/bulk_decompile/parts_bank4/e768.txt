@@ -1,0 +1,21 @@
+=== 0xe768 ===
+
+void FUN_CODE_e768(void)
+
+{
+  FUN_CODE_f454(0x1e);
+  FUN_CODE_f454(0x20);
+  FUN_CODE_f454(0x1f);
+  FUN_CODE_f1e3();
+  _0_0 = 0;
+  FUN_CODE_ed70();
+  DAT_EXTMEM_06d4 = DAT_EXTMEM_06d4 & 0xef;
+  DAT_EXTMEM_06b0 = DAT_EXTMEM_06b0 & 0x1f;
+  FUN_CODE_bf2e(0x6ca);
+  DAT_EXTMEM_06c0 = DAT_EXTMEM_06c0 & 0xbf;
+  DAT_EXTMEM_e6ff = DAT_EXTMEM_e6ff & 0xf8;
+  FUN_CODE_bf13();
+  FUN_CODE_fe0d();
+  return;
+}
+

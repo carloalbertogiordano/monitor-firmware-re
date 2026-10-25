@@ -1,0 +1,8 @@
+=== 0xafca ===
+
+char FUN_CODE_afca(char *param_1)
+
+{
+  return *param_1 + '\x01';
+}
+

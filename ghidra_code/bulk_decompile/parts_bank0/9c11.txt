@@ -1,0 +1,8 @@
+=== 0x9c11 ===
+
+undefined1 FUN_CODE_9c11(void)
+
+{
+  return 0;
+}
+

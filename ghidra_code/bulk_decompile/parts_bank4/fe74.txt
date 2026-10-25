@@ -1,0 +1,9 @@
+=== 0xfe74 ===
+
+void FUN_CODE_fe74(undefined1 param_1)
+
+{
+  DAT_EXTMEM_e32f = param_1;
+  return;
+}
+

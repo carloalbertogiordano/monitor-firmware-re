@@ -1,0 +1,8 @@
+=== 0xa598 ===
+
+undefined1 FUN_CODE_a598(void)
+
+{
+  return 0;
+}
+

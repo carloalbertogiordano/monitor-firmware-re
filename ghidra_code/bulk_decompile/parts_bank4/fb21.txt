@@ -1,0 +1,14 @@
+=== 0xfb21 ===
+
+void FUN_CODE_fb21(void)
+
+{
+  FUN_CODE_0f19();
+  FUN_CODE_eb5a();
+  FUN_CODE_eab1();
+  FUN_CODE_ebc9();
+  FUN_CODE_f740();
+  FUN_CODE_f861();
+  return;
+}
+

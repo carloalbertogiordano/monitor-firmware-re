@@ -1,0 +1,13 @@
+=== 0xba51 ===
+
+char FUN_CODE_ba51(void)
+
+{
+  char cVar1;
+  
+  cVar1 = DAT_EXTMEM_e336 - DAT_EXTMEM_e564;
+  FUN_CODE_002e(DAT_EXTMEM_e335 -
+                (DAT_EXTMEM_e563 - (((DAT_EXTMEM_e336 < DAT_EXTMEM_e564) << 7) >> 7)),cVar1);
+  return cVar1;
+}
+

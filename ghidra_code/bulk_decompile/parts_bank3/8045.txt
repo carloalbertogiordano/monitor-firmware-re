@@ -1,0 +1,17 @@
+=== 0x8045 ===
+
+void FUN_CODE_8045(void)
+
+{
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_0007();
+  return;
+}
+

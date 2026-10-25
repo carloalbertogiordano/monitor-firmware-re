@@ -1,0 +1,8 @@
+=== 0x75e3 ===
+
+undefined1 FUN_CODE_75e3(void)
+
+{
+  return DAT_EXTMEM_e338;
+}
+

@@ -1,0 +1,16 @@
+=== 0x61c2 ===
+
+void FUN_CODE_61c2(void)
+
+{
+  byte bVar1;
+  short sVar2;
+  
+  sVar2 = 0x61cd;
+  bVar1 = FUN_CODE_8cd5(DAT_EXTMEM_e3e2);
+                    /* WARNING: Could not recover jumptable at 0x61cc. Too many branches */
+                    /* WARNING: Treating indirect jump as call */
+  (*(code *)(sVar2 + (ushort)bVar1))();
+  return;
+}
+

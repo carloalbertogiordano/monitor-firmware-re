@@ -1,0 +1,11 @@
+=== 0x4581 ===
+
+void FUN_CODE_4581(void)
+
+{
+  DAT_EXTMEM_e34d = 0;
+  DAT_EXTMEM_e34e = 0xac;
+  DAT_EXTMEM_e34f = 0;
+  return;
+}
+

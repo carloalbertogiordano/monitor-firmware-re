@@ -1,0 +1,10 @@
+=== 0xd5b9 ===
+
+char FUN_CODE_d5b9(void)
+
+{
+  char in_PSW;
+  
+  return DAT_EXTMEM_e54e - ('\x04' - (((DAT_EXTMEM_e54f < 0x4cU - (in_PSW >> 7)) << 7) >> 7));
+}
+

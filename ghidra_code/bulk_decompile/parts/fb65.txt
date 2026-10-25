@@ -1,0 +1,12 @@
+=== 0xfb65 ===
+
+void FUN_CODE_fb65(void)
+
+{
+  FUN_CODE_06e5(4);
+  FUN_CODE_06eb();
+  FUN_CODE_06f1();
+  FUN_CODE_06e5(2);
+  return;
+}
+

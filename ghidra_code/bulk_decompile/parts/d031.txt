@@ -1,0 +1,8 @@
+=== 0xd031 ===
+
+byte FUN_CODE_d031(void)
+
+{
+  return DAT_EXTMEM_e4cb & 0xf0;
+}
+

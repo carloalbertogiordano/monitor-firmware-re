@@ -1,0 +1,8 @@
+=== 0x6e98 ===
+
+char FUN_CODE_6e98(void)
+
+{
+  return -0x1c - (((0x42 < DAT_EXTMEM_e3a7) << 7) >> 7);
+}
+

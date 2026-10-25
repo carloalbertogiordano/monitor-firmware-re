@@ -1,0 +1,9 @@
+=== 0x89fc ===
+
+undefined1 FUN_CODE_89fc(undefined1 param_1)
+
+{
+  FUN_CODE_fdb6();
+  return param_1;
+}
+

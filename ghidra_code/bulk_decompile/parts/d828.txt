@@ -1,0 +1,11 @@
+=== 0xd828 ===
+
+void FUN_CODE_d828(void)
+
+{
+  DAT_EXTMEM_e3c6 = 1;
+  DAT_EXTMEM_e3c7 = 0xe3;
+  DAT_EXTMEM_e3c8 = 0x50;
+  return;
+}
+

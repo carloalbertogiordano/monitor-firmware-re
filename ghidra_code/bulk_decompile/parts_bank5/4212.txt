@@ -1,0 +1,22 @@
+=== 0x4212 ===
+
+void FUN_CODE_4212(void)
+
+{
+  char cVar1;
+  char cVar2;
+  
+  cVar1 = 'd';
+  DAT_EXTMEM_e33d = 'd';
+  do {
+    FUN_CODE_36ba(cVar1,8);
+    if ((DAT_EXTMEM_3a41 & 8) == 0) {
+      return;
+    }
+    cVar2 = DAT_EXTMEM_e33d + -1;
+    cVar1 = DAT_EXTMEM_e33d + -2;
+    DAT_EXTMEM_e33d = cVar2;
+  } while (cVar2 != '\0');
+  return;
+}
+

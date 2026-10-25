@@ -1,0 +1,12 @@
+=== 0xfdd4 ===
+
+void FUN_CODE_fdd4(void)
+
+{
+  _0_1 = 1;
+  FUN_CODE_e176(1);
+  _0_1 = 1;
+  FUN_CODE_e176(0x10);
+  return;
+}
+

@@ -1,0 +1,10 @@
+=== 0x2644 ===
+
+byte FUN_CODE_2644(void)
+
+{
+  DAT_EXTMEM_ff2a = DAT_EXTMEM_ff2a | 0x40;
+  DAT_EXTMEM_ff26 = DAT_EXTMEM_e337;
+  return DAT_EXTMEM_ff35 & 0x1f ^ 1;
+}
+

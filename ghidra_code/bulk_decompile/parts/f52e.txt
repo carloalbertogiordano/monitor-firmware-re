@@ -1,0 +1,14 @@
+=== 0xf52e ===
+
+void FUN_CODE_f52e(void)
+
+{
+  DAT_EXTMEM_e3d0 = DAT_EXTMEM_e3c8;
+  DAT_EXTMEM_e3d1 = DAT_EXTMEM_e3c9;
+  DAT_EXTMEM_e3d2 = DAT_EXTMEM_e3ca;
+  _0_3 = 1;
+  _0_4 = 1;
+  FUN_CODE_7cdf();
+  return;
+}
+

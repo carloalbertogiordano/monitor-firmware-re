@@ -1,0 +1,11 @@
+=== 0xc585 ===
+
+void FUN_CODE_c585(void)
+
+{
+  FUN_CODE_0721(0);
+  FUN_CODE_0727(0);
+  FUN_CODE_072d(0);
+  return;
+}
+

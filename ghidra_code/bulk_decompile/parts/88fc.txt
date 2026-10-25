@@ -1,0 +1,9 @@
+=== 0x88fc ===
+
+void FUN_CODE_88fc(void)
+
+{
+  DAT_EXTMEM_e377 = 1;
+  return;
+}
+

@@ -1,0 +1,30 @@
+=== 0xf6eb ===
+
+void FUN_CODE_f6eb(char param_1,byte param_2)
+
+{
+  char cVar1;
+  undefined1 uVar2;
+  byte bVar3;
+  undefined1 *puVar4;
+  
+  puVar4 = &DAT_EXTMEM_b602;
+  DAT_INTMEM_29 = DAT_EXTMEM_b602;
+  uVar2 = FUN_CODE_b58c();
+  *puVar4 = uVar2;
+  FUN_CODE_b61b(DAT_INTMEM_29);
+  do {
+    param_1 = param_1 + -1;
+  } while (param_1 != '\0');
+  FUN_CODE_b653();
+  bVar3 = DAT_INTMEM_29 & 0xe0;
+  cVar1 = '\x05';
+  do {
+    bVar3 = bVar3 >> 1;
+    cVar1 = cVar1 + -1;
+  } while (cVar1 != '\0');
+  DAT_EXTMEM_e5a3 = (DAT_EXTMEM_e5a3 & 0xe7 | param_2) & 0xf8 | bVar3 & 7;
+  DAT_EXTMEM_e5a1 = DAT_EXTMEM_b603 & 0x80 | DAT_INTMEM_29 & 6;
+  return;
+}
+

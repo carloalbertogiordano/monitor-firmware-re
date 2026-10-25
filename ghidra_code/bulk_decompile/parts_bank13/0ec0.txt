@@ -1,0 +1,12 @@
+=== 0x0ec0 ===
+
+void FUN_CODE_0ec0(byte *param_1,char *param_2,byte param_3,char param_4,byte param_5)
+
+{
+  byte bVar1;
+  
+  bVar1 = FUN_CODE_0cdd(param_1,param_2,param_3,param_4,param_5);
+  FUN_CODE_09e6(bVar1,param_2,param_5);
+  return;
+}
+

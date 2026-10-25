@@ -1,0 +1,9 @@
+=== 0x871a ===
+
+undefined1 FUN_CODE_871a(void)
+
+{
+  DAT_EXTMEM_02c9 = 0xd0;
+  return DAT_EXTMEM_02ca;
+}
+

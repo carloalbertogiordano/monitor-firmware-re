@@ -1,0 +1,21 @@
+=== 0x3826 ===
+
+void FUN_CODE_3826(byte param_1,byte *param_2,char *param_3,byte *param_4,char param_5,char param_6,
+                  char param_7,char param_8,byte param_9)
+
+{
+  byte bVar1;
+  byte bVar2;
+  char cVar3;
+  
+  bVar2 = (param_1 << 1 | param_1 >> 7) + param_6;
+  bVar1 = param_6 - 1;
+  do {
+    cVar3 = CARRY1(bVar2,param_9) << 7;
+    param_9 = FUN_CODE_3ff2(bVar2 + param_9,param_2,param_4,param_5,bVar1,param_7,param_8);
+    bVar2 = param_9 - (bVar1 - (cVar3 >> 7));
+    param_4 = (byte *)0xff;
+    bVar2 = (bVar2 * '\x02' | bVar2 >> 7) + *param_3 + param_8;
+  } while( true );
+}
+

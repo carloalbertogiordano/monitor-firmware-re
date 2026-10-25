@@ -1,0 +1,12 @@
+=== 0xd6ff ===
+
+void FUN_CODE_d6ff(void)
+
+{
+  DAT_EXTMEM_e349 = 0;
+  DAT_EXTMEM_e34a = 0;
+  FUN_CODE_8a04(0,0,0,0);
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe34b);
+}
+

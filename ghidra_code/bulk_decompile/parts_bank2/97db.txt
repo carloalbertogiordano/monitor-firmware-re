@@ -1,0 +1,9 @@
+=== 0x97db ===
+
+void FUN_CODE_97db(void)
+
+{
+                    /* WARNING: Subroutine does not return */
+  FUN_CODE_1718(0xe35d);
+}
+

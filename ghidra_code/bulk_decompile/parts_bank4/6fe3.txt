@@ -1,0 +1,9 @@
+=== 0x6fe3 ===
+
+void FUN_CODE_6fe3(byte param_1,undefined1 param_2,undefined1 param_3,char param_4)
+
+{
+  FUN_CODE_1718(0xe4eb,param_2,param_3,param_4 - (((0xfe < param_1) << 7) >> 7),param_1 + 1);
+  return;
+}
+

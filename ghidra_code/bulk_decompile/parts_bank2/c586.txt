@@ -1,0 +1,8 @@
+=== 0xc586 ===
+
+byte FUN_CODE_c586(void)
+
+{
+  return DAT_EXTMEM_8837 & 1 ^ 1;
+}
+

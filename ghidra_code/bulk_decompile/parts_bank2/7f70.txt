@@ -1,0 +1,11 @@
+=== 0x7f70 ===
+
+char FUN_CODE_7f70(char *param_1,char param_2,byte param_3)
+
+{
+  return *param_1 +
+         ((((byte)param_1[1] <
+           (byte)-((((byte)param_1[2] < (byte)(param_2 - ((((byte)param_1[3] < param_3) << 7) >> 7))
+                    ) << 7) >> 7)) << 7) >> 7);
+}
+

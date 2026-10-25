@@ -1,0 +1,23 @@
+=== 0xedd5 ===
+
+void FUN_CODE_edd5(void)
+
+{
+  short sVar1;
+  
+  DAT_EXTMEM_5500 = DAT_EXTMEM_5500 & 0x7f;
+  if (_0_1 != '\0') {
+    DAT_EXTMEM_5500 = DAT_EXTMEM_5500 | 0x80;
+    sVar1 = 0x101e;
+    FUN_CODE_c4ba(0x101e);
+    FUN_CODE_c4ba(sVar1 + 1);
+    DAT_EXTMEM_5536 = DAT_EXTMEM_5536 & 0x3f;
+    DAT_EXTMEM_5526 = DAT_EXTMEM_5526 & 0x3f;
+    return;
+  }
+  sVar1 = 0x101e;
+  FUN_CODE_c4dd(0x101e);
+  FUN_CODE_c4dd(sVar1 + 1);
+  return;
+}
+

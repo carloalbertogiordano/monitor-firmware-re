@@ -1,0 +1,13 @@
+=== 0x620b ===
+
+void FUN_CODE_620b(void)
+
+{
+  undefined1 uVar1;
+  
+  uVar1 = DAT_SFR_ff;
+  uVar1 = DAT_SFR_ff;
+  do {
+  } while( true );
+}
+

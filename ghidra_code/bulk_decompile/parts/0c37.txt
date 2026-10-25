@@ -1,0 +1,9 @@
+=== 0x0c37 ===
+
+void FUN_CODE_0c37(void)
+
+{
+  FUN_CODE_043f(thunk_FUN_CODE_0d33);
+  return;
+}
+

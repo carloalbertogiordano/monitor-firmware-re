@@ -1,0 +1,8 @@
+=== 0xb61b ===
+
+byte FUN_CODE_b61b(byte param_1)
+
+{
+  return param_1 & 8;
+}
+

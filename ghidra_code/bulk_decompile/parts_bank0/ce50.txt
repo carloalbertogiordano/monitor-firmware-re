@@ -1,0 +1,63 @@
+=== 0xce50 ===
+
+void FUN_CODE_ce50(undefined1 *param_1,char param_2,char param_3,undefined1 param_4,byte param_5)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  byte bVar3;
+  char cVar4;
+  char cVar5;
+  short sVar6;
+  
+  DAT_EXTMEM_e332 = param_4;
+  DAT_EXTMEM_e333 = param_5;
+  FUN_CODE_bd39(0xe33b);
+  DAT_EXTMEM_e33b = FUN_CODE_127f(param_1,param_2,param_3);
+  DAT_EXTMEM_e33c = FUN_CODE_1298(1,(byte)param_1,param_2,param_3);
+  DAT_EXTMEM_e33d = FUN_CODE_1298(2,(byte)param_1,param_2,param_3);
+  bVar3 = FUN_CODE_1298(3,(byte)param_1,param_2,param_3);
+  DAT_EXTMEM_e33e = bVar3;
+  DAT_EXTMEM_e33f = FUN_CODE_1298(4,(byte)param_1,param_2,param_3);
+  DAT_EXTMEM_e340 = FUN_CODE_1298(5,(byte)param_1,param_2,param_3);
+  sVar6 = -0x1cc0;
+  if (((bVar3 >> 6 & 1) == 0) ||
+     (((DAT_EXTMEM_e33e >> 6 & 1) == 1 &&
+      ((((sVar6 = -0x1cc5, DAT_EXTMEM_e33b == '\0' || (DAT_EXTMEM_e33b == '\x05')) ||
+        (DAT_EXTMEM_e33b == '\x06')) ||
+       (((DAT_EXTMEM_e33b == '\a' || (DAT_EXTMEM_e33b == '\b')) || (DAT_EXTMEM_e33b == '\t'))))))))
+  {
+    FUN_CODE_082f(8);
+    cVar4 = FUN_CODE_be81();
+    cVar5 = (param_5 & 0xf) * '\x04';
+    FUN_CODE_bdda(*(undefined1 *)(sVar6 + 1),cVar4 + '\x01',cVar5);
+    DAT_EXTMEM_e346 = DAT_EXTMEM_e33f;
+    bVar3 = FUN_CODE_cf8f();
+    uVar2 = BANK0_R7;
+    uVar1 = BANK0_R6;
+    cVar4 = bVar3 + 1;
+    FUN_CODE_bdcd(DAT_EXTMEM_e332,0xe332,DAT_EXTMEM_e334 & 0xf,
+                  cVar5 + ('\x01' - (((0xfe < bVar3) << 7) >> 7)),cVar4);
+    DAT_EXTMEM_e346 = DAT_EXTMEM_e335;
+    BANK0_R6 = uVar1;
+    BANK0_R7 = uVar2;
+    bVar3 = FUN_CODE_cf8f();
+    uVar2 = BANK0_R7;
+    uVar1 = BANK0_R6;
+    FUN_CODE_bdcd(DAT_EXTMEM_e336,0xe336,DAT_EXTMEM_e338 & 0xf,
+                  cVar4 + ('\x01' - (((0xfd < bVar3) << 7) >> 7)),bVar3 + 2);
+    DAT_EXTMEM_e346 = DAT_EXTMEM_e339;
+    bVar3 = 0;
+    BANK0_R6 = uVar1;
+    BANK0_R7 = uVar2;
+    FUN_CODE_1147(0);
+    cVar5 = FUN_CODE_be81();
+    bVar3 = (bVar3 & 0xf) * '\x04';
+    DAT_EXTMEM_e345 = DAT_EXTMEM_e340 | DAT_EXTMEM_e33a & 0x1f;
+    DAT_EXTMEM_e346 = DAT_EXTMEM_e33e | 1;
+    FUN_CODE_1147(DAT_EXTMEM_e33a & 0x20,0,cVar5 + ('\x01' - (((0xfc < bVar3) << 7) >> 7)),bVar3 + 3
+                 );
+  }
+  return;
+}
+

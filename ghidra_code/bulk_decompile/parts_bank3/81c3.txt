@@ -1,0 +1,25 @@
+=== 0x81c3 ===
+
+void FUN_CODE_81c3(byte param_1,char *param_2,char *param_3,byte param_4)
+
+{
+  byte bVar1;
+  char cVar2;
+  byte bVar3;
+  char cVar4;
+  
+  bVar3 = param_1 << 1 | param_1 >> 7;
+  DAT_INTMEM_64 = DAT_INTMEM_64 & bVar3;
+  bVar1 = T2MOD;
+  T2MOD = bVar1 & (byte)(param_3 + bVar3);
+  bVar1 = *param_2 - ((CARRY1((byte)(param_3 + bVar3),param_4) << 7) >> 7);
+  bVar3 = *(byte *)ZEXT12(param_3) + bVar1;
+  bVar1 = *param_3 - ((CARRY1(*(byte *)ZEXT12(param_3),bVar1) << 7) >> 7);
+  cVar2 = DAT_INTMEM_3e;
+  FUN_CODE_860c(bVar3 + bVar1 >> 1 | CARRY1(bVar3,bVar1) << 7);
+  cVar4 = FUN_CODE_80d1();
+  *(char *)ZEXT12(param_2) = cVar4 + cVar2 + -1;
+  FADDR = *param_3;
+  return;
+}
+

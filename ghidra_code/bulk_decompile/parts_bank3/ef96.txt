@@ -1,0 +1,48 @@
+=== 0xef96 ===
+
+void FUN_CODE_ef96(byte *param_1)
+
+{
+  char cVar1;
+  byte bVar2;
+  
+  cVar1 = FUN_CODE_f00a(10);
+  if (cVar1 == '\0') {
+    bVar2 = FUN_CODE_de42();
+    *param_1 = bVar2 | 8;
+  }
+  else if (cVar1 == '\x10') {
+    bVar2 = FUN_CODE_de42();
+    *param_1 = bVar2 | 0x10;
+  }
+  else if (cVar1 == ' ') {
+    bVar2 = FUN_CODE_de42();
+    *param_1 = bVar2 | 0x18;
+  }
+  else if (cVar1 == -0x10) {
+    bVar2 = FUN_CODE_de42();
+    *param_1 = bVar2;
+  }
+  DAT_EXTMEM_0b12 = DAT_EXTMEM_0b12 & 0x3f | 0xc0;
+  cVar1 = FUN_CODE_f00a(2);
+  if (cVar1 == '\0') {
+    DAT_INTMEM_29 = 2;
+  }
+  else if (cVar1 == '\x10') {
+    DAT_INTMEM_29 = 4;
+  }
+  else if (cVar1 == ' ') {
+    DAT_INTMEM_29 = 8;
+  }
+  else if (cVar1 == -0x10) {
+    DAT_INTMEM_29 = 1;
+  }
+  else {
+    DAT_INTMEM_29 = 0;
+  }
+  if ((DAT_EXTMEM_0b12 & DAT_INTMEM_29) != 0) {
+    return;
+  }
+  return;
+}
+

@@ -1,0 +1,37 @@
+=== 0xed1a ===
+
+void FUN_CODE_ed1a(char param_1)
+
+{
+  undefined1 uVar1;
+  undefined1 *puVar2;
+  
+  FUN_CODE_9bf9(0x80);
+  FUN_CODE_0823();
+  if (param_1 == -0x80) {
+    if (DAT_EXTMEM_e619 == '\x06') {
+      uVar1 = 0xd;
+    }
+    else {
+      uVar1 = 7;
+    }
+  }
+  else {
+    uVar1 = 0xc;
+  }
+  puVar2 = &DAT_EXTMEM_1da2;
+  uVar1 = FUN_CODE_9cea(uVar1);
+  *puVar2 = uVar1;
+  FUN_CODE_9c7b(0x12);
+  DAT_EXTMEM_1da5 = 0;
+  DAT_EXTMEM_1db5 = 0;
+  DAT_EXTMEM_1dc5 = 0;
+  DAT_EXTMEM_1dd5 = 0;
+  DAT_EXTMEM_1da6 = 0;
+  DAT_EXTMEM_1db6 = 0;
+  DAT_EXTMEM_1dc6 = 0;
+  DAT_EXTMEM_1dd6 = 0;
+  FUN_CODE_98fc(0xff);
+  return;
+}
+

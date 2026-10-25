@@ -1,0 +1,9 @@
+=== 0x9ca9 ===
+
+void FUN_CODE_9ca9(void)
+
+{
+  DAT_EXTMEM_0bb2 = DAT_EXTMEM_0bb2 & 0xfe | 1;
+  return;
+}
+

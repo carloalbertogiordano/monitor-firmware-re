@@ -1,0 +1,143 @@
+=== 0xcbf3 ===
+
+void FUN_CODE_cbf3(char param_1,char param_2,byte param_3,byte param_4)
+
+{
+  undefined1 uVar1;
+  undefined1 uVar2;
+  undefined1 uVar3;
+  undefined1 uVar4;
+  undefined1 uVar5;
+  undefined1 uVar6;
+  undefined1 uVar7;
+  char cVar8;
+  char cVar9;
+  undefined1 uVar10;
+  char cVar11;
+  byte bVar12;
+  byte bVar13;
+  byte bVar14;
+  byte bVar15;
+  byte bVar16;
+  byte bVar17;
+  char in_PSW;
+  short sVar18;
+  
+  sVar18 = -0x1c8b;
+  FUN_CODE_8a0c(0xe375);
+  FUN_CODE_1724(sVar18 + 1);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe37c);
+  nop();
+  nop();
+  nop();
+  nop();
+  FUN_CODE_1724(0xe380);
+  nop();
+  nop();
+  nop();
+  nop();
+  DAT_EXTMEM_e384 = 0;
+  DAT_EXTMEM_e385 = 0;
+  FUN_CODE_861c(0xe375);
+  uVar10 = FUN_CODE_8882();
+  FUN_CODE_17ba(DAT_EXTMEM_e604,DAT_EXTMEM_e605,param_1,uVar10);
+  FUN_CODE_1718(0xe378);
+  FUN_CODE_861c(0xe375);
+  FUN_CODE_8879();
+  FUN_CODE_8c8d();
+  cVar11 = FUN_CODE_8b84();
+  cVar8 = '\0';
+  cVar9 = '\0';
+  FUN_CODE_1718(0xe37c,cVar11 - (param_1 - (in_PSW >> 7)));
+  FUN_CODE_861c(0xe6b3);
+  bVar12 = FUN_CODE_127f();
+  bVar13 = bVar12 & 7;
+  if (bVar13 == 1) {
+    FUN_CODE_8b57();
+  }
+  else {
+    FUN_CODE_861c(0xe6b3);
+    FUN_CODE_8a6e();
+  }
+  FUN_CODE_133e();
+  DAT_EXTMEM_e384 = bVar13;
+  DAT_EXTMEM_e385 = bVar12;
+  bVar14 = FUN_CODE_8773(0xe37c);
+  bVar15 = FUN_CODE_86ac(0xe378);
+  uVar3 = BANK0_R7;
+  uVar2 = BANK0_R6;
+  uVar1 = BANK0_R5;
+  uVar10 = BANK0_R4;
+  bVar13 = bVar13 - ((CARRY1(bVar15,bVar14) << 7) >> 7);
+  bVar16 = param_4 + bVar13;
+  bVar13 = cVar9 - ((CARRY1(param_4,bVar13) << 7) >> 7);
+  bVar12 = param_3 + bVar13;
+  param_2 = param_2 + (cVar8 - ((CARRY1(param_3,bVar13) << 7) >> 7));
+  bVar13 = DAT_EXTMEM_e384 - ((CARRY1(bVar15 + bVar14,DAT_EXTMEM_e385) << 7) >> 7);
+  cVar11 = bVar16 + bVar13;
+  cVar8 = bVar12 - ((CARRY1(bVar16,bVar13) << 7) >> 7);
+  FUN_CODE_861c(0xe375,param_2,bVar15 + bVar14 + DAT_EXTMEM_e385);
+  FUN_CODE_8d5a();
+  FUN_CODE_89c2();
+  FUN_CODE_8c94();
+  FUN_CODE_861c(0xe375);
+  FUN_CODE_8a98();
+  FUN_CODE_8ae6();
+  BANK0_R4 = uVar10;
+  BANK0_R5 = uVar1;
+  BANK0_R6 = uVar2;
+  BANK0_R7 = uVar3;
+  FUN_CODE_07ed();
+  FUN_CODE_1718(0xe380);
+  bVar13 = FUN_CODE_8773(0xe380);
+  cVar9 = '\x10';
+  FUN_CODE_15e8(0x10);
+  DAT_EXTMEM_b536 = FUN_CODE_8bb5(FUN_CODE_b535);
+  DAT_EXTMEM_b537 = cVar8;
+  FUN_CODE_861c(0xe375);
+  bVar14 = FUN_CODE_1298(0x3d);
+  if ((bVar14 >> 4 & 1) != 0) {
+    bVar17 = FUN_CODE_86ac(0xe380);
+    uVar3 = BANK0_R3;
+    uVar2 = BANK0_R2;
+    uVar1 = BANK0_R1;
+    uVar10 = BANK0_R0;
+    FUN_CODE_861c(0xe375);
+    FUN_CODE_8882();
+    FUN_CODE_8bc5();
+    uVar7 = BANK0_R7;
+    uVar6 = BANK0_R6;
+    uVar5 = BANK0_R5;
+    uVar4 = BANK0_R4;
+    FUN_CODE_8d5a(DAT_EXTMEM_e377);
+    FUN_CODE_89c2();
+    FUN_CODE_8c94();
+    FUN_CODE_861c(0xe375);
+    FUN_CODE_8a98();
+    FUN_CODE_8ae6();
+    BANK0_R4 = uVar4;
+    BANK0_R5 = uVar5;
+    BANK0_R6 = uVar6;
+    BANK0_R7 = uVar7;
+    FUN_CODE_07ed();
+    bVar14 = cVar11 - ((CARRY1(bVar17,bVar13) << 7) >> 7);
+    bVar15 = cVar8 - ((CARRY1(bVar16,bVar14) << 7) >> 7);
+    cVar8 = bVar12 + bVar15;
+    BANK0_R0 = uVar10;
+    BANK0_R1 = uVar1;
+    BANK0_R2 = uVar2;
+    BANK0_R3 = uVar3;
+    FUN_CODE_1718(0xe380,cVar9 + (param_2 - ((CARRY1(bVar12,bVar15) << 7) >> 7)),bVar16 + bVar14,
+                  bVar17 + bVar13);
+  }
+  uVar10 = FUN_CODE_8773(0xe380);
+  FUN_CODE_15e8(0x10,uVar10);
+  DAT_EXTMEM_b533 = FUN_CODE_8bb5(0xb532);
+  DAT_EXTMEM_b534 = cVar8;
+  return;
+}
+

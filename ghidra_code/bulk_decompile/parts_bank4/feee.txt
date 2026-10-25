@@ -1,0 +1,8 @@
+=== 0xfeee ===
+
+void FUN_CODE_feee(void)
+
+{
+  return;
+}
+

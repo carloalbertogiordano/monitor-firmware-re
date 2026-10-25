@@ -1,0 +1,8 @@
+=== 0x74d6 ===
+
+undefined1 FUN_CODE_74d6(void)
+
+{
+  return 0;
+}
+

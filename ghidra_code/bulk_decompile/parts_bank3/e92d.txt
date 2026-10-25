@@ -1,0 +1,9 @@
+=== 0xe92d ===
+
+undefined1 FUN_CODE_e92d(undefined1 param_1)
+
+{
+  FUN_CODE_fee1(5,2,param_1);
+  return param_1;
+}
+

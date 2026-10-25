@@ -1,0 +1,8 @@
+=== 0xcb03 ===
+
+byte FUN_CODE_cb03(void)
+
+{
+  return DAT_EXTMEM_e4d3 >> 3 & 3;
+}
+

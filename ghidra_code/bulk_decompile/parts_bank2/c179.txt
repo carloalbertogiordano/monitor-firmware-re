@@ -1,0 +1,8 @@
+=== 0xc179 ===
+
+undefined1 FUN_CODE_c179(void)
+
+{
+  return DAT_EXTMEM_e32f;
+}
+

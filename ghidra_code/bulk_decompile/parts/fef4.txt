@@ -1,0 +1,8 @@
+=== 0xfef4 ===
+
+void FUN_CODE_fef4(void)
+
+{
+  return;
+}
+

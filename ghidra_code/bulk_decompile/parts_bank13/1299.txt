@@ -1,0 +1,30 @@
+=== 0x1299 ===
+
+char FUN_CODE_1299(byte param_1,short param_2,char *param_3,byte *param_4,byte param_5)
+
+{
+  undefined1 uVar1;
+  char cVar2;
+  byte bVar3;
+  
+  if (*param_4 == 0x2b) {
+    bVar3 = T2MOD;
+    T2MOD = bVar3 & param_1;
+    _5_5 = 1;
+    uVar1 = CCF_3;
+    *param_3 = -0x80;
+    nop();
+    nop();
+    cVar2 = FUN_CODE_0070(0,param_2 + 1);
+    return cVar2;
+  }
+  cVar2 = OV;
+  if (cVar2 == '\x01') {
+    return ((param_1 | 0x24) + BANK2_R2 & DAT_INTMEM_25) + *param_3;
+  }
+  bVar3 = (param_1 ^ param_5) + (*param_4 - (((*param_4 < 0x2b) << 7) >> 7));
+  *param_3 = '7';
+  cVar2 = FUN_CODE_1192(bVar3 * '\x02' | bVar3 >> 7);
+  return cVar2;
+}
+

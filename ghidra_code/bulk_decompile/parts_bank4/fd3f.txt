@@ -1,0 +1,14 @@
+=== 0xfd3f ===
+
+void FUN_CODE_fd3f(void)
+
+{
+  char in_PSW;
+  
+  FUN_CODE_f8dc();
+  if (in_PSW < '\0') {
+    return;
+  }
+  return;
+}
+

@@ -1,0 +1,12 @@
+=== 0xd524 ===
+
+char FUN_CODE_d524(void)
+
+{
+  byte bVar1;
+  
+  bVar1 = DAT_EXTMEM_e60a >> 2 & 3;
+  return (CARRY1(DAT_EXTMEM_e60a & 3,bVar1) ^ 0x80U) -
+         (-0x80 - ((((DAT_EXTMEM_e60a & 3) + bVar1 < 3) << 7) >> 7));
+}
+

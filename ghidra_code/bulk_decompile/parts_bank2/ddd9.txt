@@ -1,0 +1,8 @@
+=== 0xddd9 ===
+
+undefined1 FUN_CODE_ddd9(void)
+
+{
+  return 0;
+}
+

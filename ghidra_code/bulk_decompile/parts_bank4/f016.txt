@@ -1,0 +1,11 @@
+=== 0xf016 ===
+
+void FUN_CODE_f016(void)
+
+{
+  byte in_PSW;
+  
+  DAT_EXTMEM_b674 = DAT_EXTMEM_b674 & 0x7f | in_PSW & 0x80;
+  return;
+}
+

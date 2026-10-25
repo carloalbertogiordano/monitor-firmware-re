@@ -1,0 +1,30 @@
+=== 0xed3b ===
+
+void FUN_CODE_ed3b(char param_1)
+
+{
+  DAT_EXTMEM_b5a8 = DAT_EXTMEM_b5a8 & 0xfe;
+  DAT_INTMEM_53 = '2';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+  FUN_CODE_c6f1(0xb5a8);
+  DAT_EXTMEM_b5ad = param_1 + -2;
+  DAT_EXTMEM_b5ae = 0;
+  DAT_EXTMEM_b5af = 0;
+  DAT_EXTMEM_b5b0 = 0;
+  DAT_INTMEM_53 = 'K';
+  do {
+    DAT_INTMEM_56 = DAT_INTMEM_51;
+    do {
+      DAT_INTMEM_56 = DAT_INTMEM_56 + -1;
+    } while (DAT_INTMEM_56 != '\0');
+    DAT_INTMEM_53 = DAT_INTMEM_53 + -1;
+  } while (DAT_INTMEM_53 != '\0');
+  return;
+}
+
